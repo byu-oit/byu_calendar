@@ -1,0 +1,1454 @@
+/* SASS Variables ------------------- */
+
+$mobile_sidebar_width: 20%;
+$mobile_main_width: 100% - $mobile_sidebar_width;
+$mobile_max_width: 1023px;
+$large_screen_start_width: 1024px;
+// colors
+$navy: #002E5D;
+$lightestblue: #C4CFDA;
+$lightblue: #A6B6C7;
+$medblue: #889FB7;
+
+
+    $dullnavy: desaturate($navy, 30%);
+    $dullblue: desaturate($navy, 70%);
+    $brightblue: lighten($navy, 50%);
+    $lightestblue: lighten($dullblue, 50%);
+    $mediumblue: darken($lightestblue, 3%);
+$xlightgray: #f2f2f2;
+$lightgray: #e5e5e5;
+$medgray: #9b9b9b;
+$gray: #767676;
+$darkgray: #6a6a6b;
+$royal: #003DA5;
+
+//other colors
+$green: #6EAE17;
+
+// other
+
+$nav_gradient: 10%;
+$nav_gradient_2: 5%;
+@mixin sidebar-inner-shadowbox() {
+    -webkit-box-shadow: inset -3px 0px 5px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: inset -3px 0px 5px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: inset -3px 0px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+@mixin main-outer-shadowbox() {
+    -webkit-box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.4);
+}
+@mixin display-flex() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+
+/* ------------------------------------- */
+
+a {
+    color: $royal;
+}
+
+.node-readmore {
+    visibility: hidden;
+}
+
+.alert-box {
+    z-index: 100;
+}
+
+.gray-button {
+    background: $lightgray;
+    padding: 10px;
+    border: 1px solid $medgray;
+    margin: 10px;
+    text-align: center;
+    color: $navy;
+}
+/* --- menu -------- */
+
+.top-bar {
+    overflow: hidden;
+    height: 45px;
+    line-height: 45px;
+    position: absolute;
+    width: 100%;
+    background: $navy;
+    margin-bottom: 0;
+    @media(max-width: $mobile_max_width) {
+        position: fixed;
+        z-index: 50;
+    }
+    @media(min-width: $large_screen_start_width) {
+        position: relative;
+    }
+}
+
+.top-bar-section ul {
+    background: none;
+}
+
+.top-bar .toggle-topbar.menu-icon {
+    //    right: 68px;
+}
+
+ul#main-menu li,
+ul#main-menu li a {
+    background: $lightgray;
+    color: $navy;
+    width: 80%;
+    float: right;
+}
+
+
+/* ---- mobile area settings --- */
+
+.columns.sidebar-first {
+    width: $mobile_sidebar_width;
+    min-width: 70px;
+    float: left;
+    padding: 0px;
+    position: fixed;
+    margin-top: 45px;
+    @media(max-width: 408px) {
+        width: $mobile_sidebar_width - 1;
+        @media(max-width: 372px) {
+            width: $mobile_sidebar_width - 2;
+            @media(max-width: 367px) {
+                width: $mobile_sidebar_width - 3;
+                @media(max-width: 352px) {
+                    width: $mobile_sidebar_width - 6;
+                    min-width: 63px;
+                }
+            }
+        }
+    }
+}
+
+main.row.l-main {
+    background: #fff;
+    @media(max-width: $mobile_max_width) {
+        @include main-outer-shadowbox();
+        width: $mobile_main_width;
+        float: right;
+        margin-top: 45px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #main-content-section {
+        @media(max-width: $mobile_max_width) {
+            // come back to when ready to redo & re-theme week view
+            padding-left: 0px;
+            padding-right: 0px;
+            height: 100%!important;
+            /* 100vh does the height, but it doesn't work once you scroll.. */
+            display: flex;
+            justify-content: center;
+
+        }
+    }
+    #main-content-section.scrolled {
+        @media(max-width: $mobile_max_width) {
+            margin-top: 76px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    //correcting for later breakpoint
+    .push-3 {
+        position: relative;
+        left: 0%;
+        right: auto;
+    }
+}
+
+
+/* ----- large screen area settings --------- */
+.row {
+    @media(min-width: 1200px){
+//        max-width: 1200px;  // we really don't want to do this if possible, dont want to design second design for tablet
+    }
+}
+
+@media (min-width: $large_screen_start_width) {
+    div#page-container {
+        padding: 30px 0px;
+        min-height: 700px;  // this is for with no content.. temporary solution
+    }
+    .columns.sidebar-first.thin-left-sidebar {
+        width: 230px;
+        //        max-width: 250px;
+    }
+    .columns.sidebar-first {
+        margin-top: 1px; // need it to be more than 0 but not show
+    }
+}
+
+.pull-9.thin-left-sidebar {
+    @media(min-width: 768px) {
+        left: 0px;
+    }
+    @media (min-width: $large_screen_start_width) {
+        position: relative;
+        left: 5%;
+    }
+    @media (min-width: 1400px) {
+        left: 17%;
+    }
+    @media (min-width: 1500px) {
+        left: 17%;
+    }
+    @media (min-width: 1600px) {
+        left: 19%;
+    }
+    @media (min-width: 1800px) {
+        left: 24%;
+    }
+    @media (min-width: 2000px) {
+        left: 26%;
+    }
+}
+.safari .pull-9.thin-left-sidebar {
+    @media (min-width: $large_screen_start_width) {
+        position: relative;
+        left: 0%;
+        padding-left: 3%;
+    }
+}
+
+.push-3.main.columns {
+    @media (min-width: $large_screen_start_width) {
+        //re-setting this after override to cover 768 - 1023px
+        position: relative;
+        float: left;
+        left: 7%;
+//        padding-right: 30px;
+        padding-right: 0px
+    }
+    @media (min-width: 1400px) {
+        //re-setting this after override to cover 768 - 1023px
+        position: relative;
+        left: 24%; // was 25%
+        right: auto;
+    }
+}
+
+
+/* ---- font & sizing ---- */
+
+h2 {
+    font-size: 1em;
+}
+
+@media(min-width: $large_screen_start_width) {
+    h2 {
+        font-size: 1.6875em;
+    }
+}
+h3, h3 a {
+    color: $navy;
+}
+
+/* ------ often used classes ------------*/
+
+.hidden {
+    display: none;
+}
+
+.panel {
+    background: #fff;
+}
+
+.gray-button {
+    background-color: $lightgray!important;
+    padding: 9px 12px!important;
+    font-size: 12px;
+    a {
+       color: $navy;
+    }
+}
+/*  --- Random mobile display settings - */
+
+@media(max-width: $mobile_max_width) {
+    ul.breadcrumbs {
+        display: none!important;
+    }
+}
+
+
+/* ------------ Calendar pages: General - mobile or large  ------- */
+
+
+/*   ------------- ------------- */
+
+.calendar-calendar .month-view .full td.single-day div.monthview,
+.calendar-calendar .week-view .full td.single-day div.weekview,
+.calendar-calendar .day-view .full td.single-day div.dayview {
+    background: #fff;
+}
+/* -------- checkboxes throughout the site ------------- */
+.bef-checkboxes .form-item.form-type-bef-checkbox {
+    //    display: inline;
+}
+.form-checkboxes {
+    
+    .form-item {
+        height: 22px;
+        label {
+            color: $navy;
+            padding-left: 8px;
+        }
+    }
+    
+}
+
+
+// mini month calendar theming
+.calendar-calendar .month-view table.mini {
+    max-width: 200px;
+    thead {
+        display: none;
+    }
+    th.days {
+        background-color: #fff;
+        color: $navy;
+        font-weight: bold;
+        border: none;
+    }
+    td {
+//        border: 10px #fff solid;
+        background: $xlightgray;
+        //old
+        text-align: center;
+//        padding: 6px 2px;
+//        padding: 4px 0px;
+        padding: 6px 0px 2px;
+        border: 5px #fff solid;
+//        border-right: 5px white solid;
+//        border-left: 5px white solid;
+//        border-top: 7px white solid;
+//        border-bottom: 5px white solid;
+        a {
+            color: $medgray;
+        }
+        a:hover {
+            color: $gray;
+        }
+    }
+    td.sun {
+        border-left: 0px solid #fff;
+    }
+    td.last-month,
+    td.next-month {
+        background: #fff;
+        a {
+            color: #fff;
+        }
+    }
+    td.current-week {
+        background: $lightblue;
+        a {
+            color: #fff;
+        }
+    }
+    .mini-day-on a {
+        text-decoration: none;
+    }
+}
+.large-screen {
+    .views-exposed-form .views-exposed-widget .form-submit {
+        margin-top: 0.6em;
+    }
+}
+
+/* --------------- Mobile Calendar ------------------- */
+
+
+/* --------- Mobile Navigation theming ---- */
+
+#calendar-nav-header {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+    background: $medgray;
+    text-align: center;
+    @include sidebar-inner-shadowbox();
+    border-bottom: 1px solid #fff;
+    padding: 8px 0px;
+}
+
+.calendar-nav-section {
+    height: auto;
+    text-transform: lowercase;
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+    a.calendar-nav-link {
+        color: #fff;
+    }
+    .calendar-nav-item {
+        /*comment */
+        background: $lightestblue;
+        padding: 10px 0px;
+        margin-bottom: -2px;
+        @include sidebar-inner-shadowbox();
+        .day-navigation-day-items {
+            @media (max-width: $mobile_max_width) {
+                font-size: 19px;
+            }
+        }
+        .day-navigation-weekday {
+            font-size: 14px;
+        }
+    }
+    #day-1 {
+        background: #D9E0E7;
+    }
+    #day-2 {
+        background: #CCD5DF;
+    }
+    #day-3 {
+        background: #ABBACA;
+    }
+    #day-4 {
+        background: #8CA1B6;
+    }
+    #day-5 {
+        background: #99ABBE;
+    }
+    #day-6 {
+        background: #A6B6C7;
+    }
+    #day-7 {
+        background: #B2C0CE;
+    }
+    }
+    .calendar-nav-item:active {
+        /*comment */
+        background: #f09;
+    }
+
+@media(max-width: $mobile_max_width) {
+    div#calendar-nav-pager {
+        margin-top: 10px;
+        div {
+            /* text-align: center; */
+            border: 1px #9b9b9b solid;
+            padding: 8px 6%;
+            /* ----------- come back to fix padding / margin better for diff mobile sizes ----- */
+            margin: 5px 14%;
+            width: 75%;
+            min-width: 50px;
+            color: $navy;
+            text-align: center;
+        }
+    }
+}
+
+div#calendar-nav-pager .calendar-nav-pager-back {
+    color: $medgray;
+}
+
+@media (max-width: $mobile_max_width) {
+
+}
+
+
+/* --- for all calendar views -------- */
+.day-header a,
+.views-field.views-field-title a {
+    color: $navy;
+}
+
+.view.view-mobile-calendar.view-id-mobile_calendar .views-row {
+    border-bottom: 1px $lightgray solid;
+}
+
+.view-id-mobile_calendar {
+    .views-exposed-form {
+        position: fixed;
+        z-index: 100;
+        background: $lightgray;
+        border: 1px solid #002255;
+        border-radius: 5px;
+        border-top-right-radius: 0px;
+        padding: 10px 10%;
+        width: 80%;
+        height: 92.5%; // see if i can do 100% height -45px
+        right: 0px;
+        top: 44px;
+        display: none;
+    }
+    .views-exposed-form label {
+        font-weight: bold;
+        color: #002255;
+        padding-bottom: 5px;
+    }
+    // mobile checkboxes
+    .views-exposed-form .bef-checkboxes .form-item.form-type-bef-checkbox {
+        display: block;
+    }
+    .views-exposed-form .views-widget label {
+        color: #444;
+        font-weight: normal;
+    }
+}
+
+.view .date-nav-wrapper .date-heading {
+    text-align: center;
+}
+
+// WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK
+
+/*   ---- Day & Week View ------ */
+
+
+/* -- filter & msc stuff - */
+
+//day view
+.view-id-mobile_calendar.view-display-id-block_5 {
+    margin-top: -16px;
+    .view-header,
+    .form-item.form-type-select.form-item-field-event-type-tid .description {
+        display: none;
+    }
+    .views-field.views-field-field-icon {
+        float: left;
+        margin-right: 20px;
+    }
+    .calendar.weekview.all-day-items {
+        float: left;
+    }
+    .view-item-mobile_calendar > .calendar.weekview {
+        width: 100%;
+        position: relative;
+        top: 3px;
+        float: left;
+    }
+    .views-field.views-field-title {
+        font-size: 15px;
+        display: inline;
+    }
+    .view-item.view-item-mobile_calendar {
+        border-bottom: 1px solid $lightgray;
+    }
+    .view-item.view-item-mobile_calendar > .calendar.weekview {
+        margin: 10px 20px;
+    }
+    .empty-text {
+        padding: 10px 20px 0px;
+    }
+    .calendar-calendar .week-view .full td,
+    .calendar-calendar .day-view td {
+        padding: 0px;
+    }
+    .view.view-mobile-calendar.view-id-mobile_calendar .views-row {
+        margin: 10px 0px;
+    }
+} // end of weekview body block
+
+/* --- mobile responsive for week view -------- */
+
+@media screen and ( max-width: $mobile_max_width) {
+    .calendar-calendar .week-view table.full {
+        position: relative;
+    }
+    .calendar-calendar .week-view .full tr td {
+        width: 100%;
+        float: left;
+        text-align: left;
+    }
+    .calendar-calendar tbody tr td {
+        background: none;
+    }
+    .calendar-calendar .week-view .full tr.single-day {
+        border-top: 1px solid #ccc;
+    }
+    .calendar-calendar .week-view .full tr td.single-day:before {
+        //    content: attr(data-day-of-week) ",\0000a0" attr(headers); 
+        //    font-weight: bold;
+    }
+    .calendar-calendar .week-view .full thead tr,
+    .calendar-calendar .week-view .full tr th.days,
+    .calendar-calendar .week-view .full tr td.date-box {
+        display: none;
+    }
+    .calendar-calendar .week-view .full tr td.no-entry,
+    .calendar-calendar .week-view .full tr td.empty {
+        //    display: none;
+    }
+    .calendar-calendar .month-view .full tr td.single-day:before {
+        content: attr(data-day-of-month) ",\0000a0" attr(headers);
+        font-weight: bold;
+    }
+}
+
+.calendar-calendar .week-view .full td.single-day.no-entry:after {
+    content: "There are no events scheduled on this day.";
+    background: #fff;
+    /* width: 100%; */
+    color: #888;
+}
+
+.calendar-calendar .week-view .full tr.single-day .no-entry .inner {
+    /* height: 50px; */
+    line-height: 16px;
+}
+
+
+/* ---------------- Calendar displays - general -  large screen ------------------- */
+
+@media(min-width:$large_screen_start_width) {
+    /* formatting list views */
+    .list-header {
+        color: $navy;
+        font-weight: bold;
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+    .list-header-week {
+        text-transform: uppercase;
+        display: inline;
+        border-right: 1px solid $navy;
+        padding: 0px 7px 0px 0px;
+    }
+    .list-header-fulldate {
+        display: inline;
+        padding: 7px;
+    }
+    // hiding gray table borders
+    .view-id-large_screen_calendar.view-display-id-block_3 .calendar-calendar td.calendar-agenda-items,
+    tr.not-all-day.and-all-day {
+        border: 1px solid #fff;
+    }
+}
+
+
+/* ------- CALENDAR large screen ---------- */
+
+@media(min-width:$large_screen_start_width) {
+    
+    // left sidebar area
+    .page-calendar.large-screen {
+           /* -- ls sidebar-first   -- */
+        // 1.  dropdown block
+        select#monthselector {
+            margin-bottom: 10px;
+        }
+        #monthselector-label, #yearselector-label {
+            color: $navy;
+            font-size: 14px;
+            padding: 3px 0px;
+            display: none;
+        }
+        #yearselector-label {
+//            margin-top: 10px;
+        }
+        
+        select#monthselector, select#yearselector {
+            height: 32px;
+            font-size: 23px;
+            font-weight: bold;
+            color: $navy;
+            border: 1px solid $lightgray;
+            padding: 0px 3px;
+            margin-top: 5px;
+        }
+        
+        .block-block-11 {
+            position: fixed;
+            top: 122px;
+            width: 195px;
+        }
+        .block-block-11.scrolled {
+            top: 24px;
+            #monthselector-label, #yearselector-label {
+                display: block;   
+            }
+        }
+        
+        
+        
+        
+        // 2.  mini month display
+        
+        section.block-views-large-screen-calendar-block-6 {
+            position: fixed;
+            width: 230px;
+            top: 225px;
+            .view-header {
+                display: none;
+            }
+        }
+        // for w admin menu, but those admin menu classes added late after page load..?
+        .adminimal-menu section.block-views-large-screen-calendar-block-6 {
+            //            top: 100px;
+        }
+        section.block-views-large-screen-calendar-block-6.scrolled {
+            top: 150px;
+        }
+        section.block-views-large-screen-calendar-block-6 {
+            .view .date-nav-wrapper {
+                //                 height: 85px;
+//                height: 70px;
+                .date-heading {
+                    background: $lightgray;
+                    //                    text-align: center;
+                    padding: 10px 5px;
+                    font-size: 14px;
+                    display: none;
+                }
+                .date-prev,
+                .date-next {
+                    background: none;
+                    padding: 12px 0px;
+                    a {
+                        padding: 12px 8px;
+                        font-size: 16px;
+                    }
+                }
+                ul.pager {
+                    display: none;
+                }
+
+            }
+        }
+        //calendar mini theming see calendar mini in section for general calendar views
+        // 3. week view exposed filters
+        form#views-exposed-form-large-screen-calendar-block-3 {
+            position: fixed;
+            width: 230px;
+            //            margin-top: 315px;
+            margin-top: 330px;
+            //            top: 400px;
+        }
+        form#views-exposed-form-large-screen-calendar-block-3.scrolled {
+            //            top: 385px;
+            //            background: pink;
+            //            margin-top: 260px;
+            margin-top: 250px;
+        }
+        form {
+            .views-exposed-widget.views-reset-button
+            .views-exposed-widget.views-submit-button {
+                /* height: 60px; */
+                margin-top: -15px;
+            }
+            .views-exposed-widget.views-reset-button button {
+                background: $lightgray;
+                border: 1px solid $medgray;
+                color: $darkgray;
+            }
+        }
+        form#views-exposed-form-large-screen-calendar-block-3 .description {
+            display: none;
+        }  
+        #edit-field-tags-tid-wrapper label {
+            padding-bottom: 5px;
+        }
+       
+        #edit-field-tags-tid-wrapper > label,
+        #edit-field-event-type-tid-wrapper > label {
+            font-weight: normal;
+            color: $navy;
+            font-size: 14px;
+            padding-bottom: 10px;
+            text-transform: uppercase;
+            
+        }
+        
+        
+        
+        
+    } /* -------- end of calendar large screen left sidebar -- */
+    /* ------------- large screen main page GENERAL CALENDAR ----------------- */
+    
+    
+             // pager circles
+    .calendar-nav-pager-arrow-back,
+    .calendar-nav-pager-arrow-next {
+        border: 1px solid gray;
+        border-radius: 24px;
+    }
+    .calendar-nav-pager-arrow-back {
+        padding: 10px 15px 12px 13px;
+    }
+    .calendar-nav-pager-arrow-next {
+        padding: 10px 13px 12px 15px;
+    }
+
+    //pager gray sections
+    .calendar-nav-pager-arrow-back,
+    .calendar-nav-pager-arrow-next {
+        padding: 28px 15px 27px 15px;
+        background: $lightgray;
+    }
+    
+    /* ---------- main page section: Calendar weekview list -- */
+    .large-screen-calendar-weekview {
+        //hide calendar pages
+        #page-title,
+        .view-id-calendar_pages {
+            display: none;
+        }
+        // week view top navigation  
+        section.block.block-block.block-block-10 {
+            //weekday navigation on top
+
+            margin-left: 5px;
+            .view-header {
+                display: none;
+            }
+        }
+        #large-calendar-nav-header {
+            padding: 0px 0px 20px;
+            @include display-flex();
+            #calendar-view-links {
+                @include display-flex();
+                justify-content: flex-end;
+                width: 660px;
+                padding-top: 8px;
+            }
+            #calendar-view-links a {
+                padding: 5px 5px 1px;
+                font-weight: bold;
+                color: $medgray;
+                margin: 0px 10px;
+            }
+            #calendar-view-links a.current {
+                border-bottom: 3px solid $navy;
+                color: $navy;
+            }
+        }
+        #large-calendar-nav-container {
+            @include display-flex();  
+            justify-content: space-between;
+            margin-bottom: 45px;
+        }
+        .calendar-nav-section {
+            width: 100px;
+            font-size: 33px;
+            #day-1, #day-2, #day-3, #day-4, #day-5, #day-6, #day-7 {
+                background: $medblue;
+            }
+        }
+        .safari .calendar-nav-section {
+            display: inline-block;
+        }
+        .calendar-nav-section .calendar-nav-item {
+            box-shadow: none;
+            .day-navigation-day-items {
+                padding-bottom: 4px;
+            }
+        }
+
+        div#calendar-nav-pager {
+            margin: 0px;
+            width: 70px;
+            @include display-flex();
+            justify-content: flex-end;
+        }
+        div#calendar-nav-pager div {
+            border: 1px $medgray solid;
+            padding: 5px;
+            margin: 3px;
+            background: #fff;
+            width: 27px;
+            height: 27px;
+            color: $medgray;
+            display: inline-block;
+            text-align: center;
+        }
+
+  
+        /* ----KarenS code, but for large calendar week ----- */
+        /* -------come back to this and see if this is all necessary, strip some out - */
+        .calendar-calendar .month-view table.full {
+            position: relative;
+        }
+        .calendar-calendar .month-view .full tr td {
+            width: 100%;
+            float: left;
+            text-align: left;
+        }
+        .calendar-calendar tbody tr td {
+            background: none;
+        }
+        .calendar-calendar .month-view .full tr.single-day {
+            border-top: 1px solid #ccc;
+        }
+        .calendar-calendar .month-view .full tr td.single-day:before {
+            content: attr(data-day-of-month) ",\0000a0" attr(headers);
+            font-weight: bold;
+        }
+        .calendar-calendar .month-view .full thead tr,
+        .calendar-calendar .month-view .full tr th.days,
+        .calendar-calendar .month-view .full tr td.date-box {
+            display: none;
+        }
+        /* trying out code to make it a list view */
+        section.block.block-views.block-views-large-screen-calendar-block-3 thead {
+            display: none;
+        }
+        tr.not-all-day.and-all-day td {
+            display: block;
+            width: 100%;
+        }
+        // formatting week list weekview
+        .block-views-large-screen-calendar-block-3 {
+            .view-header {
+                display: none;
+            }
+        }
+        .calendar-items-container {
+            width: 100%;
+            float: left;
+            .calendar.weekview.all-day-items {
+                width: 100%!important;
+                .item,
+                .view-item.view-item-large_screen_calendar {
+                    width: 100%!important;
+                    overflow: auto;
+                }
+                .calendar.weekview {
+                    width: 100%!important;
+                }
+                @include display-flex();
+                justify-content: flex-start;
+                .views-field {
+                    //                    width: 100%!important;
+                }
+            }
+        }
+        .calendar-calendar tr:nth-of-type(even) {
+            background: #fff;
+        }
+    .calendar.weekview.all-day-items {
+            padding: 0px!important;
+        }
+    } /* END  - .large-screen-calendar-weekview */
+}
+
+/* ----------------- formatting fields for large-screen calendar views  -- */
+//week view adjusting week list block display
+.page-calendar.large-screen {
+    .view-id-large_screen_calendar.view-display-id-block_3 {
+        padding-top: 15px;
+    }
+    .view-large-screen-calendar { 
+        .view-item {
+            padding: 10px 0px;
+            border-bottom: 1px solid $lightgray;
+            margin-bottom: 15px;
+        }
+        .empty-text {
+            border-bottom: 1px solid $lightgray;
+            margin-bottom: 15px;
+        }
+        .views-field.views-field-field-thumbnail {
+            display: inline;
+            float: left;
+            margin: 0px 15px 0px 0px;
+        }
+        .views-field.views-field-title {
+            font-size: 16px;
+        }
+        .views-field.views-field-field-event-price {
+            font-weight: bold;
+            color: green;
+        }
+        span.views-field.views-field-field-event-date {
+            display: inline;
+            float: left;
+            text-transform: uppercase;
+        }
+        span.views-field.views-field-field-event-date-1 {
+            display: inline;
+            padding-left: 4px;
+        }
+
+        .views-field.views-field-field-tickets-url.ticket-button {
+            //            background: #cecece;
+            //            padding: 4px 12px;
+            float: right;
+            margin-top: -15px;
+            .green-button {
+                background-color: $green!important;
+                padding: 9px 18px!important;
+                font-size: 12px;
+                a {
+                    color: #fff;
+                }
+            }
+            .green-button.Free {
+                // if needed
+            }
+            .gray-button {
+                padding: 9px 12px!important;
+                font-size: 12px;
+                
+            }
+        } // end tickets button
+        span.views-field.views-field-field-free {
+            display: inline-block;
+            margin: 6px 0px!important;
+        }
+    } 
+}
+
+
+/* ------end a large screen media   -*/
+
+
+/* ---- end weekview for large screen ----*/
+
+.view-id-mobile_calendar.view-display-id-block_4,
+.view-id-mobile_calendar.view-display-id-block_6 {
+    z-index: 10;
+    .view-header {
+        display: none;
+    }
+    .view-content h3 {
+        margin-top: 0px;
+    }
+}
+
+
+/*-- General: formatting day header -- */
+
+.day-header {
+    display: block;
+    /* justify-content: center; */
+    background: $lightgray;
+    align-items: center;
+    border-bottom: 1px solid $medgray;
+    /* height: 100px; */
+    /* margin-top: -10px; */
+}
+
+
+/*
+.day-header-inner.inner-bottom,
+.day-header-inner.inner-top {
+                display: -webkit-box;             display: -moz-box;             display: -ms-flexbox;             display: -webkit-flex;             display: flex;
+    width: 90%;
+    height: 60px;
+    color: $navy;
+    align-items: center;
+    justify-content: center;
+} */
+
+.day-header-inner.inner-bottom,
+.day-header-inner.inner-top {
+    @include display-flex();
+    width: 100%;
+    /* height: 60px; */
+    color: #002e5d;
+    padding: 2%;
+    align-items: center;
+    justify-content: center;
+}
+
+.day-header-inner.inner-top {
+    padding: 10px 2%;
+}
+
+.day-header-inner.inner-bottom {
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 14px;
+    padding-bottom: 15px;
+}
+
+.day-header-inner-top-left {
+    padding: 0;
+    width: 30%;
+    text-align: right;
+    padding-right: 2%;
+}
+
+.day-header-inner-top-right {
+    border-left: 1px solid $navy;
+    padding: 6px 0% 6px 5%;
+    /* padding: 0px 7%; */
+    width: 60%;
+}
+
+.day-header-day {
+    text-transform: lowercase;
+    margin-right: 7%;
+    font-size: 50px;
+}
+
+.day-header-week {
+    text-transform: lowercase;
+    font-size: 29px;
+    font-weight: bold;
+}
+
+.view-id-mobile_calendar.view-display-id-block_5 .day-header-week {
+    margin-bottom: 10px;
+}
+
+.day-header-monthyear {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.mobile-first-calendar-dayview .view-id-mobile_calendar.view-display-id-block_4 .panel-2col .panel-col-first {
+    float: left;
+    width: 25%;
+    /*    margin-right: 3%;*/
+    margin-right: 0%;
+    margin-left: 5%;
+    margin-top: 7px;
+}
+
+.mobile-first-calendar-dayview .view-id-mobile_calendar.view-display-id-block_4 .panel-2col .panel-col-last {
+    float: left;
+    width: 62%;
+    margin-right: 5%;
+}
+
+.mobile-first-calendar-weekview {
+    #page-title,
+    .view-calendar-pages {
+        display: none;
+    }
+}
+
+.mobile-first-calendar-dayview {
+    #page-title,
+    .view-calendar-pages {
+        display: none;
+    }
+}
+
+
+/* adjustments for day */
+
+.view-id-mobile_calendar.view-display-id-block_6 {
+    margin-top: -16px;
+    .view-header,
+    .form-item.form-type-select.form-item-field-event-type-tid .description {
+        display: none;
+    }
+    /*-- formatting day header -- */
+    .day-header-week {
+        margin-bottom: 0px;
+    }
+    .day-header-inner.inner-bottom {
+        margin-top: -10px;
+    }
+    .view-item.view-item-mobile_calendar {
+        padding: 10px 20px;
+    }
+    .view.view-mobile-calendar.view-id-mobile_calendar .views-row {
+        padding: 10px 20px;
+        margin: 0px;
+    }
+}
+
+// MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH
+.mobile-first-calendar-monthview {
+    #page-title,
+    .view-calendar-pages {
+        display: none;
+    }
+}
+
+.mobile-first {
+    .calendar-calendar .month-view table.mini {
+        width: 98%;
+        margin-left: 2%;
+        td {
+            padding: 6px 1% 8px;
+        }
+    }
+}
+
+.view-id-mobile_calendar.view-display-id-block_8 {
+    .date-nav {
+        height: 30px;
+    }
+    .date-next a,
+    .date-prev a {
+        display: none!important;
+    }
+}
+#monthview-year-button {
+    margin: 20px;
+}
+
+// YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR
+
+/* -------------- Year View ------------- */
+
+
+/* - navigation - */
+
+
+/* --------- mobile year view --------------- */
+
+.mobile-first-calendar-yearview .calendar-nav-section {
+    .calendar-nav-item {
+        @include display-flex();
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+    }
+}
+
+.mobile-first-calendar-monthview .calendar-nav-section,
+.mobile-first-calendar-yearview .calendar-nav-section {
+    #month-7,
+    #month-1 {
+        background: $navy;
+    }
+    #month-8,
+    #month-2 {
+        background: lighten($dullnavy, 5%);
+    }
+    #month-9,
+    #month-3 {
+        background: desaturate(lighten($dullnavy, 10%), 25%);
+    }
+    #month-10,
+    #month-4 {
+        background: desaturate(lighten($dullnavy, 15%), 27%);
+    }
+    #month-11,
+    #month-5 {
+        background: desaturate(lighten($dullnavy, 20%), 29%);
+    }
+    #month-12,
+    #month-6 {
+        background: desaturate(lighten($dullnavy, 25%), 31%);
+    }
+    /*
+    #month-7 { 
+        background: desaturate(lighten($dullnavy,30%), 33%);
+    } 
+    #month-8 {  
+        background: desaturate(lighten($dullnavy,35%), 35%);
+    }
+    #month-9 { 
+        background: desaturate(lighten($dullnavy,40%), 37%);
+    }
+    #month-10 { 
+        background: desaturate(lighten($dullnavy,45%), 39%);
+    }
+    #month11 { 
+        background: desaturate(lighten($dullnavy,50%), 41%);
+    }
+    #month-12 { 
+        background: desaturate(lighten($dullnavy,55%), 43%);
+    }
+*/
+}
+
+.calendar-nav-section.hidden {
+    display: none;
+}
+
+.mobile-first-calendar-yearview {
+    #page-title,
+    .view-calendar-pages {
+        display: none;
+    }
+}
+
+.mobile-calendar-yearview {
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+    h2 {
+        color: $navy;
+    }
+    .month-title {
+        background: $lightgray;
+        padding: 8px;
+        font-size: 24px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .month-header #header-0 {
+        margin-left: 0px;
+    }
+}
+
+.month-header.calendar-yearview-month {
+    margin-top: 20px;
+}
+
+//adjusting space within each month
+.month-header.calendar-yearview-month,
+.calendar-yearview-month.month-inner {
+    width: 96%;
+    margin-left: 4%;
+}
+
+
+/* // was looking at this if menu section couldn't be made to go above main content so scrolling didn't go up to the very top underneath the menu..
+.month-header-wrapper {
+    height: 100px;
+    padding-top: 45px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+#January.month-header-wrapper {
+    height: 60px;
+    padding-top: 0px;
+    margin-top: 0px;
+}  
+*/
+
+
+/* // normal to ignore wrapper sizing
+.month-header-wrapper {
+    height:60px;
+    padding-top: 0px;
+} */
+
+.calendar-yearview-month {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.calendar-yearview-month.month-inner {
+    margin-bottom: 30px;
+}
+
+.page-calendar-year {
+    .calendar-nav-section {
+        font-size: 18px;
+        text-transform: uppercase
+    }
+    .box {
+        background: $lightgray;
+        color: $navy;
+        width: 10%;
+        /* max-width: 30px; */
+        margin-left: 4%;
+        text-align: center;
+        font-size: 14px;
+        //    padding: 8px 1% 10px;
+        margin-bottom: 8px;
+        .box-inner {
+            //           padding: 8px 1% 10px;
+            padding: 6px 1% 8px;
+        }
+    }
+    .box.empty-box a.box-link {
+        //    width: 10%;
+        //    margin-left: 4%;
+        //    font-size: 14px;
+        //    padding: 8px 1% 10px;
+        //    margin-bottom: 8px;
+    }
+    .box.weekday-header-box {
+        background: #fff;
+        font-weight: bold;
+    }
+    .box.empty-box {
+        background: #fff;
+        color: #fff;
+    }
+    // first column
+    #header1-0,
+    .box.box-0 {
+        margin-left: 0px;
+    }
+    // last column
+    #header1-6,
+    .box.box-6 {
+        margin-right: 0px;
+    }
+}
+
+.calendar-calendar .month-view .full td.single-day.no-entry:after {
+    content: "There are no events scheduled on this day.";
+    background: #fff;
+    /* width: 100%; */
+    color: #888;
+}
+
+.calendar-calendar .month-view .full tr.single-day .no-entry .inner {
+    /* height: 50px; */
+    line-height: 16px;
+}
+
+
+/* --------- mobile year view --------------- */
+
+.large-screen-calendar-yearview {
+    h1#page-title {
+        @include display-flex();
+        justify-content: center;
+    }
+}
+
+.large-calendar-yearview {
+    @include display-flex();
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+@media (min-width: $large_screen_start_width) {
+    .month-container {
+        width: 250px;
+        display: block;
+        //    min-width: 300px;
+        margin: 20px;
+    }
+    .month-header div#header-0 {
+        margin-left: 0px;
+    }
+}
+
+
+/* ----------- footer ----------- *?
+
+/* -- mobile footer -- */
+
+footer.l-footer.row {
+    @media(max-width: $mobile_max_width) {
+        @include display-flex();
+        justify-content: flex-end;
+        padding: 0px;
+        margin: 0px 0px 0px 20%;
+        width: 80%;
+        @include main-outer-shadowbox();
+    }
+        
+        
+//        width: 100%;
+//        position: relative;
+//        bottom: 2px;
+//        height: 55px;
+//        padding: 0px;
+//        margin: 0px;
+        /* background: #002255; */
+        color: white;
+        text-align: center;
+        border-bottom: 1px solid #002255; 
+        div {
+            padding: 10px 0px;
+            background: $navy;
+        }
+    }
+}
