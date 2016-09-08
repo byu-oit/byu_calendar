@@ -4978,13 +4978,14 @@ label.error {
     padding: 0 15px;
     line-height: 45px;
     background: #fff;
+    font-weight: normal;
+    padding: 0px 25px;
   }
   /* line 444, ../../../../../../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zurb-foundation-4.3.2/scss/foundation/components/_top-bar.scss */
   .top-bar-section li a:not(.button):hover {
     background: #9b9b9b;
     color: #fff;
-    font-weight: normal;
-    padding: 0px 25px;
+
   }
   /* line 452, ../../../../../../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zurb-foundation-4.3.2/scss/foundation/components/_top-bar.scss */
   .top-bar-section .has-dropdown > a {
