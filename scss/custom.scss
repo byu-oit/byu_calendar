@@ -127,6 +127,9 @@ a {
         justify-content: center;
         border-bottom: 1px solid $lightgray;
         background: #fff;
+        ul {
+            background: #fff;
+        }
         li {
             list-style-type: none;
             text-transform: uppercase;
@@ -135,8 +138,9 @@ a {
                 font-weight: normal;
             }
         }
-        li.hover {
+        li.hover > a:not(.button) {
             background: $medgray;
+            color: #fff;
         }
         li.active {
             background: $gray;
@@ -147,6 +151,8 @@ a {
 
     
     }
+
+
 }
 
 
