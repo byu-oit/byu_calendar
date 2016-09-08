@@ -128,7 +128,7 @@ a {
         border-bottom: 1px solid $lightgray;
         background: #fff;
         ul {
-            background: #fff;
+            background: #fff!important;
         }
         li {
             list-style-type: none;
@@ -136,10 +136,11 @@ a {
             a {
                 color: $navy;
                 font-weight: normal;
+                background: #fff!important;
             }
         }
-        li.hover > a:not(.button) {
-            background: $medgray;
+        ul li.hover > a:not(.button) {
+            background: $medgray!important;
             color: #fff;
         }
         li.active {
