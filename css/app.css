@@ -4718,11 +4718,11 @@ label.error {
 }
 /* line 212, ../../../../../../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zurb-foundation-4.3.2/scss/foundation/components/_top-bar.scss */
 .top-bar.expanded .title-area {
-  background: #111;
+/*  background: #111;*/
 }
 /* line 215, ../../../../../../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zurb-foundation-4.3.2/scss/foundation/components/_top-bar.scss */
 .top-bar.expanded .toggle-topbar a {
-  color: #888;
+  color: #002e5d;
 }
 /* line 216, ../../../../../../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zurb-foundation-4.3.2/scss/foundation/components/_top-bar.scss */
 .top-bar.expanded .toggle-topbar a span {
@@ -4744,7 +4744,7 @@ label.error {
   width: 100%;
   height: auto;
   display: block;
-  background: #222;
+  background: #fff;
   font-size: 16px;
   margin: 0;
 }
@@ -4761,12 +4761,12 @@ label.error {
 .top-bar-section ul li > a {
   display: block;
   width: 100%;
-  color: #fff;
+  color: #002e5d;
   padding: 12px 0 12px 0;
   padding-left: 15px;
   font-size: 0.8125em;
   font-weight: bold;
-  background: #222;
+  background: #fff;
 }
 /* line 269, ../../../../../../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zurb-foundation-4.3.2/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li > a.button {
