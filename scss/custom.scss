@@ -229,7 +229,7 @@ main.row.l-main {
 
 @media (min-width: $large_screen_start_width) {
     div#page-container {
-        padding: 40px 0px 30px;
+        padding: 30px 0px;
         min-height: 700px;  // this is for with no content.. temporary solution
     }
     .columns.sidebar-first.thin-left-sidebar {
@@ -714,7 +714,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         
         .block-block-11 {
             position: fixed;
-            top: 177px;
+            top: 167px;
             width: 195px;
         }
         .block-block-11.scrolled {
@@ -732,7 +732,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         section.block-views-large-screen-calendar-block-6 {
             position: fixed;
             width: 275px;
-            top: 280px;
+            top: 270px;
             .view-header {
                 display: none;
             }
