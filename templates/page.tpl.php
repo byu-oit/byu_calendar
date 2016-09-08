@@ -2,7 +2,7 @@
 <div role="document" class="page">
 
   <!--.l-header region -->
-  <header role="banner" class="l-header">
+  <header role="banner" class="l-header" <?php  /* print header options like if it has a menu or no menu */ ?>
 
     <?php if ($top_bar): ?>
       <!--.top-bar -->
