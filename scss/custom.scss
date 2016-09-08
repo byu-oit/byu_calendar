@@ -78,37 +78,57 @@ a {
 }
 /* --- menu -------- */
 
-.top-bar {
-    overflow: hidden;
-    height: 45px;
-    line-height: 45px;
-    position: absolute;
-    width: 100%;
-    background: $navy;
-    margin-bottom: 0;
-    @media(max-width: $mobile_max_width) {
-        position: fixed;
-        z-index: 50;
+@media(max-width: $mobile_max_width) {
+    .top-bar {
+        overflow: hidden;
+        height: 45px;
+        line-height: 45px;
+//        position: absolute;
+        width: 100%;
+        background: $navy;
+        margin-bottom: 0;
+        @media(max-width: $mobile_max_width) {
+            position: fixed;
+            z-index: 50;
+        }
+        @media(min-width: $large_screen_start_width) {
+            position: relative;
+        }
     }
-    @media(min-width: $large_screen_start_width) {
+
+    .top-bar-section ul {
+        background: none;
+    }
+
+    .top-bar .toggle-topbar.menu-icon {
+        //    right: 68px;
+    }
+
+    ul#main-menu li,
+    ul#main-menu li a {
+            background: $lightgray;
+            color: $navy;
+            width: 80%;
+            float: right;
+    }
+}
+
+/* ------- large screen menu =------- */
+
+@media(min-width: $large_screen_start_width) {
+    
+    
+    .top-bar-section {
         position: relative;
+        top: 45px;
+        display: flex;
+        justify-content: center;
+        li {
+            list-style-type: none;
+        }
+
+    
     }
-}
-
-.top-bar-section ul {
-    background: none;
-}
-
-.top-bar .toggle-topbar.menu-icon {
-    //    right: 68px;
-}
-
-ul#main-menu li,
-ul#main-menu li a {
-    background: $lightgray;
-    color: $navy;
-    width: 80%;
-    float: right;
 }
 
 
