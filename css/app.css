@@ -4900,7 +4900,7 @@ label.error {
 @media only screen and (min-width: 940px) {
   /* line 389, ../../../../../../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zurb-foundation-4.3.2/scss/foundation/components/_top-bar.scss */
   .top-bar {
-    background: #111;
+    background: #002e5d;
     *zoom: 1;
     overflow: visible;
   }

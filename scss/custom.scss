@@ -718,7 +718,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             width: 195px;
         }
         .block-block-11.scrolled {
-            top: 29px;
+            top: 29px; // was 24px, maybe switch back
             #monthselector-label, #yearselector-label {
                 display: block;   
             }
