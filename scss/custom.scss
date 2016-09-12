@@ -734,9 +734,10 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         // 2.  mini month display
         
         section.block-views-large-screen-calendar-block-6 {
-            position: fixed;
-            width: 275px;
-            top: 265px;
+            position: relative;
+            width: 200px;
+            top: 60px;
+//            top: 265px;
             .view-header {
                 display: none;
             }
@@ -779,16 +780,18 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         // 3. view exposed filters
         
         form#views-exposed-form-large-screen-calendar-block-3 {
-            position: fixed;
+            position: relative;
             width: 230px;
+            top: 240px;
             //            margin-top: 315px;
-            margin-top: 330px;
+//            margin-top: 330px;
             //            top: 400px;
         }
         form#views-exposed-form-large-screen-calendar-block-3.scrolled {
             //            top: 385px;
             //            background: pink;
             //            margin-top: 260px;
+            position: fixed;
             margin-top: 250px;
         }
         form {
