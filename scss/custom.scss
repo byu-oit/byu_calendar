@@ -715,11 +715,13 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         }
         
         .block-block-11 {
-            position: fixed;
-            top: 167px;
+            position: relative;
+            top: 48px;
+//            top: 167px;
             width: 195px;
         }
         .block-block-11.scrolled {
+            position: fixed;
             top: 29px; // was 24px, maybe switch back
             #monthselector-label, #yearselector-label {
                 display: block;   
@@ -744,6 +746,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             //            top: 100px;
         }
         section.block-views-large-screen-calendar-block-6.scrolled {
+            position: fixed;
             top: 160px;
         }
         section.block-views-large-screen-calendar-block-6 {
