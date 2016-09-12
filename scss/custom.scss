@@ -862,7 +862,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         background: $lightgray;
     }
     
-    /* ---------- main page section: Calendar weekview list -- */
+    /* ---------- main page section: Calendar various lists -- */
     .large-screen.page-calendar {
         //hide calendar pages
         #page-title,
@@ -870,6 +870,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             display: none;
         }
         // week view top navigation  
+        
         section.block.block-block.block-block-10 {
             //weekday navigation on top
 
@@ -938,7 +939,19 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             text-align: center;
         }
 
-  
+        /* -- end large screen general calendar nav blocks --- */
+        /* main page large screen general calendar body / page blocks:  */
+        
+        // hiding view headers 
+//        .block-views-large-screen-calendar-block-8,
+//        .block-views-large-screen-calendar-block-3 
+        .calendar-list-type-block {
+            .view-header {
+                display: none;
+            }
+        }
+        
+        
         /* ----KarenS code, but for large calendar week ----- */
         /* -------come back to this and see if this is all necessary, strip some out - */
         .calendar-calendar .month-view table.full {
@@ -973,11 +986,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             width: 100%;
         }
         // formatting week list weekview
-        .block-views-large-screen-calendar-block-3 {
-            .view-header {
-                display: none;
-            }
-        }
+        
         .calendar-items-container {
             width: 100%;
             float: left;
