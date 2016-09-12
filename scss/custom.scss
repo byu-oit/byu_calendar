@@ -724,7 +724,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             position: fixed;
             top: 29px; // was 24px, maybe switch back
             #monthselector-label, #yearselector-label {
-                display: block;   
+//                display: block;   
             }
         }
         
@@ -782,7 +782,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         form#views-exposed-form-large-screen-calendar-block-3 {
             position: relative;
             width: 230px;
-            top: 240px;
+            top: 60px;
             //            margin-top: 315px;
 //            margin-top: 330px;
             //            top: 400px;
