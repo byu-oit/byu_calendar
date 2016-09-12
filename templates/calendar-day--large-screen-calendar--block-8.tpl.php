@@ -67,7 +67,7 @@
         <td class="calendar-agenda-items single-day">
           <div class="calendar">
           <div class="inner">
-            <?php print isset($hour['values'][$column]) ? implode($hour['values'][$column]) : '&nbsp;'; ?>
+            <?php /*print isset($hour['values'][$column]) ? implode($hour['values'][$column]) : '&nbsp;'; */ ?>
           </div>
           </div>
         </td>
