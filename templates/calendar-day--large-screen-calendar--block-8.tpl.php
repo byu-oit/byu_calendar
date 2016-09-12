@@ -45,9 +45,7 @@
   </thead>
   <tbody>
     <tr>
-      <td class="<?php print $agenda_hour_class ?>">
-         <span class="calendar-hour"><?php print $by_hour_count > 0 ? t('All day', array(), array('context' => 'datetime')) : ''; ?></span>
-       </td>
+      
       <?php foreach ($columns as $column): ?>
        <td class="calendar-agenda-items multi-day">
          <div class="calendar">
@@ -60,14 +58,12 @@
     </tr>
     <?php foreach ($rows['items'] as $hour): ?>
     <tr>
-      <td class="calendar-agenda-hour">
-        <span class="calendar-hour"><?php print $hour['hour']; ?></span><span class="calendar-ampm"><?php print $hour['ampm']; ?></span>
-      </td>
+     
       <?php foreach ($columns as $column): ?>
         <td class="calendar-agenda-items single-day">
           <div class="calendar">
           <div class="inner">
-            <?php /*print isset($hour['values'][$column]) ? implode($hour['values'][$column]) : '&nbsp;'; */ ?>
+            <?php print isset($hour['values'][$column]) ? implode($hour['values'][$column]) : '&nbsp;';  ?>
           </div>
           </div>
         </td>
