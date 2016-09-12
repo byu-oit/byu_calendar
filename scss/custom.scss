@@ -722,7 +722,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         }
         .block-block-11.scrolled {
             position: fixed;
-            top: 29px; // was 24px, maybe switch back
+            top: 14px; // 29px; // was 24px, maybe switch back
             #monthselector-label, #yearselector-label {
 //                display: block;   
             }
@@ -748,7 +748,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         }
         section.block-views-large-screen-calendar-block-6.scrolled {
             position: fixed;
-            top: 160px;
+            top: 110px;
         }
         section.block-views-large-screen-calendar-block-6 {
             .view .date-nav-wrapper {
@@ -792,7 +792,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             //            background: pink;
             //            margin-top: 260px;
             position: fixed;
-            margin-top: 250px;
+            top: 290px;
         }
         form {
             .views-exposed-widget.views-reset-button
