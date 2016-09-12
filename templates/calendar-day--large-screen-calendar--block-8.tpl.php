@@ -45,7 +45,7 @@
   </thead>
   <tbody>
     <tr>
-      
+
       <?php foreach ($columns as $column): ?>
        <td class="calendar-agenda-items multi-day">
          <div class="calendar">
@@ -58,7 +58,7 @@
     </tr>
     <?php foreach ($rows['items'] as $hour): ?>
     <tr>
-     
+      
       <?php foreach ($columns as $column): ?>
         <td class="calendar-agenda-items single-day">
           <div class="calendar">
