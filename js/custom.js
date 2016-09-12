@@ -77,7 +77,7 @@ jQuery( document ).ready(function( $ ) {
     //  --- large screen week view --- 
      if ( $("body").hasClass("large-screen-calendar-weekview") ) {
         $(document).scroll(function(){ // bind window scroll event
-             if( $('.top-bar').is_on_screen() ) {
+             if( $('#calendar-view-links').is_on_screen() ) {
 //                 console.log('u can see topbar');
                 $('#views-exposed-form-large-screen-calendar-block-3').removeClass('scrolled'); 
                 $('.block-views-large-screen-calendar-block-6').removeClass('scrolled'); 
@@ -86,7 +86,7 @@ jQuery( document ).ready(function( $ ) {
                 $('#views-exposed-form-large-screen-calendar-block-3').addClass('scrolled');
                 $('.block-views-large-screen-calendar-block-6').addClass('scrolled');
                 $('.block-block-11').addClass('scrolled');
-//                console.log('you cant see top bar'); 
+//                console.log('you cant see calendar nav links'); 
             }
         });
      }
