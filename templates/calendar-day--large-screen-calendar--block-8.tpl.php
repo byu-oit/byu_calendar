@@ -50,7 +50,9 @@
        <td class="calendar-agenda-items multi-day">
          <div class="calendar">
          <div class="inner">
-           <?php print isset($hour['values'][$column]) ? implode($hour['values'][$column]) : '&nbsp;';  ?>
+             <div class="multi-day-fields">
+                <?php print isset($rows['all_day'][$column]) ? implode($rows['all_day'][$column]) : '&nbsp;';?>
+             </div>
          </div>
          </div>
        </td>
@@ -58,7 +60,6 @@
     </tr>
     <?php foreach ($rows['items'] as $hour): ?>
     <tr>
-      
       <?php foreach ($columns as $column): ?>
         <td class="calendar-agenda-items single-day">
           <div class="calendar">
