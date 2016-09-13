@@ -793,8 +793,8 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         }
         //calendar mini theming see calendar mini in section for general calendar views
         // 3. view exposed filters
-        
-        form#views-exposed-form-large-screen-calendar-block-3 {
+        // generalized
+        block.left-sidebar-calendar-exposed-filters {
             position: relative;
             width: 230px;
             top: 60px;
@@ -802,7 +802,8 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 //            margin-top: 330px;
             //            top: 400px; 
         }
-        form#views-exposed-form-large-screen-calendar-block-3.scrolled {
+        // generalized
+        block.left-sidebar-calendar-exposed-filters.scrolled {
             //            top: 385px;
             //            background: pink;
             //            margin-top: 260px;
@@ -821,7 +822,8 @@ div#calendar-nav-pager .calendar-nav-pager-back {
                 color: $darkgray;
             }
         }
-        form#views-exposed-form-large-screen-calendar-block-3 .description {
+        // generalized - was form#views-exposed-form-large-screen-calendar-block-3 
+        block.left-sidebar-calendar-exposed-filters .description {
             display: none;
         }  
         #edit-field-tags-tid-wrapper label {

@@ -75,15 +75,15 @@ jQuery( document ).ready(function( $ ) {
     }  // - end mobile year view
     
     //  --- large screen week view --- 
-     if ( $("body").hasClass("large-screen-calendar-weekview") ) {
+     if ( $("body").hasClass("large-screen") ) {
         $(document).scroll(function(){ // bind window scroll event
              if( $('#calendar-view-links').is_on_screen() ) {
 //                 console.log('u can see topbar');
-                $('#views-exposed-form-large-screen-calendar-block-3').removeClass('scrolled'); 
+                $('.left-sidebar-calendar-exposed-filters').removeClass('scrolled'); 
                 $('.block-views-large-screen-calendar-block-6').removeClass('scrolled'); 
                 $('.block-block-11').removeClass('scrolled'); 
             } else {
-                $('#views-exposed-form-large-screen-calendar-block-3').addClass('scrolled');
+                $('.left-sidebar-calendar-exposed-filters').addClass('scrolled');
                 $('.block-views-large-screen-calendar-block-6').addClass('scrolled');
                 $('.block-block-11').addClass('scrolled');
 //                console.log('you cant see calendar nav links'); 
