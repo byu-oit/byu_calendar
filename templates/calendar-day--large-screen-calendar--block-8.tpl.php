@@ -49,10 +49,8 @@
       <?php foreach ($columns as $column): ?>
        <td class="calendar-agenda-items multi-day">
          <div class="calendar">
-         <div class="inner">
-             <div class="multi-day-fields">
+         <div class="inner">  
                 <?php print isset($rows['all_day'][$column]) ? implode($rows['all_day'][$column]) : '&nbsp;';?>
-             </div>
          </div>
          </div>
        </td>

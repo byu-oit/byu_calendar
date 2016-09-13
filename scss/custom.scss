@@ -960,11 +960,11 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             .calendar-calendar .week-view .full td.multi-day div.weekview, 
             .calendar-calendar .day-view .full td.multi-day div.dayview {
                 height: auto;
-                background: none;
+//                background: none;
                 color: #444;
             }
             .item {
-                    background: none;
+                    background: #fff;
             } 
             .multi-day {
             // different styling for multi day items
