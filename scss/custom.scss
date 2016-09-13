@@ -689,7 +689,8 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     }
     
     .calendar-calendar td {
-        width: 100%;
+        //whatever this was for, it needs to be specific - bad for mini month.
+//        width: 100%;
     }
     
 }
