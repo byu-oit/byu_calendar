@@ -24,7 +24,9 @@ $darkgray: #6a6a6b;
 $royal: #003DA5;
 
 //other colors
+$greenlightened: #72B518;
 $green: #6EAE17;
+$greendarkened: #6AA816;
 
 // other
 
@@ -354,7 +356,7 @@ h3, h3 a {
     .form-item {
         height: 22px;
         label {
-            color: $navy;
+            color: $gray;
             padding-left: 8px;
         }
     }
@@ -688,9 +690,9 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         border: 1px solid #fff;
     }
     
-    .calendar-calendar td {
+    .calendar-list-type-block .calendar-calendar td {
         //whatever this was for, it needs to be specific - bad for mini month.
-//        width: 100%;
+        width: 100%;
     }
     
 }
@@ -805,7 +807,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             //            background: pink;
             //            margin-top: 260px;
             position: fixed;
-            top: 290px;
+            top: 285px;
         }
         form {
             .views-exposed-widget.views-reset-button
@@ -1040,6 +1042,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         }
         .views-field.views-field-title {
             font-size: 16px;
+            padding: 0px 0px 5px;
         }
         .views-field.views-field-field-event-price {
             font-weight: bold;
@@ -1059,7 +1062,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             //            background: #cecece;
             //            padding: 4px 12px;
             float: right;
-            margin-top: -15px;
+            margin-top: -20px;
             .green-button {
                 background-color: $green!important;
                 padding: 9px 18px!important;
@@ -1067,6 +1070,12 @@ div#calendar-nav-pager .calendar-nav-pager-back {
                 a {
                     color: #fff;
                 }
+            }
+            .green-button:hover {
+                background: $greenlightened;
+            }
+            .green-button:active {
+                background: $greendarkened;
             }
             .green-button.Free {
                 // if needed
