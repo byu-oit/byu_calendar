@@ -80,8 +80,17 @@ foreach ($day_names as $key => $value) {
         //echo 'year ' . $year;
 //        $datestring = substr($title,0, -4);
         $week = substr($currentDate, -2);
-        $week = $week-2;  // calendar uses the week id of the week before
+        //$week = $week-2;  // calendar uses the week id of the week before
 
+        $startWYear = '1 January ' . $year;
+        //this week start time
+        $thisWeekTime = strtotime($startWYear);
+        $startTime += ((7*($week-1))+2)*24*3600;
+        //put $lastWeekTime into yyyy-mm--dd format
+        $thisWeekStart = date('Y-m-d', $startTime);
+
+        
+        
 //            $title = drupal_get_title();
             //print $title;
             //$title = 'August 7 2016 (32)';
@@ -89,7 +98,7 @@ foreach ($day_names as $key => $value) {
 //            $year = substr($title,-9, 4);
 //            $startTime = strtotime($datestring);
             //adjust 1 week forward because of week id in title is 1 off, too early
-        $startTime = date_timestamp_get ( $dateOb );
+//        $startTime = date_timestamp_get ( $dateOb );
         //$startTime = ((7*($week-1))+2)*24*3600;
         //$startTime += (7*24*3600);
         ?>
