@@ -84,7 +84,7 @@ foreach ($day_names as $key => $value) {
 
         $startWYear = '1 January ' . $year;
         //this week start time
-        $thisWeekTime = strtotime($startWYear);
+        $startTime = strtotime($startWYear);
         $startTime += ((7*($week-1))+2)*24*3600;
         //put $lastWeekTime into yyyy-mm--dd format
         $thisWeekStart = date('Y-m-d', $startTime);
