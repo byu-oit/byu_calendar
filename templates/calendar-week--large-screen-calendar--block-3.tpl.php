@@ -72,7 +72,7 @@ foreach ($day_names as $key => $value) {
         $currentDate = substr($current, -8);  // 2016-W33
         //cho 'current date is ' . $currentDate;
         // '2016-W32';
-        
+        $dateOb = date_create_from_format('Y-W', $currentDate);
         $year = substr($currentDate, 0, 4);
         //echo 'year is ' . $year;
         $lastYear = $year -1;
@@ -80,10 +80,8 @@ foreach ($day_names as $key => $value) {
         //echo 'year ' . $year;
 //        $datestring = substr($title,0, -4);
         $week = substr($currentDate, -2);
-        //$week = $week-2;  // calendar uses the week id of the week before
+        $week = $week-2;  // calendar uses the week id of the week before
 
-        $dateOb = date_create_from_format('Y-W', ($year . '-' . $week);
-        
 //            $title = drupal_get_title();
             //print $title;
             //$title = 'August 7 2016 (32)';
