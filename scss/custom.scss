@@ -960,9 +960,18 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             .calendar-calendar .week-view .full td.multi-day div.weekview, 
             .calendar-calendar .day-view .full td.multi-day div.dayview {
                 height: auto;
-                background: #fff;
+                background: none;
                 color: #444;
             }
+            .multi-day {
+            // different styling for multi day items
+                .item {
+                    background: none;
+                }    
+                
+            }
+            
+            
         }
         
         
@@ -1046,6 +1055,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             border-bottom: 1px solid $lightgray;
             margin-bottom: 15px;
         }
+        .multi-day img,
         .views-field.views-field-field-thumbnail {
             display: inline;
             float: left;
