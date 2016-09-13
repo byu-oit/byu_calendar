@@ -955,6 +955,14 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             .view-header {
                 display: none;
             }
+            
+            .calendar-calendar .month-view .full td.multi-day div.monthview, 
+            .calendar-calendar .week-view .full td.multi-day div.weekview, 
+            .calendar-calendar .day-view .full td.multi-day div.dayview {
+                height: auto;
+                background: #fff;
+                color: #444;
+            }
         }
         
         
