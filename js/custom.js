@@ -75,7 +75,7 @@ jQuery( document ).ready(function( $ ) {
     }  // - end mobile year view
     
     //  --- large screen week view --- 
-     if ( $("body").hasClass("large-screen") ) && ( $("body").hasClass("page-calendar") ) {
+     if (( $("body").hasClass("large-screen") ) && ( $("body").hasClass("page-calendar")) ) {
         $(document).scroll(function(){ // bind window scroll event
              if( $('#calendar-view-links').is_on_screen() ) {
 //                 console.log('u can see topbar');
