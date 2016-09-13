@@ -63,10 +63,10 @@ $params = array(
               $dayofweek = date('w', $date);
               $week = date('W',$date);
               if($dayofweek > 0) { // adjust for sunday, have its id go with week after it, not week before
-                  $week = $week-2;
+                  $week = $week+1;
               }
               else {
-                  $week = $week -1;
+//                  $week = $week -1;
               }
               if($rowid == '1' and $day > 24) {
                   $class = ' last-month';
