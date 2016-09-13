@@ -89,8 +89,9 @@ foreach ($day_names as $key => $value) {
 //            $year = substr($title,-9, 4);
 //            $startTime = strtotime($datestring);
             //adjust 1 week forward because of week id in title is 1 off, too early
-        $startTime = date_format($dateOb, 'U');    
-        $startTime += (7*24*3600);
+        $startTime = date_timestamp_get ( $dateOb );
+        //$startTime = ((7*($week-1))+2)*24*3600;
+        //$startTime += (7*24*3600);
         ?>
       <?php $curpos = 0; ?>
       <?php foreach ($columns as $index => $column): ?>
