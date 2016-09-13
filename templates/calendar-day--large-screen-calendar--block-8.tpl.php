@@ -50,7 +50,7 @@
        <td class="calendar-agenda-items multi-day">
          <div class="calendar">
          <div class="inner">
-           <?php print isset($rows['all_day'][$column]) ? implode($rows['all_day'][$column]) : '&nbsp;';?>
+           <?php print isset($hour['values'][$column]) ? implode($hour['values'][$column]) : '&nbsp;';  ?>
          </div>
          </div>
        </td>
