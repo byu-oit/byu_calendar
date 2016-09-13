@@ -68,14 +68,29 @@ foreach ($day_names as $key => $value) {
       
         
         <?php 
-            $title = drupal_get_title();
+        $current = current_path();
+        $currentDate = substr($current, -8);  // 2016-W33
+        //cho 'current date is ' . $currentDate;
+        // '2016-W32';
+        $dateOb = date_create_from_format('Y-W', $currentDate);
+        $year = substr($currentDate, 0, 4);
+        //echo 'year is ' . $year;
+        $lastYear = $year -1;
+        $nextYear = $year +1;
+        //echo 'year ' . $year;
+//        $datestring = substr($title,0, -4);
+        $week = substr($currentDate, -2);
+        $week = $week-2;  // calendar uses the week id of the week before
+
+//            $title = drupal_get_title();
             //print $title;
             //$title = 'August 7 2016 (32)';
-            $datestring = substr($title,0, -4);
-            $year = substr($title,-9, 4);
-            $startTime = strtotime($datestring);
+//            $datestring = substr($title,0, -4);
+//            $year = substr($title,-9, 4);
+//            $startTime = strtotime($datestring);
             //adjust 1 week forward because of week id in title is 1 off, too early
-            $startTime += (7*24*3600);
+        $startTime = date_format($dateOb, 'U');    
+        $startTime += (7*24*3600);
         ?>
       <?php $curpos = 0; ?>
       <?php foreach ($columns as $index => $column): ?>
