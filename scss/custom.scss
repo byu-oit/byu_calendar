@@ -57,7 +57,7 @@ $nav_gradient_2: 5%;
 
 @mixin button {
     text-align: center;
-    padding: 9px 0px;
+    padding: 9px 0px!important;
     
 }
 
@@ -90,6 +90,7 @@ a {
     @include button;
     background-color: $green!important;
 //    padding: 9px 18px!important;
+    width: 120px;
     font-size: 12px;
     a {
         color: #fff;
