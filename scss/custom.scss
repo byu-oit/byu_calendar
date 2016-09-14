@@ -68,6 +68,9 @@ $nav_gradient_2: 5%;
 a {
     color: $royal;
 }
+a:hover {
+    text-decoration: none;
+}
 
 .node-readmore {
     visibility: hidden;
