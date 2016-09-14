@@ -109,7 +109,7 @@ $weekEndTime = $weekStartTime + (6*24*3600);
               
               ?>
           <td id="<?php print $cell['id']; ?>" class="<?php print $cell['class']; print $class; ?>">
-              <div class="month mini-day-on  <?php print $id . ' weekday-' . $dayofweek;  ?>">
+              <div class="month mini-day-on  <?php print $dateTime . " " . $id . ' weekday-' . $dayofweek;  ?>">
                 <a href="../week/<?php print $year . '-W' . $week;  ?>"><?php print $day;  ?></a>
               </div>
           </td>
