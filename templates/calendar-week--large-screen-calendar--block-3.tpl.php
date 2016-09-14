@@ -78,7 +78,7 @@ foreach ($day_names as $key => $value) {
         $lastYear = $year -1;
         $nextYear = $year +1;
 
-        $urlweek = substr($currentDate, -2);
+        $week = substr($currentDate, -2);
         //$week = $week-2;  // calendar uses the week id of the week before
 
         $startWYear = '1 January ' . $year;
@@ -90,16 +90,16 @@ foreach ($day_names as $key => $value) {
         // week 2 started on Jan 
         $weekStartJanDay = 7 - $yearStartWeekday;
         $week2StartTime = $yearStartTime + ($weekStartJanDay*24*3600); 
-        $weeksToAdd = $urlweek - 2;
+        $weeksToAdd = $week - 2;
         $weekStartTime = $week2StartTime + ((7*($weeksToAdd)))*24*3600;
         $weekEndTime = $weekStartTime + (6*24*3600);
 
 
 
         //put $lastWeekTime into yyyy-mm--dd format
-        $thisWeekStart = date('Y-m-d', $weekStartTime);
-        $thisWeekEnd = date('Y-m-d', $weekEndTime);
-        //echo $thisWeekStart . ' through ' . $thisWeekEnd;
+        $weekStart = date('Y-m-d', $weekStartTime);
+        $weekEnd = date('Y-m-d', $weekEndTime);
+        //echo $weekStart . ' through ' . $weekEnd;
         
         
         
