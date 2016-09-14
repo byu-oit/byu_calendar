@@ -410,6 +410,7 @@ h3, h3 a {
 //        padding: 4px 0px;
         padding: 6px 0px 2px;
         border: 5px #fff solid;
+        border-bottom: 6px #fff solid;
 //        border-right: 5px white solid;
 //        border-left: 5px white solid;
 //        border-top: 7px white solid;
@@ -833,7 +834,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             //            background: pink;
             //            margin-top: 260px;
             position: fixed;
-            top: 285px;
+            top: 292px;
         }
         form {
             .views-exposed-widget.views-reset-button
