@@ -1104,10 +1104,13 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             font-size: 16px;
             padding: 0px 0px 5px;
         }
-       . views-field.views-field-field-free,
+        .views-field.views-field-field-free,
         .views-field.views-field-field-event-price {
             font-weight: bold;
             color: green;
+        }
+        .views-field.views-field-field-event-price .-Free {
+            display: none;
         }
         span.views-field.views-field-field-event-date {
             display: inline;
