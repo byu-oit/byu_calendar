@@ -63,7 +63,8 @@ $weekStartJanDay = 7 - $yearStartWeekday;
 $week2StartTime = $yearStartTime + ($weekStartJanDay*24*3600); 
 $weeksToAdd = $week - 2;
 $weekStartTime = $week2StartTime + ((7*($weeksToAdd)))*24*3600;
-      echo $weekStartTime;
+//      $dayBeforeStart = $weekStartTime
+//      echo $weekStartTime;
 $weekEndTime = $weekStartTime + (6*24*3600);
 
       
@@ -99,7 +100,7 @@ $weekEndTime = $weekStartTime + (6*24*3600);
                   $class = ' this-month';
               }
                 // if current week, add highlight class
-              if(($dateTime >= $weekStartTime) && ($dateTime <= $weekEndTime)) {
+              if(($dateTime >= ($weekStartTime - 3600)) && ($dateTime <= $weekEndTime)) {
                   $class .= " current-week";
               }
 //              if($week == $currentWeek) {
