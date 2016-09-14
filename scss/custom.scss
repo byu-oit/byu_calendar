@@ -85,6 +85,7 @@ a {
     margin: 10px;
     text-align: center;
     color: $navy;
+    font-size: 12px;
 }
 .green-button {
     @include button;
@@ -1126,7 +1127,6 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         }
         .gray-button {
             padding: 9px 12px!important;
-            font-size: 12px;
 
         }
         // end tickets button
