@@ -1129,6 +1129,17 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             margin-top: -20px;
             
         } 
+        // if there is free/price selected AND tickets availability date, add :
+         span.views-field.views-field-field-event-price + .views-field-field-tickets-available:before,
+        span.views-field.views-field-field-free + .views-field-field-tickets-available:before {
+            content: ": ";
+        }
+        span.views-field.views-field-field-event-price + .views-field-field-tickets-available,
+        span.views-field.views-field-field-free + .views-field-field-tickets-available {
+            margin-left: -2px;
+        }
+        
+        
         .green-button .Free:before {
             content: "FREE ";
         }
