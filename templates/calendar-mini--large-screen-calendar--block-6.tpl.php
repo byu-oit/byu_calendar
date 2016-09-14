@@ -62,9 +62,8 @@ $params = array(
               $day = date('j', $date);
               $dayofweek = date('w', $date);
           
-              $current = current_path();
-              $week = substr($current, -2);
-              //$week = date('W',$date);
+              
+              $week = date('W',$date);
               if($dayofweek == 0) { // adjust for sunday, have its id go with week after it, not week before
                   $week = $week+1;
               }
@@ -86,7 +85,7 @@ $params = array(
               
               ?>
           <td id="<?php print $cell['id']; ?>" class="<?php print $cell['class']; print $class; ?>">
-              <div class="month mini-day-on  <?php print $id . ' weekday-' . $dayofweek;  ?>">
+              <div class="month mini-day-on  <?php print $simpledate . " " $id . ' weekday-' . $dayofweek;  ?>">
                 <a href="../week/<?php print $year . '-W' . $week;  ?>"><?php print $day;  ?></a>
               </div>
           </td>
