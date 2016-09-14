@@ -89,9 +89,9 @@ $weekEndTime = $weekStartTime + (6*24*3600);
               $day = date('j', $dateTime);
               $dayofweek = date('w', $dateTime);
 
-              if($dayofweek == 0) { // adjust for sunday, have its id go with week after it, not week before
-                  $week = $week+1;
-              }
+//              if($dayofweek == 0) { // adjust for sunday, have its id go with week after it, not week before
+//                  $week = $week+1;
+//              }
 
               if($rowid == '1' and $day > 24) {
                   $class = ' last-month';
