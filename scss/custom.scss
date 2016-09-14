@@ -1138,7 +1138,9 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         span.views-field.views-field-field-free + .views-field-field-tickets-available {
             margin-left: -2px;
         }
-        
+        .views-field.views-field-field-tickets-available span {
+            font-weight: normal;
+        }
         
         .green-button .Free:before {
             content: "FREE ";
