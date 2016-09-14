@@ -69,38 +69,40 @@ foreach ($day_names as $key => $value) {
         
         <?php 
         $current = current_path();
+        //$current = 'askldjasldfkjasldf/calendar/week/2016-W33';
         $currentDate = substr($current, -8);  // 2016-W33
         //cho 'current date is ' . $currentDate;
         // '2016-W32';
         $dateOb = date_create_from_format('Y-W', $currentDate);
         $year = substr($currentDate, 0, 4);
-        //echo 'year is ' . $year;
         $lastYear = $year -1;
         $nextYear = $year +1;
-        //echo 'year ' . $year;
-//        $datestring = substr($title,0, -4);
-        $week = substr($currentDate, -2);
-        
+
+        $urlweek = substr($currentDate, -2);
+        //$week = $week-2;  // calendar uses the week id of the week before
 
         $startWYear = '1 January ' . $year;
         //this week start time
-        $startTime = strtotime($startWYear);
-        $startTime += ((7*($week-1))+2)*24*3600;
-        //put $lastWeekTime into yyyy-mm--dd format
-        $thisWeekStart = date('Y-m-d', $startTime);
+        $yearStartTime = strtotime($startWYear);
+		$yearStartWeekday = date('w', $yearStartTime);
+        //echo $year . ' started on a ' . $yearStartWeekday;
+        //echo '<br>';
+        // week 2 started on Jan 
+        $weekStartJanDay = 7 - $yearStartWeekday;
+        $week2StartTime = $yearStartTime + ($weekStartJanDay*24*3600); 
+        $weeksToAdd = $urlweek - 2;
+                $weekStartTime = $week2StartTime + ((7*($weeksToAdd)))*24*3600;
+        $weekEndTime = $weekStartTime + (6*24*3600);
 
+
+
+        //put $lastWeekTime into yyyy-mm--dd format
+        $thisWeekStart = date('Y-m-d', $weekStartTime);
+        $thisWeekEnd = date('Y-m-d', $weekEndTime);
+        //echo $thisWeekStart . ' through ' . $thisWeekEnd;
         
         
-//            $title = drupal_get_title();
-            //print $title;
-            //$title = 'August 7 2016 (32)';
-//            $datestring = substr($title,0, -4);
-//            $year = substr($title,-9, 4);
-//            $startTime = strtotime($datestring);
-            //adjust 1 week forward because of week id in title is 1 off, too early
-//        $startTime = date_timestamp_get ( $dateOb );
-        //$startTime = ((7*($week-1))+2)*24*3600;
-        //$startTime += (7*24*3600);
+        
         ?>
       <?php $curpos = 0; ?>
       <?php foreach ($columns as $index => $column): ?>
@@ -118,7 +120,7 @@ foreach ($day_names as $key => $value) {
         <td class="calendar-agenda-items single-day" headers="<?php print $header_ids[$index] ?>">        <?php
                 $weekday = $curpos;  
                 $daystoadd = $weekday -1;
-                $daytodisplay = $startTime + ($daystoadd *24*3600); // gets the unix day of current day
+                $daytodisplay = $thisWeekStartTime + ($daystoadd *24*3600); // gets the unix day of current day
                 $simpleDate = date('Y-m-d', $daytodisplay);
                 $classicDate = date('F j, Y', $daytodisplay);
             echo "<div><a name='" . $simpleDate . "'></a></div>" ; 
