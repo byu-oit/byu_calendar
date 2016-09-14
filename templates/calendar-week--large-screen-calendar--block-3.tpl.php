@@ -91,7 +91,7 @@ foreach ($day_names as $key => $value) {
         $weekStartJanDay = 7 - $yearStartWeekday;
         $week2StartTime = $yearStartTime + ($weekStartJanDay*24*3600); 
         $weeksToAdd = $urlweek - 2;
-                $weekStartTime = $week2StartTime + ((7*($weeksToAdd)))*24*3600;
+        $weekStartTime = $week2StartTime + ((7*($weeksToAdd)))*24*3600;
         $weekEndTime = $weekStartTime + (6*24*3600);
 
 
@@ -120,7 +120,7 @@ foreach ($day_names as $key => $value) {
         <td class="calendar-agenda-items single-day" headers="<?php print $header_ids[$index] ?>">        <?php
                 $weekday = $curpos;  
                 $daystoadd = $weekday -1;
-                $daytodisplay = $thisWeekStartTime + ($daystoadd *24*3600); // gets the unix day of current day
+                $daytodisplay = $weekStartTime + ($daystoadd *24*3600); // gets the unix day of current day
                 $simpleDate = date('Y-m-d', $daytodisplay);
                 $classicDate = date('F j, Y', $daytodisplay);
             echo "<div><a name='" . $simpleDate . "'></a></div>" ; 
