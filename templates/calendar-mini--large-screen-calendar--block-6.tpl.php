@@ -63,6 +63,7 @@ $weekStartJanDay = 7 - $yearStartWeekday;
 $week2StartTime = $yearStartTime + ($weekStartJanDay*24*3600); 
 $weeksToAdd = $week - 2;
 $weekStartTime = $week2StartTime + ((7*($weeksToAdd)))*24*3600;
+      echo $weekStartTime;
 $weekEndTime = $weekStartTime + (6*24*3600);
 
       
