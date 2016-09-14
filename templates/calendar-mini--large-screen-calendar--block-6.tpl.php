@@ -63,6 +63,7 @@ $weekStartJanDay = 7 - $yearStartWeekday;
 $week2StartTime = $yearStartTime + ($weekStartJanDay*24*3600); 
 $weeksToAdd = $week - 2;
 $weekStartTime = $week2StartTime + ((7*($weeksToAdd)))*24*3600;
+      echo $weekStartTime;
 $weekEndTime = $weekStartTime + (6*24*3600);
 
       
@@ -108,7 +109,7 @@ $weekEndTime = $weekStartTime + (6*24*3600);
               
               ?>
           <td id="<?php print $cell['id']; ?>" class="<?php print $cell['class']; print $class; ?>">
-              <div class="month mini-day-on  <?php print $id . ' weekday-' . $dayofweek;  ?>">
+              <div class="month mini-day-on  <?php print $dateTime . " " . $id . ' weekday-' . $dayofweek;  ?>">
                 <a href="../week/<?php print $year . '-W' . $week;  ?>"><?php print $day;  ?></a>
               </div>
           </td>
