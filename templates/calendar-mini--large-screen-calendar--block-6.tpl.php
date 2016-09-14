@@ -61,7 +61,10 @@ $params = array(
               $date = mktime(0,0,0, $month, $day, $year);
               $day = date('j', $date);
               $dayofweek = date('w', $date);
-              $week = date('W',$date);
+          
+              $current = current_path();
+              $week = substr($current, -2);
+              //$week = date('W',$date);
               if($dayofweek == 0) { // adjust for sunday, have its id go with week after it, not week before
                   $week = $week+1;
               }
