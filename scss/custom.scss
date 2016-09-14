@@ -651,7 +651,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         float: left;
         text-align: left;
     }
-    .calendar-calendar tbody tr td {
+    .calendar-calendar table:not(.mini) tbody tr td {
         background: none;
     }
     .calendar-calendar .week-view .full tr.single-day {
