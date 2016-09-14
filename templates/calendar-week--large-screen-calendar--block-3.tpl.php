@@ -73,7 +73,7 @@ foreach ($day_names as $key => $value) {
         $currentDate = substr($current, -8);  // 2016-W33
         //cho 'current date is ' . $currentDate;
         // '2016-W32';
-        $dateOb = date_create_from_format('Y-W', $currentDate);
+//        $dateOb = date_create_from_format('Y-W', $currentDate);
         $year = substr($currentDate, 0, 4);
         $lastYear = $year -1;
         $nextYear = $year +1;
@@ -104,10 +104,12 @@ foreach ($day_names as $key => $value) {
         
         
         ?>
+        
       <?php $curpos = 0; ?>
       <?php foreach ($columns as $index => $column): ?>
         <?php $colpos = (isset($time['values'][$column][0])) ? $time['values'][$column][0]['wday'] : $index; ?>
         <?php for ($i = $curpos; $i < $colpos; $i++): ?>
+        
 
         <td class="calendar-agenda-items single-day all-day-items">
           <div class="calendar">

@@ -43,6 +43,33 @@ $params = array(
     </tr>
   </thead>
   <tbody>
+      <?php
+      // calculate what dates are in the current week from id
+      $current = current_path();
+//$current = 'askldjasldfkjasldf/calendar/week/2016-W33';
+$currentDate = substr($current, -8);  // 2016-W33
+
+$week = substr($currentDate, -2);
+//$week = $week-2;  // calendar uses the week id of the week before
+
+$startWYear = '1 January ' . $year;
+//this week start time
+$yearStartTime = strtotime($startWYear);
+$yearStartWeekday = date('w', $yearStartTime);
+//echo $year . ' started on a ' . $yearStartWeekday;
+//echo '<br>';
+// week 2 started on Jan 
+$weekStartJanDay = 7 - $yearStartWeekday;
+$week2StartTime = $yearStartTime + ($weekStartJanDay*24*3600); 
+$weeksToAdd = $week - 2;
+$weekStartTime = $week2StartTime + ((7*($weeksToAdd)))*24*3600;
+$weekEndTime = $weekStartTime + (6*24*3600);
+
+      
+     
+      ?>
+      
+      
       <?php $rowid=0; ?>
     <?php foreach ((array) $rows as $row): ?>
       <?php $rowid++; ?>
@@ -58,10 +85,10 @@ $params = array(
               $year = substr($simpleDate, 0, 4);
               $month = substr($simpleDate, 5, 2);
               $day = substr($simpleDate, 8, 2);
-              $date = mktime(0,0,0, $month, $day, $year);
-              $day = date('j', $date);
-              $dayofweek = date('w', $date);
-              $week = date('W',$date);
+              $dateTime = mktime(0,0,0, $month, $day, $year);
+              $day = date('j', $dateTime);
+              $dayofweek = date('w', $dateTime);
+
               if($dayofweek == 0) { // adjust for sunday, have its id go with week after it, not week before
                   $week = $week+1;
               }
@@ -74,11 +101,12 @@ $params = array(
                   $class = ' this-month';
               }
                 // if current week, add highlight class
-              $current = current_path();
-              $currentWeek = substr($current, -2);
-              if($week == $currentWeek) {
+              if(($dateTime >= $weekStartTime) && ($dateTime <= $weekEndTime)) {
                   $class .= " current-week";
               }
+//              if($week == $currentWeek) {
+//                  $class .= " current-week";
+//              }
           
               
               ?>
