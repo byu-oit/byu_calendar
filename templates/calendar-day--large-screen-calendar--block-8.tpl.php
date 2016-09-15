@@ -30,6 +30,30 @@
 //dsm('Display: '. $display_type .': '. $min_date_formatted .' to '. $max_date_formatted);
 ?>
 <div class="calendar-calendar"><div class="day-view">
+    <div class="weekview-day-header">
+        <?php
+        $current = current_path();
+        $currentDate = substr($current, -10);  
+        $year = substr($currentDate, 0, 4);
+        $mid = substr($currentDate, 5, 2);
+        $d = substr($currentDate, -2);
+        
+       
+        $date = date_create($currentDate); // creates date object
+        $day = date_format($date, 'j') ;
+        $weekday = date_format($date, 'l') ;
+        $monthyear = date_format($date, 'F Y') ;
+        $classicDate = date_format($date, 'F j, Y');
+        echo "<a name='" . $currentDate . "'></a>" . 
+
+            "<div class='list-header'>" .
+            "<div class='list-header-week'>" . $weekday . "</div>" .
+            "<div class='list-header-fulldate'>" . $classicDate . "</div>" .
+        "</div>" ;
+
+        ?>
+    </div>
+    
 <table class="full">
   <col width="<?php print $first_column_width?>%"></col>
   <thead>
