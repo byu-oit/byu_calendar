@@ -34,15 +34,13 @@
         <?php
         $current = current_path();
         $currentDate = substr($current, -10);  
-        $year = substr($currentDate, 0, 4);
-        $mid = substr($currentDate, 5, 2);
-        $d = substr($currentDate, -2);
+//        $year = substr($currentDate, 0, 4);
+//        $mid = substr($currentDate, 5, 2);
+//        $d = substr($currentDate, -2);
         
-       
         $date = date_create($currentDate); // creates date object
         $day = date_format($date, 'j') ;
         $weekday = date_format($date, 'l') ;
-        $monthyear = date_format($date, 'F Y') ;
         $classicDate = date_format($date, 'F j, Y');
         echo "<a name='" . $currentDate . "'></a>" . 
 

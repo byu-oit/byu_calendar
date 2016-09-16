@@ -1601,3 +1601,138 @@ footer.l-footer.row {
         }
     }
 }
+
+
+
+
+
+
+
+/* ------- Adding / Editing an Event -- */
+
+/* -------- formatting edit events pages ---------- */
+
+    /* -------- date amd time ----- */
+
+/*
+div.field-type-datetime.field-name-field-date,
+div#edit-field-day-of-event-und-0-field-date,
+div#edit-field-date {
+width: 30%;
+    float: left;
+}
+
+
+div.field-type-list-text.field-name-field-all-day,
+div#edit-field-day-of-event-und-0-field-all-day,
+div#edit-field-all-day {
+    width: 10%;
+    float: left;
+    margin: 20px 15px;
+}
+
+div.field-type-field-collection.field-name-field-times,
+div#edit-field-day-of-event-und-0-field-times,
+div#edit-field-times {
+    width: 46%;
+    float: left;
+    margin-right: 10%;
+}
+
+div.field-type-cck-time.field-name-field-start-time,
+div#edit-field-day-of-event-und-0-field-times .field-type-cck-time.field-name-field-start-time,
+div#edit-field-times-und-0-field-start-time {
+    width: 50%;
+    float: left;
+}
+
+
+
+div.field-type-cck-time.field-name-field-end-time input {
+    margin-left: 20px;
+    position: relative;
+    top: -16px;
+}
+*/
+
+
+div#edit-field-event-occurrance div.field-type-datetime {
+    width: 47%;
+    float: left;
+    margin-right: 5%;
+}
+iv#edit-field-event-occurrance div.field-name-field-request-on-homepage {
+    max-width: 30%;
+}
+
+.node-type-event div#edit-field-event-occurrance > div#field-event-occurrance-add-more-wrapper div.handle,
+.node-type-event div#edit-field-event-occurrance > div#field-event-occurrance-add-more-wrapper .clearfix input {
+    display: none;
+}
+
+
+
+/* will get other 'add another's like times */
+div#field-day-of-event-add-more-wrapper div.form-item > div.clearfix input {
+    /* content: "hi"; */
+    background: #336699;
+}
+/* will target only the 'add another day' one */
+div#field-day-of-event-add-more-wrapper > div.form-item > div.clearfix input {
+    /* content: "hi"; */
+    background: #f09;
+}
+
+
+textarea#edit-body-und-0-value {
+    height: 142px;
+}
+
+/*
+div#edit-field-event-occurrance-und-0-field-date-and-time {
+    float: left;
+    width: 50%;
+}
+div#edit-field-event-occurrance-und-0-field-request-on-homepage {
+    float: right;
+    width: 50%;
+}
+.form-item.form-type-checkboxes.form-item-field-event-occurrance-und-0-field-request-on-homepage-und {
+    padding-left: 20px;
+}
+*/
+
+fieldset.required-fields.group-pricing.field-group-fieldset.form-wrapper {
+    float: left;
+    width: 40%;
+    margin-right: 2%;
+}
+div#edit-field-full-name {
+    float: left;
+}
+
+
+#field-event-price-values tbody {
+    display: flex;
+    justify-content: flex-start;
+}
+#field-event-price-values tbody tr {
+    width: 50%;
+    background: #fff!important;
+}
+
+#field-event-price-values tbody a.tabledrag-handle .handle {
+    display: none;
+    
+}
+
+form #field-event-price-values tr.even td.field-multiple-drag a.tabledrag-handle {
+    padding-right: .5em;
+    border-bottom: 3px solid gray;
+    height: 2px;
+    width: 5px;
+    margin-left: -30px;
+}
+#field-event-price-values tbody > tr.odd:after {
+/*    content: " - hi";*/
+}
