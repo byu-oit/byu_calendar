@@ -1631,10 +1631,12 @@ footer.l-footer.row {
 .form-item-field-date-und-0-value-year ,
 .form-item-field-date-und-0-value2-year {
     order: 3;
+    display: block;
 }
 .form-item-field-date-und-0-value-hour,
 .form-item-field-date-und-0-value2-hour {
     order: 4;    
+   
 }
 .form-item-field-date-und-0-value-minute,
 .form-item-field-date-und-0-value2-minute {
