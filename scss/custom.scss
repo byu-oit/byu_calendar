@@ -1628,6 +1628,10 @@ footer.l-footer.row {
     }
     
 } 
+.form-item-field-date-und-0-value-year ,
+.form-item-field-date-und-1-value-year {
+    order: 3;
+}
 
 div#edit-field-event-occurrance div.field-type-datetime {
     width: 47%;
