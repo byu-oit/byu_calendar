@@ -1619,13 +1619,24 @@ footer.l-footer.row {
     
 }
 
+// some labels inline:
+
+.form-item-field-event-location-und label,
+#edit-field-are-tickets > div > label {
+    float: left;
+}
+
 /* DATE / TIME */
 #edit-field-date-und-0-value,
 #edit-field-date-und-0-value2 {
     display: flex;
-    .form-item {
-        padding: 0px 5px;
+    @media(max-width: $mobile_max_width){
+        flex-wrap: wrap;
+        width: 251px;
+        justify-content: space-between;
     }
+   
+
     
 } 
 #edit-field-date-und-0-value-ampm,
@@ -1634,21 +1645,9 @@ footer.l-footer.row {
 #edit-field-date-und-0-value2-month {
     text-transform: uppercase;   
 }
-//.form-item-field-date-und-0-value-year ,
-//.form-item-field-date-und-0-value2-year {
-//    order: 3;
-//    display: block;
-//}
-//.form-item-field-date-und-0-value-hour,
-//.form-item-field-date-und-0-value2-hour {
-//    order: 4;    
-//   
-//}
-//.form-item-field-date-und-0-value-minute,
-//.form-item-field-date-und-0-value2-minute {
-//    order: 5;    
-//}
-
+.form-item.form-type-select.form-item-field-date-und-0-value-hour:before {
+    content: "START TIME";
+}
 
 
 div#edit-field-event-occurrance div.field-type-datetime {
@@ -1691,9 +1690,9 @@ div#edit-field-full-name {
     width: 30%;
     display: inline;
     float: left;
-    label {
-        display: none;
-    }
+}
+#edit-field-free > div > label {
+    display: none;
 }
 #field-event-price-add-more-wrapper {
     
@@ -1757,6 +1756,13 @@ form table#field-event-price-values {
 
 /* --- formatting Add An Event for large screen --- */
 @media(min-width: $large_screen_start_width) {
+    #edit-field-date-und-0-value,
+    #edit-field-date-und-0-value2 {
+        .form-item {
+            padding: 0px 5px;
+        }
+    }
+    
     fieldset.required-fields.group-pricing.field-group-fieldset.form-wrapper {
         float: left;
         width: 40%;
