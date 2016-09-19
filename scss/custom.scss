@@ -1610,50 +1610,15 @@ footer.l-footer.row {
 
 /* ------- Adding / Editing an Event -- */
 
-/* -------- formatting edit events pages ---------- */
-
-    /* -------- date amd time ----- */
-
-/*
-div.field-type-datetime.field-name-field-date,
-div#edit-field-day-of-event-und-0-field-date,
-div#edit-field-date {
-width: 30%;
-    float: left;
+.page-node-add, .page-node-edit {
+    label {
+        text-transform: uppercase;
+        color: #000;
+        padding: 5px;
+    }
+    
 }
 
-
-div.field-type-list-text.field-name-field-all-day,
-div#edit-field-day-of-event-und-0-field-all-day,
-div#edit-field-all-day {
-    width: 10%;
-    float: left;
-    margin: 20px 15px;
-}
-
-div.field-type-field-collection.field-name-field-times,
-div#edit-field-day-of-event-und-0-field-times,
-div#edit-field-times {
-    width: 46%;
-    float: left;
-    margin-right: 10%;
-}
-
-div.field-type-cck-time.field-name-field-start-time,
-div#edit-field-day-of-event-und-0-field-times .field-type-cck-time.field-name-field-start-time,
-div#edit-field-times-und-0-field-start-time {
-    width: 50%;
-    float: left;
-}
-
-
-
-div.field-type-cck-time.field-name-field-end-time input {
-    margin-left: 20px;
-    position: relative;
-    top: -16px;
-}
-*/
 
 
 div#edit-field-event-occurrance div.field-type-datetime {
@@ -1688,20 +1653,6 @@ textarea#edit-body-und-0-value {
     height: 142px;
 }
 
-/*
-div#edit-field-event-occurrance-und-0-field-date-and-time {
-    float: left;
-    width: 50%;
-}
-div#edit-field-event-occurrance-und-0-field-request-on-homepage {
-    float: right;
-    width: 50%;
-}
-.form-item.form-type-checkboxes.form-item-field-event-occurrance-und-0-field-request-on-homepage-und {
-    padding-left: 20px;
-}
-*/
-
 
 div#edit-field-full-name {
     float: left;
@@ -1710,26 +1661,42 @@ div#edit-field-full-name {
     width: 30%;
     display: inline;
     float: left;
+    label {
+        display: none;
+    }
 }
 #field-event-price-add-more-wrapper {
-    width: 60%;
+    
     .tabledrag-toggle-weight-wrapper {
         display: none;
     }
 }
 
-form #field-event-price-values {
+form table#field-event-price-values {
+    display: flex;
+    border: none;
     th {
         background: none;
-        with: 30px;
+        border: none;
         display: inline;
         float: left;
+    }
+    thead {
+        display: inline;
+        background: none;
     }
     tbody {
         display: flex;
         justify-content: flex-start;
+        border: none;
         a.tabledrag-handle .handle {
             display: none;
+        }
+        .form-item.form-type-textfield {
+            display: flex;
+        }
+        span.field-prefix {
+            padding: 7px 5px 0px 0px;
         }
     }
     tr {
@@ -1737,19 +1704,25 @@ form #field-event-price-values {
         background: #fff!important;
         border-bottom: 0px solid #fff;
     }
+    
     tr.even td.field-multiple-drag a.tabledrag-handle {
-        padding-right: .5em;
-        border-bottom: 3px solid gray;
-        height: 2px;
+        padding-right: 0.5em;
+        border-top: 1px solid #444;
+        height: 8px;
         width: 5px;
-        margin-left: -30px;
+        margin-left: -13px;
     }
     
     tbody > tr.odd:after {
     /*    content: " - hi";*/
     }
-
+    .field-multiple-table td.field-multiple-drag {
+        width: 0px;
+        padding-right: 0;
+    }
 } 
+
+
 
 
 /* --- formatting Add An Event for large screen --- */
