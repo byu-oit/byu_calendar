@@ -1628,6 +1628,12 @@ footer.l-footer.row {
     }
     
 } 
+#edit-field-date-und-0-value-ampm,
+#edit-field-date-und-0-value2-ampm,
+#edit-field-date-und-0-value-month,
+#edit-field-date-und-0-value2-month {
+    text-transform: uppercase;   
+}
 //.form-item-field-date-und-0-value-year ,
 //.form-item-field-date-und-0-value2-year {
 //    order: 3;
