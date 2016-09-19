@@ -107,6 +107,15 @@ a:hover {
     background: $greendarkened;
 }
  
+/* ----- general input things like checkboxes etc ----- */
+
+input[type="file"], input[type="checkbox"], input[type="radio"], select {
+    margin: 0 0 1px 0;
+}
+
+
+
+
 /* --- menu -------- */
 
 @media(max-width: $mobile_max_width) {
@@ -1750,8 +1759,11 @@ form table#field-event-price-values {
         width: 0px;
         padding-right: 0;
     }
-} 
+} // end price
 
+#edit-field-event-type-und label {
+    text-transform: Capitalize;
+}
 
 
 
