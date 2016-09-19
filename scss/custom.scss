@@ -115,7 +115,10 @@ input[type="file"], input[type="checkbox"], input[type="radio"], select {
 .ui-timepicker-table td a {
     width: 2.2em;
 }
-
+.ui-timepicker-table .ui-timepicker-title {
+    background: $navy;
+    color: #fff;
+}
 
 
 /* --- menu -------- */

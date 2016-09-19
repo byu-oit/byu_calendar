@@ -102,7 +102,10 @@ jQuery( document ).ready(function( $ ) {
    // })
     
     
-    
+    $('#timepicker').timepicker({
+        showPeriod: true,
+        showLeadingZero: true
+    });
     
 });
 
