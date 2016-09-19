@@ -1702,36 +1702,62 @@ div#edit-field-event-occurrance-und-0-field-request-on-homepage {
 }
 */
 
-fieldset.required-fields.group-pricing.field-group-fieldset.form-wrapper {
-    float: left;
-    width: 40%;
-    margin-right: 2%;
-}
+
 div#edit-field-full-name {
     float: left;
 }
-
-
-#field-event-price-values tbody {
-    display: flex;
-    justify-content: flex-start;
+#edit-field-free {
+    width: 30%;
+    display: inline;
+    float: left;
 }
-#field-event-price-values tbody tr {
-    width: 50%;
-    background: #fff!important;
-}
-
-#field-event-price-values tbody a.tabledrag-handle .handle {
-    display: none;
+#field-event-price-add-more-wrapper {
+    width: 60%;
+    .tabledrag-toggle-weight-wrapper {
+        display: none;
+    }
 }
 
-form #field-event-price-values tr.even td.field-multiple-drag a.tabledrag-handle {
-    padding-right: .5em;
-    border-bottom: 3px solid gray;
-    height: 2px;
-    width: 5px;
-    margin-left: -30px;
-}
-#field-event-price-values tbody > tr.odd:after {
-/*    content: " - hi";*/
+form #field-event-price-values {
+    th {
+        background: none;
+        with: 30px;
+        display: inline;
+        float: left;
+    }
+    tbody {
+        display: flex;
+        justify-content: flex-start;
+        a.tabledrag-handle .handle {
+            display: none;
+        }
+    }
+    tr {
+        width: 50%;
+        background: #fff!important;
+        border-bottom: 0px solid #fff;
+    }
+    tr.even td.field-multiple-drag a.tabledrag-handle {
+        padding-right: .5em;
+        border-bottom: 3px solid gray;
+        height: 2px;
+        width: 5px;
+        margin-left: -30px;
+    }
+    
+    tbody > tr.odd:after {
+    /*    content: " - hi";*/
+    }
+
+} 
+
+
+/* --- formatting Add An Event for large screen --- */
+@media(min-width: $large_screen_start_width) {
+    fieldset.required-fields.group-pricing.field-group-fieldset.form-wrapper {
+        float: left;
+        width: 40%;
+        margin-right: 2%;
+    }
+    
 }
