@@ -1621,7 +1621,7 @@ footer.l-footer.row {
 
 /* DATE / TIME */
 #edit-field-date-und-0-value,
-#edit-field-date-und-1-value {
+#edit-field-date-und-0-value2 {
     display: flex;
     .form-item {
         padding: 0px 5px;
@@ -1629,15 +1629,15 @@ footer.l-footer.row {
     
 } 
 .form-item-field-date-und-0-value-year ,
-.form-item-field-date-und-1-value-year {
+.form-item-field-date-und-0-value2-year {
     order: 3;
 }
 .form-item-field-date-und-0-value-hour,
-.form-item-field-date-und-1-value-hour {
+.form-item-field-date-und-0-value2-hour {
     order: 4;    
 }
 .form-item-field-date-und-0-value-minute,
-.form-item-field-date-und-1-value-minute {
+.form-item-field-date-und-0-value2-minute {
     order: 5;    
 }
 
