@@ -1632,6 +1632,16 @@ footer.l-footer.row {
 .form-item-field-date-und-1-value-year {
     order: 3;
 }
+.form-item-field-date-und-0-value-hour,
+.form-item-field-date-und-1-value-hour {
+    order: 4;    
+}
+.form-item-field-date-und-0-value-minute,
+.form-item-field-date-und-1-value-minute {
+    order: 5;    
+}
+
+
 
 div#edit-field-event-occurrance div.field-type-datetime {
     width: 47%;
