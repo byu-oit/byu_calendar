@@ -296,3 +296,12 @@ function byu_calendar_date_nav_title($params) {
     return $title;
   }  
 }
+
+function byu_calendar_page_alter() {
+  $attributes = array( // Set up an array of attributes inside the tag
+    'href' => '//cloud.typography.com/[CUSTOM PATH]/fonts.css',
+    'rel' => 'stylesheet',
+    'type' => 'text/css',
+  );
+  drupal_add_html_head_link($attributes);
+}
