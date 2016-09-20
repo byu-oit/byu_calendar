@@ -321,10 +321,13 @@ input[type="file"], input[type="checkbox"], input[type="radio"], select {
 
     }
 }
-.main #main-content-section.scrolled {
+main #main-content-section.scrolled {
     @media(max-width: $mobile_max_width) {
         margin-top: 76px;
     }
+}
+.mobile.no-sidebars main.row.l-main #main-content-section {
+//    margin-top: 45px;
 }
 
 @media only screen and (min-width: 768px) {
