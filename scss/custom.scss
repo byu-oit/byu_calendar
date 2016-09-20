@@ -952,10 +952,13 @@ div#calendar-nav-pager .calendar-nav-pager-back {
                 padding-top: 8px;
             }
             #calendar-view-links a {
-                padding: 5px 5px 1px;
+                padding: 5px 7px 1px;
                 font-weight: bold;
                 color: $medgray;
-                margin: 0px 10px;
+                margin: 0px 8px;
+            }
+            #calendar-view-links a:hover {
+                border-bottom: 3px solid $$medgray;
             }
             #calendar-view-links a.current {
                 border-bottom: 3px solid $navy;
