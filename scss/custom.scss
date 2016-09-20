@@ -994,7 +994,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             width: 70px;
             @include display-flex();
             justify-content: flex-end;
-        }
+        
         }
         div#calendar-nav-pager div {
             border: 1px $medgray solid;
