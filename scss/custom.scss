@@ -1154,6 +1154,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             display: inline;
             float: left;
             margin: 0px 15px 0px 0px;
+            min-height: 100px;
         }
         .views-field.views-field-title {
             font-size: 16px;
@@ -1683,8 +1684,8 @@ footer.l-footer.row {
 }
 
 /* DATE / TIME */
-#edit-field-date-und-0-value,
-#edit-field-date-und-0-value2 {
+#edit-field-event-date-und-0-value,
+#edit-field-event-date-und-0-value2 {
     display: flex;
     @media(max-width: $mobile_max_width){
         flex-wrap: wrap;
@@ -1695,13 +1696,13 @@ footer.l-footer.row {
 
     
 } 
-#edit-field-date-und-0-value-ampm,
-#edit-field-date-und-0-value2-ampm,
-#edit-field-date-und-0-value-month,
-#edit-field-date-und-0-value2-month {
+#edit-field-event-date-und-0-value-ampm,
+#edit-field-event-date-und-0-value2-ampm,
+#edit-field-event-date-und-0-value-month,
+#edit-field-event-date-und-0-value2-month {
     text-transform: uppercase;   
 }
-.form-item.form-type-select.form-item-field-date-und-0-value-hour:before {
+.form-item.form-type-select.form-item-field-event-date-und-0-value-hour:before {
 //    content: "START TIME";
 }
 
@@ -1815,8 +1816,8 @@ form table#field-event-price-values {
 
 /* --- formatting Add An Event for large screen --- */
 @media(min-width: $large_screen_start_width) {
-    #edit-field-date-und-0-value,
-    #edit-field-date-und-0-value2 {
+    #edit-field-event-date-und-0-value,
+    #edit-field-event-date-und-0-value2 {
         .form-item {
             padding: 0px 5px;
         }
