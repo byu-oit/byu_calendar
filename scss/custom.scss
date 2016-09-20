@@ -318,11 +318,12 @@ input[type="file"], input[type="checkbox"], input[type="radio"], select {
                 }
             }
         }
-        #main-content-section.scrolled {
-            @media(max-width: $mobile_max_width) {
-                margin-top: 76px;
-            }
-        }
+
+    }
+}
+.main #main-content-section.scrolled {
+    @media(max-width: $mobile_max_width) {
+        margin-top: 76px;
     }
 }
 
