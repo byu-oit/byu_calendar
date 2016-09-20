@@ -513,7 +513,7 @@ main #main-content-section.scrolled {
     border-bottom: 1px solid #fff;
     padding: 8px 0px;
 }
-
+#weekvi
 .calendar-nav-section {
     height: auto;
     text-transform: lowercase;
@@ -637,6 +637,10 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         color: #444;
         font-weight: normal;
     }
+    .day-header-week {
+        font-size: 22px;
+    }
+    
 }
 
 .view .date-nav-wrapper .date-heading {
@@ -1304,7 +1308,9 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 
 .day-header-week {
     text-transform: lowercase;
-    font-size: 29px;
+    @media(min-width: $large_screen_start_width){
+        font-size: 29px; 
+    }
     font-weight: bold;
 }
 
