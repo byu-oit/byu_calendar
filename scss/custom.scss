@@ -273,9 +273,7 @@ input[type="file"], input[type="checkbox"], input[type="radio"], select {
 
 
 /* ---- mobile area settings --- */
-.mobile section.l-help.row {
-    background: #e5e5e5;
-}
+
 .columns.sidebar-first {
     width: $mobile_sidebar_width;
     min-width: 70px;
@@ -297,9 +295,6 @@ input[type="file"], input[type="checkbox"], input[type="radio"], select {
         }
     }
 }
-.mobile main.row.l-main {
-    margin-top: 45px;
-}
 .one-sidebar {
     main.row.l-main {
         background: #fff;
@@ -307,6 +302,7 @@ input[type="file"], input[type="checkbox"], input[type="radio"], select {
             @include main-outer-shadowbox();
             width: $mobile_main_width;
             float: right;
+            margin-top: 45px;
             padding-left: 0px;
             padding-right: 0px;
         }
@@ -332,7 +328,9 @@ main #main-content-section.scrolled {
         margin-top: 76px;
     }
 }
-
+.mobile.no-sidebars main.row.l-main #main-content-section {
+    margin-top: 45px;
+}
 
 @media only screen and (min-width: 768px) {
     //correcting for later breakpoint
