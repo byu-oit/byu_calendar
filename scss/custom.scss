@@ -106,7 +106,17 @@ a:hover {
 .green-button:active {
     background: $greendarkened;
 }
- 
+ /* --------------- fonts ------------- */
+h1, h2, h3, h4,
+.weekview-day-header {
+    font-family: "Sentinel SSm A","Sentinel SSm B";
+}
+p {
+    font-family: "Gotham SSm A","Gotham SSm B";
+}
+
+
+
 /* ----- general input things like checkboxes etc ----- */
 
 input[type="file"], input[type="checkbox"], input[type="radio"], select {
