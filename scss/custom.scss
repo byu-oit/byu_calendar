@@ -79,7 +79,9 @@ a:hover {
 .alert-box {
     z-index: 100;
 }
-
+.light-gray-bg {
+    background: $lightgray;
+}
 .gray-button {
     @include button;
     background: $lightgray;
