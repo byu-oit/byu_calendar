@@ -299,7 +299,7 @@ function byu_calendar_date_nav_title($params) {
 
 function byu_calendar_page_alter() {
   $attributes = array( // Set up an array of attributes inside the tag
-    'href' => '//cloud.typography.com/[CUSTOM PATH]/fonts.css',
+    'href' => '//cloud.typography.com/75214/6517752/css/fonts.css',
     'rel' => 'stylesheet',
     'type' => 'text/css',
   );
