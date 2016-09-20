@@ -507,16 +507,17 @@ h3, h3 a {
     .calendar-nav-item {
         /*comment */
         background: $medblue;
-        padding: 10px 0px;
+        padding: 15px 0px;
         margin-bottom: -2px;
         @include sidebar-inner-shadowbox();
         .day-navigation-day-items {
             @media (max-width: $mobile_max_width) {
                 font-size: 19px;
             }
+            
         }
         .day-navigation-weekday {
-            font-size: 14px;
+            font-size: 13px;
         }
     }
     .calendar-nav-item.current-day {
@@ -979,7 +980,8 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         .calendar-nav-section .calendar-nav-item {
             box-shadow: none;
             .day-navigation-day-items {
-                padding-bottom: 4px;
+                padding-bottom: 6px;
+                font-size: 40px;
             }
         }
 
@@ -988,6 +990,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             width: 70px;
             @include display-flex();
             justify-content: flex-end;
+        }
         }
         div#calendar-nav-pager div {
             border: 1px $medgray solid;
@@ -1099,6 +1102,9 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         .calendar-calendar tr:nth-of-type(even) {
             background: #fff;
         }
+    .calendar-calendar td span.date-display-single, .calendar-calendar td span.date-display-start, .calendar-calendar td span.date-display-end, .calendar-calendar td span.date-display-separator {
+        font-weight: normal;
+    }
     .calendar.weekview.all-day-items {
             padding: 0px!important;
         }
