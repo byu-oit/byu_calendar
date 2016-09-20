@@ -108,10 +108,11 @@ a:hover {
 }
  /* --------------- fonts ------------- */
 h1, h2, h3, h4,
-.weekview-day-header {
+.weekview-day-header,
+.day-navigation-day-items {
     font-family: "Sentinel SSm A","Sentinel SSm B";
 }
-p {
+p, span, div {
     font-family: "Gotham SSm A","Gotham SSm B";
 }
 
