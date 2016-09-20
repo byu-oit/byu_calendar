@@ -107,13 +107,15 @@ a:hover {
     background: $greendarkened;
 }
  /* --------------- fonts ------------- */
+
+p, span, div {
+    font-family: "Gotham SSm A","Gotham SSm B";
+}
+
 h1, h2, h3, h4,
 .weekview-day-header, .list-header, .list-header div,
 .day-navigation-day-items {
     font-family: "Sentinel SSm A","Sentinel SSm B";
-}
-p, span, div {
-    font-family: "Gotham SSm A","Gotham SSm B";
 }
 
 
