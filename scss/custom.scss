@@ -328,9 +328,15 @@ main #main-content-section.scrolled {
         margin-top: 76px;
     }
 }
-.mobile.no-sidebars main.row.l-main #main-content-section {
-    margin-top: 45px;
-}
+.mobile.no-sidebars {
+    section.l-help.row {
+//        margin-top: 45px;
+    }
+    main.row.l-main #main-content-section {
+        margin-top: 45px;
+    }
+    
+} 
 
 @media only screen and (min-width: 768px) {
     //correcting for later breakpoint
