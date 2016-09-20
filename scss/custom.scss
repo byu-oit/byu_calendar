@@ -273,7 +273,9 @@ input[type="file"], input[type="checkbox"], input[type="radio"], select {
 
 
 /* ---- mobile area settings --- */
-
+.mobile section.l-help.row {
+    background: #e5e5e5;
+}
 .columns.sidebar-first {
     width: $mobile_sidebar_width;
     min-width: 70px;
