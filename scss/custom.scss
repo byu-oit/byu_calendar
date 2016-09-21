@@ -1863,7 +1863,7 @@ textarea#edit-body-und-0-value {
 
 
 #edit-field-free {
-    width: 30%;
+    width: 46%; // was 30
     display: inline;
     float: left;
 }
@@ -1908,15 +1908,17 @@ form table#field-event-price-values {
         width: 42%;
         background: #fff!important;
         border-bottom: 0px solid #fff;
-        padding: 0px 12px 0px;
+        padding: 0px;
     }
-    
+    tr.even {
+        padding-right: 0px;
+    }
     tr.even td.field-multiple-drag a.tabledrag-handle {
-        padding-right: 0.5em;
+//        padding-right: 0.5em;
         border-top: 1px solid #444;
         height: 8px;
         width: 5px;
-        margin-left: -13px;
+//        margin-left: -13px;
     }
     td {
         padding: 0px;
