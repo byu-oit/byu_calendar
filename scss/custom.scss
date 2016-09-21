@@ -1708,13 +1708,21 @@ footer.l-footer.row {
     display: flex;
     @media(max-width: $mobile_max_width){
         flex-wrap: wrap;
-        width: 251px;
+        width: 235px;
         justify-content: space-between;
     }
    
-
-    
+    .form-type-date-select .form-type-select[class*=hour] {
+        margin-left: 0px;
+    }
+    label {
+        display: none;
+    }
 } 
+#edit-field-event-date-und-0-value > .form-item,
+#edit-field-event-date-und-0-value2 > .form-item {
+//    padding: 0px 15px 0px 0px;
+}
 #edit-field-event-date-und-0-value-ampm,
 #edit-field-event-date-und-0-value2-ampm,
 #edit-field-event-date-und-0-value-month,
