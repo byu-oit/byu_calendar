@@ -1700,11 +1700,20 @@ footer.l-footer.row {
 }
 .page-node-add, .page-node-edit {
 
+    
     label, .form-item label {
         text-transform: uppercase;
         color: #000;
         padding: 5px;
         font-size: 14px;
+    }
+    
+}
+.mobile {
+    .page-node-add, .page-node-edit {
+         .form-item {
+            margin: 5px 0px;
+        }
     }
     
 }
@@ -1718,10 +1727,7 @@ fieldset {
 }
 // some labels inline:
 
-.form-item-field-event-location-und label,
-#edit-field-are-tickets > div > label {
-    float: left;
-}
+
 
 /* ------ DATE / TIME ---------- */ 
 
@@ -1842,15 +1848,20 @@ fieldset.date-combo.form-wrapper.date-processed .fieldset-wrapper {
     margin-right: 15px;
 }
 
+// tickets
+.form-item.form-item-field-are-tickets-und {
+    margin: -10px 0px!important;
+}
+#edit-field-are-tickets > div > label {
+    float: left;
+     width: 105px;
+}
 
 textarea#edit-body-und-0-value {
     height: 142px;
 }
 
-// contact info
-div#edit-field-full-name {
-    float: left;
-}
+
 #edit-field-free {
     width: 30%;
     display: inline;
@@ -1916,10 +1927,15 @@ form table#field-event-price-values {
     }
 } // end price
 
+
 #edit-field-event-type-und label {
     text-transform: Capitalize;
 }
 
+// contact info
+div#edit-field-full-name {
+    float: left;
+}
 
 
 /* --- formatting Add An Event for large screen --- */
