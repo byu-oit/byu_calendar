@@ -1717,25 +1717,29 @@ fieldset {
     float: left;
 }
 
-/* DATE / TIME */ 
+/* ------ DATE / TIME ---------- */ 
+
+// all day checkbox
+.form-item.form-type-checkbox.form-item-field-event-date-und-0-all-day {
+    padding: 5px 0px;
+    margin: 0px 0px -10px;
+}
+// show end date checkbox
+.form-item.form-type-checkbox.form-item-field-event-date-und-0-all-day {
+    padding: 5px 0px;
+    margin: 0px;
+}
+
 #edit-field-event-date-und-0-value,
 #edit-field-event-date-und-0-value2 {
     display: flex;
+    padding: 0px;
     @media(max-width: $mobile_max_width){
         flex-wrap: wrap;
         width: 235px;
         justify-content: space-between;
     }
-    // all day checkbox
-    .form-item.form-type-checkbox.form-item-field-event-date-und-0-all-day {
-        padding: 5px 0px;
-        margin: 0px 0px -10px;
-    }
-    // show end date checkbox
-    .form-item.form-type-checkbox.form-item-field-event-date-und-0-all-day {
-        padding: 5px 0px;
-        margin: 0px;
-    }
+
     // date select dropdowns
     .form-type-date-select {
         .form-type-select[class*=hour] {
@@ -1746,9 +1750,10 @@ fieldset {
         }
     }
     .form-item.form-type-select {
-        color: $gray;
+        
         select {
             font-weight: bold;
+            color: $gray;
             border: 1px solid $lightgray;
         }
     }
@@ -1758,8 +1763,9 @@ fieldset {
     .form-item-field-event-date-und-0-value2-month
     .form-item-field-event-date-und-0-value-year,
     .form-item-field-event-date-und-0-value2-year {
-        color: $navy;
+ 
         select {
+            color: $navy;
             border: 1px solid $gray;
         }
     }   
