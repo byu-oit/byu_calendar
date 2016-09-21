@@ -1714,7 +1714,7 @@ footer.l-footer.row {
    
     .form-type-date-select {
         .form-type-select[class*=hour] {
-            margin-left: 0px;
+            margin-left: 0px!important;
         }
         label {
             display: none;
