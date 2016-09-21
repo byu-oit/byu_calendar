@@ -1745,7 +1745,7 @@ fieldset {
         margin-left: 0px!important;
     }
     label {
-//        display: none;
+        display: none;
     }
 
     .form-item.form-type-select {
@@ -1764,10 +1764,22 @@ fieldset {
     .form-item-field-event-date-und-0-value2-year {
  
         select {
-            color: $navy;
+            color: $navy!important;767676
             border: 1px solid $gray;
         }
     }   
+    
+    // formatting dropdown arrows
+    select#edit-field-event-date-und-0-value-year,
+    select#edit-field-event-date-und-0-value-day,
+    select#edit-field-event-date-und-0-value-month {
+        color: #002e5d!important;
+        background: #ffffff;
+        background: -moz-linear-gradient(left, #ffffff 1%, #ffffff 73%, #ffffff 73%, #cecece 73%, #cecece 74%);
+        background: -webkit-linear-gradient(left, #ffffff 1%,#ffffff 73%,#ffffff 73%,#cecece 73%,#cecece 74%);
+        background: linear-gradient(to right, #ffffff 1%,#ffffff 73%,#ffffff 73%,#cecece 73%,#cecece 74%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cecece',GradientType=1 );
+    }
 
     }  // end of start and end date sections 
 #edit-field-event-date-und-0-value > .form-item,
