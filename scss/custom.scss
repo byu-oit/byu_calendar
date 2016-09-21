@@ -1824,22 +1824,19 @@ fieldset.date-combo.form-wrapper.date-processed .fieldset-wrapper {
         display: none;
     }   
 }
-
+// end of all date field stuff
 
 .form-item.form-type-textfield.form-item-title label:before {
     content: "EVENT ";
 }
 
-///* will get other 'add another's like times */
-//div#field-day-of-event-add-more-wrapper div.form-item > div.clearfix input {
-//    /* content: "hi"; */
-//    background: #336699;
-//}
-///* will target only the 'add another day' one */
-//div#field-day-of-event-add-more-wrapper > div.form-item > div.clearfix input {
-//    /* content: "hi"; */
-//    background: #f09;
-//}
+// location
+.form-item-field-event-location-und {
+    display: flex;
+    label {
+        width: 120px;
+    }
+}
 
 
 textarea#edit-body-und-0-value {
