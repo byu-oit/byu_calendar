@@ -1819,11 +1819,16 @@ fieldset.date-combo.form-wrapper.date-processed .fieldset-wrapper {
 .date-no-float.end-date-wrapper.container-inline-date {
     order: 5;
 }
-#field-event-date-add-more-wrapper {
-    .field-type-select label {
-        display: none;
-    }   
+
+.form-item-field-event-date-und-0-value2 > label {
+    display: none;
+//    color: #fff!important;
 }
+.form-item-field-event-date-und-0-value2 > label:before {
+    content: "END DATE:";
+    color: #000;
+}
+
 // end of all date field stuff
 
 .form-item.form-type-textfield.form-item-title label:before {
@@ -1843,7 +1848,7 @@ textarea#edit-body-und-0-value {
     height: 142px;
 }
 
-
+// contact info
 div#edit-field-full-name {
     float: left;
 }
