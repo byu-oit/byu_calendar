@@ -1741,14 +1741,13 @@ fieldset {
     }
 
     // date select dropdowns
-    .form-type-date-select {
-        .form-type-select[class*=hour] {
-            margin-left: 0px!important;
-        }
-        label {
-            display: none;
-        }
+    .form-type-select[class*=hour] {
+        margin-left: 0px!important;
     }
+    label {
+        display: none;
+    }
+
     .form-item.form-type-select {
         
         select {
