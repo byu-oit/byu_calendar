@@ -1742,7 +1742,7 @@ fieldset {
     @media(max-width: $mobile_max_width){
         flex-wrap: wrap;
         width: 235px;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
 
     // date select dropdowns
@@ -1758,7 +1758,7 @@ fieldset {
         select {
             font-weight: bold;
             color: $gray;
-            border: 1px solid $lightgray;
+            border: 1px solid $medgray;
             padding: 2px;
         }
     }
@@ -1787,7 +1787,7 @@ fieldset {
     }  // end of start and end date sections 
 #edit-field-event-date-und-0-value > .form-item,
 #edit-field-event-date-und-0-value2 > .form-item {
-    padding: 10px 0px 0px 0px;
+    padding: 10px 15px 0px 0px;
 }
 #edit-field-event-date-und-0-value-ampm,
 #edit-field-event-date-und-0-value2-ampm,
