@@ -1867,8 +1867,8 @@ textarea#edit-body-und-0-value {
     display: inline;
     float: left;
 }
-#edit-field-free > div > label {
-//    display: none;
+#edit-field-free > div > label {  // ppricing before free
+    float: left;
 }
 #field-event-price-add-more-wrapper {
     
@@ -1878,7 +1878,7 @@ textarea#edit-body-und-0-value {
 }
 
 form table#field-event-price-values {
-    display: flex;
+//    display: flex;
     border: none;
     th {
         background: none;
@@ -1905,9 +1905,10 @@ form table#field-event-price-values {
         }
     }
     tr {
-        width: 50%;
+        width: 42%;
         background: #fff!important;
         border-bottom: 0px solid #fff;
+        padding: 0px 12px 0px;
     }
     
     tr.even td.field-multiple-drag a.tabledrag-handle {
