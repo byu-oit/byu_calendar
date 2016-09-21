@@ -1709,14 +1709,14 @@ footer.l-footer.row {
     }
     
 }
-.mobile {
-    .page-node-add, .page-node-edit {
+
+    .mobile.page-node-add, .mobile.page-node-edit {
          .form-item {
             margin: 5px 0px;
         }
     }
     
-}
+
 // fieldsets
 fieldset {
     border: none;
@@ -1850,7 +1850,7 @@ fieldset.date-combo.form-wrapper.date-processed .fieldset-wrapper {
 
 // tickets
 .form-item.form-item-field-are-tickets-und {
-    margin: -10px 0px 0px!important;
+    margin: -10px 0px 15px!important;
 }
 #edit-field-are-tickets > div > label {
     float: left;
@@ -1861,11 +1861,14 @@ textarea#edit-body-und-0-value {
     height: 142px;
 }
 
+// free & pricing
+
 fieldset.group-pricing legend {
     display: block;
     font-family: "Sentinel SSm A", "Sentinel SSm B";
     text-transform: uppercase;
     font-size: 13px;
+    padding: 0px 5px;
 }
 #edit-field-free {
     width: 46%; // was 30
