@@ -1720,9 +1720,26 @@ footer.l-footer.row {
             display: none;
         }
     }
-        
+    .form-item.form-type-select {
+        color: $gray;
+        select {
+            font-weight: bold;
+            border: 1px solid $lightgray;
+        }
+    }
+    .form-item-field-event-date-und-0-value-day,
+    .form-item-field-event-date-und-0-value2-day,
+    .form-item-field-event-date-und-0-value-month,
+    .form-item-field-event-date-und-0-value2-month
+    .form-item-field-event-date-und-0-value-year,
+    .form-item-field-event-date-und-0-value2-year {
+        color: $navy;
+        select {
+            border: 1px solid $gray;
+        }
+    }   
 
-} 
+}  // end of start and end date sections
 #edit-field-event-date-und-0-value > .form-item,
 #edit-field-event-date-und-0-value2 > .form-item {
     padding: 10px 0px 0px 0px;
@@ -1733,6 +1750,8 @@ footer.l-footer.row {
 #edit-field-event-date-und-0-value2-month {
     text-transform: uppercase;   
 }
+
+
 .form-item.form-type-select.form-item-field-event-date-und-0-value-hour:before {
 //    content: "START TIME";
 }
@@ -1762,7 +1781,7 @@ fieldset.date-combo.form-wrapper.date-processed .fieldset-wrapper {
 }
 
 
-form-item.form-type-textfield.form-item-title label:before {
+.form-item.form-type-textfield.form-item-title label:before {
     content: "EVENT ";
 }
 
