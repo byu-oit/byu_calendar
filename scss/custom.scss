@@ -1777,15 +1777,15 @@ fieldset {
 
     // interesting trying out the arrow theming w only css
     select#edit-field-event-date-und-0-value-year {
-//        color: #002e5d!important;
-//        background: #ffffff;
-//        background: -moz-linear-gradient(left, #ffffff 1%, #ffffff 73%, #ffffff 73%, #cecece 73%, #cecece 74%);
-//        background: -webkit-linear-gradient(left, #ffffff 1%,#ffffff 73%,#ffffff 73%,#cecece 73%,#cecece 74%);
-//        background: linear-gradient(to right, #ffffff 1%,#ffffff 73%,#ffffff 73%,#cecece 73%,#cecece 74%);
-//        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cecece',GradientType=1 );
+        //        color: #002e5d!important;
+        //        background: #ffffff;
+        //        background: -moz-linear-gradient(left, #ffffff 1%, #ffffff 73%, #ffffff 73%, #cecece 73%, #cecece 74%);
+        //        background: -webkit-linear-gradient(left, #ffffff 1%,#ffffff 73%,#ffffff 73%,#cecece 73%,#cecece 74%);
+        //        background: linear-gradient(to right, #ffffff 1%,#ffffff 73%,#ffffff 73%,#cecece 73%,#cecece 74%);
+        //        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cecece',GradientType=1 );
     }
 
-    }  // end of start and end date sections 
+}  // end of start and end date sections 
 #edit-field-event-date-und-0-value > .form-item,
 #edit-field-event-date-und-0-value2 > .form-item {
     padding: 10px 15px 0px 0px;
@@ -1802,12 +1802,6 @@ fieldset {
 //    content: "START TIME";
 }
 
-
-//div#edit-field-event-occurrance div.field-type-datetime {
-//    width: 47%;
-//    float: left;
-//    margin-right: 5%;
-//}
 
 // reorder date stuff
 fieldset.date-combo.form-wrapper.date-processed .fieldset-wrapper {
@@ -1841,8 +1835,11 @@ fieldset.date-combo.form-wrapper.date-processed .fieldset-wrapper {
     display: flex;
     label {
         width: 120px;
-        padding-right: 20px;
+        padding-right: 15px;
     }
+}
+.form-item-field-event-location-und label {
+    margin-right: 15px;
 }
 
 
