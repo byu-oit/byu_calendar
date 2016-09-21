@@ -1861,14 +1861,20 @@ textarea#edit-body-und-0-value {
     height: 142px;
 }
 
-
+fieldset.group-pricing legend {
+    display: block;
+    font-family: "Sentinel SSm A", "Sentinel SSm B";
+    text-transform: uppercase;
+    font-size: 13px;
+}
 #edit-field-free {
     width: 46%; // was 30
     display: inline;
     float: left;
 }
-#edit-field-free > div > label {  // ppricing before free
-    float: left;
+#edit-field-free > div > label {  // pricing before free
+//    float: left;
+    display: none;
 }
 #field-event-price-add-more-wrapper {
     
@@ -1908,7 +1914,7 @@ form table#field-event-price-values {
         width: 42%;
         background: #fff!important;
         border-bottom: 0px solid #fff;
-        padding: 0px;
+        padding: 0px 5px 0px;
     }
     tr.even {
         padding-right: 0px;
