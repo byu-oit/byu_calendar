@@ -135,6 +135,26 @@ h1, h2, h3, h4,
 
 
 
+
+/* ------ often used classes ------------*/
+
+.hidden {
+    display: none;
+}
+
+.panel {
+    background: #fff;
+}
+
+.gray-button {
+    background-color: $lightgray!important;
+    padding: 9px 12px!important;
+    font-size: 12px;
+    a {
+       color: $navy;
+    }
+}
+
 /* ----- general input things like checkboxes etc ----- */
 
 input[type="file"], input[type="checkbox"], input[type="radio"], select {
@@ -161,6 +181,10 @@ input[type="file"], input[type="checkbox"], input[type="radio"], select {
 //    background-image: linear-gradient(#3875d7 20%, #2a62bc 90%);
     color: #fff;
 }
+
+    // formatting dropdown arrows
+//    background: url(new_arrow.png) no-repeat right #ddd;
+
 
 /* --- menu -------- */
 
@@ -201,25 +225,6 @@ input[type="file"], input[type="checkbox"], input[type="radio"], select {
 
 
 
-
-/* ------ often used classes ------------*/
-
-.hidden {
-    display: none;
-}
-
-.panel {
-    background: #fff;
-}
-
-.gray-button {
-    background-color: $lightgray!important;
-    padding: 9px 12px!important;
-    font-size: 12px;
-    a {
-       color: $navy;
-    }
-}
 /*  --- Random mobile display settings - */
 
 @media(max-width: $mobile_max_width) {
@@ -1754,31 +1759,29 @@ fieldset {
             font-weight: bold;
             color: $gray;
             border: 1px solid $lightgray;
+            padding: 2px;
         }
     }
-    .form-item-field-event-date-und-0-value-day,
-    .form-item-field-event-date-und-0-value2-day,
-    .form-item-field-event-date-und-0-value-month,
-    .form-item-field-event-date-und-0-value2-month
-    .form-item-field-event-date-und-0-value-year,
-    .form-item-field-event-date-und-0-value2-year {
- 
-        select {
-            color: $navy!important;767676
-            border: 1px solid $gray;
-        }
-    }   
     
-    // formatting dropdown arrows
-    select#edit-field-event-date-und-0-value-year,
     select#edit-field-event-date-und-0-value-day,
-    select#edit-field-event-date-und-0-value-month {
+    select#edit-field-event-date-und-0-value-month,
+    select#edit-field-event-date-und-0-value-year,
+    select#edit-field-event-date-und-0-value2-day,
+    select#edit-field-event-date-und-0-value2-month,
+    select#edit-field-event-date-und-0-value2-year {
         color: #002e5d!important;
-        background: #ffffff;
-        background: -moz-linear-gradient(left, #ffffff 1%, #ffffff 73%, #ffffff 73%, #cecece 73%, #cecece 74%);
-        background: -webkit-linear-gradient(left, #ffffff 1%,#ffffff 73%,#ffffff 73%,#cecece 73%,#cecece 74%);
-        background: linear-gradient(to right, #ffffff 1%,#ffffff 73%,#ffffff 73%,#cecece 73%,#cecece 74%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cecece',GradientType=1 );
+        border: 1px solid $gray;
+    }
+    
+
+    // interesting trying out the arrow theming w only css
+    select#edit-field-event-date-und-0-value-year {
+//        color: #002e5d!important;
+//        background: #ffffff;
+//        background: -moz-linear-gradient(left, #ffffff 1%, #ffffff 73%, #ffffff 73%, #cecece 73%, #cecece 74%);
+//        background: -webkit-linear-gradient(left, #ffffff 1%,#ffffff 73%,#ffffff 73%,#cecece 73%,#cecece 74%);
+//        background: linear-gradient(to right, #ffffff 1%,#ffffff 73%,#ffffff 73%,#cecece 73%,#cecece 74%);
+//        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cecece',GradientType=1 );
     }
 
     }  // end of start and end date sections 
