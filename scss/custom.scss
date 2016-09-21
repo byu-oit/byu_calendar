@@ -1731,7 +1731,20 @@ div#edit-field-event-occurrance div.field-type-datetime {
     float: left;
     margin-right: 5%;
 }
-iv#edit-field-event-occurrance div.field-name-field-request-on-homepage {
+// reorder date stuff
+fieldset.date-combo.form-wrapper.date-processed .fieldset-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.date-float:nth-of-type(3) {
+    order: 4;
+}
+.date-no-float.end-date-wrapper.container-inline-date {
+    order: 5;
+}
+
+
+#edit-field-event-occurrance div.field-name-field-request-on-homepage {
     max-width: 30%;
 }
 
