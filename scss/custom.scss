@@ -1918,6 +1918,7 @@ fieldset.group-pricing legend {
     display: inline;
     float: left;
 }
+
 #edit-field-free > div > label {  // pricing before free
 //    float: left;
     display: none;
@@ -1935,7 +1936,7 @@ form table#field-event-price-values {
     th {
         background: none;
         border: none;
-//        display: none;
+        display: none;
         display: inline;
         float: left;
         
