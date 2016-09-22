@@ -1755,15 +1755,16 @@ fieldset {
     width: 60px;
     display: inline;
     float: right;
-    
+    margin-bottom: -85px;
+    margin-top: 36px;
     label {
         display: none;
     }
         
     .form-item.form-type-select select {
         font-weight: bold;
-        color: $gray;
-        border: 1px solid $medgray;
+        color: #002e5d;
+        border: 1px solid $gray;
         padding: 2px;
     }
 }
@@ -1830,7 +1831,7 @@ fieldset {
 }  // end of start and end date sections 
 #edit-field-event-date-und-0-value > .form-item,
 #edit-field-event-date-und-0-value2 > .form-item {
-    padding: 10px 15px 0px 0px;
+    padding: 5px 15px 0px 0px;
 }
 #edit-field-event-date-und-0-value-ampm,
 #edit-field-event-date-und-0-value2-ampm,
