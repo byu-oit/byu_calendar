@@ -1874,8 +1874,12 @@ fieldset.date-combo.form-wrapper.date-processed .fieldset-wrapper {
     display: flex;
     label {
         width: 120px;
+        padding
         padding-right: 15px;
     }
+}
+#edit-field-event-location label {
+    padding-top: 0px;
 }
 .form-item-field-event-location-und label {
     margin-right: 15px;
@@ -1884,6 +1888,12 @@ fieldset.date-combo.form-wrapper.date-processed .fieldset-wrapper {
 // tickets
 .form-item.form-item-field-are-tickets-und {
     margin: -10px 0px 15px!important;
+    
+}
+#edit-field-are-tickets-und .form-item {
+    display: inline;
+    float: left;
+    padding: 13px 5px 0px 0px;
 }
 #edit-field-are-tickets > div > label {
     float: left;
