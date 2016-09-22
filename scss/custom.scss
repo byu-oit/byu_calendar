@@ -1943,16 +1943,33 @@ form table#field-event-price-values {
     }
 } // end price
 
+// ticket info
 
-#edit-field-event-type-und label {
-    text-transform: Capitalize;
+
+// date available
+#edit-field-tickets-available fieldset legend {
+    display: block;
+}
+
+
+// categories
+#edit-field-event-type-und {
+    label {
+        text-transform: Capitalize;
+    }
+    .form-item {
+        padding-left: 15px;
+    }
+}
+#edit-field-event-type {
+    
+    
 }
 
 // contact info
 div#edit-field-full-name {
     float: left;
 }
-
 
 /* --- formatting Add An Event for large screen --- */
 @media(min-width: $large_screen_start_width) {
