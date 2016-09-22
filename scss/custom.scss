@@ -279,6 +279,14 @@ input[type="file"], input[type="checkbox"], input[type="radio"], select {
 
 /* ---- mobile area settings --- */
 
+header.l-header {
+    width: 100%;
+    @media(max-width: $mobile_max_width){
+        height: 45px;    
+    }
+    
+}
+
 .columns.sidebar-first {
     width: $mobile_sidebar_width;
     min-width: 70px;
@@ -336,6 +344,7 @@ main #main-content-section.scrolled {
 .mobile.no-sidebars {
     section.l-help.row {
 //        margin-top: 45px;
+        padding: 0px;
     }
     main.row.l-main #main-content-section {
         margin-top: 45px;
@@ -1686,6 +1695,11 @@ footer.l-footer.row {
 
 
 /* ------- Adding / Editing an Event -- */
+.has-tip.top {
+    color: #767676;
+}
+
+/* --- mobile first */
 .mobile section.block.block-workbench.contextual-links-region.block-workbench-block {
     display: none;
 }
@@ -1704,7 +1718,7 @@ footer.l-footer.row {
     label, .form-item label {
         text-transform: uppercase;
         color: #000;
-        padding: 5px;
+        padding: 5px 5px 5px 0px;
         font-size: 13px;
     }
     
@@ -1977,7 +1991,7 @@ fieldset#edit-body-und-0-format {
 #edit-field-thumbnail {
     .image-widget-data {
         input, button {
-            padding-bottom: 15px;
+            margin-bottom: 15px;
         }
     }
 }
