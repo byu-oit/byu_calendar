@@ -1750,7 +1750,23 @@ fieldset {
 
 
 /* ------ DATE / TIME ---------- */ 
-
+// timezone
+#edit-field-timezone {
+    width: 60px;
+    display: inline;
+    float: right;
+    
+    label {
+        display: none;
+    }
+        
+    .form-item.form-type-select select {
+        font-weight: bold;
+        color: $gray;
+        border: 1px solid $medgray;
+        padding: 2px;
+    }
+}
 // all day checkbox
 .form-item.form-type-checkbox.form-item-field-event-date-und-0-all-day {
     padding: 5px 0px;
