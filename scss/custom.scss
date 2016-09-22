@@ -345,6 +345,12 @@ main #main-content-section.scrolled {
     section.l-help.row {
 //        margin-top: 45px;
         padding: 0px;
+        .large-12.columns {
+            padding: 0px;
+            div {
+                padding: 10px;
+            }
+        }
     }
     main.row.l-main #main-content-section {
         margin-top: 45px;
