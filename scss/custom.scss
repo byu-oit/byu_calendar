@@ -60,7 +60,12 @@ $nav_gradient_2: 5%;
     padding: 9px 0px!important;
     
 }
-
+@mixin gray-select {
+    font-weight: bold;
+    color: $gray;
+    border: 1px solid $medgray;
+    padding: 2px;
+}
 
 
 /* ------------------------------------- */
@@ -1762,10 +1767,7 @@ fieldset {
     }
         
     .form-item.form-type-select select {
-        font-weight: bold;
-        color: #002e5d;
-        border: 1px solid $gray;
-        padding: 2px;
+       @include gray-select;
     }
 }
 // all day checkbox
@@ -1796,10 +1798,7 @@ fieldset {
     .form-item.form-type-select {
         
         select {
-            font-weight: bold;
-            color: $gray;
-            border: 1px solid $medgray;
-            padding: 2px;
+            @include gray-select;
         }
     }
     
@@ -1990,7 +1989,7 @@ form table#field-event-price-values {
 // ticket info
 
 
-// date available
+// date tickets available
 #edit-field-tickets-available fieldset{
     legend {
         display: block;
@@ -2001,6 +2000,12 @@ form table#field-event-price-values {
     }
     #edit-field-tickets-available-und-0-value {
         padding: 0px;
+    }
+    .form-item {
+        padding: 5px 15px 0px 0px;
+    }
+    select {
+        @include gray-select;
     }
 }
 
