@@ -1708,6 +1708,8 @@ footer.l-footer.row {
 /* ------- Adding / Editing an Event -- */
 .has-tip.top {
     color: #767676;
+    float: right;
+    padding: 0px 0px 5px 10px;
 }
 
 /* --- mobile first */
@@ -2002,7 +2004,7 @@ form table#field-event-price-values {
         padding: 0px;
     }
     .form-item {
-        padding: 5px 15px 0px 0px;
+        padding: 5px 13px 0px 0px;
     }
     select {
         @include gray-select;
@@ -2014,6 +2016,7 @@ form table#field-event-price-values {
 #edit-field-event-type-und {
     label {
         text-transform: Capitalize;
+        padding: 5px 5px 5px 10px;
     }
     .form-item {
         padding-left: 20px;
@@ -2031,6 +2034,11 @@ form table#field-event-price-values {
 fieldset#edit-body-und-0-format {
     display: none;
 }
+#edit-body {
+    padding: 15px 0px 10px;
+}
+
+
 // thumbnail
 #edit-field-thumbnail {
     .image-widget-data {
