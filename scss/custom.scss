@@ -1756,7 +1756,7 @@ fieldset {
     display: inline;
     float: right;
     margin-bottom: -85px;
-    margin-top: 36px;
+    margin-top: 26px;
     label {
         display: none;
     }
@@ -1770,14 +1770,10 @@ fieldset {
 }
 // all day checkbox
 .form-item.form-type-checkbox.form-item-field-event-date-und-0-all-day {
-    padding: 5px 0px;
+    padding: 0px;
     margin: 0px 0px -10px;
 }
-// show end date checkbox
-.form-item.form-type-checkbox.form-item-field-event-date-und-0-all-day {
-    padding: 5px 0px;
-    margin: 0px;
-}
+
 
 #edit-field-event-date-und-0-value,
 #edit-field-event-date-und-0-value2 {
