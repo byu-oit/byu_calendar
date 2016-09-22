@@ -1991,8 +1991,17 @@ form table#field-event-price-values {
 
 
 // date available
-#edit-field-tickets-available fieldset legend {
-    display: block;
+#edit-field-tickets-available fieldset{
+    legend {
+        display: block;
+        padding-top: 15px;
+    }
+    label {
+        display: none;
+    }
+    #edit-field-tickets-available-und-0-value {
+        padding: 0px;
+    }
 }
 
 
