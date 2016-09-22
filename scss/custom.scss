@@ -1892,8 +1892,10 @@ form table#field-event-price-values {
     th {
         background: none;
         border: none;
-        display: none;
+//        display: none;
+        display: inline;
         float: left;
+        
     }
     thead {
         display: inline;
