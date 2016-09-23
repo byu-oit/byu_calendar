@@ -1930,7 +1930,8 @@ fieldset.group-pricing legend {
     width: 88px; // was 30
     display: inline;
     float: left;
-    .form-item {
+    padding-top: 5px;
+    #edit-field-free-und .form-item {
         padding-bottom: 15px;
     }
 }
@@ -1963,12 +1964,12 @@ fieldset.group-pricing legend {
 
 #edit-field-event-price {
     position: relative;
-    top: 35px;
+    top: 40px;
 }
 
 #edit-field-price-range {
     position: relative;
-    top: 75px;
+    top: 70px;
 }
 #edit-field-price-range .field-values-wrapper.clearfix {
     display: flex;

@@ -108,16 +108,7 @@ jQuery( document ).ready(function( $ ) {
         var c = this.checked ? 'none' : 'inline';
         $('#edit-field-timezone').css('display', c);
     });
-    $('#edit-field-free-und .form-item').click(function(){
-        console.log('clicked on something!');
-        var c = $('#edit-field-free-und-price').checked ? 'inline' : 'none';
-        $('#edit-field-event-price').css('display', c);
-    });
-    $('#edit-field-free-und-range').change(function(){
-        var c = this.checked ? 'inline' : 'none';
-        $('#edit-field-price-range').css('display', c);
-    });
-    
+
 });
 
 
