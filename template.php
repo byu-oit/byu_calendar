@@ -29,10 +29,14 @@ function byu_calendar_preprocess_html(&$variables) {
   }
 
     if ($variables['user']) {
+        $numRoles = 0;
         foreach($variables['user']->roles as $key => $role){
           $role_class = 'role-' . drupal_clean_css_identifier($role);
           $variables['classes_array'][] = $role_class;
+            $numRoles++;
         }
+        $numRolesClass = 'number-of-roles-' . $numRoles;
+        $variables['classes_array'][] = $numRolesClass;
     }
 
 
