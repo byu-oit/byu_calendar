@@ -1915,7 +1915,7 @@ fieldset.group-pricing legend {
     padding: 0px 5px;
 }
 #edit-field-free {
-    width: 46%; // was 30
+    width: 88px; // was 30
     display: inline;
     float: left;
 }
@@ -2071,4 +2071,9 @@ div#edit-field-full-name {
         margin-right: 2%;
     }
     
+}
+
+// tabs at bottom
+.number-of-roles-1 .vertical-tabs.clearfix {
+    display: none;
 }
