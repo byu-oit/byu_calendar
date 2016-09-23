@@ -2048,13 +2048,15 @@ fieldset.group-pricing legend {
 
 // ticket info
 
-
+#edit-field-tickets-url {
+    padding-top: 10px;
+}
 // date tickets available
 #edit-field-tickets-available fieldset{
     width: 100%;
     legend {
         display: block;
-        padding-top: 15px;
+        padding-top: 5px;
     }
     label {
         display: none;
@@ -2085,7 +2087,9 @@ fieldset.group-pricing legend {
     
     
 }
-
+#edit-field-internal-category {
+    padding-top: 10px;
+}
 
 
 // description
