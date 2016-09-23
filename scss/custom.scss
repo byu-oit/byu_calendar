@@ -1722,7 +1722,7 @@ footer.l-footer.row {
     margin: -10px 0px 10px;
 }
 
-/* --- mobile first */
+/* --- mobile first  -- add/edit event  --- */
 .mobile section.block.block-workbench.contextual-links-region.block-workbench-block {
     display: none;
 }
@@ -1773,8 +1773,9 @@ fieldset {
     display: inline;
     float: right;
     position: relative;
-    top: 73px;
-    left: -25px;
+    top: 64px;
+    left: -14px;
+
     margin-bottom: -30px;
     label {
         display: none;
@@ -1783,6 +1784,10 @@ fieldset {
     .form-item.form-type-select select {
        @include gray-select;
     }
+}
+.number-of-roles-1 #edit-field-timezone {
+//    top: 73px;
+//    left: -25px;
 }
 // all day checkbox
 .form-item.form-type-checkbox.form-item-field-event-date-und-0-all-day {
