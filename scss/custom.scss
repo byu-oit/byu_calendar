@@ -1959,6 +1959,7 @@ fieldset.group-pricing legend {
     input {
         width: 60px;
         height: 30px;
+        @include gray-select;
     }
 }
 
