@@ -105,9 +105,17 @@ jQuery( document ).ready(function( $ ) {
     // editing or adding event
     
     $('#edit-field-event-date-und-0-all-day').change(function(){
-    var c = this.checked ? 'none' : 'inline';
-    $('#edit-field-timezone').css('display', c);
-});
+        var c = this.checked ? 'none' : 'inline';
+        $('#edit-field-timezone').css('display', c);
+    });
+    $('#edit-field-free-und-price').change(function(){
+        var c = this.checked ? 'inline' : 'none';
+        $('#edit-field-event-price').css('display', c);
+    });
+    $('#edit-field-free-und-range').change(function(){
+        var c = this.checked ? 'inline' : 'none';
+        $('#edit-field-price-range').css('display', c);
+    });
     
 });
 
