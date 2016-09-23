@@ -1916,7 +1916,7 @@ fieldset.date-combo.form-wrapper.date-processed .fieldset-wrapper {
 // tickets
 .form-item.form-item-field-are-tickets-und {
     margin: -10px 0px 15px!important;
-    
+    display: flex;
 }
 #edit-field-are-tickets-und .form-item {
     display: inline;
@@ -1945,9 +1945,13 @@ fieldset.group-pricing legend {
     width: 91px; // was 30
 //    display: inline;
     float: left;
-    padding-top: 5px;
-    #edit-field-free-und .form-item {
-        padding-bottom: 10px;
+//    padding-top: 5px;
+    #edit-field-free-und {
+        margin-top: -10px;
+        margin-bottom: -10px;
+        .form-item {
+            padding-bottom: 10px;
+        }
     }
 }
 
@@ -1981,16 +1985,18 @@ fieldset.group-pricing legend {
 
 #edit-field-event-price {
     position: relative;
-    top: 35px;
+    top: 44px; // was 23 -if the radios dont jump down, its prob 23, 44 if jumping
 }
 
 #edit-field-price-range {
     position: relative;
-    top: 61px;
+    top: 71px;  // was 61
 }
 #edit-field-price-range .field-values-wrapper.clearfix {
     display: flex;
-
+}
+.form-item.form-type-textfield.form-item-field-price-range-und-0-to {
+    padding-right: 0px!important;
 }
   
 //#field-event-price-add-more-wrapper {
