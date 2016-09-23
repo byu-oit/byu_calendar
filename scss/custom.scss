@@ -1945,8 +1945,12 @@ fieldset.group-pricing legend {
     label {
         display: none;
     }
+    .form-item {
+        display: flex;
+    }
     input {
-        width: 60px;
+        width: 70px;
+        height: 30px;
     }
 }
 // price range
@@ -1961,6 +1965,7 @@ fieldset.group-pricing legend {
         }
         input {
             width: 70px;
+            height: 30px;
             margin-left: 5px;
         }
     }
