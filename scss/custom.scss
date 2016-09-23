@@ -1940,37 +1940,31 @@ fieldset.group-pricing legend {
     display: none;
 }
 
-// single price
-#edit-field-event-price {
-    label {
+// single price & price range
+#edit-field-event-price label,
+#edit-field-price-range legend {
         display: none;
     }
+#edit-field-event-price,
+#edit-field-price-range {
     .form-item {
         display: flex;
+        padding-right: 3pxl
+    }
+    .field-prefix {
+        margin: 7px 5px 7px 0px;
     }
     input {
         width: 70px;
         height: 30px;
     }
 }
-// price range
-#edit-field-price-range {
-    legend {
-        display: none;
-    }
-    .field-values-wrapper.clearfix {
-        display: flex;
-        .form-item {
-            display: flex;
-        }
-        input {
-            width: 70px;
-            height: 30px;
-            margin-left: 5px;
-        }
-    }
-}
 
+#edit-field-price-range .field-values-wrapper.clearfix {
+    display: flex;
+
+}
+  
 //#field-event-price-add-more-wrapper {
 //    
 //    .tabledrag-toggle-weight-wrapper {
