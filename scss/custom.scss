@@ -1881,6 +1881,9 @@ fieldset.date-combo.form-wrapper.date-processed .fieldset-wrapper {
 .form-item.form-type-textfield.form-item-title label:before {
     content: "EVENT ";
 }
+.form-item.form-type-textfield.form-item-title {
+    padding-top: 10px;
+}
 
 // location
 .form-item-field-event-location-und {
@@ -1932,7 +1935,7 @@ fieldset.group-pricing legend {
     float: left;
     padding-top: 5px;
     #edit-field-free-und .form-item {
-        padding-bottom: 15px;
+        padding-bottom: 10px;
     }
 }
 
@@ -1960,17 +1963,18 @@ fieldset.group-pricing legend {
         width: 60px;
         height: 30px;
         @include gray-select;
+        padding: 5px;
     }
 }
 
 #edit-field-event-price {
     position: relative;
-    top: 40px;
+    top: 35px;
 }
 
 #edit-field-price-range {
     position: relative;
-    top: 70px;
+    top: 61px;
 }
 #edit-field-price-range .field-values-wrapper.clearfix {
     display: flex;
@@ -2090,6 +2094,13 @@ fieldset.group-pricing legend {
 }
 #edit-field-internal-category {
     padding-top: 10px;
+    .has-tip {
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    select {
+        @include gray-select;
+    }
 }
 
 
