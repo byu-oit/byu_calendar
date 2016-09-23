@@ -151,15 +151,15 @@ function byu_calendar_preprocess_page(&$variables) {
  * Implements theme_form_element_label()
  * Use foundation tooltips
  */
-function byu_calendar_form_element_label($variables) {
-  if (!empty($variables['element']['#title'])) {
-    $variables['element']['#title'] = '<span class="secondary label">' . $variables['element']['#title'] . '</span>';
-  }
-  if (!empty($variables['element']['#description'])) {
-    $variables['element']['#description'] = ' <span data-tooltip="top" class="has-tip tip-top" data-width="250" title="' . $variables['element']['#description'] . '">' . t('?') . '</span>';
-  }
-  return theme_form_element_label($variables);
-}
+//function byu_calendar_form_element_label($variables) {
+//  if (!empty($variables['element']['#title'])) {
+//    $variables['element']['#title'] = '<span class="secondary label">' . $variables['element']['#title'] . '</span>';
+//  }
+//  if (!empty($variables['element']['#description'])) {
+//    $variables['element']['#description'] = ' <span data-tooltip="top" class="has-tip tip-top" data-width="250" title="' . $variables['element']['#description'] . '">' . t('?') . '</span>';
+//  }
+//  return theme_form_element_label($variables);
+//}
 
 /**
  * Implements hook_preprocess_button().
