@@ -102,7 +102,12 @@ jQuery( document ).ready(function( $ ) {
    // })
     
     
-
+    // editing or adding event
+    
+    $('#edit-field-event-date-und-0-all-day').change(function(){
+    var c = this.checked ? 'inline' : 'none';
+    $('#edit-field-timezone').css('display', c);
+});
     
 });
 

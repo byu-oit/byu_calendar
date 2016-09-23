@@ -1705,11 +1705,21 @@ footer.l-footer.row {
 
 
 
-/* ------- Adding / Editing an Event -- */
+/* ------- Adding / Editing an Event --------- */
 .has-tip.top {
     color: #767676;
     float: right;
     padding: 0px 0px 5px 10px;
+}
+.has-tip {
+    border: dotted 1px #ccc;
+    cursor: help;
+    font-weight: bold;
+    color: #767676;
+    border-radius: 18px;
+    padding: 3px 8px;
+    float: right;
+    margin: -10px 0px 10px;
 }
 
 /* --- mobile first */
@@ -1762,8 +1772,10 @@ fieldset {
     width: 60px;
     display: inline;
     float: right;
-    margin-bottom: -85px;
-    margin-top: 26px;
+    position: relative;
+    top: 73px;
+    left: -25px;
+    margin-bottom: -30px;
     label {
         display: none;
     }
@@ -2027,6 +2039,8 @@ form table#field-event-price-values {
     
 }
 
+
+
 // description
 .field-name-body .field-edit-link {
     display: none;
@@ -2055,6 +2069,16 @@ fieldset#edit-body-und-0-format {
 div#edit-field-full-name {
     float: left;
 }
+
+
+
+#edit-field-show-on-calendar {
+    margin-top: 15px;
+}
+.form-item-field-show-on-calendar-und > label {
+    display: none;
+}
+
 
 /* --- formatting Add An Event for large screen --- */
 @media(min-width: $large_screen_start_width) {
