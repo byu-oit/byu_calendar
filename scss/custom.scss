@@ -1780,7 +1780,7 @@ fieldset {
     position: relative;
 //    top: 64px;
     top: 98px;
-    left: 203px;
+    left: 193px;
 
     margin-bottom: -30px;
     label {
@@ -1790,6 +1790,9 @@ fieldset {
     .form-item.form-type-select select {
        @include gray-select;
     }
+}
+.desktop #edit-field-timezone {
+     left: 203px;
 }
 .number-of-roles-1 #edit-field-timezone {
 //    top: 73px;
