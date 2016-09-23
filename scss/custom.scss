@@ -1941,6 +1941,7 @@ fieldset.group-pricing legend {
 }
 
 // single price & price range
+
 #edit-field-event-price label,
 #edit-field-price-range legend {
         display: none;
@@ -1949,7 +1950,7 @@ fieldset.group-pricing legend {
 #edit-field-price-range {
     .form-item {
         display: flex;
-        padding-right: 3px;
+        padding-right: 8px;
     }
     .field-prefix {
         margin: 7px 5px 7px 0px;
@@ -1960,6 +1961,15 @@ fieldset.group-pricing legend {
     }
 }
 
+#edit-field-event-price {
+    position: relative;
+    top: 35px;
+}
+
+#edit-field-price-range {
+    position: relative;
+    top: 75px;
+}
 #edit-field-price-range .field-values-wrapper.clearfix {
     display: flex;
 
