@@ -105,7 +105,7 @@ jQuery( document ).ready(function( $ ) {
     // editing or adding event
     
     $('#edit-field-event-date-und-0-all-day').change(function(){
-    var c = this.checked ? 'inline' : 'none';
+    var c = this.checked ? 'none' : 'inline';
     $('#edit-field-timezone').css('display', c);
 });
     
