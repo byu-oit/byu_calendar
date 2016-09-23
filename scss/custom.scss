@@ -1930,75 +1930,111 @@ fieldset.group-pricing legend {
     width: 88px; // was 30
     display: inline;
     float: left;
+    .form-item {
+        padding-bottom: 15px;
+    }
 }
 
 #edit-field-free > div > label {  // pricing before free
 //    float: left;
     display: none;
 }
-#field-event-price-add-more-wrapper {
-    
-    .tabledrag-toggle-weight-wrapper {
+
+// single price
+#edit-field-event-price {
+    label {
         display: none;
+    }
+    input {
+        width: 60px;
+    }
+}
+// price range
+#edit-field-price-range {
+    legend {
+        display: none;
+    }
+    .field-values-wrapper.clearfix {
+        display: flex;
+        .form-item {
+            display: flex;
+        }
+        input {
+            width: 70px;
+            margin-left: 5px;
+        }
     }
 }
 
-form table#field-event-price-values {
-//    display: flex;
-    border: none;
-    th {
-        background: none;
-        border: none;
+//#field-event-price-add-more-wrapper {
+//    
+//    .tabledrag-toggle-weight-wrapper {
 //        display: none;
-//        display: inline;
-        float: left;
-        
-    }
-    thead {
-        display: none;
-        background: none;
-    }
-    tbody {
-        display: flex;
-        justify-content: flex-start;
-        border: none;
-        a.tabledrag-handle .handle {
-            display: none;
-        }
-        .form-item.form-type-textfield {
-            display: flex;
-        }
-        span.field-prefix {
-            padding: 7px 5px 0px 0px;
-        }
-    }
-    tr {
-        width: 42%;
-        background: #fff!important;
-        border-bottom: 0px solid #fff;
-        padding: 0px 5px 0px;
-    }
-    tr.even {
-        padding-right: 0px;
-    }
-    tr.even td.field-multiple-drag a.tabledrag-handle {
-//        padding-right: 0.5em;
-        border-top: 1px solid #444;
-        height: 8px;
-        width: 5px;
-//        margin-left: -13px;
-    }
-    td {
-        padding: 0px;
-    }
-    tbody > tr.odd:after {
-    /*    content: " - hi";*/
-    }
-    td.field-multiple-drag {
-        width: 0px;
-        padding-right: 0;
-    }
-} // end price
+//    }
+//}
+// price range
+//form table#field-event-price-values {
+////    display: flex;
+//    border: none;
+//    th {
+//        background: none;
+//        border: none;
+////        display: none;
+////        display: inline;
+//        float: left;
+//        
+//    }
+//    thead {
+//        display: none;
+//        background: none;
+//    }
+//    tbody {
+//        display: flex;
+//        justify-content: flex-start;
+//        border: none;
+//        a.tabledrag-handle .handle {
+//            display: none;
+//        }
+//        .form-item.form-type-textfield {
+//            display: flex;
+//        }
+//        span.field-prefix {
+//            padding: 7px 5px 0px 0px;
+//        }
+//    }
+//    tr {
+//        width: 42%;
+//        background: #fff!important;
+//        border-bottom: 0px solid #fff;
+//        padding: 0px 5px 0px;
+//    }
+//    tr.even {
+//        padding-right: 0px;
+//    }
+//    tr.even td.field-multiple-drag a.tabledrag-handle {
+////        padding-right: 0.5em;
+//        border-top: 1px solid #444;
+//        height: 8px;
+//        width: 5px;
+////        margin-left: -13px;
+//    }
+//    td {
+//        padding: 0px;
+//    }
+//    tbody > tr.odd:after {
+//    /*    content: " - hi";*/
+//    }
+//    td.field-multiple-drag {
+//        width: 0px;
+//        padding-right: 0;
+//    }
+//} // end price
+
+
+
+
+
+
 
 // ticket info
 
