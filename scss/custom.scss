@@ -1726,15 +1726,22 @@ footer.l-footer.row {
 .mobile section.block.block-workbench.contextual-links-region.block-workbench-block {
     display: none;
 }
-// can then display this workbench section for the role contributor or editor.. etc
-.page-node-add h1#page-title {
-    font-family: "Gotham SSm A","Gotham SSm B";
-    font-size: 16px;
-    color: #002e5d;
+
+.page-node-add {
+    h1#page-title {
+        font-family: "Gotham SSm A","Gotham SSm B";
+        font-size: 16px;
+        color: #002e5d;
+    }
+    h1#page-title:after {
+        content: " FOR:";
+    }
+    .form-item {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 }
-.page-node-add h1#page-title:after {
-    content: " FOR:";
-}
+
 .page-node-add, .page-node-edit {
 
     
@@ -1932,11 +1939,11 @@ fieldset.group-pricing legend {
     font-family: "Sentinel SSm A", "Sentinel SSm B";
     text-transform: uppercase;
     font-size: 13px;
-    padding: 0px 5px;
+//    padding: 0px 5px;
 }
 #edit-field-free {
-    width: 88px; // was 30
-    display: inline;
+    width: 91px; // was 30
+//    display: inline;
     float: left;
     padding-top: 5px;
     #edit-field-free-und .form-item {
