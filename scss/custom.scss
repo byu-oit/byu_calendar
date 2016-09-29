@@ -2215,3 +2215,13 @@ div#edit-field-full-name {
     font-weight: bold;
     color: $green;
 }
+.views-field-field-event-price.-Free,
+.views-field-field-price-range.-Free {
+    display: none;
+}
+.node-type-event {
+    .views-field {
+        padding: 10px 0px;
+    }
+    
+}
