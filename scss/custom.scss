@@ -167,7 +167,8 @@ h1, h2, h3, h4,
     color: $navy;
     font-weight: bold;
     display: inline;
-    
+    float: left;
+    padding-right: 5px;
 }
 
 /* ----- general input things like checkboxes etc ----- */
@@ -1183,6 +1184,11 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 
 /* ----------------- formatting fields for large-screen calendar views  -- */
 //week view adjusting week list block display
+.views-field.views-field-field-price-range.-Free,
+.views-field.views-field-field-event-price.-Free {
+    display: none;
+}
+
 .page-calendar.large-screen {
     .view-id-large_screen_calendar.view-display-id-block_3 {
 //        padding-top: 15px;
@@ -1213,9 +1219,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             font-weight: bold;
             color: green;
         }
-        .views-field.views-field-field-event-price.-Free {
-            display: none;
-        }
+        
         span.views-field.views-field-field-event-date {
             display: inline;
             float: left;
@@ -2177,6 +2181,8 @@ div#edit-field-full-name {
 }
 
 
+
+
 /* --- formatting Add An Event for large screen --- */
 @media(min-width: $large_screen_start_width) {
     #edit-field-event-date-und-0-value,
@@ -2197,4 +2203,15 @@ div#edit-field-full-name {
 // tabs at bottom
 .number-of-roles-1 .vertical-tabs.clearfix {
     display: none;
+}
+
+
+/* ------ Viewing an Event --------- */
+
+/* General & mobile first */
+.views-field-field-free .field-content,
+.views-field-field-event-price .field-content,
+.views-field-field-price-range .field-content {
+    font-weight: bold;
+    color: $green;
 }
