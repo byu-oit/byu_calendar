@@ -163,6 +163,28 @@ h1, h2, h3, h4,
        color: $navy;
     }
 }
+.medgray-button {
+    background-color: $medgray!important;
+    padding: 9px 12px!important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    a {
+        color: #fff;
+    }
+
+}
+.royal-button {
+    background-color: $royal;
+    padding: 9px 12px!important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    a {
+        color: #fff;
+    }
+
+}
 .blue-inline-label {
     color: $navy;
     font-weight: bold;
@@ -1250,9 +1272,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             font-weight: normal;
         }
         
-        .green-button .Free:before {
-            content: "FREE ";
-        }
+        
         .gray-button {
             padding: 9px 12px!important;
 
@@ -2209,6 +2229,9 @@ div#edit-field-full-name {
 /* ------ Viewing an Event --------- */
 
 /* General & mobile first */
+.green-button .Free:before {
+    content: "FREE ";
+}
 .views-field-field-free .field-content,
 .views-field-field-event-price .field-content,
 .views-field-field-price-range .field-content {
@@ -2221,7 +2244,10 @@ div#edit-field-full-name {
 }
 .node-type-event {
     .views-field {
-        padding: 10px 0px;
+        padding: 5px 0px 0px;
+    }
+    views-field.views-field-body {
+        padding-top: 30px;
     }
     
 }
