@@ -170,10 +170,14 @@ h1, h2, h3, h4,
     font-size: 12px;
     font-weight: bold;
     color: #fff;
+    height: 30px;
     a {
         color: #fff;
     }
 
+}
+.medgray-button:hover {
+    background: #a2a2a2;
 }
 .royal-button {
     background-color: $royal;
@@ -189,9 +193,7 @@ h1, h2, h3, h4,
 .royal-button:hover {
     background: $royallight;
 }
-.medgray-button:hover {
-    background: #a2a2a2;
-}
+
 .blue-inline-label {
     color: $navy;
     font-weight: bold;
@@ -2243,6 +2245,19 @@ div#edit-field-full-name {
 /* ------ Viewing an Event --------- */
 
 /* General & mobile first */
+section.block.block-views.block-views-event-page-blocks-block {
+    padding-bottom: 20px;
+}
+.mobile-first-event span.views-label {
+    font-size: 14px;
+}
+
+.date-display-range {
+    display: inline;         // trying to get MT timezone nicely after the date.. 
+    float: left;
+}
+
+// displaying Free & Pricing
 .green-button .Free:before {
     content: "FREE ";
 }
@@ -2256,11 +2271,12 @@ div#edit-field-full-name {
 .views-field-field-price-range.-Free {
     display: none;
 }
+
 .node-type-event {
     .views-field {
         padding: 5px 0px 0px;
     }
-    views-field.views-field-body {
+    .views-field.views-field-body {
         padding-top: 30px;
     }
     
@@ -2274,6 +2290,13 @@ span.views-label.views-label-addtoany-link {
     color: #767676;
     position: relative;
     top: 3px;
+}
+.views-field.views-field-addtoany-link .field-content {
+    position: relative;
+    top: -4px;
+}
+.views-field.views-field-nothing {
+    padding-top: 15px;
 }
 #additional-info-links {
     display: flex;
