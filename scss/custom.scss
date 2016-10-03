@@ -1827,11 +1827,14 @@ fieldset {
 /* ------ DATE / TIME ---------- */ 
 // timezone
 #edit-field-timezone {
-    width: 60px;
+    width: 53px;
     position: relative;
 //    top: 64px;
-    top: 77px;
-    left: 203px;
+//    top: 77px;
+//    left: 203px;
+    // for mobile with no admin menu:
+        top: 32px;
+    left: 234px;
 
     margin-bottom: -30px;
     label {
