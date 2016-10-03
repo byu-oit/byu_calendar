@@ -96,6 +96,7 @@ a:hover {
 .light-gray-bg {
     background: $lightgray;
 }
+
 .gray-button {
     @include button;
     background: $lightgray;
@@ -1780,7 +1781,9 @@ footer.l-footer.row {
     float: right;
     margin: -10px 0px 10px;
 }
-
+input {
+    max-width: 450px;
+}
 /* --- mobile first  -- add/edit event  --- */
 .mobile section.block.block-workbench.contextual-links-region.block-workbench-block {
     display: none;
@@ -2254,6 +2257,9 @@ div#edit-field-full-name {
 
 /* --- formatting Add An Event for large screen --- */
 @media(min-width: $large_screen_start_width) {
+    section.block.block-block.light-gray-bg.block-block-13 {
+        display: none;
+    }
     #edit-field-event-date-und-0-value,
     #edit-field-event-date-und-0-value2 {
         .form-item {
@@ -2262,9 +2268,9 @@ div#edit-field-full-name {
     }
     
     fieldset.required-fields.group-pricing.field-group-fieldset.form-wrapper {
-        float: left;
-        width: 40%;
-        margin-right: 2%;
+//        float: left;
+//        width: 40%;
+//        margin-right: 2%;
     }
     
 }
@@ -2273,6 +2279,10 @@ div#edit-field-full-name {
 .number-of-roles-1 .vertical-tabs.clearfix {
     display: none;
 }
+
+
+
+
 
 
 /* ------ Viewing an Event --------- */
