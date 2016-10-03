@@ -1831,7 +1831,7 @@ fieldset {
 /* ------ DATE / TIME ---------- */ 
 // timezone
 #edit-field-timezone {
-    width: 61px;
+//    width: 61px;
     position: relative;
 //    top: 64px;
 //    top: 77px;
@@ -1851,6 +1851,7 @@ fieldset {
     .form-item.form-type-select select {
        @include gray-select;
        @include select-dropdown;
+        width: 61px; // need this for if they check all day and then uncheck it and it's redisplayed..
     }
 }
 .large-screen #edit-field-timezone {
