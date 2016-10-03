@@ -2220,15 +2220,18 @@ div#edit-field-full-name {
     }
     // display some fieldsets
     fieldset.show-fieldset {
-        border-top: 2px solid $navy;
+       
         
         legend {
             display: block;
             text-transform: uppercase;
             color: $navy;
         }
+
     }
-    
+    fieldset.show-fieldset > .fieldset-wrapper {
+         border-top: 2px solid $navy;
+    }    
     
     
     #edit-field-event-date-und-0-value,
