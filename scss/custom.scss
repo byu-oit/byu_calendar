@@ -1850,13 +1850,14 @@ fieldset {
        @include select-dropdown;
     }
 }
+.large-screen #edit-field-timezone {
+     top: 98px;
+}
 // need to add something for ipad here too..?
 .ipad #edit-field-timezone {
     top: 73px;
 }
-.desktop #edit-field-timezone {
-     top: 98px;
-}
+
 .number-of-roles-1 #edit-field-timezone {
 //    top: 73px;
 //    left: -25px;
