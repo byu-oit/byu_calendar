@@ -1784,6 +1784,12 @@ footer.l-footer.row {
 input {
     max-width: 450px;
 }
+// tabs at bottom
+.number-of-roles-1 .vertical-tabs.clearfix {
+    display: none;
+}
+
+
 /* --- mobile first  -- add/edit event  --- */
 .mobile section.block.block-workbench.contextual-links-region.block-workbench-block {
     display: none;
@@ -1870,10 +1876,7 @@ fieldset {
     top: 73px;
 }
 
-.number-of-roles-1 #edit-field-timezone {
-//    top: 73px;
-//    left: -25px;
-}
+
 // all day checkbox
 .form-item.form-type-checkbox.form-item-field-event-date-und-0-all-day {
     padding: 0px;
@@ -2078,73 +2081,6 @@ fieldset.group-pricing legend {
     padding-right: 0px!important;
 }
   
-//#field-price-add-more-wrapper {
-//    
-//    .tabledrag-toggle-weight-wrapper {
-//        display: none;
-//    }
-//}
-// price range
-//form table#field-price-values {
-////    display: flex;
-//    border: none;
-//    th {
-//        background: none;
-//        border: none;
-////        display: none;
-////        display: inline;
-//        float: left;
-//        
-//    }
-//    thead {
-//        display: none;
-//        background: none;
-//    }
-//    tbody {
-//        display: flex;
-//        justify-content: flex-start;
-//        border: none;
-//        a.tabledrag-handle .handle {
-//            display: none;
-//        }
-//        .form-item.form-type-textfield {
-//            display: flex;
-//        }
-//        span.field-prefix {
-//            padding: 7px 5px 0px 0px;
-//        }
-//    }
-//    tr {
-//        width: 42%;
-//        background: #fff!important;
-//        border-bottom: 0px solid #fff;
-//        padding: 0px 5px 0px;
-//    }
-//    tr.even {
-//        padding-right: 0px;
-//    }
-//    tr.even td.field-multiple-drag a.tabledrag-handle {
-////        padding-right: 0.5em;
-//        border-top: 1px solid #444;
-//        height: 8px;
-//        width: 5px;
-////        margin-left: -13px;
-//    }
-//    td {
-//        padding: 0px;
-//    }
-//    tbody > tr.odd:after {
-//    /*    content: " - hi";*/
-//    }
-//    td.field-multiple-drag {
-//        width: 0px;
-//        padding-right: 0;
-//    }
-//} // end price
-
-
-
-
 
 
 
@@ -2260,6 +2196,18 @@ div#edit-field-full-name {
     section.block.block-block.light-gray-bg.block-block-13 {
         display: none;
     }
+    // display some fieldsets
+    fieldset {
+        border-top: 2px solid $navy;
+        
+        legend {
+            text-transform: uppercase;
+            color: $navy;
+        }
+    }
+    
+    
+    
     #edit-field-event-date-und-0-value,
     #edit-field-event-date-und-0-value2 {
         .form-item {
@@ -2267,18 +2215,9 @@ div#edit-field-full-name {
         }
     }
     
-    fieldset.required-fields.group-pricing.field-group-fieldset.form-wrapper {
-//        float: left;
-//        width: 40%;
-//        margin-right: 2%;
-    }
     
 }
 
-// tabs at bottom
-.number-of-roles-1 .vertical-tabs.clearfix {
-    display: none;
-}
 
 
 
