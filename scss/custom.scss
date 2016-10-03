@@ -1217,7 +1217,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 /* ----------------- formatting fields for large-screen calendar views  -- */
 //week view adjusting week list block display
 .views-field.views-field-field-price-range.-Free,
-.views-field.views-field-field-event-price.-Free {
+.views-field.views-field-field-price.-Free {
     display: none;
 }
 
@@ -1247,7 +1247,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             padding: 0px 0px 5px;
         }
         .views-field.views-field-field-free,
-        .views-field.views-field-field-event-price {
+        .views-field.views-field-field-price {
             font-weight: bold;
             color: green;
         }
@@ -1270,11 +1270,11 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             
         } 
         // if there is free/price selected AND tickets availability date, add :
-         span.views-field.views-field-field-event-price + .views-field-field-tickets-available:before,
+         span.views-field.views-field-field-price + .views-field-field-tickets-available:before,
         span.views-field.views-field-field-free + .views-field-field-tickets-available:before {
             content: ": ";
         }
-        span.views-field.views-field-field-event-price + .views-field-field-tickets-available,
+        span.views-field.views-field-field-price + .views-field-field-tickets-available,
         span.views-field.views-field-field-free + .views-field-field-tickets-available {
             margin-left: -2px;
         }
@@ -1864,11 +1864,11 @@ fieldset {
 #edit-field-event-date-und-0-value2 {
     display: flex;
     padding: 0px;
-    @media(max-width: $mobile_max_width){
+//    @media(max-width: $mobile_max_width){
         flex-wrap: wrap;
         width: 235px;
         justify-content: flex-start;
-    }
+//    }
 
     // date select dropdowns
     .form-type-select[class*=hour] {
@@ -2019,11 +2019,11 @@ fieldset.group-pricing legend {
 
 // single price & price range
 
-#edit-field-event-price label,
+#edit-field-price label,
 #edit-field-price-range legend {
         display: none;
     }
-#edit-field-event-price,
+#edit-field-price,
 #edit-field-price-range {
     .form-item {
         display: flex;
@@ -2040,7 +2040,7 @@ fieldset.group-pricing legend {
     }
 }
 
-#edit-field-event-price {
+#edit-field-price {
     position: relative;
     top: 44px; // was 23 -if the radios dont jump down, its prob 23, 44 if jumping
 }
@@ -2056,14 +2056,14 @@ fieldset.group-pricing legend {
     padding-right: 0px!important;
 }
   
-//#field-event-price-add-more-wrapper {
+//#field-price-add-more-wrapper {
 //    
 //    .tabledrag-toggle-weight-wrapper {
 //        display: none;
 //    }
 //}
 // price range
-//form table#field-event-price-values {
+//form table#field-price-values {
 ////    display: flex;
 //    border: none;
 //    th {
@@ -2263,12 +2263,12 @@ section.block.block-views.block-views-event-page-blocks-block {
     content: "FREE ";
 }
 .views-field-field-free .field-content,
-.views-field-field-event-price .field-content,
+.views-field-field-price .field-content,
 .views-field-field-price-range .field-content {
     font-weight: bold;
     color: $green;
 }
-.views-field-field-event-price.-Free,
+.views-field-field-price.-Free,
 .views-field-field-price-range.-Free {
     display: none;
 }
