@@ -1802,7 +1802,7 @@ input {
         color: #002e5d;
     }
     h1#page-title:after {
-        content: " FOR:";
+//        content: " FOR:";
     }
     .form-item {
         margin-top: 10px;
@@ -2068,11 +2068,27 @@ fieldset.group-pricing legend {
 #edit-field-price {
     position: relative;
     top: 30px; // was 23 -if the radios dont jump down, its prob 23, 44 if jumping
+    height: 30px;
+}
+// new if free is last
+#edit-field-price {
+    position: relative;
+    top: 30px;
+    left: 80px;
+    height: 0px;
 }
 
 #edit-field-price-range {
     position: relative;
     top: 56px;  // was 61
+}
+// new if free is last
+#edit-field-price-range {
+    position: relative;
+    top: 56px;
+    left: 80px;
+    height: 0px;
+    /* float: right; */
 }
 #edit-field-price-range .field-values-wrapper.clearfix {
     display: flex;
@@ -2169,6 +2185,12 @@ fieldset#edit-body-und-0-format {
         padding: 5px 0px 15px;
         line-height: 16px;
     }
+}
+button#edit-field-thumbnail-und-0-upload-button {
+    text-transform: uppercase;
+}
+button#edit-field-thumbnail-und-0-upload-button:after {
+    content: " EVENT IMAGE";
 }
 
 
