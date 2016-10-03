@@ -2223,6 +2223,7 @@ div#edit-field-full-name {
         border-top: 2px solid $navy;
         
         legend {
+            display: block;
             text-transform: uppercase;
             color: $navy;
         }
