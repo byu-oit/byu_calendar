@@ -2219,7 +2219,7 @@ div#edit-field-full-name {
         display: none;
     }
     // display some fieldsets
-    fieldset {
+    fieldset.show-fieldset {
         border-top: 2px solid $navy;
         
         legend {
