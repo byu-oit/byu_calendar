@@ -65,14 +65,15 @@ $nav_gradient_2: 5%;
     font-weight: bold;
     color: $gray;
     border: 1px solid $medgray;
-    padding: 2px;
+    padding: 2px 25px 2px 6px;
     
-//    -webkit-appearance: none; 
-//    background-position-x: 244px;
+
 }
 @mixin select-dropdown {
     background: #fff;
     background: url("/sites/all/themes/byu_calendar/images/gray-bg-dropdown-arrow.png") no-repeat right white;
+    -webkit-appearance: none; 
+//    background-position-x: 244px;
 }
 
 
@@ -1830,7 +1831,7 @@ fieldset {
 /* ------ DATE / TIME ---------- */ 
 // timezone
 #edit-field-timezone {
-    width: 53px;
+    width: 61px;
     position: relative;
 //    top: 64px;
 //    top: 77px;
@@ -1846,7 +1847,7 @@ fieldset {
         
     .form-item.form-type-select select {
        @include gray-select;
-        @include select-dropdown
+       @include select-dropdown;
     }
 }
 // need to add something for ipad here too..?
@@ -1873,7 +1874,7 @@ fieldset {
     padding: 0px;
 //    @media(max-width: $mobile_max_width){
         flex-wrap: wrap;
-        width: 235px;
+        width: 250px;
         justify-content: flex-start;
 //    }
 
