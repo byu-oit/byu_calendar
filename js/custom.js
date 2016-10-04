@@ -135,7 +135,7 @@ jQuery( document ).ready(function( $ ) {
         var weekday = weekdays[wid];
         // calc day and set css value for weekday
         console.log(weekday);
-        $('head').append('<style>.form-item-field-event-date-und-0-all-day:after{content:"' + weekday + '"; color: #767676; font-weight: bold;}</style>');
+        $('head').append('<style>.form-item-field-event-date-und-0-all-day:after{content:"' + weekday + '"; text-transform: uppercase; color: #767676; font-weight: bold; padding-left: 20px; }</style>');
         
     }
     
@@ -145,8 +145,8 @@ jQuery( document ).ready(function( $ ) {
         $('#edit-field-timezone').css('display', c);
     });
     $('#edit-field-event-date-und-0-value-month').change(function(){ calcWeekday() });
-    $('#edit-field-event-date-und-0-value-day').change(calcWeekday());
-    $('#edit-field-event-date-und-0-value-year').change(calcWeekday());
+    $('#edit-field-event-date-und-0-value-day').change(function(){ calcWeekday() });
+    $('#edit-field-event-date-und-0-value-year').change(function(){ calcWeekday() });
     
 //    .date-no-float.start-date-wrapper.container-inline-date:before {
 //        content: "TUESDAY";
