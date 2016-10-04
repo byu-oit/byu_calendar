@@ -232,25 +232,26 @@ input[type="checkbox"] {
     }
     label:before, label:after {
         font-family: FontAwesome;
-        font-size: 23px;
+        
         color: $medgray;
         /*absolutely positioned*/
         position: absolute; top: 2px; left: -28px; right: 10px;
     }
-    label:before {
+    label:before {  // before is checkbox
         content: '\f096'; /*checkbox unchecked */
+        font-size: 23px;
     }
-    label:after {
+    label:after {  // after is checkmark
         content: '\f00c'; /*checkbox checked*/
         max-width: 0;
         overflow: hidden;
         opacity: 0.5;
         font-size: 23px;
-       top: -3px;
-       left: -27px;
-       color: $green;
+        top: -3px;
+        left: -27px;
+        color: $green;
 
-    -webkit-transition: all 0.50s;
+        -webkit-transition: all 0.50s;
         -moz-transition: all 0.50s;
         -o-transition: all 0.50s;
          transition: all 0.50s;
@@ -266,9 +267,13 @@ input[type="checkbox"] {
     label {
         font-size: 16px;  // smaller checkbox
         margin-left: -25px;
+        padding: 5px 28px 0 0;
     }
     label:before, label:after {
 //        color: $navy;
+    }
+    label:before {
+        font-size: 20px;
     }
     label:after {
         font-size: 20px;
