@@ -2230,7 +2230,7 @@ div#edit-field-full-name {
     }
     fieldset.show-fieldset > .fieldset-wrapper {
         border-top: 1px solid $medgray;
-        padding-top: 20px;
+        padding-top: 10px;
     }    
     
     
@@ -2240,7 +2240,20 @@ div#edit-field-full-name {
             padding: 0px 5px;
         }
     }
+    #edit-field-are-tickets {
+        margin-top: 15px;
+        height: 35px;
+    }
+    #edit-field-tickets-available span.fieldset-legend:after {
+        content: " On:";
+    }
     
+    #edit-field-tickets-available fieldset .fieldset-wrapper {
+        height: 40px;
+        .form-item {
+            padding: 0px 13px 0px 0px;
+        }
+    }
     
 }
 
