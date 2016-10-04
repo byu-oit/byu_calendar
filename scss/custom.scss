@@ -303,12 +303,16 @@ input[type="checkbox"]:checked ~ label:after {
     background: $navy;
     color: #fff;
 }
-
+.chosen-container-single .chosen-single {
+    padding: 0px 15px;
+    color: $gray;
+}
 .chosen-container-single .chosen-search input[type="text"] {
     box-shadow: none;
     border: none;
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
+    border-top: 1px solid $medgray;
+    border-bottom: 1px solid $medgray;
+    padding: 7px 15px;
 }
 // pull dropdown up so it covers the top search part
 .chosen-container-single .chosen-drop {
@@ -320,6 +324,10 @@ input[type="checkbox"]:checked ~ label:after {
 .chosen-container .chosen-results {
     text-transform: lowercase;
     padding: 0px;
+}
+// hide first, which is 'search'
+.chosen-container .chosen-results li:first-of-type {
+    display: none;
 }
 .chosen-container .chosen-results li {
     color: $gray;
