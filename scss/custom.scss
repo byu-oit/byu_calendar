@@ -2219,15 +2219,17 @@ div#edit-field-full-name {
         display: none;
     }
     // display some fieldsets
+    fieldset.show-fieldset {
+        padding-top: 15px;
+    }
     fieldset.show-fieldset > legend {
             display: block;
             text-transform: uppercase;
             color: $navy;
-            margin-top: 10px;
 
     }
     fieldset.show-fieldset > .fieldset-wrapper {
-         border-top: 2px solid $navy;
+        border-top: 2px solid $navy;
         padding-top: 20px;
     }    
     
