@@ -263,9 +263,18 @@ input[type="checkbox"] {
 // checkboxes for views better exposed filters
 .form-type-bef-checkbox {
     @include basic-checkbox; 
-   label:before, label:after {
-        color: $navy;
+    label {
+        font-size: 16px;  // smaller checkbox
+        margin-left: -25px;
     }
+    label:before, label:after {
+//        color: $navy;
+    }
+    label:after {
+        font-size: 20px;
+        left: -22px;
+    }
+    
 }
 /* Animating the Checkbox Icon */
 input[type="checkbox"]:checked ~ label:after {
