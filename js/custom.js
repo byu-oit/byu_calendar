@@ -105,6 +105,7 @@ jQuery( document ).ready(function( $ ) {
     // editing or adding event
     
     function calcWeekday() {
+        console.log("got into the function!");
         // fetch values
         var m = document.getElementById("edit-field-event-date-und-0-value-month");
         var mid = m.options[m.selectedIndex].value;
@@ -120,7 +121,7 @@ jQuery( document ).ready(function( $ ) {
         var dateString = mid.concat("/", did, "/", yid);
         
         var date = new Date(dateString);
-        var weekDay = (date, "l");
+        var weekDay = dateFormat(date, "l");
         // calc day and set css value for weekday
         console.log(weekDay);
     }
