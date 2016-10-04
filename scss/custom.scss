@@ -2220,16 +2220,16 @@ div#edit-field-full-name {
     }
     // display some fieldsets
     fieldset.show-fieldset {
-        padding-top: 15px;
+        margin-top: 30px;
     }
     fieldset.show-fieldset > legend {
-            display: block;
-            text-transform: uppercase;
-            color: $navy;
-
+        display: block;
+        text-transform: uppercase;
+        color: $navy;
+        margin-bottom: 5px;
     }
     fieldset.show-fieldset > .fieldset-wrapper {
-        border-top: 2px solid $navy;
+        border-top: 1px solid $medgray;
         padding-top: 20px;
     }    
     
