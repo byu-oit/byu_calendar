@@ -304,13 +304,26 @@ input[type="checkbox"]:checked ~ label:after {
     color: #fff;
 }
 
+.chosen-container-single .chosen-search input[type="text"] {
+    box-shadow: none;
+    border: none;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+// pull dropdown up so it covers the top search part
+.chosen-container-single .chosen-drop {
+    margin-top: -26px;
+    border-radius: 4px;
+    background-clip: padding-box;
+}
+
 .chosen-container .chosen-results {
     text-transform: lowercase;
     padding: 0px;
 }
 .chosen-container .chosen-results li {
     color: $gray;
-    padding-left: 7px 15px;
+    padding: 7px 15px;
 }
 .mobile .chosen-container .chosen-results li {
 //    padding-left: 5px 15px;
@@ -329,7 +342,7 @@ input[type="checkbox"]:checked ~ label:after {
     background: none;
     border-radius: 2px;
 }
-.chosen-search {
+.chosen-container-single .chosen-search {
     padding: 0px;
     input[type="text"] {
         
