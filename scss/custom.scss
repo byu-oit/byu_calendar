@@ -221,7 +221,7 @@ input[type="checkbox"] {
     display: none;
 }
 
-.form-type-checkbox {
+@mixin basic-checkbox {
     label {
         position: relative;
         margin-left: 32px;
@@ -255,10 +255,18 @@ input[type="checkbox"] {
         -o-transition: all 0.50s;
          transition: all 0.50s;
     }
-    
-    
-} // end checkbox form
-
+}
+.form-type-checkbox {   
+    // basic for editing and adding nodes
+   @include basic-checkbox; 
+}
+// checkboxes for views better exposed filters
+.form-type-bef-checkbox {
+    @include basic-checkbox; 
+   label:before, label:after {
+        color: $navy;
+    }
+}
 /* Animating the Checkbox Icon */
 input[type="checkbox"]:checked ~ label:after {
     max-width: 25px;
