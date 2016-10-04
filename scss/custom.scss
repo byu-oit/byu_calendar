@@ -310,6 +310,10 @@ input[type="checkbox"]:checked ~ label:after {
 }
 .chosen-container .chosen-results li {
     color: $gray;
+    padding-left: 7px 15px;
+}
+.mobile .chosen-container .chosen-results li {
+//    padding-left: 5px 15px;
 }
 .chosen-container .chosen-results li.highlighted {
     background-color: $navy!important;
@@ -332,6 +336,12 @@ input[type="checkbox"]:checked ~ label:after {
     }
 }
 
+.chosen-drop ul.chosen-results {
+    max-height: 175px;
+}
+.mobile .chosen-drop ul.chosen-results {
+    max-height: 150px;
+}
 
     // formatting dropdown arrows
 //    background: url(new_arrow.png) no-repeat right #ddd;
