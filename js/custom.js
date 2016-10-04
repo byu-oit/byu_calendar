@@ -105,7 +105,6 @@ jQuery( document ).ready(function( $ ) {
     // editing or adding event
     
     function calcWeekday() {
-        console.log("got into the function!");
         // fetch values
         var m = document.getElementById("edit-field-event-date-und-0-value-month");
         var mid = m.options[m.selectedIndex].value;
@@ -121,7 +120,6 @@ jQuery( document ).ready(function( $ ) {
         var dateString = mid.concat("/", did, "/", yid);
         
         var date = new Date(dateString);
-        //var weekDay = dateFormat(date, "l");
         
         var weekdays = new Array(7);
             weekdays[0]=  "Sunday";
@@ -133,8 +131,7 @@ jQuery( document ).ready(function( $ ) {
             weekdays[6] = "Saturday";
         var wid = date.getDay();                    
         var weekday = weekdays[wid];
-        // calc day and set css value for weekday
-        console.log(weekday);
+
         $('head').append('<style>.form-item-field-event-date-und-0-all-day:after{content:"' + weekday + '"; text-transform: uppercase; color: #767676; font-weight: bold; padding-left: 20px; }</style>');
         
     }
@@ -143,6 +140,12 @@ jQuery( document ).ready(function( $ ) {
     $('#edit-field-event-date-und-0-all-day').change(function(){
         var c = this.checked ? 'none' : 'inline';
         $('#edit-field-timezone').css('display', c);
+       // var p = this.checked ? '0px' : 'inline';
+    });
+    
+    $('#edit-field-event-date-und-0-show-todate').change(function(){
+        var end = this.checked ? '-200px' : '-91px';
+        $('#edit-field-timezone').css('top', end);
     });
     $('#edit-field-event-date-und-0-value-month').change(function(){ calcWeekday() });
     $('#edit-field-event-date-und-0-value-day').change(function(){ calcWeekday() });
