@@ -135,7 +135,7 @@ jQuery( document ).ready(function( $ ) {
         var weekday = weekdays[wid];
         // calc day and set css value for weekday
         console.log(weekday);
-        $('head').append('<style>.start-date-wrapper.container-inline-date:before{content:"' + weekday + '"; }</style>');
+        $('head').append('<style>.form-item-field-event-date-und-0-all-day:after{content:"' + weekday + '"; color: #767676; font-weight: bold;}</style>');
         
     }
     
