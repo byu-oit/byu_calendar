@@ -1908,8 +1908,10 @@ fieldset {
     top: 32px;
     left: 234px;
     // mobile now:  (also not logged in, mobile)
-    top: 95px;
+    top: -71px;
     left: 220px;
+    // switched to after date:
+
 
     margin-bottom: -30px;
     label {
@@ -1923,12 +1925,12 @@ fieldset {
     }
 }
 .large-screen #edit-field-timezone {
-    top: 86px;
+    top: -91px;
     left: 220px;
 }
 // need to add something for ipad here too..?
 .ipad #edit-field-timezone {
-    top: 73px;
+//    top: -73px;
 }
 
 
