@@ -110,7 +110,7 @@ jQuery( document ).ready(function( $ ) {
         var m = document.getElementById("edit-field-event-date-und-0-value-month");
         var mid = m.options[m.selectedIndex].value;
         if(mid.length == '1') {
-            mid = "0" . mid;
+            mid = "".concat("0", mid);
         }
         var d = document.getElementById("edit-field-event-date-und-0-value-day");
         var did = d.options[d.selectedIndex].value;
@@ -135,6 +135,8 @@ jQuery( document ).ready(function( $ ) {
         var weekday = weekdays[wid];
         // calc day and set css value for weekday
         console.log(weekday);
+        $('head').append('<style>.start-date-wrapper.container-inline-date:before{content:"' + weekday + '"; }</style>');
+        
     }
     
     
