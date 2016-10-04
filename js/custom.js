@@ -121,9 +121,20 @@ jQuery( document ).ready(function( $ ) {
         var dateString = mid.concat("/", did, "/", yid);
         
         var date = new Date(dateString);
-        var weekDay = dateFormat(date, "l");
+        //var weekDay = dateFormat(date, "l");
+        
+        var weekdays = new Array(7);
+            weekdays[0]=  "Sunday";
+            weekdays[1] = "Monday";
+            weekdays[2] = "Tuesday";
+            weekdays[3] = "Wednesday";
+            weekdays[4] = "Thursday";
+            weekdays[5] = "Friday";
+            weekdays[6] = "Saturday";
+        var wid = date.getDay();                    
+        var weekday = weekdays[wid];
         // calc day and set css value for weekday
-        console.log(weekDay);
+        console.log(weekday);
     }
     
     
