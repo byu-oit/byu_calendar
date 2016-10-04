@@ -224,7 +224,7 @@ input[type="checkbox"] {
 .form-type-checkbox {
     label {
         position: relative;
-        padding-left: 30px;
+        margin-left: 30px;
         font-size: 20px;
         cursor: pointer;
         color: #fff;
@@ -232,7 +232,8 @@ input[type="checkbox"] {
     }
     label:before, label:after {
         font-family: FontAwesome;
-        font-size: 50px;
+        font-size: 23px;
+        color: $medgray;
         /*absolutely positioned*/
         position: absolute; top: 0; left: -49px; right: 10px;
     }
@@ -244,9 +245,9 @@ input[type="checkbox"] {
         max-width: 0;
         overflow: hidden;
         opacity: 0.5;
-        font-size: 20px;
-       top: 16px;
-       left: -42px;
+        font-size: 23px;
+       top: -3px;
+       left: -48px;
        color: $green;
 
     -webkit-transition: all 0.50s;
