@@ -142,8 +142,8 @@ jQuery( document ).ready(function( $ ) {
         var c = this.checked ? 'none' : 'inline';
         $('#edit-field-timezone').css('display', c);
     });
-    $('#edit-field-event-date-und-0-value-month').change(calcWeekday());
-    $('#edit-field-event-date-und-0-value-day').change(calcWeekday());
+    $('#edit-field-event-date-und-0-value-month').onchange(calcWeekday());
+    $('#edit-field-event-date-und-0-value-day').onchange(calcWeekday());
     $('#edit-field-event-date-und-0-value-year').change(calcWeekday());
     
 //    .date-no-float.start-date-wrapper.container-inline-date:before {
