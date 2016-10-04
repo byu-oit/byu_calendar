@@ -2254,6 +2254,29 @@ div#edit-field-full-name {
             padding: 0px 13px 0px 0px;
         }
     }
+    #edit-field-event-type-und {
+           display: flex;
+            flex-flow: column wrap;
+            width: 400px;
+            height: 96px;
+    }
+    #edit-field-event-type-und .form-item {
+        width: 200px;
+        margin: 5px 0px;
+    }
+    #edit-field-internal-category .description {
+        padding: 10px 0px 5px;
+    }
+    #edit-field-are-tickets-und {
+        margin-left: -10px;
+    }
+    #edit-field-free #edit-field-free-und {
+        margin-top: -10px;
+        margin-bottom: 15px;
+    }
+    
+    
+    
     
 }
 
