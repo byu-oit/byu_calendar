@@ -265,8 +265,9 @@ input[type="checkbox"] {
 .form-type-bef-checkbox {
     @include basic-checkbox; 
     label {
-        font-size: 16px;  // smaller checkbox
+        font-size: 13px;  // smaller checkbox
         margin-left: -25px;
+        margin-left: 0px;
         padding: 5px 28px 0 0;
     }
     label:before, label:after {
