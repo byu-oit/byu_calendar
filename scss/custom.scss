@@ -225,7 +225,7 @@ input[type="checkbox"] {
     label {
         position: relative;
         padding-left: 30px;
-        font-size: 30px;
+        font-size: 20px;
         cursor: pointer;
         color: #fff;
         padding: 16px 28px 0 0;
@@ -244,10 +244,10 @@ input[type="checkbox"] {
         max-width: 0;
         overflow: hidden;
         opacity: 0.5;
-        font-size: 27px;
+        font-size: 20px;
        top: 16px;
        left: -42px;
-       color: #f2ca27;
+       color: $green;
 
     -webkit-transition: all 0.50s;
         -moz-transition: all 0.50s;
