@@ -224,7 +224,7 @@ input[type="checkbox"] {
 .form-type-checkbox {
     label {
         position: relative;
-        margin-left: 30px;
+        margin-left: 32px;
         font-size: 20px;
         cursor: pointer;
         color: #fff;
@@ -235,7 +235,7 @@ input[type="checkbox"] {
         font-size: 23px;
         color: $medgray;
         /*absolutely positioned*/
-        position: absolute; top: 0; left: -49px; right: 10px;
+        position: absolute; top: 2px; left: -28px; right: 10px;
     }
     label:before {
         content: '\f096'; /*checkbox unchecked */
@@ -247,7 +247,7 @@ input[type="checkbox"] {
         opacity: 0.5;
         font-size: 23px;
        top: -3px;
-       left: -48px;
+       left: -27px;
        color: $green;
 
     -webkit-transition: all 0.50s;
