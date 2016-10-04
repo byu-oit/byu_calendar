@@ -117,7 +117,8 @@ jQuery( document ).ready(function( $ ) {
         var y = document.getElementById("edit-field-event-date-und-0-value-year");
         var yid = y.options[y.selectedIndex].value;
         
-        var dateString = $mid . "/" . $did . "/" . $yid;
+        var dateString == mid.concat("/", did, "/", yid);
+        
         var date = new Date(dateString);
         var weekDay = (date, "l");
         // calc day and set css value for weekday
