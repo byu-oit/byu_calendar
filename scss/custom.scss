@@ -61,26 +61,7 @@ $nav_gradient_2: 5%;
     padding: 9px 0px!important;
     
 }
-@mixin gray-select {
-    font-weight: bold;
-    color: $gray;
-    border: 1px solid $medgray;
-    padding: 2px 25px 2px 6px;
-    
 
-}
-@mixin select-dropdown {
-    background: #fff;
-    background: url("/sites/all/themes/byu_calendar/images/gray-bg-dropdown-arrow.png") no-repeat right white;
-    -webkit-appearance: none; 
-//    background-position-x: 244px;
-}
-@mixin plain-dropdown {
-    background: #fff;
-    background: url("/sites/all/themes/byu_calendar/images/gray-bg-dropdown-arrow.png") no-repeat right white;
-    -webkit-appearance: none; 
-//    background-position-x: 244px;
-}
 
 /* ------------------------------------- */
 
@@ -214,7 +195,34 @@ h1, h2, h3, h4,
 }
 
 /* ----- general input things like checkboxes etc ----- */
+@mixin gray-select {
+    font-weight: bold;
+    color: $gray;
+    border: 1px solid $medgray;
+    padding: 2px 25px 2px 6px;
 
+}
+
+@mixin select-dropdown {
+    background: #fff;
+    background: url("/sites/all/themes/byu_calendar/images/gray-bg-dropdown-arrow.png") no-repeat right white;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    -o-appearance:none;
+    appearance:none;
+//    background-position-x: 244px;
+}
+@mixin plain-dropdown {
+    background: #fff;
+    background: url("/sites/all/themes/byu_calendar/images/gray-bg-dropdown-arrow.png") no-repeat right white;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    -o-appearance:none;
+    appearance:none;
+}
+select::-ms-expand {
+    display: none;
+}
 
 // Checkboxes
 input[type="file"], input[type="checkbox"], input[type="radio"], select {
