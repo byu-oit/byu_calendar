@@ -104,10 +104,40 @@ jQuery( document ).ready(function( $ ) {
     
     // editing or adding event
     
+    function calcWeekday() {
+        // fetch values
+        var m = document.getElementById("edit-field-event-date-und-0-value-month");
+        var mid = m.options[m.selectedIndex].value;
+        if(mid.length == '1') {
+            mid = "0" . mid;
+        }
+        var d = document.getElementById("edit-field-event-date-und-0-value-day");
+        var did = d.options[d.selectedIndex].value;
+     
+        var y = document.getElementById("edit-field-event-date-und-0-value-year");
+        var yid = y.options[y.selectedIndex].value;
+        
+        var dateString = $mid . "/" . $did . "/" . $yid;
+        var date = new Date(dateString);
+        var weekDay = (date, "l");
+        // calc day and set css value for weekday
+        console.log(weekDay);
+    }
+    
+    
     $('#edit-field-event-date-und-0-all-day').change(function(){
         var c = this.checked ? 'none' : 'inline';
         $('#edit-field-timezone').css('display', c);
     });
+    $('#edit-field-event-date-und-0-value-month').change(calcWeekday());
+    $('#edit-field-event-date-und-0-value-day').change(calcWeekday());
+    $('#edit-field-event-date-und-0-value-year').change(calcWeekday());
+    
+//    .date-no-float.start-date-wrapper.container-inline-date:before {
+//        content: "TUESDAY";
+//        color: gray;
+//        font-weight: bold;
+//    }
 
 });
 
