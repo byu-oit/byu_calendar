@@ -132,7 +132,7 @@ jQuery( document ).ready(function( $ ) {
         var wid = date.getDay();                    
         var weekday = weekdays[wid];
 
-        $('head').append('<style>.form-item-field-event-date-und-0-all-day:after{content:"' + weekday + '"; text-transform: uppercase; color: #767676; font-weight: bold; padding-left: 20px; }</style>');
+        $('head').append('<style>.form-item-field-event-date-und-0-all-day:before{content:"' + weekday + '"; text-transform: uppercase; color: #767676; font-weight: bold; padding-left: 20px; }</style>');
         
     }
     if (( $("body").hasClass("page-node-add") ) || ( $("body").hasClass("page-node-edit")) ) {
