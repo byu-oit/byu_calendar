@@ -150,12 +150,10 @@ jQuery( document ).ready(function( $ ) {
         var end = this.checked ? '-200px' : '-91px';
         $('#edit-field-timezone').css('top', end);
         
-        if ( $("body").hasClass("large-screen") )
+        if ( $("body").hasClass("large-screen") ){
             var mobend = $('#edit-field-event-date-und-0-show-todate').checked ? '-164px' : '-71px';
             $('#edit-field-timezone').css('top', mobend);
-            
         }
-        
     });
     $('#edit-field-event-date-und-0-value-month').change(function(){ calcWeekday() });
     $('#edit-field-event-date-und-0-value-day').change(function(){ calcWeekday() });
