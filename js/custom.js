@@ -135,7 +135,7 @@ jQuery( document ).ready(function( $ ) {
         $('head').append('<style>.form-item-field-event-date-und-0-all-day:after{content:"' + weekday + '"; text-transform: uppercase; color: #767676; font-weight: bold; padding-left: 20px; }</style>');
         
     }
-    if (( $("body").hasClass("page-node-add") ) && ( $("body").hasClass("page-node-edit")) ) {
+    if (( $("body").hasClass("page-node-add") ) || ( $("body").hasClass("page-node-edit")) ) {
         calcWeekday();
     }
     
