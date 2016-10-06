@@ -141,8 +141,8 @@ jQuery( document ).ready(function( $ ) {
     
     
     $('#edit-field-event-date-und-0-all-day').change(function(){
-//        var c = this.checked ? 'none' : 'inline';
-//        $('#edit-field-timezone').css('display', c);
+        var c = this.checked ? 'none' : 'inline';
+        $('#edit-field-timezone').css('display', c);
 //        var m = this.checked ? '0px' : '32px';
 //        $('#edit-field-event-date-und-0-value').css('margin-bottom', m);
        // var p = this.checked ? '0px' : 'inline';
