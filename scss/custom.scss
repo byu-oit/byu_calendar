@@ -1977,6 +1977,18 @@ fieldset {
 // some labels inline:
 
 
+// end of all date field stuff
+
+.form-item.form-type-textfield.form-item-title {
+    
+    label:before {
+        content: "EVENT ";
+    }
+        
+}
+.form-item.form-type-textfield.form-item-title {
+    padding-top: 10px;
+}
 
 /* ------ DATE / TIME ---------- */ 
 // timezone
@@ -2109,14 +2121,7 @@ fieldset.date-combo.form-wrapper.date-processed .fieldset-wrapper {
     color: #000;
 }
 
-// end of all date field stuff
 
-.form-item.form-type-textfield.form-item-title label:before {
-    content: "EVENT ";
-}
-.form-item.form-type-textfield.form-item-title {
-    padding-top: 10px;
-}
 
 // location
 .form-item-field-event-location-und {
@@ -2361,6 +2366,14 @@ div#edit-field-full-name {
     section.block.block-block.light-gray-bg.block-block-13 {
         display: none;
     }
+    h1#page-title {
+        font-family: "Sentinel SSm A", "Sentinel SSm B";
+        font-size: 20px;
+    }
+    h1#page-titile:before {
+//        content: "Step 1: "
+    }
+    
     // display some fieldsets
     fieldset.show-fieldset {
         margin-top: 30px;
@@ -2375,7 +2388,12 @@ div#edit-field-full-name {
         border-top: 1px solid $medgray;
         padding-top: 10px;
     }    
-    
+    .form-item.form-type-textfield.form-item-title {
+        color: $navy;
+        font-size: 16px;
+
+
+    }
     
     #edit-field-event-date-und-0-value,
     #edit-field-event-date-und-0-value2 {
