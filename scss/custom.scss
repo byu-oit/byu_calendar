@@ -2369,7 +2369,7 @@ div#edit-field-full-name {
     .page-node-add, .page-node-edit {
         h1#page-title {
             font-family: "Sentinel SSm A", "Sentinel SSm B";
-            font-size: 20px;
+            font-size: 28px;
             color: $navy;
         }
 
@@ -2393,12 +2393,12 @@ div#edit-field-full-name {
         padding-top: 10px;
     }    
     .page-node-add, .page-node-edit {
-        .form-item.form-type-textfield.form-item-title {
+        .form-item.form-type-textfield.form-item-title label {
             color: $navy;
             font-size: 16px;
         }
 
-    }
+//    }
     
     #edit-field-event-date-und-0-value,
     #edit-field-event-date-und-0-value2 {
