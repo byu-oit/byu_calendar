@@ -1999,13 +1999,14 @@ fieldset {
 //    top: 77px;
 //    left: 203px;
     // for mobile with no admin menu:
-    top: 32px;
-    left: 234px;
+//    top: 32px;
+//    left: 234px;
     // mobile now:  (also not logged in, mobile)
-    top: -71px;
-    left: 220px;
-    // switched to after date:
-
+//    top: -71px;
+//    left: 220px;
+    // now w it below:
+    top: -80px;
+    left: 7px;
 
     margin-bottom: -30px;
     label {
@@ -2046,7 +2047,7 @@ fieldset {
     padding: 0px;
 //    @media(max-width: $mobile_max_width){
         flex-wrap: wrap;
-        width: 250px;
+        width: 280px;
         justify-content: flex-start;
 //    }
 
