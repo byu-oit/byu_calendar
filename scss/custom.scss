@@ -2019,8 +2019,11 @@ fieldset {
     }
 }
 .large-screen #edit-field-timezone {
-    top: -91px;
-    left: 210px;
+//    top: -91px;
+//    left: 210px;
+    // now w it below:
+    top: -72px;
+    left: 7px;
 }
 // need to add something for ipad here too..?
 .ipad #edit-field-timezone {
@@ -2033,7 +2036,9 @@ fieldset {
     padding: 0px 0px 0px;
     margin: 0px;
 }
-
+#edit-field-event-date-und-0-value {
+    margin-bottom: 32px;  // space for timezone
+}
 
 #edit-field-event-date-und-0-value,
 #edit-field-event-date-und-0-value2 {
@@ -2396,6 +2401,7 @@ div#edit-field-full-name {
         .form-item.form-type-textfield.form-item-title label {
             color: $navy;
             font-size: 16px;
+            font-weight: bold;
         }
 
 //    }

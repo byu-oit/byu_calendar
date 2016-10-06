@@ -143,18 +143,20 @@ jQuery( document ).ready(function( $ ) {
     $('#edit-field-event-date-und-0-all-day').change(function(){
         var c = this.checked ? 'none' : 'inline';
         $('#edit-field-timezone').css('display', c);
+        var m = this.checked ? '0px' : '32px';
+        $('#edit-field-event-date-und-0-value').css('margin-bottom', m);
        // var p = this.checked ? '0px' : 'inline';
     });
     
-    $('#edit-field-event-date-und-0-show-todate').change(function(){
-        var end = this.checked ? '-200px' : '-91px';
-        $('#edit-field-timezone').css('top', end);
-        
-        if ( $("body").hasClass("large-screen") ){
-            var mobend = $('#edit-field-event-date-und-0-show-todate').checked ? '-164px' : '-71px';
-            $('#edit-field-timezone').css('top', mobend);
-        }
-    });
+//    $('#edit-field-event-date-und-0-show-todate').change(function(){
+//        var end = this.checked ? '-200px' : '-91px';
+//        $('#edit-field-timezone').css('top', end);
+//        
+//        if ( $("body").hasClass("large-screen") ){
+//            var mobend = $('#edit-field-event-date-und-0-show-todate').checked ? '-164px' : '-71px';
+//            $('#edit-field-timezone').css('top', mobend);
+//        }
+//    });
     $('#edit-field-event-date-und-0-value-month').change(function(){ calcWeekday() });
     $('#edit-field-event-date-und-0-value-day').change(function(){ calcWeekday() });
     $('#edit-field-event-date-und-0-value-year').change(function(){ calcWeekday() });
