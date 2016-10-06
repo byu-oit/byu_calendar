@@ -1932,11 +1932,11 @@ input {
     display: none;
 }
 
-.page-node-add {
+.page-node-add, .page-node-edit {
     h1#page-title {
         font-family: "Gotham SSm A","Gotham SSm B";
         font-size: 16px;
-        color: #002e5d;
+        color: $navy;
     }
     h1#page-title:after {
 //        content: " FOR:";
@@ -2366,12 +2366,16 @@ div#edit-field-full-name {
     section.block.block-block.light-gray-bg.block-block-13 {
         display: none;
     }
-    h1#page-title {
-        font-family: "Sentinel SSm A", "Sentinel SSm B";
-        font-size: 20px;
-    }
-    h1#page-titile:before {
-//        content: "Step 1: "
+    .page-node-add, .page-node-edit {
+        h1#page-title {
+            font-family: "Sentinel SSm A", "Sentinel SSm B";
+            font-size: 20px;
+            color: $navy;
+        }
+
+        h1#page-titile:before {
+    //        content: "Step 1: "
+        }
     }
     
     // display some fieldsets
@@ -2388,10 +2392,11 @@ div#edit-field-full-name {
         border-top: 1px solid $medgray;
         padding-top: 10px;
     }    
-    .form-item.form-type-textfield.form-item-title {
-        color: $navy;
-        font-size: 16px;
-
+    .page-node-add, .page-node-edit {
+        .form-item.form-type-textfield.form-item-title {
+            color: $navy;
+            font-size: 16px;
+        }
 
     }
     
