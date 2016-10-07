@@ -2413,6 +2413,17 @@ div#edit-field-full-name {
             padding: 0px 5px;
         }
     }
+        
+    // pricing
+    .views-field.views-field-field-free:not(-Free) {
+        display: none;
+    }
+    .views-field-field-free.-Free + .views-field-field-price,
+    .views-field-field-free.-Free ~ .views-field-field-price-range {
+        display: none;
+    }    
+        
+        
     #edit-field-are-tickets {
         margin-top: 15px;
         height: 35px;
