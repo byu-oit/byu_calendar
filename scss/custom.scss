@@ -2415,7 +2415,7 @@ div#edit-field-full-name {
     }
         
     // pricing
-    .views-field.views-field-field-free:not(-Free) {
+    .views-field.views-field-field-free:not(.-Free) {
         display: none;
     }
     .views-field-field-free.-Free + .views-field-field-price,
