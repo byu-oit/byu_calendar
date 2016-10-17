@@ -505,7 +505,7 @@ header.l-header {
             @include main-outer-shadowbox();
             width: $mobile_main_width;
             float: right;
-            margin-top: 45px;
+            margin-top: 45px; // this is needed on events & other pages not calendar day/week/month/year views.
             padding-left: 0px;
             padding-right: 0px;
         }
@@ -524,6 +524,11 @@ header.l-header {
             }
         }
 
+    }
+}
+.one-sidebar.page-calendar main.row.l-main {
+    @media screen and (max-width: $mobile_max_width) {
+    margin-top: 0px;   
     }
 }
 main #main-content-section.scrolled {
