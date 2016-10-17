@@ -116,7 +116,7 @@ h2 {
     font-size: 1em;
 }
 
-@media(min-width: $large_screen_start_width) {
+@media screen and (min-width: $large_screen_start_width) {
     h2 {
         font-size: 1.6875em;
     }
@@ -378,7 +378,7 @@ input[type="checkbox"]:checked ~ label:after {
 
 /* --- menu -------- */
 
-@media(max-width: $mobile_max_width) {
+@media screen and (max-width: $mobile_max_width) {
     .top-bar {
         overflow: hidden;
         height: 45px;
@@ -387,11 +387,11 @@ input[type="checkbox"]:checked ~ label:after {
         width: 100%;
         background: $navy;
         margin-bottom: 0;
-        @media(max-width: $mobile_max_width) {
+        @media screen and (max-width: $mobile_max_width) {
             position: fixed;
             z-index: 50;
         }
-        @media(min-width: $large_screen_start_width) {
+        @media screen and (min-width: $large_screen_start_width) {
             position: relative;
         }
     }
@@ -417,7 +417,7 @@ input[type="checkbox"]:checked ~ label:after {
 
 /*  --- Random mobile display settings - */
 
-@media(max-width: $mobile_max_width) {
+@media screen and (max-width: $mobile_max_width) {
     ul.breadcrumbs {
         display: none!important;
     }
@@ -425,7 +425,7 @@ input[type="checkbox"]:checked ~ label:after {
 
 /* ------- large screen menu =------- */
 
-@media(min-width: $large_screen_start_width) {
+@media screen and (min-width: $large_screen_start_width) {
     
     header.l-header { // if there is a menu, make this taller
         height: 90px;
@@ -471,7 +471,7 @@ input[type="checkbox"]:checked ~ label:after {
 
 header.l-header {
     width: 100%;
-    @media(max-width: $mobile_max_width){
+    @media screen and (max-width: $mobile_max_width){
         height: 45px;    
     }
     
@@ -484,13 +484,13 @@ header.l-header {
     padding: 0px;
     position: fixed;
     margin-top: 45px;
-    @media(max-width: 408px) {
+    @media screen and (max-width: 408px) {
         width: $mobile_sidebar_width - 1;
-        @media(max-width: 372px) {
+        @media screen and (max-width: 372px) {
             width: $mobile_sidebar_width - 2;
-            @media(max-width: 367px) {
+            @media screen and (max-width: 367px) {
                 width: $mobile_sidebar_width - 3;
-                @media(max-width: 352px) {
+                @media screen and (max-width: 352px) {
                     width: $mobile_sidebar_width - 6;
                     min-width: 63px;
                 }
@@ -501,7 +501,7 @@ header.l-header {
 .one-sidebar {
     main.row.l-main {
         background: #fff;
-        @media(max-width: $mobile_max_width) {
+        @media screen and (max-width: $mobile_max_width) {
             @include main-outer-shadowbox();
             width: $mobile_main_width;
             float: right;
@@ -510,7 +510,7 @@ header.l-header {
             padding-right: 0px;
         }
         #main-content-section {
-            @media(max-width: $mobile_max_width) {
+            @media screen and (max-width: $mobile_max_width) {
                 // come back to when ready to redo & re-theme week view
                 padding-left: 0px;
                 padding-right: 0px;
@@ -527,7 +527,7 @@ header.l-header {
     }
 }
 main #main-content-section.scrolled {
-    @media(max-width: $mobile_max_width) {
+    @media screen and (max-width: $mobile_max_width) {
         margin-top: 76px;
     }
 }
@@ -564,7 +564,7 @@ main #main-content-section.scrolled {
 
 /* ----- large screen area settings --------- */
 .row {
-    @media(min-width: 1200px){
+    @media screen and (min-width: 1200px){
 //        max-width: 1200px;  // we really don't want to do this if possible, dont want to design second design for tablet
     }
 }
@@ -584,7 +584,7 @@ main #main-content-section.scrolled {
 }
 
 .pull-9.thin-left-sidebar {
-    @media(min-width: 768px) {
+    @media screen and (min-width: 768px) {
         left: 0px;
     }
     @media (min-width: $large_screen_start_width) {
@@ -795,7 +795,7 @@ main #main-content-section.scrolled {
 
 
 
-@media(max-width: $mobile_max_width) {
+@media screen and (max-width: $mobile_max_width) {
     div#calendar-nav-pager {
         margin-top: 10px;
         div {
@@ -965,7 +965,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 
 /* ---------------- Calendar displays - general -  large screen ------------------- */
 
-@media(min-width:$large_screen_start_width) {
+@media screen and (min-width:$large_screen_start_width) {
     /* formatting list views */
     .list-header {
         color: $navy;
@@ -999,7 +999,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 
 /* ------- CALENDAR large screen ---------- */
 
-@media(min-width:$large_screen_start_width) {
+@media screen and (min-width:$large_screen_start_width) {
     
     // left sidebar area
     .page-calendar.large-screen {
@@ -1862,7 +1862,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 /* -- mobile footer -- */
 
 footer.l-footer.row {
-    @media(max-width: $mobile_max_width) {
+    @media screen and (max-width: $mobile_max_width) {
         @include display-flex();
         justify-content: flex-end;
         padding: 0px;
@@ -2045,7 +2045,7 @@ fieldset {
 #edit-field-event-date-und-0-value2 {
     display: flex;
     padding: 0px;
-//    @media(max-width: $mobile_max_width){
+//    @media screen and (max-width: $mobile_max_width){
         flex-wrap: wrap;
         width: 280px;
         justify-content: flex-start;
@@ -2320,7 +2320,7 @@ fieldset#edit-body-und-0-format {
 // thumbnail
 
 #edit-field-thumbnail {
-    @media(max-width: $mobile_max_width){
+    @media screen and (max-width: $mobile_max_width){
         display: none;
     }
     .image-widget-data {
@@ -2368,7 +2368,7 @@ div#edit-field-full-name {
 
 
 /* --- formatting Add An Event for large screen --- */
-@media(min-width: $large_screen_start_width) {
+@media screen and (min-width: $large_screen_start_width) {
     section.block.block-block.light-gray-bg.block-block-13 {
         display: none;
     }
