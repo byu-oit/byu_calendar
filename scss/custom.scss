@@ -498,6 +498,9 @@ header.l-header {
         }
     }
 }
+.page-calendar .columns.sidebar-first {
+    margin-top: 0px;
+}
 .one-sidebar {
     main.row.l-main {
         background: #fff;
@@ -1524,7 +1527,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     border-left: 1px solid $navy;
     padding: 6px 0% 6px 5%;
     /* padding: 0px 7%; */
-    width: 60%;
+    width: 73%;
 }
 
 .day-header-day {
@@ -1535,7 +1538,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 
 .day-header-week {
     text-transform: lowercase;
-    font-size: 29px;
+    font-size: 26px;
     font-weight: bold;
 }
 
@@ -1545,7 +1548,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 
 .day-header-monthyear {
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
 }
 
