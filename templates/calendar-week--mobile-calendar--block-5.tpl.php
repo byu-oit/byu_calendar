@@ -68,14 +68,30 @@ foreach ($day_names as $key => $value) {
       
         
         <?php 
-            $title = drupal_get_title();
-            //print $title;
-            //$title = 'August 7 2016 (32)';
-            $datestring = substr($title,0, -4);
-            $year = substr($title,-9, 4);
-            $startTime = strtotime($datestring);
-            //adjust 1 week forward because of week id in title is 1 off, too early
-            $startTime += (7*24*3600);
+            $current = current_path();
+            $currentDate = substr($current, -8);
+            //echo 'current date is ' . $currentDate;
+            // '2016-W32';
+            $date = date_create_from_format('Y-W', $currentDate);
+
+            $year = substr($currentDate, 0, 4);
+        
+            $startWYear = '1 January ' . $year;
+            //this week start time
+            $yearStartTime = strtotime($startWYear);
+            $yearStartWeekday = date('w', $yearStartTime);
+            //echo $year . ' started on a ' . $yearStartWeekday;
+            //echo '<br>';
+            // week 2 started on Jan 
+            $weekStartJanDay = 7 - $yearStartWeekday;
+            $week2StartTime = $yearStartTime + ($weekStartJanDay*24*3600); 
+            $weeksToAdd = $week - 2;
+            $weekStartTime = $week2StartTime + ((7*($weeksToAdd)))*24*3600;
+            $weekEndTime = $weekStartTime + (6*24*3600);
+        
+            //$datestring = substr($title,0, -4);
+            //$startTime = strtotime($datestring);
+           
         ?>
       <?php $curpos = 0; ?>
       <?php foreach ($columns as $index => $column): ?>
@@ -92,8 +108,8 @@ foreach ($day_names as $key => $value) {
 
         <td class="calendar-agenda-items single-day" headers="<?php print $header_ids[$index] ?>">        <?php
                 $weekday = $curpos;  
-                $daystoadd = $weekday -1;
-                $daytodisplay = $startTime + ($daystoadd *24*3600); // gets the unix day of current day
+                $daystoadd = $weekday -1;  // depending on what day of the week it is, it'll add from weekStartTime
+                $daytodisplay = $weekStartTime + ($daystoadd *24*3600); // results in the unix day of current day
                 $simpleDate = date('Y-m-d', $daytodisplay);
             echo "<div><a name='" . $simpleDate . "'></a></div>" ; 
         ?>

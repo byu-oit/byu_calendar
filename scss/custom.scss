@@ -498,7 +498,7 @@ header.l-header {
         }
     }
 }
-.page-calendar .columns.sidebar-first {
+.mobile-first.page-calendar .columns.sidebar-first {
     margin-top: 0px;
 }
 .one-sidebar {
@@ -531,7 +531,7 @@ header.l-header {
 }
 .one-sidebar.page-calendar main.row.l-main {
     @media screen and (max-width: $mobile_max_width) {
-    margin-top: 0px;   
+        margin-top: 0px;   
     }
 }
 main #main-content-section.scrolled {
