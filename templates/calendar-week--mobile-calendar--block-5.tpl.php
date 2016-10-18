@@ -75,7 +75,7 @@ foreach ($day_names as $key => $value) {
             $date = date_create_from_format('Y-W', $currentDate);
 
             $year = substr($currentDate, 0, 4);
-        
+            $week = substr($currentDate, -2);
             $startWYear = '1 January ' . $year;
             //this week start time
             $yearStartTime = strtotime($startWYear);
@@ -88,10 +88,11 @@ foreach ($day_names as $key => $value) {
             $weeksToAdd = $week - 2;
             $weekStartTime = $week2StartTime + ((7*($weeksToAdd)))*24*3600;
             $weekEndTime = $weekStartTime + (6*24*3600);
-        
-            //$datestring = substr($title,0, -4);
-            //$startTime = strtotime($datestring);
-           
+
+
+            $weekStart = date('Y-m-d', $weekStartTime);
+            $weekEnd = date('Y-m-d', $weekEndTime);
+
         ?>
       <?php $curpos = 0; ?>
       <?php foreach ($columns as $index => $column): ?>
