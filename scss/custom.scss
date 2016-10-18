@@ -1782,7 +1782,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 }
 
 .calendar-yearview-month.month-inner {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 .mobile-first-calendar-yearview {
     .calendar-nav-section {
@@ -1796,7 +1796,8 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         /* max-width: 30px; */
         margin-left: 4%;
         text-align: center;
-        font-size: 14px;
+        font-size: 13px;
+        font-weight: 500;
         //    padding: 8px 1% 10px;
         margin-bottom: 8px;
         .box-inner {
