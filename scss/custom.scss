@@ -1651,6 +1651,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 
 /* --------- mobile year view --------------- */
 
+
 .mobile-first-calendar-yearview .calendar-nav-section {
     .calendar-nav-item {
         @include display-flex();
@@ -1740,11 +1741,11 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 
 .month-header.calendar-yearview-month {
     margin-top: 20px;
-    .box a {
-        color: $navy;
-    }
-}
 
+}
+.month-inner .box a {
+    color: $navy;
+}
 //adjusting space within each month
 .month-header.calendar-yearview-month,
 .calendar-yearview-month.month-inner {
