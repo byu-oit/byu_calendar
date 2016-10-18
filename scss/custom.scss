@@ -806,6 +806,10 @@ main #main-content-section.scrolled {
 @media screen and (max-width: $mobile_max_width) {
     div#calendar-nav-pager {
         margin-top: 10px;
+        font-size: 13px;
+//        display: flex;
+//        flex-wrap: wrap;
+//        justify-content: center;
         div {
             /* text-align: center; */
             border: 1px #9b9b9b solid;
