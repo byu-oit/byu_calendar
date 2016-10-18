@@ -121,7 +121,7 @@ foreach ($day_names as $key => $value) {
                 $weekday = date_format($date, 'l') ;
                 $monthName = date_format($date, 'F');
                 $monthyear = date_format($date, 'F Y') ;
-                echo '<a name="test-' . $simpleDate . '"></a>' . '<div class="day-header">' . '<div class="day-header-inner inner-top">' .
+                echo '<a name="katria test-' . $simpleDate . '"></a>' . '<div class="day-header">' . '<div class="day-header-inner inner-top">' .
                 '<div class="day-header-inner-top-left">' .
                     '<div class="day-header-day">' . $day . '</div>' . 
                 '</div>' .
