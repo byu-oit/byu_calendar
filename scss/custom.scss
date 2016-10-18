@@ -1611,35 +1611,35 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 }
 
 // MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH
-.mobile-first-calendar-monthview {
-    #page-title,
-    .view-calendar-pages {
-        display: none;
-    }
-}
-
-.mobile-first {
-    .calendar-calendar .month-view table.mini {
-        width: 98%;
-        margin-left: 2%;
-        td {
-            padding: 6px 1% 8px;
-        }
-    }
-}
-
-.view-id-mobile_calendar.view-display-id-block_8 {
-    .date-nav {
-        height: 30px;
-    }
-    .date-next a,
-    .date-prev a {
-        display: none!important;
-    }
-}
-#monthview-year-button {
-    margin: 20px;
-}
+//.mobile-first-calendar-monthview {
+//    #page-title,
+//    .view-calendar-pages {
+//        display: none;
+//    }
+//}
+//
+//.mobile-first {
+//    .calendar-calendar .month-view table.mini {
+//        width: 98%;
+//        margin-left: 2%;
+//        td {
+//            padding: 6px 1% 8px;
+//        }
+//    }
+//}
+//
+//.view-id-mobile_calendar.view-display-id-block_8 {
+//    .date-nav {
+//        height: 30px;
+//    }
+//    .date-next a,
+//    .date-prev a {
+//        display: none!important;
+//    }
+//}
+//#monthview-year-button {
+//    margin: 20px;
+//}
 
 // YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR
 
@@ -1740,6 +1740,9 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 
 .month-header.calendar-yearview-month {
     margin-top: 20px;
+    .box a {
+        color: $navy;
+    }
 }
 
 //adjusting space within each month

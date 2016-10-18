@@ -70,8 +70,6 @@ foreach ($day_names as $key => $value) {
         <?php 
             $current = current_path();
             $currentDate = substr($current, -8);
-            //echo 'current date is ' . $currentDate;
-            // '2016-W32';
             $date = date_create_from_format('Y-W', $currentDate);
 
             $year = substr($currentDate, 0, 4);
@@ -79,16 +77,15 @@ foreach ($day_names as $key => $value) {
             $startWYear = '1 January ' . $year;
             //this week start time
             $yearStartTime = strtotime($startWYear);
-            $yearStartWeekday = date('w', $yearStartTime);
             //echo $year . ' started on a ' . $yearStartWeekday;
-            //echo '<br>';
+            $yearStartWeekday = date('w', $yearStartTime);
+
             // week 2 started on Jan 
             $weekStartJanDay = 7 - $yearStartWeekday;
             $week2StartTime = $yearStartTime + ($weekStartJanDay*24*3600); 
             $weeksToAdd = $week - 2;
             $weekStartTime = $week2StartTime + ((7*($weeksToAdd)))*24*3600;
             $weekEndTime = $weekStartTime + (6*24*3600);
-
 
             $weekStart = date('Y-m-d', $weekStartTime);
             $weekEnd = date('Y-m-d', $weekEndTime);
