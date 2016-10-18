@@ -756,7 +756,7 @@ main #main-content-section.scrolled {
     .calendar-nav-item {
         /*comment */
         background: $medblue;
-        padding: 15px 0px;
+        padding: 8px 0px;  // was 15px 0px for something, we need 8px 0px for week navigation
         margin-bottom: -2px;
         @include sidebar-inner-shadowbox();
         .day-navigation-day-items {
