@@ -1407,7 +1407,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         .views-field.views-field-field-free,
         .views-field.views-field-field-price {
             font-weight: bold;
-            color: green;
+            color: $green;
         }
         
         span.views-field.views-field-field-event-date {
@@ -1428,17 +1428,15 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             
         } 
         // if there is free/price selected AND tickets availability date, add :
-         span.views-field.views-field-field-price + .views-field-field-tickets-available:before,
-        span.views-field.views-field-field-free + .views-field-field-tickets-available:before {
-            content: ": ";
-        }
-        span.views-field.views-field-field-price + .views-field-field-tickets-available,
-        span.views-field.views-field-field-free + .views-field-field-tickets-available {
-            margin-left: -2px;
-        }
-        .views-field.views-field-field-tickets-available span {
-            font-weight: normal;
-        }
+        span.views-field.views-field-field-price + .views-field-field-tickets-available:before,
+//        span.views-field.views-field-field-free + .views-field-field-tickets-available:before {
+//            content: ": ";
+//        }
+//        span.views-field.views-field-field-price + .views-field-field-tickets-available,
+//        span.views-field.views-field-field-free + .views-field-field-tickets-available {
+//            margin-left: -2px;
+//        }
+
         
         
         .gray-button {
@@ -2271,27 +2269,7 @@ fieldset.group-pricing legend {
 #edit-field-tickets-url {
     padding-top: 10px;
 }
-// date tickets available
-#edit-field-tickets-available fieldset{
-    width: 100%;
-    legend {
-        display: block;
-        padding-top: 5px;
-    }
-    label {
-        display: none;
-    }
-    #edit-field-tickets-available-und-0-value {
-        padding: 0px;
-    }
-    .form-item {
-        padding: 5px 13px 0px 0px;
-    }
-    select {
-        @include gray-select;             
-        @include select-dropdown;
-    }
-}
+
 
 
 // categories
@@ -2444,16 +2422,7 @@ div#edit-field-full-name {
         margin-top: 15px;
         height: 35px;
     }
-    #edit-field-tickets-available span.fieldset-legend:after {
-        content: " On:";
-    }
     
-    #edit-field-tickets-available fieldset .fieldset-wrapper {
-        height: 40px;
-        .form-item {
-            padding: 0px 13px 0px 0px;
-        }
-    }
     #edit-field-event-type-und {
            display: flex;
             flex-flow: column wrap;
