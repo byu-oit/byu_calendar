@@ -23,7 +23,13 @@ jQuery( document ).ready(function( $ ) {
         return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
     };
     
-    
+    $(function() {
+       $('#show-filters').click(function() {
+           $('#views-exposed-form').show();
+           $('#views-exposed-form').addClass("Shown");
+           return false;
+       });        
+   });
     
     
     

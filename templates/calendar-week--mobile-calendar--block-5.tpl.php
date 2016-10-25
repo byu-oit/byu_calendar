@@ -130,7 +130,7 @@ foreach ($day_names as $key => $value) {
                 '</div>' . 
                 '<div class="day-header-inner inner-bottom">' .
                     '<div class="inner-bottom-left"><a href="../year/' . $year . '#' . $monthName . '"> [icon] MONTH VIEW</a></div>' .
-                    '<div class="inner-bottom-right">[icon] FILTER</div>' .
+                    '<div class="inner-bottom-right"><a href"#" class="show-filters">[icon] FILTER</a></div>' .
                     
                 '</div>' .
                 '</div>';
