@@ -1450,9 +1450,13 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 
         }
         // end tickets button
-        .views-field.views-field-field-free {
+        .views-field.views-field-field-free.-Free {
             display: inline-block;
             margin: 6px 0px!important;
+        }
+        .views-field.views-field-field-free.-Price,
+        .views-field.views-field-field-free.-Range {
+            display: none!important;
         }
         .views-field-view-node a {
             color: $navy;
@@ -2441,10 +2445,7 @@ div#edit-field-full-name {
     }
         
     // pricing
-    span.views-field.views-field-field-free.-Price,
-    span.views-field.views-field-field-free.-Range {
-        display: none!important;
-    }
+
 //    .views-field-field-free.-Free + .views-field-field-price,
 //    .views-field-field-free.-Free ~ .views-field-field-price-range {
 //        display: none;
