@@ -388,7 +388,7 @@ input[type="checkbox"]:checked ~ label:after {
         background: $navy;
         margin-bottom: 0;
         @media screen and (max-width: $mobile_max_width) {
-            position: fixed;
+//            position: fixed;
             z-index: 50;
         }
         @media screen and (min-width: $large_screen_start_width) {
