@@ -2022,7 +2022,7 @@ fieldset {
 //    top: -80px;
     left: 3px;
 
-    margin-bottom: -30px;
+//    margin-bottom: -30px;
     label {
         display: none;
     }
@@ -2326,13 +2326,18 @@ fieldset#edit-body-und-0-format {
 .form-item.form-type-managed-file.form-item-field-thumbnail-und-0 {
     display: flex;
     flex-wrap: wrap;
+    .image-widget:before {
+        content: "Please save your image as a 600x600 square jpg or png.";
+    }
     .image-widget {
         order: 3;
     }
     .description {
         padding: 5px 0px 15px;
         line-height: 16px;
+        display: none;
     }
+
     .image-widget-data {
         display: flex;
         flex-wrap: wrap;
@@ -2341,7 +2346,7 @@ fieldset#edit-body-und-0-format {
     }
     .file-chooser-field-wrapper {
         width: 100%;
-        margin: 0px 0px -2px;
+        margin: 15px 0px -2px;
         display: flex;
         justify-content: space-between;
     }
