@@ -858,6 +858,9 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         top: 44px;
         display: none;
     }
+    .views-exposed-form.shown {
+        display: block;   
+    }
     .views-exposed-form label {
         font-weight: bold;
         color: #002255;

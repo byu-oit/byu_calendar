@@ -25,8 +25,8 @@ jQuery( document ).ready(function( $ ) {
     
     $(function() {
        $('#show-filters').click(function() {
-           $('#views-exposed-form').show();
-           $('#views-exposed-form').addClass("Shown");
+//           $('#views-exposed-form').show();
+           $('#views-exposed-form').addClass("shown");
            return false;
        });        
    });
