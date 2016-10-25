@@ -1450,9 +1450,14 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 
         }
         // end tickets button
+
         .views-field.views-field-field-free.-Free {
             display: inline-block;
             margin: 6px 0px!important;
+        }
+        .views-field.views-field-views-conditional-1.-Price,
+        .views-field.views-field-views-conditional-1.-Range {
+            margin: 6px 0px;
         }
         .views-field.views-field-field-free.-Price,
         .views-field.views-field-field-free.-Range {
