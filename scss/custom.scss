@@ -2336,13 +2336,22 @@ fieldset#edit-body-und-0-format {
     .image-widget-data {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 284px;
+    }
+    .file-chooser-field-wrapper {
+        width: 100%;
+        margin: 0px 0px -2px;
+        display: flex;
+        justify-content: space-between;
     }
     button#edit-field-thumbnail-und-0-upload-button {
         order: 2;
+        padding: 15px 37px; 
     }   
 }
 button#edit-field-thumbnail-und-0-upload-button {
-    text-transform: uppercase;
+//    text-transform: uppercase;
 }
 button#edit-field-thumbnail-und-0-upload-button:after {
 //    content: " EVENT IMAGE";
