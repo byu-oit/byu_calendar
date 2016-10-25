@@ -891,7 +891,8 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     .form-item.form-type-select.form-item-field-event-type-tid .description {
         display: none;
     }
-    .views-field.views-field-field-thumbnail {
+//    .views-field.views-field-field-thumbnail,
+    .views-field.views-field-views-conditional {
         float: left;
         margin-right: 20px;
     }
@@ -1394,7 +1395,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             margin-bottom: 15px;
         }
         .multi-day img,
-        .views-field.views-field-field-thumbnail {
+        .views-field.views-field-views-conditional { /// was .views-field-field-thumbnail
             display: inline;
             float: left;
             margin: 0px 15px 0px 0px;
