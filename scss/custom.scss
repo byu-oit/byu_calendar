@@ -2510,8 +2510,9 @@ section.block.block-views.block-views-event-page-blocks-block {
     content: "FREE ";
 }
 .views-field-field-free .field-content,
-.views-field-field-price .field-content,
-.views-field-field-price-range .field-content {
+//.views-field-field-price .field-content,
+//.views-field-field-price-range .field-content,
+.views-field-views-conditional {
     font-weight: bold;
     color: $green;
 }
