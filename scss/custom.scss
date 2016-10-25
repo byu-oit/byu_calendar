@@ -2333,12 +2333,20 @@ fieldset#edit-body-und-0-format {
         padding: 5px 0px 15px;
         line-height: 16px;
     }
+    .image-widget-data {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    button#edit-field-thumbnail-und-0-upload-button {
+        order: 2;
+    }   
 }
 button#edit-field-thumbnail-und-0-upload-button {
     text-transform: uppercase;
 }
 button#edit-field-thumbnail-und-0-upload-button:after {
-    content: " EVENT IMAGE";
+//    content: " EVENT IMAGE";
+     content: " & Preview Image";
 }
 
 
