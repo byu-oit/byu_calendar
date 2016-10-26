@@ -1395,6 +1395,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             padding: 0px 0px 20px;
             border-bottom: 1px solid $lightgray;
             margin: -10px 0px 20px 0px;
+            color: #777;
         }
         .all-day-items .view-item {
             margin-top: 0px;
@@ -1463,6 +1464,10 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             display: inline-block;
             margin: 9px 0px!important;
         }
+        span.views-label.views-label-field-free {
+            float: left;
+            margin-right: 4px;
+        }
         .views-field.views-field-views-conditional-1.-Price,
         .views-field.views-field-views-conditional-1.-Range {
             margin: 9px 0px;
@@ -1488,7 +1493,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         padding: 20px 0px 20px;
         border-bottom: 1px solid $lightgray;
     }
-    .views-row.views-for-first {
+    .views-row.views-row-first {
         padding-top: 0px;
     }
     
