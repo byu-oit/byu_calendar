@@ -1395,7 +1395,9 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             padding: 0px 0px 20px;
             border-bottom: 1px solid $lightgray;
             margin: -10px 0px 20px 0px;
-            color: #777;
+            // setting baseline styling for lists
+            color: #777;  
+            font-size: 13px;
         }
         .all-day-items .view-item {
             margin-top: 0px;
