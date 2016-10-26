@@ -73,6 +73,8 @@
          <div class="calendar">
          <div class="inner">  
                 <?php print isset($rows['all_day'][$column]) ? implode($rows['all_day'][$column]) : '&nbsp;';?>
+             <?php dpm($rows['all_day'][$column]);
+             ?>
          </div>
          </div>
        </td>
