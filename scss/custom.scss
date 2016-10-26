@@ -1631,6 +1631,20 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         width: 85px;
     }
 }
+/* large day adjustments */
+
+.view.view-large-screen-calendar.view-display-id-block_7 {
+    td.calendar-agenda-items {
+        width: 100%;
+    }
+    .calendar-calendar td .inner div, .calendar-calendar td .inner div a {
+        background: none;
+    }
+}
+
+
+
+
 
 // MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH
 //.mobile-first-calendar-monthview {
@@ -2472,7 +2486,7 @@ div#edit-field-full-name {
            display: flex;
             flex-flow: column wrap;
             width: 400px;
-            height: 104px; // was 96 with checkboxes
+            height: 104px; // was 96 with checkboxes w 6 options
     }
     #edit-field-event-type-und .form-item {
         width: 200px;
