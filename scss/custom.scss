@@ -2472,7 +2472,7 @@ div#edit-field-full-name {
            display: flex;
             flex-flow: column wrap;
             width: 400px;
-            height: 96px;
+            height: 104px; // was 96 with checkboxes
     }
     #edit-field-event-type-und .form-item {
         width: 200px;
