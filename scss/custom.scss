@@ -1392,9 +1392,12 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     }
     .view-large-screen-calendar { 
         .view-item {
-            padding: 10px 0px;
+            padding: 0px 0px 20px;
             border-bottom: 1px solid $lightgray;
-            margin-bottom: 22px;
+            margin: -10px 0px 20px 0px;
+        }
+        .all-day-items .view-item {
+            margin-top: 0px;
         }
         .empty-text {
             border-bottom: 1px solid $lightgray;
