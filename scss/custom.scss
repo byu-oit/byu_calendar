@@ -1401,7 +1401,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         }
         .empty-text {
             border-bottom: 1px solid $lightgray;
-            margin-bottom: 15px;
+            margin-bottom: 25px;
         }
         .multi-day img,
         .views-field.views-field-views-conditional { /// was .views-field-field-thumbnail
@@ -1424,12 +1424,14 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         span.views-field.views-field-field-event-date {
             display: inline;
             float: left;
+            margin-right: 4px;
 //            text-transform: uppercase;
         }
         span.views-field.views-field-field-event-date-1 {
             display: inline;
             padding-left: 4px;
         }
+        
 
         .views-field.views-field-field-tickets-url.ticket-button {
             //            background: #cecece;
@@ -1473,6 +1475,22 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             font-weight: normal;
         }
     } 
+    
+    // list views
+    .view-header h3 {
+        text-align: left;
+    }
+    .view-header .pager {
+        display: none;
+    }
+    .views-row {
+        padding: 20px 0px 20px;
+        border-bottom: 1px solid $lightgray;
+    }
+    .views-row.views-for-first {
+        padding-top: 0px;
+    }
+    
 }
 
 
@@ -1873,14 +1891,14 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     }
 }
 
-.calendar-calendar .month-view .full td.single-day.no-entry:after {
+.calendar-calendar .month-view .full td.no-entry:after {  // took class off td.single-day
     content: "There are no events scheduled on this day.";
     background: #fff;
     /* width: 100%; */
     color: #888;
 }
 
-.calendar-calendar .month-view .full tr.single-day .no-entry .inner {
+.calendar-calendar .month-view .full tr .no-entry .inner { // took class off td.single-day
     /* height: 50px; */
     line-height: 16px;
 }
