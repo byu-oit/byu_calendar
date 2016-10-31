@@ -193,13 +193,13 @@ h1 {
     background: $royallight;
 }
 
-.blue-inline-label {
-    color: $navy;
-    font-weight: bold;
-    display: inline;
-    float: left;
-    padding-right: 5px;
-}
+//.blue-inline-label {
+//    color: $navy;
+//    font-weight: bold;
+//    display: inline;
+//    float: left;
+//    padding-right: 5px;
+//}
 
 /* ----- general input things like checkboxes etc ----- */
 @mixin gray-select {
@@ -622,7 +622,7 @@ main #main-content-section.scrolled {
         left: 26%;
     }
 }
-.safari .pull-9.thin-left-sidebar {
+.pull-9.thin-left-sidebar {
     @media (min-width: $large_screen_start_width) {
         position: relative;
         left: 0%;
@@ -646,7 +646,9 @@ main #main-content-section.scrolled {
         right: auto;
     }
 }
-
+#main-content-section.large-push-0 {
+    left: 2%;
+}
 
 
 /* ------------ Calendar pages: General - mobile or large  ------- */
@@ -2596,6 +2598,9 @@ section.block.block-views.block-views-event-page-blocks-block {
     }
     .views-field.views-field-body {
         padding-top: 30px;
+    }
+    .green-button {
+        margin-top: 20px;
     }
     
 }
