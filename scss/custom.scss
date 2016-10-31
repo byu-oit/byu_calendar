@@ -1400,6 +1400,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         .all-day-items .view-item {
             margin-top: 0px;
         }
+        .view-empty,
         .empty-text {
             border-bottom: 1px solid $lightgray;
             margin-bottom: 25px;
@@ -1482,7 +1483,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         }
     } 
     
-    // list views
+    /* -------- large screen list views ------------------- */
     .view-header h3 {
         text-align: left;
     }
@@ -1490,11 +1491,12 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         display: none;
     }
     .views-row {
-        padding: 20px 0px 20px;
+        padding: 20px 0px 0px;
         border-bottom: 1px solid $lightgray;
         // setting baseline styling for lists
         color: #777;  
         font-size: 13px;
+        min-height: 120px;
     }
     .views-row.views-row-first {
         padding-top: 0px;
@@ -1503,10 +1505,10 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 }
 
 
-/* ------end a large screen media   -*/
+/* ------end general large screen media   -*/
 
 
-/* ---- end weekview for large screen ----*/
+/* ---- start specific other calendar settings ----*/
 
 .view-id-mobile_calendar.view-display-id-block_4,
 .view-id-mobile_calendar.view-display-id-block_6 {
