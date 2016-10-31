@@ -653,7 +653,8 @@ main #main-content-section.scrolled {
 .calendar-calendar .week-view .full td.single-day div.weekview,
 .calendar-calendar .day-view .full td.single-day div.dayview {
     background: #fff;
-}
+    width: 100%;
+} 
 /* -------- checkboxes throughout the site ------------- */
 .bef-checkboxes .form-item.form-type-bef-checkbox {
     //    display: inline;
