@@ -133,6 +133,13 @@ h1, h2, h3, h4,
 .day-navigation-day-items, .weekview-day-header .day-header-day {
     font-family: "Sentinel SSm A","Sentinel SSm B";
 }
+h1 {
+    color: $navy;
+}
+// if they only want event page titles to be navy
+.page-node.node-type-event h1#page-title {
+//    color: $navy;
+}
 
 
 
