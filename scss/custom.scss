@@ -1467,7 +1467,9 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 
         }
         // end tickets button
-
+        .views-field.views-field-field-free {
+            display: none;
+        }
         .views-field.views-field-field-free.-Free {
             display: inline-block;
             margin: 9px 0px!important;
