@@ -34,6 +34,7 @@
     <?php 
       foreach ((array) $rows as $row) {
         print $row['data'];
+          <div class="test"></div>
       } ?>
   </tbody>
 </table>

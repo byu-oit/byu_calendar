@@ -1739,9 +1739,14 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             display: none;
         }
     }
+   
     .view-item {
         border-bottom: none;
-        margin-top: 0px;
+        padding: 8px 0px 15px;
+        margin: 0px;
+    }
+    .inner .item:last-of-type .view-item {
+        margin-bottom: 10px;
     }
     .views-field-title a {
         font-size: 14px;
