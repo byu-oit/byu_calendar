@@ -91,7 +91,7 @@ $weekEndTime = $weekStartTime + (6*24*3600);
 
             //calc each day's week id
 //            $dayNumber = date_format($dateOb, 'z'); // returns 0 - 365
-            $thatWeek = 2+ floor(($dateTime - $week2StartTime)/(7 * 24 * 3600));
+            $thatWeek = 2+ floor( (($dateTime - $week2StartTime)+3600)/(7 * 24 * 3600) );
 
               if($rowid == '1' and $day > 24) {
                   $class = ' last-month';
