@@ -1339,8 +1339,8 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             border-top: 1px solid #ccc;
         }
         .calendar-calendar .month-view .full tr td.single-day:before {
-            content: attr(data-day-of-month) ",\0000a0" attr(headers);
-            font-weight: bold;
+//            content: attr(data-day-of-month) ",\0000a0" attr(headers);
+//            font-weight: bold;
         }
         .calendar-calendar .month-view .full thead tr,
         .calendar-calendar .month-view .full tr th.days,
