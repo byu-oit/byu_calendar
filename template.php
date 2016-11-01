@@ -69,7 +69,7 @@ function byu_calendar_preprocess_page(&$variables) {
     $variables['sidebar_first_grid'] = '';
     $variables['sidebar_sec_grid'] = 'large-3';
   } elseif (!empty($left) && empty($right)) { // only left sidebar
-    $variables['main_grid'] = 'large-9 push-3';
+    $variables['main_grid'] = 'large-9 large-push-0 push-3';
     $variables['sidebar_first_grid'] = 'large-2 pull-9 left-sidebar-only thin-left-sidebar';
     $variables['sidebar_sec_grid'] = '';
   } else {  //no sidebars
