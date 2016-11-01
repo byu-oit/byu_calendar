@@ -9,7 +9,7 @@
       <?php if ($top_bar_classes): ?>
       <div class="<?php print $top_bar_classes; ?>">
       <?php endif; ?>
-<<<<<<< HEAD
+
         <nav class="top-bar"<?php print $top_bar_options; ?>> 
 	 <ul class="title-area">
             <li class="name"><h1><?php print $linked_site_name; ?></h1></li>
@@ -24,7 +24,7 @@
             <?php endif; ?>
 	</section>
 
-=======
+
         <nav class="top-bar"<?php print $top_bar_options; ?>>
             
               <ul class="title-area">
@@ -39,12 +39,9 @@
                   <?php print $top_bar_secondary_menu; ?>
                 <?php endif; ?>
               </section>
-<<<<<<< HEAD
-            </div>
->>>>>>> 7dc2c68b8890364b8f53d818e0775a76a196a92f
-=======
+
             
->>>>>>> 3f49ea1129c2d6f30e78e2e3f36e156cf640e5c4
+
         </nav>
       <?php if ($top_bar_classes): ?>
       </div>
