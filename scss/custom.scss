@@ -981,7 +981,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 //        content: attr(data-day-of-month) ",\0000a0" attr(headers);
 //        font-weight: bold;
     }
-}
+} 
 
 .calendar-calendar .week-view .full td.single-day.no-entry:after {
     content: "There are no events scheduled on this day.";
@@ -1718,8 +1718,9 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     td.single-day .calendar-empty, td.single-day.empty, td.date-box.empty {
         background: none;
         border: none; 
+        color: #fff;
     }
-    .large-screen.page-calendar .calendar-calendar .month-view .full tr td.date-box {
+    tr td.date-box {
         background: $xlightgray;
         text-align: center;
         position: relative;
