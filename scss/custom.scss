@@ -1705,7 +1705,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 }
 .large-screen .calendar-calendar .month-view .full {
     border-collapse: separate;
-    border-spacing: 8px 4px;
+    border-spacing: 6px 3px;
 
     thead tr th {
         color: $navy;
@@ -1724,7 +1724,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         background: $xlightgray;
         text-align: center;
         position: relative;
-        top: 4px;
+        top: 3px;
         .inner .day {
             width: 100%;
             /* vertical-align: middle; */
