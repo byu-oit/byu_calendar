@@ -649,8 +649,10 @@ main #main-content-section.scrolled {
         right: auto;
     }
 }
-#main-content-section.large-push-0 {
-    left: 1.5%; 
+@media(min-width: $large_screen_start_width) {
+    #main-content-section.large-push-0 {
+        left: 1.5%; 
+    }
 }
 
 
@@ -1329,11 +1331,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         .calendar-calendar .month-view table.full {
             position: relative;
         }
-        .calendar-calendar .month-view .full tr td {
-            width: 100%;
-            float: left;
-            text-align: left;
-        }
+
         .calendar-calendar table:not(.mini) tbody tr td {
             background: none;
         }
@@ -1724,6 +1722,22 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 //#monthview-year-button {
 //    margin: 20px;
 //}
+
+.calendar-calendar .month-view .full tr td {
+//            width: 100%;
+//            float: left;
+    text-align: left;
+    background: #fff;
+    border: 1px solid $lightgray;
+    margin: 4px!important;
+}
+
+
+
+
+
+
+
 
 // YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR
 
