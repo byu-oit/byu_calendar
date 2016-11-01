@@ -77,18 +77,21 @@ $weekEndTime = $weekStartTime + (6*24*3600);
         <?php foreach ($row as $cell): ?>
           
             <?php /*print $cell['data'];  */?>
-              <?php
-              //calculate week and set link
-              $id = $cell['id'];
-              $simpleDate = substr($id,-10);
-              
-              $year = substr($simpleDate, 0, 4);
-              $month = substr($simpleDate, 5, 2);
-              $day = substr($simpleDate, 8, 2);
-              $dateTime = mktime(0,0,0, $month, $day, $year);
-              $day = date('j', $dateTime);
-              $dayofweek = date('w', $dateTime);
+            <?php
+            //calculate week and set link
+            $id = $cell['id'];
+            $simpleDate = substr($id,-10);
+//            $dateOb = date_create_from_format('Y-m-d', $simpleDate);
+            $year = substr($simpleDate, 0, 4);
+            $month = substr($simpleDate, 5, 2);
+            $day = substr($simpleDate, 8, 2);
+            $dateTime = mktime(0,0,0, $month, $day, $year);
+            $day = date('j', $dateTime);
+            $dayofweek = date('w', $dateTime);
 
+            //calc each day's week id
+//            $dayNumber = date_format($dateOb, 'z'); // returns 0 - 365
+            $thatWeek = 2+ floor(($dateTime - $week2StartTime)/(7 * 24 * 3600));
 
               if($rowid == '1' and $day > 24) {
                   $class = ' last-month';
@@ -109,7 +112,7 @@ $weekEndTime = $weekStartTime + (6*24*3600);
               ?>
           <td id="<?php print $cell['id']; ?>" class="<?php print $cell['class']; print $class; ?>">
               <div class="month mini-day-on  <?php print $id . ' weekday-' . $dayofweek;  ?>">
-                <a href="../week/<?php print $year . '-W' . $week;  ?>"><?php print $day;  ?></a>
+                <a href="../week/<?php print $year . '-W' . $thatWeek;  ?>"><?php print $day;  ?></a>
               </div>
           </td>
           
