@@ -978,8 +978,8 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         //    display: none;
     }
     .calendar-calendar .month-view .full tr td.single-day:before {
-        content: attr(data-day-of-month) ",\0000a0" attr(headers);
-        font-weight: bold;
+//        content: attr(data-day-of-month) ",\0000a0" attr(headers);
+//        font-weight: bold;
     }
 }
 
@@ -1345,7 +1345,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         .calendar-calendar .month-view .full thead tr,
         .calendar-calendar .month-view .full tr th.days,
         .calendar-calendar .month-view .full tr td.date-box {
-            display: none;
+//            display: none;
         }
         /* trying out code to make it a list view */
         section.block.block-views.block-views-large-screen-calendar-block-3 thead {
@@ -1693,36 +1693,8 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 
 
 // MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH
-//.mobile-first-calendar-monthview {
-//    #page-title,
-//    .view-calendar-pages {
-//        display: none;
-//    }
-//}
-//
-//.mobile-first {
-//    .calendar-calendar .month-view table.mini {
-//        width: 98%;
-//        margin-left: 2%;
-//        td {
-//            padding: 6px 1% 8px;
-//        }
-//    }
-//}
-//
-//.view-id-mobile_calendar.view-display-id-block_8 {
-//    .date-nav {
-//        height: 30px;
-//    }
-//    .date-next a,
-//    .date-prev a {
-//        display: none!important;
-//    }
-//}
-//#monthview-year-button {
-//    margin: 20px;
-//}
 
+// -------- large month
 .calendar-calendar .month-view .full tr td {
 //            width: 100%;
 //            float: left;
@@ -1730,6 +1702,54 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     background: #fff;
     border: 1px solid $lightgray;
     margin: 4px!important;
+}
+.large-screen .calendar-calendar .month-view .full {
+    border-collapse: separate;
+    border-spacing: 8px 4px;
+
+    thead tr th {
+        color: $navy;
+        text-transform: lowercase;
+        background: none;
+        border: none;
+        margin-bottom: 15px;
+    }
+    
+    td.single-day .calendar-empty, td.single-day.empty, td.date-box.empty {
+        background: none;
+        border: none; 
+    }
+    .large-screen.page-calendar .calendar-calendar .month-view .full tr td.date-box {
+        background: $xlightgray;
+        text-align: center;
+        position: relative;
+        top: 4px;
+        .inner .day {
+            width: 100%;
+            /* vertical-align: middle; */
+            padding: 4px;
+            font-size: 24px;
+            font-family: "Sentinel SSm A", "Sentinel SSm B";
+        }
+    }
+    tr td.date-box.empty {  // last month or next month are empty
+        border-bottom: #fff 1px solid;
+        .inner {
+            display: none;
+        }
+    }
+    .view-item {
+        border-bottom: none;
+    }
+    .views-field-title a {
+        font-size: 14px;
+        font-weight: normal;
+        color: #000;
+    }
+    .views-field-title a:before {
+        content: '\f111';
+        color: #A6B6C7;
+    }
 }
 
 
