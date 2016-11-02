@@ -1744,7 +1744,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
    
     .view-item {
         border-bottom: none;
-        padding: 8px 0px 15px;
+        padding: 8px 0px 0px;
         margin: 0px;
     }
     .inner .item:last-of-type .view-item {
@@ -1766,6 +1766,11 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     }
     .calendar-more {
         display: none;
+    }
+    .link-to-day {
+        padding-bottom: 10px;
+        font-size: 12px;
+        text-align: center;
     }
 }
 

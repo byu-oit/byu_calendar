@@ -17,10 +17,12 @@ $headers = (isset($item['header_id'])) ? ' headers="'. $item['header_id'] .'" ' 
     <?php
     $id = $item['id'];
     $idEnd = substr($id, -8);
-    if ($idEnd == 'date-box') {
-    echo "<div>is a datebox</div>";
-} else {
-        echo '<div class="link-to-day"><a href="../day/' . $item['date'] . '">See More ></a></div>';
+    if ($idEnd != 'date-box') {
+        
+        if(strpos($item['class'], 'no-entry') > 0){
+            echo '<div class="link-to-day"><a href="../day/' . $item['date'] . '">SEE MORE ></a></div>';
+        }
+        
     }
     
     
