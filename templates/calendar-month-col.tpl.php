@@ -14,7 +14,11 @@ $headers = (isset($item['header_id'])) ? ' headers="'. $item['header_id'] .'" ' 
   <div class="inner">
     <?php print $item['entry'] ?>
   </div>
-    <?php
+
+    
+</td>
+<td>
+        <?php
     $id = $item['id'];
     $idEnd = substr($id, -8);
     if ($idEnd !== 'date-box') {
@@ -23,5 +27,4 @@ $headers = (isset($item['header_id'])) ? ' headers="'. $item['header_id'] .'" ' 
     
     
     ?>
-    
 </td>
