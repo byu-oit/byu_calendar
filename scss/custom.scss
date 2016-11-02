@@ -1757,6 +1757,11 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         content: '\f111';
         color: #A6B6C7;
     }
+    
+    tr.single-day .no-entry, tr.single-day .no-entry .inner {
+        height: 10px !important;
+        line-height: 20px;
+    }
 }
 
 
