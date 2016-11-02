@@ -1742,6 +1742,9 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         }
     }
    
+    td.single-day .inner {
+        height: 200px!important;
+    }
     .view-item {
         border-bottom: none;
         padding: 8px 0px 0px;
