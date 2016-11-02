@@ -19,9 +19,9 @@ $headers = (isset($item['header_id'])) ? ' headers="'. $item['header_id'] .'" ' 
     $idEnd = substr($id, -8);
     if ($idEnd != 'date-box') {
         
-        if(strpos($item['class'], 'no-entry') > 0){
+//        if(strpos($item['class'], 'no-entry') > 0){
             echo '<div class="link-to-day"><a href="../day/' . $item['date'] . '">SEE MORE ></a></div>';
-        }
+//        }
         
     }
     
