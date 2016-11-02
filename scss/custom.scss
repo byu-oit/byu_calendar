@@ -1762,6 +1762,9 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         content: '\f111';
         color: #A6B6C7;
         font-family: FontAwesome;
+        font-size: 8px;
+        position: relative;
+        top: -2px;
     }
     
     tr.single-day .no-entry, tr.single-day .no-entry .inner {
