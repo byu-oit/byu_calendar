@@ -1744,6 +1744,8 @@ div#calendar-nav-pager .calendar-nav-pager-back {
    
     td.single-day .inner {
         height: 200px!important;
+        display: flex;
+        flex-wrap: wrap;
     }
     .view-item {
         border-bottom: none;
