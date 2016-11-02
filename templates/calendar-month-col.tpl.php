@@ -14,9 +14,14 @@ $headers = (isset($item['header_id'])) ? ' headers="'. $item['header_id'] .'" ' 
   <div class="inner">
     <?php print $item['entry'] ?>
   </div>
-    <div class="link-to-day"><a href="../calendar/day/<?php print $date ?>">See More ></a></div>
     <?php
-    // start with id, get date, have link
+    
+    if (in_array('date-box', $item['class'], true)) {
+    echo "<div>is a datebox</div>";
+} else {
+        echo '<div class="link-to-day"><a href="../calendar/day/' . $item['date'] . '">See More ></a></div>';
+    }
+    
     
     ?>
     
