@@ -24,5 +24,4 @@ $headers = (isset($item['header_id'])) ? ' headers="'. $item['header_id'] .'" ' 
     ?>
     </div>
 </td>
-<td>
-</td>
+
