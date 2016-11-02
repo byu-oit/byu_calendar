@@ -15,11 +15,12 @@ $headers = (isset($item['header_id'])) ? ' headers="'. $item['header_id'] .'" ' 
     <?php print $item['entry'] ?>
   </div>
     <?php
-    
-    if (in_array('date-box', $item['class'], true)) {
+    $id = $item['id'];
+    $idEnd = substr($id, -8);
+    if ($idEnd == 'date-box') {
     echo "<div>is a datebox</div>";
 } else {
-        echo '<div class="link-to-day"><a href="../calendar/day/' . $item['date'] . '">See More ></a></div>';
+        echo '<div class="link-to-day"><a href="../day/' . $item['date'] . '">See More ></a></div>';
     }
     
     
