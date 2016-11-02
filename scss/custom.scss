@@ -1474,7 +1474,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             display: none;
         }
         .views-field.views-field-field-free.-Free {
-            display: inline-block;
+            display: inline;
             margin: 9px 0px!important;
         }
         span.views-label.views-label-field-free {
@@ -1503,10 +1503,10 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         display: none;
     }
     .views-row {
-        padding: 20px 0px 0px;
+        margin: 20px 0px 20px;
         border-bottom: 1px solid $lightgray;
         // setting baseline styling for lists
-        color: #777;  
+        color: $gray;  
         font-size: 13px;
         min-height: 120px;
     }
