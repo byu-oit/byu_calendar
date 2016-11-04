@@ -91,8 +91,8 @@ jQuery( document ).ready(function( $ ) {
                 $('.block-block-11').removeClass('scrolled'); 
             } else {
                 $('.left-sidebar-calendar-exposed-filters').addClass('scrolled');
-//                $('.block-views-large-screen-calendar-block-6').addClass('scrolled');
-                $('.left-sidebar-minimonth').each(this.addClass('scrolled'));
+                $('.left-sidebar-minimonth').addClass('scrolled');
+//                $('.left-sidebar-minimonth').each(this.addClass('scrolled'));
                 $('.block-block-11').addClass('scrolled');
 //                console.log('you cant see calendar nav links'); 
             }
