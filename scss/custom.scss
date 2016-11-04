@@ -1080,7 +1080,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         
         // 2.  mini month display
         
-        section.block-views-large-screen-calendar-block-6 {
+        section.left-sidebar-minimonth {
             position: relative;
             width: 200px;
             top: 60px;
@@ -1090,14 +1090,14 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             }
         }
         // for w admin menu, but those admin menu classes added late after page load..?
-        .adminimal-menu section.block-views-large-screen-calendar-block-6 {
+        .adminimal-menu section.left-sidebar-minimonth {
             //            top: 100px;
         }
-        section.block-views-large-screen-calendar-block-6.scrolled {
+        section.left-sidebar-minimonth.scrolled {
             position: fixed;
             top: 110px;
         }
-        section.block-views-large-screen-calendar-block-6 {
+        section.left-sidebar-minimonth {
             .view .date-nav-wrapper {
                 //                 height: 85px;
 //                height: 70px;
