@@ -86,11 +86,13 @@ jQuery( document ).ready(function( $ ) {
              if( $('#calendar-view-links').is_on_screen() ) {
 //                 console.log('u can see topbar');
                 $('.left-sidebar-calendar-exposed-filters').removeClass('scrolled'); 
-                $('.left-sidebar-minimonth').removeClass('scrolled'); 
+//                $('.block-views-large-screen-calendar-block-6').removeClass('scrolled'); 
+                 $('.left-sidebar-minimonth').each(this.removeClass('scrolled'));
                 $('.block-block-11').removeClass('scrolled'); 
             } else {
                 $('.left-sidebar-calendar-exposed-filters').addClass('scrolled');
-                $('.left-sidebar-minimonth').addClass('scrolled');
+//                $('.block-views-large-screen-calendar-block-6').addClass('scrolled');
+                $('.left-sidebar-minimonth').each(this.addClass('scrolled'));
                 $('.block-block-11').addClass('scrolled');
 //                console.log('you cant see calendar nav links'); 
             }
