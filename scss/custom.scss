@@ -1079,8 +1079,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         
         
         // 2.  mini month display
-        section.block-views-large-screen-calendar-block-6,
-        section.left-sidebar-minimonth {
+        section.block-views-large-screen-calendar-block-6 {
             position: relative;
             width: 200px;
             top: 60px;
@@ -1093,8 +1092,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         .adminimal-menu section.block-views-large-screen-calendar-block-6 {
             //            top: 100px;
         }
-        section..block-views-large-screen-calendar-block-6.scrolled,
-        section.left-sidebar-minimonth.scrolled {
+        section..block-views-large-screen-calendar-block-6.scrolled {
             position: fixed;
             top: 110px;
         }
