@@ -2648,6 +2648,9 @@ section.block.block-views.block-views-event-page-blocks-block {
 }
 //.node-type-event .views-label.views-label-field-free.-Free,
 .node-type-event  {
+    .views-field {
+        font-size: 13px;
+    }
     .views-field.views-field-field-event-date-1 {
         color: $navy;
         font-weight: bold;
