@@ -94,7 +94,7 @@ $params = array(
             <?php
             //calculate week and set link
             $id = $cell['id'];
-            $todaysId = 'large_screen_calendar=' . $currentDate;
+            $todaysId = 'large_screen_calendar-' . $currentDate;
             $simpleDate = substr($id,-10);
 //            $dateOb = date_create_from_format('Y-m-d', $simpleDate);
             $year = substr($simpleDate, 0, 4);
