@@ -46,26 +46,40 @@ $params = array(
       <?php
       // calculate what dates are in the current week from id
       $current = current_path();
-//$current = 'askldjasldfkjasldf/calendar/week/2016-W33';
-$currentDate = substr($current, -8);  // 2016-W33
+    //$current = 'askldjasldfkjasldf/calendar/week/2016-W33';
+    $currentDate = substr($current, -10);  // 2016-W33
+    if (preg_match("/^(19|20)\d\d[-](0[1-9]|1[012])[-](0[1-9]|[12][0-9]|3[01])$/", $currentDate)) {
+        // is normal
+    } else {
+        $currentDate = date("Y-m-d");
+    }
 
-$week = substr($currentDate, -2);
-//$week = $week-2;  // calendar uses the week id of the week before
+    $year = substr($currentDate, 0, 4);
+    $mid = substr($currentDate, 5, 2);
+    // '2016-08-10';
+    //$dateTime is unix of this day's date
+    
+    $dateOb = date_create_from_format('Y-m-d', $currentDate);
+    $todaysTime = date_timestamp_get($dateOb);
 
-$startWYear = '1 January ' . $year;
-//this week start time
-$yearStartTime = strtotime($startWYear);
-$yearStartWeekday = date('w', $yearStartTime);
-//echo $year . ' started on a ' . $yearStartWeekday;
-//echo '<br>';
-// week 2 started on Jan 
-$weekStartJanDay = 7 - $yearStartWeekday;
-$week2StartTime = $yearStartTime + ($weekStartJanDay*24*3600); 
-$weeksToAdd = $week - 2;
-$weekStartTime = $week2StartTime + ((7*($weeksToAdd)))*24*3600;
-$weekEndTime = $weekStartTime + (6*24*3600);
 
-      
+    // calc week id
+    $dayNumber = date_format($dateOb, 'z'); // returns 0 - 365
+    $startWYear = '1 January ' . $year;
+    $yearStartTime = strtotime($startWYear);
+    $todaysTime = $yearStartTime + ($dayNumber * 24 * 3600);
+
+    $yearStartWeekday = date('w', $yearStartTime);
+    //echo $year . ' started on a ' . $yearStartWeekday;
+    $weekStartJanDay = 7 - $yearStartWeekday;
+    $week2StartTime = $yearStartTime + ($weekStartJanDay*24*3600); 
+    $week = 2+ floor(($todaysTime - $week2StartTime)/(7 * 24 * 3600));
+
+    $weeksToAdd = $week - 2;
+    $weekStartTime = $week2StartTime + ((7*($weeksToAdd)))*24*3600;
+    $weekEndTime = $weekStartTime + (6*24*3600);
+
+
      
       ?>
       
