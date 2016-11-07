@@ -2648,6 +2648,11 @@ section.block.block-views.block-views-event-page-blocks-block {
 }
 //.node-type-event .views-label.views-label-field-free.-Free,
 .node-type-event  {
+    .views-field.views-field-field-event-date-1 {
+        color: $navy;
+        font-weight: bold;
+        font-size: 16px;
+    }
     .views-field.views-field-field-free {
         display: none;
     }
@@ -2667,11 +2672,10 @@ section.block.block-views.block-views-event-page-blocks-block {
     .views-field.views-field-field-free.-Range {
         display: none!important;
     }
-    
+    .views-label.views-label-views-conditional-1,
     .views-label.views-label-field-free.-Free {
         color: #000;
         font-weight: normal;
-//        float: left;
         margin-right: 4px;
     }
 }
