@@ -49,23 +49,48 @@ $params = array(
 //$current = 'askldjasldfkjasldf/calendar/week/2016-W33';
 $currentDate = substr($current, -8);  // 2016-W33
 
-$week = substr($currentDate, -2);
-//$week = $week-2;  // calendar uses the week id of the week before
 
+      // if not specified, do current year and month
+$weekCheck = substr($current, -3,1);
+if($weekCheck == 'W') {
+    //  is normal
+    $week = substr($currentDate, -2);
+    
 $startWYear = '1 January ' . $year;
 //this week start time
 $yearStartTime = strtotime($startWYear);
 $yearStartWeekday = date('w', $yearStartTime);
 //echo $year . ' started on a ' . $yearStartWeekday;
-//echo '<br>';
-// week 2 started on Jan 
+
 $weekStartJanDay = 7 - $yearStartWeekday;
 $week2StartTime = $yearStartTime + ($weekStartJanDay*24*3600); 
-$weeksToAdd = $week - 2;
-$weekStartTime = $week2StartTime + ((7*($weeksToAdd)))*24*3600;
-$weekEndTime = $weekStartTime + (6*24*3600);
 
-      
+} else {
+    // get current date, calc week id
+    $todaysDate = date("Y-m-d");
+    $year = substr($todaysDate, 0, 4);
+    $mid = substr($todaysDate, 5, 2);
+
+    $dateOb = date_create_from_format('Y-m-d', $todaysDate);
+    $todaysTime = date_timestamp_get($dateOb);
+
+    // calc week id
+    $dayNumber = date_format($dateOb, 'z'); // returns 0 - 365
+    $startWYear = '1 January ' . $year;
+    $yearStartTime = strtotime($startWYear);
+    $todaysTime = $yearStartTime + ($dayNumber * 24 * 3600);
+
+    $yearStartWeekday = date('w', $yearStartTime);
+    //echo $year . ' started on a ' . $yearStartWeekday;
+    $weekStartJanDay = 7 - $yearStartWeekday;
+    $week2StartTime = $yearStartTime + ($weekStartJanDay*24*3600); 
+    $week = 2+ floor(($todaysTime - $week2StartTime)/(7 * 24 * 3600));
+    
+}
+    $weeksToAdd = $week - 2;
+    $weekStartTime = $week2StartTime + ((7*($weeksToAdd)))*24*3600;
+    $weekEndTime = $weekStartTime + (6*24*3600); 
+  
      
       ?>
       
