@@ -87,23 +87,18 @@ jQuery( document ).ready(function( $ ) {
 //                 console.log('u can see topbar');
                 $('.left-sidebar-calendar-exposed-filters').removeClass('scrolled'); 
                 $('.block-views-large-screen-calendar-block-6').removeClass('scrolled'); 
-<<<<<<< HEAD
-                 $('.block-views-large-screen-calendar-block-7').removeClass('scrolled'); 
+                
 //                $('.left-sidebar-minimonth').removeClass('scrolled'));
-=======
->>>>>>> parent of 8c76da1... commenting out erroring js from online long time ago, generalizing minimonth styling to use class not unique block class, updated custom js
                 $('.block-block-11').removeClass('scrolled'); 
             } else {
+                
                 $('.block-views-large-screen-calendar-block-6').addClass('scrolled');
-                $('.block-views-large-screen-calendar-block-7').addClass('scrolled');
+                
 //                $('.left-sidebar-minimonth').addClass('scrolled');
                 $('.left-sidebar-calendar-exposed-filters').addClass('scrolled');
-<<<<<<< HEAD
-                
-
-=======
+  
                 $('.block-views-large-screen-calendar-block-6').addClass('scrolled');
->>>>>>> parent of 8c76da1... commenting out erroring js from online long time ago, generalizing minimonth styling to use class not unique block class, updated custom js
+
                 $('.block-block-11').addClass('scrolled');
 //                console.log('you cant see calendar nav links'); 
             }

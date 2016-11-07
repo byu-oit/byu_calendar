@@ -1694,7 +1694,11 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 
 // MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH
 
-// -------- large month
+/* -------- large month -------- */
+.large-screen.block-views-large-screen-calendar-block-5 .view-header {
+    display: none;
+}
+
 .calendar-calendar .month-view .full tr td {
 //            width: 100%;
 //            float: left;
@@ -2642,7 +2646,35 @@ section.block.block-views.block-views-event-page-blocks-block {
 .mobile-first-event span.views-label {
     font-size: 14px;
 }
-
+//.node-type-event .views-label.views-label-field-free.-Free,
+.node-type-event  {
+    .views-field.views-field-field-free {
+        display: none;
+    }
+    .views-field.views-field-field-free.-Free {
+        display: inline;
+        margin: 9px 0px!important;
+    }
+    span.views-label.views-label-field-free {
+        float: left;
+        margin-right: 4px;
+    }
+    .views-field.views-field-views-conditional-1.-Price,
+    .views-field.views-field-views-conditional-1.-Range {
+        margin: 9px 0px;
+    }
+    .views-field.views-field-field-free.-Price,
+    .views-field.views-field-field-free.-Range {
+        display: none!important;
+    }
+    
+    .views-label.views-label-field-free.-Free {
+        color: #000;
+        font-weight: normal;
+//        float: left;
+        margin-right: 4px;
+    }
+}
 .date-display-range {
     display: inline;         // trying to get MT timezone nicely after the date.. 
     float: left;
