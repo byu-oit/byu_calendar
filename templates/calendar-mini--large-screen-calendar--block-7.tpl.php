@@ -94,6 +94,7 @@ $params = array(
             <?php
             //calculate week and set link
             $id = $cell['id'];
+            $todaysId = 'large_screen_calendar=' . $currentDate;
             $simpleDate = substr($id,-10);
 //            $dateOb = date_create_from_format('Y-m-d', $simpleDate);
             $year = substr($simpleDate, 0, 4);
@@ -114,14 +115,14 @@ $params = array(
               } else {
                   $class = ' this-month';
               }
+          
                 // if current week, add highlight class
               if(($dateTime >= ($weekStartTime - 3600)) && ($dateTime <= $weekEndTime)) {
                   $class .= " current-week";
               }
-//              if($week == $currentWeek) {
-//                  $class .= " current-week";
-//              }
-          
+            if($id == $todaysId) {
+                $class .= ' is-today';
+            }
               
               ?>
           <td id="<?php print $cell['id']; ?>" class="<?php print $cell['class']; print $class; ?>">
