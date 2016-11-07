@@ -17,11 +17,11 @@
 
 $( document ).ready(function() {
     console.log('its loaded');
-        $(".mobile-nav-link").click(){
+        $(".mobile-nav-link").click({
             console.log("its working");
             $.each(".mobile-nav-item").removeClass("active");
             $this.children(".mobile-nav-item").addClass("active");
     
-        } 
+        }); 
     
 });
