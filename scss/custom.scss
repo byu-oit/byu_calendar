@@ -737,6 +737,9 @@ main #main-content-section.scrolled {
             color: #fff;
         }
     }
+    td.is-today {
+        background: $navy;
+    }
     .mini-day-on a {
         text-decoration: none;
     }
