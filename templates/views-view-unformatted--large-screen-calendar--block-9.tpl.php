@@ -7,8 +7,6 @@
  * @ingroup views_templates
  */
 ?>
-<?php if (!empty($title)): ?>
-
 <?php
 $current = current_path();
 $currentDate = substr($current, -10);
@@ -22,13 +20,11 @@ $year = substr($currentDate, 0, 4);
 $mid = substr($currentDate, -5, 2);
 $did = substr($currentDate, -2);
 
-
-
 $titleFormatted = date("j |  l, F Y", mktime(0, 0, 0, $mid, $did, $year));
 
-
+echo '<h3>' . $titleFormatted . '</h3>';
 ?>
-
+<?php if (!empty($title)): ?>
   <h3><?php print $titleFormatted; ?></h3>
 <?php endif; ?>
 <?php foreach ($rows as $id => $row): ?>
