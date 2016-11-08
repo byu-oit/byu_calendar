@@ -25,7 +25,7 @@ $titleFormatted = date("j |  l, F Y", mktime(0, 0, 0, $mid, $did, $year));
 echo '<h3>' . $titleFormatted . '</h3>';
 ?>
 <?php if (!empty($title)): ?>
-  <h3><?php print $titleFormatted; ?></h3>
+  <h3><?php print $title; ?></h3>
 <?php endif; ?>
 <?php foreach ($rows as $id => $row): ?>
   <div<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"';  } ?>>
