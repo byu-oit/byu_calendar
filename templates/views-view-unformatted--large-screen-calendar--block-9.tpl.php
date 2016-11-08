@@ -7,7 +7,7 @@
  * @ingroup views_templates
  */
 ?>
-
+<?php if (!empty($title)): ?>
 
 <?php
 $current = current_path();
@@ -30,7 +30,7 @@ $titleFormatted = date("j |  l, F Y", mktime(0, 0, 0, $mid, $did, $year));
 ?>
 
   <h3><?php print $titleFormatted; ?></h3>
-
+<?php endif; ?>
 <?php foreach ($rows as $id => $row): ?>
   <div<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"';  } ?>>
     <?php print $row; ?>
