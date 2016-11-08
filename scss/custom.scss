@@ -1680,21 +1680,27 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 }
 /* large day adjustments */
 
-.view.view-large-screen-calendar.view-display-id-block_7 {
-    .view-header, 
-    th.calendar-dayview-hour, th.calendar-agenda-items,
-    .form-item.form-type-select.form-item-field-event-type-tid .description {
+// changed block 7 to block 9, a list
+//.view.view-large-screen-calendar.view-display-id-block_7 {
+//    .view-header, 
+//    th.calendar-dayview-hour, th.calendar-agenda-items,
+//    .form-item.form-type-select.form-item-field-event-type-tid .description {
+//        display: none;
+//    }
+//    td.calendar-agenda-items {
+//        width: 100%;
+//    }
+//    .calendar-calendar td .inner div, .calendar-calendar td .inner div a {
+//        background: none;
+//    }
+//}
+
+.block-views-large-screen-calendar-block-9 {
+    .view-header {
         display: none;
     }
-    td.calendar-agenda-items {
-        width: 100%;
-    }
-    .calendar-calendar td .inner div, .calendar-calendar td .inner div a {
-        background: none;
-    }
+    
 }
-
-
 
 
 
