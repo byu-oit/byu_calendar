@@ -87,6 +87,7 @@ jQuery( document ).ready(function( $ ) {
 //                 console.log('u can see topbar');
                 $('.left-sidebar-calendar-exposed-filters').removeClass('scrolled'); 
                 $('.block-views-large-screen-calendar-block-6').removeClass('scrolled'); 
+                $('.block-views-large-screen-calendar-block-7').removeClass('scrolled'); 
                 
 //                $('.left-sidebar-minimonth').removeClass('scrolled'));
                 $('.block-block-11').removeClass('scrolled'); 
@@ -98,6 +99,7 @@ jQuery( document ).ready(function( $ ) {
                 $('.left-sidebar-calendar-exposed-filters').addClass('scrolled');
   
                 $('.block-views-large-screen-calendar-block-6').addClass('scrolled');
+                $('.block-views-large-screen-calendar-block-7').addClass('scrolled');
 
                 $('.block-block-11').addClass('scrolled');
 //                console.log('you cant see calendar nav links'); 
