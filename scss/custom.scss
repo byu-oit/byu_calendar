@@ -1721,10 +1721,19 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     width: 56px;
     color: $gray;
     text-align: center;
+    background: none;
+    font-weight: 500;
     .colorbar {
         height: 15px;
+        color: $medblue;
     }
     
+}
+.calendar-nav-item.month-navigation-month.current-month {
+    .colorbar {
+        background: $navy;
+    }
+    color: $navy;
 }
 
 
