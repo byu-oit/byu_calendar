@@ -2108,8 +2108,15 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     .month-container {
         width: 220px;
         display: block;
-        margin: 20px 0px;
+        margin: 10px 10px;
+        .month-title {
+            text-align: center;
+        }
     }
+    .month-container.current-month {
+        background: $lightgray;
+    }
+    
     h2 {
         font-family: "Gotham SSm A","Gotham SSm B";
         font-size: 14px;
