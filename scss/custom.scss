@@ -1713,6 +1713,22 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 // MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH
 
 /* -------- large month -------- */
+
+/* large month nav -- */
+
+.calendar-nav-item.month-navigation-month {
+    font-size: 13px;
+    width: 56px;
+    color: $gray;
+    text-align: center;
+    .colorbar {
+        height: 15px;
+    }
+    
+}
+
+
+
 .large-screen .block-views-large-screen-calendar-block-5 .view-header {
     display: none;
 }
