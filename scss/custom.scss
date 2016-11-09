@@ -1744,11 +1744,15 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     }
     
 }
-
-
+.large-screen.page-calendar #large-calendar-nav-container.months {
+     margin-bottom: 25px; 
+}
+.page-calendar-month .large-calendar-top-navigation {
+    margin-bottom: 0px;
+}
 
 .large-screen .block-views-large-screen-calendar-block-5 .view-header {
-    display: none;
+    text-transform: uppercase;
 }
 
 .calendar-calendar .month-view .full tr td {
