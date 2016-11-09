@@ -1811,9 +1811,9 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     }
     tr td.single-day.today {
     
-        border-left: 1px solid $medgray;
-        border-right: 1px solid $medgray;
-        border-bottom: 1px solid $medgray;
+        border-left: 2px solid $medgray;
+        border-right: 2px solid $medgray;
+        border-bottom: 2px solid $medgray;
     }
    
     td.single-day .inner {
