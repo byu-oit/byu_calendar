@@ -1733,6 +1733,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 }
 .calendar-nav-item.month-navigation-month:hover {
     background: none;
+    color: $lightgray;
     .colorbar {
         background: $lightblue;
     }
@@ -1799,6 +1800,13 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         border-bottom: #fff 1px solid;
         .inner {
             display: none;
+        }
+    }
+    tr td.date-box.today {
+        background: $navy;
+        border-color: $medgray !important;
+        .month.day {
+            color: #fff;
         }
     }
    
