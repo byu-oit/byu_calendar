@@ -1729,6 +1729,13 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     }
     
 }
+.calendar-nav-item.month-navigation-month.hover {
+    background: none;
+    
+    .colorbar {
+        background: $lightblue;
+    }
+}
 .calendar-nav-item.month-navigation-month.current-month {
     .colorbar {
         background: $navy;
