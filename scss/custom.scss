@@ -410,6 +410,9 @@ input[type="checkbox"]:checked ~ label:after {
             position: relative;
         }
     }
+    .top-bar.expanded .title-area {
+        background: $navy;
+    }
 
     .top-bar-section ul {
         background: none;
@@ -421,13 +424,20 @@ input[type="checkbox"]:checked ~ label:after {
 
     ul#main-menu li,
     ul#main-menu li a {
-            background: $lightgray;
-            color: $navy;
-            width: 80%;
-            float: right;
+        background: #fff;
+        color: $navy;
+        width: 80%;
+        float: right;
     }
 }
-
+// for mobile and large
+li.leaf:hover {
+    background: $lightgray;
+}
+.top-bar-section li a:not(.button):hover {
+    background: $lightgray;
+    color: $navy;
+}
 
 
 /*  --- Random mobile display settings - */
