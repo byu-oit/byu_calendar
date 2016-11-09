@@ -1719,7 +1719,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 .calendar-nav-item.month-navigation-month {
     font-size: 13px;
     width: 56px;
-    color: $lightgray;
+    color: $gray;
     text-align: center;
     background: none;
     font-weight: 500;
@@ -1731,18 +1731,18 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     }
     
 }
-.calendar-nav-item.month-navigation-month.hover {
+.calendar-nav-item.month-navigation-month:hover {
     background: none;
-    
     .colorbar {
         background: $lightblue;
     }
 }
 .calendar-nav-item.month-navigation-month.current-month {
+    color: $navy;
     .colorbar {
         background: $navy;
     }
-    color: $navy;
+    
 }
 
 
