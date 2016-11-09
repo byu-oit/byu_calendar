@@ -1733,7 +1733,6 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 }
 .calendar-nav-item.month-navigation-month:hover {
     background: none;
-    color: $lightgray;
     .colorbar {
         background: $lightblue;
     }
@@ -2011,6 +2010,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 .calendar-yearview-month.month-inner {
     margin-bottom: 25px;
 }
+.large-screen.page-calendar-year,
 .mobile-first-calendar-yearview {
     .calendar-nav-section {
         font-size: 18px;
@@ -2098,6 +2098,15 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         margin-left: 0px;
     }
 }
+/* --------- large yearview -------- */
+
+.page-calendar-year .large-calendar-navigation {
+    margin-bottom: 25px;
+}
+
+
+
+
 
 
 /* ----------- footer ----------- *?
