@@ -2083,7 +2083,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 
 .large-calendar-yearview {
     @include display-flex();
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -2104,6 +2104,24 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     margin-bottom: 25px;
 }
 
+.large-screen.page-calendar-year {
+    .month-container {
+        width: 220px;
+        display: block;
+        margin: 20px 0px;
+    }
+    h2 {
+        font-family: "Gotham SSm A","Gotham SSm B";
+        font-size: 14px;
+    }
+   .box {
+        a  {
+            color: $darkgray;
+        }
+    }
+    
+    
+}
 
 
 
