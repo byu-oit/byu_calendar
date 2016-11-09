@@ -1719,13 +1719,15 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 .calendar-nav-item.month-navigation-month {
     font-size: 13px;
     width: 56px;
-    color: $gray;
+    color: $lightgray;
     text-align: center;
     background: none;
     font-weight: 500;
+    text-transform: uppercase;
     .colorbar {
-        height: 15px;
-        color: $medblue;
+        height: 8px;
+        background: $medblue;
+        margin-bottom: 5px;
     }
     
 }
