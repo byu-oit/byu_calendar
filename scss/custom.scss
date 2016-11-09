@@ -2109,7 +2109,8 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     .month-container {
         width: 220px;
         display: block;
-        margin: 10px 10px;
+        margin: 10px 0px;
+        padding-top: 10px;
         .month-title {
             text-align: center;
         }
