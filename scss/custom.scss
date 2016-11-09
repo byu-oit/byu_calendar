@@ -113,7 +113,13 @@ a:hover {
 }
 
 /* -------- font & sizing -------- */
-
+@media screen and (max-width: $mobile_max_width){
+    // set smaller header sizes for mobile.
+    h1 {
+        font-size: 1.3em;
+    }
+    
+}
 h2 {
     font-size: 1em;
 }
