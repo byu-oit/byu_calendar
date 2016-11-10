@@ -22,14 +22,14 @@
  * the view is modified.
  */
 ?>
-<?php 
-$field = $row->field_field_event_date_1;
+    <?php 
+$classicDate = $row->field_field_event_date_1[0][rendered][raw][value];
 //$classicDate =
 //print $output; 
-$output = $classicDate;
-$year = substr($output, 0, 4);
-$mid = substr(-5,2);
-$did = substr(-2);
+//$output = $classicDate;
+$year = substr($classicDate, 0, 4);
+$mid = substr(5, 2);
+$did = substr(8, 2);
 $day = ltrim($did, '0');
 
 $time = mktime(0, 0, 0, $mid, $did, $year);
@@ -40,5 +40,13 @@ echo '<div class="list-view date-square">' .
     '<div class = "day">' . $did . '</div>' . 
     '<div class = "year">' . $year  . " & " . $classicDate . '</div>' .  
     '</div>';
-print_r($field);
+print_r($classicDate);
+
+
+//Array ( [0] =>
+//       Array ( [rendered] => 
+//              Array ( 
+//                    [#markup] => 2016-11-10 [#access] => 1 ) 
+//                    [raw] => Array ( 
+//                        [value] => 2016-11-10 13:00:00 [value2] => 2016-11-10 13:00:00 [timezone] => America/Denver [timezone_db] => America/Denver [date_type] => datetime ) ) )
 ?>
