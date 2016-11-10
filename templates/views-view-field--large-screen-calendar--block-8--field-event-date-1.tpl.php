@@ -24,7 +24,7 @@
 ?>
     <?php 
 $field = $row->field_field_event_date_1[0][rendered];
-$classicDate = $row->field_field_event_date_1[0][rendered][markup];
+$classicDate = $row->field_field_event_date_1[0][rendered]['#markup'];
 
 
 //$classicDate =
@@ -43,7 +43,7 @@ echo '<div class="list-view date-square">' .
     '<div class = "day">' . $did . '</div>' . 
     '<div class = "year">' . $year  . " & " . $classicDate . '</div>' .  
     '</div>';
-print_r($field);
+//print_r($field);
 
 
 //Array ( [0] =>
