@@ -2153,6 +2153,36 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 
 
 
+/* mobile all -------------- */
+
+
+
+
+
+/* large all ------------- */
+
+.list-view.date-square {
+    background: $lightgray;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    float: left;
+    padding: 10px;
+    text-align: center;
+    color: $navy;
+    .month {
+        font-weight: 500;
+    }
+    .day {
+        font-size: 40px;
+        font-family: "Sentinel SSm A", "Sentinel SSm B";
+        padding: 8px 0px;
+        font-weight: bold;
+    }
+    .year {
+        font-weight: 100;
+    }
+}
 
 
 /* ----------- footer ----------- *?
@@ -2892,3 +2922,14 @@ span.views-label.views-label-addtoany-link {
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+
