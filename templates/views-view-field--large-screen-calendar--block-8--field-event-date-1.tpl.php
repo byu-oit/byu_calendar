@@ -43,7 +43,7 @@ echo '<div class="list-view date-square">' .
     '<div class = "day">' . $did . '</div>' . 
     '<div class = "year">' . $year  . " & " . $classicDate . '</div>' .  
     '</div>';
-print_r($classicDate);
+print_r($field);
 
 
 //Array ( [0] =>
