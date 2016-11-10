@@ -2160,7 +2160,12 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 
 
 /* large all ------------- */
-
+.page-calendar-all {
+    .views-field.views-field-field-event-date-1 {
+        padding-left: 0px;
+    }
+    
+}
 .list-view.date-square {
     background: $lightgray;
     width: 100px;
@@ -2815,10 +2820,10 @@ section.block.block-views.block-views-event-page-blocks-block {
         display: none;
     }
     .views-field.views-field-field-free.-Free {
-        display: inline;
+        display: block;
         margin: 9px 0px!important;
     }
-    span.views-label.views-label-field-free {
+    .views-label.views-label-field-free {
         float: left;
         margin-right: 4px;
     }
