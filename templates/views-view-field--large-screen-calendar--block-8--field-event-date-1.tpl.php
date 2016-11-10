@@ -24,7 +24,7 @@
 ?>
     <?php 
 $field = $row->field_field_event_date_1[0];
-$classicDate = $row->field_field_event_date_1[0]['rendered']['raw'];
+$classicDate = $row->field_field_event_date_1[0]['raw']['value'];
 
 
 //$classicDate =
@@ -43,19 +43,23 @@ echo '<div class="list-view date-square">' .
     '<div class = "day">' . $did . '</div>' . 
     '<div class = "year">' . $year  . " & " . $classicDate . '</div>' .  
     '</div>';
-print_r($field);
-echo 'try 2<br>';
-print_r($row);
+//print_r($field);
+//echo 'try 2<br>';
+//print_r($row);
 
 
 //
 //Array ( [0] =>
 //       Array ( [rendered] => 
 //              Array ( 
-//                    [#markup] => 2016-11-10 [#access] => 1 ) 
+//                    [#markup] => 2016-11-10 
+//                        [#access] => 1 ) 
 //
-//             [raw] => Array ( 
-//                        [value] => 2016-11-10 13:00:00 [value2] => 2016-11-10 13:00:00 [timezone] => America/Denver [timezone_db] => America/Denver [date_type] => datetime ) ) )
+//                    [raw] => Array ( 
+//                        [value] => 2016-11-10 13:00:00 
+//                        [value2] => 2016-11-10 13:00:00 
+//                        [timezone] => America/Denver 
+//                        [timezone_db] => America/Denver [date_type] => datetime ) ) )
 
 //
 //Array ( [rendered] => 
