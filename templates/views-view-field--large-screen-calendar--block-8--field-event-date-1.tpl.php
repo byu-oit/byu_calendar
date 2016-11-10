@@ -30,9 +30,9 @@ $classicDate = $row->field_field_event_date_1[0][rendered]['#markup'];
 //$classicDate =
 //print $output; 
 $output = $classicDate;
-$year = substr($output, 0, 4);
-$mid = substr(5, 2);
-$did = substr(8, 2);
+$year = substr($classicDate, 0, 4);
+$mid = substr($classicDate, 5, 2);
+$did = substr($classicDate, 8, 2);
 $day = ltrim($did, '0');
 
 $time = mktime(0, 0, 0, $mid, $did, $year);
