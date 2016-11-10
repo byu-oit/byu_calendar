@@ -23,6 +23,7 @@
  */
 ?>
 <?php 
+$classicDate = $row->field_field_event_date_1;
 //print $output; 
 $output = $classicDate;
 $year = substr($output, 0, 4);
@@ -36,6 +37,6 @@ $month = date("F", $time);
 echo '<div class="list-view date-square">' . 
     '<div class = "month">' . $month . '</div>' . 
     '<div class = "day">' . $did . '</div>' . 
-    '<div class = "year">' . $year  . " & " . $output . '</div>' .  
+    '<div class = "year">' . $year  . " & " . $classicDate . '</div>' .  
     '</div>';
 ?>
