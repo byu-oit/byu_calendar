@@ -57,10 +57,10 @@ print_r($classicDate);
 //             [raw] => Array ( 
 //                        [value] => 2016-11-10 13:00:00 [value2] => 2016-11-10 13:00:00 [timezone] => America/Denver [timezone_db] => America/Denver [date_type] => datetime ) ) )
 
-
-Array ( [rendered] => 
-       Array ( [#markup] => 2016-11-10 [#access] => 1 ) 
-           [raw] => Array
-           ( [value] => 2016-11-10 13:00:00 [value2] => 2016-11-10 13:00:00 [timezone] => America/Denver [timezone_db] => America/Denver [date_type] => datetime ) )
+//
+//Array ( [rendered] => 
+//       Array ( [#markup] => 2016-11-10 [#access] => 1 ) 
+//           [raw] => Array
+//           ( [value] => 2016-11-10 13:00:00 [value2] => 2016-11-10 13:00:00 [timezone] => America/Denver [timezone_db] => America/Denver [date_type] => datetime ) )
 
 ?>
