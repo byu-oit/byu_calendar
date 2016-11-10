@@ -23,7 +23,7 @@
  */
 ?>
     <?php 
-$field = $row->field_field_event_date_1[0]['rendered']['raw'];
+$field = $row->field_field_event_date_1[0];
 $classicDate = $row->field_field_event_date_1[0]['rendered']['raw']['value'];
 //$classicDate =
 //print $output; 
