@@ -1456,13 +1456,13 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             color: $green;
         }
         
-        span.views-field.views-field-field-event-date {
+        .views-field.views-field-field-event-date {
             display: inline;
             float: left;
             margin-right: 4px;
 //            text-transform: uppercase;
         }
-        span.views-field.views-field-field-event-date-1 {
+        .views-field.views-field-field-event-date-1 {
             display: inline;
             padding-left: 4px;
         }
@@ -1476,7 +1476,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             
         } 
         // if there is free/price selected AND tickets availability date, add :
-        span.views-field.views-field-field-price + .views-field-field-tickets-available:before,
+        .views-field.views-field-field-price + .views-field-field-tickets-available:before,
 //        span.views-field.views-field-field-free + .views-field-field-tickets-available:before {
 //            content: ": ";
 //        }
@@ -1499,7 +1499,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             display: inline;
             margin: 9px 0px!important;
         }
-        span.views-label.views-label-field-free {
+        .views-label.views-label-field-free {
             float: left;
             margin-right: 4px;
         }
