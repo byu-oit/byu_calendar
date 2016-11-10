@@ -23,7 +23,7 @@
  */
 ?>
     <?php 
-$field = $row->field_field_event_date_1[0][rendered];
+$field = $row->field_field_event_date_1[0];
 $classicDate = $row->field_field_event_date_1[0][rendered]['#markup'];
 
 
@@ -50,6 +50,7 @@ print_r($field);
 //       Array ( [rendered] => 
 //              Array ( 
 //                    [#markup] => 2016-11-10 [#access] => 1 ) 
-//                    [raw] => Array ( 
+
+//             [raw] => Array ( 
 //                        [value] => 2016-11-10 13:00:00 [value2] => 2016-11-10 13:00:00 [timezone] => America/Denver [timezone_db] => America/Denver [date_type] => datetime ) ) )
 ?>
