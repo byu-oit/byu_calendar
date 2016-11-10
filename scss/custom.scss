@@ -2160,12 +2160,15 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 
 
 /* large all ------------- */
-.page-calendar-all {
+.large-screen.page-calendar-all {
     .views-field.views-field-field-event-date-1 {
-        padding-left: 0px;
+         padding-left: 0px;
     }
-    
+    #large-calendar-nav-header #calendar-view-links {
+        width: 100%;
+    }
 }
+
 .list-view.date-square {
     background: $lightgray;
     width: 100px;
