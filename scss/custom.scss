@@ -422,12 +422,30 @@ input[type="checkbox"]:checked ~ label:after {
         //    right: 68px;
     }
 
+    ul#secondary-menu li,
+    ul#main-menu li {
+        border-left: 1px solid $medgray;
+        width: 80%;
+    
+    }
+    ul#secondary-menu li.last.leaf {
+        border-bottom: 1px solid $medgray;
+        border-bottom-left-radius: 4px;
+    }
+    ul#secondary-menu li,
+    ul#secondary-menu li a,
     ul#main-menu li,
     ul#main-menu li a {
         background: #fff;
         color: $navy;
-        width: 80%;
         float: right;
+        font-family: "Sentinel SSm A", "Sentinel SSm B";
+        font-size: 16px;
+    }
+    ul#secondary-menu li a,
+    ul#main-menu li a {
+        padding: 8px 15px;
+//        width: 100%;
     }
 }
 // for mobile and large
