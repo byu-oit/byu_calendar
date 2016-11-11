@@ -3013,9 +3013,14 @@ span.views-label.views-label-addtoany-link {
 }
 
 @media screen and (max-width: $mobile_max_width) {
-    #categories-container .category-item {
-        width: 140px;
-        height: 174px;
+    #categories-container {
+        max-width: 740px;
+        margin-left: auto;
+        margin-right: auto;
+        .category-item {
+            width: 140px;
+            height: 174px;
+        }
     }
     .category-container .category-name {
         padding: 8px 8px;
@@ -3024,6 +3029,16 @@ span.views-label.views-label-addtoany-link {
     }
     #category-all {
         height: 174px;
+    }
+    
+    
+    
+}
+
+@media screen and (max-width: 650px){
+    // needs to be 2 in a row
+    #categories-container {
+        width: 330px;
     }
     
     
