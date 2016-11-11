@@ -21,7 +21,7 @@
                   <?php print $top_bar_main_menu; ?>
                 <?php endif; ?>
                 <?php if ($top_bar_secondary_menu) :?>
-                  <?php /*print $top_bar_secondary_menu; */ ?>
+                  <?php print $top_bar_secondary_menu;  ?>
                 <?php endif; ?>
               </section>
             </div>
