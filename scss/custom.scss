@@ -2958,9 +2958,19 @@ span.views-label.views-label-addtoany-link {
 /* ------------ Categories page and block ---- */
 @media screen and (max-width: $mobile_max_width) {
     #categories-container .category-item {
-        max-width: 140px;
+        width: 140px;
         height: 174px;
     }
+    .category-container .category-name {
+        padding: 8px 8px;
+        font-size: 13px;
+        width: 140px;
+    }
+    #category-all {
+        height: 174px;
+    }
+    
+    
 }
 #categories-container {
     display: flex;
@@ -2985,10 +2995,11 @@ span.views-label.views-label-addtoany-link {
     .category-item {
         background: $gray;
         height: 255px;
+        margin-bottom: 20px;
     }
     .category-item:hover {
         background: $medgray;
-        margin-bottom: 20px;
+        
     }
     .category-name {
         padding: 15px 15px;
