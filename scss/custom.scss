@@ -438,7 +438,11 @@ li.leaf:hover {
     background: $lightgray;
     color: $navy;
 }
-
+@media screen and (min-width: $large_screen_start_width) {
+    ul#secondary-menu {
+        display: none;
+    }   
+}
 
 /*  --- Random mobile display settings - */
 
