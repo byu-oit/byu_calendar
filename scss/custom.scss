@@ -2956,22 +2956,7 @@ span.views-label.views-label-addtoany-link {
 
 
 /* ------------ Categories page and block ---- */
-@media screen and (max-width: $mobile_max_width) {
-    #categories-container .category-item {
-        width: 140px;
-        height: 174px;
-    }
-    .category-container .category-name {
-        padding: 8px 8px;
-        font-size: 13px; 
-        width: 140px;
-    }
-    #category-all {
-        height: 174px;
-    }
-    
-    
-}
+
 #categories-container {
     display: flex;
     flex-wrap: wrap;
@@ -3027,5 +3012,20 @@ span.views-label.views-label-addtoany-link {
     }
 }
 
-
+@media screen and (max-width: $mobile_max_width) {
+    #categories-container .category-item {
+        width: 140px;
+        height: 174px;
+    }
+    .category-container .category-name {
+        padding: 8px 8px;
+        font-size: 13px; 
+        width: 140px;
+    }
+    #category-all {
+        height: 174px;
+    }
+    
+    
+}
 
