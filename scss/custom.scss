@@ -2937,9 +2937,36 @@ span.views-label.views-label-addtoany-link {
 
 
 
+/* ------------ Categories page and block ---- */
 
+#categories-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0px 15px;
+    justify-content: space-between;
+    
+}
+@media screen and (min-width: $large_screen_start_width ) {
+    #categories-container {
+        width: 1024px;
+        padding: 0px 30px;
+    }
+}
 
-
+.category-container {
+    /* background: gray; */
+    text-align: center;
+    .category-item {
+        BACKGROUND: gray;
+    }
+    .category-name {
+        padding: 10px 10px;
+        font-size: 14px;
+        color: #fff;
+        font-weight: bold;
+    }
+}
 
 
 
