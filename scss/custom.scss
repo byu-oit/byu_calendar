@@ -398,7 +398,7 @@ input[type="checkbox"]:checked ~ label:after {
         overflow: hidden;
         height: 45px;
         line-height: 45px;
-//        position: absolute;
+        position: fixed;
         width: 100%;
         background: $navy;
         margin-bottom: 0;
@@ -406,9 +406,7 @@ input[type="checkbox"]:checked ~ label:after {
 //            position: fixed;
             z-index: 50;
         }
-        @media screen and (min-width: $large_screen_start_width) {
-            position: relative;
-        }
+
     }
     .top-bar.expanded .title-area {
         background: $navy;
@@ -446,6 +444,11 @@ input[type="checkbox"]:checked ~ label:after {
     ul#main-menu li a {
         padding: 8px 15px;
 //        width: 100%;
+    }
+}
+@media screen and (min-width: $large_screen_start_width) {
+     .top-bar {
+        position: relative;
     }
 }
 // for mobile and large
@@ -800,7 +803,7 @@ main #main-content-section.scrolled {
     background: $medgray;
     text-align: center;
     @include sidebar-inner-shadowbox();
-    border-bottom: 1px solid #fff;
+//    border-bottom: 1px solid #fff; // i think they used to want this
     padding: 8px 0px;
 }
 
