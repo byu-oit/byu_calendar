@@ -1756,6 +1756,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     background: none;
     font-weight: 500;
     text-transform: uppercase;
+    padding-top: 0px!important; // makes it line up with month year dropdown
     .colorbar {
         height: 8px;
         background: $medblue;
