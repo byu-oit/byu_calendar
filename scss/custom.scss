@@ -1875,7 +1875,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     }
     
     tr.single-day .no-entry, tr.single-day .no-entry .inner {
-        height: 10px !important;
+        min-height: 10px !important;
         line-height: 20px;
     }
     .calendar-more {
