@@ -2339,7 +2339,7 @@ fieldset {
 .page-node-add-event .form-item.form-type-textfield.form-item-title {
     
     label:before {
-        content: "EVENT ";
+//        content: "EVENT ";
     }
         
 }
@@ -2963,8 +2963,9 @@ span.views-label.views-label-addtoany-link {
     width: 100%;
     padding: 0px 15px;
     justify-content: space-between;
-    // mobile:
-    
+    margin-left: auto;
+    margin-right: auto;
+
 }
 @media screen and (min-width: $large_screen_start_width ) {
     #categories-container {
@@ -3015,8 +3016,7 @@ span.views-label.views-label-addtoany-link {
 @media screen and (max-width: $mobile_max_width) {
     #categories-container {
         max-width: 740px;
-        margin-left: auto;
-        margin-right: auto;
+ 
         .category-item {
             width: 140px;
             height: 185px;
