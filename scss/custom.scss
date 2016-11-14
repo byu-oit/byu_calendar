@@ -45,6 +45,7 @@ $nav_gradient_2: 5%;
     box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.4);
 }
 @mixin display-flex() {
+    display: flex;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -483,7 +484,7 @@ li.leaf:hover {
     .top-bar-section {
         position: relative;
         width: 100%;
-        display: flex;
+        @include display-flex();
         justify-content: center;
         border-bottom: 1px solid $lightgray;
         background: #fff;
@@ -569,7 +570,7 @@ header.l-header {
                 padding-right: 0px;
                 height: 100%!important;
                 /* 100vh does the height, but it doesn't work once you scroll.. */
-                display: flex;
+                @include display-flex();
                 justify-content: center;
                 section {
                     width: 100%;
@@ -870,7 +871,7 @@ main #main-content-section.scrolled {
     div#calendar-nav-pager {
         margin-top: 10px;
         font-size: 13px;
-//        display: flex;
+//        @include display-flex();
 //        flex-wrap: wrap;
 //        justify-content: center;
         div {
@@ -1597,7 +1598,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 /*
 .day-header-inner.inner-bottom,
 .day-header-inner.inner-top {
-                display: -webkit-box;             display: -moz-box;             display: -ms-flexbox;             display: -webkit-flex;             display: flex;
+                display: -webkit-box;             display: -moz-box;             display: -ms-flexbox;             display: -webkit-flex;             @include display-flex();
     width: 90%;
     height: 60px;
     color: $navy;
@@ -1853,7 +1854,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
    
     td.single-day .inner {
         height: 200px!important;
-        display: flex;
+        @include display-flex();
         flex-wrap: wrap;
     }
     .view-item {
@@ -2404,7 +2405,7 @@ fieldset {
 
 #edit-field-event-date-und-0-value,
 #edit-field-event-date-und-0-value2 {
-    display: flex;
+    @include display-flex();
     padding: 0px;
 //    @media screen and (max-width: $mobile_max_width){
         flex-wrap: wrap;
@@ -2469,7 +2470,7 @@ fieldset {
 
 // reorder date stuff
 fieldset.date-combo.form-wrapper.date-processed .fieldset-wrapper {
-    display: flex;
+    @include display-flex();
     flex-wrap: wrap;
 }
 .date-float:nth-of-type(3) {
@@ -2492,7 +2493,7 @@ fieldset.date-combo.form-wrapper.date-processed .fieldset-wrapper {
 
 // location
 .form-item-field-event-location-und {
-//    display: flex;  // comment so it's above, since we aren't doing a map.
+//    @include display-flex();  // comment so it's above, since we aren't doing a map.
     label {
         width: 120px;
         padding
@@ -2509,7 +2510,7 @@ fieldset.date-combo.form-wrapper.date-processed .fieldset-wrapper {
 // tickets
 .form-item.form-item-field-are-tickets-und {
     margin: -10px 0px 15px!important;
-    display: flex;
+    @include display-flex();
 }
 #edit-field-are-tickets-und .form-item {
     display: inline;
@@ -2562,7 +2563,7 @@ fieldset.group-pricing legend {
 #edit-field-price,
 #edit-field-price-range {
     .form-item {
-        display: flex;
+        @include display-flex();
         padding-right: 8px;
     }
     .field-prefix {
@@ -2602,7 +2603,7 @@ fieldset.group-pricing legend {
     /* float: right; */
 }
 #edit-field-price-range .field-values-wrapper.clearfix {
-    display: flex;
+    @include display-flex();
 }
 .form-item.form-type-textfield.form-item-field-price-range-und-0-to {
     padding-right: 0px!important;
@@ -2671,7 +2672,7 @@ fieldset#edit-body-und-0-format {
     }
 }
 .form-item.form-type-managed-file.form-item-field-thumbnail-und-0 {
-    display: flex;
+    @include display-flex();
     flex-wrap: wrap;
     .image-widget:before {
 //        content: "Please save your image as a 600x600 square jpg or png.";
@@ -2686,7 +2687,7 @@ fieldset#edit-body-und-0-format {
     }
 
     .image-widget-data {
-        display: flex;
+        @include display-flex();
         flex-wrap: wrap;
         justify-content: space-between;
         max-width: 284px;
@@ -2694,7 +2695,7 @@ fieldset#edit-body-und-0-format {
     .file-chooser-field-wrapper {
         width: 100%;
         margin: 15px 0px -2px;
-        display: flex;
+        @include display-flex();
         justify-content: space-between;
     }
     button#edit-field-thumbnail-und-0-upload-button {
@@ -2792,7 +2793,7 @@ div#edit-field-full-name {
     }
     
     #edit-field-event-type-und {
-           display: flex;
+           @include display-flex();
             flex-flow: column wrap;
             width: 400px;
             height: 104px; // was 96 with checkboxes w 6 options
@@ -2922,13 +2923,13 @@ span.views-label.views-label-addtoany-link {
     padding-top: 15px;
 }
 #additional-info-links {
-    display: flex;
+    @include display-flex();
     .medgray-button {
         margin: 10px 0px;
     }
 }
 .mobile-first.node-type-event {
-//     display: flex;
+//     @include display-flex();
     .medgray-button {
         width: 140px;
         margin-top: 10px;
@@ -2962,7 +2963,7 @@ span.views-label.views-label-addtoany-link {
 /* ------------ Categories page and block ---- */
 
 #categories-container {
-    display: flex;
+    @include display-flex();
     flex-wrap: wrap;
     width: 100%;
     padding: 0px 15px;
@@ -3004,7 +3005,7 @@ span.views-label.views-label-addtoany-link {
     height: 238px;
     background: $gray;
     .category-item {
-        display: flex;
+        @include display-flex();
         align-items: center;
         height: 255px;
     }
