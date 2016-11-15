@@ -155,13 +155,17 @@
           <?php print render($action_links); ?>
         </ul>
       <?php endif; ?>
-          <div id='top-content'>
-          <?php print render($page['top_content']); ?>
-          </div>
-      <?php print render($page['content']); ?>
-          <div id='bottom-content'>
-          <?php print render($page['bottom_content']); ?>
-          </div>
+          <?php if (!empty($page['top_content'])): ?>
+              <div id="top-content">
+              <?php print render($page['top_content']); ?>
+              </div>
+          <?php endif; ?>
+        <?php print render($page['content']); ?>
+          <?php if (!empty($page['top_content'])): ?>
+              <div id="bottom-content">
+              <?php print render($page['bottom_content']); ?>
+              </div>
+          <?php endif; ?>
     </div>
     <!--/.main region -->
 
