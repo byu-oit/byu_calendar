@@ -151,9 +151,9 @@ jQuery( document ).ready(function( $ ) {
             weekdays[6] = "Saturday";
         var wid = date.getDay();                    
         var weekday = weekdays[wid];
-    }
 
         $('head').append('<style>.form-item-field-event-date-und-0-all-day:before{content:"' + weekday + '"; text-transform: uppercase; color: #767676; font-weight: bold; padding: 0px 20px 0px 5px; }</style>');
+    }
         
 
     if (( $("body").hasClass("page-node-add") ) || ( $("body").hasClass("page-node-edit")) ) {
@@ -205,11 +205,28 @@ jQuery( document ).ready(function( $ ) {
 //            print_r(checkedValues);
 //        });
 
-    
-    $('#views-exposed-form-large-screen-calendar-block-3 input[type="checkbox"]').change(function() {
-        console.log('yasfsadfasd');
-    });
-    
+    // large filters
+    $('section.left-sidebar-calendar-exposed-filters form input[type="checkbox"]').change(function() {
+	var params = $('section.left-sidebar-calendar-exposed-filters form').serialize();
+	$('.calendar-view-links a').each(function() {
+		var link = $(this).attr('href');
+		link = link.replace(/\?.*$/, '');
+		$(this).attr('href', link + '?' + params);
+	});
+
+    }).change();
+
+// mobile filters    
+   $('.view-id-mobile_calendar .view-filters form input[type="checkbox"]').change(function() {
+	//$('sdflkjasdflkjad form input[type="checkbox"]:checked').size() 
+        var params = $('.view-id-mobile_calendar .view-filters form').serialize();
+        $('.calendar-nav-link').each(function() {
+                var link = $(this).attr('href');
+                link = link.replace(/\?.*$/, '');
+                $(this).attr('href', link + '?' + params);
+        });
+
+    }).change();
     
     
     
