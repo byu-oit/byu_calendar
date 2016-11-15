@@ -2963,6 +2963,43 @@ span.views-label.views-label-addtoany-link {
 
 
 
+/* -------- HOMEPAGE HOMEPAGE HOMEPAGE --------------------- */
+
+.view.view-homepage-features.view-id-homepage_features {
+    background: $lightgray;
+    .views-field.views-field-title, 
+    .views-field-field-event-date {
+        padding: 10px 15px;
+    }
+    .views-field.views-field-title h1 {
+        margin: 0px;
+    }
+    
+    span.views-field.views-field-field-event-date-1 {
+        display: inline-block;
+        padding: 0px 5px 10px 15px;
+    }
+    span.views-field.views-field-field-event-location {
+        display: inline-block;
+        padding-right: 15px;
+    }
+    
+    
+    
+    
+}
+/* mobile */
+
+
+
+/* large */
+
+.view.view-homepage-features.view-id-homepage_features {
+    max-width: 425px;
+}
+
+
+
 /* ------------ Categories page and block ---- */
 
 #categories-container {
