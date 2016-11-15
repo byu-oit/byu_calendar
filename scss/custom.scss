@@ -1042,7 +1042,10 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     line-height: 16px;
 }
 
-
+/* -------- Calendar general mobile or both --- */
+.view-empty p {
+    padding: 15px;
+}
 /* ---------------- Calendar displays - general -  large screen ------------------- */
 
 @media screen and (min-width:$large_screen_start_width) {
