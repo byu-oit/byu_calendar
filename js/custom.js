@@ -23,14 +23,16 @@ jQuery( document ).ready(function( $ ) {
         return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
     };
     
-    $(function() {
-       $('.show-filters').click(function() {
-           console.log('show!');
+    
+    // mobile show filters
+    
+   $('.show-filters').click(function() {
+       console.log('show!');
 //           $('#views-exposed-form').show();
-           $('.views-exposed-form').addClass("shown");
+       $('.views-exposed-form').addClass("shown");
 //           return false;
-       });        
-   });
+   });        
+
     
     
     
@@ -190,7 +192,7 @@ jQuery( document ).ready(function( $ ) {
 //  jQuery('a.reset').live( 'click', function() {
 //    var datafield = jQuery(this).attr('data-field');
 //    jQuery('#'+datafield).val('All');
-    jQuery( '#views-exposed-form-large-screen-calendar-block-8' ).submit(funtion(){
+//    jQuery( '#views-exposed-form-large-screen-calendar-block-8' ).submit(funtion(){
 //        var tids = [];
 //        tids.push([$(input).val()]);                                                                 
 //                                                                         
@@ -198,9 +200,9 @@ jQuery( document ).ready(function( $ ) {
 //        var name = $term->
 //          var termNames =[];
                                                                         
-       var checkedValues = $('input[name="field_event_type_tid[]"]:checked');
-            print_r(checkedValues);
-        });
+//       var checkedValues = $('input[name="field_event_type_tid[]"]:checked');
+//            print_r(checkedValues);
+//        });
 
     
 });
