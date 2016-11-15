@@ -3005,7 +3005,9 @@ span.views-label.views-label-addtoany-link {
 /* -------- HOMEPAGE HOMEPAGE HOMEPAGE --------------------- */
 
 .view.view-homepage-features.view-id-homepage_features {
-    background: $lightgray;
+    .views-row {
+        background: $lightgray;
+    }
     .views-field.views-field-title, 
     .views-field-field-event-date {
         padding: 10px 15px;
@@ -3027,7 +3029,14 @@ span.views-label.views-label-addtoany-link {
         position: relative;
         top: -13px;
     }
-    
+    .block-views-homepage-features-block-3,
+    .block-views-homepage-features-block-1 {
+        .view-content {
+            @include: $display-flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }  
+    }
     
     
     
@@ -3037,10 +3046,23 @@ span.views-label.views-label-addtoany-link {
 
 
 /* large */
-
-.view.view-homepage-features.view-id-homepage_features {
+// large main
+.block-views-homepage-features-block {
     max-width: 425px;
 }
+// large screen small features
+.block-views-homepage-features-block-1 {
+    width:420px;
+    .view-row{
+        width: 192px;
+    }
+    .view-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
 
 
 
