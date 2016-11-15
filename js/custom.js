@@ -148,10 +148,11 @@ jQuery( document ).ready(function( $ ) {
             weekdays[6] = "Saturday";
         var wid = date.getDay();                    
         var weekday = weekdays[wid];
+    }
 
         $('head').append('<style>.form-item-field-event-date-und-0-all-day:before{content:"' + weekday + '"; text-transform: uppercase; color: #767676; font-weight: bold; padding: 0px 20px 0px 5px; }</style>');
         
-    }
+
     if (( $("body").hasClass("page-node-add") ) || ( $("body").hasClass("page-node-edit")) ) {
         calcWeekday();
     }
@@ -198,13 +199,9 @@ jQuery( document ).ready(function( $ ) {
 //          var termNames =[];
                                                                         
        var checkedValues = $('input[name="field_event_type_tid[]"]:checked');
-      print_r(checkedValues);
-        }
-    );
-  });
+            print_r(checkedValues);
+        });
 
-    
-    
     
 });
 
