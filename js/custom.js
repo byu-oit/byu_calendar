@@ -25,6 +25,7 @@ jQuery( document ).ready(function( $ ) {
     
     $(function() {
        $('.show-filters').click(function() {
+           console.log('show!');
 //           $('#views-exposed-form').show();
            $('.views-exposed-form').addClass("shown");
 //           return false;
