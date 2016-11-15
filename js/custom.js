@@ -208,7 +208,7 @@ jQuery( document ).ready(function( $ ) {
     // large filters
     $('section.left-sidebar-calendar-exposed-filters form input[type="checkbox"]').change(function() {
 	var params = $('section.left-sidebar-calendar-exposed-filters form').serialize();
-	$('.calendar-view-links a').each(function() {
+	$('#calendar-view-links a').each(function() {
 		var link = $(this).attr('href');
 		link = link.replace(/\?.*$/, '');
 		$(this).attr('href', link + '?' + params);
