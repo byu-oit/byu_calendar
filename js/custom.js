@@ -24,10 +24,10 @@ jQuery( document ).ready(function( $ ) {
     };
     
     $(function() {
-       $('#show-filters').click(function() {
+       $('.show-filters').click(function() {
 //           $('#views-exposed-form').show();
-           $('#views-exposed-form').addClass("shown");
-           return false;
+           $('.views-exposed-form').addClass("shown");
+//           return false;
        });        
    });
     
@@ -183,6 +183,28 @@ jQuery( document ).ready(function( $ ) {
 //        font-weight: bold;
 //    }
 
+    // all page
+
+//  jQuery('a.reset').live( 'click', function() {
+//    var datafield = jQuery(this).attr('data-field');
+//    jQuery('#'+datafield).val('All');
+    jQuery( '#views-exposed-form-large-screen-calendar-block-8' ).submit(funtion(){
+//        var tids = [];
+//        tids.push([$(input).val()]);                                                                 
+//                                                                         
+//                                                                         $term = taxonomy_term_load($tid);
+//        var name = $term->
+//          var termNames =[];
+                                                                        
+       var checkedValues = $('input[name="field_event_type_tid[]"]:checked');
+      print_r(checkedValues);
+        }
+    );
+  });
+
+    
+    
+    
 });
 
 
