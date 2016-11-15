@@ -155,8 +155,13 @@
           <?php print render($action_links); ?>
         </ul>
       <?php endif; ?>
-
+          <div id='top-content'>
+          <?php print render($page['top_content']); ?>
+          </div>
       <?php print render($page['content']); ?>
+          <div id='bottom-content'>
+          <?php print render($page['bottom_content']); ?>
+          </div>
     </div>
     <!--/.main region -->
 
