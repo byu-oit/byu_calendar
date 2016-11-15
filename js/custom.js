@@ -206,6 +206,17 @@ jQuery( document ).ready(function( $ ) {
 //        });
 
     
+    $('#views-exposed-form-large-screen-calendar-block-3 input[type="checkbox"]').change(function() {
+        console.log('yasfsadfasd');
+    });
+    
+    
+    
+    
+    
+    
+    
+    
 });
 
 
