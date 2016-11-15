@@ -29,11 +29,12 @@ jQuery( document ).ready(function( $ ) {
    $('.show-filters').click(function() {
        console.log('show!');
 //           $('#views-exposed-form').show();
-       $('.views-exposed-form').addClass("shown");
-//           return false;
+    //    $('.views-exposed-form').addClass("shown"); // works
+       $('.views-exposed-form').toggle();
+
    });        
 
-    
+  
     
     
     
