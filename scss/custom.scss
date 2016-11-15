@@ -1624,8 +1624,11 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 .day-header-inner.inner-bottom {
     justify-content: space-around;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 13px;
     padding-bottom: 15px;
+    i {
+        padding-right: 2px;
+    }
 }
 
 .day-header-inner-top-left {
