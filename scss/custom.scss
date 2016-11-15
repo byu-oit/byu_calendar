@@ -905,6 +905,28 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     .views-exposed-form .views-exposed-widget.views-submit-button {
         margin-right: 10px;
     }
+    .show-filters {  
+        i.fa.fa-check {
+            margin-left: -12px;
+            font-size: 14px;
+            position: relative;
+            margin-right: -2px;
+            top: -2px;
+        }
+  
+        
+    }
+    .inner-bottom-right.show-filters.filtered:after {
+        content: " ON";
+    }
+    .inner-bottom-right.show-filters.filtered {
+//        color: $green;               
+        i.fa.fa-check {
+            color: $green;
+        }
+        
+    }
+
 }
 
 /* --------------- large filters ------- */
