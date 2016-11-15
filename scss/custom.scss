@@ -3013,6 +3013,7 @@ span.views-label.views-label-addtoany-link {
     .views-field.views-field-title h1 {
         margin: 0px;
         font-family: "Gotham SSm A","Gotham SSm B";
+        font-size: 20px;
         text-transform: uppercase;
     }
     
@@ -3023,6 +3024,8 @@ span.views-label.views-label-addtoany-link {
     .views-field.views-field-field-event-location {
         display: inline-block;
         padding-right: 15px;
+        position: relative;
+        top: -13px;
     }
     
     
