@@ -210,8 +210,9 @@ jQuery( document ).ready(function( $ ) {
        console.log('was submitted');
        //$('.show-filters').addClass('filtering');
     });
-    $(".view-id-mobile_calendar .views-filters form").bind('ajax:complete', function() {
-console.log('was submitted 2');
+    //$(".view-id-mobile_calendar .views-filters form").bind('ajax:complete', function() {
+    $("#views-exposed-form-mobile-calendar-block-6").bind('ajax:complete', function() {
+        console.log('was submitted 2');
          // tasks to do 
         $('.show-filters').addClass('filtering');
 
