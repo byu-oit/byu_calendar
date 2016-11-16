@@ -3007,6 +3007,8 @@ span.views-label.views-label-addtoany-link {
 .view.view-homepage-features.view-id-homepage_features {
     .views-row {
         background: $lightgray;
+        color: #000;
+        margin-bottom: 0px;
     }
     .views-field.views-field-title, 
     .views-field-field-event-date {
@@ -3032,7 +3034,10 @@ span.views-label.views-label-addtoany-link {
     // small features
     .block-views-homepage-features-block-3,
     .block-views-homepage-features-block-1 {
-        font-size: 15px;
+        .views-field.views-field-title h1 {
+            font-size: 15px;
+        }
+
         .view-content {
             @include display-flex();
             flex-wrap: wrap;
@@ -3051,6 +3056,7 @@ span.views-label.views-label-addtoany-link {
 // large main
 .block-views-homepage-features-block {
     max-width: 425px;
+    margin-right: 20px;
 }
 // large screen small features
 .block-views-homepage-features-block-1 {
