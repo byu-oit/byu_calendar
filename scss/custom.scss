@@ -3009,7 +3009,10 @@ span.views-label.views-label-addtoany-link {
 
 /* -------- HOMEPAGE HOMEPAGE HOMEPAGE --------------------- */
 
-.view-id-homepage_features {
+block-views-homepage-features-block-3,
+block-views-homepage-features-block-2,
+block-views-homepage-features-block-1,
+block-views-homepage-features-block {
     .views-row {
         background: $lightgray;
         color: #000!important;
@@ -3068,8 +3071,8 @@ span.views-label.views-label-addtoany-link {
 .view.view-homepage-features.view-id-homepage_features.view-display-id-block_1 .views-row {
     margin: 15px 0px 0px 0px;
 }
-.view-homepage-features.block-views-homepage-features-block-3,
-.view-homepage-features.block-views-homepage-features-block-1 {
+.block-views-homepage-features-block-3,
+.block-views-homepage-features-block-1 {
      .views-field.views-field-title h1 {
         margin: 0px;
         font-size: 20px;
