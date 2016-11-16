@@ -3182,7 +3182,9 @@ span.views-label.views-label-addtoany-link {
         width: 100%;
     }
 }
-
+.front article ul.links.inline {
+    display: none;
+}
 /* ---- Events By Date --------  */
 
 #events-by-date-dropdowns {
