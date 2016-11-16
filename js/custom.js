@@ -198,27 +198,6 @@ jQuery( document ).ready(function( $ ) {
 
     // mobile show filters
     
-   $('.show-filters').click(function() {
-       console.log('show!');
-//           $('#views-exposed-form').show();
-        $('.views-exposed-form').addClass("shown"); // works
-      // $('.views-exposed-form').toggle();
-
-   });        
-    // mobile theme filters link if being filtered currently
-    $('.view-id-mobile_calendar .views-filters form').submit(function() {
-       console.log('was submitted');
-       //$('.show-filters').addClass('filtering');
-    });
-    //$(".view-id-mobile_calendar .views-filters form").bind('ajax:complete', function() {
-    $("#views-exposed-form-mobile-calendar-block-6").bind('ajax:complete', function() {
-        console.log('was submitted 2');
-         // tasks to do 
-        $('.show-filters').addClass('filtering');
-
-   });
-    
-    
     // large filters
     $('section.left-sidebar-calendar-exposed-filters form input[type="checkbox"]').change(function() {
 	var params = $('section.left-sidebar-calendar-exposed-filters form').serialize();
@@ -251,3 +230,25 @@ jQuery( document ).ready(function( $ ) {
 });
 
 
+   $('.show-filters').click(function() {
+       console.log('show!');
+//           $('#views-exposed-form').show();
+        $('.views-exposed-form').addClass("shown"); // works
+      // $('.views-exposed-form').toggle();
+
+   });        
+    
+    // mobile theme filters link if being filtered currently
+    $('.view-id-mobile_calendar .views-filters form').submit(function() {
+       console.log('was submitted');
+       //$('.show-filters').addClass('filtering');
+    });
+    //$(".view-id-mobile_calendar .views-filters form").bind('ajax:complete', function() {
+    $("#views-exposed-form-mobile-calendar-block-6").bind('ajax:complete', function() {
+        console.log('was submitted 2');
+         // tasks to do 
+        $('.show-filters').addClass('filtering');
+
+   });
+    
+    
