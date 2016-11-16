@@ -3037,24 +3037,25 @@ span.views-label.views-label-addtoany-link {
         padding-right: 15px;
 
     }
-    // small features
-    .block-views-homepage-features-block-3,
-    .block-views-homepage-features-block-1 {
-        .views-field.views-field-title {
-            h1 {
-                font-size: 15px;
-            }
-        } 
-
-        .view-content {
-            @include display-flex();
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }  
-    }
+   
 
     
     
+}
+// small features
+.block-views-homepage-features-block-3,
+.block-views-homepage-features-block-1 {
+    .views-field.views-field-title {
+        h1 {
+            font-size: 15px;
+        }
+    } 
+
+    .view-content {
+        @include display-flex();
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }  
 }
 /* mobile */
 
