@@ -3050,6 +3050,17 @@ span.views-label.views-label-addtoany-link {
     
 }
 // large features
+
+.block-views-homepage-features-block {
+    background: $lightgray;
+    margin-top: 15px;
+    .view .views-row { // only large screen large:
+        margin: 0px;
+    }
+}
+
+}
+
 .block-views-homepage-features-block-2,
 .block-views-homepage-features-block {
      .views-field.views-field-title h1 {
@@ -3058,7 +3069,7 @@ span.views-label.views-label-addtoany-link {
         line-height: 29px;
     }
     .views-row {
-        font-size: 16px;
+        font-size: 16px!important;
     }
     
 }
@@ -3070,7 +3081,6 @@ span.views-label.views-label-addtoany-link {
 .block-views-homepage-features-block-1 {
      .views-field.views-field-title h1 {
         margin: 0px;
-        font-size: 20px;
         line-height: 22px;
         font-size: 15px;
     }
@@ -3078,20 +3088,15 @@ span.views-label.views-label-addtoany-link {
         @include display-flex();
         flex-wrap: wrap;
         justify-content: space-between;
-        padding-top: 5px;
     } 
-    .views-row {
+    .view .views-row {
         margin: 15px 0px 0px 0px;
     }
     .views-field-field-event-date {
         padding: 5px 10px 5px;
     }
 }
-/* mobile */
 
-
-
-/* large */
 // large main
 .block-views-homepage-features-block {
     max-width: 425px;
@@ -3106,7 +3111,7 @@ span.views-label.views-label-addtoany-link {
     .views-field.views-field-title {
          min-height: 52px;
     }
-    .views-row {
+    .view .views-row {
         width: 192px;
     }
     .view-content {
