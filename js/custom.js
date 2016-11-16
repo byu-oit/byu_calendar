@@ -198,7 +198,7 @@ jQuery( document ).ready(function( $ ) {
 
     // mobile show filters
     
-   $('.show-filters').click(function() {
+   $('body').on('click', '.show-filters', function() {
        console.log('show!');
 //           $('#views-exposed-form').show();
         $('.views-exposed-form').addClass("shown"); // works
