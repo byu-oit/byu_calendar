@@ -157,6 +157,11 @@ h1 {
     padding: 30px 0px;
 }
 
+#bottom-content {
+    padding: 30px 0px;
+}
+
+
 
 /* ------ often used classes ------------*/
 
@@ -2270,31 +2275,39 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 /* ----------- footer ----------- *?
 
 /* -- mobile footer -- */
-
+@media screen and (max-width: $mobile_max_width) {
 footer.l-footer.row {
-    @media screen and (max-width: $mobile_max_width) {
         @include display-flex();
         justify-content: flex-end;
         padding: 0px;
         margin: 0px 0px 0px 20%;
         width: 80%;
         @include main-outer-shadowbox();
+    
+        color: white;
+        text-align: center;
+        border-bottom: 1px solid #002255; 
+        div {
+            padding: 10px 0px;
+            background: $navy;
+        }
     }
+}
 
 
-//        width: 100%;
-//        position: relative;
-//        bottom: 2px;
-//        height: 55px;
-//        padding: 0px;
-//        margin: 0px;
-    /* background: #002255; */
-    color: white;
-    text-align: center;
-    border-bottom: 1px solid #002255; 
-    div {
-        padding: 10px 0px;
-        background: $navy;
+/* --- large screen footer --- */
+
+/* 0------ content footer ---- */
+section.row.l-footer-columns {
+    background: $lightgray;
+    padding: 40px;
+}
+
+
+/* --------- University footer --------- */
+@media screen and (max-width: $mobile_max_width) {
+    footer.l-footer.row {
+        
     }
 }
 .no-sidebars {
@@ -3008,11 +3021,16 @@ span.views-label.views-label-addtoany-link {
 
 
 /* -------- HOMEPAGE HOMEPAGE HOMEPAGE --------------------- */
+.front #top-content,
+.front #page-container {
+    border-bottom: 1px solid $medgray;
+}
 
 .block-views-homepage-features-block-3,
 .block-views-homepage-features-block-2,
 .block-views-homepage-features-block-1,
 .block-views-homepage-features-block {
+    .views-row {
     .views-row {
         background: $lightgray;
         color: #000!important;
@@ -3135,9 +3153,14 @@ span.views-label.views-label-addtoany-link {
     position: relative;
     top: 0px;
 }
+.front.large-screen.page-calendar{
+    #large-calendar-nav-header #calendar-view-links {
+        width: 100%;
+    }
+}
 
 
-/* ------------ Categories page and block ---- */
+/* ------------ Categories page and block --------- */
 
 #categories-container {
     @include display-flex();
