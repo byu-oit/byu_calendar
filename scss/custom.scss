@@ -3188,9 +3188,15 @@ span.views-label.views-label-addtoany-link {
 #events-by-date-dropdowns {
     display: flex;
     width: 600px;
-//    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
     div {
         margin: 15px;
+    }
+    select {
+        padding: 4px;
+        // copy more styling here from other place, or just add a class to the select
     }
 }
 
