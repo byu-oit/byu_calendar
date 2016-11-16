@@ -3150,8 +3150,8 @@ span.views-label.views-label-addtoany-link {
 .front section.left-sidebar-minimonth.scrolled,
 .front section.block-views-large-screen-calendar-block-6.scrolled,
 .front .left-sidebar-calendar-exposed-filters.scrolled {
-    position: relative;
-    top: 0px;
+    position: relative!important;
+    top: 0px!important;
 }
 .front.large-screen.page-calendar{
     #large-calendar-nav-header #calendar-view-links {
