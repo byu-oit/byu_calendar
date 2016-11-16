@@ -3029,15 +3029,17 @@ span.views-label.views-label-addtoany-link {
         position: relative;
         top: -13px;
     }
+    // small features
     .block-views-homepage-features-block-3,
     .block-views-homepage-features-block-1 {
+        font-size: 15px;
         .view-content {
             @include display-flex();
             flex-wrap: wrap;
             justify-content: space-between;
         }  
     }
-    
+
     
     
 }
