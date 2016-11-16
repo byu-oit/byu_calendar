@@ -3018,7 +3018,7 @@ span.views-label.views-label-addtoany-link {
         padding: 10px 15px 0px;
     }
     .views-field-field-event-date {
-        padding: 10px 15px 5px;
+        padding: 10px 15px 1px;
     }
     .views-field.views-field-title h1 {
         margin: 0px;
@@ -3035,11 +3035,10 @@ span.views-label.views-label-addtoany-link {
     .views-field.views-field-field-event-location {
         display: inline-block;
         padding-right: 15px;
-        position: relative;
-        top: -13px;
+
     }
     // small features
-    .block-views-homepage-features-block-3
+    .block-views-homepage-features-block-3,
     .block-views-homepage-features-block-1 {
         .views-field.views-field-title {
             h1 {
@@ -3074,9 +3073,9 @@ span.views-label.views-label-addtoany-link {
 .block-views-homepage-features-block-1 {
     width: 405px;
     .views-field.views-field-title {
-         min-height: 80px;
+         min-height: 52px;
     }
-    .views-row{
+    .views-row {
         width: 192px;
     }
     .view-content {
