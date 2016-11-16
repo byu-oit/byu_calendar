@@ -150,7 +150,11 @@ h1 {
 //    color: $navy;
 }
 
-
+/* ------------ regions ----------------------*/
+#top-content {
+    @include display-flex();
+    justify-content: center;
+}
 
 
 /* ------ often used classes ------------*/
@@ -3032,11 +3036,13 @@ span.views-label.views-label-addtoany-link {
         top: -13px;
     }
     // small features
-    .block-views-homepage-features-block-3,
+    .block-views-homepage-features-block-3
     .block-views-homepage-features-block-1 {
-        .views-field.views-field-title h1 {
-            font-size: 15px;
-        }
+        .views-field.views-field-title {
+            h1 {
+                font-size: 15px;
+            }
+        } 
 
         .view-content {
             @include display-flex();
@@ -3057,10 +3063,16 @@ span.views-label.views-label-addtoany-link {
 .block-views-homepage-features-block {
     max-width: 425px;
     margin-right: 20px;
+    .views-field.views-field-title {
+         min-height: 80px;
+    }
 }
 // large screen small features
 .block-views-homepage-features-block-1 {
     width:420px;
+    .views-field.views-field-title {
+         min-height: 80px;
+    }
     .views-row{
         width: 192px;
     }
