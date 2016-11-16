@@ -3057,7 +3057,7 @@ span.views-label.views-label-addtoany-link {
         width: 192px;
     }
     .view-content {
-        @include: display-flex();
+        @include display-flex();
         flex-wrap: wrap;
         justify-content: space-between;
     }
