@@ -156,7 +156,9 @@ h1 {
     justify-content: center;
     padding: 30px 0px;
 }
-
+section.l-bottom-content.row {
+    max-width: 64em;
+}
 #bottom-content {
     padding: 30px 0px;
 }
@@ -3021,10 +3023,15 @@ span.views-label.views-label-addtoany-link {
 
 
 /* -------- HOMEPAGE HOMEPAGE HOMEPAGE --------------------- */
-.front #top-content,
-.front #page-container {
+.front #top-content {
     border-bottom: 1px solid $medgray;
 }
+#bottom-content section {
+    padding: 50px 0px;
+    border-top: 1px solid $medgray;
+    
+}
+
 
 .block-views-homepage-features-block-3,
 .block-views-homepage-features-block-2,
