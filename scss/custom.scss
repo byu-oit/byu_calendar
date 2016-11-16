@@ -3046,6 +3046,21 @@ span.views-label.views-label-addtoany-link {
     
     
 }
+// large features
+.view-homepage-features.block-views-homepage-features-block-2,
+.view-homepage-features.block-views-homepage-features-block {
+     .views-field.views-field-title h1 {
+        margin: 15px 0px 10px;
+        font-size: 22px;
+        line-height: 29px;
+    }
+    .views-row {
+        font-size: 16px;
+    }
+    
+}
+
+
 // small features
 .view.view-homepage-features.view-id-homepage_features.view-display-id-block_1 h1 {
     font-size: 15px;
@@ -3055,6 +3070,11 @@ span.views-label.views-label-addtoany-link {
 }
 .view-homepage-features.block-views-homepage-features-block-3,
 .view-homepage-features.block-views-homepage-features-block-1 {
+     .views-field.views-field-title h1 {
+        margin: 0px;
+        font-size: 20px;
+        line-height: 22px;
+    }
     .view-content {
         @include display-flex();
         flex-wrap: wrap;
