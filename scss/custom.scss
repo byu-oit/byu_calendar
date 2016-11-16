@@ -154,6 +154,7 @@ h1 {
 #top-content {
     @include display-flex();
     justify-content: center;
+    padding: 30px 0px;
 }
 
 
@@ -3041,13 +3042,14 @@ span.views-label.views-label-addtoany-link {
 
     
     
+    
 }
 // small features
 .view.view-homepage-features.view-id-homepage_features.view-display-id-block_1 h1 {
     font-size: 15px;
 }
 .view.view-homepage-features.view-id-homepage_features.view-display-id-block_1 .views-row {
-    margin: 0px 0px 15px 0px;
+    margin: 15px 0px 0px 0px;
 }
 .view-homepage-features.block-views-homepage-features-block-3,
 .view-homepage-features.block-views-homepage-features-block-1 {
@@ -3057,7 +3059,7 @@ span.views-label.views-label-addtoany-link {
         justify-content: space-between;
     } 
     .views-row {
-        margin: 0px 0px 15px 0px;
+        margin: 15px 0px 0px 0px;
     }
 }
 /* mobile */
