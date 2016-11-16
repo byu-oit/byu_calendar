@@ -3008,7 +3008,7 @@ span.views-label.views-label-addtoany-link {
 
 /* -------- HOMEPAGE HOMEPAGE HOMEPAGE --------------------- */
 
-.view.view-homepage-features.view-id-homepage_features {
+.view-id-homepage_features {
     .views-row {
         background: $lightgray;
         color: #000;
@@ -3043,8 +3043,8 @@ span.views-label.views-label-addtoany-link {
     
 }
 // small features
-.block-views-homepage-features-block-3,
-.block-views-homepage-features-block-1 {
+.view-id-homepage_features.block-views-homepage-features-block-3,
+.view-id-homepage_features.block-views-homepage-features-block-1 {
     .views-field.views-field-title {
         h1 {
             font-size: 15px;
