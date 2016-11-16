@@ -3014,7 +3014,9 @@ span.views-label.views-label-addtoany-link {
         color: #000;
         margin-bottom: 0px;
     }
-    .views-field.views-field-title, 
+    .views-field.views-field-title {
+        padding: 10px 15px 0px;
+    }
     .views-field-field-event-date {
         padding: 10px 15px;
     }
@@ -3069,7 +3071,7 @@ span.views-label.views-label-addtoany-link {
 }
 // large screen small features
 .block-views-homepage-features-block-1 {
-    width:420px;
+    width: 405px;
     .views-field.views-field-title {
          min-height: 80px;
     }
