@@ -151,6 +151,9 @@ h1 {
 }
 
 /* ------------ regions ----------------------*/
+section.l-top-title.row {
+    border-bottom: 1px solid $lightgray;
+}
 #top-content {
     @include display-flex();
     justify-content: center;
@@ -3024,15 +3027,23 @@ span.views-label.views-label-addtoany-link {
 
 /* -------- HOMEPAGE HOMEPAGE HOMEPAGE --------------------- */
 .front #top-content {
-    border-bottom: 1px solid $medgray;
+    border-bottom: 1px solid $lightgray;
 }
 #bottom-content section {
     padding: 50px 0px;
-    border-top: 1px solid $medgray;
+    border-top: 1px solid $lightgray;
     h2.block-title {
         text-align: center;
         color: $navy;
         margin-bottom: 25px;
+    }
+}
+
+// title
+#top-title h2 {
+    color: $navy;
+    @media screen and (min-width: $large_screen_start_width) {
+        font-size: 35px;
     }
 }
 
@@ -3163,9 +3174,23 @@ span.views-label.views-label-addtoany-link {
     position: relative!important;
     top: 0px!important;
 }
+.front .page-calendar.large-screen section.left-sidebar-minimonth {
+    margin-bottom: 100px!important;
+}
 .front.large-screen.page-calendar{
     #large-calendar-nav-header #calendar-view-links {
         width: 100%;
+    }
+}
+
+/* ---- Events By Date --------  */
+
+#events-by-date-dropdowns {
+    display: flex;
+    width: 400px;
+//    justify-content: space-between;
+    div {
+        margin: 15px;
     }
 }
 
