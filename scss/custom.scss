@@ -3014,7 +3014,8 @@ span.views-label.views-label-addtoany-link {
         background: $lightgray;
         color: #000!important;
         margin-bottom: 0px;
-        text-transform: uppercase;
+        
+//        font-size: 12px;
     }
     .views-field.views-field-title {
         padding: 10px 10px 0px;
@@ -3026,7 +3027,7 @@ span.views-label.views-label-addtoany-link {
         margin: 0px;
         font-family: "Gotham SSm A","Gotham SSm B";
         font-size: 20px;
-        
+        text-transform: uppercase;
         line-height: 22px;
     }
     
@@ -3062,6 +3063,9 @@ span.views-label.views-label-addtoany-link {
     } 
     .views-row {
         margin: 15px 0px 0px 0px;
+    }
+    .views-field-field-event-date {
+        padding: 5px 10px 5px;
     }
 }
 /* mobile */
