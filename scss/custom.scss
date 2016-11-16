@@ -3014,18 +3014,19 @@ span.views-label.views-label-addtoany-link {
         background: $lightgray;
         color: #000;
         margin-bottom: 0px;
+        text-transform: uppercase;
     }
     .views-field.views-field-title {
         padding: 10px 10px 0px;
     }
     .views-field-field-event-date {
-        padding: 10px 10px 1px;
+        padding: 10px 10px 5px;
     }
     .views-field.views-field-title h1 {
         margin: 0px;
         font-family: "Gotham SSm A","Gotham SSm B";
         font-size: 20px;
-        text-transform: uppercase;
+        
         line-height: 22px;
     }
     
@@ -3057,6 +3058,7 @@ span.views-label.views-label-addtoany-link {
         @include display-flex();
         flex-wrap: wrap;
         justify-content: space-between;
+        padding-top: 5px;
     } 
     .views-row {
         margin: 15px 0px 0px 0px;
@@ -3072,7 +3074,7 @@ span.views-label.views-label-addtoany-link {
     max-width: 425px;
     margin-right: 20px;
     .views-field.views-field-title {
-         min-height: 65px;
+         min-height: 54px;
     }
 }
 // large screen small features
