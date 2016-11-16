@@ -114,6 +114,16 @@
     </section>
     <!--/.l-help -->
   <?php endif; ?>
+
+<?php if (!empty($page['top_content'])): ?>
+ <section class="l-top-content row">  
+<div id="top-content">
+  <?php print render($page['top_content']); ?>
+  </div>
+</section>
+<?php endif; ?>
+
+
 <div id="page-container">
     <div id="sidebar-first-container">
      <?php if (!empty($page['sidebar_first'])): ?>
@@ -156,17 +166,9 @@
         </ul>
       <?php endif; ?>
           
-       <?php if (!empty($page['top_content'])): ?>
-              <div id="top-content">
-              <?php print render($page['top_content']); ?>
-              </div>
-          <?php endif; ?>
+       
         <?php print render($page['content']); ?>
-          <?php if (!empty($page['top_content'])): ?>
-              <div id="bottom-content">
-              <?php print render($page['bottom_content']); ?>
-              </div>
-          <?php endif; ?>
+
          
     </div>
     <!--/.main region -->
@@ -182,6 +184,13 @@
 
   <!--/.main-->
 </div>
+  <?php if (!empty($page['bottom_content'])): ?>
+    <section class="l-bottom-content row">      
+        <div id="bottom-content">
+            <?php print render($page['bottom_content']); ?>
+        </div>
+    </section>
+  <?php endif; ?>
 
   <?php if (!empty($page['triptych_first']) || !empty($page['triptych_middle']) || !empty($page['triptych_last'])): ?>
     <!--.triptych-->
