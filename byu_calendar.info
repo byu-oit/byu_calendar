@@ -86,6 +86,7 @@ regions[header]              = Header
 regions[help]                = Help
 regions[highlighted]         = Highlighted
 regions[featured]            = Featured
+regions[top_title]           = Top Title Area
 regions[top_content]         = Top Content
 regions[content]             = Content
 regions[bottom_content]      = Bottom Content

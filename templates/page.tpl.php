@@ -114,6 +114,13 @@
     </section>
     <!--/.l-help -->
   <?php endif; ?>
+<?php if (!empty($page['top_title'])): ?>
+ <section class="l-top-title row">  
+<div id="top-title">
+  <?php print render($page['top_title']); ?>
+  </div>
+</section>
+<?php endif; ?>
 
 <?php if (!empty($page['top_content'])): ?>
  <section class="l-top-content row">  
