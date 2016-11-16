@@ -3050,8 +3050,8 @@ span.views-label.views-label-addtoany-link {
     
 }
 // large features
-.view-homepage-features.block-views-homepage-features-block-2,
-.view-homepage-features.block-views-homepage-features-block {
+.block-views-homepage-features-block-2,
+.block-views-homepage-features-block {
      .views-field.views-field-title h1 {
         margin: 15px 0px 10px;
         font-size: 22px;
@@ -3065,18 +3065,14 @@ span.views-label.views-label-addtoany-link {
 
 
 // small features
-.view.view-homepage-features.view-id-homepage_features.view-display-id-block_1 h1 {
-    font-size: 15px;
-}
-.view.view-homepage-features.view-id-homepage_features.view-display-id-block_1 .views-row {
-    margin: 15px 0px 0px 0px;
-}
+
 .block-views-homepage-features-block-3,
 .block-views-homepage-features-block-1 {
      .views-field.views-field-title h1 {
         margin: 0px;
         font-size: 20px;
         line-height: 22px;
+        font-size: 15px;
     }
     .view-content {
         @include display-flex();
