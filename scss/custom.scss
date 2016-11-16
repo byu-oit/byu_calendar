@@ -3043,20 +3043,21 @@ span.views-label.views-label-addtoany-link {
     
 }
 // small features
-.view-id-homepage_features.block-views-homepage-features-block-3,
-.view-id-homepage_features.block-views-homepage-features-block-1 {
-    .views-field.views-field-title {
-        h1 {
-            font-size: 15px;
-        }
-    } 
+.view.view-homepage-features.view-id-homepage_features.view-display-id-block_1 h1 {
+//    font-size: 15px;
+}
+.view.view-homepage-features.view-id-homepage_features.view-display-id-block_1 .views-row {
+//    margin: 0px 0px 15px 0px;
+}
+.view-homepage-features.block-views-homepage-features-block-3,
+.view-homepage-features.block-views-homepage-features-block-1 {
     .view-content {
         @include display-flex();
         flex-wrap: wrap;
         justify-content: space-between;
     } 
     .views-row {
-        margin: 0px;
+        margin: 0px 0px 15px 0px;
     }
 }
 /* mobile */
