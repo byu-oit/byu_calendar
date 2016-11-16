@@ -3032,7 +3032,7 @@ span.views-label.views-label-addtoany-link {
     .block-views-homepage-features-block-3,
     .block-views-homepage-features-block-1 {
         .view-content {
-            @include: $display-flex;
+            @include: display-flex();
             flex-wrap: wrap;
             justify-content: space-between;
         }  
@@ -3057,7 +3057,7 @@ span.views-label.views-label-addtoany-link {
         width: 192px;
     }
     .view-content {
-        display: flex;
+        @include: display-flex();
         flex-wrap: wrap;
         justify-content: space-between;
     }
