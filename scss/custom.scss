@@ -3029,7 +3029,11 @@ span.views-label.views-label-addtoany-link {
 #bottom-content section {
     padding: 50px 0px;
     border-top: 1px solid $medgray;
-    
+    h2.block-title {
+        text-align: center;
+        color: $navy;
+        margin-bottom: 25px;
+    }
 }
 
 
