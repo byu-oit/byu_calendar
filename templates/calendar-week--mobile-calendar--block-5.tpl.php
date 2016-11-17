@@ -250,7 +250,7 @@ foreach ($day_names as $key => $value) {
                         <p>There are no events scheduled on this day.</p>
                     </div>
 
-      
+          <?php endfor; ?> 
       <?php endif; ?>
       
       
