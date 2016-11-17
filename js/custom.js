@@ -102,16 +102,7 @@ jQuery( document ).ready(function( $ ) {
         });
      }
 
-    
-    
-    
-    
-    // page is now ready, initialize the calendar...
 
-  //  jQuery('#calendar').fullCalendar({
-        // put your options and callbacks here
-   // })
-    
     
     // editing or adding event
     
@@ -196,6 +187,7 @@ jQuery( document ).ready(function( $ ) {
 //            print_r(checkedValues);
 //        });
 
+    
     // mobile show filters
     
    $('#main-content-section').on('click', '.show-filters', function() {
@@ -212,12 +204,14 @@ jQuery( document ).ready(function( $ ) {
          $('.close-filters').removeClass("shown");
      });
     
+    // do first when page loads
+    
     (function ($) {
         Drupal.behaviors.betterExposedFilters = {
-            attach: function(context) {         
-                //console.log('better exposed filters!'); // hits this function twice each submit
-                $('.close-filters').removeClass("shown");
-
+        attach: function(context) {         
+            //console.log('better exposed filters!'); // hits this function twice each submit
+            $('.close-filters').removeClass("shown");
+            function checkMobileFilters (){
                 var mobileParams = $('section .view-mobile-calendar .view-filters form').serialize();
                 $('.thin-left-sidebar a').each(function() {
                     var mlink = $(this).attr('href');
@@ -230,9 +224,9 @@ jQuery( document ).ready(function( $ ) {
                     $('.show-filters').addClass('filtering');
                 }
             }
-        }
+        }}
 })(jQuery);
-    
+   checkMobileFilters(); 
 
 
     
@@ -249,17 +243,17 @@ jQuery( document ).ready(function( $ ) {
     }).change();
 
 // mobile filters    
-   $('.view-id-mobile_calendar .view-filters form input[type="checkbox"]').change(function() {
-	//$('sdflkjasdflkjad form input[type="checkbox"]:checked').size() 
-        var params = $('.view-id-mobile_calendar .view-filters form').serialize();
-        $('.thin-left-sidebar a').each(function() {
-                var link = $(this).attr('href');
-                link = link.replace(/\?.*$/, '');
-                $(this).attr('href', link + '?' + params);
-        });
-
-    }).change();
-    
+//   $('.view-id-mobile_calendar .view-filters form input[type="checkbox"]').change(function() {
+//	//$('sdflkjasdflkjad form input[type="checkbox"]:checked').size() 
+//        var params = $('.view-id-mobile_calendar .view-filters form').serialize();
+//        $('.thin-left-sidebar a').each(function() {
+//                var link = $(this).attr('href');
+//                link = link.replace(/\?.*$/, '');
+//                $(this).attr('href', link + '?' + params);
+//        });
+//
+//    }).change();
+//    
     
     
     
