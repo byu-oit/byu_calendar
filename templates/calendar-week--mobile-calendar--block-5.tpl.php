@@ -194,7 +194,7 @@ foreach ($day_names as $key => $value) {
       <?php for ($i = $curpos; $i < 7; $i++): ?>
         <td class="calendar-agenda-items single-day">
           <div class="calendar">
-            <div class="inner">&nbsp</div>
+            <div class="inner">&nbsp;</div>
           </div>
         </td>
       <?php endfor; ?>   
