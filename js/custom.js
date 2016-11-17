@@ -219,7 +219,8 @@ jQuery( document ).ready(function( $ ) {
                 $('.close-filters').removeClass("shown");
 
                 var mobileParams = $('section .view-mobile-calendar .view-filters form').serialize();
-                //console.log(mobileParams);            
+                //console.log(mobileParams);           
+                // mobile theme filters link if being filtered currently
                 if(mobileParams != 'field_tags_tid='){
                     $('.show-filters').addClass('filtering');
                 }
@@ -227,18 +228,8 @@ jQuery( document ).ready(function( $ ) {
         }
 })(jQuery);
     
-    // mobile theme filters link if being filtered currently
-    $('.view-id-mobile_calendar .views-filters form').submit(function() {
-       console.log('was submitted');
-       //$('.show-filters').addClass('filtering');
-    });
-    //$(".view-id-mobile_calendar .views-filters form").bind('ajax:complete', function() {
-    $("#views-exposed-form-mobile-calendar-block-6").bind('ajax:complete', function() {
-        console.log('was submitted 2');
-         // tasks to do 
-        $('.show-filters').addClass('filtering');
 
-   });
+
     
     
     // large filters

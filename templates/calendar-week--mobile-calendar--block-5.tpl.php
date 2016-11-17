@@ -73,9 +73,10 @@ foreach ($day_names as $key => $value) {
         $weekCheck = substr($current, -3,1);
         if($weekCheck == 'W') {
            // is normal
+            $prelinks = '../';
         } else if ($weekCheck == 'w') {
             $currentDate = substr($current, -8,5) . 'W' . substr($currentDate,-2);
-        
+            $prelinks = '../calendar/';
         } else {
             // get current date, calc week id
             $today = date ("Y-m-d");
@@ -153,8 +154,8 @@ foreach ($day_names as $key => $value) {
                 '</div>' .
                 '</div>' . 
                 '<div class="day-header-inner inner-bottom">' .
-                    '<div class="inner-bottom-left"><a href="../year/' . $year . '#' . $monthName . '"> [icon] MONTH VIEW</a></div>' .
-                    '<div class="inner-bottom-right"><a href"#" class="show-filters">[icon] FILTER</a></div>' .
+                    '<a href="' . $prelinks . 'year/' . $year . '#' . $monthName . '"><div class="inner-bottom-left"><i class="fa fa-calendar" aria-hidden="true"></i> MONTH VIEW</div></a>' .
+                '<div class="inner-bottom-right show-filters"><i class="fa fa-square-o" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i> FILTERS</div>' .
                     
                 '</div>' .
                 '</div>';
