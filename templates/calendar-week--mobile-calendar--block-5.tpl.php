@@ -33,6 +33,7 @@ foreach ($day_names as $key => $value) {
 }
 ?>
 <div class="calendar-calendar"><div class="week-view">
+    <!-- mobile week calendar -->
 <table class="full">
   <thead>
     <tr>
