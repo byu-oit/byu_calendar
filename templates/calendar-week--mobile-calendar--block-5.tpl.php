@@ -63,62 +63,63 @@ foreach ($day_names as $key => $value) {
      
   
     <?php endfor; ?>  
+        
+          
+    <?php 
+    $current = current_path();
+    $currentDate = substr($current, -8);
+    $weekCheck = substr($current, -3,1);
+    if($weekCheck == 'W') {
+       // is normal
+        $prelinks = '../';
+    } else if ($weekCheck == 'w') {
+        $currentDate = substr($current, -8,5) . 'W' . substr($currentDate,-2);
+        $prelinks = '../calendar/';
+    } else {
+        // get current date, calc week id
+        $today = date ("Y-m-d");
+        $dayNumber = date ("z");
+        $year = date("Y");
+        $timeNow = time();
+
+        $startWYear = '1 January ' . $year;
+        $yearStartTime = strtotime($startWYear);
+        $todaysTime = $yearStartTime + ($dayNumber * 24 * 3600);
+
+        $yearStartWeekday = date('w', $yearStartTime);
+        //echo $year . ' started on a ' . $yearStartWeekday;
+        $weekStartJanDay = 7 - $yearStartWeekday;
+        $week2StartTime = $yearStartTime + ($weekStartJanDay*24*3600); 
+        $week = 2+ floor(($todaysTime - $week2StartTime)/(7 * 24 * 3600));
+        $currentDate = $year . '-W' . $week;
+    }
+    $date = date_create_from_format('Y-W', $currentDate);
+
+    $year = substr($currentDate, 0, 4);
+    $week = substr($currentDate, -2);
+    $startWYear = '1 January ' . $year;
+    //this week start time
+    $yearStartTime = strtotime($startWYear);
+    //echo $year . ' started on a ' . $yearStartWeekday;
+    $yearStartWeekday = date('w', $yearStartTime);
+
+    // week 2 started on Jan 
+    $weekStartJanDay = 7 - $yearStartWeekday;
+    $week2StartTime = $yearStartTime + ($weekStartJanDay*24*3600); 
+    $weeksToAdd = $week - 2;
+    $weekStartTime = $week2StartTime + ((7*($weeksToAdd)))*24*3600;
+    $weekEndTime = $weekStartTime + (6*24*3600);
+
+    $weekStart = date('Y-m-d', $weekStartTime);
+    $weekEnd = date('Y-m-d', $weekEndTime);
+
+    ?>
+        
+        
       <?php $numItems = sizeof($items);
         //print $numItems;
       ?>
         <?php if($numItems > 0) :?>
-    
-      
-        <?php 
-        $current = current_path();
-        $currentDate = substr($current, -8);
-        $weekCheck = substr($current, -3,1);
-        if($weekCheck == 'W') {
-           // is normal
-            $prelinks = '../';
-        } else if ($weekCheck == 'w') {
-            $currentDate = substr($current, -8,5) . 'W' . substr($currentDate,-2);
-            $prelinks = '../calendar/';
-        } else {
-            // get current date, calc week id
-            $today = date ("Y-m-d");
-            $dayNumber = date ("z");
-            $year = date("Y");
-            $timeNow = time();
-
-            $startWYear = '1 January ' . $year;
-            $yearStartTime = strtotime($startWYear);
-            $todaysTime = $yearStartTime + ($dayNumber * 24 * 3600);
-
-            $yearStartWeekday = date('w', $yearStartTime);
-            //echo $year . ' started on a ' . $yearStartWeekday;
-            $weekStartJanDay = 7 - $yearStartWeekday;
-            $week2StartTime = $yearStartTime + ($weekStartJanDay*24*3600); 
-            $week = 2+ floor(($todaysTime - $week2StartTime)/(7 * 24 * 3600));
-            $currentDate = $year . '-W' . $week;
-        }
-        $date = date_create_from_format('Y-W', $currentDate);
-
-        $year = substr($currentDate, 0, 4);
-        $week = substr($currentDate, -2);
-        $startWYear = '1 January ' . $year;
-        //this week start time
-        $yearStartTime = strtotime($startWYear);
-        //echo $year . ' started on a ' . $yearStartWeekday;
-        $yearStartWeekday = date('w', $yearStartTime);
-
-        // week 2 started on Jan 
-        $weekStartJanDay = 7 - $yearStartWeekday;
-        $week2StartTime = $yearStartTime + ($weekStartJanDay*24*3600); 
-        $weeksToAdd = $week - 2;
-        $weekStartTime = $week2StartTime + ((7*($weeksToAdd)))*24*3600;
-        $weekEndTime = $weekStartTime + (6*24*3600);
-
-        $weekStart = date('Y-m-d', $weekStartTime);
-        $weekEnd = date('Y-m-d', $weekEndTime);
-
-        ?>    
-        
     <?php foreach ($items as $time): ?>
     <tr class="not-all-day and-all-day">
       
