@@ -206,11 +206,12 @@ jQuery( document ).ready(function( $ ) {
     
     function checkMobileFilters (){
         var mobileParams = $('section .view-mobile-calendar .view-filters form').serialize();
-        $('.thin-left-sidebar a').each(function() {
-            var mlink = $(this).attr('href');
-            mlink = mlink.replace(/\?.*$/, '');
-            $(this).attr('href', mlink + '?' + mobileParams);
-        });
+        // if we enable this filter adding to links, it breaks the #anchor to day of the week funcitonality, which is more important, but week filters will be remembered
+//        $('.thin-left-sidebar a').each(function() {
+//            var mlink = $(this).attr('href');
+//            mlink = mlink.replace(/\?.*$/, '');
+//            $(this).attr('href', mlink + '?' + mobileParams);
+//        });
         //console.log(mobileParams);           
         // mobile theme filters link if being filtered currently
         if(mobileParams != 'field_tags_tid='){
