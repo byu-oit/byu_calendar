@@ -67,10 +67,8 @@ foreach ($day_names as $key => $value) {
         //print $numItems;
       ?>
         <?php if($numItems > 0) :?>
-    <?php foreach ($items as $time): ?>
-    <tr class="not-all-day and-all-day">
+    
       
-        
         <?php 
         $current = current_path();
         $currentDate = substr($current, -8);
@@ -119,7 +117,12 @@ foreach ($day_names as $key => $value) {
         $weekStart = date('Y-m-d', $weekStartTime);
         $weekEnd = date('Y-m-d', $weekEndTime);
 
-        ?>
+        ?>    
+        
+    <?php foreach ($items as $time): ?>
+    <tr class="not-all-day and-all-day">
+      
+      
       <?php $curpos = 0; ?>
       <?php foreach ($columns as $index => $column): ?>
         <?php $colpos = (isset($time['values'][$column][0])) ? $time['values'][$column][0]['wday'] : $index; ?>
