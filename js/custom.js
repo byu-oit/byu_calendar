@@ -217,6 +217,7 @@ jQuery( document ).ready(function( $ ) {
             $('.show-filters').addClass('filtering');
         }
     }
+    checkMobileFilters(); // check on page load
     
     (function ($) {
         Drupal.behaviors.betterExposedFilters = {
