@@ -933,10 +933,10 @@ div#calendar-nav-pager .calendar-nav-pager-back {
   
         
     }
-    .inner-bottom-right.show-filters.filtered:after {
+    .inner-bottom-right.show-filters.filtering:after {
         content: " ON";
     }
-    .inner-bottom-right.show-filters.filtered {
+    .inner-bottom-right.show-filters.filtering {
 //        color: $green;               
         i.fa.fa-check {
             color: $green;

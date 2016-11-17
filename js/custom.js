@@ -215,11 +215,15 @@ jQuery( document ).ready(function( $ ) {
     (function ($) {
 Drupal.behaviors.betterExposedFilters = {
         attach: function(context) {         
-            console.log('better exposed filters!'); // hits this function twice each submit
-        
+            //console.log('better exposed filters!'); // hits this function twice each submit
+            $('.close-filters').removeClass("shown");
+            
             var mobileParams = $('section .view-mobile-calendar .view-filters form').serialize();
-            console.log(mobileParams);            
-            $('.show-filters').addClass('filtering');
+            //console.log(mobileParams);            
+            if(mobileParams != 'field_tags_tid='){
+                $('.show-filters').addClass('filtering');
+            }
+            
 
 
         }}
