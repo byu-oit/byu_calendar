@@ -204,7 +204,6 @@ jQuery( document ).ready(function( $ ) {
          $('.close-filters').removeClass("shown");
      });
     
-    // do first when page loads
     function checkMobileFilters (){
         var mobileParams = $('section .view-mobile-calendar .view-filters form').serialize();
         $('.thin-left-sidebar a').each(function() {
@@ -218,17 +217,16 @@ jQuery( document ).ready(function( $ ) {
             $('.show-filters').addClass('filtering');
         }
     }
-    checkMobileFilters(); 
+    
     (function ($) {
         Drupal.behaviors.betterExposedFilters = {
         attach: function(context) {         
-            //console.log('better exposed filters!'); // hits this function twice each submit
-            $('.close-filters').removeClass("shown");
-            checkMobileFilters();
-            
+                //console.log('better exposed filters!'); // hits this function twice each submit
+                $('.close-filters').removeClass("shown");
+                checkMobileFilters();
         }}
 })(jQuery);
-   
+    
 
 
     
