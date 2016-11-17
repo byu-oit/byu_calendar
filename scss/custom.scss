@@ -961,6 +961,9 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         font-size: 14px;
     }
 }
+.page-calendar-week .close-filters.shown {
+    top: 50px;
+}
 
 /* --------------- large filters ------- */
 
@@ -1013,6 +1016,14 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     text-align: center;
 }
 
+// DAY DAY DAY overrides
+.page-calendar.day {
+    
+    
+    
+}
+
+
 // WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK
 
 /*   ---- Day & Week View ------ */
@@ -1021,6 +1032,18 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 /* -- filter & msc stuff - */
 
 //day view
+.view-id-mobile_calendar.view-display-id-block_6 {
+    // some basics in calendar views that we need in this list view
+    font-size: 13px;
+    color: #777;
+    .views-field.views-field-title {
+        font-size: 15px;
+        display: inline;
+    }
+    
+    
+}
+// week view
 .view-id-mobile_calendar.view-display-id-block_5 {
     margin-top: -16px;
     .view-header,
