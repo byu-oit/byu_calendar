@@ -1037,6 +1037,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     }
     .view-item-mobile_calendar > .calendar.weekview {
         width: 100%;
+        padding: 10px 20px;
         position: relative;
         top: 3px;
         float: left;
@@ -1048,9 +1049,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     .view-item.view-item-mobile_calendar {
         border-bottom: 1px solid $lightgray;
     }
-    .view-item.view-item-mobile_calendar > .calendar.weekview {
-        margin: 10px 20px;
-    }
+   
     .empty-text {
         padding: 10px 20px 0px;
     }
@@ -1075,7 +1074,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         text-align: left;
     }
     .calendar-calendar tbody tr td {
-        background: none;
+        background: #fff;
     }
     .calendar-calendar .week-view .full tr.single-day {
         border-top: 1px solid #ccc;
@@ -1769,8 +1768,8 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 }
 // location was coming up next to the date field..
 .mobile-first .views-field.views-field-field-event-date {
-    display: block;
-    width: 100%;
+    @include display-flex();
+    flex-wrap: wrap;
     float: none;
     height: 20px;
 }
