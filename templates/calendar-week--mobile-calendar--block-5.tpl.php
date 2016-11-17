@@ -64,10 +64,11 @@ foreach ($day_names as $key => $value) {
   
     <?php endfor; ?>  
       <?php $numItems = sizeof($items);
-        print $numItems;
+        //print $numItems;
       ?>
+        <?php if($numItems > 0) :?>
     <?php foreach ($items as $time): ?>
-    <tr class="not-all-day and-all-day <?php print $numItems; ?> ">
+    <tr class="not-all-day and-all-day">
       
         
         <?php 
@@ -194,6 +195,9 @@ foreach ($day_names as $key => $value) {
    
     </td>
       <?php endforeach; ?>   
+       
+        
+        
       <?php for ($i = $curpos; $i < 7; $i++): ?>
         <td class="calendar-agenda-items single-day">
           <div class="calendar">
@@ -203,6 +207,54 @@ foreach ($day_names as $key => $value) {
       <?php endfor; ?>   
     </tr>
    <?php endforeach; ?>   
+      
+      <?php else: ?>
+      <!--  no week results -->
+      <tr class="not-all-day and-all-day"> 
+          <?php for($y = 0; $y < 7; $y++): ?>
+      <td class="calendar-agenda-items single-day">        
+          <?php
+                $weekday = $y;  
+                // depending on what day of the week it is, it'll add from weekStartTime
+                $daytodisplay = $weekStartTime + ($weekday *24*3600); // results in the unix day of current day
+                $simpleDate = date('Y-m-d', $daytodisplay);
+            echo "<div><a name='" . $simpleDate . "'></a></div>" ; 
+        ?>
+            <div class="weekview-day-header">
+                <?php
+                
+                $date = date_create($simpleDate); // creates date object
+                $day = date_format($date, 'j') ;
+                $weekday = date_format($date, 'l') ;
+                $monthName = date_format($date, 'F');
+                $monthyear = date_format($date, 'F Y') ;
+                echo '<a name="katria test-' . $simpleDate . '"></a>' . '<div class="day-header">' . '<div class="day-header-inner inner-top">' .
+                '<div class="day-header-inner-top-left">' .
+                    '<div class="day-header-day">' . $day . '</div>' . 
+                '</div>' .
+                '<div class="day-header-inner-top-right">' .
+                    '<div class="day-header-week">' . $weekday . '</div>' .
+                    '<div class="day-header-monthyear">' . $monthyear . '</div>' .
+                '</div>' .
+                '</div>' . 
+                '<div class="day-header-inner inner-bottom">' .
+                    '<a href="' . $prelinks . 'year/' . $year . '#' . $monthName . '"><div class="inner-bottom-left"><i class="fa fa-calendar" aria-hidden="true"></i> MONTH VIEW</div></a>' .
+                '<div class="inner-bottom-right show-filters"><i class="fa fa-square-o" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i> FILTERS</div>' .
+                    
+                '</div>' .
+                '</div>';
+
+                ?>
+            </div>
+          <div class="empty-text">
+                        <p>There are no events scheduled on this day.</p>
+                    </div>
+
+      
+      <?php endif; ?>
+      
+      
+      
   </tbody>
 </table>
 </div></div>
