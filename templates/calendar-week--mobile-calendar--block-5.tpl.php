@@ -63,9 +63,9 @@ foreach ($day_names as $key => $value) {
      
   
     <?php endfor; ?>  
-      
+      <?php $numItems = sizeof($items); ?>
     <?php foreach ($items as $time): ?>
-    <tr class="not-all-day and-all-day">
+    <tr class="not-all-day and-all-day <?php print $numItems; ?> ">
       
         
         <?php 
