@@ -205,28 +205,30 @@ jQuery( document ).ready(function( $ ) {
      });
     
     // do first when page loads
-    
+    function checkMobileFilters (){
+        var mobileParams = $('section .view-mobile-calendar .view-filters form').serialize();
+        $('.thin-left-sidebar a').each(function() {
+            var mlink = $(this).attr('href');
+            mlink = mlink.replace(/\?.*$/, '');
+            $(this).attr('href', mlink + '?' + mobileParams);
+        });
+        //console.log(mobileParams);           
+        // mobile theme filters link if being filtered currently
+        if(mobileParams != 'field_tags_tid='){
+            $('.show-filters').addClass('filtering');
+        }
+    }
+    checkMobileFilters(); 
     (function ($) {
         Drupal.behaviors.betterExposedFilters = {
         attach: function(context) {         
             //console.log('better exposed filters!'); // hits this function twice each submit
             $('.close-filters').removeClass("shown");
-            function checkMobileFilters (){
-                var mobileParams = $('section .view-mobile-calendar .view-filters form').serialize();
-                $('.thin-left-sidebar a').each(function() {
-                    var mlink = $(this).attr('href');
-                    mlink = mlink.replace(/\?.*$/, '');
-                    $(this).attr('href', mlink + '?' + mobileParams);
-                });
-                //console.log(mobileParams);           
-                // mobile theme filters link if being filtered currently
-                if(mobileParams != 'field_tags_tid='){
-                    $('.show-filters').addClass('filtering');
-                }
-            }
+            checkMobileFilters();
+            
         }}
 })(jQuery);
-   checkMobileFilters(); 
+   
 
 
     
