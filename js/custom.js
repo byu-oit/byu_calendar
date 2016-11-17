@@ -198,7 +198,7 @@ jQuery( document ).ready(function( $ ) {
 
     // mobile show filters
     
-   $('body').on('click', '.show-filters', function() {
+   $('#main-content-section').on('click', '.show-filters', function() {
        console.log('show!');
 //           $('#views-exposed-form').show();
         $('.views-exposed-form').addClass("shown"); // works
@@ -207,26 +207,24 @@ jQuery( document ).ready(function( $ ) {
   
    });        
     // close
-     $('body').on('click', '.close-filters', function() {
+     $('#main-content-section').on('click', '.close-filters', function() {
          $('.views-exposed-form').removeClass("shown"); // works
          $('.close-filters').removeClass("shown");
      });
     
     (function ($) {
-Drupal.behaviors.betterExposedFilters = {
-        attach: function(context) {         
-            //console.log('better exposed filters!'); // hits this function twice each submit
-            $('.close-filters').removeClass("shown");
-            
-            var mobileParams = $('section .view-mobile-calendar .view-filters form').serialize();
-            //console.log(mobileParams);            
-            if(mobileParams != 'field_tags_tid='){
-                $('.show-filters').addClass('filtering');
+        Drupal.behaviors.betterExposedFilters = {
+            attach: function(context) {         
+                //console.log('better exposed filters!'); // hits this function twice each submit
+                $('.close-filters').removeClass("shown");
+
+                var mobileParams = $('section .view-mobile-calendar .view-filters form').serialize();
+                //console.log(mobileParams);            
+                if(mobileParams != 'field_tags_tid='){
+                    $('.show-filters').addClass('filtering');
+                }
             }
-            
-
-
-        }}
+        }
 })(jQuery);
     
     // mobile theme filters link if being filtered currently
