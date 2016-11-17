@@ -215,8 +215,11 @@ jQuery( document ).ready(function( $ ) {
     (function ($) {
 Drupal.behaviors.betterExposedFilters = {
         attach: function(context) {         
-            console.log('better exposed filters!');
-        $('.show-filters').addClass('filtering');
+            console.log('better exposed filters!'); // hits this function twice each submit
+        
+            var mobileParams = $('section .view-mobile-calendar .view-filters form').serialize();
+            console.log(mobileParams);            
+            $('.show-filters').addClass('filtering');
 
 
         }}
