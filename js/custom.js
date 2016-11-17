@@ -212,7 +212,15 @@ jQuery( document ).ready(function( $ ) {
          $('.close-filters').removeClass("shown");
      });
     
-    
+    (function ($) {
+Drupal.behaviors.betterExposedFilters = {
+        attach: function(context) {         
+            console.log('better exposed filters!');
+        $('.show-filters').addClass('filtering');
+
+
+        }}
+})(jQuery);
     
     // mobile theme filters link if being filtered currently
     $('.view-id-mobile_calendar .views-filters form').submit(function() {
