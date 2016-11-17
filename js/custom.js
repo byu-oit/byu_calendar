@@ -206,6 +206,13 @@ jQuery( document ).ready(function( $ ) {
       // $('.views-exposed-form').toggle();
   
    });        
+    // close
+     $('body').on('click', '.close-filters', function() {
+         $('.views-exposed-form').removeClass("shown"); // works
+         $('.close-filters').removeClass("shown");
+     });
+    
+    
     
     // mobile theme filters link if being filtered currently
     $('.view-id-mobile_calendar .views-filters form').submit(function() {

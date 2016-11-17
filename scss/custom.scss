@@ -952,8 +952,14 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     color: $navy;
     display: block;
     position: absolute;
-    top: 50px;
-    right: 20px;
+    top: 10px;
+    left: 170px;
+    width: 70px!important;
+    z-index: 100;
+    span {
+        padding-right: 4px;
+        font-size: 14px;
+    }
 }
 
 /* --------------- large filters ------- */
