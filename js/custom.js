@@ -202,6 +202,7 @@ jQuery( document ).ready(function( $ ) {
        console.log('show!');
 //           $('#views-exposed-form').show();
         $('.views-exposed-form').addClass("shown"); // works
+        $('.close-filters').addClass("shown");
       // $('.views-exposed-form').toggle();
   
    });        

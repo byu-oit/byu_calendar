@@ -945,6 +945,16 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     }
 
 }
+.close-filters {
+    display: none;
+}
+.close-filters.shown {
+    color: $navy;
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+}
 
 /* --------------- large filters ------- */
 
@@ -1751,7 +1761,13 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         display: none;
     }
 }
-
+// location was coming up next to the date field..
+.mobile-first .views-field.views-field-field-event-date {
+    display: block;
+    width: 100%;
+    float: none;
+    height: 20px;
+}
 
 /* DAY DAY DAY DAY DAY DAY DAY - small adjustments for day, week as base */
 
