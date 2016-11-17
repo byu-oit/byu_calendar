@@ -951,9 +951,9 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 .close-filters.shown {
     color: $navy;
     display: block;
-    position: absolute;
-    top: 10px;
-    left: 170px;
+    position: fixed;
+    top: 55px;
+    left: 250px;
     width: 70px!important;
     z-index: 100;
     span {
@@ -962,7 +962,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     }
 }
 .page-calendar-week .close-filters.shown {
-    top: 50px;
+
 }
 
 /* --------------- large filters ------- */
@@ -1031,7 +1031,10 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 
 /* -- filter & msc stuff - */
 
-//day view
+// calendar lists formatting
+.page-calendar-view, .page-calendar-all {
+    
+}
 .view-id-mobile_calendar.view-display-id-block_6 {
     // some basics in calendar views that we need in this list view
     font-size: 13px;
@@ -1794,7 +1797,8 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     @include display-flex();
     flex-wrap: wrap;
     float: none;
-    height: 20px;
+    min-height: 20px;
+    padding: 0px 0px 5px;
 }
 
 /* DAY DAY DAY DAY DAY DAY DAY - small adjustments for day, week as base */
