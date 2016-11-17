@@ -203,7 +203,7 @@ jQuery( document ).ready(function( $ ) {
 //           $('#views-exposed-form').show();
         $('.views-exposed-form').addClass("shown"); // works
       // $('.views-exposed-form').toggle();
-
+  
    });        
     
     // mobile theme filters link if being filtered currently

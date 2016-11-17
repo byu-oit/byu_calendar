@@ -431,7 +431,9 @@ input[type="checkbox"]:checked ~ label:after {
     .top-bar-section ul {
         background: none;
     }
-
+    .top-bar .toggle-topbar.menu-icon a span {
+        color: $navy; // so the menu doesn't show
+    }
     .top-bar .toggle-topbar.menu-icon {
         //    right: 68px;
     }
