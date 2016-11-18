@@ -244,10 +244,11 @@ jQuery( document ).ready(function( $ ) {
         // on All page, set title
        //params is like '?field_event_type_tid%5B%5D=3&field_event_type_tid%5B%5D=4&field_tags_tid=All';
      var terms = params.replace(/field_event_type_tid%5B%5D=/,'');
-        terms = params.replace(/field_tags_tid=/,'');
-        terms = params.replace(/&/,', ');
+        terms = terms.replace(/field_tags_tid=/,'');
+        terms = terms.replace(/&/,', ');
+        
+         terms = terms.replace(/, ALL/,'');
         console.log(terms);
-         terms = params.replace(/, ALL/,'');
 //        var chars = terms.split('');
 //        terms = chars.join(',');
 //        console.log(terms);
@@ -255,7 +256,7 @@ jQuery( document ).ready(function( $ ) {
         if(tag == 'ALL') {
             tag = '';
         }
-        console.log(tag);
+//        console.log(tag);
         
         
     }).change();
