@@ -2293,6 +2293,11 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 
 
 /* large all ------------- */
+div#calendar-all-filter-title {
+    font-size: 28px;
+    color: $navy;
+    font-family: "Sentinel SSm A", "Sentinel SSm B";
+}
 .large-screen.page-calendar.page-calendar-all {
     .views-field.views-field-field-event-date-1 {
          padding-left: 0px;
