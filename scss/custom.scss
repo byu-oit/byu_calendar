@@ -367,7 +367,7 @@ input[type="checkbox"]:checked ~ label:after {
 }
 // hide first, which is 'search'
 .chosen-container .chosen-results li:first-of-type {
-    display: none;
+//    display: none;
 }
 .chosen-container .chosen-results li {
     color: $gray;
@@ -2984,7 +2984,7 @@ section.block.block-views.block-views-event-page-blocks-block {
     }
     .views-field.views-field-nothing span.FACEBOOK-PAGE,
     .views-field.views-field-nothing span.FULL-WEBSITE {
-        display: block;
+        display: block!important;
     }
     
     .views-field.views-field-id { // view count
