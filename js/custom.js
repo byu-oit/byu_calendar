@@ -249,10 +249,16 @@ jQuery( document ).ready(function( $ ) {
         
          terms = terms.replace(/, ALL/,'');
         console.log(terms);
+        var ids = terms.split(', ');
+        
+        
+        //var termNames =
+        
 //        var chars = terms.split('');
 //        terms = chars.join(',');
 //        console.log(terms);
-        document.getElementById("calendar-all-filter-title").innerHTML=terms; 
+        
+       // document.getElementById("calendar-all-filter-title").innerHTML=terms; 
         
         
     }).change();
