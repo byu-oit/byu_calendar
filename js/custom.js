@@ -245,18 +245,14 @@ jQuery( document ).ready(function( $ ) {
        //params is like '?field_event_type_tid%5B%5D=3&field_event_type_tid%5B%5D=4&field_tags_tid=All';
      var terms = params.replace(/field_event_type_tid%5B%5D=|field_tags_tid=/gi,'');
 //        terms = terms.replace('field_tags_tid=','');
-        terms = terms.replace('&',', ');
+        terms = terms.replace(/&/gi,', ');
         
          terms = terms.replace(/, ALL/,'');
         console.log(terms);
 //        var chars = terms.split('');
 //        terms = chars.join(',');
 //        console.log(terms);
-     var tag = params.replace(/\.*field_tags_tid=/,'');
-        if(tag == 'ALL') {
-            tag = '';
-        }
-//        console.log(tag);
+        document.getElementById("calendar-all-filter-title").innerHTML=terms; 
         
         
     }).change();
