@@ -369,6 +369,12 @@ input[type="checkbox"]:checked ~ label:after {
 .chosen-container .chosen-results li:first-of-type {
 //    display: none;
 }
+.chosen-container .chosen-results li:first-of-type:before {
+    content: "--clear ";
+}
+.chosen-container .chosen-results li:first-of-type:after {
+    content: "--";
+}
 .chosen-container .chosen-results li {
     color: $gray;
     padding: 7px 15px;
