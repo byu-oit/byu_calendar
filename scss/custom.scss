@@ -2284,6 +2284,10 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     
 }
 
+/* -------- Mobile: for all & for category pages ------- */
+.mobile-first:not(.page-node) #main-content-section.large-12 {
+    padding: 0px;
+}
 
 /* ------------ ALL PAGE --------- */
 
@@ -2299,9 +2303,10 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 	@media screen and (max-width: $mobile_max_width) {
 		width: 100%;
 		padding: 10px 15px;
-		border-bottom: 3px solid $navy;
-	
-		
+		border-bottom: 2px solid $navy;
+		margin-bottom: -16px;
+		line-height: 21px;
+
 	}
 	@media screen and (min-width: $large_screen_start_width){
 		font-size: 32px;
@@ -2312,8 +2317,6 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 		
 	
 }
-
-
 
 
 
