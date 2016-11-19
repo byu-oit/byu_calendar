@@ -2290,19 +2290,36 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 .large-screen.page-calendar.page-calendar-all .calendar-list-type-block .view-header {
     display: block;
 }
-/* mobile all -------------- */
+
+
+/* mobile all titles - mobile & large -------------- */
+#calendar-all-filter-title {
+	font-weight: bold;
+	color: navy;
+	@media screen and (max-width: $mobile_max_width) {
+		background: $lightgray;
+		width: 100%;
+		padding: 15px;
+	
+		
+	}
+	@media screen and (min-width: $large_screen_start_width){
+		font-size: 32px;
+		font-family: "Sentinel SSm A", "Sentinel SSm B";
+		margin-top: -30px;
+		line-height: 36px;
+	}
+		
+	
+}
 
 
 
 
 
 /* large all ------------- */
-div#calendar-all-filter-title {
-    font-size: 32px;
-    font-weight: bold;
-    color: $navy;
-    font-family: "Sentinel SSm A", "Sentinel SSm B";
-}
+
+
 .large-screen.page-calendar.page-calendar-all {
     .views-field.views-field-field-event-date-1 {
          padding-left: 0px;
