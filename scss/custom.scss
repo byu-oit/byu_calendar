@@ -969,6 +969,9 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 
 
 /* --- for all calendar views -------- */
+.view-calendar-pages {
+	display: none;
+}
 .day-header a,
 .views-field.views-field-title a {
     color: $navy;
