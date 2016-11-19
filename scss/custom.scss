@@ -2295,11 +2295,11 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 /* mobile all titles - mobile & large -------------- */
 #calendar-all-filter-title {
 	font-weight: bold;
-	color: navy;
+	color: $navy;
 	@media screen and (max-width: $mobile_max_width) {
-		background: $lightgray;
 		width: 100%;
-		padding: 15px;
+		padding: 10px 15px;
+		border-bottom: 3px solid $navy;
 	
 		
 	}
