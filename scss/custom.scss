@@ -2286,8 +2286,9 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 
 
 /* ------------ ALL PAGE --------- */
-.page-calendar-all .views-header {
-//    display: block;
+
+.large-screen.page-calendar.page-calendar-all .calendar-list-type-block .view-header {
+    display: block;
 }
 /* mobile all -------------- */
 
