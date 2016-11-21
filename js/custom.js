@@ -263,7 +263,7 @@ jQuery( document ).ready(function( $ ) {
         
     }).change();
 
-// mobile filters    
+// mobile filters   - off because it breaks links with # which is main week & month navigation  
 //   $('.view-id-mobile_calendar .view-filters form input[type="checkbox"]').change(function() {
 //	//$('sdflkjasdflkjad form input[type="checkbox"]:checked').size() 
 //        var params = $('.view-id-mobile_calendar .view-filters form').serialize();
@@ -276,7 +276,117 @@ jQuery( document ).ready(function( $ ) {
 //    }).change();
 //    
     
-    
+	
+    // load for homepage for select date dropdown:
+	
+	
+	var selected = 1;
+//add listeners for selected values
+function update(date) {
+	//var date = new Date();
+	var month = date.getMonth();
+	var year = date.getFullYear();
+	var days = new Date(year, month+1, 0).getDate();
+	
+	//reset list of day numbers
+	$("#day").html("");
+	for (var i =1;i < days+1;i++) {
+		$("#day").append("<option value=\"" + i + "\" id=\"day"+ i +"\">" + i + "</option>");
+	}
+	//keep selected day, unless too big for this month.
+	$("#day"+days).attr("selected","selected");
+	$("#day"+selected).attr("selected","selected");
+	if (selected > days) {
+		selected = days;
+	}
+	$("#month"+month).attr("selected","selected");
+	$("#mon"+month).attr("selected","selected");
+}
+
+function updateByMonth(month) {
+	//number of days in the month
+		var days = new Date($("#year").val(), month, 0).getDate();
+		var date = new Date();
+		//check if current day is too big
+		if (days < $("#day").val()) {
+			date = new Date(+$("#year").val() +"-"
+					+("0"+month).slice(-2) +"-"
+					+days);
+		}
+		else {
+			date = new Date(+$("#year").val() +"-"
+					+("0"+month).slice(-2) +"-"
+					+$("#day").val());
+		}
+		update(date);
+}
+
+function startListeners() {
+	//update when month is changed
+	$("#month").change(function () {
+		updateByMonth($("#month").val());
+	});
+	$("#mon").change(function () {
+		updateByMonth($("#mon").val());
+	});
+	//update when year is changed
+	$("#year").change(function () {
+		update(new Date(+$("#year").val() +"-"
+		+("0"+$("#month").val()).slice(-2) +"-"
+		+$("#day").val()));
+	});
+	//keep track of current day selected
+	$("#day").change(function () {
+		selected = $("#day").val();
+	});
+}
+
+//$(document).ready(function() {
+	//hide month based on screen size
+	if ($('.large-screen').length > 0) {
+		$("#mon").css("display","none");
+	}
+	else if ($('.mobile-first').length > 0) {
+		$("#month").css("display","none");
+	}
+	else {
+		$("#mon").css("display","none");
+	}
+	
+	//initialize values
+	var date = new Date();
+	var month = date.getMonth();
+	var year = date.getFullYear();
+	var day = date.getDate();
+	
+	update(new Date());
+	$("#day"+day).attr("selected","selected");
+	selected = day;
+	
+	//set two values for year
+	var nextyear = parseInt(year,10)+1;
+	$("#year").append("<option value=\"" + year + "\" id=\"year"+ year +"\">" + year + "</option>");
+	$("#year").append("<option value=\"" + nextyear + "\" id=\"year"+ nextyear +"\">" + nextyear + "</option>");
+	
+	//select current month
+	$("#month"+month).attr("selected","selected");
+	$("#mon"+month).attr("selected","selected");
+
+	//on click redirect page
+	$("#go").click(function() {
+		var link = "https://calendar-test.byu.edu/calendar/day/"
+		+$("#year").val() +"-"
+		+("0"+$("#month").val()).slice(-2) +"-"
+		+$("#day").val()
+		;
+		window.location.href = link;
+		//or for no back button use this:
+		//window.location.replace(link);
+	});
+
+	startListeners();
+	
+//});
     
     
     
