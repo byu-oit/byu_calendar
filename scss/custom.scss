@@ -2818,6 +2818,9 @@ fieldset#edit-body-und-0-format {
     @media screen and (max-width: $mobile_max_width){
 //        display: none;
     }
+	label {
+//		width: 100%;
+	}
     .image-widget-data {
         input, button {
             margin-bottom: 15px;
@@ -2827,8 +2830,13 @@ fieldset#edit-body-und-0-format {
 .form-item.form-type-managed-file.form-item-field-thumbnail-und-0 {
     @include display-flex();
     flex-wrap: wrap;
-    .image-widget:before {
-//        content: "Please save your image as a 600x600 square jpg or png.";
+	.image-widget-data:after {
+    content: "600px x 600px PNG or JPG.";
+    margin-bottom: 10px;
+}
+    .image-widget:after {
+        content: "This will be on display each time your event is referenced. Please ensure it is cropped to the correct dimensions and does not have any words included on it.";
+		margin-bottom: 10px;
     }
     .image-widget {
         order: 3;
@@ -2836,7 +2844,7 @@ fieldset#edit-body-und-0-format {
     .description {
         padding: 5px 0px 15px;
         line-height: 16px;
-//        display: none;
+        display: none;
     }
 
     .image-widget-data {
