@@ -2523,8 +2523,8 @@ fieldset {
     }
         
     .form-item.form-type-select select {
-       @include gray-select;
-       @include select-dropdown;
+       @include gray-select();
+       @include select-dropdown();
         width: 61px; // need this for if they check all day and then uncheck it and it's redisplayed..
     }
 }
@@ -3125,7 +3125,13 @@ span.views-label.views-label-addtoany-link {
     border-bottom: 1px solid $lightgray;
 }
 #bottom-content section {
-    padding: 50px 0px;
+	@media screen and (max-width: $mobile_max_width){
+		padding: 25px 0px;
+	}
+	@media screen and (min-width: $large_screen_start_width){
+		padding: 50px 0px;
+	}
+    
     border-top: 1px solid $lightgray;
     h2.block-title {
         text-align: center;
@@ -3135,11 +3141,10 @@ span.views-label.views-label-addtoany-link {
 }
 
 // title
-#top-title h2 {
-    color: $navy;
-    @media screen and (min-width: $large_screen_start_width) {
-        font-size: 35px;
-    }
+#top-title {
+	@media screen and (max-width: $mobile_max_width) {
+		padding: 0px 10px;
+	}
 }
 
 
@@ -3284,17 +3289,33 @@ span.views-label.views-label-addtoany-link {
 
 #events-by-date-dropdowns {
     display: flex;
-    width: 600px;
+    
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
-    div {
-        margin: 15px;
-    }
+	div {
+		margin: 5px;
+	}
     select {
         padding: 4px;
+		@include gray-select();
+       	@include select-dropdown();
         // copy more styling here from other place, or just add a class to the select
     }
+	// mobile only:
+	@media screen and (max-width: $mobile_max_width){
+		
+	}
+	@media screen and (min-width: $large_screen_start_width){
+		width: 600px;
+		div {
+			margin: 15px;
+			
+		}
+		button#go {
+			padding: 1px 12px!important;
+		}
+	}
 }
 
 
