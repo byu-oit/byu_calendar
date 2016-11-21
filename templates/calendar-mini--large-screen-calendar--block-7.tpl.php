@@ -87,7 +87,7 @@ $params = array(
       <?php $rowid=0; ?>
     <?php foreach ((array) $rows as $row): ?>
       <?php $rowid++; ?>
-      <tr class="row-<?php print $rowid; ?>">
+      <tr class="row-<?php print $rowid; print " " . $current;?>">
         <?php foreach ($row as $cell): ?>
           
             <?php /*print $cell['data'];  */?>
