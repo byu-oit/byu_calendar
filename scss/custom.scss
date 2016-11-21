@@ -3133,6 +3133,10 @@ span.views-label.views-label-addtoany-link {
 #bottom-content section {
 	@media screen and (max-width: $mobile_max_width){
 		padding: 25px 0px;
+		.front h2,
+		h2.block-title {
+			font-size: 18px;
+		}
 	}
 	@media screen and (min-width: $large_screen_start_width){
 		padding: 50px 0px;
@@ -3319,7 +3323,10 @@ span.views-label.views-label-addtoany-link {
 	}
 	// mobile only:
 	@media screen and (max-width: $mobile_max_width){
-		
+		button#go {
+			padding: 8px 16px !important;
+			margin: 5px 7px 16px;
+		}
 	}
 	@media screen and (min-width: $large_screen_start_width){
 		width: 600px;
