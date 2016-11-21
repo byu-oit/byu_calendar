@@ -57,7 +57,7 @@ $params = array(
 		$currentDate = substr($current, -8,5) . 'W' . substr($currentDate,-2);
 		$prelinks = '../';
 	} else {
-		$prelinks = '../calendar/';
+		$prelinks = '../calendar/week/';
 		// get current date, calc week id
 		$today = date ("Y-m-d");
 		$dayNumber = date ("z");
@@ -166,7 +166,7 @@ $week2StartTime = $yearStartTime + ($weekStartJanDay*24*3600);
               ?>
           <td id="<?php print $cell['id']; ?>" class="<?php print $cell['class']; print $class; ?>">
               <div class="month mini-day-on  <?php print $id . ' weekday-' . $dayofweek;  ?>">
-                <a href="../week/<?php print $year . '-W' . $thatWeek;  ?>"><?php print $day;  ?></a>
+                <a href="<?php print $prelinks; print $year . '-W' . $thatWeek;  ?>"><?php print $day;  ?></a>
               </div>
           </td>
           

@@ -143,7 +143,7 @@ foreach ($day_names as $key => $value) {
                     <?php if(empty($all_day[$j][0]['entry'])): ?>
                     <!-- no events -->
                     <div class="empty-text">
-                        <p>There are no events scheduled on this day.</p>
+                        <p>No events.</p>
                     </div>
                     <?php endif; ?>
                 <?php endif; ?>
