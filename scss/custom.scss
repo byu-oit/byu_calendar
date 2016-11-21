@@ -2830,10 +2830,18 @@ fieldset#edit-body-und-0-format {
 .form-item.form-type-managed-file.form-item-field-thumbnail-und-0 {
     @include display-flex();
     flex-wrap: wrap;
+	
+	a.imce-filefield-opener {
+		margin: 10px 0px;
+	}
+	a.imce-filefield-opener:after {
+		content: " (If you need to crop your image)";
+	}
+
 	.image-widget-data:after {
-    content: "600px x 600px PNG or JPG.";
-    margin-bottom: 10px;
-}
+		content: "600px x 600px PNG or JPG.";
+		margin-bottom: 10px;
+	}
     .image-widget:after {
         content: "This will be on display each time your event is referenced. Please ensure it is cropped to the correct dimensions and does not have any words included on it.";
 		margin-bottom: 10px;
