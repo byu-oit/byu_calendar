@@ -374,7 +374,7 @@ function startListeners() {
 
 	//on click redirect page
 	$("#go").click(function() {
-		var link = "https://calendar-test.byu.edu/calendar/day/"
+		var link = "../calendar/day/"
 		+$("#year").val() +"-"
 		+("0"+$("#month").val()).slice(-2) +"-"
 		+$("#day").val()
