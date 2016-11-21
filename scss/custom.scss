@@ -60,7 +60,7 @@ $nav_gradient_2: 5%;
 
 @mixin button {
     text-align: center;
-    padding: 9px 0px!important;
+    padding: 9px 0px;
     
 }
 
@@ -96,6 +96,10 @@ a:hover {
     text-align: center;
     color: $navy;
     font-size: 12px;
+}
+.green {
+	background-color: $green!important;
+	color: #fff;
 }
 .green-button {
     @include button;
