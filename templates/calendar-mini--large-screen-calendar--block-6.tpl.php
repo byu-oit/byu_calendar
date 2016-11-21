@@ -46,8 +46,37 @@ $params = array(
       <?php
       // calculate what dates are in the current week from id
       $current = current_path();
-//$current = 'askldjasldfkjasldf/calendar/week/2016-W33';
-$currentDate = substr($current, -8);  // 2016-W33
+	  	  
+	//$current = 'askldjasldfkjasldf/calendar/week/2016-W33';
+  	$currentDate = substr($current, -8);  // 2016-W33
+	$weekCheck = substr($current, -3,1);
+	if($weekCheck == 'W') {
+        // is normal
+		$prelinks = '../week/';
+    } else if ($weekCheck == 'w') {
+		$currentDate = substr($current, -8,5) . 'W' . substr($currentDate,-2);
+		$prelinks = '../';
+	} else {
+		$prelinks = '../calendar/';
+		// get current date, calc week id
+		$today = date ("Y-m-d");
+		$dayNumber = date ("z");
+		$year = date("Y");
+		$timeNow = time();
+
+		$startWYear = '1 January ' . $year;
+		$yearStartTime = strtotime($startWYear);
+		$todaysTime = $yearStartTime + ($dayNumber * 24 * 3600);
+
+		$yearStartWeekday = date('w', $yearStartTime);
+		$weekStartJanDay = 7 - $yearStartWeekday;
+		$week2StartTime = $yearStartTime + ($weekStartJanDay*24*3600); 
+		$week = 2+ floor(($todaysTime - $week2StartTime)/(7 * 24 * 3600));
+		$currentDate = $year . '-W' . $week;
+	}
+
+	  
+
 
 
       // if not specified, do current year and month
