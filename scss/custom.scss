@@ -111,9 +111,11 @@ a:hover {
         color: #fff;
     }   
 }
+.green,
 .green-button:hover {
     background: $greenlightened;
 }
+.green,
 .green-button:active {
     background: $greendarkened;
 }
