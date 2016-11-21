@@ -3288,7 +3288,7 @@ span.views-label.views-label-addtoany-link {
         width: 100%;
     }
 }
-.front article ul.links.inline {
+.front article {
     display: none;
 }
 /* ---- Events By Date --------  */
@@ -3306,8 +3306,17 @@ span.views-label.views-label-addtoany-link {
         padding: 4px;
 		@include gray-select();
        	@include select-dropdown();
+		padding: 7px 30px 3px 10px;
+		color: $navy;
         // copy more styling here from other place, or just add a class to the select
     }
+	button#go {
+		padding: 9px 16px !important;
+		/* height: 32px; */
+		font-size: 13px;
+		border: none;
+		margin: 14px 10px 16px;
+	}
 	// mobile only:
 	@media screen and (max-width: $mobile_max_width){
 		
@@ -3319,7 +3328,7 @@ span.views-label.views-label-addtoany-link {
 			
 		}
 		button#go {
-			padding: 1px 12px!important;
+
 		}
 	}
 }
