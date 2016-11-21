@@ -2832,22 +2832,25 @@ fieldset#edit-body-und-0-format {
     flex-wrap: wrap;
 	
 	a.imce-filefield-opener {
-		margin: 10px 0px;
+		margin: 5px 0px 5px -18px;
+		background: none;
 	}
 	a.imce-filefield-opener:after {
 		content: " (If you need to crop your image)";
 	}
 
 	.image-widget-data:after {
-		content: "600px x 600px PNG or JPG.";
+		content: "600px x 600px PNG or JPG. This will be on display each time your event is referenced. Please ensure it is cropped to the correct dimensions and does not have any words included on it.";
 		margin-bottom: 10px;
+		font-size: 14px;
 	}
     .image-widget:after {
-        content: "This will be on display each time your event is referenced. Please ensure it is cropped to the correct dimensions and does not have any words included on it.";
+//        content: "This will be on display each time your event is referenced. Please ensure it is cropped to the correct dimensions and does not have any words included on it.";
 		margin-bottom: 10px;
     }
     .image-widget {
         order: 3;
+		margin-bottom: -20px;
     }
     .description {
         padding: 5px 0px 15px;
@@ -2875,6 +2878,8 @@ fieldset#edit-body-und-0-format {
 }
 button#edit-field-thumbnail-und-0-upload-button {
 //    text-transform: uppercase;
+	display: none;
+	// with auto upload it doesn't need to be displayed anymore
 }
 button#edit-field-thumbnail-und-0-upload-button:after {
 //    content: " EVENT IMAGE";
