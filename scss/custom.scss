@@ -2925,11 +2925,14 @@ section.block-social-share-social-share {
 //    min-height: 30px;
 //    background: #f09;
 //	padding: 10px 0px;
-	margin: 10px 0px 10px 270px;
+	h2.block-title {
+		display: none;
+	}
+	margin: 0px 0px 10px 270px;
 	a:before {
 		font-family: FontAwesome;
 		color: $navy;
-		border: 1px solid $gray;
+		border: 2px solid $medgray;
 		font-size: 16px;
 		border-radius: 21px;
 		
@@ -2937,7 +2940,7 @@ section.block-social-share-social-share {
 	a:hover:before {
 		color: #fff;
 		background: $navy;
-		border: 1px solid $navy;
+		border: 2px solid $navy;
 	}
 	a.social-share-facebook:before {
 		content: '\F09a';
