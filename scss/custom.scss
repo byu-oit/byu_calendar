@@ -2926,9 +2926,9 @@ section.block-social-share-social-share {
 //    background: #f09;
 //	padding: 10px 0px;
 	margin: 10px 0px 10px 270px
-	a {
+	a:before {
 		font-family: FontAwesome;
-		color: #002e5d;
+		color: $navy;
 		border: 1px solid $navy;
 		background: $lightgray;
 	}
