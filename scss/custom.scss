@@ -658,10 +658,12 @@ main #main-content-section.scrolled {
 @media (min-width: $large_screen_start_width) {
     div#page-container {
         padding: 30px 0px;
-        min-height: 700px;  // this is for with no content.. temporary solution
         max-width: 1024px;
         margin-left: auto;
         margin-right: auto;
+    }
+	.not-front #page-container {
+        min-height: 700px;  // this is for with no content.. temporary solution
     }
     .columns.sidebar-first.thin-left-sidebar {
         width: 230px;
