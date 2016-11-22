@@ -2929,17 +2929,23 @@ section.block-social-share-social-share {
 	a:before {
 		font-family: FontAwesome;
 		color: $navy;
-		border: 1px solid $navy;
+		border: 1px solid $gray;
 		font-size: 16px;
-		border-radius: 15px;
+		border-radius: 21px;
+		
+	}
+	a:hover:before {
+		color: #fff;
+		background: $navy;
+		border: 1px solid $navy;
 	}
 	a.social-share-facebook:before {
 		content: '\F09a';
-		padding: 7px 10px;
+		padding: 8px 12px;
 	}
 	a.social-share-twitter:before {
 		content: '\F099';
-		padding: 6px 10px;
+		padding: 8px 10px;
 		
 	}
 	a.social-share-facebook, a.social-share-twitter {
