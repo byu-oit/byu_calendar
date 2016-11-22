@@ -2916,7 +2916,14 @@ div#edit-field-full-name {
     display: none;
 }
 
+.form-item .description {
+	line-height: 16px;
+	padding: 10px 0px;
+}
 
+#edit-field-permission-und label{
+    text-transform: none;
+}
 /* --- formatting Add An Event for large screen --- */
 
 
@@ -3105,7 +3112,7 @@ section.block.block-views.block-views-event-page-blocks-block {
         padding: 5px 0px 0px;
     }
     .views-field.views-field-body {
-        padding-top: 30px;
+//        padding-top: 30px;
     }
     .green-button {
         margin-top: 20px;
@@ -3162,6 +3169,7 @@ section.block-social-share-social-share {
 	.share-label {
 		color: $navy;
 		font-weight: bold;
+		margin-right: 10px;
 	}
 	@media screen and (min-width: $large_screen_start_width){
 		margin: -130px 0px 10px 270px;
@@ -3192,7 +3200,7 @@ section.block-social-share-social-share {
 	a.social-share-facebook, a.social-share-twitter {
 		color: #fff;
 		font-size: 0px;
-		margin-right: 10px;
+		margin-right: 3px;
 	}
 }
 
