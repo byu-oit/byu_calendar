@@ -2925,22 +2925,27 @@ section.block-social-share-social-share {
 //    min-height: 30px;
 //    background: #f09;
 //	padding: 10px 0px;
-	margin: 10px 0px 10px 270px
+	margin: 10px 0px 10px 270px;
 	a:before {
 		font-family: FontAwesome;
 		color: $navy;
 		border: 1px solid $navy;
-		background: $lightgray;
+		font-size: 16px;
+		border-radius: 15px;
 	}
 	a.social-share-facebook:before {
 		content: '\F09a';
 		padding: 7px 10px;
-		border-radius: 15px;
 	}
 	a.social-share-twitter:before {
 		content: '\F099';
 		padding: 6px 10px;
-		border-radius: 15px;
+		
+	}
+	a.social-share-facebook, a.social-share-twitter {
+		color: #fff;
+		font-size: 2px;
+		margin-right: 10px;
 	}
 }
 
