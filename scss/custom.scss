@@ -2920,6 +2920,35 @@ div#edit-field-full-name {
 
 
 /* --- formatting Add An Event for large screen --- */
+
+.sharethis-wrapper {
+    min-height: 30px;
+    background: #f09;
+	padding: 10px 0px;
+	span {
+		height: 30px;
+		width: 30px;
+	}
+	span.st_facebook_button:before {
+		content: '\F09a';
+		font-family: FontAwesome;
+		color: #002e5d;
+		border: 1px solid #002e5d;
+		padding: 7px 10px;
+
+		border-radius: 15px;
+	}
+	span.st_twitter_button:before {
+		content: '\F099';
+		font-family: FontAwesome;
+		color: #002e5d;
+		border: 1px solid #002e5d;
+		padding: 6px 10px;
+
+		border-radius: 15px;
+	}
+}
+
 @media screen and (min-width: $large_screen_start_width) {
     section.block.block-block.light-gray-bg.block-block-13 {
         display: none;
