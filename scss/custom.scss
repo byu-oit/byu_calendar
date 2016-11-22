@@ -2928,7 +2928,10 @@ section.block-social-share-social-share {
 	h2.block-title {
 		display: none;
 	}
-	margin: 0px 0px 10px 270px;
+	@media screen and (min-width: $large_screen_start_width){
+		margin: 0px 0px 10px 270px;
+	}
+	
 	a:before {
 		font-family: FontAwesome;
 		color: $navy;
