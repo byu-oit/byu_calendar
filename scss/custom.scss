@@ -436,11 +436,40 @@ input[type="checkbox"]:checked ~ label:after {
 		display: flex;
 		justify-content: flex-end;
 	}
+	#sign-in, #sign-out {
+		a {
+			color: #fff;
+		}
+	}
+	.logged-in #sign-in,
+	.not-logged-in #sign-out {
+		display: none;
+	}
+	#sign-in:after,
+	#sign-out:hover:after {
+		content: "\f007";
+		font-family: FontAwesome;
+		font-size: 15px;
+		padding: 10px 13px;
+		
+	}
+	#sign-in:after,
+	#sign-out:hover:after {
+		color: #fff;
+		border: 1px solid #fff;
+	}
+	#sign-in:hover:after,
+	#sign-out:after {
+		color: $navy;
+		border: 1px solid $navy;
+		background: #fff;
+	}
 }
 
 .mobile-first .top-bar .title-area {
     width: 100%;
 }
+
 
 
 
