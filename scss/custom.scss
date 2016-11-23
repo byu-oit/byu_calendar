@@ -3651,4 +3651,35 @@ section.block-social-share-social-share {
 
 
 /* -------- search --------- */
+// did the class .search-form instead of id's so it would apply to both header and search page
+.search-form {
+	#edit-search-block-form--1,
+	labels {
+		display: none;
+	}
+	button{
+		background: $gray;
+		color: #fff;
+		font-family: FontAwesome;
+		width: 40px;
+	}
+	
+	
+}
+#search-block-form {
+	@media screen and (max-width: $mobile_max_width){
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
 
