@@ -3680,8 +3680,7 @@ section.block-social-share-social-share {
 		border: 1px solid $gray;
     	border-radius: 0px;
 	}
-	button#edit-submit--2:after,
-	button#edit-submit--4:after {
+	button:after {
 		content: "\f002";
 		font-family: FontAwesome;
 		font-size: 17px;
@@ -3697,6 +3696,20 @@ section.block-social-share-social-share {
 #search-block-form {
 	@media screen and (max-width: $mobile_max_width){
 		display: none;
+	}
+}
+
+// search page specific
+.page-search #search-form {
+	.form-item label {
+		display: none;
+	}
+	input#edit-keys {
+		width: 290px;
+		float: left;
+	}
+	button {
+		height:
 	}
 }
 
