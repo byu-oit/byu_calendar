@@ -2440,6 +2440,7 @@ section.row.l-footer-columns {
 	#footer-social-icons {
 		@include display-flex();
 		justify-content: flex-start;
+		padding: 0px 0px 10px;
 	}
 	a.social-link {
 		font-family: FontAwesome;
