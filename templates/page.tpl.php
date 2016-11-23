@@ -16,7 +16,7 @@
                 <li class="name"><h1><?php print $linked_site_name; ?></h1></li>
                 <li class="toggle-topbar menu-icon"><a href="#"><span><?php print $top_bar_menu_text; ?></span></a></li>
               </ul>
-			  <div id="top-left-inner">
+			  <div id="top-right-inner">
 				  <div id="top-bar-search"> 
 					  <?php 
 						//print $search_box; 
