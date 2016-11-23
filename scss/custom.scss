@@ -2448,7 +2448,7 @@ section.row.l-footer-columns {
 		border: 2px solid #fff;
 		font-size: 16px;
 		border-radius: 21px;
-		margin-right: 2px;
+		margin-right: 5px;
 	}
 	a.social-link.facebook {
 		padding: 8px 12px;
@@ -3231,7 +3231,15 @@ span.views-label.views-label-addtoany-link {
 
 
 /* ------ social share both sizes ---------- */
-
+//body:not(.page-node) section.block-social-share-social-share {
+//	display: none;
+//}
+section.block-social-share-social-share {
+	display: none;
+}
+.page-node section.block-social-share-social-share {
+	display: block;
+}
 section.block-social-share-social-share {
 //    min-height: 30px;
 //    background: #f09;
