@@ -3145,6 +3145,10 @@ section.block.block-views.block-views-event-page-blocks-block {
     }
     .green-button {
         margin-top: 20px;
+		@media screen and (min-width: $large_screen_start_width){
+			// if this shows on large screen, do large bottom margin to push down other blocks
+			margin-bottom: 145px;
+		}
     }
     span.timezone {
         margin-left: 4px;
