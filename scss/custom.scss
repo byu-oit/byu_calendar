@@ -428,9 +428,19 @@ input[type="checkbox"]:checked ~ label:after {
     margin-right: auto;
     display: flex;
     justify-content: space-between;
+
+}
+#top-right-inner {
+	display: none;
+	@media screen and (min-width: $large_screen_start_width) {
+		display: flex;
+		justify-content: flex-end;
+	}
 }
 
-
+.mobile-first .top-bar .title-area {
+    width: 100%;
+}
 
 
 
@@ -2321,6 +2331,12 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 
 /* -------- Mobile: for all & for category pages ------- */
 .mobile-first:not(.page-node) #main-content-section.large-12 {
+//    padding: 0px;
+}
+// last line was too general, i think this could work
+// try one of these
+//.mobile-first.not-front.page-calendar #main-content-section.large-12 {
+.mobile-first.page-calendar #main-content-section.large-12 {
     padding: 0px;
 }
 
