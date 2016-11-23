@@ -16,19 +16,20 @@
                 <li class="name"><h1><?php print $linked_site_name; ?></h1></li>
                 <li class="toggle-topbar menu-icon"><a href="#"><span><?php print $top_bar_menu_text; ?></span></a></li>
               </ul>
-			  <div id="top-bar-search"> 
-				  <?php 
-				  	//print $search_box; 
-				  $block = module_invoke('search', 'block_view', 'search');
-          			print render($block); 
-				  
-				  ?>
-			  </div>
-			 
-			  <div id="sign-in"><a href="../user">Sign In</a></div>
-			  
-			  <div id="sign-in"><a href="../caslogout">Sign Out</a></div>
-			  
+			  <div id="top-left-inner">
+				  <div id="top-bar-search"> 
+					  <?php 
+						//print $search_box; 
+					  $block = module_invoke('search', 'block_view', 'search');
+						print render($block); 
+
+					  ?>
+				  </div>
+
+				  <div id="sign-in"><a href="../user">Sign In</a></div>
+
+				  <div id="sign-in"><a href="../caslogout">Sign Out</a></div>
+			</div>
               <section class="top-bar-section">
                 <?php if ($top_bar_main_menu) :?>
                   <?php print $top_bar_main_menu; ?>

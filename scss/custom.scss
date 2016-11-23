@@ -3670,8 +3670,8 @@ section.block-social-share-social-share {
 	labels {
 		display: none;
 	}
-	.form-item-search-block-form button,
-	button {
+	button#edit-submit--2,
+	button#edit-submit--3 {
 		background: $gray !important;
 		color: $gray !important;
 		font-family: FontAwesome;
@@ -3679,8 +3679,8 @@ section.block-social-share-social-share {
 		border: 1px solid $gray;
     	border-radius: 0px;
 	}
-	.form-item-search-block-form button:after,
-	button:after {
+	button#edit-submit--2:after,
+	button#edit-submit--3:after {
 		content: "\f002";
 		font-family: FontAwesome;
 		font-size: 16px;
@@ -3693,8 +3693,9 @@ section.block-social-share-social-share {
 #top-bar-search input {
     width: 230px;
 }
-#search-block-form {
-	@media screen and (max-width: $mobile_max_width){
+
+@media screen and (max-width: $mobile_max_width) {
+	#search-block-form {
 		display: none;
 	}
 }
