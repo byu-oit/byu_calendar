@@ -2376,10 +2376,10 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 section.row.l-footer-columns {
     background: $lightgray;
     padding: 40px;
-	section.row.l-footer-columns h2 {
+	h2 {
 		font-size: 20px;
-		color: navy;
-		border-bottom: 1px solid navy;
+		color: $navy;
+		border-bottom: 1px solid $navy;
 	}
 }
 
