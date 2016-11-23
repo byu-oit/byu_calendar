@@ -2374,8 +2374,11 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 
 /* ----------- footer ----------- */
 
+
+
+
 // social follow block
-.footer {
+.l-footer-columns {
 	a {
 		color: $gray;
 	}
@@ -2383,15 +2386,27 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 		@include display-flex();
 		justify-content: flex-start;
 	}
-	.social-link {
+	a.social-link {
 		font-family: FontAwesome;
 		color: $navy;
 		border: 2px solid #fff;
 		font-size: 16px;
 		border-radius: 21px;
 		margin-right: 2px;
-		}
-	.social-link:hover {
+	}
+	a.social-link.facebook {
+		padding: 8px 12px;
+	}
+	a.social-link.twitter {
+		padding: 8px 10px;
+	}
+	a.social-link.facebook {
+		padding: 8px 12px;
+	}
+	a.social-link.facebook {
+		padding: 8px 12px;
+	}
+	a.social-link:hover {
 		font-family: FontAwesome;
 		color: #fff;
 		border: 2px solid $navy;
@@ -2430,6 +2445,13 @@ footer.l-footer.row {
 section.row.l-footer-columns {
     background: $lightgray;
     padding: 40px;
+	.large-3.columns {
+		width: 25%;
+	}
+	.footer-fourth.large-3.columns {
+    	// if t's thinner like connect is, move it over a tiny bit to look visually centered with the others
+		width: 21%;
+	}
 }
 
 
