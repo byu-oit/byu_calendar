@@ -2372,51 +2372,16 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 }
 
 
-/* ----------- footer ----------- */
-
-
-
-
-// social follow block
-.l-footer-columns {
-	a {
-		color: $gray;
-	}
-	#footer-social-icons {
-		@include display-flex();
-		justify-content: flex-start;
-	}
-	a.social-link {
-		font-family: FontAwesome;
-		color: $navy;
-		border: 2px solid #fff;
-		font-size: 16px;
-		border-radius: 21px;
-		margin-right: 2px;
-	}
-	a.social-link.facebook {
-		padding: 8px 12px;
-	}
-	a.social-link.twitter {
-		padding: 8px 10px;
-	}
-	a.social-link.facebook {
-		padding: 8px 12px;
-	}
-	a.social-link.facebook {
-		padding: 8px 12px;
-	}
-	a.social-link:hover {
-		font-family: FontAwesome;
-		color: #fff;
-		border: 2px solid $navy;
-		background: $navy;
-		font-size: 16px;
-		border-radius: 21px;
+/* ---- general footer  --- */
+section.row.l-footer-columns {
+    background: $lightgray;
+    padding: 40px;
+	section.row.l-footer-columns h2 {
+		font-size: 20px;
+		color: navy;
+		border-bottom: 1px solid navy;
 	}
 }
-	
-
 
 /* -- mobile footer -- */
 @media screen and (max-width: $mobile_max_width) {
@@ -2441,16 +2406,68 @@ footer.l-footer.row {
 
 /* --- large screen footer --- */
 
-/* 0------ content footer ---- */
 section.row.l-footer-columns {
     background: $lightgray;
     padding: 40px;
+	max-width: 1200px;
 	.large-3.columns {
-		width: 25%;
+		width: 50%;
 	}
-	.footer-fourth.large-3.columns {
-    	// if t's thinner like connect is, move it over a tiny bit to look visually centered with the others
-		width: 21%;
+	@media screen and (min-width: 1200px){
+		.large-3.columns {
+			width: 25%;
+		}
+		.footer-third.large-3.columns {
+			// if t's thinner like connect is, move it over a tiny bit to look visually centered with the others
+			width: 21%;
+		}
+		.footer-fourth.large-3.columns {
+			// if t's thinner like connect is, move it over a tiny bit to look visually centered with the others
+			width: 21%;
+		}
+	}
+}
+
+
+
+/* ---social links in footer ----- */
+
+.l-footer-columns {
+
+	a {
+		color: $gray;
+	}
+	#footer-social-icons {
+		@include display-flex();
+		justify-content: flex-start;
+	}
+	a.social-link {
+		font-family: FontAwesome;
+		color: $navy;
+		border: 2px solid #fff;
+		font-size: 16px;
+		border-radius: 21px;
+		margin-right: 2px;
+	}
+	a.social-link.facebook {
+		padding: 8px 12px;
+	}
+	a.social-link.twitter {
+		padding: 8px 9px;
+	}
+	a.social-link.instagram {
+		padding: 8px 10px;
+	}
+	a.social-link.youtube {
+		padding: 8px 10px;
+	}
+	a.social-link:hover {
+		font-family: FontAwesome;
+		color: #fff;
+		border: 2px solid $navy;
+		background: $navy;
+		font-size: 16px;
+		border-radius: 21px;
 	}
 }
 
