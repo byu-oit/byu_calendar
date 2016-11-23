@@ -3665,26 +3665,24 @@ section.block-social-share-social-share {
 
 /* -------- search --------- */
 // did the class .search-form instead of id's so it would apply to both header and search page
-.search-form {
+#search-form-block {
 	#edit-search-block-form--1,
 	labels {
 		display: none;
 	}
-	button,
-	button#edit-submit--2,
-	button#edit-submit--4 {
+	button {
 		background: $gray !important;
 		color: $gray !important;
 		font-family: FontAwesome;
-		width: 40px;
+		width: 36px;
 		border: 1px solid $gray;
     	border-radius: 0px;
 	}
 	button:after {
 		content: "\f002";
 		font-family: FontAwesome;
-		font-size: 17px;
-		margin-left: -17px;
+		font-size: 16px;
+		margin-left: -21px;
 		color: #fff;
 	}
 	
@@ -3709,8 +3707,23 @@ section.block-social-share-social-share {
 		float: left;
 	}
 	button {
-		height:
+		background: $gray !important;
+		color: #fff !important;
+		font-family: "Gotham SSm A","Gotham SSm B";
+		height: 32px;
+		width: 90px;
+		border: 1px solid $gray;
+    	border-radius: 0px;
+		padding: 8px 70px 8px 10px;
 	}
+	button:after {
+		content: "\f002";
+		font-family: FontAwesome;
+		font-size: 16px;
+		margin-left: 9px;
+		color: #fff;
+	}
+
 }
 
 
