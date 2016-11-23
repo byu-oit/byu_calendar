@@ -3657,13 +3657,17 @@ section.block-social-share-social-share {
 	labels {
 		display: none;
 	}
-	button{
-		background: $gray;
-		color: #fff;
+	button,
+	button#edit-submit--2 {
+		background: $gray !important;
+		color: #fff !important;
 		font-family: FontAwesome;
 		width: 40px;
 	}
-	
+	button#edit-submit--2:after {
+		content: "\f002";
+		font-family: FontAwesome;
+	}
 	
 }
 #search-block-form {
