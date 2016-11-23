@@ -26,7 +26,8 @@
 			  </div>
 			  <?php if (!$logged_in) : ?>
 			  	<div id="sign-in"><a href="../user">Sign In</a></div>
-			  <? elseif (logged_in) : ?>
+			  <? endif ; ?>
+			  <? if (logged_in) : ?>
 			  	<div id="sign-in"><a href="../user">Sign Out</a></div>
 			  <? endif ; ?>
 			  <div id="sign-in"><a href="../user">Sign In</a></div>
