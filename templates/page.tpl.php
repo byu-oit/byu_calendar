@@ -24,7 +24,21 @@
 				  
 				  ?>
 			  </div>
-			  <?php if (!$logged_in) : ?>
+			  <?php
+			  global $user;
+			  // An anonymous user has a user id of zero.     
+			  if ($user->uid > 0) {
+				// The user is logged in.
+				$vars['logged_in'] = TRUE;
+
+			  }
+			  else {
+				// The user has logged out.
+				$vars['logged_in'] = FALSE;
+
+			  } 
+			  ?>
+			  <?php if ($logged_in) : ?>
 			  	<div id="sign-in"><a href="../user">Sign In</a></div>
 			  <? endif ; ?>
 			  <? if (logged_in) : ?>
