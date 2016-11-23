@@ -2433,9 +2433,14 @@ section.row.l-footer-columns {
 /* ---social links in footer ----- */
 
 .l-footer-columns {
-
+	p {
+		margin-bottom: 10px;
+	}
 	a {
-		color: $gray;
+		color: #444;
+	}
+	a:hover {
+		color: #000;
 	}
 	#footer-social-icons {
 		@include display-flex();
@@ -2474,6 +2479,13 @@ section.row.l-footer-columns {
 
 
 /* --------- University footer --------- */
+// general
+
+footer.l-footer.panel.row {
+    background: navy;
+    color: #fff;
+}
+// mobile
 @media screen and (max-width: $mobile_max_width) {
     footer.l-footer.row {
         
@@ -2487,9 +2499,12 @@ section.row.l-footer-columns {
     }
 }
 
-
-
-
+// large
+@media screen and (min-width: $large_screen_start_width) {
+	footer.l-footer.panel.row {
+    	max-width: 100%;
+	}
+}
 
 
 
