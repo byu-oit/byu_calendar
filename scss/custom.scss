@@ -2372,7 +2372,31 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 }
 
 
-/* ----------- footer ----------- *?
+/* ----------- footer ----------- */
+
+// social follow block
+.footer {
+	a {
+		color: $gray;
+	}
+	.social-link {
+		font-family: FontAwesome;
+		color: $navy;
+		border: 2px solid #fff;
+		font-size: 16px;
+		border-radius: 21px;
+		}
+	.social-link:hover {
+		font-family: FontAwesome;
+		color: #fff;
+		border: 2px solid $navy;
+		background: $navy;
+		font-size: 16px;
+		border-radius: 21px;
+	}
+}
+	
+
 
 /* -- mobile footer -- */
 @media screen and (max-width: $mobile_max_width) {
@@ -3203,6 +3227,9 @@ section.block-social-share-social-share {
 		margin-right: 3px;
 	}
 }
+	
+
+
 
 // category & tag 
 .page-node .views-field-field-event-type .views-label,
