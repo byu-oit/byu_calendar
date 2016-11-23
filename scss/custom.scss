@@ -2391,7 +2391,7 @@ section.row.l-footer-columns {
 
 /* -- mobile footer -- */
 @media screen and (max-width: $mobile_max_width) {
-footer.l-footer.row {
+	footer.l-footer.row {
         @include display-flex();
         justify-content: flex-end;
         padding: 0px;
@@ -2407,10 +2407,13 @@ footer.l-footer.row {
             background: $navy;
         }
     }
+	.sidebar-first section.row.l-footer-columns {
+		padding: 40px 40px 40px 22%;
+	}
 }
 
 
-/* --- large screen footer --- */
+/* --- footer --- */
 
 section.row.l-footer-columns {
     background: $lightgray;
@@ -2420,6 +2423,7 @@ section.row.l-footer-columns {
 		width: 50%; // for tablets & middle range
 		@media screen and (max-width: 767px){
 			width: 100%;
+			padding-top: 20px;
 		}
 	}
 	
