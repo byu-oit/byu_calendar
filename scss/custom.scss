@@ -3658,15 +3658,21 @@ section.block-social-share-social-share {
 		display: none;
 	}
 	button,
-	button#edit-submit--2 {
+	button#edit-submit--2,
+	button#edit-submit--4 {
 		background: $gray !important;
-		color: #fff !important;
+		color: $gray !important;
 		font-family: FontAwesome;
 		width: 40px;
+		border: 1px solid $gray;
+    	border-radius: 0px;
 	}
-	button#edit-submit--2:after {
+	button#edit-submit--2:after,
+	button#edit-submit--4:after {
 		content: "\f002";
 		font-family: FontAwesome;
+		font-size: 17px;
+		margin-left: -17px;
 	}
 	
 }
