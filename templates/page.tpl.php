@@ -22,9 +22,16 @@
 				  $block = module_invoke('search', 'block_view', 'search');
           			print render($block); 
 				  
-				  
 				  ?>
 			  </div>
+			  <?php if (!$logged_in) : ?>
+			  	<div id="sign-in"><a href="../user">Sign In</a></div>
+			  <? elseif (logged_in) : ?>
+			  	<div id="sign-in"><a href="../user">Sign Out</a></div>
+			  <? endif ; ?>
+			  <div id="sign-in"><a href="../user">Sign In</a></div>
+			  
+			  <? endif ; ?>
               <section class="top-bar-section">
                 <?php if ($top_bar_main_menu) :?>
                   <?php print $top_bar_main_menu; ?>
