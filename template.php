@@ -77,7 +77,10 @@ function byu_calendar_preprocess_page(&$variables) {
     $variables['sidebar_first_grid'] = '';
     $variables['sidebar_sec_grid'] = '';
   }
-
+	/* search box variable was removed from D7, adding it back in to use in page.tpl.php */
+	$search_box = drupal_render(drupal_get_form('search_form'));
+  	$variables['search_box'] = $search_box;
+	
 }
 
 /**
