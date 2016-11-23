@@ -2379,12 +2379,17 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 	a {
 		color: $gray;
 	}
+	#footer-social-icons {
+		@include display-flex();
+		justify-content: flex-start;
+	}
 	.social-link {
 		font-family: FontAwesome;
 		color: $navy;
 		border: 2px solid #fff;
 		font-size: 16px;
 		border-radius: 21px;
+		margin-right: 2px;
 		}
 	.social-link:hover {
 		font-family: FontAwesome;
