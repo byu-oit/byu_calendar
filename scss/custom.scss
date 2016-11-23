@@ -2417,13 +2417,11 @@ section.row.l-footer-columns {
 		.large-3.columns {
 			width: 25%;
 		}
-		.footer-third.large-3.columns {
-			// if t's thinner like connect is, move it over a tiny bit to look visually centered with the others
-			width: 21%;
-		}
+
 		.footer-fourth.large-3.columns {
 			// if t's thinner like connect is, move it over a tiny bit to look visually centered with the others
-			width: 21%;
+			width: 23%;
+    		margin-right: 1%;
 		}
 	}
 }
@@ -3497,6 +3495,9 @@ section.block-social-share-social-share {
 }
 .front article {
     display: none;
+}
+.front .view-large-screen-calendar .view-footer {
+    text-align: center;
 }
 /* ---- Events By Date --------  */
 
