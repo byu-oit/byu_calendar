@@ -3670,6 +3670,7 @@ section.block-social-share-social-share {
 	labels {
 		display: none;
 	}
+	.form-item-search-block-form button,
 	button {
 		background: $gray !important;
 		color: $gray !important;
@@ -3678,6 +3679,7 @@ section.block-social-share-social-share {
 		border: 1px solid $gray;
     	border-radius: 0px;
 	}
+	.form-item-search-block-form button:after,
 	button:after {
 		content: "\f002";
 		font-family: FontAwesome;
@@ -3709,12 +3711,13 @@ section.block-social-share-social-share {
 	button {
 		background: $gray !important;
 		color: #fff !important;
+		font-size: 15px;
 		font-family: "Gotham SSm A","Gotham SSm B";
 		height: 32px;
-		width: 90px;
+		width: 100px;
 		border: 1px solid $gray;
     	border-radius: 0px;
-		padding: 8px 70px 8px 10px;
+		padding: 7px 70px 8px 10px;
 	}
 	button:after {
 		content: "\f002";
