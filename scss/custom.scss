@@ -152,6 +152,10 @@ h1, h2, h3, h4,
 h1 {
     color: $navy;
 }
+h1#page-title {
+    margin-left: 15px;
+    margin-right: 15px;
+}
 // if they only want event page titles to be navy
 .page-node.node-type-event h1#page-title {
 //    color: $navy;
@@ -162,8 +166,10 @@ section.l-top-title.row {
     border-bottom: 1px solid $lightgray;
 }
 #top-content {
-    @include display-flex();
-    justify-content: center;
+	@media screen and (min-width: $large_screen_start_width) {
+    	@include display-flex();
+    	justify-content: center;
+	}
     padding: 30px 0px;
 }
 section.l-bottom-content.row {
@@ -2411,8 +2417,12 @@ section.row.l-footer-columns {
     padding: 40px;
 	max-width: 1200px;
 	.large-3.columns {
-		width: 50%;
+		width: 50%; // for tablets & middle range
+		@media screen and (max-width: 767px){
+			width: 100%;
+		}
 	}
+	
 	@media screen and (min-width: 1200px){
 		.large-3.columns {
 			width: 25%;
@@ -3634,4 +3644,7 @@ section.block-social-share-social-share {
     
     
 }
+
+
+/* -------- search --------- */
 
