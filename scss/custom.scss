@@ -449,7 +449,7 @@ input[type="checkbox"]:checked ~ label:after {
 		display: none;
 	}
 	#sign-in i,
-	#sign-out:hover:= i {
+	#sign-out:hover i {
 //		content: "\f007";
 		font-family: FontAwesome;
 		font-size: 14px;
@@ -462,8 +462,8 @@ input[type="checkbox"]:checked ~ label:after {
 		color: #fff;
 		border: 1px solid #fff;
 	}
-	#sign-in:hover:after,
-	#sign-out:after {
+	#sign-in:hover i,
+	#sign-out i {
 		color: $navy;
 		border: 1px solid $navy;
 		background: #fff;
