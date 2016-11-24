@@ -438,6 +438,8 @@ input[type="checkbox"]:checked ~ label:after {
 	}
 	#sign-in, #sign-out {
 		margin-left: 20px;
+		text-transform: uppercase;
+		font-weight: 100;
 		a {
 			color: #fff;
 		}
