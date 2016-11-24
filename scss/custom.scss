@@ -448,17 +448,17 @@ input[type="checkbox"]:checked ~ label:after {
 	.not-logged-in #sign-out {
 		display: none;
 	}
-	#sign-in:after,
-	#sign-out:hover:after {
-		content: "\f007";
+	#sign-in i,
+	#sign-out:hover:= i {
+//		content: "\f007";
 		font-family: FontAwesome;
 		font-size: 14px;
 		padding: 6px 8px;
 		border-radius: 21px;
 		margin-left: 10px;
 	}
-	#sign-in:after,
-	#sign-out:hover:after {
+	#sign-in i,
+	#sign-out:hover i {
 		color: #fff;
 		border: 1px solid #fff;
 	}
