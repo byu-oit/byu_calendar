@@ -3352,6 +3352,9 @@ section.block-social-share-social-share {
 .not-front.page-node section.block-social-share-social-share {
 	display: block;
 }
+.mobile-first section.block-social-share-social-share {
+	margin: 25px 0px 15px;
+}
 section.block-social-share-social-share {
 //    min-height: 30px;
 //    background: #f09;
@@ -3574,7 +3577,8 @@ section.block-social-share-social-share {
 		padding: 0px 10px 5px 10px;
 	}
 	.views-field-field-event-location {
-		display: block;
+		display: block!important;
+		padding: 0px 10px 0px 10px;
 	}
  } 
 .block-views-homepage-features-block-3 .views-row {
