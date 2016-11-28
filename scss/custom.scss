@@ -444,14 +444,10 @@ input[type="checkbox"]:checked ~ label:after {
 			color: #fff;
 		}
 	}
-	.logged-in #sign-in,
-	.not-logged-in #sign-out {
-		display: none;
-	}
+
 	#sign-in i,
-	#sign-out:hover i {
-//		content: "\f007";
-		font-family: FontAwesome;
+	#sign-out i {
+//		font-family: FontAwesome;
 		font-size: 14px;
 		padding: 6px 8px;
 		border-radius: 21px;
@@ -468,6 +464,10 @@ input[type="checkbox"]:checked ~ label:after {
 		border: 1px solid $navy;
 		background: #fff;
 	}
+}
+.logged-in #top-right-inner #sign-in,
+.not-logged-in #top-right-inner #sign-out {
+	display: none;
 }
 
 .mobile-first .top-bar .title-area {
