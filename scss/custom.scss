@@ -3105,6 +3105,10 @@ div#edit-field-full-name {
 #edit-field-permission-und label{
     text-transform: none;
 }
+
+#edit-field-permission .description {
+    margin-top: 30px;
+}
 /* --- formatting Add An Event for large screen --- */
 
 
@@ -3246,6 +3250,11 @@ section.block.block-views.block-views-event-page-blocks-block {
         font-weight: normal;
         margin-right: 4px;
     }
+	// when its free, hide the conditional showing price RANGE
+	.views-field.views-field-field-free.-Free ~ .views-field-views-conditional-1 {
+		display: none;
+	}
+	
     // additional
     .views-field.views-field-nothing > span {
         display: none;
@@ -3368,7 +3377,8 @@ section.block-social-share-social-share {
 		margin-right: 10px;
 	}
 	@media screen and (min-width: $large_screen_start_width){
-		margin: -130px 0px 10px 270px;
+//		margin: -130px 0px 10px 270px;
+		margin: -140px 0px 10px 270px;
 	}
 	
 	a:before {
@@ -3405,7 +3415,7 @@ section.block-social-share-social-share {
 
 // category & tag 
 .page-node .views-field-field-event-type .views-label,
-.page-node .views-field-tags .views-label {
+.page-node .views-field-field-tags .views-label {
 	float: left;
     margin-right: 5px;
 	text-transform: uppercase;
