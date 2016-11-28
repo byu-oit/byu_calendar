@@ -981,7 +981,8 @@ main #main-content-section.scrolled {
 }
 
 div#calendar-nav-pager .calendar-nav-pager-back {
-    color: $medgray;
+//    color: $medgray;
+	// idk why we need this, both should be blue links
 }
 
 @media (max-width: $mobile_max_width) {
@@ -2583,6 +2584,8 @@ section.row.l-footer-columns {
 footer.l-footer.panel.row {
     background: $navy;
     color: #fff;
+	text-align: center;
+	
 }
 // mobile
 @media screen and (max-width: $mobile_max_width) {
