@@ -39,7 +39,11 @@ $nav_gradient_2: 5%;
     -moz-box-shadow: inset -3px 0px 5px 0px rgba(0, 0, 0, 0.4);
     box-shadow: inset -3px 0px 5px 0px rgba(0, 0, 0, 0.4);
 }
-
+@mixin no-box-shadow () {
+	-webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
 @mixin main-outer-shadowbox() {
     -webkit-box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.4);
@@ -3601,6 +3605,9 @@ section.block-social-share-social-share {
 /* -------------homepage week section -------------- */
 
 @media screen and (max-width: $mobile_max_width){
+	.front #calendar-nav-header {
+		@include no-box-shadow();
+	}
 	.front .calendar-nav-section .calendar-nav-item .day-navigation-day-items {
 		font-size: 25px;
 	}
@@ -3608,6 +3615,7 @@ section.block-social-share-social-share {
 		font-size: 13px;
 	}
 	.front .calendar-all-link {
+		height: 54px;
 		width: 100%;
 		background: $medblue;
 		a {
