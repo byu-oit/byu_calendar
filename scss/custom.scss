@@ -243,12 +243,15 @@ section.l-bottom-content.row {
 //}
 
 // mobile grayed out nav
-.mobile-first .hiddengrayout div {
+.mobile-first .grayout div {
 	background: $medgray;
 	color: $medgray!important;
 }
 // large screen grayed out nav
-
+.large-screen .grayout div {
+	background: $medgray;
+	color: $medgray!important;
+}
 
 
 
