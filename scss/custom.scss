@@ -3427,6 +3427,7 @@ section.block-social-share-social-share {
 
 
 /* -------- HOMEPAGE HOMEPAGE HOMEPAGE --------------------- */
+// regions
 .front #top-content {
     border-bottom: 1px solid $lightgray;
 }
@@ -3457,6 +3458,7 @@ section.block-social-share-social-share {
 	}
 }
 
+// top region, features section
 
 .block-views-homepage-features-block-3,
 .block-views-homepage-features-block-2,
@@ -3472,9 +3474,7 @@ section.block-social-share-social-share {
     .views-field.views-field-title {
         padding: 10px 10px 0px;
     }
-    .views-field-field-event-date {
-        padding: 10px 10px 5px;
-    }
+
     .views-field.views-field-title h1 {
         margin: 0px;
         font-family: "Gotham SSm A","Gotham SSm B";
@@ -3492,12 +3492,13 @@ section.block-social-share-social-share {
         padding-right: 10px;
 
     }
-   
-
-    
-    
     
 }
+
+.mobile-first .views-field-field-event-date {
+	padding: 10px 10px 5px;
+}
+
 // large features
 
 .block-views-homepage-features-block {
