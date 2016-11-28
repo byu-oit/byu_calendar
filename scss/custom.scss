@@ -242,6 +242,16 @@ section.l-bottom-content.row {
 //    padding-right: 5px;
 //}
 
+// mobile grayed out nav
+.mobile-first .hiddengrayout div {
+	background: $medgray;
+	color: $medgray!important;
+}
+// large screen grayed out nav
+
+
+
+
 /* ----- general input things like checkboxes etc ----- */
 @mixin gray-select {
     font-weight: bold;
