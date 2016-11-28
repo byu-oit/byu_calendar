@@ -3323,7 +3323,7 @@ section.block.block-views.block-views-event-page-blocks-block {
     margin-right: 15px;
 }
 span.views-label.views-label-addtoany-link {
-    color: #767676;
+    color: $gray;
 
 }
 .views-field.views-field-addtoany-link .field-content {
@@ -3380,7 +3380,7 @@ section.block-social-share-social-share {
 	}
 	@media screen and (min-width: $large_screen_start_width){
 //		margin: -130px 0px 10px 270px;
-		margin: -140px 0px 10px 270px;
+		margin: -145px 0px 10px 270px;
 	}
 	
 	a:before {
