@@ -3603,8 +3603,13 @@ section.block-social-share-social-share {
 }
 
 /* -------------homepage week section -------------- */
+.front.mobile-first #main-content-section {
+    padding-top: 30px;
+}
+
 
 @media screen and (max-width: $mobile_max_width){
+	.front .calendar-nav-section .calenar-nav-item,
 	.front #calendar-nav-header {
 		@include no-box-shadow();
 	}
@@ -3619,6 +3624,7 @@ section.block-social-share-social-share {
 	}
 	.front #calendar-all-link {
 		height: 58px;
+		margin-top: 2px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
