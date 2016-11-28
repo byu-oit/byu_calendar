@@ -3524,6 +3524,24 @@ section.block-social-share-social-share {
     }
 }
 
+// mobile main feature
+.block-views-homepage-features-block-2 {
+    width: 330px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+// mobile small features
+.block-views-homepage-features-block-3 .view-content {
+        justify-content: space-between;
+ } 
+.block-views-homepage-features-block-3 .views-row {
+    width: 160px;
+    max-width: 45%;
+}
+
 // large main
 .block-views-homepage-features-block {
     max-width: 425px;
