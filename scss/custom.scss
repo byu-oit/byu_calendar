@@ -3573,6 +3573,9 @@ section.block-social-share-social-share {
 	.views-field-field-event-date {
 		padding: 0px 10px 5px 10px;
 	}
+	.views-field-field-event-location {
+		display: block;
+	}
  } 
 .block-views-homepage-features-block-3 .views-row {
     width: 160px;
@@ -3709,7 +3712,12 @@ section.block-social-share-social-share {
 		}
 	}
 }
-
+.mobile-first select#month {
+    display: none;
+}
+.large-screen select#mon {
+    display: none;
+}
 
 /* ------------ Categories page and block --------- */
 
