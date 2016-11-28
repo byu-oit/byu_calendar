@@ -231,7 +231,7 @@
 
   <?php if (!empty($page['footer_firstcolumn']) || !empty($page['footer_secondcolumn']) || !empty($page['footer_thirdcolumn']) || !empty($page['footer_fourthcolumn'])): ?>
     <!--.footer-columns -->
-    <section class="row l-footer-columns">
+    <section id="content-footer" class="row l-footer-columns">
       <?php if (!empty($page['footer_firstcolumn'])): ?>
         <div class="footer-first large-3 columns">
           <?php print render($page['footer_firstcolumn']); ?>

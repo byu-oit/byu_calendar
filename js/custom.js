@@ -87,7 +87,7 @@ jQuery( document ).ready(function( $ ) {
 //                $('.left-sidebar-minimonth').removeClass('scrolled'));
                 $('.block-block-11').removeClass('scrolled'); 
             } else {
-                if('.row.l-footer-columns').is_on_screen() {
+                if( $('#content-footer').is_on_screen() ){
 					// footer showing, unset scrolled class so it doesn't run into footer
 					$('.left-sidebar-calendar-exposed-filters').removeClass('scrolled'); 
 					$('.block-views-large-screen-calendar-block-6').removeClass('scrolled'); 
