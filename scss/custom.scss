@@ -3557,8 +3557,15 @@ section.block-social-share-social-share {
     margin-left: auto;
     margin-right: auto;
 	.view-content {
-        justify-content: space-between;
+        justify-content: space-around;
 	}
+	// smaller text for mobile
+	.views-field-field-event-date,
+	.views-field-field-event-date-1,
+	.views-field-field-event-location {
+		font-size: 14px;
+	}
+	
  } 
 .block-views-homepage-features-block-3 .views-row {
     width: 160px;
