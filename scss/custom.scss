@@ -3814,6 +3814,7 @@ section.block-social-share-social-share {
 		color: $gray !important;
 		font-family: FontAwesome;
 		width: 36px;
+		height: 28px;
 		border: 1px solid $gray;
     	border-radius: 0px;
 	}
@@ -3830,6 +3831,7 @@ section.block-social-share-social-share {
 // top bar specific
 #top-bar-search input {
     width: 230px;
+	height: 28px;
 }
 
 @media screen and (max-width: $mobile_max_width) {
