@@ -3560,6 +3560,13 @@ section.block-social-share-social-share {
 
 
 // mobile small features
+.block-views-homepage-features-block-3,
+.block-views-homepage-features-block-3 {
+
+	.views-field-field-event-date {
+		padding: 0px 10px 5px 10px!important;
+	}	
+}
 .block-views-homepage-features-block-3 {
 	max-width: 348px;
     margin-left: auto;
@@ -3573,9 +3580,9 @@ section.block-social-share-social-share {
 	.views-field-field-event-location {
 		font-size: 14px;
 	}
-	.views-field-field-event-date {
-		padding: 0px 10px 5px 10px!important;
-	}	
+	.views-field.views-field-title {
+		padding: 10px 10px 10px;	
+	}
 	.views-field-field-event-date-1 {
 		padding: 0px 0px 5px 10px!important;
 	}
