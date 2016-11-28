@@ -3608,6 +3608,9 @@ section.block-social-share-social-share {
 	.front #calendar-nav-header {
 		@include no-box-shadow();
 	}
+	.front .calendar-nav-section .calendar-nav-item {
+    	padding: 8px 0px 12px;
+	}
 	.front .calendar-nav-section .calendar-nav-item .day-navigation-day-items {
 		font-size: 25px;
 	}
@@ -3615,14 +3618,17 @@ section.block-social-share-social-share {
 		font-size: 13px;
 	}
 	.front .calendar-all-link {
-		height: 54px;
-		width: 100%;
+		height: 58px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		background: $medblue;
-		a {
-			color: #fff;
-		}
-		div.all-link {
+		.all-link {
+			font-size: 16px;
+			padding: 8px 11px;
 			border: 1px solid #fff;
+			text-transform: uppercase;
+			color: #fff;
 		}
 	}
 	
