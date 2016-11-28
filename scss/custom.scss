@@ -248,9 +248,8 @@ section.l-bottom-content.row {
 	color: $medgray!important;
 }
 // large screen grayed out nav
-.large-screen .grayedout div {
-	background: $medgray;
-	color: $medgray!important;
+.large-screen .grayedout {
+	background: $lightgray!important;
 }
 
 
