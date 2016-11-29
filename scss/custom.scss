@@ -1714,14 +1714,12 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             display: none;
         }
         .views-field.views-field-field-free.-Free {
-            display: inline;
+            display: block;
             margin: 9px 0px!important;
         }
         .views-label.views-label-field-free {
             float: left;
             margin-right: 4px;
-			color: #444;
-    		font-weight: normal;
         }
         .views-field.views-field-views-conditional-1.-Price,
         .views-field.views-field-views-conditional-1.-Range {
@@ -3291,7 +3289,10 @@ section.block.block-views.block-views-event-page-blocks-block {
     .views-field.views-field-id { // view count
         padding: 5px 0px 20px;
     }
-        
+	 .views-label.views-label-field-free {
+		color: #444;
+		font-weight: normal;
+	} 
 }
 .date-display-range {
     display: inline;         // trying to get MT timezone nicely after the date.. 
@@ -3332,6 +3333,7 @@ section.block.block-views.block-views-event-page-blocks-block {
         margin-left: 4px;
     }
 }
+  
 .views-field.views-field-field-tickets-url.-Free {
     display: inline;
     float: left;
