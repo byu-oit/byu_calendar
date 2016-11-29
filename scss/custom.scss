@@ -356,6 +356,12 @@ input[type="checkbox"] {
     }
     
 }
+// firefox smaller size
+.ff .form-type-bef-checkbox {
+    label {
+        font-size: 13px; 
+	}
+}
 /* Animating the Checkbox Icon */
 input[type="checkbox"]:checked ~ label:after {
     max-width: 25px;
