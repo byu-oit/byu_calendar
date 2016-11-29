@@ -1070,6 +1070,10 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     color: $navy;
 }
 
+.view.view-mobile-calendar .views-exposed-form .views-exposed-widget {
+    padding: 0px;
+}
+
 .view.view-mobile-calendar.view-id-mobile_calendar .views-row {
     border-bottom: 1px $lightgray solid;
 }
@@ -1082,7 +1086,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         border: 1px solid $navy;
         border-radius: 5px;
         border-top-right-radius: 0px;
-        padding: 30px 9%;
+        padding: 30px 7%;
         width: 80%;
         height: 92.5%; // see if i can do 100% height -45px
         right: 0px;
