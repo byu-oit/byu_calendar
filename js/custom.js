@@ -92,6 +92,7 @@ jQuery( document ).ready(function( $ ) {
 					$('.left-sidebar-calendar-exposed-filters').removeClass('scrolled'); 
 					$('.block-views-large-screen-calendar-block-6').removeClass('scrolled'); 
 					$('.block-views-large-screen-calendar-block-7').removeClass('scrolled'); 
+					$('.block-block-11').removeClass('scrolled'); 
 					
 				} else {
 					$('.block-views-large-screen-calendar-block-6').addClass('scrolled');

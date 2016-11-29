@@ -695,7 +695,7 @@ header.l-header {
 }
 main #main-content-section.scrolled {
     @media screen and (max-width: $mobile_max_width) {
-        margin-top: 76px;
+        margin-top: 96px; // added 20
     }
 }
 .mobile.no-sidebars {
@@ -1314,7 +1314,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         }
         .block-block-11.scrolled {
             position: fixed;
-            top: 14px; // 29px; // was 24px, maybe switch back
+            top: 34px; // added 20 for admin menu
             #monthselector-label, #yearselector-label {
 //                display: block;   
             }
@@ -1340,7 +1340,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         section.left-sidebar-minimonth.scrolled,
         section.block-views-large-screen-calendar-block-6.scrolled {
             position: fixed;
-            top: 110px;
+            top: 130px; // added 20 for admin menu
         }
         section.block-views-large-screen-calendar-block-6,
         section.left-sidebar-minimonth {
@@ -1386,7 +1386,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             //            background: pink;
             //            margin-top: 260px;
             position: fixed;
-            top: 292px;
+            top: 312px; // added 20
         }
         form {
             .views-exposed-widget.views-reset-button
@@ -1959,7 +1959,9 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 /* -------- large month -------- */
 
 /* large month nav -- */
-
+.page-calendar-month.large-screen .left-sidebar-calendar-exposed-filters.scrolled {
+    top: 140px; // has 20
+}
 .calendar-nav-item.month-navigation-month {
     font-size: 13px;
     width: 56px;
