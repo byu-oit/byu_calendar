@@ -2986,9 +2986,8 @@ fieldset.group-pricing legend {
         padding-left: 20px;
     }
 }
-#edit-field-event-type {
-    
-    
+.mobile-first #edit-field-event-type {
+    margin-bottom: 15px;    
 }
 #edit-field-internal-category {
     padding-top: 10px;
@@ -3044,8 +3043,9 @@ fieldset#edit-body-und-0-format {
 
 	.image-widget-data:after {
 		content: "600px x 600px PNG or JPG. This will be on display each time your event is referenced. Please ensure it is cropped to the correct dimensions and does not have any words included on it.";
-		margin-bottom: 10px;
+		margin-bottom: 20px;
 		font-size: 14px;
+		line-height: 16px;
 	}
     .image-widget:after {
 //        content: "This will be on display each time your event is referenced. Please ensure it is cropped to the correct dimensions and does not have any words included on it.";
@@ -3116,13 +3116,18 @@ div#edit-field-full-name {
 	line-height: 16px;
 	padding: 10px 0px;
 }
-
+#edit-field-front-page-und label.option {
+    text-transform: none;
+}
 #edit-field-permission-und label{
     text-transform: none;
 }
-
+#edit-field-permission {
+    padding-top: 10px;
+}
 #edit-field-permission .description {
     margin-top: 30px;
+	padding: 20px 0px 0px;
 }
 /* --- formatting Add An Event for large screen --- */
 
