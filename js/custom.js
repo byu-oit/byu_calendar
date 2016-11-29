@@ -142,7 +142,7 @@ jQuery( document ).ready(function( $ ) {
         var wid = date.getDay();                    
         var weekday = weekdays[wid];
 
-        $('head').append('<style>.form-item-field-event-date-und-0-all-day:before{content:"' + weekday + '"; text-transform: uppercase; color: #767676; font-weight: bold; padding: 0px 20px 0px 5px; }</style>');
+        $('head').append('<style>.form-item-field-event-date-und-0-all-day:before{content:"' + weekday + '"; text-transform: uppercase; color: #767676; font-weight: bold; padding: 0px 5px 0px 5px; }</style>');
     }
         
 
