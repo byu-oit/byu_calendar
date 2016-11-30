@@ -505,8 +505,15 @@ input[type="checkbox"]:checked ~ label:after {
 
 @media screen and (max-width: $mobile_max_width) {
 	// fix admin menu?
+	// for mobile when admin menu shows, adjust page down, if menu is sticky, comment out if not
+	body.admin-menu, 
+	body.admin-menu.adminimal-menu.adminimal-backend, 
+	body.admin-menu.adminimal-menu.adminimal-frontend {
+		margin-top: 45px !important;
+	}
 	.slicknav_menu {
 		position: fixed; // maybe keep this	
+		top: 0px;
 		width: 100%;
     	z-index: 100;
 	}
