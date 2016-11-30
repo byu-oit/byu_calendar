@@ -3918,9 +3918,9 @@ section.block-social-share-social-share {
 	labels {
 		display: none;
 	}
-	button.secondary,
-	button#edit-submit--2,
-	button#edit-submit--3 {
+	button.secondary {
+//	button#edit-submit--2,
+//	button#edit-submit--3 {
 		background: $gray !important;
 		color: $gray !important;
 		font-family: FontAwesome;
@@ -3929,8 +3929,9 @@ section.block-social-share-social-share {
 		border: 1px solid $gray;
     	border-radius: 0px;
 	}
-	button#edit-submit--2:after,
-	button#edit-submit--3:after {
+	button.secondary:after {
+//	button#edit-submit--2:after,
+//	button#edit-submit--3:after {
 		content: "\f002";
 		font-family: FontAwesome;
 		font-size: 16px;
