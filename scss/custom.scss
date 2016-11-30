@@ -3226,10 +3226,10 @@ div#edit-field-full-name {
            @include display-flex();
             flex-flow: column wrap;
             width: 400px;
-            height: 104px; // was 96 with checkboxes w 6 options
+            height: 110px;  // firefox needs 5-10px more than chrome
     }
     #edit-field-event-type-und .form-item {
-        width: 200px;
+        width: 210px; // ff needs 10 px more than chrome
         margin: 5px 0px;
     }
     #edit-field-internal-category .description {
