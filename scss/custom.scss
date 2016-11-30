@@ -3407,7 +3407,14 @@ span.views-label.views-label-addtoany-link {
         margin: 10px 10px 10px 0px;
     }
     .views-field.views-field-field-event-date {
-    padding: 0px 0px 0px;
+    	padding: 3px 0px 0px;
+		min-height: 14px;
+	}
+	// very little spacing between lines for mobile event
+	.views-field.views-field-field-event-location {
+//		margin-top: -5px;
+//		margin-bottom: -3px;
+	}
 }
 
 
