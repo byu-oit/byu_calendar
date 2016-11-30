@@ -507,6 +507,8 @@ input[type="checkbox"]:checked ~ label:after {
 	// fix admin menu?
 	.slicknav_menu {
 		position: fixed; // maybe keep this	
+		width: 100%;
+    	z-index: 100;
 	}
 	
     .top-bar {
@@ -514,6 +516,7 @@ input[type="checkbox"]:checked ~ label:after {
         height: 45px;
         line-height: 45px;
         position: fixed;
+		top: 45px;
         width: 100%;
         background: $navy;
         margin-bottom: 0;
@@ -3263,6 +3266,10 @@ section.block.block-views.block-views-event-page-blocks-block {
 .mobile-first-event span.views-label {
     font-size: 14px;
 }
+// tickets label smaller
+.mobile-first-event span.views-label.views-label-views-conditional-1 {
+    font-size: 13px;
+}
 //.node-type-event .views-label.views-label-field-free.-Free,
 .node-type-event  {
     .views-field {
@@ -3399,7 +3406,8 @@ span.views-label.views-label-addtoany-link {
         width: 140px;
         margin: 10px 10px 10px 0px;
     }
-    
+    .views-field.views-field-field-event-date {
+    padding: 0px 0px 0px;
 }
 
 
