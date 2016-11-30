@@ -62,7 +62,8 @@ foreach ($day_names as $key => $value) {
      
   
     <?php endfor; ?>  
-      
+    
+	   <?php if($numItems > 0) :?>
     <?php foreach ($items as $time): ?>
     <tr class="not-all-day and-all-day">
       
@@ -189,7 +190,7 @@ foreach ($day_names as $key => $value) {
                     <?php if(empty($all_day[$j][0]['entry'])): ?>
                     <!-- no events -->
                     <div class="empty-text">
-                        <p>There are no events scheduled on this day.</p>
+                        <p>No events.</p>
                     </div>
                     <?php endif; ?>
                 <?php endif; ?>
@@ -197,6 +198,8 @@ foreach ($day_names as $key => $value) {
    
     </td>
       <?php endforeach; ?>   
+		
+		
       <?php for ($i = $curpos; $i < 7; $i++): ?>
         <td class="calendar-agenda-items single-day">
           <div class="calendar">
@@ -206,6 +209,16 @@ foreach ($day_names as $key => $value) {
       <?php endfor; ?>   
     </tr>
    <?php endforeach; ?>   
+	
+<?php else: ?>
+      <!--  no week results -->
+		<div class="empty-text">
+			<p>No events.</p>
+		</div>
+	  
+<?php endif; ?>	  
+	  
+	  
   </tbody>
 </table>
 </div></div>
