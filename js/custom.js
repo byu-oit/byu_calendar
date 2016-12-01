@@ -125,7 +125,7 @@ jQuery( document ).ready(function( $ ) {
 	d = pad(d);
 	var dayNow = d.toString();
 
-	var m = date.getMonth();
+	var m = date.getMonth()+1;
 	// add leading zero to month
 	m = pad(m);
 	monthNow = m.toString();
@@ -140,9 +140,9 @@ jQuery( document ).ready(function( $ ) {
 	// checking if TODAY / WEEK / MONTH in menu are actually today / this week / this month
     if (( $("body").hasClass("large-screen") ) && ( $("body").hasClass("page-calendar-day")) ) {
 			var navDayId = $(".calendar-nav-item.current-day").attr( "id");
-		//console.log(navDayId);
-		//console.log(' and ');
-		//console.log(realDate);
+		console.log(navDayId);
+		console.log(' and ');
+		console.log(realDate);
 		if(navDayId != realDate){
 			// remove active class from menu link
 			$('#main-menu li.active').removeClass('active');
