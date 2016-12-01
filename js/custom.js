@@ -110,29 +110,31 @@ jQuery( document ).ready(function( $ ) {
         });
      }
 
+	// getting today's date info
+	function pad(n) {
+		return (n < 10) ? ("0" + n) : n;
+	}
+	var dash = '-';
+	var date = new Date();
+	var y = date.getFullYear();
+
+	var year = y.toString;
+	console.log(year);
+	var d = date.getDate();
+	// add leading zero to day
+	d = pad(d);
+	day = d.toString;
+
+	var m = date.getMonth() +1;
+	// add leading zero to month
+	m = pad(m);
+	month = m.toString;
+
+	
 	// checking if TODAY / WEEK / MONTH in menu are actually today / this week / this month
     //for Calendar mobile year view
     if (( $("body").hasClass("large-screen") ) && ( $("body").hasClass("page-calendar-day")) ) {
-		function pad(n) {
-			return (n < 10) ? ("0" + n) : n;
-		}
-		var dash = '-';
-		var date = new Date();
-		var y = date.getFullYear();
-		console.log(year);
-		var year = y.toString;
-		console.log(year);
-		var d = date.getDate();
-		// add leading zero to day
-		d = pad(d);
-		day = d.toString;
-		
-		var m = date.getMonth() +1;
-		// add leading zero to month
-		m = pad(m);
-		month = m.toString;
-				
-		
+
 		var realDate = year.concat(dash,month,dash,day);
 //		var realDate = year.concat(dash);
 		
