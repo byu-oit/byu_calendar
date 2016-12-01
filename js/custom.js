@@ -127,7 +127,7 @@ jQuery( document ).ready(function( $ ) {
 		// add leading zero to month
 		month = pad(month);
 		
-		var realDate = year.concat('-',month,'-', day);
+		var realDate = year.concat(month, day);
 		console.log(realDate);
 		// check if calendar-nav-item has class current-day, (also add day format to this link for day, etc), check if  matches today
 		if ($( ".calendar-nav-item.current-day" ).hasClass( "current-day" ) ){
