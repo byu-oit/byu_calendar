@@ -133,16 +133,24 @@ jQuery( document ).ready(function( $ ) {
 	var realDate = yearNow.concat(dash,monthNow,dash,dayNow);
 	// calculate current week...
 
-	var realWeek = yearNow.concat(dash,monthNow,dash,dayNow);
+	var startString = yearNow.concat("-01-01");
+	var yearStartDate = Date(startString);
+	console.log(yearStartDate);
+	var yearStartWeekday = yearStartDate.getDay();
+	console.log(yearStartWeekday); // is a 0-6
+
+
+
+	//var realWeek = yearNow.concat(dash,monthNow,dash,dayNow);
 	var realMonth = yearNow.concat(dash,monthNow);
 
 	
 	// checking if TODAY / WEEK / MONTH in menu are actually today / this week / this month
     if (( $("body").hasClass("large-screen") ) && ( $("body").hasClass("page-calendar-day")) ) {
 			var navDayId = $(".calendar-nav-item.current-day").attr( "id");
-		console.log(navDayId);
-		console.log(' and ');
-		console.log(realDate);
+		//console.log(navDayId);
+		//console.log(' and ');
+		//console.log(realDate);
 		if(navDayId != realDate){
 			// remove active class from menu link
 			$('#main-menu li.active').removeClass('active');
@@ -152,31 +160,34 @@ jQuery( document ).ready(function( $ ) {
 	}
 	if (( $("body").hasClass("large-screen") ) && ( $("body").hasClass("page-calendar-week")) ) {
 		// check if calendar-nav-item has class current-day, (also add day format to this link for day, etc), check if  matches today
-		if ($( ".calendar-nav-item.current-day" ).hasClass( "current-day" ) ){
-			var navWeekId = $(".calendar-nav-item.current-day").attr( "id");
-			if(navDayId != realDate){
-				// remove active class from menu link
+
+		var pathArr = window.location.pathname.split('/');
+		var pathSize = pathArr.length -1;
+		var last =pathArr[pathSize];
+		console.log(last);
+		if (last != 'week'){
+			// last is the date with week id, get last 2 digits for week id
+			if(last != realWeek) {
 				$('#main-menu li.active').removeClass('active');
 				$('#main-menu a.active').removeClass('active');
-				//console.log('isnt today');
 			}
 		}
+
 	}
 	if (( $("body").hasClass("large-screen") ) && ( $("body").hasClass("page-calendar-month")) ) {
 		// check if calendar-nav-item has class current-day, (also add day format to this link for day, etc), check if  matches today
 		var navMonthId = $(".calendar-nav-item.current-month").attr( "id");
-		console.log(navMonthId);
-		console.log(' and ');
-		console.log(realMonth);
+		//console.log(navMonthId);
+		//console.log(' and ');
+		//console.log(realMonth);
 		if(navMonthId != realMonth){
 			// remove active class from menu link
 			$('#main-menu li.active').removeClass('active');
 			$('#main-menu a.active').removeClass('active');
-			//console.log('isnt today');
 		}
 	}
-	
-	
+	//----- end checking active classes
+
     // editing or adding event
     
     function calcWeekday() {
