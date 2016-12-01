@@ -125,7 +125,7 @@ jQuery( document ).ready(function( $ ) {
 	d = pad(d);
 	var dayNow = d.toString();
 
-	var m = date.getMonth() +1;
+	var m = date.getMonth();
 	// add leading zero to month
 	m = pad(m);
 	monthNow = m.toString();
