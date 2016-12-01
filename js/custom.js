@@ -135,7 +135,7 @@ jQuery( document ).ready(function( $ ) {
 
 	var startString = yearNow + "-01-01";
 	var yearStartDate = new Date(startString);
-	console.log("year starts: " . yearStartDate);
+	console.log("year starts: " + yearStartDate);
 	var yearStartWeekday = yearStartDate.getDay();
 	console.log('year starts on weekday: ');
 	console.log(yearStartWeekday); // is a 0-6
