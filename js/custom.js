@@ -116,13 +116,14 @@ jQuery( document ).ready(function( $ ) {
 		function pad(n) {
 			return (n < 10) ? ("0" + n) : n;
 		}
-		var year = getFullYear();
-		var day = getDate();
+		var date = new Date();
+		var year = date.getFullYear();
+		var day = date.getDate();
 		// add leading zero to day
 		day = pad(day);
 		
 		
-		var month = getMonth() +1;
+		var month = date.getMonth() +1;
 		// add leading zero to month
 		month = pad(month);
 		
