@@ -133,10 +133,11 @@ jQuery( document ).ready(function( $ ) {
 	var realDate = yearNow.concat(dash,monthNow,dash,dayNow);
 	// calculate current week...
 
-	var startString = yearNow.concat("-01-01");
-	var yearStartDate = Date(startString);
-	console.log(yearStartDate);
+	var startString = yearNow + "-01-01";
+	var yearStartDate = new Date(startString);
+	console.log("year starts: " . yearStartDate);
 	var yearStartWeekday = yearStartDate.getDay();
+	console.log('year starts on weekday: ');
 	console.log(yearStartWeekday); // is a 0-6
 
 
