@@ -129,6 +129,12 @@ jQuery( document ).ready(function( $ ) {
 		month = pad(month);
 		month = month.toString;
 		
+		var str1 = "Hello ";
+		var str2 = "world!";
+		var res = str1.concat(str2);
+		console.log(res);
+		
+		
 //		var realDate = year.concat(dash,month,dash,day);
 		var realDate = year.concat(dash);
 		
