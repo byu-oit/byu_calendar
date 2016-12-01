@@ -116,6 +116,7 @@ jQuery( document ).ready(function( $ ) {
 		function pad(n) {
 			return (n < 10) ? ("0" + n) : n;
 		}
+		var dash = '-';
 		var date = new Date();
 		var year = (date.getFullYear()).toString;
 		var day = date.getDate();
@@ -128,7 +129,7 @@ jQuery( document ).ready(function( $ ) {
 		month = pad(month);
 		month = month.toString;
 		
-		var realDate = year.concat('-',month,'-', day);
+		var realDate = year.concat(dash,month,dash,day);
 		
 		console.log(realDate);
 		// check if calendar-nav-item has class current-day, (also add day format to this link for day, etc), check if  matches today
