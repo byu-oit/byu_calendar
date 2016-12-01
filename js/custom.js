@@ -75,7 +75,7 @@ jQuery( document ).ready(function( $ ) {
         
     }  // - end mobile year view
     
-    //  --- large screen week view --- 
+    //  --- large screen left side filters --- 
      if (( $("body").hasClass("large-screen") ) && ( $("body").hasClass("page-calendar")) ) {
         $(document).scroll(function(){ // bind window scroll event
              if( $('#calendar-view-links').is_on_screen() ) {
@@ -110,8 +110,17 @@ jQuery( document ).ready(function( $ ) {
         });
      }
 
-
-    
+	// checking if TODAY / WEEK / MONTH in menu are actually today / this week / this month
+    //for Calendar mobile year view
+    if (( $("body").hasClass("large-screen") ) && ( $("body").hasClass("page-calendar-day")) ) {
+		
+		// check if calendar-nav-item has class current-day, (also add day format to this link for day, etc), check if  matches today
+		// remove gray styling if not today
+	
+	}
+	
+	
+	
     // editing or adding event
     
     function calcWeekday() {
