@@ -141,7 +141,8 @@ jQuery( document ).ready(function( $ ) {
 		console.log(realDate);
 		// check if calendar-nav-item has class current-day, (also add day format to this link for day, etc), check if  matches today
 		if ($( ".calendar-nav-item.current-day" ).hasClass( "current-day" ) ){
-			var id = $(this).getAttribute("id");
+			console.log($(this));
+			var navDayId = $(this).attr( "id");
 			if(id != realDate){
 				// remove active class from menu link
 				$('#main-menu li.active').removeClass('active');
