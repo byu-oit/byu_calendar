@@ -118,24 +118,24 @@ jQuery( document ).ready(function( $ ) {
 	var date = new Date();
 	var y = date.getFullYear();
 
-	var year = y.toString;
-	console.log(year);
+	var yearNow = y.toString;
+	console.log(yearNow);
 	var d = date.getDate();
 	// add leading zero to day
 	d = pad(d);
-	day = d.toString;
+	var dayNow = d.toString;
 
 	var m = date.getMonth() +1;
 	// add leading zero to month
 	m = pad(m);
-	month = m.toString;
+	monthNow = m.toString;
 
 	
 	// checking if TODAY / WEEK / MONTH in menu are actually today / this week / this month
     //for Calendar mobile year view
     if (( $("body").hasClass("large-screen") ) && ( $("body").hasClass("page-calendar-day")) ) {
 
-		var realDate = year.concat(dash,month,dash,day);
+		var realDate = yearNow.concat(dash,monthNow,dash,dayNow);
 //		var realDate = year.concat(dash);
 		
 		console.log(realDate);
