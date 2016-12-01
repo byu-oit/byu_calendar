@@ -140,15 +140,18 @@ jQuery( document ).ready(function( $ ) {
 	// checking if TODAY / WEEK / MONTH in menu are actually today / this week / this month
     if (( $("body").hasClass("large-screen") ) && ( $("body").hasClass("page-calendar-day")) ) {
 		// check if calendar-nav-item has class current-day, (also add day format to this link for day, etc), check if  matches today
-		if ($( ".calendar-nav-item.current-day" ).hasClass( "current-day" ) ){
+		//if ($( ".calendar-nav-item.current-day" ).hasClass( "current-day" ) ){
 			var navDayId = $(".calendar-nav-item.current-day").attr( "id");
+		console.log(navDayId);
+		console.log(' and ');
+		console.log(realDate);
 			if(navDayId != realDate){
 				// remove active class from menu link
 				$('#main-menu li.active').removeClass('active');
 				$('#main-menu a.active').removeClass('active');
 				//console.log('isnt today');
 			}
-		}
+		//}
 	}
 	if (( $("body").hasClass("large-screen") ) && ( $("body").hasClass("page-calendar-week")) ) {
 		// check if calendar-nav-item has class current-day, (also add day format to this link for day, etc), check if  matches today
