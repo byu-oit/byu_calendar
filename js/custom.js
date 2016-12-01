@@ -118,7 +118,8 @@ jQuery( document ).ready(function( $ ) {
 		}
 		var dash = '-';
 		var date = new Date();
-		var year = (date.getFullYear()).toString;
+		var year = date.getFullYear();
+		year = year.toString;
 		var day = date.getDate();
 		// add leading zero to day
 		day = pad(day);
