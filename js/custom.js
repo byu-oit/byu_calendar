@@ -143,7 +143,7 @@ jQuery( document ).ready(function( $ ) {
 		if ($( ".calendar-nav-item.current-day" ).hasClass( "current-day" ) ){
 			console.log($(this));
 			var navDayId = $(this).attr( "id");
-			if(id != realDate){
+			if(navDayId != realDate){
 				// remove active class from menu link
 				$('#main-menu li.active').removeClass('active');
 				$('#main-menu a.active').removeClass('active');
