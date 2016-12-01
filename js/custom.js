@@ -116,6 +116,7 @@ jQuery( document ).ready(function( $ ) {
 	}
 	var dash = '-';
 	var date = new Date();
+	var timeNow = date.getTime();
 	var y = date.getFullYear();
 
 	var yearNow = y.toString();
@@ -131,14 +132,7 @@ jQuery( document ).ready(function( $ ) {
 	monthNow = m.toString();
 
 	var realDate = yearNow.concat(dash,monthNow,dash,dayNow);
-	// calculate current week...
 
-	var startString = "January 1 " + yearNow;
-	var yearStartDate = new Date(startString);
-	console.log("year starts: " + yearStartDate);
-	var yearStartWeekday = yearStartDate.getDay();
-	console.log('year starts on weekday: ');
-	console.log(yearStartWeekday); // is a 0-6
 
 
 
@@ -161,6 +155,22 @@ jQuery( document ).ready(function( $ ) {
 	}
 	if (( $("body").hasClass("large-screen") ) && ( $("body").hasClass("page-calendar-week")) ) {
 		// check if calendar-nav-item has class current-day, (also add day format to this link for day, etc), check if  matches today
+
+		// calculate current week...
+		var startString = "January 1 " + yearNow;
+		var yearStartDate = new Date(startString);
+		var yearStartTime = yearStartDate.getTime();
+		console.log("year starts: " + yearStartDate);
+		var yearStartWeekday = yearStartDate.getDay();
+		console.log('year starts on weekday: ');
+		console.log(yearStartWeekday); // is a 0-6
+		var weekStartJanDay = 7 - yearStartWeekday;
+		var week2StartTime = yearStartTime + (weekStartJanDay*24*3600);
+		var weekNow = 2+ Math.floor((timeNow - week2StartTime)/(7 * 24 * 3600));
+		var realWeek = yearNow + "-W" + weekNow;
+		console.log(realWeek);
+
+
 
 		var pathArr = window.location.pathname.split('/');
 		var pathSize = pathArr.length -1;
