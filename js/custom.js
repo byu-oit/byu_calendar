@@ -117,17 +117,19 @@ jQuery( document ).ready(function( $ ) {
 			return (n < 10) ? ("0" + n) : n;
 		}
 		var date = new Date();
-		var year = date.getFullYear();
+		var year = (date.getFullYear()).toString;
 		var day = date.getDate();
 		// add leading zero to day
 		day = pad(day);
-		
+		day = day.toString;
 		
 		var month = date.getMonth() +1;
 		// add leading zero to month
 		month = pad(month);
+		month = month.toString;
 		
-		var realDate = year.concat(month, day);
+		var realDate = year.concat('-',month,'-', day);
+		
 		console.log(realDate);
 		// check if calendar-nav-item has class current-day, (also add day format to this link for day, etc), check if  matches today
 		if ($( ".calendar-nav-item.current-day" ).hasClass( "current-day" ) ){
