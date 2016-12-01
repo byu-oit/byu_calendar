@@ -118,17 +118,17 @@ jQuery( document ).ready(function( $ ) {
 	var date = new Date();
 	var y = date.getFullYear();
 
-	var yearNow = y.toString;
+	var yearNow = y.toString();
 	console.log(yearNow);
 	var d = date.getDate();
 	// add leading zero to day
 	d = pad(d);
-	var dayNow = d.toString;
+	var dayNow = d.toString();
 
 	var m = date.getMonth() +1;
 	// add leading zero to month
 	m = pad(m);
-	monthNow = m.toString;
+	monthNow = m.toString();
 
 	
 	// checking if TODAY / WEEK / MONTH in menu are actually today / this week / this month
