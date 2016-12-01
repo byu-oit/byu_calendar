@@ -113,8 +113,32 @@ jQuery( document ).ready(function( $ ) {
 	// checking if TODAY / WEEK / MONTH in menu are actually today / this week / this month
     //for Calendar mobile year view
     if (( $("body").hasClass("large-screen") ) && ( $("body").hasClass("page-calendar-day")) ) {
+		function pad(n) {
+			return (n < 10) ? ("0" + n) : n;
+		}
+		var year = getFullYear();
+		var day = getDate();
+		// add leading zero to day
+		day = pad(day);
 		
+		
+		var month = getMonth() +1;
+		// add leading zero to month
+		month = pad(month);
+		
+		var realDate = year.concat('-',month,'-', day);
+		console.log(realDate);
 		// check if calendar-nav-item has class current-day, (also add day format to this link for day, etc), check if  matches today
+		if ($( ".calendar-nav-item.current-day" ).hasClass( "current-day" ) ){
+			var id = $(this).getAttribute("id");
+			if(id != realDate){
+				// remove active class from menu link
+				$('#main-menu li.active').removeClass('active');
+				$('#main-menu a.active').removeClass('active');
+				console.log('isnt today');
+			}
+			
+		}
 		// remove gray styling if not today
 	
 	}

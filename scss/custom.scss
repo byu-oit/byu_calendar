@@ -965,27 +965,7 @@ main #main-content-section.scrolled {
     .calendar-nav-item:active {
         background: $lightestblue;
     }
-//    #day-1 {
-//        background: #D9E0E7;
-//    }
-//    #day-2 {
-//        background: #CCD5DF;
-//    }
-//    #day-3 {
-//        background: #ABBACA;
-//    }
-//    #day-4 {
-//        background: #8CA1B6;
-//    }
-//    #day-5 {
-//        background: #99ABBE;
-//    }
-//    #day-6 {
-//        background: #A6B6C7;
-//    }
-//    #day-7 {
-//        background: #B2C0CE;
-//    }
+
 }
 
 
@@ -1514,9 +1494,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         .calendar-nav-section {
             width: 100px;
             font-size: 33px;
-            #day-1, #day-2, #day-3, #day-4, #day-5, #day-6, #day-7 {
-//                background: $medblue;
-            }
+
         }
         .safari .calendar-nav-section {
             display: inline-block;
