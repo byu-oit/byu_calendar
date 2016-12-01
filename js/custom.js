@@ -118,28 +118,23 @@ jQuery( document ).ready(function( $ ) {
 		}
 		var dash = '-';
 		var date = new Date();
-		var year = date.getFullYear();
+		var y = date.getFullYear();
 		console.log(year);
-		year = year.toString;
+		var year = y.toString;
 		console.log(year);
-		var day = date.getDate();
+		var d = date.getDate();
 		// add leading zero to day
-		day = pad(day);
-		day = day.toString;
+		d = pad(d);
+		day = d.toString;
 		
-		var month = date.getMonth() +1;
+		var m = date.getMonth() +1;
 		// add leading zero to month
-		month = pad(month);
-		month = month.toString;
+		m = pad(m);
+		month = m.toString;
+				
 		
-		var str1 = "Hello ";
-		var str2 = "world!";
-		var res = str1.concat(str2);
-		console.log(res);
-		
-		
-//		var realDate = year.concat(dash,month,dash,day);
-		var realDate = year.concat(dash);
+		var realDate = year.concat(dash,month,dash,day);
+//		var realDate = year.concat(dash);
 		
 		console.log(realDate);
 		// check if calendar-nav-item has class current-day, (also add day format to this link for day, etc), check if  matches today
