@@ -130,33 +130,50 @@ jQuery( document ).ready(function( $ ) {
 	m = pad(m);
 	monthNow = m.toString();
 
+	var realDate = yearNow.concat(dash,monthNow,dash,dayNow);
+	// calculate current week...
+
+	var realWeek = yearNow.concat(dash,monthNow,dash,dayNow);
+	var realMonth = yearNow.concat(dash,monthNow);
+
 	
 	// checking if TODAY / WEEK / MONTH in menu are actually today / this week / this month
-    //for Calendar mobile year view
     if (( $("body").hasClass("large-screen") ) && ( $("body").hasClass("page-calendar-day")) ) {
-
-		var realDate = yearNow.concat(dash,monthNow,dash,dayNow);
-//		var realDate = year.concat(dash);
-		
-		console.log(realDate);
 		// check if calendar-nav-item has class current-day, (also add day format to this link for day, etc), check if  matches today
-		if ($( ".calendar-nav-item.current-day" ).hasClass( "current-day" ) ){
-			//console.log($(this));
+		//if ($( ".calendar-nav-item.current-day" ).hasClass( "current-day" ) ){
 			var navDayId = $(".calendar-nav-item.current-day").attr( "id");
-			console.log(navDayId);
-			console.log(realDate);
 			if(navDayId != realDate){
 				// remove active class from menu link
 				$('#main-menu li.active').removeClass('active');
 				$('#main-menu a.active').removeClass('active');
-				console.log('isnt today');
+				//console.log('isnt today');
 			}
-			
-		}
-		// remove gray styling if not today
-	
+		//}
 	}
-	
+	if (( $("body").hasClass("large-screen") ) && ( $("body").hasClass("page-calendar-week")) ) {
+		// check if calendar-nav-item has class current-day, (also add day format to this link for day, etc), check if  matches today
+		if ($( ".calendar-nav-item.current-day" ).hasClass( "current-day" ) ){
+			var navWeekId = $(".calendar-nav-item.current-day").attr( "id");
+			if(navDayId != realDate){
+				// remove active class from menu link
+				$('#main-menu li.active').removeClass('active');
+				$('#main-menu a.active').removeClass('active');
+				//console.log('isnt today');
+			}
+		}
+	}
+	if (( $("body").hasClass("large-screen") ) && ( $("body").hasClass("page-calendar-month")) ) {
+		// check if calendar-nav-item has class current-day, (also add day format to this link for day, etc), check if  matches today
+		if ($( ".calendar-nav-item.current-month" ).hasClass( "current-day" ) ){
+			var navDayId = $(".calendar-nav-item.current-day").attr( "id");
+			if(navDayId != realDate){
+				// remove active class from menu link
+				$('#main-menu li.active').removeClass('active');
+				$('#main-menu a.active').removeClass('active');
+				//console.log('isnt today');
+			}
+		}
+	}
 	
 	
     // editing or adding event
