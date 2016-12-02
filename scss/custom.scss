@@ -753,7 +753,7 @@ main #main-content-section.scrolled {
     }
 }
 
-@media (min-width: $large_screen_start_width) {
+@media screen and (min-width: $large_screen_start_width) {
     div#page-container {
         padding: 30px 0px;
         max-width: 1024px;
@@ -776,28 +776,28 @@ main #main-content-section.scrolled {
     @media screen and (min-width: 768px) {
         left: 0px;
     }
-    @media (min-width: $large_screen_start_width) {
+    @media screen and (min-width: $large_screen_start_width) {
         position: relative;
         left: 5%;
     }
-    @media (min-width: 1400px) {
+    @media screen and (min-width: 1400px) {
         left: 17%;
     }
-    @media (min-width: 1500px) {
+    @media screen and (min-width: 1500px) {
         left: 17%;
     }
-    @media (min-width: 1600px) {
+    @media screen and (min-width: 1600px) {
         left: 19%;
     }
-    @media (min-width: 1800px) {
+    @media screen and (min-width: 1800px) {
         left: 24%;
     }
-    @media (min-width: 2000px) {
+    @media screen and (min-width: 2000px) {
         left: 26%;
     }
 }
 .pull-9.thin-left-sidebar {
-    @media (min-width: $large_screen_start_width) {
+    @media screen and (min-width: $large_screen_start_width) {
         position: relative;
         left: 0%;
         padding-left: 3%;
@@ -805,7 +805,7 @@ main #main-content-section.scrolled {
 }
 
 .push-3.main.columns {
-    @media (min-width: $large_screen_start_width) {
+    @media screen and (min-width: $large_screen_start_width) {
         //re-setting this after override to cover 768 - 1023px
         position: relative;
         float: left;
@@ -813,7 +813,7 @@ main #main-content-section.scrolled {
 //        padding-right: 30px;
         padding-right: 0px
     }
-    @media (min-width: 1400px) {
+    @media screen and (min-width: 1400px) {
         //re-setting this after override to cover 768 - 1023px
         position: relative;
         left: 24%; // was 25%
@@ -947,7 +947,7 @@ main #main-content-section.scrolled {
         margin-bottom: -2px;
         @include sidebar-inner-shadowbox();
         .day-navigation-day-items {
-            @media (max-width: $mobile_max_width) {
+            @media screen and (max-width: $mobile_max_width) {
                 font-size: 19px;
             }
             
@@ -996,7 +996,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 	// idk why we need this, both should be blue links
 }
 
-@media (max-width: $mobile_max_width) {
+@media screen and (max-width: $mobile_max_width) {
 
 }
 /* -------- exposed filters etc --------------- */
@@ -2329,7 +2329,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     flex-wrap: wrap;
 }
 
-@media (min-width: $large_screen_start_width) {
+@media screen and (min-width: $large_screen_start_width) {
     .month-container {
         width: 250px;
         display: block;
