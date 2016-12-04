@@ -1507,16 +1507,19 @@ div#calendar-nav-pager .calendar-nav-pager-back {
                 font-size: 40px;
             }
         }
-		div#calendar-nav-bottom-pager,
-        div#calendar-nav-pager {
+		#calendar-nav-bottom-pager,
+        #calendar-nav-pager {
             margin: 0px;
             width: 70px;
             @include display-flex();
             justify-content: flex-end;
-        
         }
-		div#calendar-nav-bottom-pager div,
-        div#calendar-nav-pager div {
+		#calendar-nav-bottom-pager {
+			width: 100%;
+		}
+
+		#calendar-nav-bottom-pager div,
+        #calendar-nav-pager div {
             border: 1px $medgray solid;
             padding: 5px;
             margin: 3px;
@@ -1527,6 +1530,10 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             display: inline-block;
             text-align: center;
         }
+		#calendar-nav-bottom-pager div:hover,
+        #calendar-nav-pager div:hover {
+			background: $xlightgray;	
+		}
 
         /* -- end large screen general calendar nav blocks --- */
         /* main page large screen general calendar body / page blocks:  */
