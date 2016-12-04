@@ -1507,7 +1507,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
                 font-size: 40px;
             }
         }
-
+		div#calendar-nav-bottom-pager,
         div#calendar-nav-pager {
             margin: 0px;
             width: 70px;
@@ -1515,6 +1515,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             justify-content: flex-end;
         
         }
+		div#calendar-nav-bottom-pager div,
         div#calendar-nav-pager div {
             border: 1px $medgray solid;
             padding: 5px;
