@@ -1169,6 +1169,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         position: relative;
         top: 3px;
         float: left;
+		border-bottom: 1px solid $lightgray;
     }
     .views-field.views-field-title {
         font-size: 15px;
