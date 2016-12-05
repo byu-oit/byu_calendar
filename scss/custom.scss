@@ -147,11 +147,13 @@ h3, h3 a {
 p, span, div {
     font-family: "Gotham A","Gotham B";
 }
-
+button, html, input, select, textarea { // overriding angular-material
+    font-family: "Gotham A","Gotham B";
+}
 h1, h2, h3, h4,
 .weekview-day-header, .list-header, .list-header div,
 .day-navigation-day-items, .weekview-day-header .day-header-day {
-    font-family: "Sentinel SSm A","Sentinel SSm B";
+    font-family: "Sentinel A","Sentinel B";
 }
 h1 {
     color: $navy;
@@ -565,7 +567,7 @@ input[type="checkbox"]:checked ~ label:after {
         background: #fff;
         color: $navy;
         float: right;
-        font-family: "Sentinel SSm A", "Sentinel SSm B";
+        font-family: "Sentinel A", "Sentinel B";
         font-size: 16px;
     }
     ul#secondary-menu li a,
@@ -2044,7 +2046,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             padding: 10px 4px 15px;
             font-size: 30px;
             color: #fff;
-            font-family: "Sentinel SSm A", "Sentinel SSm B";
+            font-family: "Sentinel A", "Sentinel B";
             font-weight: bold;
         }
     }
@@ -2426,7 +2428,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 	}
 	@media screen and (min-width: $large_screen_start_width){
 		font-size: 28px;
-		font-family: "Sentinel SSm A", "Sentinel SSm B";
+		font-family: "Sentinel A", "Sentinel B";
 		margin-top: -30px;
 		line-height: 33px;
 	}
@@ -2462,7 +2464,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     }
     .day {
         font-size: 40px;
-        font-family: "Sentinel SSm A", "Sentinel SSm B";
+        font-family: "Sentinel A", "Sentinel B";
         padding: 8px 0px;
         font-weight: bold;
     }
@@ -2913,7 +2915,7 @@ textarea#edit-body-und-0-value {
 
 fieldset.group-pricing legend {
     display: block;
-    font-family: "Sentinel SSm A", "Sentinel SSm B";
+    font-family: "Sentinel A", "Sentinel B";
     text-transform: uppercase;
     font-size: 13px;
 //    padding: 0px 5px;
@@ -3168,7 +3170,7 @@ div#edit-field-full-name {
     }
     .page-node-add, .page-node-edit {
         h1#page-title {
-            font-family: "Sentinel SSm A", "Sentinel SSm B";
+            font-family: "Sentinel A", "Sentinel B";
             font-size: 28px;
             color: $navy;
         }
