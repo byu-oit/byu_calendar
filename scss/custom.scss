@@ -1626,6 +1626,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
                 }
                 @include display-flex();
                 justify-content: flex-start;
+				flex-wrap: wrap;
                 .views-field {
                     //                    width: 100%!important;
                 }
