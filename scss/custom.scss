@@ -1243,6 +1243,14 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 .view-empty p {
     padding: 15px;
 }
+
+.mobile-first.list-view {
+	.views-row .panel-panel.panel-col-first {
+		width: 85px;
+	}
+}
+
+
 /* ---------------- Calendar displays - general -  large screen ------------------- */
 
 @media screen and (min-width:$large_screen_start_width) {
