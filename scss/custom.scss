@@ -148,7 +148,7 @@ p, span, div {
     font-family: "Gotham A","Gotham B";
 }
 button, html, input, select, textarea { // overriding angular-material
-    font-family: "Gotham A","Gotham B";
+    font-family: "Gotham A","Gotham B"!important;
 }
 h1, h2, h3, h4,
 .weekview-day-header, .list-header, .list-header div,

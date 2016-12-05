@@ -177,7 +177,9 @@ foreach ($day_names as $key => $value) {
                     <?php 
                         //print "current pos is " . $curpos; 
                         $j = $curpos -1; //convert id's to 0 - 6 for weekdays
-                        print_r($all_day[$j][0]['entry']);
+//                        print_r($all_day[$j][0]['entry']);
+                        print_r($all_day[$j]);
+					
                     ?>
                 </div>  
                 <?php if(!empty($time['values'][$column])) :?>
