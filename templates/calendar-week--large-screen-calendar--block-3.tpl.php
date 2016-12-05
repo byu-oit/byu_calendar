@@ -177,8 +177,12 @@ foreach ($day_names as $key => $value) {
                     <?php 
                         //print "current pos is " . $curpos; 
                         $j = $curpos -1; //convert id's to 0 - 6 for weekdays
+					$all_day_items = $all_day[$j];
+					for ($a = 0; $a < sizeof($all_day_items); $a++) {
+						print_r($all_day[$j][$a]['entry']);
+					}
 //                        print_r($all_day[$j][0]['entry']);
-                        print_r($all_day);
+//                        print_r($all_day);
 					
                     ?>
                 </div>  
@@ -192,7 +196,8 @@ foreach ($day_names as $key => $value) {
                     <?php endforeach; ?>
                 <?php else: ?>
                     <?php if(empty($all_day[$j][0]['entry'])): ?>
-                    <!-- no events -->
+               
+				<!-- no events -->
                     <div class="empty-text">
                         <p>No events.</p>
                     </div>
