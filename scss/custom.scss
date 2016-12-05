@@ -3412,14 +3412,18 @@ span.views-label.views-label-addtoany-link {
     @include display-flex();
     .medgray-button {
         margin: 10px 0px;
+		width: 130px;
     }
 }
-.mobile-first.node-type-event {
+.node-type-event {
 //     @include display-flex();
     .medgray-button {
         width: 140px;
         margin-top: 10px;
     }
+}
+.mobile-first.node-type-event {
+//     @include display-flex();
     .royal-button {
         width: 140px;
         margin: 10px 10px 10px 0px;
