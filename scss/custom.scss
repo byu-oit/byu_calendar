@@ -145,13 +145,13 @@ h3, h3 a {
     color: $navy;
 }
 p, span, div {
-    font-family: "Gotham SSm A","Gotham SSm B";
+    font-family: "Gotham A","Gotham B",;
 }
 
 h1, h2, h3, h4,
 .weekview-day-header, .list-header, .list-header div,
 .day-navigation-day-items, .weekview-day-header .day-header-day {
-    font-family: "Sentinel SSm A","Sentinel SSm B";
+    font-family: "Sentinel A","Sentinel B";
 }
 h1 {
     color: $navy;
@@ -523,7 +523,6 @@ input[type="checkbox"]:checked ~ label:after {
         height: 45px;
         line-height: 45px;
         position: fixed;
-		top: 45px;
         width: 100%;
         background: $navy;
         margin-bottom: 0;
@@ -535,6 +534,9 @@ input[type="checkbox"]:checked ~ label:after {
 			width: 60%;
 		}
     }
+	.admin-menu .top-bar {
+		top: 45px;		
+	}
     .top-bar.expanded .title-area {
         background: $navy;
     }
@@ -563,7 +565,7 @@ input[type="checkbox"]:checked ~ label:after {
         background: #fff;
         color: $navy;
         float: right;
-        font-family: "Sentinel SSm A", "Sentinel SSm B";
+        font-family: "Sentinel A", "Sentinel B";
         font-size: 16px;
     }
     ul#secondary-menu li a,
@@ -2042,7 +2044,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             padding: 10px 4px 15px;
             font-size: 30px;
             color: #fff;
-            font-family: "Sentinel SSm A", "Sentinel SSm B";
+            font-family: "Sentinel A", "Sentinel B";
             font-weight: bold;
         }
     }
@@ -2375,7 +2377,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     }
     
     h2 {
-        font-family: "Gotham SSm A","Gotham SSm B";
+        font-family: "Gotham A","Gotham B",;
         font-size: 16px;
         color: $navy;
     }
@@ -2424,7 +2426,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 	}
 	@media screen and (min-width: $large_screen_start_width){
 		font-size: 28px;
-		font-family: "Sentinel SSm A", "Sentinel SSm B";
+		font-family: "Sentinel A", "Sentinel B";
 		margin-top: -30px;
 		line-height: 33px;
 	}
@@ -2460,7 +2462,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     }
     .day {
         font-size: 40px;
-        font-family: "Sentinel SSm A", "Sentinel SSm B";
+        font-family: "Sentinel A", "Sentinel B";
         padding: 8px 0px;
         font-weight: bold;
     }
@@ -2665,7 +2667,7 @@ input {
 
 .page-node-add, .page-node-edit {
     h1#page-title {
-        font-family: "Gotham SSm A","Gotham SSm B";
+        font-family: "Gotham A","Gotham B",;
         font-size: 16px;
         color: $navy;
     }
@@ -2911,7 +2913,7 @@ textarea#edit-body-und-0-value {
 
 fieldset.group-pricing legend {
     display: block;
-    font-family: "Sentinel SSm A", "Sentinel SSm B";
+    font-family: "Sentinel A", "Sentinel B";
     text-transform: uppercase;
     font-size: 13px;
 //    padding: 0px 5px;
@@ -3166,7 +3168,7 @@ div#edit-field-full-name {
     }
     .page-node-add, .page-node-edit {
         h1#page-title {
-            font-family: "Sentinel SSm A", "Sentinel SSm B";
+            font-family: "Sentinel A", "Sentinel B";
             font-size: 28px;
             color: $navy;
         }
@@ -3554,7 +3556,7 @@ section.block-social-share-social-share {
 
     .views-field.views-field-title h1 {
         margin: 0px;
-        font-family: "Gotham SSm A","Gotham SSm B";
+        font-family: "Gotham A","Gotham B",;
         font-size: 20px;
         text-transform: uppercase;
         line-height: 22px;
@@ -3948,7 +3950,7 @@ section.block-social-share-social-share {
 		background: $gray !important;
 		color: #fff !important;
 		font-size: 15px;
-		font-family: "Gotham SSm A","Gotham SSm B";
+		font-family: "Gotham A","Gotham B",;
 		height: 32px;
 		width: 100px;
 		border: 1px solid $gray;
