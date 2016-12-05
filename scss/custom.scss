@@ -1245,8 +1245,11 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 }
 
 .mobile-first.list-view {
-	.views-row .panel-panel.panel-col-first {
-		width: 85px;
+	.views-row {
+		padding: 10px 20px;
+		.panel-panel.panel-col-first {
+			width: 85px;
+		}
 	}
 }
 
