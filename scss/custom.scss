@@ -1250,6 +1250,10 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 		.panel-panel.panel-col-first {
 			width: 85px;
 		}
+		.panel-2col .panel-col-last {
+//			float: left;
+			width: 69%; // can be wider since we don't have left side nav
+		}
 	}
 }
 
