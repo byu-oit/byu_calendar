@@ -307,9 +307,9 @@ jQuery( document ).ready(function( $ ) {
 //            mlink = mlink.replace(/\?.*$/, '');
 //            $(this).attr('href', mlink + '?' + mobileParams);
 //        });
-        console.log(mobileParams);           
+//        console.log(mobileParams);           
         // mobile theme filters link if being filtered currently
-        if(mobileParams != 'field_tags_tid='){
+        if( (mobileParams != 'field_tags_tid=') && (mobileParams != 'field_tags_tid=All') ){
             $('.show-filters').addClass('filtering');
         }
     }
