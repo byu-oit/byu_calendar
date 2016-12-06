@@ -108,7 +108,7 @@ a:hover {
 .green-button {
     @include button;
     background-color: $green!important;
-//    padding: 9px 18px!important;
+    padding: 9px 0px!important;
     width: 120px;
     font-size: 12px;
     a {
