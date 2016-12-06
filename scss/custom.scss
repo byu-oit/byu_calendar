@@ -1668,12 +1668,8 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     display: none;
 }
 
-.page-taxonomy-term,
-.page-calendar.large-screen {
-    .view-id-large_screen_calendar.view-display-id-block_3 {
-//        padding-top: 15px;
-    }
-    .view-large-screen-calendar { 
+.page-taxonomy-term .view-category-page-blocks,
+.page-calendar.large-screen .view-large-screen-calendar { 
         .view-item {
             padding: 0px 0px 20px;
             border-bottom: 1px solid $lightgray;
@@ -1726,7 +1722,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             
         } 
         // if there is free/price selected AND tickets availability date, add :
-        .views-field.views-field-field-price + .views-field-field-tickets-available:before,
+//        .views-field.views-field-field-price + .views-field-field-tickets-available:before,
 //        span.views-field.views-field-field-free + .views-field-field-tickets-available:before {
 //            content: ": ";
 //        }
@@ -1765,8 +1761,8 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             color: $navy;
             font-weight: normal;
         }
-    } 
-    
+ } 
+ .page-calendar.large-screen {  
     /* -------- large screen list views ------------------- */
     .view-header h3 {
         text-align: left;
