@@ -3394,9 +3394,15 @@ section.block.block-views.block-views-event-page-blocks-block {
 }
   
 .views-field.views-field-field-tickets-url.-Free {
-    display: inline;
-    float: left;
+
     margin-right: 15px;
+	@media screen and (max-width: $mobile_max_width){
+		display: block;
+	}
+	@media screen and (min-width: $large_screen_start_width){
+		display: inline;
+    	float: left;
+	}
 }
 span.views-label.views-label-addtoany-link {
     color: $gray;
@@ -3443,7 +3449,11 @@ span.views-label.views-label-addtoany-link {
 .node-type-event .views-field.views-field-nothing > span.field-content.add-to-calendar {
     display: flex;
     justify-content: flex-start;
-    margin: 40px 0px 20px;
+	margin: 0px 0px 20px;
+    
+	@media screen and (min-width: $large_screen_start_width) {
+		margin: 40px 0px 20px;	
+	}
     /* width: 160px; */
     font-weight: bold;
 	a > div {
