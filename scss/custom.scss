@@ -1668,6 +1668,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     display: none;
 }
 
+.page-taxonomy-term,
 .page-calendar.large-screen {
     .view-id-large_screen_calendar.view-display-id-block_3 {
 //        padding-top: 15px;
@@ -4028,7 +4029,11 @@ section.block-social-share-social-share {
 
 
 
-
+/* ----- random ----- */
+// edit, view links at top of page, needed space on term page
+.page-taxonomy-term .button-group {
+    margin-bottom: 30px;
+}
 
 
 
