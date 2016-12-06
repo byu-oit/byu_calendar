@@ -3453,7 +3453,10 @@ span.views-label.views-label-addtoany-link {
     	text-transform: uppercase;
 	}
 }
-
+//if no tickets, move up
+.node-type-event .views-field.views-field-nothing > span.field-content.add-to-calendar.tickets-2 {
+	margin: 0px 0px 20px;
+}
 /* ------ social share both sizes ---------- */
 //body:not(.page-node) section.block-social-share-social-share {
 //	display: none;
