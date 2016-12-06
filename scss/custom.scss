@@ -1762,6 +1762,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             font-weight: normal;
         }
  } 
+.large-screen.page-taxonomy-term,
  .page-calendar.large-screen {  
     /* -------- large screen list views ------------------- */
     .view-header h3 {
@@ -2454,7 +2455,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 
 /* large all ------------- */
 
-
+.large-screen.page-taxonomy-term,
 .large-screen.page-calendar.page-calendar-all {
     .views-field.views-field-field-event-date-1 {
          padding-left: 0px;
