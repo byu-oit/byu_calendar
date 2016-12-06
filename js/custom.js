@@ -485,7 +485,7 @@ function startListeners() {
     
     // if tickets button does not exist, move share button up
 	if($('span.add-to-calendar').hasClass('tickets-2') ){
-		$('section.block-social-share-social-share').css("margin", "-142px 0px 10px 435px");
+		$('section.block-social-share-social-share').css("margin", "-166px 0px 0px 435px");
 	}
     
     
