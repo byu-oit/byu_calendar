@@ -484,7 +484,7 @@ function startListeners() {
 //});
     
     // if tickets button does not exist, move share button up
-	if($('span.add-to-calendar')).hasClass('tickets-2') {
+	if($('span.add-to-calendar').hasClass('tickets-2') ){
 		$('section.block-social-share-social-share').css("margin-top", "-182px");
 	}
     
