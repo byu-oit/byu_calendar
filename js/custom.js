@@ -32,7 +32,7 @@ jQuery( document ).ready(function( $ ) {
 	m = pad(m);
 	monthNow = m.toString();
 	var locale = "en-us";
-    var monthNowName = objDate.toLocaleString(locale, { month: "long" });
+    var monthNowName = date.toLocaleString(locale, { month: "long" });
 	
 
 	var realDate = yearNow.concat(dash,monthNow,dash,dayNow);
