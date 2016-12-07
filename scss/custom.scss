@@ -4030,9 +4030,20 @@ section.block-social-share-social-share {
     display: none;
 }
 
-.view-category-page-blocks .view-header {
-    float: right;
-    margin: -45px 0px 0px 0px;
+.view-category-page-blocks {
+	.view-header {
+    	float: right;
+    	margin: -45px 0px 0px 0px;
+	}
+}
+.mobile-first .view-category-page-blocks {
+	.views-field.views-field-field-event-location {
+		float: left;
+		display: block;
+	}
+	.views-field.views-field-field-event-date {
+    	float: left;
+	}
 }
 // other pages should be capitalized correctly, doing this since often tags aren't capitalized
 .page-taxonomy-term h1#page-title {
