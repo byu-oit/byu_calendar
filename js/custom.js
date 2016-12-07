@@ -5,6 +5,40 @@ jQuery.noConflict();
 
 
 jQuery( document ).ready(function( $ ) {
+	
+	var pathArr = window.location.pathname.split('/');
+	var pathSize = pathArr.length -1;
+	var last =pathArr[pathSize];
+//		console.log(last);
+	
+	// getting today's date info
+	function pad(n) {
+		return (n < 10) ? ("0" + n) : n;
+	}
+	var dash = '-';
+	var date = new Date();
+	var timeNow = date.getTime();
+	var y = date.getFullYear();
+
+	var yearNow = y.toString();
+	console.log(yearNow);
+	var d = date.getDate();
+	// add leading zero to day
+	d = pad(d);
+	var dayNow = d.toString();
+
+	var m = date.getMonth()+1;
+	// add leading zero to month
+	m = pad(m);
+	monthNow = m.toString();
+
+	var realDate = yearNow.concat(dash,monthNow,dash,dayNow);
+
+	//var realWeek = yearNow.concat(dash,monthNow,dash,dayNow);
+	var realMonth = yearNow.concat(dash,monthNow);
+	/* -- end getting today's date info --- */
+	
+	
     $("#large-calendar-nav-container").delay(4000).fadeIn(500);
   // Code that uses jQuery's $ can follow here.
     $.fn.is_on_screen = function(){
@@ -38,26 +72,45 @@ jQuery( document ).ready(function( $ ) {
           //alert("Started scrolling!");
         });
         
+		function hidePart1 () {
+			$('.calendar-nav-section.part-1').addClass('hidden');
+			$('.calendar-nav-section.part-2').removeClass('hidden');
+			$('a.part-1').addClass('hidden');
+			$('a.part-2').removeClass('hidden');
+			console.log('it is part 2 on screen'); 
+		}
+		function hidePart2 () {
+			$('.calendar-nav-section.part-1').removeClass('hidden');
+			$('.calendar-nav-section.part-2').addClass('hidden');
+			$('a.part-1').removeClass('hidden');
+			$('a.part-2').addClass('hidden');
+			console.log('it is part 1 on screen');
+		}
+		
+		
         $(document).scroll(function(){ // bind window scroll event
              //alert("Started scrolling!");
 
             // 1. 
-            if( $('#July').is_on_screen() || $('#August').is_on_screen() || $('#September').is_on_screen() || $('#October').is_on_screen() || $('#November').is_on_screen() || $('#December').is_on_screen() ) { // if target element is visible on screen after DOM loaded           
-                //alert('function worked');
-                $('.calendar-nav-section.part-1').addClass('hidden');
-                $('.calendar-nav-section.part-2').removeClass('hidden');
-                $('a.part-1').addClass('hidden');
-                $('a.part-2').removeClass('hidden');
-                console.log('it is part 2 on screen'); 
-            } else {
-               // alert('i can NOT see it');
-                $('.calendar-nav-section.part-1').removeClass('hidden');
-                $('.calendar-nav-section.part-2').addClass('hidden');
-                $('a.part-1').removeClass('hidden');
-                $('a.part-2').addClass('hidden');
-                console.log('it is part 1 on screen');
-            }
-
+			if (last != 'month'){
+			
+				if( $('#July').is_on_screen() || $('#August').is_on_screen() || $('#September').is_on_screen() || $('#October').is_on_screen() || $('#November').is_on_screen() || $('#December').is_on_screen() ) { // if target element is visible on screen after DOM loaded           
+					//alert('function worked');
+					hidePart1();
+				} else {
+				   // alert('i can NOT see it');
+					hidePart2();
+				}
+			} else { // is plain month from month menu link
+				// month is today
+//				var d = new Date();
+//				var n = d.getMonth();
+				console.log('its the month link from menu');
+			}
+				
+				
+				
+				
             // 2.   
    /*         var height = $(document).height();
             var scrollTop = $(window).scrollTop(); 
@@ -110,34 +163,7 @@ jQuery( document ).ready(function( $ ) {
         });
      }
 
-	// getting today's date info
-	function pad(n) {
-		return (n < 10) ? ("0" + n) : n;
-	}
-	var dash = '-';
-	var date = new Date();
-	var timeNow = date.getTime();
-	var y = date.getFullYear();
-
-	var yearNow = y.toString();
-	console.log(yearNow);
-	var d = date.getDate();
-	// add leading zero to day
-	d = pad(d);
-	var dayNow = d.toString();
-
-	var m = date.getMonth()+1;
-	// add leading zero to month
-	m = pad(m);
-	monthNow = m.toString();
-
-	var realDate = yearNow.concat(dash,monthNow,dash,dayNow);
-
-
-
-
-	//var realWeek = yearNow.concat(dash,monthNow,dash,dayNow);
-	var realMonth = yearNow.concat(dash,monthNow);
+	
 
 	
 	// checking if TODAY / WEEK / MONTH in menu are actually today / this week / this month
@@ -171,11 +197,7 @@ jQuery( document ).ready(function( $ ) {
 		console.log(realWeek);
 
 
-
-		var pathArr = window.location.pathname.split('/');
-		var pathSize = pathArr.length -1;
-		var last =pathArr[pathSize];
-		console.log(last);
+// [ moved url getting to top from here]
 		if (last != 'week'){
 			// last is the date with week id, get last 2 digits for week id
 			if(last != realWeek) {
