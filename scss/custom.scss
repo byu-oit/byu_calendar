@@ -4034,7 +4034,10 @@ section.block-social-share-social-share {
     float: right;
     margin: -45px 0px 0px 0px;
 }
-
+// other pages should be capitalized correctly, doing this since often tags aren't capitalized
+.page-taxonomy-term h1#page-title {
+    text-transform: capitalize;
+}
 
 /* ----- random ----- */
 // edit, view links at top of page, needed space on term page
