@@ -159,8 +159,11 @@ h1 {
     color: $navy;
 }
 h1#page-title {
-    margin-left: 15px;
+    margin-left: 0px;
     margin-right: 15px;
+}
+.mobile-first h1#page-title {
+    margin-left: 15px;
 }
 // if they only want event page titles to be navy
 .page-node.node-type-event h1#page-title {
@@ -4027,7 +4030,10 @@ section.block-social-share-social-share {
     display: none;
 }
 
-
+.view-category-page-blocks .view-header {
+    float: right;
+    margin: -45px 0px 0px 0px;
+}
 
 
 /* ----- random ----- */
