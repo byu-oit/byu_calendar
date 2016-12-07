@@ -4030,12 +4030,19 @@ section.block-social-share-social-share {
     display: none;
 }
 
+
 .view-category-page-blocks {
 	.view-header {
     	float: right;
     	margin: -45px 0px 0px 0px;
 	}
 }
+.mobile-first .view-category-page-blocks {
+	.view-header {
+    	margin: -30px 0px 0px 0px;
+	}
+}
+
 .mobile-first .view-category-page-blocks {
 
 }
