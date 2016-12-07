@@ -71,7 +71,7 @@ jQuery( document ).ready(function( $ ) {
         //alert('this is an alert');
 		// if month from menu, redirect, else continue
 		if(last == 'month') {
-		   window.location="../year/" + yearNow + "#" + monthNowName;
+		   window.location="../calendar/year/" + yearNow + "#" + monthNowName;
 		
 		} else {
 			console.log('isnt month from menu');
