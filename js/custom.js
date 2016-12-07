@@ -31,9 +31,9 @@ jQuery( document ).ready(function( $ ) {
 	// add leading zero to month
 	m = pad(m);
 	monthNow = m.toString();
-	var monthNames = ["January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December"
-];
+//	var monthNames = ["January", "February", "March", "April", "May", "June",
+//  "July", "August", "September", "October", "November", "December"
+//];
 	if(m == 1){
 		// is currently january, link to top
 		var lastMonthName = "";
@@ -44,7 +44,7 @@ jQuery( document ).ready(function( $ ) {
 	}
 	
 	
-	var monthNowName = monthNames[d.getMonth()]);
+	var monthNowName = monthNames[d.getMonth()];
 	
 //	var locale = "en-us";
 	
