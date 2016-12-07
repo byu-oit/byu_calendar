@@ -92,29 +92,24 @@ jQuery( document ).ready(function( $ ) {
              //alert("Started scrolling!");
 
             // 1. 
-			if (last != 'month'){
-			
+
 				if( $('#July').is_on_screen() || $('#August').is_on_screen() || $('#September').is_on_screen() || $('#October').is_on_screen() || $('#November').is_on_screen() || $('#December').is_on_screen() ) { // if target element is visible on screen after DOM loaded           
 					//alert('function worked');
-					$('.calendar-nav-section.part-1').addClass('hidden');
-					$('.calendar-nav-section.part-2').removeClass('hidden');
-					$('a.part-1').addClass('hidden');
-					$('a.part-2').removeClass('hidden');
-				
+//					$('.calendar-nav-section.part-1').addClass('hidden');
+//					$('.calendar-nav-section.part-2').removeClass('hidden');
+//					$('a.part-1').addClass('hidden');
+//					$('a.part-2').removeClass('hidden');
+					hidePart1() ;
 				} else {
 				   // alert('i can NOT see it');
-					$('.calendar-nav-section.part-1').removeClass('hidden');
-					$('.calendar-nav-section.part-2').addClass('hidden');
-					$('a.part-1').removeClass('hidden');
-					$('a.part-2').addClass('hidden');
-					console.log('it is part 1 on screen');
+//					$('.calendar-nav-section.part-1').removeClass('hidden');
+//					$('.calendar-nav-section.part-2').addClass('hidden');
+//					$('a.part-1').removeClass('hidden');
+//					$('a.part-2').addClass('hidden');
+//					console.log('it is part 1 on screen');
+					hidePart2() ;
 				}
-			} else { // is plain month from month menu link
-				// month is today
-//				var d = new Date();
-//				var n = d.getMonth();
-				console.log('its the month link from menu');
-			}
+
 				
 				
 				
