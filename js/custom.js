@@ -31,8 +31,24 @@ jQuery( document ).ready(function( $ ) {
 	// add leading zero to month
 	m = pad(m);
 	monthNow = m.toString();
-	var locale = "en-us";
-    var monthNowName = date.toLocaleString(locale, { month: "long" });
+	var monthNames = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
+	if(m == 1){
+		// is currently january, link to top
+		var lastMonthName = "";
+	} else {
+		var lastMonthId = date.getMonth() -1;
+//		lastMonthId = lastMonthId < 0 ?  : lastMonthId;
+		var lastMonthName = monthNames[lastMonthId];
+	}
+	
+	
+	var monthNowName = monthNames[d.getMonth()]);
+	
+//	var locale = "en-us";
+	
+//    var monthNowName = date.toLocaleString(locale, { month: "long" });
 	
 
 	var realDate = yearNow.concat(dash,monthNow,dash,dayNow);
@@ -71,7 +87,8 @@ jQuery( document ).ready(function( $ ) {
         //alert('this is an alert');
 		// if month from menu, redirect, else continue
 		if(last == 'month') {
-		   window.location="../calendar/year/" + yearNow + "#" + monthNowName;
+
+		   window.location="../calendar/year/" + yearNow + "#" + lastMonthName;
 		
 		} else {
 			console.log('isnt month from menu');
