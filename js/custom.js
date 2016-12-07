@@ -96,10 +96,18 @@ jQuery( document ).ready(function( $ ) {
 			
 				if( $('#July').is_on_screen() || $('#August').is_on_screen() || $('#September').is_on_screen() || $('#October').is_on_screen() || $('#November').is_on_screen() || $('#December').is_on_screen() ) { // if target element is visible on screen after DOM loaded           
 					//alert('function worked');
-					hidePart1();
+					$('.calendar-nav-section.part-1').addClass('hidden');
+					$('.calendar-nav-section.part-2').removeClass('hidden');
+					$('a.part-1').addClass('hidden');
+					$('a.part-2').removeClass('hidden');
+				
 				} else {
 				   // alert('i can NOT see it');
-					hidePart2();
+					$('.calendar-nav-section.part-1').removeClass('hidden');
+					$('.calendar-nav-section.part-2').addClass('hidden');
+					$('a.part-1').removeClass('hidden');
+					$('a.part-2').addClass('hidden');
+					console.log('it is part 1 on screen');
 				}
 			} else { // is plain month from month menu link
 				// month is today
