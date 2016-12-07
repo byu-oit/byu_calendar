@@ -31,6 +31,9 @@ jQuery( document ).ready(function( $ ) {
 	// add leading zero to month
 	m = pad(m);
 	monthNow = m.toString();
+	var locale = "en-us";
+    var monthNowName = objDate.toLocaleString(locale, { month: "long" });
+	
 
 	var realDate = yearNow.concat(dash,monthNow,dash,dayNow);
 
@@ -66,7 +69,13 @@ jQuery( document ).ready(function( $ ) {
     //for Calendar mobile year view
     if ($("body").hasClass("mobile-first-calendar-yearview")) {
         //alert('this is an alert');
-
+		// if month from menu, redirect, else continue
+		if(last == 'month') {
+		   window.location="../year/" + yearNow + "#" + monthNowName;
+		
+		} else {
+			console.log('isnt month from menu');
+		}
         
         $("body").on("scrollstart",function(){
           //alert("Started scrolling!");
