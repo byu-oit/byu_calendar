@@ -2186,26 +2186,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     #month-6 {
         background: desaturate(lighten($dullnavy, 25%), 31%);
     }
-    /*
-    #month-7 { 
-        background: desaturate(lighten($dullnavy,30%), 33%);
-    } 
-    #month-8 {  
-        background: desaturate(lighten($dullnavy,35%), 35%);
-    }
-    #month-9 { 
-        background: desaturate(lighten($dullnavy,40%), 37%);
-    }
-    #month-10 { 
-        background: desaturate(lighten($dullnavy,45%), 39%);
-    }
-    #month11 { 
-        background: desaturate(lighten($dullnavy,50%), 41%);
-    }
-    #month-12 { 
-        background: desaturate(lighten($dullnavy,55%), 43%);
-    }
-*/
+ 
 }
 
 .calendar-nav-section.hidden {
@@ -2217,6 +2198,9 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     .view-calendar-pages {
         display: none;
     }
+	:target {
+		margin-top: 45px;
+	}
 }
 
 .mobile-calendar-yearview {
