@@ -1266,6 +1266,10 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 	padding-top: 45px;
 	margin-top: -45px;
 }
+.mobile-first.admin-menu div:target {
+	padding-top: 92px;
+	margin-top: -92px;
+}
 
 /* ---------------- Calendar displays - general -  large screen ------------------- */
 
@@ -2204,10 +2208,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     .view-calendar-pages {
         display: none;
     }
-	:target {
-//		padding-top: 45px;
-//		margin-top: -45px;
-	}
+
 }
 
 .mobile-calendar-yearview {
@@ -3946,7 +3947,9 @@ section.block-social-share-social-share {
     
     
 }
-
+.page-node-651 .block-block-18 h2.block-title {
+    display: none;
+}
 
 /* -------- search --------- */
 // did the class .search-form instead of id's so it would apply to both header and search page
