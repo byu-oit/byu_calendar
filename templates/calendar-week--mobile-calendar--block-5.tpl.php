@@ -142,7 +142,7 @@ foreach ($day_names as $key => $value) {
                 $daystoadd = $weekday -1;  // depending on what day of the week it is, it'll add from weekStartTime
                 $daytodisplay = $weekStartTime + ($daystoadd *24*3600); // results in the unix day of current day
                 $simpleDate = date('Y-m-d', $daytodisplay);
-            echo "<div><a name='" . $simpleDate . "'></a></div>" ; 
+            echo "<div id='" . $simpleDate . "'</div>" ; 
         ?>
             <div class="weekview-day-header">
                 <?php
@@ -152,7 +152,7 @@ foreach ($day_names as $key => $value) {
                 $weekday = date_format($date, 'l') ;
                 $monthName = date_format($date, 'F');
                 $monthyear = date_format($date, 'F Y') ;
-                echo '<a name="katria test-' . $simpleDate . '"></a>' . '<div class="day-header">' . '<div class="day-header-inner inner-top">' .
+                echo '<a name="katria old-' . $simpleDate . '"></a>' . '<div class="day-header">' . '<div class="day-header-inner inner-top">' .
                 '<div class="day-header-inner-top-left">' .
                     '<div class="day-header-day">' . $day . '</div>' . 
                 '</div>' .

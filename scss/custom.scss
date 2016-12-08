@@ -1197,6 +1197,12 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 /* --- mobile responsive for week view -------- */
 
 @media screen and ( max-width: $mobile_max_width) {
+	// fixing anchors for with sticky menu
+	a:target {
+		padding-top: 45px;
+		margin-top: -45px;
+	}
+	
     .calendar-calendar .week-view table.full {
         position: relative;
     }
