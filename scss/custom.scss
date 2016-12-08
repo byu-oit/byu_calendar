@@ -1197,11 +1197,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 /* --- mobile responsive for week view -------- */
 
 @media screen and ( max-width: $mobile_max_width) {
-	// fixing anchors for with sticky menu
-	a:target {
-		padding-top: 45px;
-		margin-top: -45px;
-	}
+
 	
     .calendar-calendar .week-view table.full {
         position: relative;
@@ -1265,7 +1261,11 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 		}
 	}
 }
-
+	// fixing anchors for with sticky menu
+.mobile-first div:target {
+	padding-top: 45px;
+	margin-top: -45px;
+}
 
 /* ---------------- Calendar displays - general -  large screen ------------------- */
 
@@ -2205,8 +2205,8 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         display: none;
     }
 	:target {
-		padding-top: 45px;
-		margin-top: -45px;
+//		padding-top: 45px;
+//		margin-top: -45px;
 	}
 }
 
