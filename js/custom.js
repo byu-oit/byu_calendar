@@ -44,7 +44,7 @@ jQuery( document ).ready(function( $ ) {
 	}
 	
 	
-	var monthNowName = monthNames[d.getMonth()];
+	var monthNowName = monthNames[date.getMonth()];
 	
 //	var locale = "en-us";
 	
