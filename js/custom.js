@@ -540,12 +540,12 @@ function startListeners() {
 	}
     
 	/* --- subscribe button ---- */
-	function ClipBoard() {
+	$('#subscribe-link').click( function() {
 		console.log('into the click fxn');
 		$('#holdtext').innerText = $('#copytext').innerText;
 		var copied = $('#holdtext').createTextRange();
 		copied.execCommand("Copy");
-	}
+	});
 	
 	
 	
