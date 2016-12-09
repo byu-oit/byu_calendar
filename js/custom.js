@@ -539,6 +539,17 @@ function startListeners() {
 		$('section.block-social-share-social-share').css("margin", "-166px 0px 0px 435px");
 	}
     
+	/* --- subscribe button ---- */
+	function ClipBoard() {
+		holdtext.innerText = copytext.innerText;
+		Copied = holdtext.createTextRange();
+		Copied.execCommand("Copy");
+	}
+	
+	
+	
+	
+	
     
 });
 
