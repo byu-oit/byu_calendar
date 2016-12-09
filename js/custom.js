@@ -541,9 +541,10 @@ function startListeners() {
     
 	/* --- subscribe button ---- */
 	function ClipBoard() {
-		holdtext.innerText = copytext.innerText;
-		Copied = holdtext.createTextRange();
-		Copied.execCommand("Copy");
+		console.log('into the click fxn');
+		$('#holdtext').innerText = $('#copytext').innerText;
+		var copied = $('#holdtext').createTextRange();
+		copied.execCommand("Copy");
 	}
 	
 	
