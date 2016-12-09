@@ -2416,7 +2416,12 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 .mobile-first.page-calendar #main-content-section.large-12 {
     padding: 0px;
 }
-
+a#subscribe-link {
+	background: $royal;
+	color: #fff;
+	padding: 8px 10px;
+	
+}
 /* ------------ ALL PAGE --------- */
 
 .large-screen.page-calendar.page-calendar-all .calendar-list-type-block .view-header {
