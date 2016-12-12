@@ -2416,7 +2416,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 .mobile-first.page-calendar #main-content-section.large-12 {
     padding: 0px;
 }
-.page-taxonomy-term #subscribe-link {
+.page-taxonomy-term .popup-element-title > span {
 	background: $royal;
 	color: #fff;
 	padding: 7px 14px;
@@ -3458,7 +3458,7 @@ span.views-label.views-label-addtoany-link {
 a.popup-element-title {
     background-image: none;
 }
-#popup-0 a span:after {
+.node-type-event #popup-0 a span:after {
     content: "+";
     font-weight: bold;
     font-size: 15px;
