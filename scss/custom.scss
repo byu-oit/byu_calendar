@@ -2466,16 +2466,18 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 // subscribe link
 
 // mobile
+section.block.block-views.block-views-category-page-blocks-block-2, // large
 section.block.block-views.block-views-category-page-blocks-block-3 {
     float: right;
-    margin-top: -40px;
+    margin-top: -35px;
     height: 35px;
+	.views-row{
+		border-bottom: none;
+	}
 }
 // large screen
 section.block.block-views.block-views-category-page-blocks-block-2 {
-    float: right;
     margin-top: -40px;
-    height: 35px;
 }
 .page-taxonomy-term .popup-element-title span {
 	background: $royal;
