@@ -445,6 +445,49 @@ input[type="checkbox"]:checked ~ label:after {
     max-height: 150px;
 }
 
+
+// popup in general
+// formatting popup
+// normal styling didnt work with background repeat
+a.popup-element-title {
+    background-image: none;
+}
+.popup-element-body {
+	background: #fff;
+	padding: 15px 0px 0px 25px;
+	border: 1px solid $navy;
+	border-radius: 10px;
+	
+	@include main-outer-shadowbox();
+	
+	.left, .center, .right {
+		background-image: none!important;
+	}
+	a.popup-close-button span {
+    	display: block!important;
+		color: #fff;
+	}
+	a.popup-close-button span:before {
+		content: "CLOSE";
+		color: #444;
+		margin-left: -12px;
+	}
+	a.popup-close-button span:hover:before {
+		color: #000;
+	}
+	a.popup-close-button:hover {
+		text-decoration: none;
+	}
+
+}
+.mobile-first .popup-element-origin {
+    left: 0px!important;
+    top: 660px!important;
+}
+
+
+
+
     // formatting dropdown arrows
 //    background: url(new_arrow.png) no-repeat right #ddd;
 
@@ -2405,8 +2448,11 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     
     
 }
-
+/* -- CATEGORIES CATEGORIES CATEGORIES --- */
 /* -------- Mobile: for all & for category pages ------- */
+.page-taxonomy-term div.node.node-teaser {
+	display: none;  // teasers supplied by drupal, maybe remove later to reduce page load stuff
+}
 .mobile-first:not(.page-node) #main-content-section.large-12 {
 //    padding: 0px;
 }
@@ -2416,6 +2462,21 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 .mobile-first.page-calendar #main-content-section.large-12 {
     padding: 0px;
 }
+
+// subscribe link
+
+// mobile
+section.block.block-views.block-views-category-page-blocks-block-2 {
+    float: right;
+    margin-top: -40px;
+    height: 35px;
+}
+// large screen
+section.block.block-views.block-views-category-page-blocks-block-2 {
+    float: right;
+    margin-top: -40px;
+    height: 35px;
+}
 .page-taxonomy-term .popup-element-title span {
 	background: $royal;
 	color: #fff;
@@ -2424,6 +2485,10 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 	font-size: 14px;
 	
 }
+.page-taxonomy-term .popup-element-body a.popup-close-button span:before {
+    margin: 0px 0px 0px -52px;
+}
+
 /* ------------ ALL PAGE --------- */
 
 .large-screen.page-calendar.page-calendar-all .calendar-list-type-block .view-header {
@@ -3455,53 +3520,17 @@ span.views-label.views-label-addtoany-link {
 	}
 }
  // Add to Calendar
-a.popup-element-title {
-    background-image: none;
-}
+
 .node-type-event #popup-0 a span:after {
     content: "+";
     font-weight: bold;
     font-size: 15px;
 }
-// formatting popup
-// normal styling didnt work with background repeat
-.popup-element-body {
-	background: #fff;
-	padding: 15px 0px 0px 25px;
-	border: 1px solid $navy;
-	border-radius: 10px;
-	
-	@include main-outer-shadowbox();
-	
-	.left, .center, .right {
-		background-image: none!important;
-	}
-	a.popup-close-button span {
-    	display: block;
-		color: #fff;
-	}
-	a.popup-close-button span:before {
-		content: "CLOSE";
-		color: #444;
-		margin-left: -12px;
-	}
-	a.popup-close-button span:hover:before {
-		color: #000;
-	}
-	a.popup-close-button:hover {
-		text-decoration: none;
-	}
 
+.node-type-event .popup-element-body {
+	padding: 15px 0px 0px 25px;
 }
-.mobile-first .popup-element-origin {
-    left: 0px!important;
-    top: 660px!important;
-}
-.popup-style-white .popup-element-body .center .left {
-    background: url(images/left.png);
-    width: 55px;
-    height: 350px;
-}
+
 
 // old to prob remove:
 .node-type-event .views-field.views-field-nothing > span.field-content.add-to-calendar {
