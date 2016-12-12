@@ -476,7 +476,7 @@ a.popup-element-title {
 		color: #000;
 	}
 	a.popup-close-button:hover {
-		text-decoration: none;
+		text-decoration: none!important;
 	}
 
 }
@@ -2466,7 +2466,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 // subscribe link
 
 // mobile
-section.block.block-views.block-views-category-page-blocks-block-2 {
+section.block.block-views.block-views-category-page-blocks-block-3 {
     float: right;
     margin-top: -40px;
     height: 35px;
