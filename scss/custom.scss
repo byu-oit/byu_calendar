@@ -3466,14 +3466,34 @@ span.views-label.views-label-addtoany-link {
 // normal styling didnt work with background repeat
 .popup-element-body {
 	background: #fff;
+	padding: 15px 0px 0px 25px;
 	border: 1px solid $navy;
 	border-radius: 10px;
+	
 	@include main-outer-shadowbox();
 	.left, .center, .right {
 		background-image: none!important;
 	}
+	a.popup-close-button span {
+    	display: block;
+		color: #fff;
+	}
+	a.popup-close-button span:before {
+		content: "CLOSE";
+		color: #444;
+		margin-left: -12px;
+	}
+	a.popup-close-button span:hover:before
+		color: #000;
+	}
+	a.popup-close-button:hover {
+		text-decoration: none;
+	}
 
-
+}
+.mobile-first .popup-element-origin {
+    left: 0px!important;
+    top: 660px!important;
 }
 .popup-style-white .popup-element-body .center .left {
     background: url(images/left.png);
