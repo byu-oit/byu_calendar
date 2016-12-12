@@ -454,7 +454,6 @@ a.popup-element-title {
 }
 .popup-element-body {
 	background: #fff;
-	padding: 15px 0px 0px 25px;
 	border: 1px solid $navy;
 	border-radius: 10px;
 	
@@ -479,6 +478,9 @@ a.popup-element-title {
 		text-decoration: none!important;
 	}
 
+}
+.large-screen .popup-element-body {
+	padding: 15px 0px 0px 25px;
 }
 .mobile-first.node-type-event .popup-element-origin {
     left: 0px!important;
