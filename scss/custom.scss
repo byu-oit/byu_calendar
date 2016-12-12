@@ -454,6 +454,7 @@ a.popup-element-title {
 }
 .popup-element-body {
 	background: #fff;
+	padding: 15px 0px 0px 0px;
 	border: 1px solid $navy;
 	border-radius: 10px;
 	
@@ -490,7 +491,10 @@ a.popup-element-title {
     top: 90px!important;
     left: 320px!important;
 }
-
+.mobile-first .popup-style-white .popup-element-body.origin-top-right.expand-bottom-left table.popup-layout {
+    top: -20px;
+    left: 0px;
+}
 
 
 
