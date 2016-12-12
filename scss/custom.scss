@@ -2497,6 +2497,10 @@ section.block.block-views.block-views-category-page-blocks-block-2 {
 	font-size: 14px;
 	
 }
+.large-screen.page-taxonomy-term .popup-element-body table.popup-layout {
+    left: 0px!important;
+    top: 0px!important;
+}
 .page-taxonomy-term .popup-element-body a.popup-close-button span:before {
 //    margin: 0px 0px 0px -52px;
 }
@@ -3602,7 +3606,8 @@ section.block-social-share-social-share {
 	}
 	@media screen and (min-width: $large_screen_start_width){
 //		margin: -130px 0px 10px 270px;
-		margin: -126px 0px 10px 435px;
+//		margin: -126px 0px 10px 435px;
+		margin: -175px 0px 10px 415px; // w final add to calendar link
 	}
 	
 	a:before {
