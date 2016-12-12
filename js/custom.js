@@ -535,7 +535,7 @@ function startListeners() {
 //});
     
 //     if tickets button does not exist, move share button up
-	if($(body).hasClass('node-type-event') && $(body).hasClass('large-screen')) {
+	if($('body').hasClass('node-type-event') && $('body').hasClass('large-screen')) {
 		if( $('.views-field-field-tickets-url').length ) {
 			console.log('the tickets button is there');
 			$('section.block-social-share-social-share').css("margin", "-131px 0px 10px 435px");	
