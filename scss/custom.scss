@@ -2930,6 +2930,14 @@ textarea#edit-body-und-0-value {
 
 // free & pricing
 
+.group-pricing .fieldset-wrapper {
+    margin-top: 10px;
+    /* margin-bottom: -15px; */
+}
+.mobile-first {
+	// fix price & range input boxes - line 48 of issues
+}
+
 fieldset.group-pricing legend {
     display: block;
     font-family: "Sentinel A", "Sentinel B";
@@ -2938,6 +2946,7 @@ fieldset.group-pricing legend {
 //    padding: 0px 5px;
 }
 #edit-field-free {
+    width: 91px; // was 30
     width: 91px; // was 30
 //    display: inline;
     float: left;
@@ -3447,6 +3456,39 @@ span.views-label.views-label-addtoany-link {
 	}
 }
  // Add to Calendar
+
+#popup-0 a span:after {
+    content: "+";
+    font-weight: bold;
+    font-size: 15px;
+}
+// formatting popup
+// normal styling didnt work with background repeat
+.popup-element-body {
+	.top .left,
+	.top .center,
+	.top .right,
+	.bottom .left,
+	.bottom .center,
+	.bottom .right {
+		background-image: none;
+	}
+
+
+	.left,
+	.center,
+	.right {
+		background-image: none;
+	}
+	
+}
+.popup-style-white .popup-element-body .center .left {
+    background: url(images/left.png);
+    width: 55px;
+    height: 350px;
+}
+
+// old to prob remove:
 .node-type-event .views-field.views-field-nothing > span.field-content.add-to-calendar {
     display: flex;
     justify-content: flex-start;
