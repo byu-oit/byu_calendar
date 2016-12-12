@@ -1779,10 +1779,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             padding-left: 4px;
         }
         
-		.views-field.views-field-field-tickets-url {
-			width: 100%;
-			margin-bottom: 10px;
-		}
+
         .views-field.views-field-field-tickets-url.ticket-button {
             //            background: #cecece;
             //            padding: 4px 12px;
@@ -3484,7 +3481,10 @@ section.block.block-views.block-views-event-page-blocks-block {
         margin-left: 4px;
     }
 }
-  
+.large-screen.node-type-event .views-field.views-field-field-tickets-url {
+	width: 100%;
+	margin-bottom: 10px;
+}  
 .views-field.views-field-field-tickets-url.-Free {
 
     margin-right: 15px;
