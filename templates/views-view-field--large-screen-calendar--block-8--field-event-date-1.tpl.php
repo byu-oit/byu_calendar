@@ -40,7 +40,7 @@ $month = date("F", $time);
 
 echo '<div class="list-view date-square">' . 
     '<div class = "month">' . $month . '</div>' . 
-    '<div class = "day">' . $did . '</div>' . 
+    '<div class = "day">' . $day . '</div>' . 
     '<div class = "year">' . $year . '</div>' .  
     '</div>';
 
