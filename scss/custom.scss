@@ -2947,7 +2947,6 @@ fieldset.group-pricing legend {
 }
 #edit-field-free {
     width: 91px; // was 30
-    width: 91px; // was 30
 //    display: inline;
     float: left;
 //    padding-top: 5px;
@@ -3456,7 +3455,9 @@ span.views-label.views-label-addtoany-link {
 	}
 }
  // Add to Calendar
-
+a.popup-element-title {
+    background-image: none;
+}
 #popup-0 a span:after {
     content: "+";
     font-weight: bold;
@@ -3471,6 +3472,7 @@ span.views-label.views-label-addtoany-link {
 	border-radius: 10px;
 	
 	@include main-outer-shadowbox();
+	
 	.left, .center, .right {
 		background-image: none!important;
 	}
@@ -3483,7 +3485,7 @@ span.views-label.views-label-addtoany-link {
 		color: #444;
 		margin-left: -12px;
 	}
-	a.popup-close-button span:hover:before
+	a.popup-close-button span:hover:before {
 		color: #000;
 	}
 	a.popup-close-button:hover {
