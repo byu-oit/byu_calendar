@@ -3465,22 +3465,17 @@ span.views-label.views-label-addtoany-link {
 // formatting popup
 // normal styling didnt work with background repeat
 .popup-element-body {
-	.top .left,
-	.top .center,
-	.top .right,
-	.bottom .left,
-	.bottom .center,
-	.bottom .right {
-		background-image: none;
-	}
-
-
 	.left,
 	.center,
 	.right {
-		background-image: none;
+		background-image: none!important;
 	}
-	
+	table.popup-layout tbody {
+		background: #fff;
+		border: 1px solid $navy;
+		border-radius: 10px;
+		@include main-outer-shadowbox();
+	}
 }
 .popup-style-white .popup-element-body .center .left {
     background: url(images/left.png);
