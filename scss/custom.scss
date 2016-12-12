@@ -480,9 +480,13 @@ a.popup-element-title {
 	}
 
 }
-.mobile-first .popup-element-origin {
+.mobile-first.node-type-event .popup-element-origin {
     left: 0px!important;
     top: 660px!important;
+}
+.mobile-first.page-taxonomy-term .popup-element-origin {
+//    left: 0px!important;
+//    top: 660px!important;
 }
 
 
