@@ -296,7 +296,7 @@ input[type="file"], input[type="checkbox"], input[type="radio"], select {
 }
 
 /* Hide the Ordinary Checkbox */
-input[type="checkbox"] {
+body:not(.page-admin) input[type="checkbox"] {
     display: none;
 }
 
@@ -4167,6 +4167,18 @@ section.block-social-share-social-share {
 .page-taxonomy-term h1#page-title {
     text-transform: capitalize;
 }
+
+
+/* -- workbench pages ------- */
+
+#edit-sections-internal-categories .form-type-checkbox label {
+	color: #444;
+	padding: 0px 28px 0 0;
+}
+
+
+
+
 
 /* ----- random ----- */
 // edit, view links at top of page, needed space on term page
