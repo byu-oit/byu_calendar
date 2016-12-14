@@ -296,7 +296,7 @@ input[type="file"], input[type="checkbox"], input[type="radio"], select {
 }
 
 /* Hide the Ordinary Checkbox */
-body:not(.page-admin) input[type="checkbox"] {
+body:not(.page-admin-content) input[type="checkbox"] {
     display: none;
 }
 
