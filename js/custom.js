@@ -548,7 +548,7 @@ function startListeners() {
 					$('section.block-social-share-social-share').css("top", "-129px");
 //					$('section.block-social-share-social-share').css("left", "420px");
 //					$('section.block-social-share-social-share').css("margin", "-131px 0px 10px 435px");	
-					$('section.block-views-event-page-blocks-block-3').css("top", "-140px");
+					$('section.block-views-event-page-blocks-block-3').css("top", "-135px");
 				} else { // yes tickets button, no location
 //					$('section.block-social-share-social-share').css("position", "-148px 0px 10px 435px");
 //					$('section.block-social-share-social-share').css("margin", "0px");
@@ -556,7 +556,7 @@ function startListeners() {
 					$('section.block-social-share-social-share').css("top", "-147px");
 //					$('section.block-social-share-social-share').css("left", "420px");
 					// no margin, pos rel, left 420px, top: -147px
-					$('section.block-views-event-page-blocks-block-3').css("top", "-140px");
+					$('section.block-views-event-page-blocks-block-3').css("top", "-120px");
 				}
 			} else { // no tickets button, yes location
 				if( $('.views-field-field-event-location').length ) {
