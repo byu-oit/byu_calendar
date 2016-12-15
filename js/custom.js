@@ -537,12 +537,13 @@ function startListeners() {
 //     if tickets button does not exist, move share button up
 	if($('body').hasClass('node-type-event') && $('body').hasClass('large-screen')) {
 		if($('body').hasClass('ff')) {
-			if( $('.views-field-field-tickets-url').length ) {
+			if( $('.views-field-field-tickets-url').length ) { // has ticket button
 				console.log('the tickets button is there');
 	//			$('section.block-social-share-social-share').css("margin", "-131px 0px 10px 435px");	
 				if( $('.views-field-field-event-location').length ) {
-					console.log('the tickets button is there and location is');
-					$('section.block-social-share-social-share').css("margin", "-131px 0px 10px 435px");	
+//					console.log('the tickets button is there and location is');
+					  $('head').append('<style>section.block-social-share-social-share {margin: 0px; position: relative; left: 420px; top: -147px; }</style>');
+//					$('section.block-social-share-social-share').css("margin", "-131px 0px 10px 435px");	
 				} else { // yes tickets button, no location
 					$('section.block-social-share-social-share').css("margin", "-148px 0px 10px 435px");
 					// no margin, pos rel, left 420px, top: -147px
