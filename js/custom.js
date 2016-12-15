@@ -556,12 +556,15 @@ function startListeners() {
 //					$('section.block-social-share-social-share').css("left", "420px");
 					// no margin, pos rel, left 420px, top: -147px
 				}
-			} else { // no tickets button, no location
+			} else { // no tickets button, yes location
 				if( $('.views-field-field-event-location').length ) {
 					console.log('ff: the locations field is there wo tickets button');
 					$('section.block-social-share-social-share').css("top", "-174px");	
-				} else { // no tickets, yes location
+					$('section.block-views-event-page-blocks-block-3').css("top", "-165px");	
+					
+				} else { // no tickets, no location
 					$('section.block-social-share-social-share').css("top", "-174px");
+					$('section.block-views-event-page-blocks-block-3').css("top", "-165px");
 				}
 			} 
 			
