@@ -542,10 +542,14 @@ function startListeners() {
 	//			$('section.block-social-share-social-share').css("margin", "-131px 0px 10px 435px");	
 				if( $('.views-field-field-event-location').length ) {
 //					console.log('the tickets button is there and location is');
-					  $('head').append('<style>section.block-social-share-social-share {margin: 0px; position: relative; left: 420px; top: -147px; }</style>');
+//					  $('head').append('<style>section.block-social-share-social-share {margin: 0px; position: relative; left: 420px; top: -147px; }</style>');
 //					$('section.block-social-share-social-share').css("margin", "-131px 0px 10px 435px");	
 				} else { // yes tickets button, no location
-					$('section.block-social-share-social-share').css("margin", "-148px 0px 10px 435px");
+//					$('section.block-social-share-social-share').css("position", "-148px 0px 10px 435px");
+					$('section.block-social-share-social-share').css("position", "relative");
+//					$('section.block-social-share-social-share').css("top", "-16px");
+					$('section.block-social-share-social-share').css("top", "-147px");
+					$('section.block-social-share-social-share').css("left", "420px");
 					// no margin, pos rel, left 420px, top: -147px
 				}
 			} else { // no tickets button, no location
