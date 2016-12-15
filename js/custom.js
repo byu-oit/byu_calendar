@@ -537,6 +537,7 @@ function startListeners() {
 //     if tickets button does not exist, move share button up
 	if($('body').hasClass('node-type-event') && $('body').hasClass('large-screen')) {
 		if($('body').hasClass('ff')) {
+			console.log('is ff');
 			if( $('.views-field-field-tickets-url').length ) { // has ticket button
 				console.log('the tickets button is there');
 //				$('section.block-social-share-social-share').css("margin", "0px");
@@ -557,7 +558,7 @@ function startListeners() {
 				}
 			} else { // no tickets button, no location
 				if( $('.views-field-field-event-location').length ) {
-					console.log('the locations field is there wo tickets button');
+					console.log('ff: the locations field is there wo tickets button');
 					$('section.block-social-share-social-share').css("margin", "-193px 0px 10px 435px");	
 				} else { // no tickets, yes location
 					$('section.block-social-share-social-share').css("top", "-174px");
@@ -577,7 +578,7 @@ function startListeners() {
 				}
 			} else { // no tickets button, no location
 				if( $('.views-field-field-event-location').length ) {
-					console.log('the locations field is there wo tickets button');
+					console.log('not ff: the locations field is there wo tickets button');
 					$('section.block-social-share-social-share').css("margin", "-193px 0px 10px 435px");	
 				} else { // no tickets, yes location
 					$('section.block-social-share-social-share').css("margin", "-174px 0px 10px 435px");
