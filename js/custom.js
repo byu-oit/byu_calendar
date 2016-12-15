@@ -559,7 +559,7 @@ function startListeners() {
 			} else { // no tickets button, no location
 				if( $('.views-field-field-event-location').length ) {
 					console.log('ff: the locations field is there wo tickets button');
-					$('section.block-social-share-social-share').css("margin", "-193px 0px 10px 435px");	
+					$('section.block-social-share-social-share').css("top", "-174px");	
 				} else { // no tickets, yes location
 					$('section.block-social-share-social-share').css("top", "-174px");
 				}
