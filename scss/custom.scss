@@ -2462,6 +2462,8 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     
 }
 /* -- CATEGORIES CATEGORIES CATEGORIES --- */
+
+
 /* -------- Mobile: for all & for category pages ------- */
 .page-taxonomy-term div.node.node-teaser {
 	display: none;  // teasers supplied by drupal, maybe remove later to reduce page load stuff
@@ -3987,7 +3989,7 @@ section.block-social-share-social-share {
     display: none;
 }
 
-/* ------------ Categories page and block --------- */
+/* ------------ Categories landing page and block --------- */
 
 #categories-container {
     @include display-flex();
@@ -4076,6 +4078,7 @@ section.block-social-share-social-share {
     
     
 }
+.page-node-651 article ul.links-inline,    // hiding statistics counter 
 .page-node-651 .block-block-18 h2.block-title {
     display: none;
 }
