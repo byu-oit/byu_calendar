@@ -564,8 +564,8 @@ function startListeners() {
 				}
 			} 
 			
-		} else {  // chrome and others
-		
+		} else {  // chrome and others, not ff
+			console.log('doesnt have ff class');
 			if( $('.views-field-field-tickets-url').length ) {
 				console.log('the tickets button is there');
 	//			$('section.block-social-share-social-share').css("margin", "-131px 0px 10px 435px");	
