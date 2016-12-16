@@ -535,7 +535,7 @@ a.popup-element-title {
 		display: flex;
 		justify-content: flex-end;
 	}
-	#sign-in, .sign-out {
+	#sign-in, #sign-out {
 		margin-left: 20px;
 		text-transform: uppercase;
 		font-weight: 100;
@@ -545,7 +545,7 @@ a.popup-element-title {
 	}
 
 	#sign-in i,
-	.sign-out i {
+	#sign-out i {
 //		font-family: FontAwesome;
 		font-size: 14px;
 		padding: 6px 8px;
@@ -553,22 +553,22 @@ a.popup-element-title {
 		margin-left: 10px;
 	}
 	#sign-in i,
-	.sign-out:hover i {
+	#sign-out:hover i {
 		color: #fff;
 		border: 1px solid #fff;
 		background: none;
 	}
 	#sign-in:hover i,
-	.sign-out i {
+	#sign-out i {
 		color: $navy;
 		border: 1px solid $navy;
 		background: #fff;
 	}
 }
 .logged-in #top-right-inner #sign-in,
-.not-logged-in #top-right-inner .sign-out,
-body.page-admin .log-out.not-for-admin-pages,
-body:not(.page-admin) .log-out.for-admin-pages {
+.not-logged-in #top-right-inner #sign-out {
+//body.page-admin .sign-out.not-for-admin-pages,
+//body:not(.page-admin) .sign-out.for-admin-pages {
 	display: none;
 }
 
