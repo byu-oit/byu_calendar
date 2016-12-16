@@ -486,6 +486,7 @@ a.popup-element-title {
 .large-screen .popup-element-body {
 	padding: 15px 0px 0px 25px;
 }
+// logged in as an editor
 .mobile-first.node-type-event .popup-element-origin {
     left: 0px!important;
     top: 660px!important;
@@ -494,6 +495,20 @@ a.popup-element-title {
     top: 90px!important;
     left: 320px!important;
 }
+.mobile-first .popup-element-body.origin-top-right.expand-bottom-left table.popup-layout {
+    top: -20px;
+    left: 0px;
+}
+// not logged in as an editor
+.mobile-first.node-type-event .popup-element-origin {
+    left: 0px!important;
+    top: 460px!important;
+}
+.mobile-first.page-taxonomy-term .popup-element-origin {
+    top: 90px!important;
+    left: 320px!important;
+}
+// idk where this is at? category pages i think
 .mobile-first .popup-element-body.origin-top-right.expand-bottom-left table.popup-layout {
     top: -20px;
     left: 0px;
@@ -520,7 +535,7 @@ a.popup-element-title {
 		display: flex;
 		justify-content: flex-end;
 	}
-	#sign-in, #sign-out {
+	#sign-in, .sign-out {
 		margin-left: 20px;
 		text-transform: uppercase;
 		font-weight: 100;
@@ -530,7 +545,7 @@ a.popup-element-title {
 	}
 
 	#sign-in i,
-	#sign-out i {
+	.sign-out i {
 //		font-family: FontAwesome;
 		font-size: 14px;
 		padding: 6px 8px;
@@ -538,20 +553,22 @@ a.popup-element-title {
 		margin-left: 10px;
 	}
 	#sign-in i,
-	#sign-out:hover i {
+	.sign-out:hover i {
 		color: #fff;
 		border: 1px solid #fff;
 		background: none;
 	}
 	#sign-in:hover i,
-	#sign-out i {
+	.sign-out i {
 		color: $navy;
 		border: 1px solid $navy;
 		background: #fff;
 	}
 }
 .logged-in #top-right-inner #sign-in,
-.not-logged-in #top-right-inner #sign-out {
+.not-logged-in #top-right-inner .sign-out,
+body.page-admin .log-out.not-for-admin-pages,
+body:not(.page-admin) .log-out.for-admin-pages {
 	display: none;
 }
 
@@ -3552,7 +3569,9 @@ span.views-label.views-label-addtoany-link {
 }
 
 .node-type-event .popup-element-body {
-	padding: 0px 0px 0px 25px;
+	@media(min-width: 340px) {
+		padding: 0px 0px 0px 25px;
+	}
 
 	table.popup-layout {
 		top: 0px!important;
