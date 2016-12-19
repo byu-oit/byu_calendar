@@ -539,28 +539,24 @@ function startListeners() {
 		if($('body').hasClass('ff')) {
 			console.log('is ff');
 			if( $('.views-field-field-tickets-url').length ) { // has ticket button
-				console.log('the tickets button is there');
-//				$('section.block-social-share-social-share').css("margin", "0px");
-	//			$('section.block-social-share-social-share').css("margin", "-131px 0px 10px 435px");	
+				console.log('the tickets button is there');	
 				if( $('.views-field-field-event-location').length ) {
-					
-//					$('section.block-social-share-social-share').css("position", "relative");
-					$('section.block-social-share-social-share').css("top", "-129px");
-//					$('section.block-social-share-social-share').css("left", "420px");
-//					$('section.block-social-share-social-share').css("margin", "-131px 0px 10px 435px");	
+
+//					$('section.block-social-share-social-share').css("top", "-129px");
+					$('section.block-social-share-social-share').css("top", "-139px");
+;	
 					$('section.block-views-event-page-blocks-block-3').css("top", "-135px");
 				} else { // yes tickets button, no location
-//					$('section.block-social-share-social-share').css("position", "-148px 0px 10px 435px");
-//					$('section.block-social-share-social-share').css("margin", "0px");
-//					$('section.block-social-share-social-share').css("position", "relative");
-					$('section.block-social-share-social-share').css("top", "-147px");
-//					$('section.block-social-share-social-share').css("left", "420px");
+//					
+//					$('section.block-social-share-social-share').css("top", "-147px");
+					$('section.block-social-share-social-share').css("top", "-157px");
+			
 					// no margin, pos rel, left 420px, top: -147px
 					$('section.block-views-event-page-blocks-block-3').css("top", "-120px");
 				}
 			} else { // no tickets button, yes location
 				if( $('.views-field-field-event-location').length ) {
-					console.log('ff: the locations field is there wo tickets button');
+//					console.log('ff: the locations field is there wo tickets button');
 					$('section.block-social-share-social-share').css("top", "-174px");	
 					$('section.block-views-event-page-blocks-block-3').css("top", "-165px");	
 					
