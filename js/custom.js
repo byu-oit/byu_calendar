@@ -572,14 +572,14 @@ function startListeners() {
 			
 		} else if($('body').hasClass('chrome')) {  // chrome 
 			console.log('doesnt have ff class');
-			if( $('.views-field-field-tickets-url').length ) {
+			if( $('.views-field-field-tickets-url').length ) { // yes tickets
 				console.log('the tickets button is there');
 	//			$('section.block-social-share-social-share').css("margin", "-131px 0px 10px 435px");	
 				if( $('.views-field-field-event-location').length ) {
 					console.log('the tickets button is there and location is');
 					$('section.block-social-share-social-share').css("margin", "-131px 0px 10px 435px");	
 				} else { // yes tickets button, no location
-					$('section.block-social-share-social-share').css("margin", "-148px 0px 10px 435px");
+					$('section.block-social-share-social-share').css("margin", "-157px 0px 10px 435px");
 				}
 			} else { // no tickets button, yes location
 				if( $('.views-field-field-event-location').length ) {
