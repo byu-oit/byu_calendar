@@ -570,7 +570,7 @@ function startListeners() {
 				}
 			} 
 			
-		} else {  // chrome and others, not ff
+		} else if($('body').hasClass('chrome')) {  // chrome 
 			console.log('doesnt have ff class');
 			if( $('.views-field-field-tickets-url').length ) {
 				console.log('the tickets button is there');
@@ -581,12 +581,31 @@ function startListeners() {
 				} else { // yes tickets button, no location
 					$('section.block-social-share-social-share').css("margin", "-148px 0px 10px 435px");
 				}
-			} else { // no tickets button, no location
+			} else { // no tickets button, yes location
 				if( $('.views-field-field-event-location').length ) {
 					console.log('not ff: the locations field is there wo tickets button');
-					$('section.block-social-share-social-share').css("margin", "-193px 0px 10px 435px");	
-				} else { // no tickets, yes location
-					$('section.block-social-share-social-share').css("margin", "-174px 0px 10px 435px");
+					$('section.block-social-share-social-share').css("margin", "-174px 0px 10px 435px");	
+				} else { // no tickets, no location
+					$('section.block-social-share-social-share').css("margin", "-193px 0px 10px 435px");
+				}
+			}
+		} else {  // others, not ff or chrome
+			console.log('doesnt have ff class');
+			if( $('.views-field-field-tickets-url').length ) {
+				console.log('the tickets button is there');
+	//			$('section.block-social-share-social-share').css("margin", "-131px 0px 10px 435px");	
+				if( $('.views-field-field-event-location').length ) {
+					console.log('the tickets button is there and location is');
+					$('section.block-social-share-social-share').css("margin", "-131px 0px 10px 435px");	
+				} else { // yes tickets button, no location
+					$('section.block-social-share-social-share').css("margin", "-148px 0px 10px 435px");
+				}
+			} else { // no tickets button, yes location
+				if( $('.views-field-field-event-location').length ) {
+					console.log('not ff: the locations field is there wo tickets button');
+					$('section.block-social-share-social-share').css("margin", "-174px 0px 10px 435px");	
+				} else { // no tickets, no location
+					$('section.block-social-share-social-share').css("margin", "-193px 0px 10px 435px");
 				}
 			}
 		}
