@@ -4220,6 +4220,9 @@ section.block-social-share-social-share {
 }
 
 
-
+// hide masquerade on mobile
+.mobile-first section.block.block-masquerade.contextual-links-region.block-masquerade-masquerade {
+    display: none;
+}
 
 
