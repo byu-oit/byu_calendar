@@ -3105,27 +3105,28 @@ fieldset.group-pricing legend {
 // new if free is last
 #edit-field-price {
     position: relative;
-    top: 30px;
+    top: 20px;
     left: 80px;
     height: 0px;
 }
 .mobile-first #edit-field-price {
-	top: 20px;
+//	top: 20px;
 }
-#edit-field-price-range {
-    position: relative;
-    top: 36px;  // was 56 //was 61
-}
-.ff #edit-field-price-range {
-    top: 46px;  // was 56 //was 61
-}
+//#edit-field-price-range {
+//    position: relative;
+//    top: 36px;  // was 56 //was 61
+//}
+
 // new if free is last
 #edit-field-price-range {
     position: relative;
-    top: 46px;
+    top: 36px;
     left: 80px;
     height: 0px;
     /* float: right; */
+}
+.ff #edit-field-price-range {
+    top: 46px;  // was 56 //was 61
 }
 .mobile-first #edit-field-price-range { 
 	top: 35px;
@@ -3259,6 +3260,11 @@ fieldset#edit-body-und-0-format {
         padding: 15px 37px; 
         background: $gray;
     }   
+}
+.mobile-first .form-item.form-type-managed-file.form-item-field-thumbnail-und-0 {
+   	.image-widget-data:after {
+		margin-bottom: 30px;
+	}
 }
 button#edit-field-thumbnail-und-0-upload-button {
 //    text-transform: uppercase;
