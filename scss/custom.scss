@@ -3096,11 +3096,12 @@ fieldset.group-pricing legend {
     }
 }
 
-#edit-field-price {
-    position: relative;
-    top: 30px; // was 23 -if the radios dont jump down, its prob 23, 44 if jumping
-    height: 30px;
-}
+//#edit-field-price {
+//    position: relative;
+//    top: 30px; // was 23 -if the radios dont jump down, its prob 23, 44 if jumping
+//    height: 30px;
+//}
+
 // new if free is last
 #edit-field-price {
     position: relative;
@@ -3108,7 +3109,9 @@ fieldset.group-pricing legend {
     left: 80px;
     height: 0px;
 }
-
+.mobile-first #edit-field-price {
+	top: 20px;
+}
 #edit-field-price-range {
     position: relative;
     top: 36px;  // was 56 //was 61
@@ -3119,10 +3122,13 @@ fieldset.group-pricing legend {
 // new if free is last
 #edit-field-price-range {
     position: relative;
-    top: 56px;
+    top: 46px;
     left: 80px;
     height: 0px;
     /* float: right; */
+}
+.mobile-first #edit-field-price-range { 
+	top: 35px;
 }
 #edit-field-price-range .field-values-wrapper.clearfix {
     @include display-flex();
