@@ -620,7 +620,7 @@ function startListeners() {
 	// hide sharebar for no role submitting an unpublished event
 	 if($('body').hasClass('node-type-event') && $('body').hasClass('number-of-roles-1')) {
 		 
-		 if($('div.node-event').hasClass('node-unpublished') {
+		 if($('div.node-event').hasClass('node-unpublished') ) {
 				$('section.block-social-share-social-share').css("display", "none");
 			}
 		 
