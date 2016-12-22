@@ -2799,10 +2799,7 @@ input {
 .number-of-roles-1 ul.button-group {
     display: none;
 }
-// hide sharebar for no role submitting an unpublished event
-.not-front.page-node.number-of-roles-1 .node.node-event.node-unpublished {
-	display: none;
-} 
+
 
 /* --- mobile first  -- add/edit event  --- */
 .mobile section.block.block-workbench.contextual-links-region.block-workbench-block {
