@@ -61,6 +61,18 @@ $nav_gradient_2: 5%;
     display: -webkit-flex;
     
 }
+@mixin display-flex-important() {
+    display: flex!important;
+    display: -webkit-box!important;
+    display: -moz-box!important;
+    display: -ms-flexbox!important;
+    display: -webkit-flex!important;
+    display: -webkit-box!important;
+    display: -moz-box!important;
+    display: -ms-flexbox!important;
+    display: -webkit-flex!important;
+    
+}
 
 @mixin button {
     text-align: center;
@@ -525,14 +537,14 @@ a.popup-element-title {
     max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
+    @include display-flex();
     justify-content: space-between;
 
 }
 #top-right-inner {
 	display: none;
 	@media screen and (min-width: $large_screen_start_width) {
-		display: flex;
+		@include display-flex();
 		justify-content: flex-end;
 	}
 	#sign-in, #sign-out {
@@ -2793,7 +2805,7 @@ input {
     display: none;
 }
 
-.page-node-add, .page-node-edit {
+.page-node-add, .page-node-edit, page-node-clone {
     h1#page-title {
         font-family: "Gotham A","Gotham B";
         font-size: 16px;
@@ -2809,7 +2821,7 @@ input {
 	
 }
 
-.page-node-add, .page-node-edit {
+.page-node-add, .page-node-edit, .page-node-clone {
 
     
     label, .form-item label {
@@ -2821,12 +2833,12 @@ input {
     
 }
 
-    .mobile.page-node-add, .mobile.page-node-edit {
-         .form-item {
-            margin: 5px 0px;
-        }
-    }
-    
+.mobile.page-node-add, .mobile.page-node-edit .mobile.page-node-clone {
+	 .form-item {
+		margin: 5px 0px;
+	}
+}
+
 
 // fieldsets
 fieldset {
@@ -3317,7 +3329,7 @@ div#edit-field-full-name {
     section.block.block-block.light-gray-bg.block-block-13 {
         display: none;
     }
-    .page-node-add, .page-node-edit {
+    .page-node-add, .page-node-edit, .page-node-clone {
         h1#page-title {
             font-family: "Sentinel A", "Sentinel B";
             font-size: 28px;
@@ -3343,7 +3355,7 @@ div#edit-field-full-name {
         border-top: 1px solid $medgray;
         padding-top: 10px;
     }    
-    .page-node-add, .page-node-edit {
+    .page-node-add, .page-node-edit, .page-node-clone {
        .form-item.form-type-textfield.form-item-title label {
             color: $navy;
             font-size: 16px;
@@ -3352,52 +3364,52 @@ div#edit-field-full-name {
 
 //    }
     
-    #edit-field-event-date-und-0-value,
-    #edit-field-event-date-und-0-value2 {
-        .form-item {
-            padding: 0px 5px;
-        }
-    }
-        
-    // pricing
+		#edit-field-event-date-und-0-value,
+		#edit-field-event-date-und-0-value2 {
+			.form-item {
+				padding: 0px 5px;
+			}
+		}
 
-//    .views-field-field-free.-Free + .views-field-field-price,
-//    .views-field-field-free.-Free ~ .views-field-field-price-range {
-//        display: none;
-//    }    
-        
-        
-    #edit-field-are-tickets {
-        margin-top: 15px;
-        height: 35px;
-    }
+		// pricing
+
+	//    .views-field-field-free.-Free + .views-field-field-price,
+	//    .views-field-field-free.-Free ~ .views-field-field-price-range {
+	//        display: none;
+	//    }    
+
+
+		#edit-field-are-tickets {
+			margin-top: 15px;
+			height: 35px;
+		}
+
+		#edit-field-event-type-und {
+		   @include display-flex();
+			flex-flow: column wrap;
+			width: 400px;
+			height: 120px;  // firefox needs 5-10px more than chrome // was 110
+		}
+		#edit-field-event-type-und .form-item {
+			width: 210px; // ff needs 10 px more than chrome
+			margin: 5px 0px;
+		}
+		#edit-field-internal-category .description {
+			padding: 10px 0px 5px;
+		}
+		#edit-field-are-tickets-und {
+			margin-left: -10px;
+		}
+		#edit-field-free #edit-field-free-und {
+			margin-top: -10px;
+			margin-bottom: 15px;
+		}
+		#edit-body {
+			padding: 0px 0px 5px;
+		}
     
-    #edit-field-event-type-und {
-           @include display-flex();
-            flex-flow: column wrap;
-            width: 400px;
-            height: 110px;  // firefox needs 5-10px more than chrome
-    }
-    #edit-field-event-type-und .form-item {
-        width: 210px; // ff needs 10 px more than chrome
-        margin: 5px 0px;
-    }
-    #edit-field-internal-category .description {
-        padding: 10px 0px 5px;
-    }
-    #edit-field-are-tickets-und {
-        margin-left: -10px;
-    }
-    #edit-field-free #edit-field-free-und {
-        margin-top: -10px;
-        margin-bottom: 15px;
-    }
-    #edit-body {
-        padding: 0px 0px 5px;
-    }
     
-    
-    }
+    } // end page-add page-edit page-clone
 }
 
 
@@ -3471,7 +3483,7 @@ section.block.block-views.block-views-event-page-blocks-block {
     .views-field.views-field-nothing span.FULL-WEBSITE {
         display: block!important;
 		@media screen and (min-width: $large_screen_start_with){
-			display: flex !important;
+			@include display-flex-important();
 			align-items: center;
 		}
 	}
@@ -3606,7 +3618,7 @@ span.views-label.views-label-addtoany-link {
 }
 // old to prob remove:
 //.node-type-event .views-field.views-field-nothing > span.field-content.add-to-calendar {
-//    display: flex;
+//    @include display-flex();
 //    justify-content: flex-start;
 //	margin: 0px;
 //    
@@ -3942,7 +3954,7 @@ section.block-social-share-social-share {
 	.front #calendar-week-more-link {
 		height: 58px;
 		margin-top: 2px;
-		display: flex;
+		@include display-flex();
 		justify-content: center;
 		align-items: center;
 		background: $medblue;
@@ -3984,7 +3996,7 @@ section.block-social-share-social-share {
 /* ---- Events By Date --------  */
 
 #events-by-date-dropdowns {
-    display: flex;
+    @include display-flex();
     
     margin-left: auto;
     margin-right: auto;
