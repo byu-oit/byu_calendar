@@ -585,6 +585,25 @@ function startListeners() {
 					$('section.block-social-share-social-share').css("margin", "-193px 0px 10px 435px");
 				}
 			}
+		} else if($('body').hasClass('safari')) {  // others, not ff or chrome
+			
+			if( $('.views-field-field-tickets-url').length ) {
+				
+	//			$('section.block-social-share-social-share').css("margin", "-131px 0px 10px 435px");	
+				if( $('.views-field-field-event-location').length ) {
+//					console.log('the tickets button is there and location is');
+					$('section.block-social-share-social-share').css("margin", "-138px 0px 10px 435px");	
+				} else { // yes tickets button, no location
+					$('section.block-social-share-social-share').css("margin", "-156px 0px 10px 435px");
+				}
+			} else { // no tickets button, yes location
+				if( $('.views-field-field-event-location').length ) {
+					
+					$('section.block-social-share-social-share').css("margin", "-174px 0px 10px 435px");	
+				} else { // no tickets, no location
+					$('section.block-social-share-social-share').css("margin", "-193px 0px 10px 435px");
+				}
+			}
 		} else {  // others, not ff or chrome
 			console.log('doesnt have ff class');
 			if( $('.views-field-field-tickets-url').length ) {
