@@ -794,6 +794,8 @@ header.l-header {
                 padding-left: 0px;
                 padding-right: 0px;
                 height: 100%!important;
+				// trying out this 100% thing so it looks nicer on portrait ipad
+				width: 100%;
                 /* 100vh does the height, but it doesn't work once you scroll.. */
                 @include display-flex();
                 justify-content: center;
