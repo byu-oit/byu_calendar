@@ -58,18 +58,8 @@ $nav_gradient_2: 5%;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
-    display: -webkit-flex;  
-}
-@mixin display-flex-important() {
-    display: flex !important;
-    display: -webkit-box !important;
-    display: -moz-box !important;
-    display: -ms-flexbox !important;
-    display: -webkit-flex !important;
-    display: -webkit-box !important;
-    display: -moz-box !important;
-    display: -ms-flexbox !important;
-    display: -webkit-flex !important;  
+    display: -webkit-flex;
+    
 }
 
 @mixin button {
@@ -535,14 +525,14 @@ a.popup-element-title {
     max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
-    @include display-flex();
+    display: flex;
     justify-content: space-between;
 
 }
 #top-right-inner {
 	display: none;
 	@media screen and (min-width: $large_screen_start_width) {
-		@include display-flex();
+		display: flex;
 		justify-content: flex-end;
 	}
 	#sign-in, #sign-out {
@@ -3481,7 +3471,7 @@ section.block.block-views.block-views-event-page-blocks-block {
     .views-field.views-field-nothing span.FULL-WEBSITE {
         display: block!important;
 		@media screen and (min-width: $large_screen_start_with){
-			@include display-flex-important();
+			display: flex !important;
 			align-items: center;
 		}
 	}
@@ -3614,7 +3604,24 @@ span.views-label.views-label-addtoany-link {
     /* top: 35px; */
     left: -10px;
 }
-
+// old to prob remove:
+//.node-type-event .views-field.views-field-nothing > span.field-content.add-to-calendar {
+//    display: flex;
+//    justify-content: flex-start;
+//	margin: 0px;
+//    
+//	@media screen and (min-width: $large_screen_start_width) {
+//		margin: 40px 0px 20px;	
+//	}
+//    /* width: 160px; */
+//    font-weight: bold;
+//	a > div {
+//		display: inline;
+//		padding: 0px 4px 0px 0px;
+//		font-size: 13px;
+//    	text-transform: uppercase;
+//	}
+//}
 //if no tickets, move up
 .node-type-event .views-field.views-field-nothing > span.field-content.add-to-calendar.tickets-2 {
 	margin: 0px 0px 20px;
@@ -3935,7 +3942,7 @@ section.block-social-share-social-share {
 	.front #calendar-week-more-link {
 		height: 58px;
 		margin-top: 2px;
-		@include display-flex();
+		display: flex;
 		justify-content: center;
 		align-items: center;
 		background: $medblue;
@@ -3977,7 +3984,7 @@ section.block-social-share-social-share {
 /* ---- Events By Date --------  */
 
 #events-by-date-dropdowns {
-     @include display-flex();
+    display: flex;
     
     margin-left: auto;
     margin-right: auto;
