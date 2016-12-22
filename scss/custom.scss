@@ -2795,6 +2795,10 @@ input {
 .number-of-roles-1 .vertical-tabs.clearfix {
     display: none;
 }
+// edit/view tabs on nodes
+.number-of-roles-1 ul.button-group {
+    display: none;
+}
 // hide sharebar for no role submitting an unpublished event
 .not-front.page-node.number-of-roles-1 .node.node-event.node-unpublished {
 	display: none;
@@ -2919,7 +2923,7 @@ fieldset {
 
 // all day checkbox
 .form-item.form-type-checkbox.form-item-field-event-date-und-0-all-day {
-    padding: 0px 0px 0px;
+    padding: 0px 0px 8px;
     margin: 0px;
 }
 .safari .form-item.form-type-checkbox.form-item-field-event-date-und-0-all-day {
