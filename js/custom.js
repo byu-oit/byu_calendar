@@ -284,7 +284,7 @@ jQuery( document ).ready(function( $ ) {
     }
         
 
-    if (( $("body").hasClass("page-node-add") ) || ( $("body").hasClass("page-node-edit")) ) {
+    if (( $("body").hasClass("page-node-add") ) || ( $("body").hasClass("page-node-edit")) || ( $("body").hasClass("page-node-clone")) ) {
         calcWeekday();
     }
     
