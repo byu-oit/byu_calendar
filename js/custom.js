@@ -316,7 +316,7 @@ jQuery( document ).ready(function( $ ) {
         // mobile hide menu if clicked off of it
 	 if ($("body").hasClass("mobile-first")) {
 		   $('body').click(function() {
-			   if('header nav').hasClass('expanded') {
+			   if( $('header nav').hasClass('expanded') ) {
 					console.log('hide menu!');
 					$('header nav').removeClass("expanded"); 
 			   }
