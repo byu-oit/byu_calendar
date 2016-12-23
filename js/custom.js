@@ -310,30 +310,18 @@ jQuery( document ).ready(function( $ ) {
     $('#edit-field-event-date-und-0-value-day').change(function(){ calcWeekday() });
     $('#edit-field-event-date-und-0-value-year').change(function(){ calcWeekday() });
     
-//    .date-no-float.start-date-wrapper.container-inline-date:before {
-//        content: "TUESDAY";
-//        color: gray;
-//        font-weight: bold;
-//    }
 
-    // all page
+	
 
-//  jQuery('a.reset').live( 'click', function() {
-//    var datafield = jQuery(this).attr('data-field');
-//    jQuery('#'+datafield).val('All');
-//    jQuery( '#views-exposed-form-large-screen-calendar-block-8' ).submit(funtion(){
-//        var tids = [];
-//        tids.push([$(input).val()]);                                                                 
-//                                                                         
-//                                                                         $term = taxonomy_term_load($tid);
-//        var name = $term->
-//          var termNames =[];
-                                                                        
-//       var checkedValues = $('input[name="field_event_type_tid[]"]:checked');
-//            print_r(checkedValues);
-//        });
-
-    
+        // mobile hide menu if clicked off of it
+	 if ($("body").hasClass("mobile-first")) {
+		   $('body').click(function() {
+			   if('header nav').hasClass('expanded') {
+					console.log('hide menu!');
+					$('header nav').removeClass("expanded"); 
+			   }
+		   }); 
+	 }
     // mobile show filters
     
    $('#main-content-section').on('click', '.show-filters', function() {
