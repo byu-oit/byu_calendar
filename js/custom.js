@@ -537,7 +537,7 @@ function startListeners() {
 				} else { // yes tickets button, no location
 //					
 //					$('section.block-social-share-social-share').css("top", "-147px");
-					$('section.block-social-share-social-share').css("top", "-177px");
+					$('section.block-social-share-social-share').css("top", "-176px");
 			
 					// no margin, pos rel, left 420px, top: -147px
 					$('section.block-views-event-page-blocks-block-3').css("top", "-140px");
@@ -563,13 +563,13 @@ function startListeners() {
 					console.log('the tickets button is there and location is');
 					$('section.block-social-share-social-share').css("margin", "-159px 0px 10px 435px");	
 				} else { // yes tickets button, no location
-					$('section.block-social-share-social-share').css("margin", "-177px 0px 10px 435px");
+					$('section.block-social-share-social-share').css("margin", "-176px 0px 10px 435px");
 				}
 			} else { // no tickets button, yes location
 				if( $('.views-field-field-event-location').length ) {
 					console.log('not ff: the locations field is there wo tickets button');
 //					$('section.block-social-share-social-share').css("margin", "-174px 0px 10px 435px");
-					$('section.block-social-share-social-share').css("margin", "-213px 0px 10px 435px");
+					$('section.block-social-share-social-share').css("margin", "-196px 0px 10px 435px");
 				} else { // no tickets, no location
 					$('section.block-social-share-social-share').css("margin", "-213px 0px 10px 435px");
 //					$('section.block-social-share-social-share').css("margin", "-174px 0px 10px 435px");
@@ -584,7 +584,7 @@ function startListeners() {
 //					console.log('the tickets button is there and location is');
 					$('section.block-social-share-social-share').css("margin", "-158px 0px 10px 435px");	
 				} else { // yes tickets button, no location
-					$('section.block-social-share-social-share').css("margin", "-176px 0px 10px 435px");
+					$('section.block-social-share-social-share').css("margin", "-175px 0px 10px 435px");
 				}
 			} else { // no tickets button, yes location
 				if( $('.views-field-field-event-location').length ) {
@@ -594,7 +594,7 @@ function startListeners() {
 					$('section.block-social-share-social-share').css("margin", "-213px 0px 10px 435px");
 				}
 			}
-		} else {  // others, not ff or chrome
+		} else {  // others, not ff or chrome or safari
 			console.log('doesnt have ff class');
 			if( $('.views-field-field-tickets-url').length ) {
 				console.log('the tickets button is there');
