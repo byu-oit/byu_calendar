@@ -8,8 +8,9 @@ $large_screen_start_width: 1024px;
 $navy: #002E5D;
 $lightestblue: #C4CFDA;
 $lightblue: #A6B6C7;
-$medblue: #889FB7;
-$darkmedblue: #5B728A;
+$medblue: #697F96;  // was #889FB7  but it couldn't have white on it with enough contrast
+// 697F96 is enough contrast for large text
+$darkmedblue: #5B728A;  // #5B728A is enough contrast for small white text
 
 
     $dullnavy: desaturate($navy, 30%);
