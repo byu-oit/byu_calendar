@@ -8,6 +8,7 @@ $large_screen_start_width: 1024px;
 $navy: #002E5D;
 $lightestblue: #C4CFDA;
 $lightblue: #A6B6C7;
+$lightmedblue: #889FB7;
 $medblue: #697F96;  // was #889FB7  but it couldn't have white on it with enough contrast
 // 697F96 is enough contrast for large text
 $darkmedblue: #5B728A;  // #5B728A is enough contrast for small white text
@@ -1047,7 +1048,7 @@ main #main-content-section.scrolled {
     }
     .calendar-nav-item {
         /*comment */
-        background: $medblue;
+        background: $darkmedblue;
         padding: 8px 0px;  // was 15px 0px for something, we need 8px 0px for week navigation
         margin-bottom: -2px;
         @include sidebar-inner-shadowbox();
@@ -1065,10 +1066,10 @@ main #main-content-section.scrolled {
         background: $navy!important;
     }
     .calendar-nav-item:hover {
-        background: $lightblue;
+        background: $medblue;
     }
     .calendar-nav-item:active {
-        background: $lightestblue;
+        background: $lightmedblue;
     }
 
 }
