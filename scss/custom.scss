@@ -4279,8 +4279,12 @@ section.block-social-share-social-share {
 	color: #444;
 	padding: 0px 28px 0 0;
 }
-
-.view-subscribe-to-multiple {
+#block-views-subscribe-to-multiple-block {
+	h2 {  // block title
+		font-weight: bold;
+		color: $navy;
+		font-size: 24px;
+	}
 	.view-content {
 		display: none;
 	}
