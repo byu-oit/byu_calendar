@@ -3699,30 +3699,36 @@ section.block-social-share-social-share {
 	}
 	
 	a:before {
-		font-family: FontAwesome;
-		color: $navy;
-		border: 2px solid $medgray;
-		font-size: 16px;
-		border-radius: 21px;
+//		font-family: FontAwesome;
+//		color: $navy;
+//		border: 2px solid $medgray;
+//		font-size: 16px;
+//		border-radius: 21px;
 		
 	}
 	a:hover:before {
-		color: #fff;
-		background: $navy;
-		border: 2px solid $navy;
+//		color: #fff;
+//		background: $navy;
+//		border: 2px solid $navy;
 	}
 	a.social-share-facebook:before {
-		content: '\F09a';
-		padding: 8px 12px;
+//		content: '\F09a';
+//		padding: 8px 12px;
+		content: url(/sites/default/files/FB-f-Logo__blue_100_0.png);
+		position: relative;
+		top: 13px;
 	}
 	a.social-share-twitter:before {
-		content: '\F099';
-		padding: 8px 9px;
+//		content: '\F099';
+//		padding: 8px 9px;
+		content: url(/sites/default/files/TwitterLogo_%2355acee-DarkBg_0.png);
+		position: relative;
+		top: 13px;
 		
 	}
 	a.social-share-facebook, a.social-share-twitter {
-		color: #fff;
-		font-size: 0px;
+//		color: #fff;
+//		font-size: 0px;
 		margin-right: 3px;
 	}
 }
