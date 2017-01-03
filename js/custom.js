@@ -531,26 +531,26 @@ function startListeners() {
 				if( $('.views-field-field-event-location').length ) {
 
 //					$('section.block-social-share-social-share').css("top", "-129px");
-					$('section.block-social-share-social-share').css("top", "-139px");
+					$('section.block-social-share-social-share').css("top", "-159px");
 ;	
-					$('section.block-views-event-page-blocks-block-3').css("top", "-135px");
+					$('section.block-views-event-page-blocks-block-3').css("top", "-155px");
 				} else { // yes tickets button, no location
 //					
 //					$('section.block-social-share-social-share').css("top", "-147px");
-					$('section.block-social-share-social-share').css("top", "-157px");
+					$('section.block-social-share-social-share').css("top", "-177px");
 			
 					// no margin, pos rel, left 420px, top: -147px
-					$('section.block-views-event-page-blocks-block-3').css("top", "-120px");
+					$('section.block-views-event-page-blocks-block-3').css("top", "-140px");
 				}
 			} else { // no tickets button, yes location
 				if( $('.views-field-field-event-location').length ) {
 //					console.log('ff: the locations field is there wo tickets button');
-					$('section.block-social-share-social-share').css("top", "-174px");	
-					$('section.block-views-event-page-blocks-block-3').css("top", "-165px");	
+					$('section.block-social-share-social-share').css("top", "-194px");	
+					$('section.block-views-event-page-blocks-block-3').css("top", "-185px");	
 					
 				} else { // no tickets, no location
-					$('section.block-social-share-social-share').css("top", "-191px");
-					$('section.block-views-event-page-blocks-block-3').css("top", "-180px");
+					$('section.block-social-share-social-share').css("top", "-211px");
+					$('section.block-views-event-page-blocks-block-3').css("top", "-200px");
 				}
 			} 
 			
@@ -561,17 +561,17 @@ function startListeners() {
 	//			$('section.block-social-share-social-share').css("margin", "-131px 0px 10px 435px");	
 				if( $('.views-field-field-event-location').length ) {  // yes, yes
 					console.log('the tickets button is there and location is');
-					$('section.block-social-share-social-share').css("margin", "-139px 0px 10px 435px");	
+					$('section.block-social-share-social-share').css("margin", "-159px 0px 10px 435px");	
 				} else { // yes tickets button, no location
-					$('section.block-social-share-social-share').css("margin", "-157px 0px 10px 435px");
+					$('section.block-social-share-social-share').css("margin", "-177px 0px 10px 435px");
 				}
 			} else { // no tickets button, yes location
 				if( $('.views-field-field-event-location').length ) {
 					console.log('not ff: the locations field is there wo tickets button');
 //					$('section.block-social-share-social-share').css("margin", "-174px 0px 10px 435px");
-					$('section.block-social-share-social-share').css("margin", "-193px 0px 10px 435px");
+					$('section.block-social-share-social-share').css("margin", "-213px 0px 10px 435px");
 				} else { // no tickets, no location
-					$('section.block-social-share-social-share').css("margin", "-193px 0px 10px 435px");
+					$('section.block-social-share-social-share').css("margin", "-213px 0px 10px 435px");
 //					$('section.block-social-share-social-share').css("margin", "-174px 0px 10px 435px");
 				}
 			}
@@ -582,16 +582,16 @@ function startListeners() {
 	//			$('section.block-social-share-social-share').css("margin", "-131px 0px 10px 435px");	
 				if( $('.views-field-field-event-location').length ) {
 //					console.log('the tickets button is there and location is');
-					$('section.block-social-share-social-share').css("margin", "-138px 0px 10px 435px");	
+					$('section.block-social-share-social-share').css("margin", "-158px 0px 10px 435px");	
 				} else { // yes tickets button, no location
-					$('section.block-social-share-social-share').css("margin", "-156px 0px 10px 435px");
+					$('section.block-social-share-social-share').css("margin", "-176px 0px 10px 435px");
 				}
 			} else { // no tickets button, yes location
 				if( $('.views-field-field-event-location').length ) {
 					
-					$('section.block-social-share-social-share').css("margin", "-174px 0px 10px 435px");	
+					$('section.block-social-share-social-share').css("margin", "-194px 0px 10px 435px");	
 				} else { // no tickets, no location
-					$('section.block-social-share-social-share').css("margin", "-193px 0px 10px 435px");
+					$('section.block-social-share-social-share').css("margin", "-213px 0px 10px 435px");
 				}
 			}
 		} else {  // others, not ff or chrome
@@ -601,16 +601,16 @@ function startListeners() {
 	//			$('section.block-social-share-social-share').css("margin", "-131px 0px 10px 435px");	
 				if( $('.views-field-field-event-location').length ) {
 					console.log('the tickets button is there and location is');
-					$('section.block-social-share-social-share').css("margin", "-131px 0px 10px 435px");	
+					$('section.block-social-share-social-share').css("margin", "-151px 0px 10px 435px");	
 				} else { // yes tickets button, no location
-					$('section.block-social-share-social-share').css("margin", "-148px 0px 10px 435px");
+					$('section.block-social-share-social-share').css("margin", "-168px 0px 10px 435px");
 				}
 			} else { // no tickets button, yes location
 				if( $('.views-field-field-event-location').length ) {
 					console.log('not ff: the locations field is there wo tickets button');
-					$('section.block-social-share-social-share').css("margin", "-174px 0px 10px 435px");	
+					$('section.block-social-share-social-share').css("margin", "-194px 0px 10px 435px");	
 				} else { // no tickets, no location
-					$('section.block-social-share-social-share').css("margin", "-193px 0px 10px 435px");
+					$('section.block-social-share-social-share').css("margin", "-213px 0px 10px 435px");
 				}
 			}
 		}
