@@ -2677,7 +2677,7 @@ footer.l-footer.row {
 
 
 /* --- footer --- */
-
+// footer columns
 section.row.l-footer-columns {
     background: $lightgray;
     padding: 40px;
@@ -2701,6 +2701,11 @@ section.row.l-footer-columns {
     		margin-right: 1%;
 		}
 	}
+	
+	.footer-social-media a {
+		margin-right: 5px;
+	}
+	
 }
 
 
@@ -3967,7 +3972,7 @@ section.block-social-share-social-share {
 		font-size: 25px;
 	}
 	.front .calendar-nav-section .calendar-nav-item .day-navigation-weekday {
-		font-size: 13px;
+		font-size: 15px;
 	}
 	.front #calendar-week-more-link {
 		height: 58px;
