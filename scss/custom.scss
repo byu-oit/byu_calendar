@@ -22,6 +22,7 @@ $lightgray: #e5e5e5;
 $medgray: #9b9b9b;
 $gray: #767676;
 $darkgray: #6a6a6b;
+$darkestgray: #444444;
 $royal: #003DA5;
 $royallight: #114BAD;
 
@@ -987,10 +988,10 @@ main #main-content-section.scrolled {
 //        border-top: 7px white solid;
 //        border-bottom: 5px white solid;
         a {
-            color: $medgray;
+            color: $darkgray;
         }
         a:hover {
-            color: $gray;
+            color: $darkestgray;
         }
     }
     td.sun {
