@@ -555,7 +555,7 @@ function startListeners() {
 			} 
 			
 		} else if($('body').hasClass('chrome')) {  // chrome 
-			console.log('doesnt have ff class');
+			console.log('has chrome class');
 			if( $('.views-field-field-tickets-url').length ) { // yes tickets
 				console.log('the tickets button is there');
 	//			$('section.block-social-share-social-share').css("margin", "-131px 0px 10px 435px");	
@@ -571,8 +571,8 @@ function startListeners() {
 //					$('section.block-social-share-social-share').css("margin", "-174px 0px 10px 435px");
 					$('section.block-social-share-social-share').css("margin", "-193px 0px 10px 435px");
 				} else { // no tickets, no location
-//					$('section.block-social-share-social-share').css("margin", "-193px 0px 10px 435px");
-					$('section.block-social-share-social-share').css("margin", "-174px 0px 10px 435px");
+					$('section.block-social-share-social-share').css("margin", "-193px 0px 10px 435px");
+//					$('section.block-social-share-social-share').css("margin", "-174px 0px 10px 435px");
 				}
 			}
 		} else if($('body').hasClass('safari')) {  // others, not ff or chrome
