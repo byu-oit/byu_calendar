@@ -2702,8 +2702,11 @@ section.row.l-footer-columns {
 		}
 	}
 	
-	.footer-social-media a {
-		margin-right: 11px;
+	.footer-social-media {
+		margin-bottom: 10px;
+		a {
+			margin-right: 11px;
+		}
 	}
 	
 }
