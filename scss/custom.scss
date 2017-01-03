@@ -9,6 +9,7 @@ $navy: #002E5D;
 $lightestblue: #C4CFDA;
 $lightblue: #A6B6C7;
 $medblue: #889FB7;
+$darkmedblue: #5B728A;
 
 
     $dullnavy: desaturate($navy, 30%);
@@ -1003,7 +1004,7 @@ main #main-content-section.scrolled {
         }
     }
     td.current-week {
-        background: $lightblue;
+        background: $darkmedblue;
         a {
             color: #fff;
         }
