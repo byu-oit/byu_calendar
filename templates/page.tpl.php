@@ -20,9 +20,9 @@
 				  <div id="top-bar-search"> 
 					  <?php 
 						//print $search_box; 
-					  $block = module_invoke('search', 'block_view', 'search');
-						print render($block); 
-
+//					  $block = module_invoke('search', 'block_view', 'search');
+//						print render($block); 
+					  $search = drupal_get_form('search_block_form'); print render($search); 
 					  ?>
 				  </div>
 
