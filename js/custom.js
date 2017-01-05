@@ -568,11 +568,21 @@ function startListeners() {
 			} else { // no tickets button, yes location
 				if( $('.views-field-field-event-location').length ) {
 					console.log('not ff: the locations field is there wo tickets button');
-//					$('section.block-social-share-social-share').css("margin", "-174px 0px 10px 435px");
-					$('section.block-social-share-social-share').css("margin", "-196px 0px 10px 435px");
+					if(  $('.views-field-field-free').hasClass('-Price') || $('.views-field-field-free').hasClass('-Range')) {
+						$('section.block-social-share-social-share').css("margin", "-216px 0px 10px 435px");
+					} else {
+//						$('section.block-social-share-social-share').css("margin", "-174px 0px 10px 435px");
+						$('section.block-social-share-social-share').css("margin", "-196px 0px 10px 435px");
+					}
+					
+					
 				} else { // no tickets, no location
-					$('section.block-social-share-social-share').css("margin", "-213px 0px 10px 435px");
-//					$('section.block-social-share-social-share').css("margin", "-174px 0px 10px 435px");
+					if(  $('.views-field-field-free').hasClass('-Price') || $('.views-field-field-free').hasClass('-Range')) {
+						$('section.block-social-share-social-share').css("margin", "-232px 0px 10px 435px");
+					} else {
+						$('section.block-social-share-social-share').css("margin", "-213px 0px 10px 435px");
+	//					$('section.block-social-share-social-share').css("margin", "-174px 0px 10px 435px");
+					}
 				}
 			}
 		} else if($('body').hasClass('safari')) {  // others, not ff or chrome
