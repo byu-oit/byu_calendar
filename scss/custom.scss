@@ -3149,7 +3149,7 @@ fieldset.group-pricing legend {
     height: 0px;
 }
 .mobile-first #edit-field-price {
-	top: 20px;
+	top: 29px;
 }
 //#edit-field-price-range {
 //    position: relative;
@@ -3168,7 +3168,7 @@ fieldset.group-pricing legend {
     top: 46px;  // was 56 //was 61
 }
 .mobile-first #edit-field-price-range { 
-	top: 35px;
+//	top: 46px; 
 }
 #edit-field-price-range .field-values-wrapper.clearfix {
     @include display-flex();
@@ -3183,7 +3183,11 @@ fieldset.group-pricing legend {
 // ticket info
 
 #edit-field-tickets-url {
-    padding-top: 10px;
+//    padding-top: 10px;
+	margin-top: -20px;
+	.form-item .description {
+		padding: 0px 0px 10px;
+	}
 }
 
 
