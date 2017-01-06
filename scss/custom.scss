@@ -3060,6 +3060,7 @@ fieldset.date-combo.form-wrapper.date-processed .fieldset-wrapper {
 .form-item.form-item-field-are-tickets-und {
     margin: -10px 0px 15px!important;
     @include display-flex();
+	flex-wrap : wrap;
 }
 #edit-field-are-tickets-und .form-item {
     display: inline;
@@ -3067,8 +3068,8 @@ fieldset.date-combo.form-wrapper.date-processed .fieldset-wrapper {
     padding: 13px 5px 0px 0px;
 }
 #edit-field-are-tickets > div > label {
-    float: left;
-     width: 105px;
+//    float: left;
+//     width: 105px;
 }
 
 textarea#edit-body-und-0-value {
@@ -3424,7 +3425,7 @@ div#edit-field-full-name {
 			padding: 10px 0px 5px;
 		}
 		#edit-field-are-tickets-und {
-			margin-left: -10px;
+			margin-left: 10px;
 		}
 		#edit-field-free #edit-field-free-und {
 			margin-top: -10px;
