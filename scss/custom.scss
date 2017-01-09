@@ -3098,7 +3098,7 @@ textarea#edit-body-und-0-value {
 }
 
 fieldset.group-pricing legend {
-    display: block;
+    display: none; // default to none
     font-family: "Sentinel A", "Sentinel B";
     text-transform: uppercase;
     font-size: 13px;
