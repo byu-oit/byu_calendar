@@ -3423,7 +3423,7 @@ div#edit-field-full-name {
 
 		#edit-field-are-tickets {
 			margin-top: 15px;
-			height: 35px;
+			height: 60px;
 		}
 
 		#edit-field-event-type-und {
@@ -3440,7 +3440,7 @@ div#edit-field-full-name {
 			padding: 10px 0px 5px;
 		}
 		#edit-field-are-tickets-und {
-			margin-left: 10px;
+//			margin-left: 10px;  // don't need now it's on it's own line.
 		}
 		#edit-field-free #edit-field-free-und {
 			margin-top: -10px;
@@ -3499,6 +3499,9 @@ section.block.block-views.block-views-event-page-blocks-block {
     .views-field.views-field-views-conditional-1.-Range {
         margin: 9px 0px;
     }
+    .views-field.views-field-field-price-range.tickets-exist-No,
+    .views-field.views-field-field-price.tickets-exist-No,
+    .views-field.views-field-field-free.tickets-exist-No,
     .views-field.views-field-field-free.-Price,
     .views-field.views-field-field-free.-Range {
         display: none!important;
