@@ -332,7 +332,22 @@ jQuery( document ).ready(function( $ ) {
 					$('header nav').removeClass("expanded"); 
 			   }
 		   }); 
+		 $('#content-footer').click(function() {
+			   if( $('header nav').hasClass('expanded') ) {
+					console.log('hide menu!');
+					$('header nav').removeClass("expanded"); 
+			   }
+		   }); 
+		 // for left of menu that is technically invisible nav space
+//		 $('nav').click(function() {
+//			   if( $('header nav').hasClass('expanded') ) {
+//					console.log('hide menu!');
+//					$('header nav').removeClass("expanded"); 
+//			   }
+//		   }); 
 	 }
+
+	
     // mobile show filters
     
    $('#main-content-section').on('click', '.show-filters', function() {
