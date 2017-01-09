@@ -546,7 +546,8 @@ function startListeners() {
 				if( $('.views-field-field-event-location').length ) {
 					if(  $('.views-field-field-free').hasClass('-Price') || $('.views-field-field-free').hasClass('-Range')) {
 						$('section.block-social-share-social-share').css("top", "-213px");	
-						$('section.block-views-event-page-blocks-block-3').css("top", "-205px");		
+						$('section.block-views-event-page-blocks-block-3').css("top", "-205px");	
+						console.log('ff and no tickets button with price or range selected but idk about if its empty or not');
 					} else {
 	//					console.log('ff: the locations field is there wo tickets button');
 						$('section.block-social-share-social-share').css("top", "-194px");	

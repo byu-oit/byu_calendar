@@ -48,6 +48,7 @@ scripts[] = js/vendor/custom.modernizr.js
 ; can comment this line and uncomment the ones below you want.
 scripts[] = js/foundation.min.js
 scripts[] = js/custom.js
+scripts[] = js/stickyHeaders.js
 
 ; Foundation framework scripts (uncompressed).
 ;scripts[] = js/foundation/foundation.js

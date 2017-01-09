@@ -1295,6 +1295,16 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 
 /* --- mobile responsive for week view -------- */
 
+/* ---- making day headers sticky --- */
+@media screen and ( max-width: $mobile_max_width) {
+	.weekview-day-header.sticky {
+		position: absolute;
+		width: 100%;
+		height: 110px;
+		margin-bottom: 150px;
+	}
+	
+}
 @media screen and ( max-width: $mobile_max_width) {
 
 	
