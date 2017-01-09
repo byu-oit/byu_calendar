@@ -297,6 +297,8 @@ jQuery( document ).ready(function( $ ) {
        // var p = this.checked ? '0px' : 'inline';
     });
 	
+	
+	
 	$('#edit-field-tickets-exist-und-no').change(function(){
         var n = this.checked ? 'none' : 'block';
         $('fieldset.group-pricing legend').css('display', n);
