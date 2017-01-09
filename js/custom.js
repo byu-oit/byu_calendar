@@ -300,9 +300,10 @@ jQuery( document ).ready(function( $ ) {
 	$('#edit-field-tickets-exist-und-no').change(function(){
         var n = this.checked ? 'none' : 'block';
         $('fieldset.group-pricing legend').css('display', n);
-//        var m = this.checked ? '0px' : '32px';
-//        $('#edit-field-event-date-und-0-value').css('margin-bottom', m);
-       // var p = this.checked ? '0px' : 'inline';
+    });
+	$('#edit-field-tickets-exist-und-yes').change(function(){
+        var y = this.checked ? 'block' : 'none';
+        $('fieldset.group-pricing legend').css('display', y);
     });
     
 //    $('#edit-field-event-date-und-0-show-todate').change(function(){
