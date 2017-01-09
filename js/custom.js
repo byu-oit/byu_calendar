@@ -626,7 +626,7 @@ function startListeners() {
 				} else { // no tickets, no location
 					if(  $('.views-field-field-free').hasClass('tickets-exist-No') ) {
 						$('section.block-social-share-social-share').css("margin", "-233px 0px 10px 435px");
-					else {
+					} else {
 						$('section.block-social-share-social-share').css("margin", "-213px 0px 10px 435px");
 					}
 				}
