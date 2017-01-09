@@ -642,7 +642,10 @@ a.popup-element-title {
     .top-bar.expanded .title-area {
         background: $navy;
     }
-
+	.top-bar-section {
+		width: 81%;
+		left: 19%;
+	}
     .top-bar-section ul {
         background: none;
     }
@@ -653,7 +656,7 @@ a.popup-element-title {
     ul#secondary-menu li,
     ul#main-menu li {
         border-left: 2px solid $medgray;
-        width: 80%;
+        width: 100%;  // was 80% but needed that 80% limit moved higher up the divs
     
     }
     ul#secondary-menu li.last.leaf {
