@@ -580,7 +580,7 @@ function startListeners() {
 			} else { // no tickets button, yes location
 				if( $('.views-field-field-event-location').length ) {
 					console.log('not ff: the locations field is there wo tickets button');
-					if(  $('.views-field-field-free').hasClass('-Price') || $('.views-field-field-free').hasClass('-Range')) {
+					if(  $('.views-field-field-free').hasClass('tickets-exist-No') ) {
 						$('section.block-social-share-social-share').css("margin", "-216px 0px 10px 435px");
 					} else {
 //						$('section.block-social-share-social-share').css("margin", "-174px 0px 10px 435px");
@@ -589,7 +589,7 @@ function startListeners() {
 					
 					
 				} else { // no tickets, no location
-					if(  $('.views-field-field-free').hasClass('-Price') || $('.views-field-field-free').hasClass('-Range')) {
+					if(  $('.views-field-field-free').hasClass('tickets-exist-No') ) {
 						$('section.block-social-share-social-share').css("margin", "-232px 0px 10px 435px");
 					} else {
 						$('section.block-social-share-social-share').css("margin", "-213px 0px 10px 435px");
@@ -610,7 +610,7 @@ function startListeners() {
 				}
 			} else { // no tickets button, yes location
 				if( $('.views-field-field-event-location').length ) {
-					if(  $('.views-field-field-free').hasClass('-Price') || $('.views-field-field-free').hasClass('-Range')) {
+					if(  $('.views-field-field-free').hasClass('tickets-exist-No') ) {
 						$('section.block-social-share-social-share').css("margin", "-213px 0px 10px 435px");	
 					} else {
 						$('section.block-social-share-social-share').css("margin", "-194px 0px 10px 435px");	
@@ -632,14 +632,14 @@ function startListeners() {
 				}
 			} else { // no tickets button, yes location
 				if( $('.views-field-field-event-location').length ) {
-					if(  $('.views-field-field-free').hasClass('-Price') || $('.views-field-field-free').hasClass('-Range')) {
+					if(  $('.views-field-field-free').hasClass('tickets-exist-No') ) {
 						$('section.block-social-share-social-share').css("margin", "-213px 0px 10px 435px");	
 					} else {
 //						console.log('not ff: the locations field is there wo tickets button');
 						$('section.block-social-share-social-share').css("margin", "-194px 0px 10px 435px");	
 					}
 				} else { // no tickets, no location
-					if(  $('.views-field-field-free').hasClass('-Price') || $('.views-field-field-free').hasClass('-Range')) {
+					if(  $('.views-field-field-free').hasClass('tickets-exist-No') ) {
 						$('section.block-social-share-social-share').css("margin", "-222px 0px 10px 435px");	
 					} else {
 						$('section.block-social-share-social-share').css("margin", "-213px 0px 10px 435px");
