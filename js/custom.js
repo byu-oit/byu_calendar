@@ -557,7 +557,8 @@ function startListeners() {
 				} else { // no tickets, no location
 					if(  $('.views-field-field-free').hasClass('-Price') || $('.views-field-field-free').hasClass('-Range')) {
 						$('section.block-social-share-social-share').css("top", "-230px");	
-						$('section.block-views-event-page-blocks-block-3').css("top", "-219px");		
+						$('section.block-views-event-page-blocks-block-3').css("top", "-219px");	
+						console.log('ff and no tickets button/location with price or range selected but idk about if its empty or not');
 					} else {
 						$('section.block-social-share-social-share').css("top", "-211px");
 						$('section.block-views-event-page-blocks-block-3').css("top", "-200px");
