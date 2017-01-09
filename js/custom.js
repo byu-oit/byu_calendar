@@ -301,11 +301,11 @@ jQuery( document ).ready(function( $ ) {
 	
 	$('#edit-field-tickets-exist-und-no').change(function(){
         var n = this.checked ? 'none' : 'block';
-        $('fieldset.group-pricing legend').css('display', n);
+        $('fieldset.group-pricing > legend').css('display', n);
     });
 	$('#edit-field-tickets-exist-und-yes').change(function(){
         var y = this.checked ? 'block' : 'none';
-        $('fieldset.group-pricing legend').css('display', y);
+        $('fieldset.group-pricing > legend').css('display', y);
     });
     
 //    $('#edit-field-event-date-und-0-show-todate').change(function(){
