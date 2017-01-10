@@ -19,7 +19,8 @@
         
             var settings = $.extend({
                 stickyClass: 'sticky',
-                headlineSelector: 'h2'
+//                headlineSelector: 'h2'
+                headlineSelector: '.weekview-day-header'
             
             }, options),
                 container = $(this),

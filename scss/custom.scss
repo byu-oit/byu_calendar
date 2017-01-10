@@ -3072,6 +3072,9 @@ fieldset.date-combo.form-wrapper.date-processed .fieldset-wrapper {
     @include display-flex();
 	flex-wrap : wrap;
 }
+.mobile-first .form-item.form-item-field-are-tickets-und {
+    margin: 0px 0px 15px!important;
+}
 #edit-field-are-tickets-und .form-item {
     display: inline;
     float: left;
