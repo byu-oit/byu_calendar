@@ -312,3 +312,39 @@ function byu_calendar_page_alter() {
   );
   drupal_add_html_head_link($attributes);
 }
+
+// fxn to replace commas with plus signs in the argument/contextual filter for subscribe category feeds
+/**
+* @implements hook_views_pre_view().
+Parameters:
+$view: The view object about to be processed.
+
+$display_id: The machine name of the active display.
+
+$args: An array of arguments passed into the view.
+*/
+function byu_calendar_views_pre_view(&$view, &$display_id, &$args){
+
+	$feed_view_name = 'category_page_blocks';
+	$feed_view_display = 'feed_1';
+	
+	// Check that we are altering the correct view based on $display_id
+	if ($view->name == feed_view_name && $display_id == $feed_view_display) {
+		
+		// Load any nodes or data you might need.
+		// loop through array of arguments
+//		$newArgs = [];
+//		foreach($args as $item) {
+//			$newItem = str_replace(",", "+" , $item);
+//			// to know what's in $item
+//			echo '<pre>'; 
+//			var_dump($item);
+//			$newArgs[] = $newItem;
+//		}
+//		
+		$args = array_map(function($val) { return str_replace(",", "+", $val) }, $args);
+		
+		// Then finally populate the $args array.
+//		$args[] = NEW_FILTER_VALUE;
+	}
+}
