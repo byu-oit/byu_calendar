@@ -333,7 +333,7 @@ function byu_calendar_views_pre_view(&$view, &$display_id, &$args){
 		
 		// Load any nodes or data you might need.
 		// loop through array of arguments
-		$newArgs = [];
+//		$newArgs = [];
 		foreach($args as $item) {
 			$newItem = str_replace(",", "+" , $item);
 			// to know what's in $item
