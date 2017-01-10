@@ -342,7 +342,7 @@ function byu_calendar_views_pre_view(&$view, &$display_id, &$args){
 //			$newArgs[] = $newItem;
 //		}
 //		
-		$args = array_map(function($val) { return str_replace(",", "+", $val) }, $args);
+		$args = array_map(function($val) { return str_replace(",", "+", $val); }, $args);
 		
 		// Then finally populate the $args array.
 //		$args[] = NEW_FILTER_VALUE;
