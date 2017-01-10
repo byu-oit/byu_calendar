@@ -342,6 +342,7 @@ function byu_calendar_views_pre_view(&$view, &$display_id, &$args){
 //			$newArgs[] = $newItem;
 //		}
 //		
+		dpm($args);
 //		$args = array_map(function($val) { return str_replace(",", "+", $val); }, $args);
 		$args = array_map(function($val) { return $val+6; }, $args);
 		
