@@ -337,22 +337,24 @@ function byu_calendar_views_pre_view(&$view, &$display_id, &$args){
 		foreach($args as $item) {
 			$newItem = str_replace(",", "+" , $item);
 			// to know what's in $item
-			echo '<pre>'; 
-			var_dump($item);
-			$newArgs[] = $newItem;
-			$headertext = 'arg is ' . $item;
+			$item = str_replace(",", "+", $item);
+//			echo '<pre>'; 
+//			var_dump($item);
+//			$newArgs[] = $newItem;
+			
+//			$headertext = 'arg is ' . $item;
 		}
 		
-		 $header_options = array(
-			'label' => t('Header testing on ical feed'), // Administrative label. Not really needed here.
-			'content' => $headertext, // Content of header text.
-			'format' => 'filtered_html', // Format of header text.
-			'empty' => 1, // Show even when there are no results. Set to zero otherwise.
-		  );
-		  $view->add_item('default', 'header', 'views', 'area', $header_options);
+//		 $header_options = array(
+//			'label' => t('Header testing on ical feed'), // Administrative label. Not really needed here.
+//			'content' => $headertext, // Content of header text.
+//			'format' => 'filtered_html', // Format of header text.
+//			'empty' => 1, // Show even when there are no results. Set to zero otherwise.
+//		  );
+//		  $view->add_item('default', 'header', 'views', 'area', $header_options);
 		
 //		$args = array_map(function($val) { return str_replace(",", "+", $val); }, $args);
-		$args = array_map(function($val) { return $val+6; }, $args);
+//		$args = array_map(function($val) { return $val+6; }, $args);
 //		print_r($args);
 		
 		// Then finally populate the $args array.
