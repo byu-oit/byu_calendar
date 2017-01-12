@@ -22,4 +22,12 @@
  * the view is modified.
  */
 ?>
-<?php print $output; ?>
+<?php 
+//print $output; 
+// 20170117T160000Z
+//<span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2017-01-18T00:00:00-07:00">2017011800Z (All day)</span>
+
+// 2017011800Z (All day)
+//<span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2017-01-17T16:00:00-07:00">20170117T160000Z</span>
+print 'a test date here';
+?>
