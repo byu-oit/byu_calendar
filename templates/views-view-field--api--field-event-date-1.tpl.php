@@ -29,5 +29,7 @@
 
 // 2017011800Z (All day)
 //<span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2017-01-17T16:00:00-07:00">20170117T160000Z</span>
-print 'a test date here';
+$output = preg_replace("/(All day)/", "", $output);
+
+print $output;
 ?>
