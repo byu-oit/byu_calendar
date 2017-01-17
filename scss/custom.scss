@@ -3339,6 +3339,18 @@ button#edit-field-thumbnail-und-0-upload-button:after {
 // contact info
 div#edit-field-full-name {
     float: left;
+
+}
+#edit-field-full-name {
+    display: none;
+}
+/* display it for anytime editing */
+.page-node-edit #edit-field-full-name {
+    display: block;
+}
+/* display it for guest, when adding one */
+.number-of-roles-1 #edit-field-full-name {
+    display: block;
 }
 
 
