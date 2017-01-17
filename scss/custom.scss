@@ -4325,6 +4325,95 @@ section.block-social-share-social-share {
 }
 
 
+/* ---- subscribe to mulitple PUBLIC FACING PAGE, not workbench - that one is in the byu_adminimal theme */
+#block-views-subscribe-to-multiple-block h2 {
+  font-weight: bold;
+  color: #002e5d;
+  font-size: 24px;
+  font-family: "Sentinel A","Sentinel B";
+}
+
+#block-views-subscribe-to-multiple-block .view-content {
+  display: none;
+}
+#block-views-subscribe-to-multiple-block .form-item.form-type-select.form-item-field-internal-category-tid .bef-checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+@media (min-width: $large_screen_start_width) {
+
+        #block-views-subscribe-to-multiple-block .form-item.form-type-select.form-item-field-internal-category-tid .bef-checkboxes {
+                max-height: 350px;
+        }
+
+}
+#block-views-subscribe-to-multiple-block .form-item.form-type-select.form-item-field-internal-category-tid .bef-checkboxes .form-item {
+  padding-right: 15px;
+}
+
+#block-views-subscribe-to-multiple-block .views-exposed-filters .views-exposed-widget > label {
+//  padding-bottom: 10px;
+//  text-transform: uppercase;
+//  border-bottom: 1px solid #e5e5e5;
+//  margin-bottom: 10px;
+//  color: #767676;
+	font-weight: normal;
+    color: $navy;
+    font-size: 14px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+#block-views-subscribe-to-multiple-block .bef-checkboxes .form-item label.option {
+  /*font-weight: normal; */
+  padding-bottom: 5px;
+}
+#block-views-subscribe-to-multiple-block #edit-field-event-type-tid-wrapper {
+    margin-right: 20px;
+}
+
+#block-views-subscribe-to-multiple-block h3 {
+    font-weight: bold;
+    margin-top: 15px;
+}
+#subscribe-to-mult-link {
+    -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+    border: 1px solid #e5e5e5;
+    padding: 5px 10px;
+    width: 450px;
+
+
+@media screen and (max-width: 1023px) {
+    #subscribe-to-mult-link {
+        width: 300px;
+    }
+}
+#block-views-subscribe-to-multiple-block .views-exposed-form .views-exposed-widget > label {
+    border-bottom: 1px solid #e5e5e5;
+    color: #767676;
+    font-size: 20px;
+    margin: 8px 0px 5px 0px;
+}
+#block-views-subscribe-to-multiple-block #edit-field-tags-tid-wrapper {
+    float: left;
+   /* max-width: 65%; */
+}
+#block-views-subscribe-to-multiple-block .form-item-field-tags-tid .bef-checkboxes {
+    display: flex;
+    display: -webkit-box; display: -ms-moz-box; display: -ms-flexbox; display: -webkit-flex;
+    flex-wrap: wrap;
+    /*height: 300px;
+    flex-direction: column; */
+    align-items: flex-start;
+}
+#block-views-subscribe-to-multiple-block .form-item-field-tags-tid .bef-checkboxes > .form-item {
+    padding-right: 13px;
+}
+
+
+
 /* ----- random ----- */
 // edit, view links at top of page, needed space on term page
 .page-taxonomy-term .button-group {
