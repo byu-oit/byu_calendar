@@ -97,6 +97,10 @@ foreach ($day_names as $key => $value) {
             $week2StartTime = $yearStartTime + ($weekStartJanDay*24*3600); 
             $week = 2+ floor(($todaysTime - $week2StartTime)/(7 * 24 * 3600));
             $currentDate = $year . '-W' . $week;
+			
+			// add leading zeroes
+			$week = sprintf("%02d", $week);  // should be 01 if 1
+
         }
         
         

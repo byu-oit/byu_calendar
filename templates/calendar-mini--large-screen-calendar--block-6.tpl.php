@@ -114,6 +114,8 @@ $week2StartTime = $yearStartTime + ($weekStartJanDay*24*3600);
     $weekStartJanDay = 7 - $yearStartWeekday;
     $week2StartTime = $yearStartTime + ($weekStartJanDay*24*3600); 
     $week = 2+ floor(($todaysTime - $week2StartTime)/(7 * 24 * 3600));
+	// add leading zeroes
+	$week = sprintf("%02d", $week);  // should be 01 if 1
     
 }
     $weeksToAdd = $week - 2;
@@ -146,6 +148,8 @@ $week2StartTime = $yearStartTime + ($weekStartJanDay*24*3600);
             //calc each day's week id
 //            $dayNumber = date_format($dateOb, 'z'); // returns 0 - 365
             $thatWeek = 2+ floor( (($dateTime - $week2StartTime)+3600)/(7 * 24 * 3600) );
+		  	// add leading zeroes
+			$thatWeek = sprintf("%02d", $thatWeek);  // should be 01 if 1
  
               if($rowid == '1' and $day > 24) {
                   $class = ' last-month';

@@ -72,7 +72,9 @@ $params = array(
               } else {
                   $class = ' this-month';
               }
-              
+              // add leading zeroes
+			$week = sprintf("%02d", $week);  // should be 01 if 1
+		  
               ?>
           <td id="<?php print $cell['id']; ?>" class="<?php print $cell['class']; print $class; ?>">
               <div class="month mini-day-on  <?php print $id . ' weekday-' . $dayofweek;  ?>">

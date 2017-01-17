@@ -86,7 +86,8 @@ $params = array(
     $weekStartTime = $week2StartTime + ((7*($weeksToAdd)))*24*3600;
     $weekEndTime = $weekStartTime + (6*24*3600);
 
-
+	  // add leading zeroes
+		$week = sprintf("%02d", $week);  // should be 01 if 1
      
       ?>
       
@@ -114,7 +115,9 @@ $params = array(
             //calc each day's week id
 //            $dayNumber = date_format($dateOb, 'z'); // returns 0 - 365
             $thatWeek = 2+ floor( (($dateTime - $week2StartTime)+3600)/(7 * 24 * 3600) );
- 
+		  // add leading zeroes
+			$thatWeek = sprintf("%02d", $thatWeek);  // should be 01 if 1
+		  
               if($rowid == '1' and $day > 24) {
                   $class = ' last-month';
               } elseif ($rowid > 3 and $day < 7) {
