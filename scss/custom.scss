@@ -4382,9 +4382,9 @@ section.block-social-share-social-share {
 		border: 1px solid #e5e5e5;
 		padding: 5px 10px;
 		width: 450px;
+	}
 
-
-	@media screen and (max-width: $mobile_max_width()) {
+	@media screen and (max-width: $mobile_max_width() ) {
 		#subscribe-to-mult-link {
 			width: 300px;
 		}
