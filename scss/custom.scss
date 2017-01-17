@@ -4326,7 +4326,7 @@ section.block-social-share-social-share {
 
 
 /* ---- subscribe to mulitple PUBLIC FACING PAGE, not workbench - that one is in the byu_adminimal theme */
-#block-views-subscribe-to-multiple-block-1 {
+.block-views-subscribe-to-multiple-block-1 {
 	h2 {
 	  font-weight: bold;
 	  color: #002e5d;
@@ -4384,7 +4384,7 @@ section.block-social-share-social-share {
 		width: 450px;
 
 
-	@media screen and (max-width: 1023px) {
+	@media screen and (max-width: $mobile_max_width()) {
 		#subscribe-to-mult-link {
 			width: 300px;
 		}
