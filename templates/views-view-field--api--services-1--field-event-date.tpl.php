@@ -27,6 +27,7 @@
 
 $dateOnly = preg_replace('/<.*">/', '', $output);
 //$dateOnly = preg_replace('/</span>/', '');
-print $dateOnly;
+//print $dateOnly;
 
+print 'testdate' ;
 ?>
