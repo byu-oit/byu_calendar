@@ -4398,7 +4398,7 @@ section.block-social-share-social-share {
       min-height: 28px;
 	}
 
-	@media screen and (max-width: $mobile_max_width() ) {
+	@media screen and (max-width: $mobile_max_width ) {
 		#subscribe-to-mult-link {
 			width: 300px;
 		}
