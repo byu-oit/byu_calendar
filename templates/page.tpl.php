@@ -43,7 +43,7 @@
 <!--		<div id="top-bar-search"> -->
 		  <?php 
 
-		  $search = drupal_get_form('search_block_form'); print render($search); 
+//		  $search = drupal_get_form('search_block_form'); print render($search); 
 		  ?>
 <!--	 	</div>-->
 	</byu-search>
