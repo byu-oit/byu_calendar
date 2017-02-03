@@ -1,6 +1,53 @@
 <!--.page -->
 <div role="document" class="page">
+<byu-header>
+<!--    <span slot="title">-->
+       <?php if ($site_name): ?>
+<!--         --><?php //if ($title): ?>
+<!--           <div id="site-name" class="element-invisible">-->
+<!--             <strong>-->
+<!--               <a href="--><?php //print $front_page; ?><!--" title="--><?php //print t('Home'); ?><!--" rel="home"><span>--><?php //print $site_name; ?><!--</span></a>-->
+<!--             </strong>-->
 
+         <!--           </div>-->
+         <!--         --><?php //else: /* Use h1 when the content title is empty */ ?>
+             <a slot="title" id="site-name" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+
+<!--         --><?php //endif; ?>
+       <?php endif; ?>
+
+
+
+<!--    </span>-->
+    <?php if ($alt_main_menu): ?>
+    <byu-menu slot="nav" collapsed id="main-menu" class="navigation" role="navigation">
+          <?php
+          // $alt_,ain_menu returns an big long string of  of li's with a tags,
+          // change to a string of a tags, then print that
+          $linksList = preg_replace("/<h2.*\/h2>/", "", $alt_main_menu);
+          $linksList = preg_replace("/<ul.*<li/", "<li", $linksList);
+          $linksList = preg_replace("/<li.*<a/", "<a", $linksList);
+          $linksList = preg_replace("/<\/li>/", "", $linksList);
+
+          // need to remove anything that is a sub level of menu... in case people did do that?
+          $linksList = preg_replace("/<\/ul>/", "", $linksList);
+          // split into array of a tag links
+          print ($linksList);
+
+          ?>
+         <!-- /#main-menu -->
+      <?php endif; ?>
+
+    </byu-menu>
+    <byu-search slot="search">
+		<div id="top-bar-search"> 
+		  <?php 
+
+		  $search = drupal_get_form('search_block_form'); print render($search); 
+		  ?>
+	 	</div>
+	</byu-search>
+  </byu-header>
   <!--.l-header region -->
   <header role="banner" class="l-header" <?php  /* print header options like if it has a menu or no menu */ ?>
 
