@@ -10,7 +10,7 @@ function byu_calendar_preprocess_html(&$variables) {
 // drupal_add_css('http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css', array('weight' => CSS_THEME, 'browsers' => array('!IE' => FALSE), 'preprocess' => FALSE));
 //  // Need legacy support for IE downgrade to Foundation 2 or use JS file below
 //  // drupal_add_js('http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js', 'external');
-    drupal_add_js('http://cdn.byu.edu/2017-core-components/unstable/bootstrap.js', 'external');
+    drupal_add_js('https://cdn.byu.edu/2017-core-components/unstable/bootstrap.js', 'external');
 	
 	
     // Populate the body classes.
