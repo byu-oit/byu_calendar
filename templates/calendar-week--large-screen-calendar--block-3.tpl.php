@@ -111,6 +111,9 @@ foreach ($day_names as $key => $value) {
         $nextYear = $year +1;
 
         $week = substr($currentDate, -2);
+		// add leading zeroes
+		$week = sprintf("%02d", $week);  // should be 01 if 1
+		
         //$week = $week-2;  // calendar uses the week id of the week before
 
         $startWYear = '1 January ' . $year;
