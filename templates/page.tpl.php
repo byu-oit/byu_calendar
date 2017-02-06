@@ -73,7 +73,7 @@
 					  ?>
 				  </div>
 
-				  <div id="sign-in"><a href="../user">Sign In <i class="fa fa-user" aria-hidden="true"></i></a></div>
+				  <div id="sign-in"><a href="/user">Sign In <i class="fa fa-user" aria-hidden="true"></i></a></div>
 				  <div id="sign-out"><a href="/caslogout">Sign Out <i class="fa fa-user" aria-hidden="true"></i></a></div>
 			</div>
               <section class="top-bar-section">
