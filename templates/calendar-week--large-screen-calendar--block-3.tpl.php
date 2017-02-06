@@ -114,8 +114,6 @@ foreach ($day_names as $key => $value) {
 		// add leading zeroes
 		$week = sprintf("%02d", $week);  // should be 01 if 1
 		
-        //$week = $week-2;  // calendar uses the week id of the week before
-
         $startWYear = '1 January ' . $year;
         //this week start time
         $yearStartTime = strtotime($startWYear);
