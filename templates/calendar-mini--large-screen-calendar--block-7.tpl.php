@@ -50,15 +50,15 @@ $params = array(
     $currentDate = substr($current, -10);  // 2016-W33
     if (preg_match("/^(19|20)\d\d[-](0[1-9]|1[012])[-](0[1-9]|[12][0-9]|3[01])$/", $currentDate)) {
         // is normal
-		$prelinks = '../week/';
+		$prelinks = '../day/';
     } else if ($current == 'node') {
 		// it is front
 		$currentDate = date("Y-m-d");
-		$prelinks = '../calendar/week/' ;
+		$prelinks = '../calendar/day/' ;
 	} else {
 		// on ../day wo a date argument
         $currentDate = date("Y-m-d");
-		$prelinks = '../calendar/week/';
+		$prelinks = '../calendar/day/';
     }
 
     $year = substr($currentDate, 0, 4);
@@ -137,7 +137,7 @@ $params = array(
               ?>
           <td id="<?php print $cell['id']; ?>" class="<?php print $cell['class']; print $class; ?>">
               <div class="month mini-day-on  <?php print $id . ' weekday-' . $dayofweek;  ?>">
-                <a href=" <?php print $prelinks ; print $year . '-W' . $thatWeek;  ?>"><?php print $day;  ?></a>
+                <a href=" <?php print $prelinks ; print $simpleDate;  ?>"><?php print $day;  ?></a>
               </div>
           </td>
           
