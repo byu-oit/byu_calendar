@@ -4448,6 +4448,9 @@ section.block-social-share-social-share {
     display: table;
     width: 100%;
 }
+.divTableHeader {
+    background: $lightgray;
+}
 .divTableRow {
     display: table-row;
 }
@@ -4456,9 +4459,9 @@ section.block-social-share-social-share {
     display: table-header-group;
 }
 .divTableCell, .divTableHead {
-    border: 1px solid #999999 ;
+    border: 1px solid $medgray ;
     display: table-cell;
-    padding: 3px 10px;
+    padding: 8px 10px;
 }
 .divTableHeading {
     background-color: #EEE;
