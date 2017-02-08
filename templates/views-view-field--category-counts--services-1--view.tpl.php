@@ -31,6 +31,8 @@ $stripped = preg_replace('/\s*<\/div>\s*/', '', $stripped);
 //$stripped = preg_replace('/<div class="view-content">\s*/', '', $stripped);
 $stripped = preg_replace('/<div>/', '', $stripped);
 //print $output; 
+$stripped = trim($stripped);
+// strip any whitespace
 print $stripped; 
 
 
