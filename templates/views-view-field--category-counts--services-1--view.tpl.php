@@ -27,9 +27,9 @@
 // remove \n and <br>
 //$stripped = preg_replace('/\s*<br \/>\s*/', '', $output);
 $stripped = preg_replace('/<div[^>]*">\s/', '', $output);
-$stripped = preg_replace('/<\/div>/', '', $stripped);
-$stripped = preg_replace('/<div class="view-content">\s*/', '', $stripped);
-$stripped = preg_replace('/<div>\s*/', '', $stripped);
+$stripped = preg_replace('/\s*<\/div>\s*/', '', $stripped);
+//$stripped = preg_replace('/<div class="view-content">\s*/', '', $stripped);
+$stripped = preg_replace('/<div>/', '', $stripped);
 //print $output; 
 print $stripped; 
 
