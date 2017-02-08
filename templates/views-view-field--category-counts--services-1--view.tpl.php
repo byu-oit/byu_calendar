@@ -25,7 +25,10 @@
 <?php 
 
 // remove \n and <br>
-$stripped = preg_replace('/\s*<br \/>\s*/', '', $output);
+//$stripped = preg_replace('/\s*<br \/>\s*/', '', $output);
+$stripped = preg_replace('/div.*header">\s/', '', $output);
+$stripped = preg_replace('/<\/div>/', '', $stripped);
+$stripped = preg_replace('/<div>>\s*/', '', $stripped);
 //print $output; 
 print $stripped; 
 
