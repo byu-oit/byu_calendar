@@ -26,7 +26,7 @@
 
 // remove \n and <br>
 $stripped = preg_replace('/\s*<br \/>.n\s*/', $output);
-print $stripped; 
+print $output; 
 
 
 ?>
