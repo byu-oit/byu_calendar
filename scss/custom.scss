@@ -194,11 +194,14 @@ h1#page-title {
 section.l-top-title.row {
     border-bottom: 1px solid $lightgray;
 }
-#top-content {
+.front #top-content {
 	@media screen and (min-width: $large_screen_start_width) {
     	@include display-flex();
     	justify-content: center;
 	}
+    padding: 30px 0px;
+}
+#top-content {
     padding: 30px 0px;
 }
 section.l-bottom-content.row {
