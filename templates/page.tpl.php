@@ -275,32 +275,141 @@
     <!--/.triptych -->
   <?php endif; ?>
 
-  <?php if (!empty($page['footer_firstcolumn']) || !empty($page['footer_secondcolumn']) || !empty($page['footer_thirdcolumn']) || !empty($page['footer_fourthcolumn'])): ?>
+
+
+  <byu-footer>
+    <?php if (!empty($page['footer_firstcolumn']) || !empty($page['footer_secondcolumn']) || !empty($page['footer_thirdcolumn']) || !empty($page['footer_fourthcolumn'])): ?>
     <!--.footer-columns -->
-    <section id="content-footer" class="row l-footer-columns">
+    <byu-footer-column slot="col1">
       <?php if (!empty($page['footer_firstcolumn'])): ?>
-        <div class="footer-first large-3 columns">
-          <?php print render($page['footer_firstcolumn']); ?>
-        </div>
+          <?php
+      // get array of blocks
+        $blocks = $page['footer_firstcolumn'];
+        $i = 0;
+        $len = count($blocks);
+        foreach($blocks as $block) {
+          if($i == 0){  // print only the title of the first block per footer column
+            $blockOb = $block['#block'];
+            $blockTitle = $blockOb->title;
+            print '<span slot="header">' . $blockTitle . '</span>';
+          } else if ($i == $len - 1) {
+          // is the last, skip
+            break;
+          }
+          if(is_array($block)) {
+            if ($block['#markup'] !== null) {  // print the block's body content
+              $content = $block['#markup'];
+              print $content;
+            }
+            $i++;
+          } else { // isn't an array, is the final string at the end of lists of blocks
+            $i++;
+            break;
+          }
+        }
+        ?>
       <?php endif; ?>
+    </byu-footer-column>
+    <byu-footer-column slot="col2">
       <?php if (!empty($page['footer_secondcolumn'])): ?>
-        <div class="footer-second large-3 columns">
-          <?php print render($page['footer_secondcolumn']); ?>
-        </div>
+        <?php // get block title
+        // get array of blocks
+        $blocks = $page['footer_secondcolumn'];
+        $i = 0;
+        $len = count($blocks);
+        foreach($blocks as $block) {
+          if($i == 0){
+            $blockOb = $block['#block'];
+            $blockTitle = $blockOb->title;
+            print '<span slot="header">' . $blockTitle . '</span>';
+          } else if ($i == $len - 1) {
+            // is the last, skip
+            break;
+          }
+          if(is_array($block)) {
+            if ($block['#markup'] !== null) {
+              $content = $block['#markup'];
+              print $content;
+            }
+            $i++;
+          } else { // isn't an array, is the final string at the end of lists of blocks
+            $i++;
+            break;
+          }
+        }
+        ?>
       <?php endif; ?>
+    </byu-footer-column>
+    <byu-footer-column slot="col3">
       <?php if (!empty($page['footer_thirdcolumn'])): ?>
-        <div class="footer-third large-3 columns">
-          <?php print render($page['footer_thirdcolumn']); ?>
-        </div>
+        <?php // get block title
+        // get array of blocks
+        $blocks = $page['footer_thirdcolumn'];
+        $i = 0;
+        $len = count($blocks);
+        foreach($blocks as $block) {
+          if($i == 0){
+            $blockOb = $block['#block'];
+            $blockTitle = $blockOb->title;
+            print '<span slot="header">' . $blockTitle . '</span>';
+          } else if ($i == $len - 1) {
+            // is the last, skip
+            break;
+          }
+          if(is_array($block)) {
+            if ($block['#markup'] !== null) {
+              $content = $block['#markup'];
+              print $content;
+            }
+            $i++;
+          } else { // isn't an array, is the final string at the end of lists of blocks
+            $i++;
+            break;
+          }
+        }
+        ?>
       <?php endif; ?>
+    </byu-footer-column>
+    <byu-footer-column slot="col4">
       <?php if (!empty($page['footer_fourthcolumn'])): ?>
-        <div class="footer-fourth large-3 columns">
-          <?php print render($page['footer_fourthcolumn']); ?>
-        </div>
+        <?php // get block title
+        // get array of blocks
+        $blocks = $page['footer_fourthcolumn'];
+        $i = 0;
+        $len = count($blocks);
+        foreach($blocks as $block) {
+          if($i == 0){
+            $blockOb = $block['#block'];
+            $blockTitle = $blockOb->title;
+            print '<span slot="header">' . $blockTitle . '</span>';
+          } else if ($i == $len - 1) {
+            // is the last, skip
+            break;
+          }
+          if(is_array($block)) {
+            if ($block['#markup'] !== null) {
+              $content = $block['#markup'];
+              print $content;
+            }
+            $i++;
+          } else { // isn't an array, is the final string at the end of lists of blocks
+            $i++;
+            break;
+          }
+        }
+        ?>
       <?php endif; ?>
-    </section>
-    <!--/.footer-columns-->
-  <?php endif; ?>
+    </byu-footer-column>
+      <!--/.footer-columns-->
+    <?php endif; ?>
+  </byu-footer>
+
+
+
+
+
+
+
 
   <!--.l-footer-->
   <footer class="l-footer panel row" role="contentinfo">
