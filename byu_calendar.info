@@ -35,7 +35,7 @@ stylesheets[all][] = scss/custom.scss
 ; not exist or be blank in your subtheme. See https://drupal.org/node/263967
 ; stylesheets[all][] = css/foundation.min.css
 stylesheets[all][] = css/animate.css
-;stylesheets[all][] = //cloud.typography.com/75214/6517752/css/fonts.css
+
 
 
 ; Foundation JavaScript.

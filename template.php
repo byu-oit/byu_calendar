@@ -10,7 +10,8 @@ function byu_calendar_preprocess_html(&$variables) {
 // drupal_add_css('http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css', array('weight' => CSS_THEME, 'browsers' => array('!IE' => FALSE), 'preprocess' => FALSE));
 //  // Need legacy support for IE downgrade to Foundation 2 or use JS file below
 //  // drupal_add_js('http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js', 'external');
-    drupal_add_js('https://cdn.byu.edu/2017-core-components/unstable/bootstrap.js', 'external');
+    drupal_add_css('https://cloud.typography.com/75214/6517752/css/fonts.css', array('type' => 'external'));
+	drupal_add_js('https://cdn.byu.edu/2017-core-components/unstable/bootstrap.js', 'external');
 	
 	
     // Populate the body classes.
@@ -306,14 +307,14 @@ function byu_calendar_date_nav_title($params) {
   }  
 }
 //
-function byu_calendar_page_alter() {
-  $attributes = array( // Set up an array of attributes inside the tag
-    'href' => '//cloud.typography.com/75214/6517752/css/fonts.css',
-    'rel' => 'stylesheet',
-    'type' => 'text/css',
-  );
-  drupal_add_html_head_link($attributes);
-}
+//function byu_calendar_page_alter() {
+//  $attributes = array( // Set up an array of attributes inside the tag
+//    'href' => '//cloud.typography.com/75214/6517752/css/fonts.css',
+//    'rel' => 'stylesheet',
+//    'type' => 'text/css',
+//  );
+//  drupal_add_html_head_link($attributes);
+//}
 
 // fxn to replace commas with plus signs in the argument/contextual filter for subscribe category feeds
 /**
