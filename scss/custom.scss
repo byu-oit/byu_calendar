@@ -1,4 +1,4 @@
-/* SASS Variables ------------------- */
+/* ---- SASS Variables ------------------- */
 
 $mobile_sidebar_width: 20%;
 $mobile_main_width: 100% - $mobile_sidebar_width;
@@ -24,7 +24,7 @@ $lightgray: #e5e5e5;
 $medgray: #9b9b9b;
 $gray: #767676;
 $darkgray: #6a6a6b;
-$darkestgray: #444444;
+$darkestgray: #141414;
 $royal: #003DA5;
 $royallight: #114BAD;
 
@@ -87,7 +87,7 @@ $nav_gradient_2: 5%;
 
 /* ------------------------------------- */
 body {
-    color: #444;
+    color: $darkestgray;
 }
 a {
     color: $royal;
