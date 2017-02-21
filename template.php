@@ -306,15 +306,7 @@ function byu_calendar_date_nav_title($params) {
     return $title;
   }  
 }
-//
-//function byu_calendar_page_alter() {
-//  $attributes = array( // Set up an array of attributes inside the tag
-//    'href' => '//cloud.typography.com/75214/6517752/css/fonts.css',
-//    'rel' => 'stylesheet',
-//    'type' => 'text/css',
-//  );
-//  drupal_add_html_head_link($attributes);
-//}
+
 
 // fxn to replace commas with plus signs in the argument/contextual filter for subscribe category feeds
 /**
