@@ -81,20 +81,7 @@ jQuery( document ).ready(function( $ ) {
   // handle mobile left sidebar positioning
 	if ($("body").hasClass("mobile-first-calendar-yearview")) {	
 		$(window).scroll(function(e){ 
-	//			foreach($i = 1; $i <= 7; $i++){
-	//				
-	//				var el = $('#day-' . $i),
-	//				top = $('#header-' . $i).offset().top - $(document).scrollTop();
-	//				if (top < 100 ){
-	//					console.log('header close to top');
-	//					$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
-	//					$(el).addClass('current-day');
-	//				}
-	//				
-	//			}
-
 			var top = $('aside.columns.sidebar-first').offset().top - $(document).scrollTop();
-
 			if (top < 1 ){
 				console.log('left sidebar close to top');
 				$('aside.columns.sidebar-first').css('position', 'fixed');
@@ -182,28 +169,17 @@ jQuery( document ).ready(function( $ ) {
 	if ($("body").hasClass("mobile-first-calendar-weekview")) {
 	
 		$(window).scroll(function(e){ 
-//			foreach($i = 1; $i <= 7; $i++){
+	
+//				var top = $('td.calendar-agenda-items').offset().top - $(document).scrollTop();
+//
+//			if (top < 100 ){
+//				console.log('header close to top');
+//				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
 //				
-//				var el = $('#day-' . $i),
-//				top = $('#header-' . $i).offset().top - $(document).scrollTop();
-//				if (top < 100 ){
-//					console.log('header close to top');
-//					$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
-//					$(el).addClass('current-day');
-//				}
-//				
+//				$("#day-1").addClass('current-day');
+//			} else {
+//				console.log(top);
 //			}
-			
-				var top = $('td.calendar-agenda-items').offset().top - $(document).scrollTop();
-
-			if (top < 100 ){
-				console.log('header close to top');
-				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
-				
-				$("#day-1").addClass('current-day');
-			} else {
-				console.log(top);
-			}
 			
 			// works for 1
 			var sunTop = $('#header-1').offset().top - $(document).scrollTop();
@@ -211,14 +187,38 @@ jQuery( document ).ready(function( $ ) {
 				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
 				$("#day-1").addClass('current-day');
 			} 
-			
-			var mon = $('#day-2'),
-				monTop = $('#header-2').offset().top - $(document).scrollTop();
+			var monTop = $('#header-2').offset().top - $(document).scrollTop();
 			if (monTop < 100 ){
-				console.log('header close to top');
 				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
-				$(mon).addClass('current-day');
+				$("#day-2").addClass('current-day');
 			} 
+			var tuesTop = $('#header-3').offset().top - $(document).scrollTop();
+			if (tuesTop < 100 ){
+				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
+				$("#day-3").addClass('current-day');
+			} 
+			var wedTop = $('#header-4').offset().top - $(document).scrollTop();
+			if (wedTop < 100 ){
+				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
+				$("#day-4").addClass('current-day');
+			} 
+			var thursTop = $('#header-5').offset().top - $(document).scrollTop();
+			if (thursTop < 100 ){
+				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
+				$("#day-5").addClass('current-day');
+			} 
+			var friTop = $('#header-6').offset().top - $(document).scrollTop();
+			if (friTop < 100 ){
+				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
+				$("#day-6").addClass('current-day');
+			} 
+			var satTop = $('#header-7').offset().top - $(document).scrollTop();
+			if (satTop < 100 ){
+				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
+				$("#day-7").addClass('current-day');
+			} 
+			
+			
 
 		})
 	}
