@@ -159,30 +159,44 @@ jQuery( document ).ready(function( $ ) {
 	if ($("body").hasClass("mobile-first-calendar-weekview")) {
 	
 		$(window).scroll(function(e){ 
-			foreach($i = 1; $i <= 7; $i++){
-				
-				var el = $('#day-' . $i),
-				top = $('#header-' . $i).offset().top - $(document).scrollTop();
-				if (top < 100 ){
-					console.log('header close to top');
-					$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
-					$(el).addClass('current-day');
-				}
-				
-			}
-			// works for 1
-			var el = $('#day-1'),
-				top = $('#header-1').offset().top - $(document).scrollTop();
-			if (top < 100 ){
+//			foreach($i = 1; $i <= 7; $i++){
+//				
+//				var el = $('#day-' . $i),
+//				top = $('#header-' . $i).offset().top - $(document).scrollTop();
+//				if (top < 100 ){
+//					console.log('header close to top');
+//					$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
+//					$(el).addClass('current-day');
+//				}
+//				
+//			}
+			
+				var top = $('td.calendar-agenda-items').offset().top - $(document).scrollTop();
+			if (sunTop < 100 ){
 				console.log('header close to top');
 				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
-				$(el).addClass('current-day');
+				
+				$("#header-1").addClass('current-day');
 			} else {
 				console.log(top);
-				console.log('element is: ');
-				console.log(el);
-
 			}
+			
+			// works for 1
+//			var sun = $('#day-1'),
+//				sunTop = $('#header-1').offset().top - $(document).scrollTop();
+//			if (sunTop < 100 ){
+//				console.log('header close to top');
+//				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
+//				$(sun).addClass('current-day');
+//			} 
+//			
+//			var mon = $('#day-2'),
+//				monTop = $('#header-2').offset().top - $(document).scrollTop();
+//			if (monTop < 100 ){
+//				console.log('header close to top');
+//				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
+//				$(mon).addClass('current-day');
+//			} 
 
 		})
 	}
