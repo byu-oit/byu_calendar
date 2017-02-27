@@ -87,7 +87,7 @@ jQuery( document ).ready(function( $ ) {
 				$('aside.columns.sidebar-first').css('position', 'fixed');
 				$('aside.columns.sidebar-first').css('top', '0px');
 				if($("body").hasClass("adminimal-menu")) {	
-					$('aside.columns.sidebar-first').css('top', 'px');
+					$('aside.columns.sidebar-first').css('top', '45px');
 				}
 			} else if( $('#header').is_on_screen() ) {
 				$('aside.columns.sidebar-first').css('position', 'relative');
@@ -181,38 +181,38 @@ jQuery( document ).ready(function( $ ) {
 				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
 				$("#day-1").addClass('current-day');
 			} 
-//			var monTop = $('#header-2').offset().top - $(document).scrollTop();
-//			if (monTop < 100 ){
-//				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
-//				$("#day-2").addClass('current-day');
-//			} 
-//			var tuesTop = $('#header-3').offset().top - $(document).scrollTop();
-//			if (tuesTop < 100 ){
-//				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
-//				$("#day-3").addClass('current-day');
-//			} 
-//			var wedTop = $('#header-4').offset().top - $(document).scrollTop();
-//			if (wedTop < 100 ){
-//				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
-//				$("#day-4").addClass('current-day');
-//			} 
-//			var thursTop = $('#header-5').offset().top - $(document).scrollTop();
-//			if (thursTop < 100 ){
-//				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
-//				$("#day-5").addClass('current-day');
-//			} 
-//			var friTop = $('#header-6').offset().top - $(document).scrollTop();
-//			if (friTop < 100 ){
-//				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
-//				$("#day-6").addClass('current-day');
-//			} 
-//			var satTop = $('#header-7').offset().top - $(document).scrollTop();
-//			if (satTop < 100 ){
-//				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
-//				$("#day-7").addClass('current-day');
-//			} 
-//			
-//			
+			var monTop = $('#header-2').offset().top - $(document).scrollTop();
+			if (monTop < 100 ){
+				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
+				$("#day-2").addClass('current-day');
+			} 
+			var tuesTop = $('#header-3').offset().top - $(document).scrollTop();
+			if (tuesTop < 100 ){
+				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
+				$("#day-3").addClass('current-day');
+			} 
+			var wedTop = $('#header-4').offset().top - $(document).scrollTop();
+			if (wedTop < 100 ){
+				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
+				$("#day-4").addClass('current-day');
+			} 
+			var thursTop = $('#header-5').offset().top - $(document).scrollTop();
+			if (thursTop < 100 ){
+				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
+				$("#day-5").addClass('current-day');
+			} 
+			var friTop = $('#header-6').offset().top - $(document).scrollTop();
+			if (friTop < 100 ){
+				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
+				$("#day-6").addClass('current-day');
+			} 
+			var satTop = $('#header-7').offset().top - $(document).scrollTop();
+			if (satTop < 100 ){
+				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
+				$("#day-7").addClass('current-day');
+			} 
+			
+			
 
 		})
 	}
