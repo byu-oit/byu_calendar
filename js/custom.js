@@ -89,7 +89,7 @@ jQuery( document ).ready(function( $ ) {
 				if($("body").hasClass("adminimal-menu")) {	
 					$('aside.columns.sidebar-first').css('top', '45px');
 				}
-			} else if( $('.byu-header').is_on_screen() ) {
+			} else {
 				$('aside.columns.sidebar-first').css('position', 'relative');
 			} 
 		})
