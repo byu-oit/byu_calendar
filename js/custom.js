@@ -159,6 +159,18 @@ jQuery( document ).ready(function( $ ) {
 	if ($("body").hasClass("mobile-first-calendar-weekview")) {
 	
 		$(window).scroll(function(e){ 
+			foreach($i = 1; $i <= 7; $i++){
+				
+				var el = $('#day-' . $i),
+				top = $('#header-' . $i).offset().top - $(document).scrollTop();
+				if (top < 100 ){
+					console.log('header close to top');
+					$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
+					$(el).addClass('current-day');
+				}
+				
+			}
+			// works for 1
 			var el = $('#day-1'),
 				top = $('#header-1').offset().top - $(document).scrollTop();
 			if (top < 100 ){
