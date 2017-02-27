@@ -782,6 +782,14 @@ header.l-header {
         }
     }
 }
+.columns.sidebar-first.scrolled {
+	$('aside.columns.sidebar-first').css('position', 'fixed');
+	$('aside.columns.sidebar-first').css('top', '0px');
+}
+.adminimal-menu .columsn.sidebar-first.scrolled {
+	$('aside.columns.sidebar-first').css('position', 'fixed');
+	$('aside.columns.sidebar-first').css('top', '47px');
+}
 .mobile-first.page-calendar .columns.sidebar-first {
     margin-top: 0px;
 }

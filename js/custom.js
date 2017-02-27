@@ -83,31 +83,28 @@ jQuery( document ).ready(function( $ ) {
 		$(window).scroll(function(e){ 
 			var top = $('#sidebar-first-container').offset().top - $(document).scrollTop();
 			var mainTop = $('main').offset().top - $(document).scrollTop();
-			var footerTop = $('byu-footer').offset().top - $(document).scrollTop();
+			var footerBottom = $('byu-footer').offset().top - $(document).scrollBottom();
 			// for admins mobile
 			console.log('dist above footer is ');
 			console.log(footerTop);
 			if($("body").hasClass("adminimal-menu")) {	
-				if ((top < 47 ) && (footerTop > 500)) {
-					$('aside.columns.sidebar-first').css('position', 'fixed');
-					$('aside.columns.sidebar-first').css('top', '47px');
+				if ((top < 47 ) ) {
+					$('aside.columns.sidebar-first').addClass('scrolled');
+					
 				} else if( mainTop >= 0 ) {
-					$('aside.columns.sidebar-first').css('position', 'relative');
-					$('aside.columns.sidebar-first').css('top', '0px');
+					$('aside.columns.sidebar-first').removeClass('scrolled');
 //					console.log('testing main small space was:');
 //					console.log(mainTop);
 				} 
 			} else {
 				if (top < 1 ){
 //				console.log('left sidebar close to top');
-				$('aside.columns.sidebar-first').css('position', 'fixed');
-				$('aside.columns.sidebar-first').css('top', '0px');
+				$('aside.columns.sidebar-first').addClass('scrolled');
 				
 //				console.log('testing main big space was:');
 //				console.log(mainTop);
 				} else if( mainTop >= 0 ) {
-					$('aside.columns.sidebar-first').css('position', 'relative');
-					$('aside.columns.sidebar-first').css('top', '0px');
+					$('aside.columns.sidebar-first').removeClass('scrolled');
 //					console.log('testing main small space was:');
 //					console.log(mainTop);
 				} 
