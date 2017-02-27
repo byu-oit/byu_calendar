@@ -83,21 +83,35 @@ jQuery( document ).ready(function( $ ) {
 		$(window).scroll(function(e){ 
 			var top = $('#sidebar-first-container').offset().top - $(document).scrollTop();
 			var mainTop = $('main').offset().top - $(document).scrollTop();
-			if (top < 1 ){
+			// for admins mobile
+			if($("body").hasClass("adminimal-menu")) {	
+				if (top < 45 ){
+					$('aside.columns.sidebar-first').css('position', 'fixed');
+					$('aside.columns.sidebar-first').css('top', '45px');
+				} else if( mainTop >= 0 ) {
+					$('aside.columns.sidebar-first').css('position', 'relative');
+					$('aside.columns.sidebar-first').css('top', '0px');
+					console.log('testing main small space was:');
+					console.log(mainTop);
+				} 
+			} else {
+				if (top < 1 ){
 				console.log('left sidebar close to top');
 				$('aside.columns.sidebar-first').css('position', 'fixed');
 				$('aside.columns.sidebar-first').css('top', '0px');
-				if($("body").hasClass("adminimal-menu")) {	
-					$('aside.columns.sidebar-first').css('top', '45px');
-				}
+				
 				console.log('testing main big space was:');
 				console.log(mainTop);
-			} else if( mainTop >= 0 ) {
-				$('aside.columns.sidebar-first').css('position', 'relative');
-				$('aside.columns.sidebar-first').css('top', '0px');
-				console.log('testing main small space was:');
-				console.log(mainTop);
-			} 
+				} else if( mainTop >= 0 ) {
+					$('aside.columns.sidebar-first').css('position', 'relative');
+					$('aside.columns.sidebar-first').css('top', '0px');
+					console.log('testing main small space was:');
+					console.log(mainTop);
+				} 
+			}
+			
+			
+			
 		})
 	}
 	
