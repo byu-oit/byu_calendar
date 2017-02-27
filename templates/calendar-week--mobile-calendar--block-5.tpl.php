@@ -132,7 +132,7 @@ foreach ($day_names as $key => $value) {
         <?php $colpos = (isset($time['values'][$column][0])) ? $time['values'][$column][0]['wday'] : $index; ?>
         <?php for ($i = $curpos; $i < $colpos; $i++): ?>
 
-        <td class="calendar-agenda-items single-day all-day-items" id="header-<?php print $weekday; ?>">
+        <td class="calendar-agenda-items single-day all-day-items" id="header-<?php print $curpos; ?>">
           <div class="calendar">
             <div class="inner">&nbsp</div>
           </div>
@@ -140,7 +140,7 @@ foreach ($day_names as $key => $value) {
         <?php endfor; ?>   
         <?php $curpos = $colpos + 1;?>  <!-- curpos goes through 1 - 7 for weekdays  -->
 
-        <td class="calendar-agenda-items single-day" id="header-<?php print $weekday; ?>" headers="<?php print $header_ids[$index] ?>">        <?php
+        <td class="calendar-agenda-items single-day" id="header-<?php print $curpos; ?>" headers="<?php print $header_ids[$index] ?>">        <?php
                 $weekday = $curpos;  
                 $daystoadd = $weekday -1;  // depending on what day of the week it is, it'll add from weekStartTime
                 $daytodisplay = $weekStartTime + ($daystoadd *24*3600); // results in the unix day of current day
