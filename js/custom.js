@@ -82,6 +82,7 @@ jQuery( document ).ready(function( $ ) {
 	if ($("body").hasClass("mobile-first")) {	
 		$(window).scroll(function(e){ 
 			var top = $('aside.columns.sidebar-first').offset().top - $(document).scrollTop();
+			var mainTop = $('main').offset().top - $(document).scrollTop();
 			if (top < 1 ){
 				console.log('left sidebar close to top');
 				$('aside.columns.sidebar-first').css('position', 'fixed');
@@ -89,7 +90,7 @@ jQuery( document ).ready(function( $ ) {
 				if($("body").hasClass("adminimal-menu")) {	
 					$('aside.columns.sidebar-first').css('top', '45px');
 				}
-			} else if( $('#header').is_on_screen() ) {
+			} else if( mainTop < 100 ) {
 				$('aside.columns.sidebar-first').css('position', 'relative');
 			} 
 		})
