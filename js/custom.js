@@ -88,28 +88,28 @@ jQuery( document ).ready(function( $ ) {
 			console.log('dist above footer is ');
 			console.log(footerTop);
 			if($("body").hasClass("adminimal-menu")) {	
-				if (top < 47 ){
+				if ((top < 47 ) && (footerTop > 500)) {
 					$('aside.columns.sidebar-first').css('position', 'fixed');
 					$('aside.columns.sidebar-first').css('top', '47px');
 				} else if( mainTop >= 0 ) {
 					$('aside.columns.sidebar-first').css('position', 'relative');
 					$('aside.columns.sidebar-first').css('top', '0px');
-					console.log('testing main small space was:');
-					console.log(mainTop);
+//					console.log('testing main small space was:');
+//					console.log(mainTop);
 				} 
 			} else {
 				if (top < 1 ){
-				console.log('left sidebar close to top');
+//				console.log('left sidebar close to top');
 				$('aside.columns.sidebar-first').css('position', 'fixed');
 				$('aside.columns.sidebar-first').css('top', '0px');
 				
-				console.log('testing main big space was:');
-				console.log(mainTop);
+//				console.log('testing main big space was:');
+//				console.log(mainTop);
 				} else if( mainTop >= 0 ) {
 					$('aside.columns.sidebar-first').css('position', 'relative');
 					$('aside.columns.sidebar-first').css('top', '0px');
-					console.log('testing main small space was:');
-					console.log(mainTop);
+//					console.log('testing main small space was:');
+//					console.log(mainTop);
 				} 
 			}
 			
