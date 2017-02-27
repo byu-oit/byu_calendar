@@ -90,7 +90,7 @@ jQuery( document ).ready(function( $ ) {
 				if($("body").hasClass("adminimal-menu")) {	
 					$('aside.columns.sidebar-first').css('top', '45px');
 				}
-			} else if( mainTop < 100 ) {
+			} else if( mainTop < 200 ) {
 				$('aside.columns.sidebar-first').css('position', 'relative');
 			} 
 		})
