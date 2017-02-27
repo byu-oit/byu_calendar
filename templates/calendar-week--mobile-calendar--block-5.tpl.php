@@ -132,7 +132,7 @@ foreach ($day_names as $key => $value) {
         <?php $colpos = (isset($time['values'][$column][0])) ? $time['values'][$column][0]['wday'] : $index; ?>
         <?php for ($i = $curpos; $i < $colpos; $i++): ?>
 
-        <td class="calendar-agenda-items single-day all-day-items">
+        <td class="calendar-agenda-items single-day all-day-items" id="header-<?php print $weekday; ?>">
           <div class="calendar">
             <div class="inner">&nbsp</div>
           </div>
