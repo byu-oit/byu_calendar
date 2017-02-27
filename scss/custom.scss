@@ -766,7 +766,7 @@ header.l-header {
     min-width: 70px;
     float: left;
     padding: 0px;
-    position: fixed;
+    position: relative;
     margin-top: 45px;
     @media screen and (max-width: 408px) {
         width: $mobile_sidebar_width - 1;

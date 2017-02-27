@@ -78,7 +78,30 @@ jQuery( document ).ready(function( $ ) {
     
     
 
-  
+  // handle mobile left sidebar positioning
+	if ($("body").hasClass("mobile-first-calendar-yearview")) {	
+		$(window).scroll(function(e){ 
+	//			foreach($i = 1; $i <= 7; $i++){
+	//				
+	//				var el = $('#day-' . $i),
+	//				top = $('#header-' . $i).offset().top - $(document).scrollTop();
+	//				if (top < 100 ){
+	//					console.log('header close to top');
+	//					$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
+	//					$(el).addClass('current-day');
+	//				}
+	//				
+	//			}
+
+			var top = $('aside.columns.sidebar-first').offset().top - $(document).scrollTop();
+
+			if (top < 1 ){
+				console.log('left sidebar close to top');
+				$('aside.columns.sidebar-first').css('position', 'fixed');
+			} 
+		})
+	}
+	
     
     
     
@@ -172,31 +195,30 @@ jQuery( document ).ready(function( $ ) {
 //			}
 			
 				var top = $('td.calendar-agenda-items').offset().top - $(document).scrollTop();
+
 			if (top < 100 ){
 				console.log('header close to top');
 				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
 				
-				$("#header-1").addClass('current-day');
+				$("#day-1").addClass('current-day');
 			} else {
 				console.log(top);
 			}
 			
 			// works for 1
-//			var sun = $('#day-1'),
-//				sunTop = $('#header-1').offset().top - $(document).scrollTop();
-//			if (sunTop < 100 ){
-//				console.log('header close to top');
-//				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
-//				$(sun).addClass('current-day');
-//			} 
-//			
-//			var mon = $('#day-2'),
-//				monTop = $('#header-2').offset().top - $(document).scrollTop();
-//			if (monTop < 100 ){
-//				console.log('header close to top');
-//				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
-//				$(mon).addClass('current-day');
-//			} 
+			var sunTop = $('#header-1').offset().top - $(document).scrollTop();
+			if (sunTop < 100 ){
+				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
+				$("#day-1").addClass('current-day');
+			} 
+			
+			var mon = $('#day-2'),
+				monTop = $('#header-2').offset().top - $(document).scrollTop();
+			if (monTop < 100 ){
+				console.log('header close to top');
+				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
+				$(mon).addClass('current-day');
+			} 
 
 		})
 	}
