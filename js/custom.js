@@ -82,15 +82,18 @@ jQuery( document ).ready(function( $ ) {
 	if ($("body").hasClass("mobile-first")) {	
 		$(window).scroll(function(e){ 
 			var top = $('aside.columns.sidebar-first').offset().top - $(document).scrollTop();
-			if (top < 1 ){
+			if( $('.byu-header').is_on_screen() ){
+				console.log('byu header is on the screen');
+				$('aside.columns.sidebar-first').css('position', 'relative');
+			} else  {
 				console.log('left sidebar close to top');
 				$('aside.columns.sidebar-first').css('position', 'fixed');
 				$('aside.columns.sidebar-first').css('top', '0px');
 				if($("body").hasClass("adminimal-menu")) {	
 					$('aside.columns.sidebar-first').css('top', '45px');
 				}
-			} else {
-				$('aside.columns.sidebar-first').css('position', 'relative');
+				
+
 			} 
 		})
 	}
