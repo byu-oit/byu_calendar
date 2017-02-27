@@ -156,6 +156,17 @@ jQuery( document ).ready(function( $ ) {
     
         
     }  // - end mobile year view
+	if ($("body").hasClass("mobile-first-calendar-weekview")) {
+	
+		$(window).scroll(function(e){ 
+		var el = $('.selectedwork'),
+        top = $('#header-1').offset().top - $(document).scrollTop();
+		if (top < 100 ){
+			$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
+			$("#day-1").addClass('current-day');
+		}
+
+	}
     
     //  --- large screen left side filters --- 
      if (( $("body").hasClass("large-screen") ) && ( $("body").hasClass("page-calendar")) ) {
