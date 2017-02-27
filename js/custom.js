@@ -88,7 +88,7 @@ jQuery( document ).ready(function( $ ) {
 			console.log('dist above footer is ');
 			console.log(footerTop);
 			if($("body").hasClass("adminimal-menu")) {	
-				if ((top < 47 ) ) {
+				if (top < 47 ) {
 					$('aside.columns.sidebar-first').addClass('scrolled');
 					
 				} else if( mainTop >= 0 ) {
