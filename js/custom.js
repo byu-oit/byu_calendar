@@ -79,7 +79,7 @@ jQuery( document ).ready(function( $ ) {
     
 
   // handle mobile left sidebar positioning
-	if ($("body").hasClass("mobile-first-calendar-yearview")) {	
+	if ($("body").hasClass("mobile-first")) {	
 		$(window).scroll(function(e){ 
 			var top = $('aside.columns.sidebar-first').offset().top - $(document).scrollTop();
 			if (top < 1 ){
