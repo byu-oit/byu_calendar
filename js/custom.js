@@ -159,11 +159,17 @@ jQuery( document ).ready(function( $ ) {
 	if ($("body").hasClass("mobile-first-calendar-weekview")) {
 	
 		$(window).scroll(function(e){ 
-		var el = $('.selectedwork'),
-        top = $('#header-1').offset().top - $(document).scrollTop();
+		var el = $('#day-1'),
+        var top = $('#header-1').offset().top - $(document).scrollTop();
 		if (top < 100 ){
+			console.log('header close to top');
 			$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
-			$("#day-1").addClass('current-day');
+			$(el).addClass('current-day');
+		} else {
+			console.log(top);
+			console.log('element is: ');
+			console.log(el);
+			
 		}
 
 	}
