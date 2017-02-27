@@ -92,7 +92,7 @@ jQuery( document ).ready(function( $ ) {
 				}
 				console.log('testing main big space was:');
 				console.log(mainTop);
-			} else if( mainTop < 200 ) {
+			} else if( mainTop >= 0 ) {
 				$('aside.columns.sidebar-first').css('position', 'relative');
 				console.log('testing main small space was:');
 				console.log(mainTop);
