@@ -90,8 +90,12 @@ jQuery( document ).ready(function( $ ) {
 				if($("body").hasClass("adminimal-menu")) {	
 					$('aside.columns.sidebar-first').css('top', '45px');
 				}
+				console.log('testing main big space was:');
+				console.log(mainTop);
 			} else if( mainTop < 200 ) {
 				$('aside.columns.sidebar-first').css('position', 'relative');
+				console.log('testing main small space was:');
+				console.log(mainTop);
 			} 
 		})
 	}
