@@ -172,7 +172,7 @@ jQuery( document ).ready(function( $ ) {
 //			}
 			
 				var top = $('td.calendar-agenda-items').offset().top - $(document).scrollTop();
-			if (sunTop < 100 ){
+			if (top < 100 ){
 				console.log('header close to top');
 				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
 				
