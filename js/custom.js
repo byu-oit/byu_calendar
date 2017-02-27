@@ -168,19 +168,7 @@ jQuery( document ).ready(function( $ ) {
     }  // - end mobile year view
 	if ($("body").hasClass("mobile-first-calendar-weekview")) {
 	
-		$(window).scroll(function(e){ 
-	
-//				var top = $('td.calendar-agenda-items').offset().top - $(document).scrollTop();
-//
-//			if (top < 100 ){
-//				console.log('header close to top');
-//				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
-//				
-//				$("#day-1").addClass('current-day');
-//			} else {
-//				console.log(top);
-//			}
-			
+		$(window).scroll(function(e){ 		
 			// works for 1
 			var sunTop = $('#header-1').offset().top - $(document).scrollTop();
 			if (sunTop < 100 ){
