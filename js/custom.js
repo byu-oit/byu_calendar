@@ -85,6 +85,12 @@ jQuery( document ).ready(function( $ ) {
 			if (top < 1 ){
 				console.log('left sidebar close to top');
 				$('aside.columns.sidebar-first').css('position', 'fixed');
+				$('aside.columns.sidebar-first').css('top', '0px');
+				if($("body").hasClass("adminimal-menu")) {	
+					$('aside.columns.sidebar-first').css('top', '45px');
+				}
+			} else if( $('.byu-header').is_on_screen() ) {
+				$('aside.columns.sidebar-first').css('position', 'relative');
 			} 
 		})
 	}
