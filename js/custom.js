@@ -81,7 +81,7 @@ jQuery( document ).ready(function( $ ) {
   // handle mobile left sidebar positioning
 	if ($("body").hasClass("mobile-first")) {	
 		$(window).scroll(function(e){ 
-			var top = $('aside.columns.sidebar-first').offset().top - $(document).scrollTop();
+			var top = $('#sidebar-first-container').offset().top - $(document).scrollTop();
 			var mainTop = $('main').offset().top - $(document).scrollTop();
 			if (top < 1 ){
 				console.log('left sidebar close to top');
@@ -94,6 +94,7 @@ jQuery( document ).ready(function( $ ) {
 				console.log(mainTop);
 			} else if( mainTop >= 0 ) {
 				$('aside.columns.sidebar-first').css('position', 'relative');
+				$('aside.columns.sidebar-first').css('top', '0px');
 				console.log('testing main small space was:');
 				console.log(mainTop);
 			} 
