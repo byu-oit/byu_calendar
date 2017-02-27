@@ -83,7 +83,7 @@ jQuery( document ).ready(function( $ ) {
 		$(window).scroll(function(e){ 
 			var top = $('#sidebar-first-container').offset().top - $(document).scrollTop();
 			var mainTop = $('main').offset().top - $(document).scrollTop();
-			var footerBottom = $('byu-footer').offset().top - $(document).scrollBottom();
+//			var footerBottom = $('byu-footer').offset().top - $(document).scrollBottom();
 			// for admins mobile
 			console.log('dist above footer is ');
 			console.log(footerTop);
