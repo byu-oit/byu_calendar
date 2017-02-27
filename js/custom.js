@@ -87,9 +87,9 @@ jQuery( document ).ready(function( $ ) {
 				$('aside.columns.sidebar-first').css('position', 'fixed');
 				$('aside.columns.sidebar-first').css('top', '0px');
 				if($("body").hasClass("adminimal-menu")) {	
-					$('aside.columns.sidebar-first').css('top', '45px');
+					$('aside.columns.sidebar-first').css('top', 'px');
 				}
-			} else {
+			} else if( $('#header').is_on_screen() ) {
 				$('aside.columns.sidebar-first').css('position', 'relative');
 			} 
 		})
