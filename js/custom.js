@@ -160,7 +160,7 @@ jQuery( document ).ready(function( $ ) {
 	
 		$(window).scroll(function(e){ 
 		var el = $('#day-1'),
-        var top = $('#header-1').offset().top - $(document).scrollTop();
+			top = $('#header-1').offset().top - $(document).scrollTop();
 		if (top < 100 ){
 			console.log('header close to top');
 			$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
