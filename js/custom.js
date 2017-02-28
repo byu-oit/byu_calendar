@@ -206,38 +206,38 @@ jQuery( document ).ready(function( $ ) {
 			// works for 1
 			var sunTop = $('#header-1').offset().top - $(document).scrollTop();
 			if (sunTop < 100 ){
-				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
-				$("#day-1").addClass('current-day');
+				$(".calendar-nav-item.day-navigation-day-items").removeClass('currently-viewed');
+				$("#day-1").addClass('currently-viewed');
 			} 
 			var monTop = $('#header-2').offset().top - $(document).scrollTop();
 			if (monTop < 100 ){
-				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
-				$("#day-2").addClass('current-day');
+				$(".calendar-nav-item.day-navigation-day-items").removeClass('currently-viewed');
+				$("#day-2").addClass('currently-viewed');
 			} 
 			var tuesTop = $('#header-3').offset().top - $(document).scrollTop();
 			if (tuesTop < 100 ){
-				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
-				$("#day-3").addClass('current-day');
+				$(".calendar-nav-item.day-navigation-day-items").removeClass('currently-viewed');
+				$("#day-3").addClass('currently-viewed');
 			} 
 			var wedTop = $('#header-4').offset().top - $(document).scrollTop();
 			if (wedTop < 100 ){
-				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
-				$("#day-4").addClass('current-day');
+				$(".calendar-nav-item.day-navigation-day-items").removeClass('currently-viewed');
+				$("#day-4").addClass('currently-viewed');
 			} 
 			var thursTop = $('#header-5').offset().top - $(document).scrollTop();
 			if (thursTop < 100 ){
-				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
-				$("#day-5").addClass('current-day');
+				$(".calendar-nav-item.day-navigation-day-items").removeClass('currently-viewed');
+				$("#day-5").addClass('currently-viewed');
 			} 
 			var friTop = $('#header-6').offset().top - $(document).scrollTop();
 			if (friTop < 100 ){
-				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
-				$("#day-6").addClass('current-day');
+				$(".calendar-nav-item.day-navigation-day-items").removeClass('currently-viewed');
+				$("#day-6").addClass('currently-viewed');
 			} 
 			var satTop = $('#header-7').offset().top - $(document).scrollTop();
 			if (satTop < 100 ){
-				$(".calendar-nav-item.day-navigation-day-items").removeClass('current-day');
-				$("#day-7").addClass('current-day');
+				$(".calendar-nav-item.day-navigation-day-items").removeClass('currently-viewed');
+				$("#day-7").addClass('currently-viewed');
 			} 
 			
 			
