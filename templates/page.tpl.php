@@ -184,7 +184,7 @@
 
 
 
-  <byu-footer>
+  <byu-footer id="byu-footer">
     <?php if (!empty($page['footer_firstcolumn']) || !empty($page['footer_secondcolumn']) || !empty($page['footer_thirdcolumn']) || !empty($page['footer_fourthcolumn'])): ?>
     <!--.footer-columns -->
     <byu-footer-column slot="col1">

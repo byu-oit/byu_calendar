@@ -84,11 +84,12 @@ jQuery( document ).ready(function( $ ) {
 			var top = $('#sidebar-first-container').offset().top - $(document).scrollTop();
 			var mainTop = $('main').offset().top - $(document).scrollTop();
 //			var footerBottom = $('byu-footer').offset().top - $(document).scrollBottom();
+			
 			// for admins mobile
 			console.log('dist above footer is ');
 //			console.log(footerTop);
 			if($("body").hasClass("adminimal-menu")) {	
-				if (top < 47 ) {
+				if ((top < 47 ) && (!$('#byu-footer')is_on_screen()) ) {
 					$('aside.columns.sidebar-first').addClass('scrolled');
 //					$('aside.columns.sidebar-first').css('position', 'fixed');
 //					$('aside.columns.sidebar-first').css('top', '47px');

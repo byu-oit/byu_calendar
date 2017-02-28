@@ -135,7 +135,7 @@ foreach ($day_names as $key => $value) {
 
         <td class="calendar-agenda-items single-day all-day-items" id="header-<?php print $curpos; ?>">
           <div class="calendar">
-            <div class="inner">&nbsp</div>
+            <div class="inner">&nbsp;</div>
           </div>
         </td>
         <?php endfor; ?>   
