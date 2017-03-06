@@ -1076,7 +1076,9 @@ main #main-content-section.scrolled {
         }
     }
 	.calendar-nav-item.currently-viewed {
-		background: $royal!important;
+//		background: $royal!important;
+		background: $lightgray;
+		color: $navy;	
 	}
     .calendar-nav-item.current-day {
         background: $navy!important;
