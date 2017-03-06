@@ -85,42 +85,20 @@ jQuery( document ).ready(function( $ ) {
 			var mainTop = $('main').offset().top - $(document).scrollTop();
 			
 			// see if scrolled to end of content yet:
-//			var amountScrolled = $(document).scrollTop(); //how much has been scrolled
 			var mainHeight = $('#main-content-section').innerHeight(); // inner height of the element
-//			var mainTotalHeight = $('#main-content-section').scrollHeight; //height of the content of the element
-//So you can take the sum of the first two properties, and when it equals to the last property, you've reached the end:
-
-//			console.log(amountScrolled);
-//			console.log('main height is');
-//			console.log(mainHeight);
-//			console.log(mainTotalHeight);
-//    $('#main-content-section').on('scroll', function() {
-        if($('#main-content-section').scrollTop() + $('#main-content-section').innerHeight() >= $('#main-content-section').scrollHeight) {
-            alert('end reached');
-        }
-//    })
-
-			
+		
 			var offset = $('#byu-footer').offset().top;
 			var amountScrolled = $(document).scrollTop()
-			console.log('offset and amount scrolled:');
-			console.log(offset);
-			console.log(amountScrolled);
-//			var footerTop = offset - amountScrolled;
-			// come back to this:
-			var footerShown = $('#footer-top').is_on_screen();
-			// for admins mobile
-//			console.log('dist above footer is ');
-//			console.log(footerTop);
-//			console.log(footerShown);
+
 			var total = offset + amountScrolled + 170;
-			console.log('total is');
-			console.log(total);
-			if(total >= mainHeight) {
+//			console.log('total is');
+//			console.log(total);
+			if(total >= mainHeight) {  // if right at the end of main container or past into the footer
 				$('aside.columns.sidebar-first').removeClass('scrolled');
 //				console.log('footer is shown');
 			} else {
 //				console.log('footer is NOT shown');
+			// for admins mobile
 				if($("body").hasClass("adminimal-menu")) {	
 					if (top < 47 ) {
 						$('aside.columns.sidebar-first').addClass('scrolled');
