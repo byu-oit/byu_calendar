@@ -90,7 +90,9 @@ jQuery( document ).ready(function( $ ) {
 			var mainTotalHeight = $('#main-content-section').scrollHeight//height of the content of the element
 //So you can take the sum of the first two properties, and when it equals to the last property, you've reached the end:
 
-			console.log( amountScrolled . ' + ' . mainHeight . ' ?= ' . mainTotalHeight);
+			console.log( amountScrolled);
+			console.log(mainHeight);
+			console.log(mainTotalHeight);
 //    $('#main-content-section').on('scroll', function() {
         if($('#main-content-section').scrollTop() + $('#main-content-section').innerHeight() >= $('#main-content-section').scrollHeight) {
             alert('end reached');
