@@ -92,7 +92,9 @@ jQuery( document ).ready(function( $ ) {
 			
 			if(footerShown == true) {
 				$('aside.columns.sidebar-first').removeClass('scrolled');
+				console.log('footer is shown');
 			} else {
+				console.log('footer is NOT shown');
 				if($("body").hasClass("adminimal-menu")) {	
 					if (top < 47 ) {
 						$('aside.columns.sidebar-first').addClass('scrolled');
