@@ -183,7 +183,7 @@
   <?php endif; ?>
 
 
-	<div id="footer-top"></div>
+	<div id="footer-top" class="row" style="display: block; height: 2px;"></div>
   <byu-footer id="byu-footer">
     <?php if (!empty($page['footer_firstcolumn']) || !empty($page['footer_secondcolumn']) || !empty($page['footer_thirdcolumn']) || !empty($page['footer_fourthcolumn'])): ?>
     <!--.footer-columns -->
