@@ -83,9 +83,25 @@ jQuery( document ).ready(function( $ ) {
 		$(window).scroll(function(e){ 
 			var top = $('#sidebar-first-container').offset().top - $(document).scrollTop();
 			var mainTop = $('main').offset().top - $(document).scrollTop();
-			var footerTop = $('#byu-footer').offset().top - $(document).scrollTop();
+			
+			// see if scrolled to end of content yet:
+//			$('#main-content-section').scrollTop()//how much has been scrolled
+//$('#main-content-section').innerHeight()// inner height of the element
+//$('#main-content-section').scrollHeight//height of the content of the element
+//So you can take the sum of the first two properties, and when it equals to the last property, you've reached the end:
+
+
+//    $('#main-content-section').on('scroll', function() {
+        if($('#main-content-section').scrollTop() + $('#main-content-section').innerHeight() >= $('#main-content-section').scrollHeight) {
+            alert('end reached');
+        }
+//    })
+
+			
+			
+//			var footerTop = $('#byu-footer').offset().top - $(document).scrollTop();
 			// come back to this:
-			var footerShown = $('#byu-footer').is_on_screen();
+			var footerShown = $('#footer-top').is_on_screen();
 			// for admins mobile
 //			console.log('dist above footer is ');
 //			console.log(footerTop);
