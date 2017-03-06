@@ -85,39 +85,44 @@ jQuery( document ).ready(function( $ ) {
 			var mainTop = $('main').offset().top - $(document).scrollTop();
 //			var footerBottom = $('byu-footer').offset().top - $(document).scrollBottom();
 			// come back to this:
-			//var footerShown = $('#byu-footer')is_on_screen();
+			var footerShown = $('#byu-footer').is_on_screen();
 			// for admins mobile
 			console.log('dist above footer is ');
 //			console.log(footerTop);
-			if($("body").hasClass("adminimal-menu")) {	
-				if (top < 47 ) {
-					$('aside.columns.sidebar-first').addClass('scrolled');
-//					$('aside.columns.sidebar-first').css('position', 'fixed');
-//					$('aside.columns.sidebar-first').css('top', '47px');
-					
-				} else if( mainTop >= 0 ) {
-					$('aside.columns.sidebar-first').removeClass('scrolled');
-//					$('aside.columns.sidebar-first').css('position', 'relative');
-//					$('aside.columns.sidebar-first').css('top', '0px');
-//					console.log('testing main small space was:');
-//					console.log(mainTop);
-				} 
+			
+			if(footerShown == true) {
+				$('aside.columns.sidebar-first').removeClass('scrolled');
 			} else {
-				if (top < 1 ){
-//				console.log('left sidebar close to top');
-				$('aside.columns.sidebar-first').addClass('scrolled');
-//				$('aside.columns.sidebar-first').css('position', 'fixed');
-//				$('aside.columns.sidebar-first').css('top', '0px');
-				
-//				console.log('testing main big space was:');
-//				console.log(mainTop);
-				} else if( mainTop >= 0 ) {
-					$('aside.columns.sidebar-first').removeClass('scrolled');
-//					$('aside.columns.sidebar-first').css('position', 'relative');
-//					$('aside.columns.sidebar-first').css('top', '0px');
-//					console.log('testing main small space was:');
-//					console.log(mainTop);
-				} 
+				if($("body").hasClass("adminimal-menu")) {	
+					if (top < 47 ) {
+						$('aside.columns.sidebar-first').addClass('scrolled');
+	//					$('aside.columns.sidebar-first').css('position', 'fixed');
+	//					$('aside.columns.sidebar-first').css('top', '47px');
+
+					} else if( mainTop >= 0 ) {
+						$('aside.columns.sidebar-first').removeClass('scrolled');
+	//					$('aside.columns.sidebar-first').css('position', 'relative');
+	//					$('aside.columns.sidebar-first').css('top', '0px');
+	//					console.log('testing main small space was:');
+	//					console.log(mainTop);
+					} 
+				} else {
+					if (top < 1 ){
+	//				console.log('left sidebar close to top');
+					$('aside.columns.sidebar-first').addClass('scrolled');
+	//				$('aside.columns.sidebar-first').css('position', 'fixed');
+	//				$('aside.columns.sidebar-first').css('top', '0px');
+
+	//				console.log('testing main big space was:');
+	//				console.log(mainTop);
+					} else if( mainTop >= 0 ) {
+						$('aside.columns.sidebar-first').removeClass('scrolled');
+	//					$('aside.columns.sidebar-first').css('position', 'relative');
+	//					$('aside.columns.sidebar-first').css('top', '0px');
+	//					console.log('testing main small space was:');
+	//					console.log(mainTop);
+					} 
+				}
 			}
 			
 			
