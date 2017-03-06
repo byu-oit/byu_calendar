@@ -87,7 +87,7 @@ jQuery( document ).ready(function( $ ) {
 			// see if scrolled to end of content yet:
 			var amountScrolled = $('#main-content-section').scrollTop(); //how much has been scrolled
 			var mainHeight = $('#main-content-section').innerHeight(); // inner height of the element
-			var mainTotalHeight = $('#main-content-section').scrollHeight(); //height of the content of the element
+			var mainTotalHeight = $('#main-content-section').scrollHeight; //height of the content of the element
 //So you can take the sum of the first two properties, and when it equals to the last property, you've reached the end:
 
 			console.log(amountScrolled);
