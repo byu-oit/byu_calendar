@@ -15,7 +15,7 @@
 
 //theme hasn't recognized this file yet.
 
-$( document ).ready(function() {
+jQuery( document ).ready(function( $ ) {
     console.log('its loaded');
         $(".mobile-nav-link").click(function() {
             console.log("its working");
