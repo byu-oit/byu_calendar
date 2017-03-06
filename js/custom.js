@@ -113,7 +113,7 @@ jQuery( document ).ready(function( $ ) {
 //			console.log('dist above footer is ');
 //			console.log(footerTop);
 //			console.log(footerShown);
-			var total = offset + amountScrolled + 200;
+			var total = offset + amountScrolled + 170;
 			console.log('total is');
 			console.log(total);
 			if(total >= mainHeight) {
