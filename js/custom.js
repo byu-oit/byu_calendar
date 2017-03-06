@@ -113,7 +113,7 @@ jQuery( document ).ready(function( $ ) {
 //			console.log('dist above footer is ');
 //			console.log(footerTop);
 //			console.log(footerShown);
-			if(footerShown == true) {
+			if((offset + amountScrolled + 200) >= mainHeight) {
 				$('aside.columns.sidebar-first').removeClass('scrolled');
 //				console.log('footer is shown');
 			} else {
