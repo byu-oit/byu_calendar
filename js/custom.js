@@ -91,8 +91,8 @@ jQuery( document ).ready(function( $ ) {
 //So you can take the sum of the first two properties, and when it equals to the last property, you've reached the end:
 
 //			console.log(amountScrolled);
-			console.log('main height is');
-			console.log(mainHeight);
+//			console.log('main height is');
+//			console.log(mainHeight);
 //			console.log(mainTotalHeight);
 //    $('#main-content-section').on('scroll', function() {
         if($('#main-content-section').scrollTop() + $('#main-content-section').innerHeight() >= $('#main-content-section').scrollHeight) {
@@ -113,7 +113,10 @@ jQuery( document ).ready(function( $ ) {
 //			console.log('dist above footer is ');
 //			console.log(footerTop);
 //			console.log(footerShown);
-			if((offset + amountScrolled + 200) >= mainHeight) {
+			var total = offset + amountScrolled + 200;
+			console.log('total is');
+			console.log(total);
+			if(total >= mainHeight) {
 				$('aside.columns.sidebar-first').removeClass('scrolled');
 //				console.log('footer is shown');
 			} else {
