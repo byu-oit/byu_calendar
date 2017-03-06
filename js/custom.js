@@ -83,17 +83,17 @@ jQuery( document ).ready(function( $ ) {
 		$(window).scroll(function(e){ 
 			var top = $('#sidebar-first-container').offset().top - $(document).scrollTop();
 			var mainTop = $('main').offset().top - $(document).scrollTop();
-//			var footerBottom = $('byu-footer').offset().top - $(document).scrollBottom();
+			var footerTop = $('#byu-footer').offset().top - $(document).scrollTop();
 			// come back to this:
 			var footerShown = $('#byu-footer').is_on_screen();
 			// for admins mobile
 			console.log('dist above footer is ');
-//			console.log(footerTop);
+			console.log(footerTop);
 			
-			if(footerShown == true) {
-				$('aside.columns.sidebar-first').removeClass('scrolled');
-				console.log('footer is shown');
-			} else {
+//			if(footerShown == true) {
+//				$('aside.columns.sidebar-first').removeClass('scrolled');
+//				console.log('footer is shown');
+//			} else {
 				console.log('footer is NOT shown');
 				if($("body").hasClass("adminimal-menu")) {	
 					if (top < 47 ) {
@@ -125,7 +125,7 @@ jQuery( document ).ready(function( $ ) {
 	//					console.log(mainTop);
 					} 
 				}
-			}
+//			}  // end of if footer on screen
 			
 			
 			
