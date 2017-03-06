@@ -85,16 +85,16 @@ jQuery( document ).ready(function( $ ) {
 			var mainTop = $('main').offset().top - $(document).scrollTop();
 			var footerTop = $('#byu-footer').offset().top - $(document).scrollTop();
 			// come back to this:
-			var footerShown = $('#byu-footer').is_on_screen();
+			var footerShown = $('#footer-wrapper').is_on_screen();
 			// for admins mobile
 //			console.log('dist above footer is ');
 //			console.log(footerTop);
 			console.log(footerShown);
-//			if(footerShown == true) {
-//				$('aside.columns.sidebar-first').removeClass('scrolled');
-//				console.log('footer is shown');
-//			} else {
-//				console.log('footer is NOT shown');
+			if(footerShown == true) {
+				$('aside.columns.sidebar-first').removeClass('scrolled');
+				console.log('footer is shown');
+			} else {
+				console.log('footer is NOT shown');
 				if($("body").hasClass("adminimal-menu")) {	
 					if (top < 47 ) {
 						$('aside.columns.sidebar-first').addClass('scrolled');
@@ -125,7 +125,7 @@ jQuery( document ).ready(function( $ ) {
 	//					console.log(mainTop);
 					} 
 				}
-//			}  // end of if footer on screen
+			}  // end of if footer on screen
 			
 			
 			
