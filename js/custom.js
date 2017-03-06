@@ -85,12 +85,12 @@ jQuery( document ).ready(function( $ ) {
 			var mainTop = $('main').offset().top - $(document).scrollTop();
 			
 			// see if scrolled to end of content yet:
-//			$('#main-content-section').scrollTop()//how much has been scrolled
-//$('#main-content-section').innerHeight()// inner height of the element
-//$('#main-content-section').scrollHeight//height of the content of the element
+			var amountScrolled = $('#main-content-section').scrollTop()//how much has been scrolled
+			var mainHeight = $('#main-content-section').innerHeight()// inner height of the element
+			var mainTotalHeight = $('#main-content-section').scrollHeight//height of the content of the element
 //So you can take the sum of the first two properties, and when it equals to the last property, you've reached the end:
 
-
+			console.log( amountScrolled . ' + ' . mainHeight . ' ?= ' . mainTotalHeight);
 //    $('#main-content-section').on('scroll', function() {
         if($('#main-content-section').scrollTop() + $('#main-content-section').innerHeight() >= $('#main-content-section').scrollHeight) {
             alert('end reached');
@@ -105,12 +105,12 @@ jQuery( document ).ready(function( $ ) {
 			// for admins mobile
 //			console.log('dist above footer is ');
 //			console.log(footerTop);
-			console.log(footerShown);
+//			console.log(footerShown);
 			if(footerShown == true) {
 				$('aside.columns.sidebar-first').removeClass('scrolled');
-				console.log('footer is shown');
+//				console.log('footer is shown');
 			} else {
-				console.log('footer is NOT shown');
+//				console.log('footer is NOT shown');
 				if($("body").hasClass("adminimal-menu")) {	
 					if (top < 47 ) {
 						$('aside.columns.sidebar-first').addClass('scrolled');
