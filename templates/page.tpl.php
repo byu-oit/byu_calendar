@@ -183,7 +183,7 @@
   <?php endif; ?>
 
 
-<div id="footer-wrapper">
+	<div id="footer-top"></div>
   <byu-footer id="byu-footer">
     <?php if (!empty($page['footer_firstcolumn']) || !empty($page['footer_secondcolumn']) || !empty($page['footer_thirdcolumn']) || !empty($page['footer_fourthcolumn'])): ?>
     <!--.footer-columns -->
@@ -310,7 +310,7 @@
       <!--/.footer-columns-->
     <?php endif; ?>
   </byu-footer>
-</div>
+<!--</div>-->
 
 
 

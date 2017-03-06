@@ -85,7 +85,7 @@ jQuery( document ).ready(function( $ ) {
 			var mainTop = $('main').offset().top - $(document).scrollTop();
 			var footerTop = $('#byu-footer').offset().top - $(document).scrollTop();
 			// come back to this:
-			var footerShown = $('#footer-wrapper').is_on_screen();
+			var footerShown = $('#footer-top').is_on_screen();
 			// for admins mobile
 //			console.log('dist above footer is ');
 //			console.log(footerTop);
