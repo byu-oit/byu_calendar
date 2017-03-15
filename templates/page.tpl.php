@@ -187,7 +187,7 @@
   <byu-footer id="byu-footer">
     <?php if (!empty($page['footer_firstcolumn']) || !empty($page['footer_secondcolumn']) || !empty($page['footer_thirdcolumn']) || !empty($page['footer_fourthcolumn'])): ?>
     <!--.footer-columns -->
-    <byu-footer-column slot="col1">
+    <byu-footer-column>
       <?php if (!empty($page['footer_firstcolumn'])): ?>
           <?php
       // get array of blocks
@@ -217,7 +217,7 @@
         ?>
       <?php endif; ?>
     </byu-footer-column>
-    <byu-footer-column slot="col2">
+    <byu-footer-column>
       <?php if (!empty($page['footer_secondcolumn'])): ?>
         <?php // get block title
         // get array of blocks
@@ -247,7 +247,7 @@
         ?>
       <?php endif; ?>
     </byu-footer-column>
-    <byu-footer-column slot="col3">
+    <byu-footer-column>
       <?php if (!empty($page['footer_thirdcolumn'])): ?>
         <?php // get block title
         // get array of blocks
@@ -277,7 +277,7 @@
         ?>
       <?php endif; ?>
     </byu-footer-column>
-    <byu-footer-column slot="col4">
+    <byu-footer-column>
       <?php if (!empty($page['footer_fourthcolumn'])): ?>
         <?php // get block title
         // get array of blocks
