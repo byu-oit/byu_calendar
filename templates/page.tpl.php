@@ -39,6 +39,17 @@
       <?php endif; ?>
 
     </byu-menu>
+	
+	    <byu-user-info slot="user">
+      <a slot="login" href="/user">Sign In</a>
+      <!-- if you are using CAS, use the CAS sign out link instead: -->
+      <!--      <a slot="logout" href="/caslogout">Sign Out</a>-->
+      <a slot="logout" href="/user/logout">Sign Out</a>
+      <?php if($logged_in): ?>
+        <span slot="user-name">[Username]</span>
+      <?php endif; ?>
+    </byu-user-info>
+	
     <byu-search slot="search">
 <!--		<div id="top-bar-search"> -->
 		  <?php 
