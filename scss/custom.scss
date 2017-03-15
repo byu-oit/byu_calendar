@@ -190,6 +190,21 @@ h1#page-title {
 //    color: $navy;
 }
 
+
+/* - BYU Components stylineg --- */
+
+//a {
+//  color: $navy;
+//}
+//a:hover{
+//  color: $royal;
+//}
+byu-header a,
+#site-name {
+  color: #fff;
+}
+
+
 /* ------------ regions ----------------------*/
 section.l-top-title.row {
     border-bottom: 1px solid $lightgray;
