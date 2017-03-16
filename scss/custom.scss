@@ -448,10 +448,10 @@ input[type="checkbox"]:checked ~ label:after {
 //    display: none;
 }
 .chosen-container .chosen-results li:first-of-type:before {
-    content: "--clear ";
+//    content: "--clear ";
 }
 .chosen-container .chosen-results li:first-of-type:after {
-    content: "--";
+//    content: "--";
 }
 .chosen-container .chosen-results li {
     color: $gray;
