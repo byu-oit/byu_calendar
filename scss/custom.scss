@@ -4348,12 +4348,49 @@ section.block-social-share-social-share {
 
 
 /* -- workbench pages ------- */
+// default styling for all subscribe-to-multiple
+//.view-id-subscribe_to_multiple h2 {
+//  font-weight: bold;
+//  color: #002e5d;
+//  font-size: 24px;
+//  font-family: "Sentinel A","Sentinel B";
+//}
+//.view-id-subscribe_to_multiple .view-content {
+//  display: none;
+//}
+//
+//.view-id-subscribe_to_multiple .form-item-field-event-type-tid .bef-checkboxes {
+//  display: flex;
+//  flex-wrap: wrap;
+//  flex-direction: column;
+//  height: 150px;
+//}
+//.view-id-subscribe_to_multiple .form-item-field-internal-category-tid .bef-checkboxes > .form-item {
+//   padding-right: 15px;
+//}
+
+
+
+.view-id-subscribe_to_multiple .form-item-field-internal-category-tid .bef-checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 850px;
+}
+@media (min-width: $large_screen_start_width) {
+
+        .view-id-subscribe_to_multiple .form-item.form-type-select.form-item-field-internal-category-tid .bef-checkboxes {
+                max-height: 350px;
+        }
+}
+
+
 
 #edit-sections-internal-categories .form-type-checkbox label {
 	color: #444;
 	padding: 0px 28px 0 0;
 }
-#block-views-subscribe-to-multiple-block {
+.view-id-subscribe_to_multiple {
 	h2 {  // block title
 		font-weight: bold;
 		color: $navy;
@@ -4375,11 +4412,29 @@ section.block-social-share-social-share {
 			font-weight: normal;
 		}
 	}
+	.view-id-subscribe_to_multiple #edit-field-internal-category-tid-wrapper {
+    display: block;
+    width: 100%;
+    /*max-width: 1200px; */
+}
+	.form-item-field-tags-tid {
+		.bef-checkboxes {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.form-item.form-type-bef-checkbox {
+
+			/*max-width: 300px; */
+			margin-right: 10px;
+		}
+
+
+	}
 }
 
 
 /* ---- subscribe to mulitple PUBLIC FACING PAGE, not workbench - that one is in the byu_adminimal theme */
-.block-views-subscribe-to-multiple-block-1 {
+.view-id-subscribe_to_multiple {
 	h2 {
 	  font-weight: bold;
 	  color: #002e5d;
@@ -4390,6 +4445,17 @@ section.block-social-share-social-share {
 	.view-content {
 	  display: none;
 	}
+	
+	.form-item-field-event-type-tid .bef-checkboxes {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		height: 150px;
+		.form-item {
+			padding-right: 15px;
+		}
+	}
+	
 	.form-item.form-type-select.form-item-field-internal-category-tid .bef-checkboxes {
 	  display: flex;
 	  flex-wrap: wrap;
