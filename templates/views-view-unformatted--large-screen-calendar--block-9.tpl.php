@@ -22,9 +22,9 @@ $did = substr($currentDate, -2);
 
 $weekday = date("l", mktime(0, 0, 0, $mid, $did, $year));
 
-$titleFormatted = date(" |  j, F Y", mktime(0, 0, 0, $mid, $did, $year));
+$titleFormatted = date(" j, F Y", mktime(0, 0, 0, $mid, $did, $year));
 
-echo '<h3><span class="header-weekday-caps list-header-week">' . $weekday . '</span><span class="list-header-fulldate">' . $titleFormatted . '</span></h3>';
+echo '<h3><div class="header-weekday-caps list-header-week">' . $weekday . '</div><div class="list-header-fulldate">' . $titleFormatted . '</div></h3>';
 ?>
 <?php if (!empty($title)): ?>
   <h3><?php print $title; ?></h3>
