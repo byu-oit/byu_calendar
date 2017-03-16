@@ -4465,7 +4465,7 @@ section.block-social-share-social-share {
 	  flex-wrap: wrap;
 	  flex-direction: column;
 	}
-	@media (min-width: $large_screen_start_width) {
+	@media screen and (min-width: $large_screen_start_width) {
 		.form-item.form-type-select.form-item-field-internal-category-tid .bef-checkboxes {
 			max-height: 800px;
 		}
