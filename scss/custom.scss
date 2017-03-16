@@ -4450,7 +4450,7 @@ section.block-social-share-social-share {
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: column;
-		height: 150px;
+		height: 100px;
 		.form-item {
 			padding-right: 15px;
 		}
@@ -4467,14 +4467,14 @@ section.block-social-share-social-share {
 	}
 	@media (min-width: $large_screen_start_width) {
 		.form-item.form-type-select.form-item-field-internal-category-tid .bef-checkboxes {
-			max-height: 350px;
+			max-height: 800px;
 		}
 	}
 	.form-item.form-type-select.form-item-field-internal-category-tid .bef-checkboxes .form-item {
 	  padding-right: 15px;
 	}
 
-	.views-exposed-filters .views-exposed-widget > label {
+	.views-exposed-widget > label {
 	//  padding-bottom: 10px;
 	//  text-transform: uppercase;
 	//  border-bottom: 1px solid #e5e5e5;
@@ -4484,7 +4484,8 @@ section.block-social-share-social-share {
 		color: $navy;
 		font-size: 14px;
 		padding-bottom: 10px;
-		text-transform: uppercase;
+//		text-transform: uppercase;
+		font-family: "Sentinel A", "Sentinel B";
 	}
 	.bef-checkboxes .form-item label.option {
 	  /*font-weight: normal; */

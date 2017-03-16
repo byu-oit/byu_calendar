@@ -88,8 +88,11 @@ jQuery( document ).ready(function( $ ) {
 			var mainHeight = $('#main-content-section').innerHeight(); // inner height of the element
 		
 			var offset = $('#byu-footer').offset().top;
+			//  for non ios browsers
 			var amountScrolled = $(document).scrollTop()
-
+			// for ios 
+			
+			
 			var total = offset + amountScrolled + 170;
 //			console.log('total is');
 //			console.log(total);
@@ -798,7 +801,89 @@ function startListeners() {
 		}
 	}	
 	
-    
+    /* ------ formatting the subscribe to multiple page in workbench pages -------- */
+	
+	     $(".view-id-subscribe_to_multiple .bef-checkboxes .form-item label").each( function() {
+        var value = $(this).text();
+
+        if(value.includes("----")) {
+                $(this).css("font-weight", "normal");
+
+                $(this).parent().css("padding-left", "32px");
+                var res = value.replace("----", "---- ");
+                $(this).text(res);
+
+        } else if(value.includes("---")) {
+                $(this).css("color","#666");
+                $(this).css("font-weight", "normal");
+
+                $(this).parent().css("padding-left", "24px");
+                var res = value.replace("---", "--- ");
+                $(this).text(res);
+
+        } else if(value.includes("--")) {
+                $(this).css("font-weight", "normal");
+
+                $(this).parent().css("padding-left", "16px");
+                var res = value.replace("--", "-- ");
+                $(this).text(res);
+
+        } else if (value.includes("-")) {
+                $(this).css("color","#666");
+                $(this).parent().css("padding-left", "8px");
+                var res = value.replace("-", "- ");
+                $(this).text(res);
+
+        }
+        value = "";
+        });
+
+ (function ($) {
+Drupal.behaviors.betterExposedFilters = {
+        attach: function(context) {
+                console.log('form finished submitting, to start function');
+        $(".view-id-subscribe_to_multiple .bef-checkboxes .form-item label").each(function() {
+                console.log('got into resetting fxn');
+                var value = $(this).text();
+
+                if(value.includes("----")) {
+                        $(this).css("font-weight", "normal");
+
+                        $(this).parent().css("padding-left", "32px");
+                        var res = value.replace("----", "---- ");
+                        $(this).text(res);
+
+                } else if(value.includes("---")) {
+                        $(this).css("font-weight", "normal");
+
+                        $(this).css("color","#666");
+                        $(this).parent().css("padding-left", "24px");
+                        var res = value.replace("---", "--- ");
+                        $(this).text(res);
+
+                } else if(value.includes("--")) {
+                        $(this).css("font-weight", "normal");
+
+                        $(this).parent().css("padding-left", "16px");
+                        var res = value.replace("--", "-- ");
+                        $(this).text(res);
+
+                } else if (value.includes("-")) {
+                        $(this).css("color","#666");
+                        $(this).parent().css("padding-left", "8px");
+
+                        var res = value.replace("-", "- ");
+                        $(this).text(res);
+
+                }
+                value = "";
+        });
+
+
+        }}
+
+	
+	
 });
 
 
