@@ -20,9 +20,11 @@ $year = substr($currentDate, 0, 4);
 $mid = substr($currentDate, -5, 2);
 $did = substr($currentDate, -2);
 
-$titleFormatted = date("j |  l, F Y", mktime(0, 0, 0, $mid, $did, $year));
+$weekday = date("l", mktime(0, 0, 0, $mid, $did, $year));
 
-echo '<h3>' . $titleFormatted . '</h3>';
+$titleFormatted = date("|  j, F Y", mktime(0, 0, 0, $mid, $did, $year));
+
+echo '<h3><span class="header-weekday-caps">' . $weekday . '</span>' . $titleFormatted . '</h3>';
 ?>
 <?php if (!empty($title)): ?>
   <h3><?php print $title; ?></h3>
