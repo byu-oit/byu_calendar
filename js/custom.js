@@ -803,13 +803,14 @@ function startListeners() {
 	
     /* ------ formatting the subscribe to multiple page in workbench pages -------- */
 	
-	     $(".view-id-subscribe_to_multiple .bef-checkboxes .form-item label").each( function() {
+	     $(".bef-checkboxes .form-item label").each( function() {
         var value = $(this).text();
 
         if(value.includes("----")) {
                 $(this).css("font-weight", "normal");
 
                 $(this).parent().css("padding-left", "32px");
+				$(this).parent().css("font-size", "14px");
                 var res = value.replace("----", "---- ");
                 $(this).text(res);
 
@@ -818,6 +819,7 @@ function startListeners() {
                 $(this).css("font-weight", "normal");
 
                 $(this).parent().css("padding-left", "24px");
+				$(this).parent().css("font-size", "15px");
                 var res = value.replace("---", "--- ");
                 $(this).text(res);
 
@@ -826,11 +828,13 @@ function startListeners() {
 
                 $(this).parent().css("padding-left", "16px");
                 var res = value.replace("--", "-- ");
-                $(this).text(res);
+                $(this).parent().css("font-size", "15px");
+				$(this).text(res);
 
         } else if (value.includes("-")) {
                 $(this).css("color","#666");
                 $(this).parent().css("padding-left", "8px");
+				$(this).parent().css("font-size", "15px");
                 var res = value.replace("-", "- ");
                 $(this).text(res);
 
