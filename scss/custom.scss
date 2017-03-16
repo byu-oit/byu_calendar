@@ -4472,6 +4472,8 @@ section.block-social-share-social-share {
 	}
 	.form-item.form-type-select.form-item-field-internal-category-tid .bef-checkboxes .form-item {
 	  padding-right: 15px;
+		max-width: 250px;
+		word-wrap: normal;
 	}
 
 	.views-exposed-widget > label {
