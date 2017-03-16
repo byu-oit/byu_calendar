@@ -1266,7 +1266,12 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 // WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK WEEK
 
 /*   ---- Day & Week View ------ */
-
+.large-screen-calendar-weekview {
+	.weekday-header-caps {
+		text-transform: uppercase;
+	}
+	
+}
 
 /* -- filter & msc stuff - */
 
@@ -1424,6 +1429,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         font-weight: bold;
         font-size: 26px;
         margin-bottom: 25px; 
+		font-family: "Sentinel A", "Sentinel B";
     }
     .list-header-week {
         text-transform: uppercase;
