@@ -363,6 +363,7 @@ jQuery( document ).ready(function( $ ) {
         if(mid.length == '1') {
             mid = "".concat("0", mid);
         }
+		onsole.log(mid);
         var d = document.getElementById("edit-field-event-date-und-0-value-day");
         var did = d.options[d.selectedIndex].value;
      
@@ -383,7 +384,7 @@ jQuery( document ).ready(function( $ ) {
             weekdays[6] = "Saturday";
         var wid = date.getDay();                    
         var weekday = weekdays[wid];
-
+		console.log(weekday);
         $('head').append('<style>.form-item-field-event-date-und-0-all-day:before{content:"' + weekday + '"; text-transform: uppercase; color: #767676; font-weight: bold; padding: 0px 5px 0px 5px; }</style>');
     }
         

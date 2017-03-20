@@ -10,8 +10,8 @@ function byu_calendar_preprocess_html(&$variables) {
 // drupal_add_css('http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css', array('weight' => CSS_THEME, 'browsers' => array('!IE' => FALSE), 'preprocess' => FALSE));
 //  // Need legacy support for IE downgrade to Foundation 2 or use JS file below
 //  // drupal_add_js('http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js', 'external');
-    drupal_add_css('//cloud.typography.com/75214/6517752/css/fonts.css', array('type' => 'external'));
-	drupal_add_js('//cdn.byu.edu/2017-core-components/unstable/components.js', 'external');
+  drupal_add_css('//cloud.typography.com/75214/6517752/css/fonts.css', array('type' => 'external'));
+  drupal_add_js('//cdn.byu.edu/2017-core-components/latest/components.js', 'external');
 	
 	
     // Populate the body classes.
@@ -343,7 +343,7 @@ function byu_calendar_views_pre_view(&$view, &$display_id, &$args){
 //		 $header_options = array(
 //			'label' => t('Header testing on ical feed'), // Administrative label. Not really needed here.
 //			'content' => $headertext, // Content of header text.
-//			'format' => 'filtered_html', // Format of header text.
+//			'format' => 'filtered_html', // Format of header text
 //			'empty' => 1, // Show even when there are no results. Set to zero otherwise.
 //		  );
 //		  $view->add_item('default', 'header', 'views', 'area', $header_options);
