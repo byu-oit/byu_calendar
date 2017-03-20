@@ -16,44 +16,58 @@
 <!--         --><?php //endif; ?>
        <?php endif; ?>
 
+  <!-- actions -->
+  <?php if (!empty($page['header_actions'])): ?>
+    <?php
+    // get array of blocks
+    $blocks = $page['header_actions'];
+    $i = 0;
+    $len = count($blocks);
+    foreach($blocks as $block) {
+      if($i == 0){
+        // if we need to do anything differently for the first one
+      } else if ($i == $len - 1) {
+        // is the last, skip
+        break;
+      }
+      if(is_array($block)) {
+        if ($block['#markup'] !== null) {  // print the block's body content
+          $content = $block['#markup'];
+          print '<div slot="actions">';
+          print $content;
+          print '</div>';
+        }
+        $i++;
+      } else { // isn't an array, is the final string at the end of lists of blocks
+        $i++;
+        break;
+      }
+    }
+    ?>
+  <?php endif; ?>
 
 
 <!--    </span>-->
-    <?php if ($alt_main_menu): ?>
-    <byu-menu slot="nav" collapsed id="main-menu" class="navigation" role="navigation">
-          <?php
-          // $alt_,ain_menu returns an big long string of  of li's with a tags,
-          // change to a string of a tags, then print that
-          $linksList = preg_replace("/<h2.*\/h2>/", "", $alt_main_menu);
-          $linksList = preg_replace("/<ul.*<li/", "<li", $linksList);
-          $linksList = preg_replace("/<li.*<a/", "<a", $linksList);
-          $linksList = preg_replace("/<\/li>/", "", $linksList);
 
-          // need to remove anything that is a sub level of menu... in case people did do that?
-          $linksList = preg_replace("/<\/ul>/", "", $linksList);
-          // split into array of a tag links
-          print ($linksList);
 
-          ?>
-         <!-- /#main-menu -->
-      <?php endif; ?>
-
-    </byu-menu>
-	
-	    <byu-user-info slot="user">
-      <a slot="login" href="/user">Sign In</a>
-      <!-- if you are using CAS, use the CAS sign out link instead: -->
-      <!--      <a slot="logout" href="/caslogout">Sign Out</a>-->
-      <a slot="logout" href="/user/logout">Sign Out</a>
-      <?php if($logged_in): ?>
-        <span slot="user-name">
+  <byu-user-info slot="user">
+    <a slot="login" href="/user">Sign In</a>
+    <!-- if you are using CAS, use the CAS sign out link instead: -->
+    <!--      <a slot="logout" href="/caslogout">Sign Out</a>-->
+    <a slot="logout" href="/user/logout">Sign Out</a>
+    <?php if($logged_in): ?>
+      <span slot="user-name">
           <?php if ($user->uid) {
+            // if you don't want a my account link
             print $user->name;
+            // if you want a my account link, using the default user page
+            // print '<a href="../user">' . $user->name . '</a>';
           }
           ?>
         </span>
-      <?php endif; ?>
-    </byu-user-info>
+    <?php endif; ?>
+  </byu-user-info>
+
 	
     <byu-search slot="search">
 <!--		<div id="top-bar-search"> -->
@@ -63,6 +77,29 @@
 		  ?>
 <!--	 	</div>-->
 	</byu-search>
+
+  <?php if ($alt_main_menu): ?>
+  <byu-menu slot="nav" collapsed id="main-menu" class="navigation" role="navigation">
+    <?php
+    // $alt_,ain_menu returns an big long string of  of li's with a tags,
+    // change to a string of a tags, then print that
+    $linksList = preg_replace("/<h2.*\/h2>/", "", $alt_main_menu);
+    $linksList = preg_replace("/<ul.*<li/", "<li", $linksList);
+    $linksList = preg_replace("/<li.*<a/", "<a", $linksList);
+    $linksList = preg_replace("/<\/li>/", "", $linksList);
+
+    // need to remove anything that is a sub level of menu... in case people did do that?
+    $linksList = preg_replace("/<\/ul>/", "", $linksList);
+    // split into array of a tag links
+    print ($linksList);
+
+    ?>
+    <!-- /#main-menu -->
+    <?php endif; ?>
+
+  </byu-menu>
+
+
   </byu-header>
   <!--.l-header region -->
   
