@@ -3631,6 +3631,10 @@ section.block.block-views.block-views-event-page-blocks-block {
 .green-button.tickets-exist-no {
   display: none;
 }
+// for screen readers
+.green-button.tickets-exist-no .price:before {
+  content: "NO ";
+}
 
 // displaying Free & Pricing
 .green-button .Free:before {
