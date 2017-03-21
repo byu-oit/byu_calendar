@@ -383,7 +383,7 @@ jQuery( document ).ready(function( $ ) {
 
 
 	if (( $("body").hasClass("page-node-add") ) || ( $("body").hasClass("page-node-edit")) || ( $("body").hasClass("page-node-clone"))) {
-
+		calcWeekday();
 	}
 
 	$('#edit-field-event-date-und-0-all-day').change(function () {
@@ -414,13 +414,13 @@ jQuery( document ).ready(function( $ ) {
 //        }
 //    });
 	$('#edit-field-event-date-und-0-value-month').change(function () {
-		calcWeekday()
+		calcWeekday();
 	});
 	$('#edit-field-event-date-und-0-value-day').change(function () {
-		calcWeekday()
+		calcWeekday();
 	});
 	$('#edit-field-event-date-und-0-value-year').change(function () {
-		calcWeekday()
+		calcWeekday();
 	});
 
 
