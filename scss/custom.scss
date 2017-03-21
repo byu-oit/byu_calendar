@@ -1924,7 +1924,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         .views-field.views-field-field-free {
             display: none;
         }
-        .views-field.views-field-field-free.-Free.tickets-exist-yes {
+        .views-field.views-field-field-free.-Free {
             display: block;
             margin: 9px 0px!important;
             font-weight: bold;
@@ -3644,6 +3644,7 @@ section.block.block-views.block-views-event-page-blocks-block {
 }
 // hide ticket price section   // hide button if no tickets existing
 .views-field-field-free.tickets-exist-no,
+.views-field-field-free.tickets-exist-no-, // for some reason, one of them is adding a - even though it exactly matches the other config's
 .tickets-exist-no.-Price, // conditional field, didn't want to target all conditional fields bc idk what order number of conditionsl field it is in THAT view or THIS view
 .tickets-exist-no.-Range,
 .green-button.tickets-online-2,
