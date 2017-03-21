@@ -3642,8 +3642,10 @@ section.block.block-views.block-views-event-page-blocks-block {
     display: inline;         // trying to get MT timezone nicely after the date.. 
     float: left;
 }
-
-// hide button if no tickets existing
+// hide ticket price section   // hide button if no tickets existing
+.views-field-field-free.tickets-exist-no,
+.tickets-exist-no.-Price, // conditional field, didn't want to target all conditional fields bc idk what order number of conditionsl field it is in THAT view or THIS view
+.tickets-exist-no.-Range,
 .green-button.tickets-online-2,
 .green-button.tickets-exist-no {
   display: none;
