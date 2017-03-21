@@ -1282,7 +1282,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 .view-id-mobile_calendar.view-display-id-block_6 {
     // some basics in calendar views that we need in this list view
     font-size: 13px;
-    color: #777;
+    color: $gray;
     .views-field.views-field-title {
         font-size: 15px;
         display: inline;
@@ -1870,7 +1870,14 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             display: inline;
             float: left;
             margin-right: 4px;
+            font-size: 13px;
+            color: $gray;
 //            text-transform: uppercase;
+        }
+        .views-field-field-timezone,
+        .views-field-field-event-location {
+          font-size: 13px;
+          color: $gray;
         }
         .views-field.views-field-field-event-date-1 {
             display: inline;
@@ -1922,6 +1929,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             display: none!important;
         }
 
+        .views-field-view-node {
             margin-top: 8px!important;
         }
         .views-field-view-node a {
@@ -1929,7 +1937,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             font-weight: normal;
         }
  } 
-.page-taxonomy-term,
+ .page-taxonomy-term,
  .page-calendar.large-screen {  
     /* -------- large screen list views ------------------- */
     .view-header h3 {
