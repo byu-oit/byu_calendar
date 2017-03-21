@@ -256,37 +256,39 @@ jQuery( document ).ready(function( $ ) {
 
 	//  --- large screen left side filters ---
 	if (( $("body").hasClass("large-screen") ) && ( $("body").hasClass("page-calendar"))) {
-		$(document).scroll(function () { // bind window scroll event
-			if ($('#calendar-view-links').is_on_screen()) {
+		if ( $("body").hasClass("not-front") )  {
+			$(document).scroll(function () { // bind window scroll event
+				if ($('#calendar-view-links').is_on_screen()) {
 //                 console.log('u can see topbar');
-				$('.left-sidebar-calendar-exposed-filters').removeClass('scrolled');
-				$('.block-views-large-screen-calendar-block-6').removeClass('scrolled');
-				$('.block-views-large-screen-calendar-block-7').removeClass('scrolled');
-
-//                $('.left-sidebar-minimonth').removeClass('scrolled'));
-				$('.block-block-11').removeClass('scrolled');
-			} else {
-				if ($('#content-footer').is_on_screen()) {
-					// footer showing, unset scrolled class so it doesn't run into footer
 					$('.left-sidebar-calendar-exposed-filters').removeClass('scrolled');
 					$('.block-views-large-screen-calendar-block-6').removeClass('scrolled');
 					$('.block-views-large-screen-calendar-block-7').removeClass('scrolled');
+
+//                $('.left-sidebar-minimonth').removeClass('scrolled'));
 					$('.block-block-11').removeClass('scrolled');
-
 				} else {
-					$('.block-views-large-screen-calendar-block-6').addClass('scrolled');
+					if ($('#content-footer').is_on_screen()) {
+						// footer showing, unset scrolled class so it doesn't run into footer
+						$('.left-sidebar-calendar-exposed-filters').removeClass('scrolled');
+						$('.block-views-large-screen-calendar-block-6').removeClass('scrolled');
+						$('.block-views-large-screen-calendar-block-7').removeClass('scrolled');
+						$('.block-block-11').removeClass('scrolled');
 
-					//                $('.left-sidebar-minimonth').addClass('scrolled');
-					$('.left-sidebar-calendar-exposed-filters').addClass('scrolled');
+					} else {
+						$('.block-views-large-screen-calendar-block-6').addClass('scrolled');
 
-					$('.block-views-large-screen-calendar-block-6').addClass('scrolled');
-					$('.block-views-large-screen-calendar-block-7').addClass('scrolled');
+						//                $('.left-sidebar-minimonth').addClass('scrolled');
+						$('.left-sidebar-calendar-exposed-filters').addClass('scrolled');
 
-					$('.block-block-11').addClass('scrolled');
-					//                console.log('you cant see calendar nav links');
+						$('.block-views-large-screen-calendar-block-6').addClass('scrolled');
+						$('.block-views-large-screen-calendar-block-7').addClass('scrolled');
+
+						$('.block-block-11').addClass('scrolled');
+						//                console.log('you cant see calendar nav links');
+					}
 				}
-			}
-		});
+			});
+		}
 	}
 
 
