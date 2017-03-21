@@ -356,7 +356,7 @@ jQuery( document ).ready(function( $ ) {
 		if (mid.length == '1') {
 			mid = "".concat("0", mid);
 		}
-		onsole.log(mid);
+		console.log(mid);
 		var d = document.getElementById("edit-field-event-date-und-0-value-day");
 		var did = d.options[d.selectedIndex].value;
 
@@ -383,9 +383,8 @@ jQuery( document ).ready(function( $ ) {
 
 
 	if (( $("body").hasClass("page-node-add") ) || ( $("body").hasClass("page-node-edit")) || ( $("body").hasClass("page-node-clone"))) {
-		calcWeekday();
-	}
 
+	}
 
 	$('#edit-field-event-date-und-0-all-day').change(function () {
 		var c = this.checked ? 'none' : 'inline';
