@@ -1874,11 +1874,18 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             color: $gray;
 //            text-transform: uppercase;
         }
+  // need to specify this so it applies to the day view
         .views-field-field-timezone,
         .views-field-field-event-location {
           font-size: 13px;
           color: $gray;
         }
+        .views-field-view-node {
+            font-weight: bold;
+            margin-top: 8px!important;
+        }
+
+
         .views-field.views-field-field-event-date-1 {
             display: inline;
             padding-left: 4px;
