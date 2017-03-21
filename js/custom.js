@@ -543,8 +543,7 @@ jQuery( document ).ready(function( $ ) {
     
 	
     // load for homepage for select date dropdown:
-	
-	
+
 	var selected = 1;
 //add listeners for selected values
 function update(date) {
