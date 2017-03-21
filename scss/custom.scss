@@ -3644,10 +3644,12 @@ section.block.block-views.block-views-event-page-blocks-block {
 }
 
 // hide button if no tickets existing
+.green-button.tickets-online-no,
 .green-button.tickets-exist-no {
   display: none;
 }
 // for screen readers
+.green-button.tickets-online-no .price:before,
 .green-button.tickets-exist-no .price:before {
   content: "NO ";
 }
