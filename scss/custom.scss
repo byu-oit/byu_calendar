@@ -1860,7 +1860,8 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         }
 //        .views-field.views-field-field-free,
 //        .views-field.views-field-field-price,
-        .views-field.views-field-views-conditional-1.{
+        .green-label,
+        .views-field.views-field-views-conditional-1 {
             font-weight: bold;
             color: $green;
         }
@@ -1920,7 +1921,10 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         .views-field.views-field-field-free.-Range {
             display: none!important;
         }
-        .views-field-view-node a { 
+
+            margin-top: 8px!important;
+        }
+        .views-field-view-node a {
             color: $navy;
             font-weight: normal;
         }
