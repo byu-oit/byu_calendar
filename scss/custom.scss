@@ -3623,8 +3623,21 @@ section.block.block-views.block-views-event-page-blocks-block {
 	 .views-label.views-label-field-free {
 		color: #444;
 		font-weight: normal;
-	} 
+	}
+
 }
+.large-screen.node-type-event {
+  .views-field-popup.tickets-exist-no {
+    padding: 23px 0px 0px; // add space and match with share block
+  }
+}
+.mobile-first.node-type-event {
+  .views-field-popup.tickets-exist-no {
+    padding: 10px 0px 0px; // add space and match with share block
+  }
+}
+
+
 .date-display-range {
     display: inline;         // trying to get MT timezone nicely after the date.. 
     float: left;
