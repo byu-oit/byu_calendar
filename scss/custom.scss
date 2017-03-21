@@ -1922,6 +1922,8 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         .views-field.views-field-field-free.-Free {
             display: block;
             margin: 9px 0px!important;
+            font-weight: bold;
+            color: $green;
         }
         .views-label.views-label-field-free {
             float: left;
