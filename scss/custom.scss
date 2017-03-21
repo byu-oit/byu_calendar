@@ -1892,7 +1892,8 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         }
         
 
-        //.views-field.views-field-field-tickets-url.ticket-button {
+        //.views-field.views-field-field-tickets-url.ticket-button,
+        //.views-field.views-field-field-nothing.ticket-button,
         .views-field.ticket-button {
             //            background: #cecece;
             //            padding: 4px 12px;
@@ -3624,6 +3625,11 @@ section.block.block-views.block-views-event-page-blocks-block {
 .date-display-range {
     display: inline;         // trying to get MT timezone nicely after the date.. 
     float: left;
+}
+
+// hide button if no tickets existing
+.green-button.tickets-exist-no {
+  display: none;
 }
 
 // displaying Free & Pricing
