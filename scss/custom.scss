@@ -1770,6 +1770,8 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         }
         .calendar-calendar .month-view .full tr.single-day {
             border-top: 1px solid #ccc;
+
+
         }
         .calendar-calendar .month-view .full tr td.single-day:before {
 //            content: attr(data-day-of-month) ",\0000a0" attr(headers);
@@ -2275,7 +2277,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     }
    
     td.single-day .inner {
-        height: 200px!important;
+        height: 240px!important;
         @include display-flex();
         flex-wrap: wrap;
     }
