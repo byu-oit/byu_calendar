@@ -14,7 +14,7 @@ $headers = (isset($item['header_id'])) ? ' headers="'. $item['header_id'] .'" ' 
   <div class="inner">
     <?php print $item['entry'] ?>
   </div>
-    <div>
+    <div class="link-to-day-box">
     <?php
     $id = $item['id'];
     $idEnd = substr($id, -8);

@@ -2280,6 +2280,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         height: 240px!important;
         @include display-flex();
         flex-wrap: wrap;
+        align-items: flex-start;
     }
     .view-item {
         border-bottom: none;
@@ -2309,6 +2310,9 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     }
     .calendar-more {
         display: none;
+    }
+    .link-to-day-box {
+        align-self: flex-end;
     }
     .link-to-day {
         padding-bottom: 10px;
