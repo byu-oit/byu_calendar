@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b94ae47e-9464-47f3-bc0e-6871ac63c0a0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/custom.scss" afterPath="$PROJECT_DIR$/scss/custom.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/calendar-month-col.tpl.php" afterPath="$PROJECT_DIR$/templates/calendar-month-col.tpl.php" />
     </list>
     <ignored path="byu_calendar.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,12 +35,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="calendar-month-col.tpl.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="calendar-month-col.tpl.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/calendar-month-col.tpl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.161291">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.6117909">
+              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+              <folding>
+                <element signature="e#746#770#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -54,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="custom.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/custom.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6736196">
-              <caret line="2287" column="20" selection-start-line="2287" selection-start-column="20" selection-end-line="2287" selection-end-column="20" />
+            <state vertical-scroll-proportion="-6.1130433">
+              <caret line="2294" column="28" selection-start-line="2294" selection-start-column="28" selection-end-line="2294" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -97,7 +100,7 @@
       <file leaf-file-name="calendar-month--large-screen-calendar--block-5.tpl.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/calendar-month--large-screen-calendar--block-5.tpl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-24.129032">
+            <state vertical-scroll-proportion="-21.903225">
               <caret line="51" column="3" selection-start-line="51" selection-start-column="3" selection-end-line="51" selection-end-column="3" />
               <folding />
             </state>
@@ -129,8 +132,8 @@
         <option value="$PROJECT_DIR$/js/custom.js" />
         <option value="$PROJECT_DIR$/scss/byu_calendar.scss" />
         <option value="$PROJECT_DIR$/templates/page.tpl.php" />
-        <option value="$PROJECT_DIR$/templates/calendar-month-col.tpl.php" />
         <option value="$PROJECT_DIR$/scss/custom.scss" />
+        <option value="$PROJECT_DIR$/templates/calendar-month-col.tpl.php" />
       </list>
     </option>
   </component>
@@ -704,14 +707,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/calendar-month--large-screen-calendar--block-5.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.129032">
-          <caret line="51" column="3" selection-start-line="51" selection-start-column="3" selection-end-line="51" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/custom.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.295455">
@@ -720,19 +715,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/calendar-month-col.tpl.php">
+    <entry file="file://$PROJECT_DIR$/scss/custom.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.161291">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state vertical-scroll-proportion="-6.1130433">
+          <caret line="2294" column="28" selection-start-line="2294" selection-start-column="28" selection-end-line="2294" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/custom.scss">
+    <entry file="file://$PROJECT_DIR$/templates/calendar-month--large-screen-calendar--block-5.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6736196">
-          <caret line="2287" column="20" selection-start-line="2287" selection-start-column="20" selection-end-line="2287" selection-end-column="20" />
+        <state vertical-scroll-proportion="-21.903225">
+          <caret line="51" column="3" selection-start-line="51" selection-start-column="3" selection-end-line="51" selection-end-column="3" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/calendar-month-col.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6117909">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="e#746#770#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
