@@ -2284,6 +2284,10 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     }
     .view-item {
         border-bottom: none;
+        padding: 0px 0px 0px;
+        margin: 0px;
+    }
+    .item:first-of-type .view-item {
         padding: 8px 0px 0px;
         margin: 0px;
     }
