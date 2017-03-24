@@ -2312,9 +2312,25 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         min-height: 10px !important;
         line-height: 20px;
     }
-    .calendar-more {
-        display: none;
+    .calendar-more .calendar-more a:before {
+      content: "SEE ";
+      font-weight: 500;
     }
+    .calendar-more {
+        //display: none;
+      color: $navy !important;
+      text-transform: uppercase;
+      font-weight: 500;
+      /* align-content: flex-end; */
+      align-self: flex-end;
+    }
+    .calendar-more a {
+      color: $navy !important;
+      font-weight: 500;
+    }
+
+
+
     .link-to-day-box {
         align-self: flex-end;
     }
