@@ -127,6 +127,7 @@ a:hover {
     padding: 9px 0px!important;
     width: 120px;
     font-size: 12px;
+  font-weight: bold;
     a {
         color: #fff;
     }   
@@ -1427,7 +1428,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     .list-header {
         color: $navy;
         font-weight: bold;
-        font-size: 26px;
+        font-size: 32px;
         margin-bottom: 25px; 
 		font-family: "Sentinel A", "Sentinel B";
     }
@@ -2703,7 +2704,7 @@ section.block.block-views.block-views-category-page-blocks-block-2 {
 }
 
 .list-view.date-square {
-    background: $lightgray;
+    background: $xlightgray;
     width: 100px;
     height: 100px;
     margin-right: 20px;
@@ -2713,6 +2714,7 @@ section.block.block-views.block-views-category-page-blocks-block-2 {
     color: $navy;
     .month {
         font-weight: 500;
+        text-transform: uppercase;
     }
     .day {
         font-size: 40px;
