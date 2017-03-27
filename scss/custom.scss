@@ -2715,15 +2715,17 @@ section.block.block-views.block-views-category-page-blocks-block-2 {
     .month {
         font-weight: 500;
         text-transform: uppercase;
+      padding-top: 6px;
     }
     .day {
         font-size: 40px;
         font-family: "Sentinel A", "Sentinel B";
-        padding: 8px 0px;
+        padding: 2px 0px;
         font-weight: bold;
     }
     .year {
 //        font-weight: 100;
+      letter-spacing: 3px;
     }
 }
 
