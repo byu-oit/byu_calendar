@@ -1428,17 +1428,17 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 @media screen and (min-width:$large_screen_start_width) {
     /* formatting list views */
 
-  .weekview-day-header {
+  td:not(:first-of-type) .weekview-day-header {
     position: relative;
     top: 40px;
     margin-bottom: 70px;
   }
   // don't add spacing before sunday / first day
-  .weekview td:first-of-type .weekview-day-header {
-    position: relative;
-    top: 0px;
-    margin-bottom: 25px;
-  }
+  //td:first-of-type .weekview-day-header {
+  //  position: relative;
+  //  top: 0px;
+  //  margin-bottom: 25px;
+  //}
 
     .list-header {
         color: $navy;

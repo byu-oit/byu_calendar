@@ -57,8 +57,8 @@
       <file leaf-file-name="custom.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scss/custom.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5686275">
-              <caret line="1438" column="13" selection-start-line="1438" selection-start-column="13" selection-end-line="1438" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.28730822">
+              <caret line="1433" column="24" selection-start-line="1433" selection-start-column="24" selection-end-line="1433" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -144,10 +144,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="779" />
-    <option name="y" value="165" />
-    <option name="width" value="2145" />
-    <option name="height" value="1501" />
+    <option name="x" value="-15" />
+    <option name="width" value="2901" />
+    <option name="height" value="1814" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -241,7 +240,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../BYUComponents/byu2017_d7" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
@@ -291,10 +290,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="779" y="165" width="2145" height="1501" extended-state="0" />
+    <frame x="-15" y="0" width="2901" height="1814" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24793388" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1813011" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -730,8 +729,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/custom.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5686275">
-          <caret line="1438" column="13" selection-start-line="1438" selection-start-column="13" selection-end-line="1438" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.28730822">
+          <caret line="1433" column="24" selection-start-line="1433" selection-start-column="24" selection-end-line="1433" selection-end-column="24" />
           <folding />
         </state>
       </provider>
