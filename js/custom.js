@@ -803,7 +803,7 @@ jQuery( document ).ready(function( $ ) {
 		if (value.includes("----")) {
 			$(this).css("font-weight", "normal");
 
-			$(this).parent().css("padding-left", "32px");
+			$(this).parent().css("padding-left", "36px");
 			$(this).parent().css("font-size", "14px");
 			var res = value.replace("----", "---- ");
 			$(this).text(res);
@@ -812,7 +812,7 @@ jQuery( document ).ready(function( $ ) {
 			$(this).css("color", "#666");
 			$(this).css("font-weight", "normal");
 
-			$(this).parent().css("padding-left", "24px");
+			$(this).parent().css("padding-left", "30px");
 			$(this).parent().css("font-size", "15px");
 			var res = value.replace("---", "--- ");
 			$(this).text(res);
@@ -820,14 +820,14 @@ jQuery( document ).ready(function( $ ) {
 		} else if (value.includes("--")) {
 			$(this).css("font-weight", "normal");
 
-			$(this).parent().css("padding-left", "16px");
+			$(this).parent().css("padding-left", "24px");
 			var res = value.replace("--", "-- ");
 			$(this).parent().css("font-size", "15px");
 			$(this).text(res);
 
 		} else if (value.includes("-")) {
 			$(this).css("color", "#666");
-			$(this).parent().css("padding-left", "8px");
+			$(this).parent().css("padding-left", "12px");
 			$(this).parent().css("font-size", "15px");
 			var res = value.replace("-", "- ");
 			$(this).text(res);
@@ -837,8 +837,8 @@ jQuery( document ).ready(function( $ ) {
 	});
 
 	(function ($) {
-		Drupal.behaviors.betterExposedFilters = {
-			attach: function (context) {
+				Drupal.behaviors.betterExposedFilters = {
+					attach: function (context) {
 				console.log('form finished submitting, to start function');
 				$(".view-id-subscribe_to_multiple .bef-checkboxes .form-item label").each(function () {
 					console.log('got into resetting fxn');
@@ -847,7 +847,7 @@ jQuery( document ).ready(function( $ ) {
 					if (value.includes("----")) {
 						$(this).css("font-weight", "normal");
 
-						$(this).parent().css("padding-left", "32px");
+						$(this).parent().css("padding-left", "36px");
 						var res = value.replace("----", "---- ");
 						$(this).text(res);
 
@@ -855,20 +855,20 @@ jQuery( document ).ready(function( $ ) {
 						$(this).css("font-weight", "normal");
 
 						$(this).css("color", "#666");
-						$(this).parent().css("padding-left", "24px");
+						$(this).parent().css("padding-left", "30px");
 						var res = value.replace("---", "--- ");
 						$(this).text(res);
 
 					} else if (value.includes("--")) {
 						$(this).css("font-weight", "normal");
 
-						$(this).parent().css("padding-left", "16px");
+						$(this).parent().css("padding-left", "24px");
 						var res = value.replace("--", "-- ");
 						$(this).text(res);
 
 					} else if (value.includes("-")) {
 						$(this).css("color", "#666");
-						$(this).parent().css("padding-left", "8px");
+						$(this).parent().css("padding-left", "12px");
 
 						var res = value.replace("-", "- ");
 						$(this).text(res);

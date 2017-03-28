@@ -3377,6 +3377,10 @@ fieldset.group-pricing legend {
         }
     }
 }
+.large-screen #edit-field-thumbnail .image-widget-data input,
+.large-screen #edit-field-thumbnail .image-widget-data button {
+  display: none;
+}
 .form-item.form-type-managed-file.form-item-field-thumbnail-und-0 {
     @include display-flex();
     flex-wrap: wrap;
