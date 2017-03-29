@@ -692,16 +692,31 @@ jQuery( document ).ready(function( $ ) {
 
 		} else if ($('body').hasClass('chrome')) {  // chrome
 			console.log('has chrome class');
-			if ($('.views-field-field-tickets-url').length) { // yes tickets
-				console.log('the tickets button is there');
-				//			$('section.block-social-share-social-share').css("margin", "-131px 0px 10px 435px");
-				if ($('.views-field-field-event-location').length) {  // yes, yes
-					console.log('the tickets button is there and location is');
-					$('section.block-social-share-social-share').css("margin", "-159px 0px 10px 435px");
-				} else { // yes tickets button, no location
-					$('section.block-social-share-social-share').css("margin", "-176px 0px 10px 435px");
+
+			if( $('.views-field-field-free').hasClass('tickets-exist-yes') || $('.views-field-views-conditional-1e').hasClass('tickets-exist-yes') ) {
+				// yes tickets exist
+				console.log('yes there are tickets existing');
+				if ($('.views-field-field-tickets-url').length) { // yes tickets online = yes button
+					console.log('the tickets button is there also');
+					//			$('section.block-social-share-social-share').css("margin", "-131px 0px 10px 435px");
+					if ($('.views-field-field-event-location').length) {  // yes, yes
+						console.log('the tickets button is there and location is');
+						$('section.block-social-share-social-share').css("margin", "-159px 0px 10px 435px");
+					} else { // yes tickets button, no location
+						$('section.block-social-share-social-share').css("margin", "-176px 0px 10px 435px");
+					}
+				} else { // no tickets button, but yes tickets
+					console.log('yes there are tickets but none online');
+					if ($('.views-field-field-event-location').length) {  // yes, yes
+						console.log('the tickets button is there and location is');
+						$('section.block-social-share-social-share').css("margin", "-159px 0px 10px 435px");
+					} else { // yes tickets button, no location
+						$('section.block-social-share-social-share').css("margin", "-176px 0px 10px 435px");
+					}
+
 				}
-			} else { // no tickets button, yes location
+			} else {  // no tickets
+				// yes location
 				if ($('.views-field-field-event-location').length) {
 					console.log('not ff: the locations field is there wo tickets button');
 					if ($('.views-field-field-free').hasClass('tickets-exist-No')) {
