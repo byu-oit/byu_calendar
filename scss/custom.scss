@@ -4483,14 +4483,12 @@ section.block-social-share-social-share {
   flex-direction: column;
   height: 850px;
 }
-@media (min-width: $large_screen_start_width) {
+@media screen and (min-width: $large_screen_start_width) {
 
         .view-id-subscribe_to_multiple .form-item.form-type-select.form-item-field-internal-category-tid .bef-checkboxes {
                 max-height: 350px;
         }
 }
-
-
 
 #edit-sections-internal-categories .form-type-checkbox label {
 	color: #444;
