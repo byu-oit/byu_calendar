@@ -3651,8 +3651,8 @@ section.block.block-views.block-views-event-page-blocks-block {
 	}
 	
     // additional
-    .views-field.views-field-nothing > span {
-        display: none;
+    .views-field.views-field-nothing > span { // too general - breaks ticket link
+        //display: none;
     }
 	.views-field.views-field-nothing .views-label {
 		margin-right: 15px;
