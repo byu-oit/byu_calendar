@@ -709,9 +709,9 @@ jQuery( document ).ready(function( $ ) {
 					console.log('yes there are tickets but none online');
 					if ($('.views-field-field-event-location').length) {  // yes, yes
 						console.log('the tickets button is there and location is');
-						$('section.block-social-share-social-share').css("margin", "-159px 0px 10px 435px");
+						$('section.block-social-share-social-share').css("margin", "-180px 0px 10px 435px");
 					} else { // yes tickets button, no location
-						$('section.block-social-share-social-share').css("margin", "-176px 0px 10px 435px");
+						$('section.block-social-share-social-share').css("margin", "-198px 0px 10px 435px");
 					}
 
 				}
