@@ -2749,7 +2749,7 @@ section.block.block-views.block-views-category-page-blocks-block-2 {
 
 .royal-button.footer-subscribe-button {
   max-width: 150px;
-  margin: 10px 0px;
+  margin: 20px 0px!important;
 }
 
 
@@ -2835,7 +2835,8 @@ section.row.l-footer-columns {
 	
 }
 .footer-social-media {
-  margin-bottom: 10px;
+  padding: 10px 0px;
+  //margin-bottom: 10px;
   a {
     margin-right: 11px;
   }
