@@ -2975,7 +2975,10 @@ input {
         padding: 5px 5px 5px 0px;
         font-size: 13px;
     }
-    
+  .form-item.form-type-textfield.form-item-field-price-range-und-0-from:after {
+    content: "_";
+    margin-left: 5px;
+  }
 }
 
 .mobile.page-node-add, .mobile.page-node-edit .mobile.page-node-clone {
