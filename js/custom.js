@@ -650,23 +650,44 @@ jQuery( document ).ready(function( $ ) {
 	if ($('body').hasClass('node-type-event') && $('body').hasClass('large-screen')) {
 		if ($('body').hasClass('ff')) {
 			console.log('is ff');
-			if ($('.views-field-field-tickets-url').length) { // has ticket button
-				console.log('the tickets button is there');
-				if ($('.views-field-field-event-location').length) {
+
+
+			if( $('.views-field-field-free').hasClass('tickets-exist-yes') || $('.views-field-views-conditional-1e').hasClass('tickets-exist-yes') ) {
+				// yes tickets exist
+
+				if ($('.views-field.ticket-button .green-button').hasClass('tickets-online-1') ) { // yes tickets online = yes button
+					console.log('the tickets button is there');
+					if ($('.views-field-field-event-location').length) {
 
 //					$('section.block-social-share-social-share').css("top", "-129px");
-					$('section.block-social-share-social-share').css("top", "-159px");
-					;
-					$('section.block-views-event-page-blocks-block-3').css("top", "-155px");
-				} else { // yes tickets button, no location
+						$('section.block-social-share-social-share').css("top", "-159px");
+						;
+						$('section.block-views-event-page-blocks-block-3').css("top", "-155px");
+					} else { // yes tickets button, no location
 //					
-//					$('section.block-social-share-social-share').css("top", "-147px");
-					$('section.block-social-share-social-share').css("top", "-176px");
+//						$('section.block-social-share-social-share').css("top", "-147px");
+						$('section.block-social-share-social-share').css("top", "-176px");
+						// no margin, pos rel, left 420px, top: -147px
+						$('section.block-views-event-page-blocks-block-3').css("top", "-140px");
+					}
+				} else { // yes tickets, but no tickets button
+					if ($('.views-field-field-event-location').length) {
 
-					// no margin, pos rel, left 420px, top: -147px
-					$('section.block-views-event-page-blocks-block-3').css("top", "-140px");
+//					$('section.block-social-share-social-share').css("top", "-129px");
+						$('section.block-social-share-social-share').css("top", "-159px");
+						;
+						$('section.block-views-event-page-blocks-block-3').css("top", "-155px");
+					} else { // yes tickets button, no location
+//
+//						$('section.block-social-share-social-share').css("top", "-147px");
+						$('section.block-social-share-social-share').css("top", "-176px");
+						// no margin, pos rel, left 420px, top: -147px
+						$('section.block-views-event-page-blocks-block-3').css("top", "-140px");
+					}
+
+
 				}
-			} else { // no tickets button, yes location
+			} else { // no tickets existing, yes location
 				if ($('.views-field-field-event-location').length) {
 					if ($('.views-field-field-free').hasClass('tickets-exist-No')) {
 						$('section.block-social-share-social-share').css("top", "-214px");
@@ -702,11 +723,11 @@ jQuery( document ).ready(function( $ ) {
 					//			$('section.block-social-share-social-share').css("margin", "-131px 0px 10px 435px");
 					if ($('.views-field-field-event-location').length) {  // yes, yes location
 						console.log('the tickets button is there and location is');
-						$('section.block-social-share-social-share').css("margin", "-159px 0px 10px 435px");
+						$('section.block-social-share-social-share').css("margin", "-128px 0px 10px 435px");
 					} else { // yes tickets button, no location
 						$('section.block-social-share-social-share').css("margin", "-176px 0px 10px 435px");
 					}
-				} else { // no tickets button, but yes tickets
+				} else { // yes tickets, but no tickets button
 					console.log('yes there are tickets but none online');
 					if ($('.views-field-field-event-location').length) {  // yes, yes
 						console.log('the tickets button is there and location is');
@@ -738,17 +759,25 @@ jQuery( document ).ready(function( $ ) {
 				}
 			}
 		} else if ($('body').hasClass('safari')) {  // others, not ff or chrome
+			if( $('.views-field-field-free').hasClass('tickets-exist-yes') || $('.views-field-views-conditional-1e').hasClass('tickets-exist-yes') ) {
+				if ($('.views-field.ticket-button .green-button').hasClass('tickets-online-1') ) { // yes tickets online = yes button
 
-			if ($('.views-field-field-tickets-url').length) {
-
-				//			$('section.block-social-share-social-share').css("margin", "-131px 0px 10px 435px");
-				if ($('.views-field-field-event-location').length) {
+					//			$('section.block-social-share-social-share').css("margin", "-131px 0px 10px 435px");
+					if ($('.views-field-field-event-location').length) {
 //					console.log('the tickets button is there and location is');
-					$('section.block-social-share-social-share').css("margin", "-158px 0px 10px 435px");
-				} else { // yes tickets button, no location
-					$('section.block-social-share-social-share').css("margin", "-175px 0px 10px 435px");
+						$('section.block-social-share-social-share').css("margin", "-158px 0px 10px 435px");
+					} else { // yes tickets button, no location
+						$('section.block-social-share-social-share').css("margin", "-175px 0px 10px 435px");
+					}
+				} else { // yes tickets, no button
+					if ($('.views-field-field-event-location').length) {
+//					console.log('the tickets button is there and location is');
+						$('section.block-social-share-social-share').css("margin", "-158px 0px 10px 435px");
+					} else { // yes tickets button, no location
+						$('section.block-social-share-social-share').css("margin", "-175px 0px 10px 435px");
+					}
 				}
-			} else { // no tickets button, yes location
+			} else { // no tickets existing, yes location
 				if ($('.views-field-field-event-location').length) {
 					if ($('.views-field-field-free').hasClass('tickets-exist-No')) {
 						$('section.block-social-share-social-share').css("margin", "-214px 0px 10px 435px");
@@ -763,16 +792,26 @@ jQuery( document ).ready(function( $ ) {
 					}
 				}
 			}
+
 		} else {  // others, not ff or chrome or safari
 			console.log('doesnt have ff class');
-			if ($('.views-field-field-tickets-url').length) {
-				console.log('the tickets button is there');
-				//			$('section.block-social-share-social-share').css("margin", "-131px 0px 10px 435px");
-				if ($('.views-field-field-event-location').length) {
-					console.log('the tickets button is there and location is');
-					$('section.block-social-share-social-share').css("margin", "-151px 0px 10px 435px");
-				} else { // yes tickets button, no location
-					$('section.block-social-share-social-share').css("margin", "-168px 0px 10px 435px");
+			if( $('.views-field-field-free').hasClass('tickets-exist-yes') || $('.views-field-views-conditional-1e').hasClass('tickets-exist-yes') ) {
+				if ($('.views-field.ticket-button .green-button').hasClass('tickets-online-1') ) { // yes tickets online = yes button
+					console.log('the tickets button is there');
+					//			$('section.block-social-share-social-share').css("margin", "-131px 0px 10px 435px");
+					if ($('.views-field-field-event-location').length) {
+						console.log('the tickets button is there and location is');
+						$('section.block-social-share-social-share').css("margin", "-151px 0px 10px 435px");
+					} else { // yes tickets button, no location
+						$('section.block-social-share-social-share').css("margin", "-168px 0px 10px 435px");
+					}
+				} else { // yes tickets, no button
+					if ($('.views-field-field-event-location').length) {
+						console.log('the tickets button is there and location is');
+						$('section.block-social-share-social-share').css("margin", "-151px 0px 10px 435px");
+					} else { // yes tickets button, no location
+						$('section.block-social-share-social-share').css("margin", "-168px 0px 10px 435px");
+					}
 				}
 			} else { // no tickets button, yes location
 				if ($('.views-field-field-event-location').length) {
