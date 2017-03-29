@@ -696,10 +696,11 @@ jQuery( document ).ready(function( $ ) {
 			if( $('.views-field-field-free').hasClass('tickets-exist-yes') || $('.views-field-views-conditional-1e').hasClass('tickets-exist-yes') ) {
 				// yes tickets exist
 				console.log('yes there are tickets existing');
-				if ($('.views-field-field-tickets-url').length) { // yes tickets online = yes button
+				//if ($('.views-field-field-tickets-url').length) { // yes tickets online = yes button
+				if ($('.views-field.ticket-button .green-button').hasClass('tickets-online-1') ) { // yes tickets online = yes button
 					console.log('the tickets button is there also');
 					//			$('section.block-social-share-social-share').css("margin", "-131px 0px 10px 435px");
-					if ($('.views-field-field-event-location').length) {  // yes, yes
+					if ($('.views-field-field-event-location').length) {  // yes, yes location
 						console.log('the tickets button is there and location is');
 						$('section.block-social-share-social-share').css("margin", "-159px 0px 10px 435px");
 					} else { // yes tickets button, no location
