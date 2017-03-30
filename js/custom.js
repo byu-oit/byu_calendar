@@ -660,13 +660,13 @@ jQuery( document ).ready(function( $ ) {
 					if ($('.views-field-field-event-location').length) {
 
 //					$('section.block-social-share-social-share').css("top", "-129px");
-						$('section.block-social-share-social-share').css("top", "-159px");
+						$('section.block-social-share-social-share').css("top", "-145px");
 						;
 						$('section.block-views-event-page-blocks-block-3').css("top", "-127px");
 					} else { // yes tickets button, no location
 //					
 //						$('section.block-social-share-social-share').css("top", "-147px");
-						$('section.block-social-share-social-share').css("top", "-176px");
+						$('section.block-social-share-social-share').css("top", "-163px");
 						// no margin, pos rel, left 420px, top: -147px
 						$('section.block-views-event-page-blocks-block-3').css("top", "-140px");
 					}
@@ -674,13 +674,13 @@ jQuery( document ).ready(function( $ ) {
 					if ($('.views-field-field-event-location').length) {
 
 //					$('section.block-social-share-social-share').css("top", "-129px");
-						$('section.block-social-share-social-share').css("top", "-159px");
+						$('section.block-social-share-social-share').css("top", "-180px");
 						;
 						$('section.block-views-event-page-blocks-block-3').css("top", "-155px");
 					} else { // yes tickets button, no location
 //
 //						$('section.block-social-share-social-share').css("top", "-147px");
-						$('section.block-social-share-social-share').css("top", "-176px");
+						$('section.block-social-share-social-share').css("top", "-198px");
 						// no margin, pos rel, left 420px, top: -147px
 						$('section.block-views-event-page-blocks-block-3').css("top", "-175px");
 					}
@@ -695,7 +695,7 @@ jQuery( document ).ready(function( $ ) {
 						$('section.block-views-event-page-blocks-block-3').css("top", "-185px");
 
 				} else { // no tickets, no location
-						$('section.block-social-share-social-share').css("top", "-6");
+						$('section.block-social-share-social-share').css("top", "-216");
 						$('section.block-views-event-page-blocks-block-3').css("top", "-200px");
 				}
 			}
