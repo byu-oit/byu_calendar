@@ -1428,10 +1428,10 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 @media screen and (min-width:$large_screen_start_width) {
     /* formatting list views */
 
-  td:not(:first-of-type) .weekview-day-header {
-    position: relative;
-    top: 40px;
-    margin-bottom: 70px;
+  td:not(:first-of-type) .weekview-day-header { // this covers all title links so they can't be clicked anymore.
+    //position: relative;
+    //top: 40px;
+    //margin-bottom: 70px;
   }
   // don't add spacing before sunday / first day
   //td:first-of-type .weekview-day-header {
