@@ -658,16 +658,13 @@ jQuery( document ).ready(function( $ ) {
 				if ($('.views-field.ticket-button .green-button').hasClass('tickets-online-1') ) { // yes tickets online = yes button
 					console.log('the tickets button is there');
 					if ($('.views-field-field-event-location').length) {
-
-//					$('section.block-social-share-social-share').css("top", "-129px");
 						$('section.block-social-share-social-share').css("top", "-145px");
 						;
 						$('section.block-views-event-page-blocks-block-3').css("top", "-127px");
 					} else { // yes tickets button, no location
-//					
-//						$('section.block-social-share-social-share').css("top", "-147px");
+
 						$('section.block-social-share-social-share').css("top", "-163px");
-						// no margin, pos rel, left 420px, top: -147px
+
 						$('section.block-views-event-page-blocks-block-3').css("top", "-140px");
 					}
 				} else { // yes tickets, but no tickets button
@@ -678,8 +675,6 @@ jQuery( document ).ready(function( $ ) {
 						;
 						$('section.block-views-event-page-blocks-block-3').css("top", "-155px");
 					} else { // yes tickets button, no location
-//
-//						$('section.block-social-share-social-share').css("top", "-147px");
 						$('section.block-social-share-social-share').css("top", "-198px");
 						// no margin, pos rel, left 420px, top: -147px
 						$('section.block-views-event-page-blocks-block-3').css("top", "-175px");
@@ -689,13 +684,11 @@ jQuery( document ).ready(function( $ ) {
 				}
 			} else { // no tickets existing, yes location
 				if ($('.views-field-field-event-location').length) {
-
-					//	//					console.log('ff: the locations field is there wo tickets button');
 						$('section.block-social-share-social-share').css("top", "-198px");
 						$('section.block-views-event-page-blocks-block-3').css("top", "-185px");
 
 				} else { // no tickets, no location
-						$('section.block-social-share-social-share').css("top", "-216");
+						$('section.block-social-share-social-share').css("top", "-217px");
 						$('section.block-views-event-page-blocks-block-3').css("top", "-200px");
 				}
 			}
@@ -703,8 +696,6 @@ jQuery( document ).ready(function( $ ) {
 		} else if ($('body').hasClass('safari')) {  // others, not ff or chrome
 			if( $('.views-field-field-free').hasClass('tickets-exist-yes') || $('.views-field-views-conditional-1').hasClass('tickets-exist-yes') ) {
 				if ($('.views-field.ticket-button .green-button').hasClass('tickets-online-1') ) { // yes tickets online = yes button
-
-					//			$('section.block-social-share-social-share').css("margin", "-131px 0px 10px 435px");
 					if ($('.views-field-field-event-location').length) {
 //					console.log('the tickets button is there and location is');
 						$('section.block-social-share-social-share').css("margin", "-146px 0px 10px 435px");
@@ -760,12 +751,8 @@ jQuery( document ).ready(function( $ ) {
 					console.log('chrome: the locations field is there wo tickets button');
 					$('section.block-social-share-social-share').css("margin", "-199px 0px 10px 435px");
 
-
 				} else { // no tickets, no location
-
-					//$('section.block-social-share-social-share').css("margin", "-232px 0px 10px 435px");
 					$('section.block-social-share-social-share').css("margin", "-217px 0px 10px 435px");
-					//					$('section.block-social-share-social-share').css("margin", "-174px 0px 10px 435px"
 				}
 			}
 		}
