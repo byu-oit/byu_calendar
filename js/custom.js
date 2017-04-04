@@ -6,6 +6,14 @@ jQuery.noConflict();
 
 jQuery( document ).ready(function( $ ) {
 
+
+	// from 2017-components:
+	function d7SearchComplex(value) {
+		document.getElementById('edit-submit--2').click();
+	}
+
+
+
 	var pathArr = window.location.pathname.split('/');
 	var pathSize = pathArr.length - 1;
 	var last = pathArr[pathSize];
