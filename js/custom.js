@@ -645,7 +645,7 @@ jQuery( document ).ready(function( $ ) {
 	startListeners();
 
 //});
-
+ // -------- share block positioning varies according to what fields are shown, and differently in different browsers --- */
 //     if tickets button does not exist, move share button up
 	if ($('body').hasClass('node-type-event') && $('body').hasClass('large-screen')) {
 		if ($('body').hasClass('ff')) {
@@ -756,43 +756,7 @@ jQuery( document ).ready(function( $ ) {
 				}
 			}
 		}
-//		else {  // others, not ff or chrome or safari
-//			console.log('doesnt have ff class');
-//			if( $('.views-field-field-free').hasClass('tickets-exist-yes') || $('.views-field-views-conditional-1').hasClass('tickets-exist-yes') ) {
-//				if ($('.views-field.ticket-button .green-button').hasClass('tickets-online-1') ) { // yes tickets online = yes button
-//					console.log('the tickets button is there');
-//					//			$('section.block-social-share-social-share').css("margin", "-131px 0px 10px 435px");
-//					if ($('.views-field-field-event-location').length) {
-//						console.log('the tickets button is there and location is');
-//						$('section.block-social-share-social-share').css("margin", "-151px 0px 10px 435px");
-//					} else { // yes tickets button, no location
-//						$('section.block-social-share-social-share').css("margin", "-168px 0px 10px 435px");
-//					}
-//				} else { // yes tickets, no button
-//					if ($('.views-field-field-event-location').length) {
-//						console.log('the tickets button is there and location is');
-//						$('section.block-social-share-social-share').css("margin", "-151px 0px 10px 435px");
-//					} else { // yes tickets button, no location
-//						$('section.block-social-share-social-share').css("margin", "-168px 0px 10px 435px");
-//					}
-//				}
-//			} else { // no tickets button, yes location
-//				if ($('.views-field-field-event-location').length) {
-//					if ($('.views-field-field-free').hasClass('tickets-exist-No')) {
-//						$('section.block-social-share-social-share').css("margin", "-213px 0px 10px 435px");
-//					} else {
-////						console.log('not ff: the locations field is there wo tickets button');
-//						$('section.block-social-share-social-share').css("margin", "-194px 0px 10px 435px");
-//					}
-//				} else { // no tickets, no location
-//					if ($('.views-field-field-free').hasClass('tickets-exist-No')) {
-//						$('section.block-social-share-social-share').css("margin", "-222px 0px 10px 435px");
-//					} else {
-//						$('section.block-social-share-social-share').css("margin", "-213px 0px 10px 435px");
-//					}
-//				}
-//			}
-//		}
+
 	}
 //    
 //	/* --- subscribe button ---- */
@@ -854,10 +818,42 @@ jQuery( document ).ready(function( $ ) {
 		value = "";
 	});
 
+
+	// expand/collapse on click
+	$('.view-id-subscribe_to_multiple #edit-field-internal-category-tid-wrapper > label').click(function() {
+		//console.log('tags label was clicked');
+		$(this).parent().toggleClass('expanded');
+	});
+	$('.view-id-subscribe_to_multiple #edit-field-tags-tid-wrapper > label').click(function() {
+		//console.log('tags label was clicked');
+		$(this).parent().toggleClass('expanded');
+	});
+
+
+
+
+
 	(function ($) {
 				Drupal.behaviors.betterExposedFilters = {
 					attach: function (context) {
-				console.log('form finished submitting, to start function');
+
+
+						$('#edit-field-internal-category-tid-wrapper input:checkbox').each(function(){
+							if( $(this).is(":checked")) {
+								$('#edit-field-internal-category-tid-wrapper').addClass('permanently-expanded');
+//console.log('it is checked')
+							} });
+						$('#edit-field-tags-tid-wrapper input:checkbox').each(function(){
+							if( $(this).is(":checked")) {
+								$('#edit-field-tags-tid-wrapper').addClass('permanently-expanded');
+//console.log('it is checked')
+							} });
+
+
+
+
+
+						console.log('form finished submitting, to start function');
 				$(".view-id-subscribe_to_multiple .bef-checkboxes .form-item label").each(function () {
 					console.log('got into resetting fxn');
 					var value = $(this).text();
