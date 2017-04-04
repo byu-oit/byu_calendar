@@ -73,7 +73,7 @@
 <!--		<div id="top-bar-search"> -->
 		  <?php 
 // they are working on allowing forms, when that works, enable this line again:
-//		  $search = drupal_get_form('search_block_form'); print render($search); 
+		  $search = drupal_get_form('search_block_form'); print render($search);
 		  ?>
 <!--	 	</div>-->
 	</byu-search>
