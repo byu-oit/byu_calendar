@@ -2333,7 +2333,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
       font-weight: 500;
     }
     .calendar-more {
-        //display: none;
+        display: none;
       color: $navy !important;
       text-transform: uppercase;
       font-weight: 500;
@@ -4491,6 +4491,33 @@ section.block-social-share-social-share {
 //   padding-right: 15px;
 //}
 
+
+// Collapsed/expanded sections on subscribe category blocks
+
+// expand / collapse icons
+#edit-field-internal-category-tid-wrapper > label:after,
+#edit-field-tags-tid-wrapper > label:after {
+  content: "+";
+}
+#edit-field-internal-category-tid-wrapper > label:after,
+#edit-field-tags-tid-wrapper.expanded > label:after {
+  content: "-";
+}
+
+
+#edit-field-internal-category-tid-wrapper .views-widget,
+#edit-field-tags-tid-wrapper .views-widget {
+  display: none;
+}
+#edit-field-internal-category-tid-wrapper.expanded .views-widget,
+#edit-field-tags-tid-wrapper.expanded .views-widget {
+  display: block;
+}
+// expanded regardless of clicks because something is selected there
+#edit-field-internal-category-tid-wrapper.permanently-expanded .views-widget,
+#edit-field-tags-tid-wrapper.permanently-expanded .views-widget {
+  display: block !important;
+}
 
 
 .view-id-subscribe_to_multiple .form-item-field-internal-category-tid .bef-checkboxes {
