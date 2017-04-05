@@ -3388,6 +3388,12 @@ fieldset.group-pricing legend {
             margin-bottom: 15px;
         }
     }
+  #edit-field-thumbnail-und-0-upload--4,
+  #edit-field-thumbnail-und-0-upload--3,
+  #edit-field-thumbnail-und-0-upload--2,
+  #edit-field-thumbnail-und-0-upload {
+    display: none;
+  }
 }
 .large-screen #edit-field-thumbnail .image-widget-data input,
 .large-screen #edit-field-thumbnail .image-widget-data button {
