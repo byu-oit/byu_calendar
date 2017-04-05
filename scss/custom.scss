@@ -3374,20 +3374,22 @@ fieldset.group-pricing legend {
 // thumbnail
 
 #edit-field-thumbnail {
-    @media screen and (max-width: 767px){
-		// hide imce link for mobile, can't work well for mobile
-		.imce-filefield-wrapper {
-			display: none;
-		}
+  @media screen and (max-width: 767px) {
+    // hide imce link for mobile, can't work well for mobile
+    .imce-filefield-wrapper {
+      display: none;
     }
-	label {
-		width: 100%;
-	}
-    .image-widget-data {
-        input, button {
-            margin-bottom: 15px;
-        }
+  }
+  label {
+    width: 100%;
+  }
+  .image-widget-data {
+    input, button {
+      margin-bottom: 15px;
     }
+  }
+}
+.large-screen {
   #edit-field-thumbnail-und-0-upload--4,
   #edit-field-thumbnail-und-0-upload--3,
   #edit-field-thumbnail-und-0-upload--2,
