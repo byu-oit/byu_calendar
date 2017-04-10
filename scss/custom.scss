@@ -4156,6 +4156,11 @@ section.block-social-share-social-share {
     width: 405px;
     .views-field.views-field-title {
          min-height: 52px;
+      // this will cut it off at two lines but not add the ...
+      //  height: 52px;
+      //  width: 192px;
+      //  overflow: hidden;
+      //  text-overflow: ellipsis;
     }
     .view .views-row {
         width: 192px;
