@@ -4389,13 +4389,15 @@ byu-search .form-submit {
   display: none;
 }
 
-.form-item .custom-search-box {
+byu-search .form-item .custom-search-box {
   padding: 5px 10px;
   border: none;
   box-sizing: border-box;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
-.mobile-view .form-item .custom-search-box {
+byu-search.mobile-view .form-item .custom-search-box {
   padding: 5px 10px;
   width: 100%;
   height: 35px;

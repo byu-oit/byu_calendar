@@ -101,7 +101,7 @@ jQuery( document ).ready(function( $ ) {
 			// for ios 
 
 
-			var total = offset + amountScrolled + 190;
+			var total = offset + amountScrolled + 200;
 //			console.log('total is');
 //			console.log(total);
 			if (total >= mainHeight) {  // if right at the end of main container or past into the footer
