@@ -204,7 +204,11 @@ byu-header a,
 #site-name {
   color: #fff;
 }
-
+#site-name {
+  p,span,div {
+    font-family: "Vitesse A", "Vitesse B", serif;
+  }
+}
 
 /* ------------ regions ----------------------*/
 section.l-top-title.row {
