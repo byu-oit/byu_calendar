@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b94ae47e-9464-47f3-bc0e-6871ac63c0a0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/custom.scss" afterPath="$PROJECT_DIR$/scss/custom.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template.php" afterPath="$PROJECT_DIR$/template.php" />
     </list>
     <ignored path="byu_calendar.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,21 +52,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="custom.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/custom.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38285714">
-              <caret line="4442" column="5" selection-start-line="4442" selection-start-column="5" selection-end-line="4442" selection-end-column="5" />
+            <state vertical-scroll-proportion="-1.9565217">
+              <caret line="4395" column="15" selection-start-line="4395" selection-start-column="15" selection-end-line="4395" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="template.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/template.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.39039665">
+              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -86,9 +86,9 @@
         <option value="$PROJECT_DIR$/scss/byu_calendar.scss" />
         <option value="$PROJECT_DIR$/templates/calendar-month-col.tpl.php" />
         <option value="$PROJECT_DIR$/templates/page.tpl.php" />
-        <option value="$PROJECT_DIR$/template.php" />
         <option value="$PROJECT_DIR$/js/custom.js" />
         <option value="$PROJECT_DIR$/scss/custom.scss" />
+        <option value="$PROJECT_DIR$/template.php" />
       </list>
     </option>
   </component>
@@ -102,8 +102,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="853" />
-    <option name="y" value="247" />
+    <option name="x" value="1210" />
+    <option name="y" value="252" />
     <option name="width" value="1815" />
     <option name="height" value="1254" />
   </component>
@@ -148,20 +148,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="byu_calendar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="byu_calendar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="byu_calendar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -249,7 +235,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="853" y="247" width="1815" height="1254" extended-state="0" />
+    <frame x="1210" y="252" width="1815" height="1254" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20961204" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -649,14 +635,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/custom.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -667,8 +645,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/custom.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38285714">
-          <caret line="4442" column="5" selection-start-line="4442" selection-start-column="5" selection-end-line="4442" selection-end-column="5" />
+        <state vertical-scroll-proportion="-1.9565217">
+          <caret line="4395" column="15" selection-start-line="4395" selection-start-column="15" selection-end-line="4395" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39039665">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
           <folding />
         </state>
       </provider>
