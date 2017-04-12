@@ -4538,90 +4538,89 @@ byu-search.mobile-view .form-item .custom-search-box {
 // Collapsed/expanded sections on subscribe category blocks
 
 // expand / collapse icons
-#edit-field-internal-category-tid-wrapper > label:after,
-#edit-field-tags-tid-wrapper > label:after {
-  content: "+";
-}
-#edit-field-internal-category-tid-wrapper > label:after,
-#edit-field-tags-tid-wrapper.expanded > label:after {
-  content: "-";
-}
+.page-admin-workbench { // workbench pages only
 
+  #edit-field-internal-category-tid-wrapper > label:after,
+  #edit-field-tags-tid-wrapper > label:after {
+    content: "+";
+  }
+  #edit-field-internal-category-tid-wrapper > label:after,
+  #edit-field-tags-tid-wrapper.expanded > label:after {
+    content: "-";
+  }
 
-#edit-field-internal-category-tid-wrapper .views-widget,
-#edit-field-tags-tid-wrapper .views-widget {
-  display: none;
-}
-#edit-field-internal-category-tid-wrapper.expanded .views-widget,
-#edit-field-tags-tid-wrapper.expanded .views-widget {
-  display: block;
-}
-// expanded regardless of clicks because something is selected there
-#edit-field-internal-category-tid-wrapper.permanently-expanded .views-widget,
-#edit-field-tags-tid-wrapper.permanently-expanded .views-widget {
-  display: block !important;
-}
-
-
-.view-id-subscribe_to_multiple .form-item-field-internal-category-tid .bef-checkboxes {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  height: 850px;
-}
-@media screen and (min-width: $large_screen_start_width) {
-
-        .view-id-subscribe_to_multiple .form-item.form-type-select.form-item-field-internal-category-tid .bef-checkboxes {
-                max-height: 350px;
-        }
-}
-
-#edit-sections-internal-categories .form-type-checkbox label {
-	color: #444;
-	padding: 0px 28px 0 0;
-}
-.view-id-subscribe_to_multiple {
-	h2 {  // block title
-		font-weight: bold;
-		color: $navy;
-		font-size: 24px;
-		font-family: "Sentinel A", "Sentinel B";
-	}
-	.view-content {
-		display: none;
-	}
-	.form-item.form-type-select.form-item-field-internal-category-tid .bef-checkboxes {
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: column;
-		max-height: 40px;
-		.form-item {
-			padding-right: 15px;
-		}
-		.form-item label.option {
-			font-weight: normal;
-		}
-	}
-	.view-id-subscribe_to_multiple #edit-field-internal-category-tid-wrapper {
+  #edit-field-internal-category-tid-wrapper .views-widget,
+  #edit-field-tags-tid-wrapper .views-widget {
+    display: none;
+  }
+  #edit-field-internal-category-tid-wrapper.expanded .views-widget,
+  #edit-field-tags-tid-wrapper.expanded .views-widget {
     display: block;
-    width: 100%;
-    /*max-width: 1200px; */
+  }
+  // expanded regardless of clicks because something is selected there
+  #edit-field-internal-category-tid-wrapper.permanently-expanded .views-widget,
+  #edit-field-tags-tid-wrapper.permanently-expanded .views-widget {
+    display: block !important;
+  }
+
+  .view-id-subscribe_to_multiple .form-item-field-internal-category-tid .bef-checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 850px;
+  }
+  @media screen and (min-width: $large_screen_start_width) {
+
+    .view-id-subscribe_to_multiple .form-item.form-type-select.form-item-field-internal-category-tid .bef-checkboxes {
+      max-height: 350px;
+    }
+  }
+
+  #edit-sections-internal-categories .form-type-checkbox label {
+    color: #444;
+    padding: 0px 28px 0 0;
+  }
+  .view-id-subscribe_to_multiple {
+    h2 { // block title
+      font-weight: bold;
+      color: $navy;
+      font-size: 24px;
+      font-family: "Sentinel A", "Sentinel B";
+    }
+    .view-content {
+      display: none;
+    }
+    .form-item.form-type-select.form-item-field-internal-category-tid .bef-checkboxes {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      max-height: 40px;
+      .form-item {
+        padding-right: 15px;
+      }
+      .form-item label.option {
+        font-weight: normal;
+      }
+    }
+    .view-id-subscribe_to_multiple #edit-field-internal-category-tid-wrapper {
+      display: block;
+      width: 100%;
+      /*max-width: 1200px; */
+    }
+    .form-item-field-tags-tid {
+      .bef-checkboxes {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .form-item.form-type-bef-checkbox {
+
+        /*max-width: 300px; */
+        margin-right: 10px;
+      }
+
+    }
+  }
 }
-	.form-item-field-tags-tid {
-		.bef-checkboxes {
-			display: flex;
-			flex-wrap: wrap;
-		}
-		.form-item.form-type-bef-checkbox {
-
-			/*max-width: 300px; */
-			margin-right: 10px;
-		}
-
-
-	}
-}
-
 
 /* ---- subscribe to mulitple PUBLIC FACING PAGE, not workbench - that one is in the byu_adminimal theme */
 .view-id-subscribe_to_multiple {
