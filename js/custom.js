@@ -543,10 +543,14 @@ jQuery( document ).ready(function( $ ) {
 //    }).change();
 //    
 
-
 	// load for homepage for select date dropdown:
 
 	var selected = 1;
+
+	function pad2(num) {
+		return ("0" + num).slice(-2);
+	}
+
 //add listeners for selected values
 	function update(date) {
 		//var date = new Date();
@@ -576,13 +580,13 @@ jQuery( document ).ready(function( $ ) {
 		//check if current day is too big
 		if (days < $("#day").val()) {
 			date = new Date(+$("#year").val() + "-"
-				+ ("0" + month).slice(-2) + "-"
-				+ days);
+				+ pad2(month) + "-"
+				+ pad2(days));
 		}
 		else {
 			date = new Date(+$("#year").val() + "-"
-				+ ("0" + month).slice(-2) + "-"
-				+ $("#day").val());
+				+ pad2(month) + "-"
+				+ pad2($("#day").val()));
 		}
 		update(date);
 	}
@@ -598,8 +602,8 @@ jQuery( document ).ready(function( $ ) {
 		//update when year is changed
 		$("#year").change(function () {
 			update(new Date(+$("#year").val() + "-"
-				+ ("0" + $("#month").val()).slice(-2) + "-"
-				+ $("#day").val()));
+				+ pad2($("#month").val()) + "-"
+				+ pad2($("#day").val())));
 		});
 		//keep track of current day selected
 		$("#day").change(function () {
@@ -642,8 +646,8 @@ jQuery( document ).ready(function( $ ) {
 	$("#go").click(function () {
 		var link = "../calendar/day/"
 				+ $("#year").val() + "-"
-				+ ("0" + $("#month").val()).slice(-2) + "-"
-				+ $("#day").val()
+				+ pad2($("#month").val()) + "-"
+				+ pad2($("#day").val())
 			;
 		window.location.href = link;
 		//or for no back button use this:
