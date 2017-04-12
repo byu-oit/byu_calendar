@@ -33,7 +33,7 @@
       if(is_array($block)) {
         if ($block['#markup'] !== null) {  // print the block's body content
           $content = $block['#markup'];
-          print '<div id="header-actions" slot="actions">';
+          print '<div slot="actions">';
           print $content;
           print '</div>';
         }

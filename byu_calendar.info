@@ -84,8 +84,9 @@ scripts[] = js/stickyHeaders.js
 ; You'll use this variable in page.tpl.php:
 ;   <?php print render($page['header']); ?>
 
-regions[header_actions]      = Header Actions
+
 regions[header]              = Header
+regions[header_actions]      = Header Actions
 regions[help]                = Help
 regions[highlighted]         = Highlighted
 regions[featured]            = Featured
