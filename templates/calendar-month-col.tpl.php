@@ -19,7 +19,21 @@ $headers = (isset($item['header_id'])) ? ' headers="'. $item['header_id'] .'" ' 
     $id = $item['id'];
     $idEnd = substr($id, -8);
     if ($idEnd !== 'date-box') {
-        echo '</div><div class="link-to-day"><a href="../day/' . $item['date'] . '">SEE MORE ></a></div>';
+      $current = current_path();
+      $currentDate = substr($current, -7);
+      $year = substr($currentDate, 0,4);
+
+      if (preg_match("/^(19|20)\d\d$/", $year)) {
+        // date arg exists / is normal, no change
+        $prelinks = '../day/';
+      } else {
+        $prelinks = '../calendar/day/';
+      }
+      // if date is in url
+
+      // else if this is month from menu, without date argument in url
+
+        echo '</div><div class="link-to-day"><a href="' . $prelinks . $item['date'] . '">SEE MORE ></a></div>';
     }
     ?>
 <!--    </div>-->
