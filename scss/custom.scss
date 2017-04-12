@@ -209,7 +209,17 @@ byu-header a,
     font-family: "Vitesse A", "Vitesse B", serif;
   }
 }
-
+[slot="actions"] div,
+[slot="actions"] p {
+  /* color: pink; */
+  padding-bottom: 0;
+  margin: 0 15px;
+}
+//[slot="actions"] :last-of-type() {
+//  /* color: pink; */
+//  padding-bottom: 0;
+//  margin: 0 15px;
+//}
 /* ------------ regions ----------------------*/
 section.l-top-title.row {
     border-bottom: 1px solid $lightgray;
