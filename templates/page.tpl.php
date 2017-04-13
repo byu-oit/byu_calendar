@@ -56,15 +56,15 @@
     <!--      <a slot="logout" href="/caslogout">Sign Out</a>-->
     <a slot="logout" href="/user/logout">Sign Out</a>
     <?php if($logged_in): ?>
-      <span slot="user-name">
-          <?php if ($user->uid) {
-            // if you don't want a my account link
-            print $user->name;
-            // if you want a my account link, using the default user page
-            // print '<a href="../user">' . $user->name . '</a>';
-          }
-          ?>
-        </span>
+
+      <?php if ($user->uid) {
+        // if you don't want a my account link
+        print '<span slot="user-name">' . $user->name . '</span>';
+        // if you want a my account link, using the default user page
+        // print '<a slot="user-name" href="../user">' . $user->name . '</a>';
+      }
+      ?>
+
     <?php endif; ?>
   </byu-user-info>
 
