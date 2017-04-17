@@ -88,7 +88,7 @@ jQuery( document ).ready(function( $ ) {
 	$.fn.is_on_screen = function () {
 		var win = $(window);
 		var viewport = {
-			top: win.scrollTop(),
+			top: win.scrollTop()
 			//left: win.scrollLeft()
 		};
 		//viewport.right = viewport.left + win.width();
