@@ -267,7 +267,7 @@ jQuery( document ).ready(function( $ ) {
 		if ( $("body").hasClass("not-front") )  {
 			$(document).scroll(function () { // bind window scroll event
 				if ($('#calendar-view-links').is_on_screen()) {
-//                 console.log('u can see topbar');
+                 console.log('u can see topbar');
 					$('.left-sidebar-calendar-exposed-filters').removeClass('scrolled');
 					$('.block-views-large-screen-calendar-block-6').removeClass('scrolled');
 					$('.block-views-large-screen-calendar-block-7').removeClass('scrolled');
@@ -276,13 +276,14 @@ jQuery( document ).ready(function( $ ) {
 					$('.block-block-11').removeClass('scrolled');
 				} else {
 					if ($('#content-footer').is_on_screen()) {
-						// footer showing, unset scrolled class so it doesn't run into footer
+						 //footer showing, unset scrolled class so it doesn't run into footer
 						$('.left-sidebar-calendar-exposed-filters').removeClass('scrolled');
 						$('.block-views-large-screen-calendar-block-6').removeClass('scrolled');
 						$('.block-views-large-screen-calendar-block-7').removeClass('scrolled');
 						$('.block-block-11').removeClass('scrolled');
 
 					} else {
+						console.log('scrolling right now, should be fixed');
 						$('.block-views-large-screen-calendar-block-6').addClass('scrolled');
 
 						//                $('.left-sidebar-minimonth').addClass('scrolled');
