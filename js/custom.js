@@ -69,20 +69,36 @@ jQuery( document ).ready(function( $ ) {
 
 	$("#large-calendar-nav-container").delay(4000).fadeIn(500);
 	// Code that uses jQuery's $ can follow here.
+	//$.fn.is_on_screen = function () {
+	//	var win = $(window);
+	//	var viewport = {
+	//		top: win.scrollTop(),
+	//		left: win.scrollLeft()
+	//	};
+	//	viewport.right = viewport.left + win.width();
+	//	viewport.bottom = viewport.top + win.height();
+    //
+	//	var bounds = this.offset();
+	//	bounds.right = bounds.left + this.outerWidth();
+	//	bounds.bottom = bounds.top + this.outerHeight();
+    //
+	//	return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+	//};
+
 	$.fn.is_on_screen = function () {
 		var win = $(window);
 		var viewport = {
 			top: win.scrollTop(),
-			left: win.scrollLeft()
+			//left: win.scrollLeft()
 		};
-		viewport.right = viewport.left + win.width();
+		//viewport.right = viewport.left + win.width();
 		viewport.bottom = viewport.top + win.height();
 
 		var bounds = this.offset();
-		bounds.right = bounds.left + this.outerWidth();
+		//bounds.right = bounds.left + this.outerWidth();
 		bounds.bottom = bounds.top + this.outerHeight();
 
-		return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+		return (!(viewport.bottom < bounds.top || viewport.top > bounds.bottom));
 	};
 
 
