@@ -291,7 +291,7 @@ jQuery( document ).ready(function( $ ) {
 //                $('.left-sidebar-minimonth').removeClass('scrolled'));
 					$('.block-block-11').removeClass('scrolled');
 				} else {
-					if ($('.secondary-footer').is_on_screen()) {
+					if ($('#byu-footer').is_on_screen()) {
 						 //footer showing, unset scrolled class so it doesn't run into footer
 						$('.left-sidebar-calendar-exposed-filters').removeClass('scrolled');
 						$('.block-views-large-screen-calendar-block-6').removeClass('scrolled');
@@ -457,7 +457,7 @@ jQuery( document ).ready(function( $ ) {
 				$('header nav').removeClass("expanded");
 			}
 		});
-		$('.secondary-footer').click(function () {
+		$('#byu-footer').click(function () {
 			if ($('header nav').hasClass('expanded')) {
 				console.log('hide menu!');
 				$('header nav').removeClass("expanded");
