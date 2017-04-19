@@ -415,6 +415,7 @@ jQuery( document ).ready(function( $ ) {
         $('.form-item-field-event-date-und-0-value2-month').hide();
         $('.form-item-field-event-date-und-0-value2-day').hide();
         $('.form-item-field-event-date-und-0-value2-year').hide();
+        $('div.form-item-field-event-date-und-0-show-todate label').text('Show End Time');
 	}
 
 	$('#edit-field-event-date-und-0-all-day').change(function () {
