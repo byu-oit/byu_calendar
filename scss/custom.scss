@@ -1339,6 +1339,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     .views-field.views-field-title {
         font-size: 15px;
         display: inline;
+        font-family: "Sentinel A", "Sentinel B";
     }
     .view-item.view-item-mobile_calendar {
         border-bottom: 1px solid $lightgray;
@@ -2961,9 +2962,7 @@ footer.l-footer.panel.row {
     float: right;
     margin: -10px 0px 10px;
 }
-input {
-    max-width: 450px;
-}
+
 // tabs at bottom
 .number-of-roles-1 .vertical-tabs.clearfix {
     display: none;
@@ -2980,6 +2979,7 @@ input {
 }
 
 .page-node-add, .page-node-edit, .page-node-clone {
+
     h1#page-title {
         font-family: "Gotham A","Gotham B";
         font-size: 16px;
@@ -2988,11 +2988,15 @@ input {
     h1#page-title:after {
 //        content: " FOR:";
     }
-    .form-item {
+
+    form.node-form .form-item {
         margin-top: 10px;
         margin-bottom: 10px;
+      input {
+        max-width: 450px;
+      }
     }
-	
+
 }
 
 .page-node-add, .page-node-edit, .page-node-clone {
