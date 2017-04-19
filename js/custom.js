@@ -374,21 +374,27 @@ jQuery( document ).ready(function( $ ) {
 
 	// editing or adding event
 
-	function calcWeekday() {
+	function calcWeekday(autoEndDate) {
 		// fetch values
 		var m = document.getElementById("edit-field-event-date-und-0-value-month");
-        $('#edit-field-event-date-und-0-value2-month').val(m);
+        if (autoEndDate) {
+            $('#edit-field-event-date-und-0-value2-month').val(m);
+        }
 		var mid = m.options[m.selectedIndex].value;
 		if (mid.length == '1') {
 			mid = "".concat("0", mid);
 		}
 		console.log(mid);
 		var d = document.getElementById("edit-field-event-date-und-0-value-day");
-        $('#edit-field-event-date-und-0-value2-day').val(d);
+        if (autoEndDate) {
+            $('#edit-field-event-date-und-0-value2-day').val(d);
+        }
 		var did = d.options[d.selectedIndex].value;
 
 		var y = document.getElementById("edit-field-event-date-und-0-value-year");
-        $('#edit-field-event-date-und-0-value2-year').val(y);
+        if (autoEndDate) {
+            $('#edit-field-event-date-und-0-value2-year').val(y);
+        }
 		var yid = y.options[y.selectedIndex].value;
 
 		var dateString = mid.concat("/", did, "/", yid);
@@ -446,13 +452,13 @@ jQuery( document ).ready(function( $ ) {
 //        }
 //    });
 	$('#edit-field-event-date-und-0-value-month').change(function () {
-		calcWeekday();
+		calcWeekday(true);
 	});
 	$('#edit-field-event-date-und-0-value-day').change(function () {
-		calcWeekday();
+		calcWeekday(true);
 	});
 	$('#edit-field-event-date-und-0-value-year').change(function () {
-		calcWeekday();
+		calcWeekday(true);
 	});
 
 
