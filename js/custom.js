@@ -374,28 +374,22 @@ jQuery( document ).ready(function( $ ) {
 
 	// editing or adding event
 
-	function calcWeekday(autoEndDate) {
+	function calcWeekday() {
 		// fetch values
 		var m = document.getElementById("edit-field-event-date-und-0-value-month");
-        if (autoEndDate) {
-            $('#edit-field-event-date-und-0-value2-month').val(m);
-        }
 		var mid = m.options[m.selectedIndex].value;
+		$('#edit-field-event-date-und-0-value2-month').val(mid);
 		if (mid.length == '1') {
 			mid = "".concat("0", mid);
 		}
 		console.log(mid);
 		var d = document.getElementById("edit-field-event-date-und-0-value-day");
-        if (autoEndDate) {
-            $('#edit-field-event-date-und-0-value2-day').val(d);
-        }
 		var did = d.options[d.selectedIndex].value;
+		$('#edit-field-event-date-und-0-value2-day').val(did);
 
 		var y = document.getElementById("edit-field-event-date-und-0-value-year");
-        if (autoEndDate) {
-            $('#edit-field-event-date-und-0-value2-year').val(y);
-        }
 		var yid = y.options[y.selectedIndex].value;
+		$('#edit-field-event-date-und-0-value2-year').val(yid);
 
 		var dateString = mid.concat("/", did, "/", yid);
 
@@ -418,10 +412,10 @@ jQuery( document ).ready(function( $ ) {
 
 	if (( $("body").hasClass("page-node-add") ) || ( $("body").hasClass("page-node-edit")) || ( $("body").hasClass("page-node-clone"))) {
 		calcWeekday();
-        $('.form-item-field-event-date-und-0-value2-month').hide();
-        $('.form-item-field-event-date-und-0-value2-day').hide();
-        $('.form-item-field-event-date-und-0-value2-year').hide();
-        $('div.form-item-field-event-date-und-0-show-todate label').text('Show End Time');
+		$('.form-item-field-event-date-und-0-value2-month').hide();
+		$('.form-item-field-event-date-und-0-value2-day').hide();
+		$('.form-item-field-event-date-und-0-value2-year').hide();
+		$('div.form-item-field-event-date-und-0-show-todate label').text('Show End Time');
 	}
 
 	$('#edit-field-event-date-und-0-all-day').change(function () {
@@ -452,13 +446,13 @@ jQuery( document ).ready(function( $ ) {
 //        }
 //    });
 	$('#edit-field-event-date-und-0-value-month').change(function () {
-		calcWeekday(true);
+		calcWeekday();
 	});
 	$('#edit-field-event-date-und-0-value-day').change(function () {
-		calcWeekday(true);
+		calcWeekday();
 	});
 	$('#edit-field-event-date-und-0-value-year').change(function () {
-		calcWeekday(true);
+		calcWeekday();
 	});
 
 
