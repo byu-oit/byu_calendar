@@ -378,15 +378,18 @@ jQuery( document ).ready(function( $ ) {
 		// fetch values
 		var m = document.getElementById("edit-field-event-date-und-0-value-month");
 		var mid = m.options[m.selectedIndex].value;
+		$('#edit-field-event-date-und-0-value2-month').val(mid);
 		if (mid.length == '1') {
 			mid = "".concat("0", mid);
 		}
 		console.log(mid);
 		var d = document.getElementById("edit-field-event-date-und-0-value-day");
 		var did = d.options[d.selectedIndex].value;
+		$('#edit-field-event-date-und-0-value2-day').val(did);
 
 		var y = document.getElementById("edit-field-event-date-und-0-value-year");
 		var yid = y.options[y.selectedIndex].value;
+		$('#edit-field-event-date-und-0-value2-year').val(yid);
 
 		var dateString = mid.concat("/", did, "/", yid);
 
@@ -409,6 +412,10 @@ jQuery( document ).ready(function( $ ) {
 
 	if (( $("body").hasClass("page-node-add") ) || ( $("body").hasClass("page-node-edit")) || ( $("body").hasClass("page-node-clone"))) {
 		calcWeekday();
+		$('.form-item-field-event-date-und-0-value2-month').hide();
+		$('.form-item-field-event-date-und-0-value2-day').hide();
+		$('.form-item-field-event-date-und-0-value2-year').hide();
+		$('div.form-item-field-event-date-und-0-show-todate label').text('Show End Time');
 	}
 
 	$('#edit-field-event-date-und-0-all-day').change(function () {
