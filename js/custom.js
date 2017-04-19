@@ -377,15 +377,18 @@ jQuery( document ).ready(function( $ ) {
 	function calcWeekday() {
 		// fetch values
 		var m = document.getElementById("edit-field-event-date-und-0-value-month");
+        $('#edit-field-event-date-und-0-value2-month').val(m);
 		var mid = m.options[m.selectedIndex].value;
 		if (mid.length == '1') {
 			mid = "".concat("0", mid);
 		}
 		console.log(mid);
 		var d = document.getElementById("edit-field-event-date-und-0-value-day");
+        $('#edit-field-event-date-und-0-value2-day').val(d);
 		var did = d.options[d.selectedIndex].value;
 
 		var y = document.getElementById("edit-field-event-date-und-0-value-year");
+        $('#edit-field-event-date-und-0-value2-year').val(y);
 		var yid = y.options[y.selectedIndex].value;
 
 		var dateString = mid.concat("/", did, "/", yid);
@@ -409,6 +412,9 @@ jQuery( document ).ready(function( $ ) {
 
 	if (( $("body").hasClass("page-node-add") ) || ( $("body").hasClass("page-node-edit")) || ( $("body").hasClass("page-node-clone"))) {
 		calcWeekday();
+        $('.form-item-field-event-date-und-0-value2-month').hide();
+        $('.form-item-field-event-date-und-0-value2-day').hide();
+        $('.form-item-field-event-date-und-0-value2-year').hide();
 	}
 
 	$('#edit-field-event-date-und-0-all-day').change(function () {
