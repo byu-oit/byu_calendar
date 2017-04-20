@@ -229,6 +229,12 @@ byu-header a:hover,
 /* ------------ regions ----------------------*/
 section.l-top-title.row {
     border-bottom: 1px solid $lightgray;
+  @media screen and (max-width: $mobile_max_width) {
+    h1 {
+      font-size: 30px;
+    }
+  }
+
 }
 .front #top-content {
 	@media screen and (min-width: $large_screen_start_width) {
@@ -4135,7 +4141,13 @@ section.block-social-share-social-share {
     margin-left: auto;
     margin-right: auto;
 }
+@media screen and (width: 320px) {
+  // override for smallest phone to be larger width
+  .block-views-homepage-features-block-2 {
+    max-width: 95%;
+  }
 
+}
 
 // mobile small features
 .block-views-homepage-features-block-3,
