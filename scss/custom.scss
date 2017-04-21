@@ -4551,7 +4551,7 @@ byu-search.mobile-view .form-item .custom-search-box {
 }
 
 
-/* -- workbench pages ------- */
+/* -- workbench pages & publisc subscribe page ------- */
 // default styling for all subscribe-to-multiple
 //.view-id-subscribe_to_multiple h2 {
 //  font-weight: bold;
@@ -4577,48 +4577,49 @@ byu-search.mobile-view .form-item .custom-search-box {
 // Collapsed/expanded sections on subscribe category blocks
 
 // expand / collapse icons
-.page-admin-workbench { // workbench pages only
+.view-subscribe-to-multiple {
+//.page-admin-workbench { // workbench pages only
 
-  #edit-field-internal-category-tid-wrapper > label:after,
+  //#edit-field-internal-category-tid-wrapper > label:after,
   #edit-field-tags-tid-wrapper > label:after {
     content: "+";
   }
-  #edit-field-internal-category-tid-wrapper > label:after,
+  //#edit-field-internal-category-tid-wrapper > label:after,
   #edit-field-tags-tid-wrapper.expanded > label:after {
     content: "-";
   }
 
-  #edit-field-internal-category-tid-wrapper .views-widget,
+  //#edit-field-internal-category-tid-wrapper .views-widget,
   #edit-field-tags-tid-wrapper .views-widget {
     display: none;
   }
-  #edit-field-internal-category-tid-wrapper.expanded .views-widget,
+  //#edit-field-internal-category-tid-wrapper.expanded .views-widget,
   #edit-field-tags-tid-wrapper.expanded .views-widget {
     display: block;
   }
   // expanded regardless of clicks because something is selected there
-  #edit-field-internal-category-tid-wrapper.permanently-expanded .views-widget,
+  //#edit-field-internal-category-tid-wrapper.permanently-expanded .views-widget,
   #edit-field-tags-tid-wrapper.permanently-expanded .views-widget {
     display: block !important;
   }
 
-  .view-id-subscribe_to_multiple .form-item-field-internal-category-tid .bef-checkboxes {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 850px;
-  }
-  @media screen and (min-width: $large_screen_start_width) {
+  //.view-id-subscribe_to_multiple .form-item-field-internal-category-tid .bef-checkboxes {
+  //  display: flex;
+  //  flex-wrap: wrap;
+  //  flex-direction: column;
+  //  height: 850px;
+  //}
+  //@media screen and (min-width: $large_screen_start_width) {
+  //
+  //  .view-id-subscribe_to_multiple .form-item.form-type-select.form-item-field-internal-category-tid .bef-checkboxes {
+  //    max-height: 350px;
+  //  }
+  //}
 
-    .view-id-subscribe_to_multiple .form-item.form-type-select.form-item-field-internal-category-tid .bef-checkboxes {
-      max-height: 350px;
-    }
-  }
-
-  #edit-sections-internal-categories .form-type-checkbox label {
-    color: #444;
-    padding: 0px 28px 0 0;
-  }
+  //#edit-sections-internal-categories .form-type-checkbox label {
+  //  color: #444;
+  //  padding: 0px 28px 0 0;
+  //}
   .view-id-subscribe_to_multiple {
     h2 { // block title
       font-weight: bold;
@@ -4629,35 +4630,24 @@ byu-search.mobile-view .form-item .custom-search-box {
     .view-content {
       display: none;
     }
-    .form-item.form-type-select.form-item-field-internal-category-tid .bef-checkboxes {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      max-height: 40px;
-      .form-item {
-        padding-right: 15px;
-      }
-      .form-item label.option {
-        font-weight: normal;
-      }
-    }
-    .view-id-subscribe_to_multiple #edit-field-internal-category-tid-wrapper {
-      display: block;
-      width: 100%;
-      /*max-width: 1200px; */
-    }
-    .form-item-field-tags-tid {
-      .bef-checkboxes {
-        display: flex;
-        flex-wrap: wrap;
-      }
-      .form-item.form-type-bef-checkbox {
+    //.form-item.form-type-select.form-item-field-internal-category-tid .bef-checkboxes {
+    //  display: flex;
+    //  flex-wrap: wrap;
+    //  flex-direction: column;
+    //  max-height: 40px;
+    //  .form-item {
+    //    padding-right: 15px;
+    //  }
+    //  .form-item label.option {
+    //    font-weight: normal;
+    //  }
+    //}
+    //.view-id-subscribe_to_multiple #edit-field-internal-category-tid-wrapper {
+    //  display: block;
+    //  width: 100%;
+    //  /*max-width: 1200px; */
+    //}
 
-        /*max-width: 300px; */
-        margin-right: 10px;
-      }
-
-    }
   }
 }
 
@@ -4748,13 +4738,95 @@ byu-search.mobile-view .form-item .custom-search-box {
 			width: 300px;
 		}
 	}
-//	.views-exposed-form .views-exposed-widget > label {
-//		border-bottom: 1px solid #e5e5e5;
-//		color: #767676;
-//		font-size: 20px;
-//		margin: 8px 0px 5px 0px;
-//	}
-	#edit-field-tags-tid-wrapper {
+
+  // Academic Registrar Dates
+  /* applies also on content page */
+  #edit-field-academic-registrar-dates-tid-wrapper {
+    display: block;
+    width: 100%;
+  }
+
+
+  .view #edit-field-academic-registrar-dates-tid-wrapper {
+    margin-top: -90px;
+  }
+
+ // SHS new departments
+
+  .views-widget-filter-shs_term_node_tid_depth > label:after {
+    content: "If you select a higher level category, it will include all of it's child categories. If you would like to select multiple categories, use the shift or control key to do so. If you select a specific category, you will not be given the parent category, as that will be redundant. i.e. if you select 'General' and 'BYU Ticket Office' then you will be given the id for the 'BYU Ticket Office, not 'General'. General would include BYU Ticket Office, as well as other categories like 'Faculty'.";
+    font-weight: normal;
+    font-family: "Gotham A","Gotham B", Arial,Sans-serif;
+    display: block;
+    padding: 10px 0px 8px;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.3em;
+    max-width: 1000px;
+  }
+  #edit-shs-term-node-tid-depth-wrapper {
+    width: 100%;
+  }
+  #edit-shs-term-node-tid-depth-wrapper select {
+    margin-right: 15px;
+  }
+
+
+// tags
+
+  // old from above
+  .form-item-field-tags-tid {
+    .bef-checkboxes {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .form-item.form-type-bef-checkbox {
+
+      /*max-width: 300px; */
+      margin-right: 10px;
+    }
+
+  }
+  // collapse/expanding tags
+  /*#edit-field-internal-category-tid-wrapper.expanded > label:after, */
+  #edit-field-tags-tid-wrapper.expanded > label:after {
+    content: "-";
+  }
+
+  #edit-field-tags-tid-wrapper {
+    width: 100%;
+  }
+
+  #edit-field-tags-tid-wrapper:before {
+    content: "+";
+    color: #002e5d;
+    font-size: 20px;
+    position: relative;
+    top:29px;
+    left: 48px;
+    font-weight: bold;
+  }
+  #edit-field-tags-tid-wrapper.expanded:before {
+    content: "-";
+    top: 27px;
+  }
+
+  #edit-field-tags-tid-wrapper .views-widget {
+    display: none;
+  }
+
+  /*#edit-field-internal-category-tid-wrapper.expanded .views-widget, */
+
+  #edit-field-tags-tid-wrapper.expanded .views-widget {
+    display: block;
+  }
+  // expanded regardless of clicks because something is selected there
+  #edit-field-internal-category-tid-wrapper.permanently-expanded .views-widget,
+  #edit-field-tags-tid-wrapper.permanently-expanded .views-widget {
+    display: block !important;
+  }
+
+  #edit-field-tags-tid-wrapper {
 		float: left;
 	   /* max-width: 65%; */
 	}
