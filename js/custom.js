@@ -815,58 +815,62 @@ jQuery( document ).ready(function( $ ) {
 
 	/* ------ formatting the subscribe to multiple page in workbench pages -------- */
 
-	$(".bef-checkboxes .form-item label").each(function () {
-		var value = $(this).text();
-
-		if (value.includes("----")) {
-			$(this).css("font-weight", "normal");
-
-			$(this).parent().css("padding-left", "36px");
-			$(this).parent().css("font-size", "14px");
-			var res = value.replace("----", "---- ");
-			$(this).text(res);
-
-		} else if (value.includes("---")) {
-			$(this).css("color", "#666");
-			$(this).css("font-weight", "normal");
-
-			$(this).parent().css("padding-left", "30px");
-			$(this).parent().css("font-size", "15px");
-			var res = value.replace("---", "--- ");
-			$(this).text(res);
-
-		} else if (value.includes("--")) {
-			$(this).css("font-weight", "normal");
-
-			$(this).parent().css("padding-left", "24px");
-			var res = value.replace("--", "-- ");
-			$(this).parent().css("font-size", "15px");
-			$(this).text(res);
-
-		} else if (value.includes("-")) {
-			$(this).css("color", "#666");
-			$(this).parent().css("padding-left", "12px");
-			$(this).parent().css("font-size", "15px");
-			var res = value.replace("-", "- ");
-			$(this).text(res);
-
-		}
-		value = "";
+	$('#block-system-main').on('click', '.view-id-subscribe_to_multiple #edit-field-tags-tid-wrapper > label', function () {
+		$(this).parent().toggleClass('expanded');
+		console.log('clicked on the wrapper label');
 	});
+
+
+    //
+	//$(".bef-checkboxes .form-item label").each(function () {
+	//	var value = $(this).text();
+    //
+	//	if (value.includes("----")) {
+	//		$(this).css("font-weight", "normal");
+    //
+	//		$(this).parent().css("padding-left", "36px");
+	//		$(this).parent().css("font-size", "14px");
+	//		var res = value.replace("----", "---- ");
+	//		$(this).text(res);
+    //
+	//	} else if (value.includes("---")) {
+	//		$(this).css("color", "#666");
+	//		$(this).css("font-weight", "normal");
+    //
+	//		$(this).parent().css("padding-left", "30px");
+	//		$(this).parent().css("font-size", "15px");
+	//		var res = value.replace("---", "--- ");
+	//		$(this).text(res);
+    //
+	//	} else if (value.includes("--")) {
+	//		$(this).css("font-weight", "normal");
+    //
+	//		$(this).parent().css("padding-left", "24px");
+	//		var res = value.replace("--", "-- ");
+	//		$(this).parent().css("font-size", "15px");
+	//		$(this).text(res);
+    //
+	//	} else if (value.includes("-")) {
+	//		$(this).css("color", "#666");
+	//		$(this).parent().css("padding-left", "12px");
+	//		$(this).parent().css("font-size", "15px");
+	//		var res = value.replace("-", "- ");
+	//		$(this).text(res);
+    //
+	//	}
+	//	value = "";
+	//});
 
 
 	// expand/collapse on click
-	$('.view-id-subscribe_to_multiple #edit-field-internal-category-tid-wrapper > label').click(function() {
-		//console.log('tags label was clicked');
-		$(this).parent().toggleClass('expanded');
-	});
-	$('.view-id-subscribe_to_multiple #edit-field-tags-tid-wrapper > label').click(function() {
-		//console.log('tags label was clicked');
-		$(this).parent().toggleClass('expanded');
-	});
-
-
-
+	//$('.view-id-subscribe_to_multiple #edit-field-internal-category-tid-wrapper > label').click(function() {
+	//	//console.log('tags label was clicked');
+	//	$(this).parent().toggleClass('expanded');
+	//});
+	//$('.view-id-subscribe_to_multiple #edit-field-tags-tid-wrapper > label').click(function() {
+	//	//console.log('tags label was clicked');
+	//	$(this).parent().toggleClass('expanded');
+	//});
 
 
 	(function ($) {
@@ -888,45 +892,45 @@ jQuery( document ).ready(function( $ ) {
 
 
 
-
-						console.log('form finished submitting, to start function');
-				$(".view-id-subscribe_to_multiple .bef-checkboxes .form-item label").each(function () {
-					console.log('got into resetting fxn');
-					var value = $(this).text();
-
-					if (value.includes("----")) {
-						$(this).css("font-weight", "normal");
-
-						$(this).parent().css("padding-left", "36px");
-						var res = value.replace("----", "---- ");
-						$(this).text(res);
-
-					} else if (value.includes("---")) {
-						$(this).css("font-weight", "normal");
-
-						$(this).css("color", "#666");
-						$(this).parent().css("padding-left", "30px");
-						var res = value.replace("---", "--- ");
-						$(this).text(res);
-
-					} else if (value.includes("--")) {
-						$(this).css("font-weight", "normal");
-
-						$(this).parent().css("padding-left", "24px");
-						var res = value.replace("--", "-- ");
-						$(this).text(res);
-
-					} else if (value.includes("-")) {
-						$(this).css("color", "#666");
-						$(this).parent().css("padding-left", "12px");
-
-						var res = value.replace("-", "- ");
-						$(this).text(res);
-
-					}
-					value = "";
-				});
-
+                //
+				//		console.log('form finished submitting, to start function');
+				//$(".view-id-subscribe_to_multiple .bef-checkboxes .form-item label").each(function () {
+				//	console.log('got into resetting fxn');
+				//	var value = $(this).text();
+                //
+				//	if (value.includes("----")) {
+				//		$(this).css("font-weight", "normal");
+                //
+				//		$(this).parent().css("padding-left", "36px");
+				//		var res = value.replace("----", "---- ");
+				//		$(this).text(res);
+                //
+				//	} else if (value.includes("---")) {
+				//		$(this).css("font-weight", "normal");
+                //
+				//		$(this).css("color", "#666");
+				//		$(this).parent().css("padding-left", "30px");
+				//		var res = value.replace("---", "--- ");
+				//		$(this).text(res);
+                //
+				//	} else if (value.includes("--")) {
+				//		$(this).css("font-weight", "normal");
+                //
+				//		$(this).parent().css("padding-left", "24px");
+				//		var res = value.replace("--", "-- ");
+				//		$(this).text(res);
+                //
+				//	} else if (value.includes("-")) {
+				//		$(this).css("color", "#666");
+				//		$(this).parent().css("padding-left", "12px");
+                //
+				//		var res = value.replace("-", "- ");
+				//		$(this).text(res);
+                //
+				//	}
+				//	value = "";
+				//});
+                //
 
 			}
 		}

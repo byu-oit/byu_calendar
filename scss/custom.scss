@@ -4700,7 +4700,7 @@ byu-search.mobile-view .form-item .custom-search-box {
 	//  border-bottom: 1px solid #e5e5e5;
 	//  margin-bottom: 10px;
 	//  color: #767676;
-		font-weight: normal;
+		font-weight: 500;
 		color: $navy;
 		font-size: 21px;
 		padding-bottom: 10px;
@@ -4710,6 +4710,8 @@ byu-search.mobile-view .form-item .custom-search-box {
 	.bef-checkboxes .form-item label.option {
 	  /*font-weight: normal; */
 	  padding-bottom: 5px;
+      font-weight: 500;
+      letter-spacing: .3px;
 	}
 	#edit-field-event-type-tid-wrapper {
 		margin-right: 20px;
@@ -4802,7 +4804,7 @@ byu-search.mobile-view .form-item .custom-search-box {
     color: #002e5d;
     font-size: 20px;
     position: relative;
-    top:29px;
+    top: 29px;
     left: 48px;
     font-weight: bold;
   }
@@ -4843,7 +4845,8 @@ byu-search.mobile-view .form-item .custom-search-box {
 } /* -- end of block-1 for subscribe to mult --*/
 
 // public subscribe page specific
-.page-node-770 .view-subscribe-to-multiple #edit-field-academic-registrar-dates-tid-wrapper {
+//.page-node-770
+.view-subscribe-to-multiple #edit-field-academic-registrar-dates-tid-wrapper {
   margin-top: -80px;
 }
 
