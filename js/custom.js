@@ -881,6 +881,7 @@ jQuery( document ).ready(function( $ ) {
 						$('#edit-field-tags-tid-wrapper input:checkbox').each(function(){
 							if( $(this).is(":checked")) {
 								$('#edit-field-tags-tid-wrapper').addClass('permanently-expanded');
+								$('#edit-field-tags-tid-wrapper').addClass('expanded');
 								//console.log('it is checked');
 							}
 						});
