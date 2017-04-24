@@ -59,11 +59,6 @@ $nav_gradient_2: 5%;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    
 }
 @mixin display-flex-important() {
     display: flex!important;
@@ -3907,7 +3902,7 @@ section.block-social-share-social-share {
 }
 .not-front.page-node section.block-social-share-social-share {
 	//display: block;
-  display: flex;
+  @include display-flex();
   align-items: center;
 }
 
@@ -3930,7 +3925,7 @@ section.block-social-share-social-share {
 	}
     ul {
       list-style: none;
-      display: flex;
+      @include display-flex();
     }
 	@media screen and (min-width: $large_screen_start_width){
 //		margin: -130px 0px 10px 270px;
@@ -4580,13 +4575,22 @@ byu-search.mobile-view .form-item .custom-search-box {
 .view-subscribe-to-multiple {
 //.page-admin-workbench { // workbench pages only
 
-  //#edit-field-internal-category-tid-wrapper > label:after,
-  #edit-field-tags-tid-wrapper > label:after {
-    content: "+";
+  #edit-field-tags-tid-wrapper {
+    width: 100%;
   }
-  //#edit-field-internal-category-tid-wrapper > label:after,
-  #edit-field-tags-tid-wrapper.expanded > label:after {
+
+  #edit-field-tags-tid-wrapper:before {
+    content: "+";
+    color: #002e5d;
+    font-size: 20px;
+    position: relative;
+    top:29px;
+    left: 48px;
+    font-weight: bold;
+  }
+  #edit-field-tags-tid-wrapper.expanded:before {
     content: "-";
+    top: 27px;
   }
 
   //#edit-field-internal-category-tid-wrapper .views-widget,
