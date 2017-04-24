@@ -876,7 +876,7 @@ jQuery( document ).ready(function( $ ) {
 	(function ($) {
 				Drupal.behaviors.betterExposedFilters = {
 					attach: function (context) {
-
+						console.log('a filter was processed');
 						// if has something checked, expand it while true
 						$('#edit-field-tags-tid-wrapper input:checkbox').each(function(){
 							if( $(this).is(":checked")) {
