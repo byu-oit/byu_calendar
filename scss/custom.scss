@@ -4659,7 +4659,7 @@ byu-search.mobile-view .form-item .custom-search-box {
 .view-id-subscribe_to_multiple {
 	h2 {
 	  font-weight: bold;
-	  color: #002e5d;
+	  color: $navy;
 	  font-size: 24px;
 	  font-family: "Sentinel A","Sentinel B";
 	}
@@ -4795,9 +4795,9 @@ byu-search.mobile-view .form-item .custom-search-box {
   }
   // collapse/expanding tags
   /*#edit-field-internal-category-tid-wrapper.expanded > label:after, */
-  #edit-field-tags-tid-wrapper.expanded > label:after {
-    content: "-";
-  }
+  //#edit-field-tags-tid-wrapper.expanded > label:after {
+  //  content: "-";
+  //}
 
   #edit-field-tags-tid-wrapper {
     width: 100%;
@@ -4805,7 +4805,7 @@ byu-search.mobile-view .form-item .custom-search-box {
 
   #edit-field-tags-tid-wrapper:before {
     content: "+";
-    color: #002e5d;
+    color: $navy;
     font-size: 20px;
     position: relative;
     top: 29px;
@@ -4827,7 +4827,7 @@ byu-search.mobile-view .form-item .custom-search-box {
     display: block;
   }
   // expanded regardless of clicks because something is selected there
-  #edit-field-internal-category-tid-wrapper.permanently-expanded .views-widget,
+  //#edit-field-internal-category-tid-wrapper.permanently-expanded .views-widget,
   #edit-field-tags-tid-wrapper.permanently-expanded .views-widget {
     display: block !important;
   }

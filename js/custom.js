@@ -877,60 +877,13 @@ jQuery( document ).ready(function( $ ) {
 				Drupal.behaviors.betterExposedFilters = {
 					attach: function (context) {
 
-
-						$('#edit-field-internal-category-tid-wrapper input:checkbox').each(function(){
-							if( $(this).is(":checked")) {
-								$('#edit-field-internal-category-tid-wrapper').addClass('permanently-expanded');
-//console.log('it is checked')
-							} });
+						// if has something checked, expand it while true
 						$('#edit-field-tags-tid-wrapper input:checkbox').each(function(){
 							if( $(this).is(":checked")) {
 								$('#edit-field-tags-tid-wrapper').addClass('permanently-expanded');
-//console.log('it is checked')
-							} });
-
-
-
-
-                //
-				//		console.log('form finished submitting, to start function');
-				//$(".view-id-subscribe_to_multiple .bef-checkboxes .form-item label").each(function () {
-				//	console.log('got into resetting fxn');
-				//	var value = $(this).text();
-                //
-				//	if (value.includes("----")) {
-				//		$(this).css("font-weight", "normal");
-                //
-				//		$(this).parent().css("padding-left", "36px");
-				//		var res = value.replace("----", "---- ");
-				//		$(this).text(res);
-                //
-				//	} else if (value.includes("---")) {
-				//		$(this).css("font-weight", "normal");
-                //
-				//		$(this).css("color", "#666");
-				//		$(this).parent().css("padding-left", "30px");
-				//		var res = value.replace("---", "--- ");
-				//		$(this).text(res);
-                //
-				//	} else if (value.includes("--")) {
-				//		$(this).css("font-weight", "normal");
-                //
-				//		$(this).parent().css("padding-left", "24px");
-				//		var res = value.replace("--", "-- ");
-				//		$(this).text(res);
-                //
-				//	} else if (value.includes("-")) {
-				//		$(this).css("color", "#666");
-				//		$(this).parent().css("padding-left", "12px");
-                //
-				//		var res = value.replace("-", "- ");
-				//		$(this).text(res);
-                //
-				//	}
-				//	value = "";
-				//});
-                //
+								//console.log('it is checked');
+							}
+						});
 
 			}
 		}

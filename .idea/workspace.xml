@@ -35,8 +35,8 @@
       <file leaf-file-name="custom.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/custom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.70840335">
-              <caret line="821" column="0" selection-start-line="821" selection-start-column="0" selection-end-line="821" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.7411765">
+              <caret line="887" column="13" selection-start-line="887" selection-start-column="13" selection-end-line="887" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -75,8 +75,8 @@
       <file leaf-file-name="custom.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/custom.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.521739">
-              <caret line="4571" column="59" selection-start-line="4571" selection-start-column="59" selection-end-line="4571" selection-end-column="59" />
+            <state vertical-scroll-proportion="-9.286957">
+              <caret line="4833" column="0" selection-start-line="4833" selection-start-column="0" selection-end-line="4833" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -688,16 +688,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/custom.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.521739">
-          <caret line="4571" column="59" selection-start-line="4571" selection-start-column="59" selection-end-line="4571" selection-end-column="59" />
+        <state vertical-scroll-proportion="-9.286957">
+          <caret line="4833" column="0" selection-start-line="4833" selection-start-column="0" selection-end-line="4833" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/custom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70840335">
-          <caret line="821" column="0" selection-start-line="821" selection-start-column="0" selection-end-line="821" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.7411765">
+          <caret line="887" column="13" selection-start-line="887" selection-start-column="13" selection-end-line="887" selection-end-column="13" />
           <folding />
         </state>
       </provider>
