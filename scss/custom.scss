@@ -4808,13 +4808,13 @@ byu-search.mobile-view .form-item .custom-search-box {
     color: $navy;
     font-size: 20px;
     position: relative;
-    top: 29px;
+    top: 22px;
     left: 48px;
     font-weight: bold;
   }
   #edit-field-tags-tid-wrapper.expanded:before {
     content: "-";
-    top: 27px;
+    //top: 22px;
   }
 
   #edit-field-tags-tid-wrapper .views-widget {
