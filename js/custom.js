@@ -815,7 +815,7 @@ jQuery( document ).ready(function( $ ) {
 
 	/* ------ formatting the subscribe to multiple page in workbench pages -------- */
 
-	$('#block-system-main').on('click', '.view-id-subscribe_to_multiple #edit-field-tags-tid-wrapper > label', function () {
+	$('#main-content-section').on('click', '.view-id-subscribe_to_multiple #edit-field-tags-tid-wrapper > label', function () {
 		$(this).parent().toggleClass('expanded');
 		console.log('clicked on the wrapper label');
 	});
