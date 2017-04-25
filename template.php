@@ -11,10 +11,11 @@ function byu_calendar_preprocess_html(&$variables) {
 //  // Need legacy support for IE downgrade to Foundation 2 or use JS file below
 //  // drupal_add_js('http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js', 'external');
   drupal_add_css('//cloud.typography.com/75214/6517752/css/fonts.css', array('type' => 'external'));
-  drupal_add_css('//cdn.byu.edu/byu-theme-components/latest/byu-theme-components.min.css', array('type' => 'external'));
-//  drupal_add_css('//cdn.byu.edu/byu-theme-components/experimental/mobile-footer/byu-theme-components.min.css', array('type' => 'external'));
-  drupal_add_js('//cdn.byu.edu/byu-theme-components/latest/byu-theme-components.min.js', 'external');
-//  drupal_add_js('//cdn.byu.edu/byu-theme-components/experimental/mobile-footer/byu-theme-components.min.js', 'external');
+
+//  drupal_add_css('//cdn.byu.edu/byu-theme-components/latest/byu-theme-components.min.css', array('type' => 'external'));
+  drupal_add_css('//cdn.byu.edu/byu-theme-components/experimental/mobile-footer/byu-theme-components.min.css', array('type' => 'external'));
+//  drupal_add_js('//cdn.byu.edu/byu-theme-components/latest/byu-theme-components.min.js', 'external');
+  drupal_add_js('//cdn.byu.edu/byu-theme-components/experimental/mobile-footer/byu-theme-components.min.js', 'external');
 
 	
     // Populate the body classes.
