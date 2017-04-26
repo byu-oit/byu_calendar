@@ -4908,3 +4908,8 @@ byu-search.mobile-view .form-item .custom-search-box {
 .divTableBody {
     display: table-row-group;
 }
+
+/* -- IE message -- */
+body:not(.ie) .ie-message {
+  display: none;
+}
