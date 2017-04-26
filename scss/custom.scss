@@ -2788,6 +2788,11 @@ section.row.l-footer-columns {
 		border-bottom: 1px solid $navy;
 	}
 }
+/* -- strange override we need */
+.secondary-footer [class*="column"]+[class*="column"]:last-child{
+  float: none!important;
+}
+
 /* --- university footer general -- */
 footer.l-footer.row {
 	p {
