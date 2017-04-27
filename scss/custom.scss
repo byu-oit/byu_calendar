@@ -2278,7 +2278,14 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         border: none;
         margin-bottom: 15px;
     }
-    
+    td {
+      min-width: 120px;
+      max-width: 120px;
+    }
+    td:first-of-type {
+      min-width: 80px;
+      max-width: 80px;
+    }
     td.single-day .calendar-empty, td.single-day.empty, td.date-box.empty {
         background: none;
         border: none; 
