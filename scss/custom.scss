@@ -1465,8 +1465,8 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     .list-header {
         color: $navy;
         font-weight: bold;
-        font-size: 32px;
-        margin-bottom: 25px; 
+        font-size: 30px;
+        margin-bottom: 25px;
 		font-family: "Sentinel A", "Sentinel B";
     }
     .list-header-week {
@@ -1996,6 +1996,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     /* -------- large screen list views ------------------- */
     .view-header h3 {
         text-align: left;
+        font-size: 30px;
     }
     .view-header .pager {
         display: none;
@@ -2318,16 +2319,16 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         height: 230px!important;
         @include display-flex();
         flex-wrap: wrap;
-        //align-content: flex-start;
+        align-content: flex-start;
     }
     .view-item {
         border-bottom: none;
         padding: 0px 0px 0px;
         margin: 0px;
     }
-    .item {
-      max-height: .7vh;
-    }
+    //.item {
+    //  max-height: .7vh;
+    //}
     .item:first-of-type .view-item {
         padding: 8px 0px 0px;
         margin: 0px;
@@ -2340,14 +2341,14 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         font-weight: normal;
         color: #000;
     }
-    .views-field-title:before {
-        content: '\f111';
-        color: #A6B6C7;
-        font-family: FontAwesome;
-        font-size: 8px;
-        position: relative;
-        top: -2px;
-    }
+    //.views-field-title:before {
+    //    content: '\f111';
+    //    color: #A6B6C7;
+    //    font-family: FontAwesome;
+    //    font-size: 8px;
+    //    position: relative;
+    //    top: -2px;
+    //}
     
     tr.single-day .no-entry, tr.single-day .no-entry .inner {
         min-height: 10px !important;
@@ -2720,7 +2721,7 @@ section.block.block-views.block-views-category-page-blocks-block-2 {
 
 	}
 	@media screen and (min-width: $large_screen_start_width){
-		font-size: 28px;
+		font-size: 30px;
 		font-family: "Sentinel A", "Sentinel B";
 		margin-top: -30px;
 		line-height: 33px;
@@ -2788,7 +2789,7 @@ section.row.l-footer-columns {
 		border-bottom: 1px solid $navy;
 	}
 }
-/* -- strange override we need */
+/* -- strange override we need for byu footer component */
 .secondary-footer [class*="column"]+[class*="column"]:last-child{
   float: none!important;
 }
@@ -4018,6 +4019,7 @@ section.block-social-share-social-share {
 .front #top-content {
     border-bottom: 1px solid $lightgray;
 }
+
 #bottom-content section {
 	@media screen and (max-width: $mobile_max_width){
 		padding: 25px 0px;
@@ -4033,8 +4035,12 @@ section.block-social-share-social-share {
     border-top: 1px solid $lightgray;
     h2.block-title {
         text-align: center;
+        font-size: 30px;
         color: $navy;
         margin-bottom: 25px;
+        @media screen and (max-width: $mobile_max_width) {
+          font-size: 22px;
+        }
     }
 }
 
@@ -4332,6 +4338,13 @@ section.block-social-share-social-share {
 }
 
 /* ------------ Categories landing page and block --------- */
+// page title here. the block title is handled under homepage.
+.page-node-651 #page-title {
+  font-size: 30px;
+  @media screen and (max-width: $mobile_max_width) {
+    font-size: 20px;
+  }
+}
 
 #categories-container {
     @include display-flex();
