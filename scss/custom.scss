@@ -1895,8 +1895,9 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         }
         .views-field.views-field-title {
             font-size: 16px;
-            padding: 0px 0px 5px;
+            padding: 0px 0px 8px;
             display: block;
+            border-bottom: 1px solid $lightgray;
         }
 //        .views-field.views-field-field-free,
 //        .views-field.views-field-field-price,
@@ -4561,7 +4562,7 @@ byu-search.mobile-view .form-item .custom-search-box {
 // other pages should be capitalized correctly, doing this since often tags aren't capitalized
 .page-taxonomy-term h1#page-title {
     text-transform: capitalize;
-//	border-bottom: 1px solid #e5e5e5;
+//	border-bottom: 1px solid $lightgray;
 //    padding-bottom: 10px;
 //	margin-right: 135px;
 }
@@ -4751,7 +4752,7 @@ byu-search.mobile-view .form-item .custom-search-box {
 		-webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
 		-moz-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
 		box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
-		border: 1px solid #e5e5e5;
+		border: 1px solid $lightgray;
 		padding: 5px 10px;
 		width: 550px;
       min-height: 28px;
