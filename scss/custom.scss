@@ -1895,9 +1895,12 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         }
         .views-field.views-field-title {
             font-size: 16px;
-            padding: 0px 0px 8px;
+            padding: 5px 0px 0px;
             display: block;
-            border-bottom: 1px solid $lightgray;
+            border-top: 1px solid $lightgray;
+        }
+        .views-field.views-field-title:first-of-type() {
+          border-top: none;
         }
 //        .views-field.views-field-field-free,
 //        .views-field.views-field-field-price,
