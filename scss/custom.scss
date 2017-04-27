@@ -3580,6 +3580,13 @@ div#edit-field-full-name {
         h1#page-titile:before {
     //        content: "Step 1: "
         }
+
+      .form-item.form-type-select.form-item-workbench-moderation-state-new > label {
+        display: none;
+      }
+      .form-item.form-type-select.form-item-workbench-moderation-state-new:before {
+        content: "Publishing Status";
+      }
     }
     
     // display some fieldsets
