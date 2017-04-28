@@ -2286,14 +2286,14 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         border: none;
         margin-bottom: 15px;
     }
-    td {
-      min-width: 102px;
-      max-width: 102px;
-    }
-    td:first-of-type {
-      min-width: 70px;
-      max-width: 70px;
-    }
+    //td {
+    //  min-width: 102px;
+    //  max-width: 102px;
+    //}
+    //td:first-of-type {
+    //  min-width: 70px;
+    //  max-width: 70px;
+    //}
     td.single-day .calendar-empty, td.single-day.empty, td.date-box.empty {
         background: none;
         border: none; 

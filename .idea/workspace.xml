@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b94ae47e-9464-47f3-bc0e-6871ac63c0a0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/custom.scss" afterPath="$PROJECT_DIR$/scss/custom.scss" />
     </list>
     <ignored path="byu_calendar.iws" />
@@ -65,8 +64,8 @@
       <file leaf-file-name="custom.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scss/custom.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.799435">
-              <caret line="1906" column="50" selection-start-line="1906" selection-start-column="50" selection-end-line="1906" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.3022599">
+              <caret line="2288" column="0" selection-start-line="2288" selection-start-column="0" selection-end-line="2295" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -680,8 +679,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/custom.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.799435">
-          <caret line="1906" column="50" selection-start-line="1906" selection-start-column="50" selection-end-line="1906" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.3022599">
+          <caret line="2288" column="0" selection-start-line="2288" selection-start-column="0" selection-end-line="2295" selection-end-column="7" />
           <folding />
         </state>
       </provider>
