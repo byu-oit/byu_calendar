@@ -3651,6 +3651,15 @@ div#edit-field-full-name {
 		#edit-field-internal-category .description {
 			padding: 10px 0px 5px;
 		}
+        .hierarchical-select-wrapper-for-name-edit-field-internal-category-und .selects select {
+          min-height: 60px;
+        }
+        button#edit-field-internal-category-und-hierarchical-select-dropbox-add--2:before {
+          content: "You must click ";
+        }
+        button#edit-field-internal-category-und-hierarchical-select-dropbox-add--2:after {
+          content: " to save your department";
+        }
 		#edit-field-are-tickets-und {
 //			margin-left: 10px;  // don't need now it's on it's own line.
 		}
