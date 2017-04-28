@@ -33,7 +33,7 @@ $headers = (isset($item['header_id'])) ? ' headers="'. $item['header_id'] .'" ' 
 
       // else if this is month from menu, without date argument in url
 
-        echo '</div><div class="link-to-day"><a href="' . $prelinks . $item['date'] . '">SEE MORE ></a></div>';
+        echo '</div><div class="link-to-day"><a href="' . $prelinks . $item['date'] . '">MORE ></a></div>';
     }
     ?>
 <!--    </div>-->
