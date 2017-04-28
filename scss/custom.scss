@@ -3593,6 +3593,11 @@ div#edit-field-full-name {
         font-size: 20px;
         display: block;
       }
+      .role-area-manager .form-item.form-type-select.form-item-workbench-moderation-state-new:after {
+        content: "Since you are an area manager your event will be automatically published when you select 'Needs Review'";
+      }
+
+
     }
     
     // display some fieldsets
