@@ -1,13 +1,10 @@
 <!--.page -->
 <div role="document" class="page">
 <byu-header>
-<!--    <span slot="title">-->
-       <?php if ($site_name): ?>
 
-         <!--         --><?php //else: /* Use h1 when the content title is empty */ ?>
+       <?php if ($site_name): ?>
              <a slot="site-title" id="site-name" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
 
-<!--         --><?php //endif; ?>
        <?php endif; ?>
 
   <!-- header actions -->
@@ -168,7 +165,6 @@
 
       <a id="main-content"></a>
 
-      <?php /* if ($breadcrumb): print $breadcrumb; endif; */ ?>
 
       <?php if ($title && !$is_front): ?>
         <?php print render($title_prefix); ?>
