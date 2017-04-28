@@ -217,14 +217,14 @@ byu-header a:hover,
   padding-bottom: 0;
   margin: 0 15px;
 }
-byu-header[mobile-view] {
-  [slot=actions] a {
-    color: #002e5d!important;
-    font-weight: 500;
-    margin-left: -13px;
-    /* margin: 5px 0px; */
-  }
+
+[slot=actions].mobile-view a {
+  color: $navy!important;
+  font-weight: 500;
+  margin-left: -13px;
+  /* margin: 5px 0px; */
 }
+
 
 //[slot="actions"] :last-of-type() {
 //  /* color: pink; */
