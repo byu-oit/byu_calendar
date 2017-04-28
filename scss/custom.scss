@@ -3580,12 +3580,18 @@ div#edit-field-full-name {
         h1#page-titile:before {
     //        content: "Step 1: "
         }
-
+    // modifying publishing info section
+      .form-item.form-type-checkbox.form-item-promote,
+      .form-item.form-type-checkbox.form-item-sticky,
       .form-item.form-type-select.form-item-workbench-moderation-state-new > label {
         display: none;
       }
       .form-item.form-type-select.form-item-workbench-moderation-state-new:before {
         content: "Publishing Status";
+        font-weight: 500;
+        padding-bottom: 6px;
+        font-size: 20px;
+        display: block;
       }
     }
     
