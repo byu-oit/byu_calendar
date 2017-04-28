@@ -187,7 +187,7 @@ h1#page-title {
 }
 
 
-/* - BYU Components stylineg --- */
+/* - BYU Components styling --- */
 
 //a {
 //  color: $navy;
@@ -210,12 +210,22 @@ byu-header a:hover,
     font-family: "Vitesse A", "Vitesse B", serif;
   }
 }
+[slot="actions"] a,
 [slot="actions"] div,
 [slot="actions"] p {
   /* color: pink; */
   padding-bottom: 0;
   margin: 0 15px;
 }
+byu-header[mobile-view] {
+  [slot=actions] a {
+    color: #002e5d!important;
+    font-weight: 500;
+    margin-left: -13px;
+    /* margin: 5px 0px; */
+  }
+}
+
 //[slot="actions"] :last-of-type() {
 //  /* color: pink; */
 //  padding-bottom: 0;
