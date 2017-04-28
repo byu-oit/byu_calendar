@@ -1895,7 +1895,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     }
     .views-field.views-field-title {
         font-size: 16px;
-        padding: 5px 0px 0px;
+        padding: 0px 0px 5px;
         display: block;
     }
     .inner > .item:first-of-type .views-field.views-field-title {
@@ -1997,9 +1997,9 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 /* -- month override for title -- */
 .page-calendar-month.large-screen .view-large-screen-calendar {
   .views-field.views-field-title {
-    padding: 5px 0px 0px;
-    display: block;
-    border-top: 1px solid $lightgray;
+    //padding: 5px 0px 0px;
+    //display: block;
+    //border-top: 1px solid $lightgray;
   }
 }
 
