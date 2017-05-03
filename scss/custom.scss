@@ -3439,6 +3439,7 @@ fieldset.group-pricing legend {
 #edit-field-thumbnail:before {
   content: "Thumbnail Image";
   font-weight: 500;
+  text-transform: uppercase;
 }
 #edit-field-thumbnail {
   @media screen and (max-width: 767px) {
@@ -3454,11 +3455,12 @@ fieldset.group-pricing legend {
   }
   .image-widget {
     a.imce-filefield-opener {
-      background: #002e5d!important;
+      background: $navy!important;
       color: #fff;
       display: block;
-      padding: 8px 12px;
-      width: 350px;
+      padding: 10px 12px;
+      width: 370px;
+      text-align: center;
       position: relative;
       left: 20px;
 
