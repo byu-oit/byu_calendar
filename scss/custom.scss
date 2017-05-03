@@ -3436,7 +3436,10 @@ fieldset.group-pricing legend {
 
 
 // thumbnail
-
+#edit-field-thumbnail:before {
+  content: "Thumbnail Image";
+  font-weight: 500;
+}
 #edit-field-thumbnail {
   @media screen and (max-width: 767px) {
     // hide imce link for mobile, can't work well for mobile
@@ -3444,8 +3447,22 @@ fieldset.group-pricing legend {
       display: none;
     }
   }
+
   label {
     width: 100%;
+    display: none;
+  }
+  .image-widget {
+    a.imce-filefield-opener {
+      background: #002e5d!important;
+      color: #fff;
+      display: block;
+      padding: 8px 12px;
+      width: 350px;
+      position: relative;
+      left: 20px;
+
+    }
   }
   .image-widget-data {
     input, button {
@@ -3474,14 +3491,15 @@ fieldset.group-pricing legend {
 		background: none;
 	}
 	a.imce-filefield-opener:after {
-		content: " (If you need to crop your image)";
+		content: " to upload your image.";
 	}
 
 	.image-widget-data:after {
-		content: "600px x 600px PNG or JPG. This will be on display each time your event is referenced. Please ensure it is cropped to the correct dimensions and does not have any words included on it.";
+		content: "600px x 600px PNG or JPG. This will be on display each time your event is referenced. Please ensure it is cropped to the correct dimensions and does not have any words included on it. (Cropping and resizing options are available, unless you are on a mobile device.)";
 		margin-bottom: 20px;
 		font-size: 14px;
 		line-height: 16px;
+        padding: 10px 0px 0px;
 	}
     .image-widget:after {
 //        content: "This will be on display each time your event is referenced. Please ensure it is cropped to the correct dimensions and does not have any words included on it.";
