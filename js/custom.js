@@ -1,16 +1,12 @@
 jQuery.noConflict();
 
 
-
-
+// from byu-theme-components documentation:
+function d7Search(value) {
+	jQuery('#search-block-form button').click();
+}
 
 jQuery( document ).ready(function( $ ) {
-
-
-	// from 2017-components:
-	function d7SearchComplex(value) {
-		document.getElementById('edit-submit--2').click();
-	}
 
 
 

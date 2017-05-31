@@ -60,7 +60,7 @@
   </byu-user-info>
 
 	
-    <byu-search slot="search">
+    <byu-search slot="search" onsearch="d7Search">
 <!--		<div id="top-bar-search"> -->
 		  <?php 
 // they are working on allowing forms, when that works, enable this line again:
