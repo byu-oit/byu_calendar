@@ -15,7 +15,7 @@ ddd:
   context_map_url: 
 links:
   system_documentation_url: 
-  source_repo_url: https://github.com/byu-oit-appdev/byu_calendar
+  source_repo_url: https://github.com/byu-oit/byu_calendar
   swagger_urls:
 microservice: false
 technologies_used:
@@ -56,5 +56,5 @@ tags:
   env: dev
   team: AD-Front End Technologies and Applications
   app: BYU Calendar - 2017
-federation_json_url: https://raw.githubusercontent.com/byu-oit-appdev/byu_calendar/master/.repo-meta.yml
+federation_json_url: https://raw.githubusercontent.com/byu-oit/byu_calendar/master/.repo-meta.yml
 
