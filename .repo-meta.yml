@@ -1,60 +1,60 @@
---- 
-$schemaver: 1.1
-name: BYU Calendar - 2017
-type: Web App
-aliases:
-short_description: BYU web calendar software.  Joe Hadfield is the supervisor. Natalie Ipson (Univeristy Communications) manages the content and accounts.
-assignment_group: gro:AD-Front End Technologies and Applications
-notes: 2017-04-14 Waiting for info from Julie Hatch as to the production AWS systems that will run the production.
-maintained_by:
-  - katrialesser
-developed_by_byu: true
-ddd:
-  business_domain: 
-  ubiquitous_language_url: 
-  context_map_url: 
-links:
-  system_documentation_url: 
-  source_repo_url: https://github.com/byu-oit/byu_calendar
-  swagger_urls:
-microservice: false
-technologies_used:
-  - AWS EC2
-  - Drupal
-  - PHP
-  - AWS ELB
-  - CSS
-  - JavaScript
-  - Ruby
-stages:
-  development:
-    urls:
-      product_page: https://calendar-test.byu.edu/
-      physical_url: 
-      virtual_url: 
-    hosting_location: AWS
-    aws_account: dev-oit-byu
-    relationships: 
-      depends_on:
-        db_read_write:
-        db_read_only:
-        software:
-          - Email Gateway
-      supports:
-        software:
-          - BYU Events Calendar
-        service:
-          - BYU Events Calendar
-      reverse_proxy: 
-      runs_on:
-        server_cluster:
-        virtual_server:
-        rack_server:
-        blade_server:
-tags:
-  data-sensitivity: confidential
-  env: dev
-  team: AD-Front End Technologies and Applications
-  app: BYU Calendar - 2017
-federation_json_url: https://raw.githubusercontent.com/byu-oit/byu_calendar/master/.repo-meta.yml
-
+---
+$schemaver: 2.0
+repo_url: https://github.com/byu-oit/byu_calendar
+software:
+  - name: BYU Calendar - 2017
+    type: Web App
+    aliases:
+    short_description: BYU web calendar software.  Joe Hadfield is the supervisor.
+        Natalie Ipson (Univeristy Communications) manages the content and accounts.
+    assignment_group: gro:AD-Front End Technologies and Applications
+    notes: 2017-04-14 Waiting for info from Julie Hatch as to the production AWS systems
+        that will run the production.
+    maintained_by:
+      - katrialesser
+    developed_by_byu: true
+    ddd:
+        business_domain:
+        ubiquitous_language_url:
+        context_map_url:
+    links:
+        system_documentation_url:
+        swagger_urls:
+    microservice: false
+    technologies_used:
+      - AWS EC2
+      - Drupal
+      - PHP
+      - AWS ELB
+      - CSS
+      - JavaScript
+      - Ruby
+    stages:
+        development:
+            urls:
+                product_page: https://calendar-test.byu.edu/
+                physical_url:
+                virtual_url:
+            hosting_location: AWS
+            aws_account: dev-oit-byu
+            relationships:
+                depends_on:
+                    db_read_write:
+                    db_read_only:
+                    software:
+                      - Email Gateway
+                supports:
+                    software:
+                      - BYU Events Calendar
+                    service:
+                      - BYU Events Calendar
+                reverse_proxy:
+                runs_on:
+                    server_cluster:
+                    virtual_server:
+                    rack_server:
+                    blade_server:
+    tags:
+        data-sensitivity: confidential
+        team: AD-Front End Technologies and Applications
+        app: BYU Calendar - 2017
