@@ -99,15 +99,18 @@ jQuery( document ).ready(function( $ ) {
 
 
 	// handle mobile left sidebar positioning
+
+	if ($("body").hasClass("one-sidebar") && $("body").hasClass("mobile-first")) {
+		var mainHeight = document.getElementById('main-container').offsetHeight;
+		console.log('main height is', mainHeight);
+		document.getElementById('page-container').style.height = mainHeight + 'px';
+
+	}
+
+
+
 	if ($("body").hasClass("mobile-first")) {
 
-		if ($("body").hasClass("one-sidebar")) {
-			var mainHeight = document.getElementById('main-container').offsetHeight;
-			console.log('main height is', mainHeight);
-			document.getElementById('page-container').style.height = mainHeight + 'px';
-
-
-		}
 
 		$(window).scroll(function (e) {
 			var top = $('#sidebar-first-container').offset().top - $(document).scrollTop();
