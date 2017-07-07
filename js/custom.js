@@ -103,8 +103,10 @@ jQuery( document ).ready(function( $ ) {
 
 		if ($("body").hasClass("one-sidebar")) {
 			var mainHeight = document.getElementById('main-container').style.height;
+			console.log('main height is', mainHeight);
 			document.getElementById('page-container').style.height = mainHeight + 'px';
 
+			
 			//var mainHeight = $('main.l-main').style.height;
 			//$('#page-container').style.height = mainHeight + 'px';
 
