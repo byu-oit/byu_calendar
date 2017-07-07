@@ -110,7 +110,7 @@ jQuery( document ).ready(function( $ ) {
 			//var mainHeight = $('main.l-main').style.height;
 			//$('#page-container').style.height = mainHeight + 'px';
 
-
+		}
 		$(window).scroll(function (e) {
 			var top = $('#sidebar-first-container').offset().top - $(document).scrollTop();
 			var mainTop = $('main').offset().top - $(document).scrollTop();
@@ -167,7 +167,7 @@ jQuery( document ).ready(function( $ ) {
 
 
 		})
-		}
+		
 	}
 
 
