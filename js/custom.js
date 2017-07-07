@@ -124,10 +124,15 @@ jQuery( document ).ready(function( $ ) {
 			var amountScrolled = $(document).scrollTop();
 			// for ios 
 
+			console.log('offset is');
+			console.log(offset);
+			console.log('amountscrolled is');
+			console.log(amountScrolled);
 
-			var total = offset + amountScrolled + 200;
-//			console.log('total is');
-//			console.log(total);
+			//var total = offset + amountScrolled + 200;
+			var total = offset + amountScrolled;
+			console.log('total is');
+			console.log(total);
 			if (total >= mainHeight) {  // if right at the end of main container or past into the footer
 				$('aside.columns.sidebar-first').removeClass('scrolled');
 //				console.log('footer is shown');
