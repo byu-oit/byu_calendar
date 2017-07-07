@@ -130,10 +130,10 @@ jQuery( document ).ready(function( $ ) {
 			console.log(amountScrolled);
 
 			//var total = offset + amountScrolled + 200;
-			var total = offset + amountScrolled;
+			var total = win.height() + amountScrolled;
 			//console.log('total is');
 			//console.log(total);
-			if (amountScrolled >= offset) {  // if right at the end of main container or past into the footer
+			if (total >= offset) {  // if right at the end of main container or past into the footer
 				$('aside.columns.sidebar-first').removeClass('scrolled');
 //				console.log('footer is shown');
 			} else {
