@@ -100,12 +100,12 @@ jQuery( document ).ready(function( $ ) {
 
 	// handle mobile left sidebar positioning
 
-	if ($("body").hasClass("one-sidebar") && $("body").hasClass("mobile-first")) {
-		var mainHeight = document.getElementById('main-container').offsetHeight;
-		console.log('main height is', mainHeight);
-		document.getElementById('page-container').style.height = mainHeight + 'px';
-
-	}
+	//if ($("body").hasClass("one-sidebar") && $("body").hasClass("mobile-first")) {
+	//	var mainHeight = document.getElementById('main-container').offsetHeight;
+	//	console.log('main height is', mainHeight);
+	//	document.getElementById('page-container').style.height = mainHeight + 'px';
+    //
+	//}
 
 
 
