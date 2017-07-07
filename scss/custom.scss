@@ -901,7 +901,24 @@ main #main-content-section.scrolled {
 //        margin-top: 45px;
     }
     
-} 
+}
+
+// mobile regions
+.mobile.one-sidebar {
+  #page-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  main.row.l-main {
+    float: none;
+    margin: 0px;
+    flex: 1;
+  }
+
+}
+
+
 
 @media only screen and (min-width: 768px) {
     //correcting for later breakpoint
