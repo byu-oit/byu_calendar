@@ -107,10 +107,8 @@ jQuery( document ).ready(function( $ ) {
 			document.getElementById('page-container').style.height = mainHeight + 'px';
 
 
-			//var mainHeight = $('main.l-main').style.height;
-			//$('#page-container').style.height = mainHeight + 'px';
-
 		}
+
 		$(window).scroll(function (e) {
 			var top = $('#sidebar-first-container').offset().top - $(document).scrollTop();
 			var mainTop = $('main').offset().top - $(document).scrollTop();
@@ -120,7 +118,7 @@ jQuery( document ).ready(function( $ ) {
 
 			var offset = $('#byu-footer').offset().top;
 			//  for non ios browsers
-			var amountScrolled = $(document).scrollTop()
+			var amountScrolled = $(document).scrollTop();
 			// for ios 
 
 
@@ -167,7 +165,7 @@ jQuery( document ).ready(function( $ ) {
 
 
 		})
-		
+
 	}
 
 
