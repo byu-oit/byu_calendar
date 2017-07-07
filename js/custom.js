@@ -130,7 +130,7 @@ jQuery( document ).ready(function( $ ) {
 			console.log(amountScrolled);
 
 			//var total = offset + amountScrolled + 200;
-			var total = win.height() + amountScrolled;
+			var total = $(window).height() + amountScrolled;
 			//console.log('total is');
 			//console.log(total);
 			if (total >= offset) {  // if right at the end of main container or past into the footer
