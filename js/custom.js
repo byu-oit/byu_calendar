@@ -102,8 +102,11 @@ jQuery( document ).ready(function( $ ) {
 	if ($("body").hasClass("mobile-first")) {
 
 		if ($("body").hasClass("one-sidebar")) {
-			var mainHeight = $('main.l-main').offsetHeight;
-			$('#page-container').style.height = mainHeight + 'px';
+			var mainHeight = document.getElementById('main-container').style.height;
+			document.getElementById('page-container').style.height = mainHeight + 'px';
+
+			//var mainHeight = $('main.l-main').style.height;
+			//$('#page-container').style.height = mainHeight + 'px';
 
 
 		$(window).scroll(function (e) {
