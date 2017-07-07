@@ -100,6 +100,12 @@ jQuery( document ).ready(function( $ ) {
 
 	// handle mobile left sidebar positioning
 	if ($("body").hasClass("mobile-first")) {
+
+		if ($("body").hasClass("one-sidebar")) {
+			var mainHeight = $('main.l-main').offsetHeight;
+			$('#page-container').style.height = mainHeight + 'px';
+
+
 		$(window).scroll(function (e) {
 			var top = $('#sidebar-first-container').offset().top - $(document).scrollTop();
 			var mainTop = $('main').offset().top - $(document).scrollTop();
@@ -156,6 +162,7 @@ jQuery( document ).ready(function( $ ) {
 
 
 		})
+		}
 	}
 
 
