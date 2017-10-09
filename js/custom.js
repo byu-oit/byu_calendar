@@ -103,7 +103,9 @@ jQuery( document ).ready(function( $ ) {
 	if ($("body").hasClass("one-sidebar") && $("body").hasClass("mobile-first")) {
 		var mainContainerHeight = document.getElementById('main-container').offsetHeight;
 		console.log('main height is', mainContainerHeight);
-		document.getElementById('page-container').style.height = mainContainerHeight + 'px';
+        var distToFooter = $('#byu-footer').offset().top;
+        var mobileHeaderHeight = 55 + 35;
+		document.getElementById('page-container').style.height = (distToFooter - mobileHeaderHeight) + 'px';
 
 	}
 
