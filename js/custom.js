@@ -105,7 +105,8 @@ jQuery( document ).ready(function( $ ) {
 		console.log('main height is', mainContainerHeight);
         var distToFooter = $('#byu-footer').offset().top;
         var mobileHeaderHeight = 55 + 35;
-		document.getElementById('page-container').style.height = (distToFooter - mobileHeaderHeight) + 'px';
+		document.getElementById('page-container').style.height = (mainContainerHeight) + 'px';
+		// document.getElementById('page-container').style.height = (distToFooter - mobileHeaderHeight) + 'px';
 		console.log('disttofooter ', distToFooter);
 		console.log('mobileHEaderHeight ', mobileHeaderHeight);
 	}
@@ -129,8 +130,8 @@ jQuery( document ).ready(function( $ ) {
 
 			console.log('offset is');
 			console.log(offset);
-			console.log('amountscrolled is');
-			console.log(amountScrolled);
+			// console.log('amountscrolled is');
+			// console.log(amountScrolled);
 
 			//var total = offset + amountScrolled + 200;
 			var total = $(window).height() + amountScrolled;

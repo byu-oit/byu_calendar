@@ -2820,7 +2820,9 @@ section.block.block-views.block-views-category-page-blocks-block-2 {
 
 /* ---- general footer  --- */
 .site-footer.needs-width-setting {
-  width: 100%;
+  @media screen and (max-width: 1199px) {
+    width: 100% !important;
+  }
 }
 .royal-button.footer-subscribe-button {
   font-size: 16px;
