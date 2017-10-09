@@ -106,7 +106,8 @@ jQuery( document ).ready(function( $ ) {
         var distToFooter = $('#byu-footer').offset().top;
         var mobileHeaderHeight = 55 + 35;
 		document.getElementById('page-container').style.height = (distToFooter - mobileHeaderHeight) + 'px';
-
+		console.log('disttofooter ', distToFooter);
+		console.log('mobileHEaderHeight ', mobileHeaderHeight);
 	}
 
 
