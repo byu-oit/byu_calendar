@@ -101,24 +101,17 @@ jQuery( document ).ready(function( $ ) {
 	// handle mobile left sidebar positioning
 
 	if ($("body").hasClass("one-sidebar") && $("body").hasClass("mobile-first")) {
-
-		function adjustForFooter() {
-			if ($('byu-header.byu-component-rendered').size() == 0) {
-				console.log('TEEEEEEST');
-				window.setTimeout(adjustForFooter, 100);
-				return;
-			}
-            var mainContainerHeight = document.getElementById('main-container').offsetHeight;
-            // var mainContainerHeight = document.getElementById('main-container').style.height;
-            console.log('main height is', mainContainerHeight);
-            var distToFooter = $('#byu-footer').offset().top;
-            var mobileHeaderHeight = 55 + 35;
-            document.getElementById('page-container').style.height = (mainContainerHeight) + 'px';
-            // document.getElementById('page-container').style.height = (distToFooter - mobileHeaderHeight) + 'px';
-            console.log('disttofooter ', distToFooter);
-            console.log('mobileHEaderHeight ', mobileHeaderHeight);
-        };
-		adjustForFooter();
+		window.setTimeout(function() {
+			var mainContainerHeight = document.getElementById('main-container').offsetHeight;
+			// var mainContainerHeight = document.getElementById('main-container').style.height;
+			console.log('main height is', mainContainerHeight);
+			var distToFooter = $('#byu-footer').offset().top;
+			var mobileHeaderHeight = 55 + 35;
+			document.getElementById('page-container').style.height = (mainContainerHeight) + 'px';
+			// document.getElementById('page-container').style.height = (distToFooter - mobileHeaderHeight) + 'px';
+			console.log('disttofooter ', distToFooter);
+			console.log('mobileHEaderHeight ', mobileHeaderHeight);
+        }, 1);
 	}
 
 
