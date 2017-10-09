@@ -101,7 +101,8 @@ jQuery( document ).ready(function( $ ) {
 	// handle mobile left sidebar positioning
 
 	if ($("body").hasClass("one-sidebar") && $("body").hasClass("mobile-first")) {
-		var mainContainerHeight = document.getElementById('main-container').offsetHeight;
+		// var mainContainerHeight = document.getElementById('main-container').offsetHeight;
+		var mainContainerHeight = document.getElementById('main-container').style.height;
 		console.log('main height is', mainContainerHeight);
         var distToFooter = $('#byu-footer').offset().top;
         var mobileHeaderHeight = 55 + 35;
