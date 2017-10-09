@@ -117,7 +117,8 @@ jQuery( document ).ready(function( $ ) {
             // document.getElementById('page-container').style.height = (distToFooter - mobileHeaderHeight) + 'px';
             console.log('disttofooter ', distToFooter);
             console.log('mobileHEaderHeight ', mobileHeaderHeight);
-        }
+        };
+		adjustForFooter();
 	}
 
 
