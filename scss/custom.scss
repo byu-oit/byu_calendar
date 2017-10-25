@@ -303,7 +303,7 @@ section.l-bottom-content.row {
     color: #fff;
     text-align: center;
     a {
-        color: #fff;
+        color: #fff!important;
     }
 
 }
@@ -2819,7 +2819,11 @@ section.block.block-views.block-views-category-page-blocks-block-2 {
 
 
 /* ---- general footer  --- */
-
+.site-footer.needs-width-setting {
+  @media screen and (max-width: 1199px) {
+    width: 100% !important;
+  }
+}
 .royal-button.footer-subscribe-button {
   font-size: 16px;
   max-width: 150px;

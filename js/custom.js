@@ -101,10 +101,17 @@ jQuery( document ).ready(function( $ ) {
 	// handle mobile left sidebar positioning
 
 	if ($("body").hasClass("one-sidebar") && $("body").hasClass("mobile-first")) {
-		var mainContainerHeight = document.getElementById('main-container').offsetHeight;
-		console.log('main height is', mainContainerHeight);
-		document.getElementById('page-container').style.height = mainContainerHeight + 'px';
-
+		window.setTimeout(function() {
+			var mainContainerHeight = document.getElementById('main-container').offsetHeight;
+			// var mainContainerHeight = document.getElementById('main-container').style.height;
+			console.log('main height is', mainContainerHeight);
+			var distToFooter = $('#byu-footer').offset().top;
+			var mobileHeaderHeight = 55 + 35;
+			document.getElementById('page-container').style.height = (mainContainerHeight) + 'px';
+			// document.getElementById('page-container').style.height = (distToFooter - mobileHeaderHeight) + 'px';
+			console.log('disttofooter ', distToFooter);
+			console.log('mobileHEaderHeight ', mobileHeaderHeight);
+        }, 1);
 	}
 
 
@@ -126,8 +133,8 @@ jQuery( document ).ready(function( $ ) {
 
 			console.log('offset is');
 			console.log(offset);
-			console.log('amountscrolled is');
-			console.log(amountScrolled);
+			// console.log('amountscrolled is');
+			// console.log(amountScrolled);
 
 			//var total = offset + amountScrolled + 200;
 			var total = $(window).height() + amountScrolled;
