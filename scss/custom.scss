@@ -1004,7 +1004,7 @@ main #main-content-section.scrolled {
         right: auto;
     }
 }
-@media(min-width: $large_screen_start_width) {
+@media screen and (min-width: $large_screen_start_width) {
     #main-content-section.large-push-0 {
         left: 1.5%; 
     }
@@ -3965,7 +3965,7 @@ span.views-label.views-label-addtoany-link {
 }
 
 .node-type-event .popup-element-body {
-	@media(min-width: 340px) {
+	@media screen and (min-width: 340px) {
 		padding: 0px 0px 0px 25px;
 	}
 
