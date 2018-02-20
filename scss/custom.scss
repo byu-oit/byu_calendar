@@ -4687,6 +4687,10 @@ byu-search.mobile-view .form-item .custom-search-box {
 //   padding-right: 15px;
 //}
 
+#node-770 .book-navigation {
+    display: none;
+}
+
 
 // Collapsed/expanded sections on subscribe category blocks
 
@@ -4969,8 +4973,10 @@ byu-search.mobile-view .form-item .custom-search-box {
 
 // public subscribe page specific
 //.page-node-770
-.view-subscribe-to-multiple #edit-field-academic-registrar-dates-tid-wrapper {
-  margin-top: -80px;
+@media screen and (min-width: 768px) {
+	.view-subscribe-to-multiple #edit-field-academic-registrar-dates-tid-wrapper {
+  		margin-top: -80px;	
+	}
 }
 
 /* ----- random ----- */
