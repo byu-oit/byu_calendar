@@ -158,15 +158,15 @@ h3, h3 a {
 	font-size: 1.2em;
 }
 p, span, div {
-    font-family: "Gotham A","Gotham B";
+    font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
 }
 button, html, input, select, textarea { // overriding angular-material
-    font-family: "Gotham A","Gotham B"!important;
+    font-family: "HCo Ringside Narrow SSm", Arial, sans-serif!important;
 }
 h1, h2, h3, h4,
 .weekview-day-header, .list-header, .list-header div,
 .day-navigation-day-items, .weekview-day-header .day-header-day {
-    font-family: "Sentinel A","Sentinel B";
+    font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
 }
 h1 {
     color: $navy;
@@ -207,7 +207,7 @@ byu-header a:hover,
 
 #site-name {
   p,span,div {
-    font-family: "Vitesse A", "Vitesse B", serif;
+    font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
   }
 }
 [slot="actions"] a,
@@ -719,7 +719,7 @@ a.popup-element-title {
         background: #fff;
         color: $navy;
         float: right;
-        font-family: "Sentinel A", "Sentinel B";
+        font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
         font-size: 16px;
     }
     ul#secondary-menu li a,
@@ -1368,7 +1368,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     .views-field.views-field-title {
         font-size: 15px;
         display: inline;
-        font-family: "Sentinel A", "Sentinel B";
+        font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
     }
     .view-item.view-item-mobile_calendar {
         border-bottom: 1px solid $lightgray;
@@ -1495,7 +1495,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         font-weight: bold;
         font-size: 30px;
         margin-bottom: 25px;
-		font-family: "Sentinel A", "Sentinel B";
+		font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
     }
     .list-header-week {
         text-transform: uppercase;
@@ -1765,7 +1765,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
         }
 		#calendar-nav-bottom-pager {
 			width: 100%;
-			padding-right: 10px 5px 0px 0px;
+			padding: 10px 5px 0 0;
 		}
 
 		#calendar-nav-bottom-pager div,
@@ -2338,7 +2338,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
             padding: 10px 4px 15px;
             font-size: 30px;
             color: #fff;
-            font-family: "Sentinel A", "Sentinel B";
+            font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
             font-weight: bold;
         }
     }
@@ -2680,7 +2680,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     }
     
     h2 {
-        font-family: "Gotham A","Gotham B";
+        font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
         font-size: 16px;
         color: $navy;
     }
@@ -2769,7 +2769,7 @@ section.block.block-views.block-views-category-page-blocks-block-2 {
 	}
 	@media screen and (min-width: $large_screen_start_width){
 		font-size: 30px;
-		font-family: "Sentinel A", "Sentinel B";
+		font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
 		margin-top: -30px;
 		line-height: 33px;
 	}
@@ -2807,7 +2807,7 @@ section.block.block-views.block-views-category-page-blocks-block-2 {
     }
     .day {
         font-size: 40px;
-        font-family: "Sentinel A", "Sentinel B";
+        font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
         padding: 2px 0px;
         font-weight: bold;
     }
@@ -3042,7 +3042,7 @@ footer.l-footer.panel.row {
 .page-node-add, .page-node-edit, .page-node-clone {
 
     h1#page-title {
-        font-family: "Gotham A","Gotham B";
+        font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
         font-size: 16px;
         color: $navy;
     }
@@ -3264,7 +3264,6 @@ fieldset.date-combo.form-wrapper.date-processed .fieldset-wrapper {
 //    @include display-flex();  // comment so it's above, since we aren't doing a map.
     label {
         width: 120px;
-        padding
         padding-right: 15px;
     }
 }
@@ -3282,12 +3281,12 @@ fieldset.date-combo.form-wrapper.date-processed .fieldset-wrapper {
 	flex-wrap : wrap;
 }
 .mobile-first .form-item.form-item-field-are-tickets-und {
-    margin: 0px 0px 15px!important;
+    margin: 0 0 15px!important;
 }
 #edit-field-are-tickets-und .form-item {
     display: inline;
     float: left;
-    padding: 13px 5px 0px 0px;
+    padding: 13px 5px 0 0;
 }
 #edit-field-are-tickets > div > label {
 //    float: left;
@@ -3314,7 +3313,7 @@ textarea#edit-body-und-0-value {
 
 fieldset.group-pricing legend {
     display: none; // default to none
-    font-family: "Sentinel A", "Sentinel B";
+    font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
     text-transform: uppercase;
     font-size: 13px;
 //    padding: 0px 5px;
@@ -3546,7 +3545,7 @@ fieldset.group-pricing legend {
 		@media screen and (max-width: $mobile_max_width){
 			max-width: 300px;
 		}
-		@media screen and (min-width: $large_screen_start_with){
+		@media screen and (min-width: $large_screen_start_width){
 			max-width: 450px
 		}
     }
@@ -3632,7 +3631,7 @@ div#edit-field-full-name {
     }
     .page-node-add, .page-node-edit, .page-node-clone {
         h1#page-title {
-            font-family: "Sentinel A", "Sentinel B";
+            font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
             font-size: 28px;
             color: $navy;
         }
@@ -3812,7 +3811,7 @@ section.block.block-views.block-views-event-page-blocks-block {
     .views-field.views-field-nothing span.FACEBOOK-PAGE,
     .views-field.views-field-nothing span.FULL-WEBSITE {
         display: block!important;
-		@media screen and (min-width: $large_screen_start_with){
+		@media screen and (min-width: $large_screen_start_width){
 			@include display-flex-important();
 			align-items: center;
 		}
@@ -4168,7 +4167,7 @@ section.block-social-share-social-share {
 
     .views-field.views-field-title h1 {
         margin: 0px;
-        font-family: "Gotham A","Gotham B";
+        font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
         font-size: 20px;
         text-transform: uppercase;
         line-height: 22px;
@@ -4614,7 +4613,7 @@ byu-search.mobile-view .form-item .custom-search-box {
 		background: $gray !important;
 		color: #fff !important;
 		font-size: 15px;
-		font-family: "Gotham A","Gotham B";
+		font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
 		height: 32px;
 		width: 100px;
 		border: 1px solid $gray;
@@ -4671,7 +4670,7 @@ byu-search.mobile-view .form-item .custom-search-box {
 //  font-weight: bold;
 //  color: #002e5d;
 //  font-size: 24px;
-//  font-family: "Sentinel A","Sentinel B";
+//  font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
 //}
 //.view-id-subscribe_to_multiple .view-content {
 //  display: none;
@@ -4752,7 +4751,7 @@ byu-search.mobile-view .form-item .custom-search-box {
       font-weight: bold;
       color: $navy;
       font-size: 24px;
-      font-family: "Sentinel A", "Sentinel B";
+      font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
     }
     .view-content {
       display: none;
@@ -4784,7 +4783,7 @@ byu-search.mobile-view .form-item .custom-search-box {
 	  font-weight: bold;
 	  color: $navy;
 	  font-size: 24px;
-	  font-family: "Sentinel A","Sentinel B";
+	  font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
 	}
 
 	.view-content {
@@ -4832,7 +4831,7 @@ byu-search.mobile-view .form-item .custom-search-box {
 		font-size: 21px;
 		padding-bottom: 10px;
 //		text-transform: uppercase;
-		font-family: "Sentinel A", "Sentinel B";
+		font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
 	}
 	.bef-checkboxes .form-item label.option {
 	  /*font-weight: normal; */
@@ -4885,7 +4884,7 @@ byu-search.mobile-view .form-item .custom-search-box {
   .views-widget-filter-shs_term_node_tid_depth > label:after {
     content: "If you select a higher level category, it will include all of it's child categories. If you would like to select multiple categories, use the shift or control key to do so. If you select a specific category, you will not be given the parent category, as that will be redundant. i.e. if you select 'General' and 'BYU Ticket Office' then you will be given the id for the 'BYU Ticket Office, not 'General'. General would include BYU Ticket Office, as well as other categories like 'Faculty'.";
     font-weight: normal;
-    font-family: "Gotham A","Gotham B", Arial,Sans-serif;
+    font-family: "HCo Ringside Narrow SSm", Arial,Sans-serif;
     display: block;
     padding: 10px 0px 8px;
     font-size: 16px;
