@@ -9,16 +9,16 @@ $navy: #002E5D;
 $lightestblue: #C4CFDA;
 $lightblue: #A6B6C7;
 $lightmedblue: #889FB7;
-$medblue: #697F96;  // was #889FB7  but it couldn't have white on it with enough contrast
+$medblue: #697F96; // was #889FB7  but it couldn't have white on it with enough contrast
 // 697F96 is enough contrast for large text
-$darkmedblue: #5B728A;  // #5B728A is enough contrast for small white text
+$darkmedblue: #5B728A; // #5B728A is enough contrast for small white text
 
 
-    $dullnavy: desaturate($navy, 30%);
-    $dullblue: desaturate($navy, 70%);
-    $brightblue: lighten($navy, 50%);
-    $lightestblue: lighten($dullblue, 50%);
-    $mediumblue: darken($lightestblue, 3%);
+$dullnavy: desaturate($navy, 30%);
+$dullblue: desaturate($navy, 70%);
+$brightblue: lighten($navy, 50%);
+$lightestblue: lighten($dullblue, 50%);
+$mediumblue: darken($lightestblue, 3%);
 $xlightgray: #f2f2f2;
 $lightgray: #e5e5e5;
 $medgray: #9b9b9b;
@@ -31,7 +31,7 @@ $royallight: #114BAD;
 //other colors
 $greenlightened: #579600; // was #72B518;
 $green: #4D8501; // was #6EAE17;
-$greendarkened: #498000 ; // was #6AA816;
+$greendarkened: #498000; // was #6AA816;
 
 // other
 
@@ -39,151 +39,173 @@ $greendarkened: #498000 ; // was #6AA816;
 $nav_gradient: 10%;
 $nav_gradient_2: 5%;
 @mixin sidebar-inner-shadowbox() {
-    -webkit-box-shadow: inset -3px 0px 5px 0px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: inset -3px 0px 5px 0px rgba(0, 0, 0, 0.4);
-    box-shadow: inset -3px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: inset -3px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset -3px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: inset -3px 0px 5px 0px rgba(0, 0, 0, 0.4);
 }
-@mixin no-box-shadow () {
-	-webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
+
+@mixin no-box-shadow() {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
+
 @mixin main-outer-shadowbox() {
-    -webkit-box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.4);
-    box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.4);
 }
+
 @mixin display-flex() {
-    display: flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
 }
+
 @mixin display-flex-important() {
-    display: flex!important;
-    display: -webkit-box!important;
-    display: -moz-box!important;
-    display: -ms-flexbox!important;
-    display: -webkit-flex!important;
-    display: -webkit-box!important;
-    display: -moz-box!important;
-    display: -ms-flexbox!important;
-    display: -webkit-flex!important;
-    
+  display: flex !important;
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: -webkit-flex !important;
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: -webkit-flex !important;
+
 }
 
 @mixin button {
-    text-align: center;
-    padding: 9px 0px;
-    
+  text-align: center;
+  padding: 9px 0px;
+
 }
 
 
 /* ------------------------------------- */
 body {
-    color: $darkestgray;
+  color: $darkestgray;
 }
+
 a {
-    color: $royal;
+  color: $royal;
 }
+
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .node-readmore {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .alert-box {
-    z-index: 100;
+  z-index: 100;
 }
+
 .light-gray-bg {
-    background: $lightgray;
+  background: $lightgray;
 }
 
 .gray-button {
-    @include button;
-    background: $lightgray;
-    padding: 10px;
-    border: 1px solid $medgray;
-    margin: 10px;
-    text-align: center;
-    color: $navy;
-    font-size: 12px;
+  @include button;
+  background: $lightgray;
+  padding: 10px;
+  border: 1px solid $medgray;
+  margin: 10px;
+  text-align: center;
+  color: $navy;
+  font-size: 12px;
 }
+
 .green {
-	background-color: $green!important;
-	color: #fff;
+  background-color: $green !important;
+  color: #fff;
 }
+
 .green-button {
-    @include button;
-    background-color: $green!important;
-    padding: 9px 0px!important;
-    width: 120px;
-    font-size: 12px;
+  @include button;
+  background-color: $green !important;
+  padding: 9px 0px !important;
+  width: 120px;
+  font-size: 12px;
   font-weight: bold;
-    a {
-        color: #fff;
-    }   
+
+  a {
+    color: #fff;
+  }
 }
+
 .green,
 .green-button:hover {
-    background: $greenlightened;
+  background: $greenlightened;
 }
+
 .green,
 .green-button:active {
-    background: $greendarkened;
+  background: $greendarkened;
 }
 
 /* -------- font & sizing -------- */
-@media screen and (max-width: $mobile_max_width){
-    // set smaller header sizes for mobile.
-    h1 {
-        font-size: 1.3em;
-    }
-    
+@media screen and (max-width: $mobile_max_width) {
+  // set smaller header sizes for mobile.
+  h1 {
+    font-size: 1.3em;
+  }
+
 }
+
 h2 {
-    font-size: 1em;
+  font-size: 1em;
 }
 
 @media screen and (min-width: $large_screen_start_width) {
-    h2 {
-        font-size: 1.6875em;
-    }
+  h2 {
+    font-size: 1.6875em;
+  }
 }
+
 h3, h3 a {
-    color: $navy;
-	font-size: 1.2em;
+  color: $navy;
+  font-size: 1.2em;
 }
+
 p, span, div {
-    font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
+  font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
 }
+
 button, html, input, select, textarea { // overriding angular-material
-    font-family: "HCo Ringside Narrow SSm", Arial, sans-serif!important;
+  font-family: "HCo Ringside Narrow SSm", Arial, sans-serif !important;
 }
+
 h1, h2, h3, h4,
 .weekview-day-header, .list-header, .list-header div,
 .day-navigation-day-items, .weekview-day-header .day-header-day {
-    font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
+  font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
 }
+
 h1 {
-    color: $navy;
+  color: $navy;
 }
+
 h1#page-title {
-    margin-left: 0px;
-    margin-right: 15px;
+  margin-left: 0px;
+  margin-right: 15px;
 }
+
 .mobile-first h1#page-title {
-    margin-left: 15px;
+  margin-left: 15px;
 }
+
 .mobile-first.page-search h1#page-title {
-    margin-left: 0px;
+  margin-left: 0px;
 }
+
 // if they only want event page titles to be navy
 .page-node.node-type-event h1#page-title {
-//    color: $navy;
+  //    color: $navy;
 }
 
 
@@ -199,6 +221,7 @@ byu-header a,
 #site-name {
   color: #fff;
 }
+
 byu-header a:hover,
 #site-name a:hover {
   color: #fff;
@@ -206,10 +229,11 @@ byu-header a:hover,
 }
 
 #site-name {
-  p,span,div {
+  p, span, div {
     font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
   }
 }
+
 [slot="actions"] a,
 [slot="actions"] div,
 [slot="actions"] p {
@@ -219,7 +243,7 @@ byu-header a:hover,
 }
 
 [slot=actions].mobile-view a {
-  color: $navy!important;
+  color: $navy !important;
   font-weight: 500;
   //padding:0px 0px!important;
   margin-left: -13px;
@@ -234,7 +258,7 @@ byu-header a:hover,
 //}
 /* ------------ regions ----------------------*/
 section.l-top-title.row {
-    border-bottom: 1px solid $lightgray;
+  border-bottom: 1px solid $lightgray;
   @media screen and (max-width: $mobile_max_width) {
     h1 {
       font-size: 30px;
@@ -242,73 +266,83 @@ section.l-top-title.row {
   }
 
 }
+
 .front #top-content {
-	@media screen and (min-width: $large_screen_start_width) {
-    	@include display-flex();
-    	justify-content: center;
-	}
-    padding: 30px 0px;
-}
-#top-content {
-    padding: 30px 30px;
-}
-section.l-bottom-content.row {
-    max-width: 64em;
-}
-#bottom-content {
-    padding: 30px 0px;
+  @media screen and (min-width: $large_screen_start_width) {
+    @include display-flex();
+    justify-content: center;
+  }
+  padding: 30px 0px;
 }
 
+#top-content {
+  padding: 30px 30px;
+}
+
+section.l-bottom-content.row {
+  max-width: 64em;
+}
+
+#bottom-content {
+  padding: 30px 0px;
+}
 
 
 /* ------ often used classes ------------*/
 .hide-labels label,
 .hidden {
-    display: none;
+  display: none;
 }
 
 .panel {
-    background: #fff;
+  background: #fff;
 }
 
 .gray-button {
-    background-color: $lightgray!important;
-    padding: 9px 12px!important;
-    font-size: 12px;
-    a {
-       color: $navy;
-    }
+  background-color: $lightgray !important;
+  padding: 9px 12px !important;
+  font-size: 12px;
+
+  a {
+    color: $navy;
+  }
 }
+
 .medgray-button {
-    background-color: $medgray!important;
-    padding: 9px 0px!important;
-	text-align: center;
-    font-size: 12px;
-    font-weight: bold;
+  background-color: $medgray !important;
+  padding: 9px 0px !important;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  height: 30px;
+
+  a {
     color: #fff;
-    height: 30px;
-    a {
-        color: #fff;
-    }
+  }
 
 }
+
 .medgray-button:hover {
-    background: #a2a2a2;
+  background: #a2a2a2;
 }
+
 .royal-button {
-    background-color: $royal;
-    padding: 9px 12px!important;
-    font-size: 12px;
-    font-weight: bold;
-    color: #fff;
-    text-align: center;
-    a {
-        color: #fff!important;
-    }
+  background-color: $royal;
+  padding: 9px 12px !important;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+
+  a {
+    color: #fff !important;
+  }
 
 }
+
 .royal-button:hover {
-    background: $royallight;
+  background: $royallight;
 }
 
 //.blue-inline-label {
@@ -321,199 +355,225 @@ section.l-bottom-content.row {
 
 // mobile grayed out nav
 .mobile-first .grayedout div {
-	//background: $medgray;
-	//color: $medgray!important;
-}
-// large screen grayed out nav
-.large-screen .grayedout {
-	//background: $lightgray!important;
+  //background: $medgray;
+  //color: $medgray!important;
 }
 
+// large screen grayed out nav
+.large-screen .grayedout {
+  //background: $lightgray!important;
+}
 
 
 /* ----- general input things like checkboxes etc ----- */
 @mixin gray-select {
-    font-weight: bold;
-    color: $gray;
-    border: 1px solid $medgray;
-    padding: 2px 25px 2px 6px;
+  font-weight: bold;
+  color: $gray;
+  border: 1px solid $medgray;
+  padding: 2px 25px 2px 6px;
 
 }
 
 @mixin select-dropdown {
-    background: #fff;
-    background: url("/sites/all/themes/byu_calendar/images/gray-bg-dropdown-arrow.png") no-repeat right white;
-    -webkit-appearance: none; 
-    -moz-appearance: none;
-    -o-appearance:none;
-    appearance:none;
-//    background-position-x: 244px;
+  background: #fff;
+  background: url("/sites/all/themes/byu_calendar/images/gray-bg-dropdown-arrow.png") no-repeat right white;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  //    background-position-x: 244px;
 }
+
 @mixin plain-dropdown {
-    background: #fff;
-    background: url("/sites/all/themes/byu_calendar/images/gray-bg-dropdown-arrow.png") no-repeat right white;
-    -webkit-appearance: none; 
-    -moz-appearance: none;
-    -o-appearance:none;
-    appearance:none;
+  background: #fff;
+  background: url("/sites/all/themes/byu_calendar/images/gray-bg-dropdown-arrow.png") no-repeat right white;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
 }
+
 select::-ms-expand {
-    display: none;
+  display: none;
 }
 
 // Checkboxes
 input[type="file"], input[type="checkbox"], input[type="radio"], select {
-    margin: 0 0 1px 0;
+  margin: 0 0 1px 0;
 }
 
 /* Hide the Ordinary Checkbox */
 body:not(.page-admin-content) input[type="checkbox"] {
-    display: none;
+  display: none;
 }
 
 @mixin basic-checkbox {
-    label {
-        position: relative;
-        margin-left: 32px;
-        font-size: 20px;
-        cursor: pointer;
-        color: #fff;
-        padding: 16px 28px 0 0;
-    }
-    label:before, label:after {
-        font-family: FontAwesome;
-        
-        color: $medgray;
-        /*absolutely positioned*/
-        position: absolute; top: 2px; left: -28px; right: 10px;
-    }
-    label:before {  // before is checkbox
-        content: '\f096'; /*checkbox unchecked */
-        font-size: 23px;
-    }
-    label:after {  // after is checkmark
-        content: '\f00c'; /*checkbox checked*/
-        max-width: 0;
-        overflow: hidden;
-        opacity: 0.5;
-        font-size: 23px;
-        top: -3px;
-        left: -27px;
-        color: $green;
+  label {
+    position: relative;
+    margin-left: 32px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+    padding: 16px 28px 0 0;
+  }
+  label:before, label:after {
+    font-family: FontAwesome;
 
-        -webkit-transition: all 0.50s;
-        -moz-transition: all 0.50s;
-        -o-transition: all 0.50s;
-         transition: all 0.50s;
-    }
+    color: $medgray;
+    /*absolutely positioned*/
+    position: absolute;
+    top: 2px;
+    left: -28px;
+    right: 10px;
+  }
+  label:before { // before is checkbox
+    content: '\f096'; /*checkbox unchecked */
+    font-size: 23px;
+  }
+  label:after { // after is checkmark
+    content: '\f00c'; /*checkbox checked*/
+    max-width: 0;
+    overflow: hidden;
+    opacity: 0.5;
+    font-size: 23px;
+    top: -3px;
+    left: -27px;
+    color: $green;
+
+    -webkit-transition: all 0.50s;
+    -moz-transition: all 0.50s;
+    -o-transition: all 0.50s;
+    transition: all 0.50s;
+  }
 }
-.form-type-checkbox {   
-    // basic for editing and adding nodes
-   @include basic-checkbox; 
+
+.form-type-checkbox {
+  // basic for editing and adding nodes
+  @include basic-checkbox;
 }
+
 // checkboxes for views better exposed filters
 .form-type-bef-checkbox {
-    @include basic-checkbox; 
-    label {
-        font-size: 13px;  // smaller checkbox
-        margin-left: 28px;
-        padding: 5px 0px 0 0;
-    }
-    label:before, label:after {
-//        color: $navy;
-    }
-    label:before {
-        font-size: 20px;
-    }
-    label:after {
-        font-size: 19px;
-        left: -26px;
-        top: -1px;
-    }
-    
-}
-// firefox smaller size
-.ff .form-type-bef-checkbox {
-    label {
-//        font-size: 13px; 
-	}
-}
-/* Animating the Checkbox Icon */
-input[type="checkbox"]:checked ~ label:after {
-    max-width: 25px;
-    opacity: 1;
-    margin-right: 35px;
+  @include basic-checkbox;
+
+  label {
+    font-size: 13px; // smaller checkbox
+    margin-left: 28px;
+    padding: 5px 0px 0 0;
+  }
+
+  label:before, label:after {
+    //        color: $navy;
+  }
+
+  label:before {
+    font-size: 20px;
+  }
+
+  label:after {
+    font-size: 19px;
+    left: -26px;
+    top: -1px;
+  }
+
 }
 
+// firefox smaller size
+.ff .form-type-bef-checkbox {
+  label {
+    //        font-size: 13px;
+  }
+}
+
+/* Animating the Checkbox Icon */
+input[type="checkbox"]:checked ~ label:after {
+  max-width: 25px;
+  opacity: 1;
+  margin-right: 35px;
+}
 
 
 .ui-timepicker-table td a {
-    width: 2.2em;
+  width: 2.2em;
 }
+
 .ui-timepicker-table .ui-timepicker-title {
-    background: $navy;
-    color: #fff;
+  background: $navy;
+  color: #fff;
 }
+
 .chosen-container-single .chosen-single {
-    padding: 0px 15px;
-    color: $gray;
+  padding: 0px 15px;
+  color: $gray;
 }
+
 .chosen-container-single .chosen-search input[type="text"] {
-    box-shadow: none;
-    border: none;
-    border-top: 1px solid $medgray;
-    border-bottom: 1px solid $medgray;
-    padding: 7px 15px;
+  box-shadow: none;
+  border: none;
+  border-top: 1px solid $medgray;
+  border-bottom: 1px solid $medgray;
+  padding: 7px 15px;
 }
+
 // pull dropdown up so it covers the top search part
 .chosen-container-single .chosen-drop {
-    margin-top: -26px;
-    border-radius: 4px;
-    background-clip: padding-box;
+  margin-top: -26px;
+  border-radius: 4px;
+  background-clip: padding-box;
 }
 
 .chosen-container .chosen-results {
-    text-transform: lowercase;
-    padding: 0px;
+  text-transform: lowercase;
+  padding: 0px;
 }
+
 // hide first, which is 'search'
 .chosen-container .chosen-results li:first-of-type {
-//    display: none;
+  //    display: none;
 }
+
 .chosen-container .chosen-results li:first-of-type:before {
-//    content: "--clear ";
+  //    content: "--clear ";
 }
+
 .chosen-container .chosen-results li:first-of-type:after {
-//    content: "--";
+  //    content: "--";
 }
+
 .chosen-container .chosen-results li {
-    color: $gray;
-    padding: 7px 15px;
+  color: $gray;
+  padding: 7px 15px;
 }
+
 .mobile .chosen-container .chosen-results li {
-//    padding-left: 5px 15px;
+  //    padding-left: 5px 15px;
 }
+
 .chosen-container .chosen-results li.highlighted {
-    background-color: $navy!important;
-    background-image: none!important;
-    color: #fff;
+  background-color: $navy !important;
+  background-image: none !important;
+  color: #fff;
 }
+
 .chosen-container-single .chosen-single {
-    background: none;
-    border-radius: 2px;
+  background: none;
+  border-radius: 2px;
 }
+
 .chosen-container-single .chosen-search {
-    padding: 0px;
-    input[type="text"] {
-        
-    }
+  padding: 0px;
+
+  input[type="text"] {
+
+  }
 }
 
 .chosen-drop ul.chosen-results {
-    max-height: 175px;
+  max-height: 175px;
 }
+
 .mobile .chosen-drop ul.chosen-results {
-    max-height: 150px;
+  max-height: 150px;
 }
 
 
@@ -521,279 +581,307 @@ input[type="checkbox"]:checked ~ label:after {
 // formatting popup
 // normal styling didnt work with background repeat
 a.popup-element-title {
-    background-image: none;
+  background-image: none;
 }
+
 .popup-element-body {
-	background: #fff;
-	padding: 15px 0px 0px 0px;
-	border: 1px solid $navy;
-	border-radius: 10px;
-	
-	@include main-outer-shadowbox();
-	
-	.left, .center, .right {
-		background-image: none!important;
-	}
-	a.popup-close-button span {
-    	display: block!important;
-		color: #fff;
-	}
-	a.popup-close-button span:before {
-		content: "CLOSE";
-		color: #444;
-		margin-left: -52px;
-	}
-	a.popup-close-button span:hover:before {
-		color: #000;
-	}
-	a.popup-close-button:hover {
-		text-decoration: none!important;
-	}
+  background: #fff;
+  padding: 15px 0px 0px 0px;
+  border: 1px solid $navy;
+  border-radius: 10px;
+
+  @include main-outer-shadowbox();
+
+  .left, .center, .right {
+    background-image: none !important;
+  }
+
+  a.popup-close-button span {
+    display: block !important;
+    color: #fff;
+  }
+
+  a.popup-close-button span:before {
+    content: "CLOSE";
+    color: #444;
+    margin-left: -52px;
+  }
+
+  a.popup-close-button span:hover:before {
+    color: #000;
+  }
+
+  a.popup-close-button:hover {
+    text-decoration: none !important;
+  }
 
 }
+
 .mobile-first .popup-element-body {
-	h3 {
-		margin-top: 20px;
-	}
-	a.popup-close-button {
-		top: -20px!important;
-	}  
+  h3 {
+    margin-top: 20px;
+  }
+
+  a.popup-close-button {
+    top: -20px !important;
+  }
 }
+
 .large-screen .popup-element-body {
-	padding: 15px 0px 0px 25px;
+  padding: 15px 0px 0px 25px;
 }
+
 // logged in as an editor
 .mobile-first.node-type-event .popup-element-origin {
-    left: 0px!important;
-    top: 660px!important;
+  left: 0px !important;
+  top: 660px !important;
 }
+
 .mobile-first.page-taxonomy-term .popup-element-origin {
-    top: 90px!important;
-    left: 320px!important;
+  top: 90px !important;
+  left: 320px !important;
 }
+
 .mobile-first .popup-element-body.origin-top-right.expand-bottom-left table.popup-layout {
-    top: -20px;
-    left: 0px;
+  top: -20px;
+  left: 0px;
 }
+
 // not logged in as an editor
 .mobile-first.node-type-event .popup-element-origin {
-    left: 0px!important;
-    top: 460px!important;
+  left: 0px !important;
+  top: 460px !important;
 }
+
 .mobile-first.page-taxonomy-term .popup-element-origin {
-    top: 90px!important;
-    left: 320px!important;
+  top: 90px !important;
+  left: 320px !important;
 }
+
 // idk where this is at? category pages i think
 .mobile-first .popup-element-body.origin-top-right.expand-bottom-left table.popup-layout {
-    top: -20px;
-    left: 0px;
+  top: -20px;
+  left: 0px;
 }
 
 
-
-    // formatting dropdown arrows
+// formatting dropdown arrows
 //    background: url(new_arrow.png) no-repeat right #ddd;
 
 /* ---- header top bar ------------------ */
 
 #top-bar-inner {
-    max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
-    @include display-flex();
-    justify-content: space-between;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  @include display-flex();
+  justify-content: space-between;
 
 }
+
 #top-right-inner {
-	display: none;
-	@media screen and (min-width: $large_screen_start_width) {
-		@include display-flex();
-		justify-content: flex-end;
-	}
-	#sign-in, #sign-out {
-		margin-left: 20px;
-		text-transform: uppercase;
-		font-weight: 100;
-		a {
-			color: #fff;
-		}
-	}
+  display: none;
+  @media screen and (min-width: $large_screen_start_width) {
+    @include display-flex();
+    justify-content: flex-end;
+  }
 
-	#sign-in i,
-	#sign-out i {
-//		font-family: FontAwesome;
-		font-size: 14px;
-		padding: 6px 8px;
-		border-radius: 21px;
-		margin-left: 10px;
-	}
-	#sign-in i,
-	#sign-out:hover i {
-		color: #fff;
-		border: 1px solid #fff;
-		background: none;
-	}
-	#sign-in:hover i,
-	#sign-out i {
-		color: $navy;
-		border: 1px solid $navy;
-		background: #fff;
-	}
+  #sign-in, #sign-out {
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-weight: 100;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  #sign-in i,
+  #sign-out i {
+    //		font-family: FontAwesome;
+    font-size: 14px;
+    padding: 6px 8px;
+    border-radius: 21px;
+    margin-left: 10px;
+  }
+
+  #sign-in i,
+  #sign-out:hover i {
+    color: #fff;
+    border: 1px solid #fff;
+    background: none;
+  }
+
+  #sign-in:hover i,
+  #sign-out i {
+    color: $navy;
+    border: 1px solid $navy;
+    background: #fff;
+  }
 }
+
 .logged-in #top-right-inner #sign-in,
 .not-logged-in #top-right-inner #sign-out {
-//body.page-admin .sign-out.not-for-admin-pages,
-//body:not(.page-admin) .sign-out.for-admin-pages {
-	display: none;
+  //body.page-admin .sign-out.not-for-admin-pages,
+  //body:not(.page-admin) .sign-out.for-admin-pages {
+  display: none;
 }
 
 .mobile-first .top-bar .title-area {
-    width: 100%;
+  width: 100%;
 }
-
-
 
 
 /* --------------- menu --------------- */
 
 @media screen and (max-width: $mobile_max_width) {
-	// fix admin menu?
-	// for mobile when admin menu shows, adjust page down, if menu is sticky, comment out if not
-	body.admin-menu, 
-	body.admin-menu.adminimal-menu.adminimal-backend, 
-	body.admin-menu.adminimal-menu.adminimal-frontend {
-		margin-top: 45px !important;
-	}
-	.slicknav_menu {
-		position: fixed; // maybe keep this	
-		top: 0px;
-		width: 100%;
-    	z-index: 100;
-	}
-	
-    .top-bar {
-        overflow: hidden;
-        height: 45px;
-        line-height: 45px;
-        position: fixed;
-        width: 100%;
-        background: $navy;
-        margin-bottom: 0;
-        @media screen and (max-width: $mobile_max_width) {
-//            position: fixed;
-            z-index: 50;
-        }
-		.name h1 a {
-			width: 60%;
-		}
-    }
-	.admin-menu .top-bar {
-		top: 45px;		
-	}
-    .top-bar.expanded .title-area {
-        background: $navy;
+  // fix admin menu?
+  // for mobile when admin menu shows, adjust page down, if menu is sticky, comment out if not
+  body.admin-menu,
+  body.admin-menu.adminimal-menu.adminimal-backend,
+  body.admin-menu.adminimal-menu.adminimal-frontend {
+    margin-top: 45px !important;
+  }
+  .slicknav_menu {
+    position: fixed; // maybe keep this
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .top-bar {
+    overflow: hidden;
+    height: 45px;
+    line-height: 45px;
+    position: fixed;
+    width: 100%;
+    background: $navy;
+    margin-bottom: 0;
+    @media screen and (max-width: $mobile_max_width) {
+      //            position: fixed;
+      z-index: 50;
     }
 
-    .top-bar-section ul {
-        background: none;
+    .name h1 a {
+      width: 60%;
     }
-    .top-bar .toggle-topbar.menu-icon a span {
-        color: $navy; // so the menu doesn't show
-    }
+  }
+  .admin-menu .top-bar {
+    top: 45px;
+  }
+  .top-bar.expanded .title-area {
+    background: $navy;
+  }
 
-    ul#secondary-menu li,
-    ul#main-menu li {
-        border-left: 2px solid $medgray;
-        width: 80%;
-    
-    }
-    ul#secondary-menu li.last.leaf {
-        border-bottom: 2px solid $medgray;
-        border-bottom-left-radius: 4px;
-    }
-    ul#secondary-menu li,
-    ul#secondary-menu li a,
-    ul#main-menu li,
-    ul#main-menu li a {
-        background: #fff;
-        color: $navy;
-        float: right;
-        font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
-        font-size: 16px;
-    }
-    ul#secondary-menu li a,
-    ul#main-menu li a {
-        padding: 8px 15px;
-//        width: 100%;
-    }
+  .top-bar-section ul {
+    background: none;
+  }
+  .top-bar .toggle-topbar.menu-icon a span {
+    color: $navy; // so the menu doesn't show
+  }
+
+  ul#secondary-menu li,
+  ul#main-menu li {
+    border-left: 2px solid $medgray;
+    width: 80%;
+
+  }
+  ul#secondary-menu li.last.leaf {
+    border-bottom: 2px solid $medgray;
+    border-bottom-left-radius: 4px;
+  }
+  ul#secondary-menu li,
+  ul#secondary-menu li a,
+  ul#main-menu li,
+  ul#main-menu li a {
+    background: #fff;
+    color: $navy;
+    float: right;
+    font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
+    font-size: 16px;
+  }
+  ul#secondary-menu li a,
+  ul#main-menu li a {
+    padding: 8px 15px;
+    //        width: 100%;
+  }
 }
+
 @media screen and (min-width: $large_screen_start_width) {
-     .top-bar {
-        position: relative;
-    }
+  .top-bar {
+    position: relative;
+  }
 }
+
 // for mobile and large
 li.leaf:hover {
-    background: $lightgray;
+  background: $lightgray;
 }
+
 .top-bar-section li a:not(.button):hover {
-    background: $lightgray;
-    color: $navy;
+  background: $lightgray;
+  color: $navy;
 }
+
 @media screen and (min-width: $large_screen_start_width) {
-    ul#secondary-menu {
-        display: none;
-    }   
+  ul#secondary-menu {
+    display: none;
+  }
 }
 
 /*  --- Random mobile display settings - */
 
 @media screen and (max-width: $mobile_max_width) {
-    ul.breadcrumbs {
-        display: none!important;
-    }
+  ul.breadcrumbs {
+    display: none !important;
+  }
 }
 
 /* ------- large screen menu =------- */
 
 @media screen and (min-width: $large_screen_start_width) {
-    
-    header.l-header { // if there is a menu, make this taller
-        height: 90px;
-    }
-    .top-bar-section {
-        position: relative;
-        width: 100%;
-        @include display-flex();
-        justify-content: center;
-        border-bottom: 1px solid $lightgray;
-        background: #fff;
-        ul {
-            background: #fff;
-        }
-        li {
-            list-style-type: none;
-            text-transform: uppercase;
-            a {
-                color: $navy;
-                font-weight: normal;
-                background: #fff;
-            }
-        }
-        ul li.hover > a:not(.button) {
-            background: $medgray;
-            color: #fff;
-        }
-        li.active {
-            background: $gray;
-            a {
-                color: #fff;
-            }
-        }
 
-    
+  header.l-header { // if there is a menu, make this taller
+    height: 90px;
+  }
+  .top-bar-section {
+    position: relative;
+    width: 100%;
+    @include display-flex();
+    justify-content: center;
+    border-bottom: 1px solid $lightgray;
+    background: #fff;
+
+    ul {
+      background: #fff;
     }
+
+    li {
+      list-style-type: none;
+      text-transform: uppercase;
+
+      a {
+        color: $navy;
+        font-weight: normal;
+        background: #fff;
+      }
+    }
+
+    ul li.hover > a:not(.button) {
+      background: $medgray;
+      color: #fff;
+    }
+
+    li.active {
+      background: $gray;
+
+      a {
+        color: #fff;
+      }
+    }
+
+
+  }
 
 
 }
@@ -802,105 +890,117 @@ li.leaf:hover {
 /* ---- mobile area settings --- */
 
 header.l-header {
-    width: 100%;
-    @media screen and (max-width: $mobile_max_width){
-        height: 45px;    
-    }
-    
+  width: 100%;
+  @media screen and (max-width: $mobile_max_width) {
+    height: 45px;
+  }
+
 }
 
 .columns.sidebar-first {
-    width: $mobile_sidebar_width;
-    min-width: 70px;
-    float: left;
-    padding: 0px;
-    position: relative;
-	top: 0px;
-//    margin-top: 45px;
-    @media screen and (max-width: 408px) {
-        width: $mobile_sidebar_width - 1;
-        @media screen and (max-width: 372px) {
-            width: $mobile_sidebar_width - 2;
-            @media screen and (max-width: 367px) {
-                width: $mobile_sidebar_width - 3;
-                @media screen and (max-width: 352px) {
-                    width: $mobile_sidebar_width - 6;
-                    min-width: 63px;
-                }
-            }
+  width: $mobile_sidebar_width;
+  min-width: 70px;
+  float: left;
+  padding: 0px;
+  position: relative;
+  top: 0px;
+  //    margin-top: 45px;
+  @media screen and (max-width: 408px) {
+    width: $mobile_sidebar_width - 1;
+    @media screen and (max-width: 372px) {
+      width: $mobile_sidebar_width - 2;
+      @media screen and (max-width: 367px) {
+        width: $mobile_sidebar_width - 3;
+        @media screen and (max-width: 352px) {
+          width: $mobile_sidebar_width - 6;
+          min-width: 63px;
         }
+      }
     }
+  }
 }
-.columns.sidebar-first.scrolled {
-	position: fixed;
-	top: 0px;
-}
-.adminimal-menu .columns.sidebar-first.scrolled {
-	position: fixed;
-	top: 47px;
-}
-.mobile-first.page-calendar .columns.sidebar-first {
-    margin-top: 0px;
-}
-.one-sidebar {
-    main.row.l-main {
-        background: #fff;
-        @media screen and (max-width: $mobile_max_width) {
-            @include main-outer-shadowbox();
-            width: $mobile_main_width;
-            float: right;
-            margin-top: 45px; // this is needed on events & other pages not calendar day/week/month/year views.
-            padding-left: 0px;
-            padding-right: 0px;
-        }
-        #main-content-section {
-            @media screen and (max-width: $mobile_max_width) {
-                // come back to when ready to redo & re-theme week view
-                padding-left: 0px;
-                padding-right: 0px;
-                height: 100%!important;
-				// trying out this 100% thing so it looks nicer on portrait ipad
-				width: 100%;
-                /* 100vh does the height, but it doesn't work once you scroll.. */
-                @include display-flex();
-                justify-content: center;
-                section {
-                    width: 100%;
-                }
-            }
-        }
 
-    }
+.columns.sidebar-first.scrolled {
+  position: fixed;
+  top: 0px;
 }
-.one-sidebar.page-calendar main.row.l-main {
+
+.adminimal-menu .columns.sidebar-first.scrolled {
+  position: fixed;
+  top: 47px;
+}
+
+.mobile-first.page-calendar .columns.sidebar-first {
+  margin-top: 0px;
+}
+
+.one-sidebar {
+  main.row.l-main {
+    background: #fff;
     @media screen and (max-width: $mobile_max_width) {
-        margin-top: 0px;   
+      @include main-outer-shadowbox();
+      width: $mobile_main_width;
+      float: right;
+      margin-top: 45px; // this is needed on events & other pages not calendar day/week/month/year views.
+      padding-left: 0px;
+      padding-right: 0px;
     }
-}
-main #main-content-section.scrolled {
-    @media screen and (max-width: $mobile_max_width) {
-        margin-top: 96px; // added 20
-    }
-}
-.mobile.no-sidebars {
-    section.l-messages.row,
-    section.l-help.row {
-//        margin-top: 45px;
-        padding: 0px;
-        .large-12.columns {
-            padding: 0px;
-            p {
-                padding: 15px;
-            }
+
+    #main-content-section {
+      @media screen and (max-width: $mobile_max_width) {
+        // come back to when ready to redo & re-theme week view
+        padding-left: 0px;
+        padding-right: 0px;
+        height: 100% !important;
+        // trying out this 100% thing so it looks nicer on portrait ipad
+        width: 100%;
+        /* 100vh does the height, but it doesn't work once you scroll.. */
+        @include display-flex();
+        justify-content: center;
+        section {
+          width: 100%;
         }
+      }
     }
-    section.l-messages.row + section.l-help.row > div.large-12 {
-        margin-top: -17px;
+
+  }
+}
+
+.one-sidebar.page-calendar main.row.l-main {
+  @media screen and (max-width: $mobile_max_width) {
+    margin-top: 0px;
+  }
+}
+
+main #main-content-section.scrolled {
+  @media screen and (max-width: $mobile_max_width) {
+    margin-top: 96px; // added 20
+  }
+}
+
+.mobile.no-sidebars {
+  section.l-messages.row,
+  section.l-help.row {
+    //        margin-top: 45px;
+    padding: 0px;
+
+    .large-12.columns {
+      padding: 0px;
+
+      p {
+        padding: 15px;
+      }
     }
-    main.row.l-main #main-content-section {
-//        margin-top: 45px;
-    }
-    
+  }
+
+  section.l-messages.row + section.l-help.row > div.large-12 {
+    margin-top: -17px;
+  }
+
+  main.row.l-main #main-content-section {
+    //        margin-top: 45px;
+  }
+
 }
 
 // mobile regions
@@ -919,101 +1019,102 @@ main #main-content-section.scrolled {
 }
 
 
-
 @media only screen and (min-width: 768px) {
-    //correcting for later breakpoint
-    .push-3 {
-        position: relative;
-        left: 0%;
-        right: auto;
-    }
+  //correcting for later breakpoint
+  .push-3 {
+    position: relative;
+    left: 0%;
+    right: auto;
+  }
 }
 
 
 /* ----- large screen area settings --------- */
 .row {
-    @media screen and (min-width: 1200px){
-//        max-width: 1200px;  // we really don't want to do this if possible, dont want to design second design for tablet
-    }
+  @media screen and (min-width: 1200px) {
+    //        max-width: 1200px;  // we really don't want to do this if possible, dont want to design second design for tablet
+  }
 }
 
 @media screen and (min-width: $large_screen_start_width) {
-    div#page-container {
-        padding: 30px 0px;
-        max-width: 1024px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-	.not-front #page-container {
-        min-height: 700px;  // this is for with no content.. temporary solution
-    }
-    .columns.sidebar-first.thin-left-sidebar {
-        width: 230px;
-        //        max-width: 250px;
-    }
-    .columns.sidebar-first {
-        margin-top: 1px; // need it to be more than 0 but not show
-    }
+  div#page-container {
+    padding: 30px 0px;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .not-front #page-container {
+    min-height: 700px; // this is for with no content.. temporary solution
+  }
+  .columns.sidebar-first.thin-left-sidebar {
+    width: 230px;
+    //        max-width: 250px;
+  }
+  .columns.sidebar-first {
+    margin-top: 1px; // need it to be more than 0 but not show
+  }
 }
 
 .pull-9.thin-left-sidebar {
-    @media screen and (min-width: 768px) {
-        left: 0px;
-    }
-    @media screen and (min-width: $large_screen_start_width) {
-        position: relative;
-        left: 5%;
-    }
-    @media screen and (min-width: 1400px) {
-        left: 17%;
-    }
-    @media screen and (min-width: 1500px) {
-        left: 17%;
-    }
-    @media screen and (min-width: 1600px) {
-        left: 19%;
-    }
-    @media screen and (min-width: 1800px) {
-        left: 24%;
-    }
-    @media screen and (min-width: 2000px) {
-        left: 26%;
-    }
+  @media screen and (min-width: 768px) {
+    left: 0px;
+  }
+  @media screen and (min-width: $large_screen_start_width) {
+    position: relative;
+    left: 5%;
+  }
+  @media screen and (min-width: 1400px) {
+    left: 17%;
+  }
+  @media screen and (min-width: 1500px) {
+    left: 17%;
+  }
+  @media screen and (min-width: 1600px) {
+    left: 19%;
+  }
+  @media screen and (min-width: 1800px) {
+    left: 24%;
+  }
+  @media screen and (min-width: 2000px) {
+    left: 26%;
+  }
 }
+
 .pull-9.thin-left-sidebar {
-    @media screen and (min-width: $large_screen_start_width) {
-        position: relative;
-        left: 0%;
-        padding-left: 3%;
-    }
+  @media screen and (min-width: $large_screen_start_width) {
+    position: relative;
+    left: 0%;
+    padding-left: 3%;
+  }
 }
 
 .push-3.main.columns {
-    @media screen and (min-width: $large_screen_start_width) {
-        //re-setting this after override to cover 768 - 1023px
-        position: relative;
-        float: left;
-        left: 7%;
-//        padding-right: 30px;
-        padding-right: 0px
-    }
-    @media screen and (min-width: 1400px) {
-        //re-setting this after override to cover 768 - 1023px
-        position: relative;
-        left: 24%; // was 25%
-        right: auto;
-    }
+  @media screen and (min-width: $large_screen_start_width) {
+    //re-setting this after override to cover 768 - 1023px
+    position: relative;
+    float: left;
+    left: 7%;
+    //        padding-right: 30px;
+    padding-right: 0px
+  }
+  @media screen and (min-width: 1400px) {
+    //re-setting this after override to cover 768 - 1023px
+    position: relative;
+    left: 24%; // was 25%
+    right: auto;
+  }
 }
+
 @media screen and (min-width: $large_screen_start_width) {
-    #main-content-section.large-push-0 {
-        left: 1.5%; 
-    }
+  #main-content-section.large-push-0 {
+    left: 1.5%;
+  }
 }
 
 
 /* ------------ Calendar pages: General - mobile or large  ------- */
 .calendar-calendar div.calendar {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 /*   ------------- ------------- */
@@ -1021,81 +1122,95 @@ main #main-content-section.scrolled {
 .calendar-calendar .month-view .full td.single-day div.monthview,
 .calendar-calendar .week-view .full td.single-day div.weekview,
 .calendar-calendar .day-view .full td.single-day div.dayview {
-    background: #fff;
-    width: 100%;
-} 
+  background: #fff;
+  width: 100%;
+}
+
 /* -------- checkboxes throughout the site ------------- */
 .bef-checkboxes .form-item.form-type-bef-checkbox {
-    //    display: inline;
+  //    display: inline;
 }
+
 .form-checkboxes {
-    
-    .form-item {
-        height: 22px;
-        label {
-            color: $gray;
-//            padding-left: 8px;
-        }
+
+  .form-item {
+    height: 22px;
+
+    label {
+      color: $gray;
+      //            padding-left: 8px;
     }
-    
+  }
+
 }
 
 
 // mini month calendar theming
 .calendar-calendar .month-view table.mini {
-    max-width: 200px;
-    thead {
-        display: none;
+  max-width: 200px;
+
+  thead {
+    display: none;
+  }
+
+  th.days {
+    background-color: #fff;
+    color: $navy;
+    font-weight: bold;
+    border: none;
+  }
+
+  td {
+    //        border: 10px #fff solid;
+    background: $xlightgray;
+    //old
+    text-align: center;
+    //        padding: 6px 2px;
+    //        padding: 4px 0px;
+    padding: 6px 0px 2px;
+    border: 5px #fff solid;
+    border-bottom: 6px #fff solid;
+    //        border-right: 5px white solid;
+    //        border-left: 5px white solid;
+    //        border-top: 7px white solid;
+    //        border-bottom: 5px white solid;
+    a {
+      color: $darkgray;
     }
-    th.days {
-        background-color: #fff;
-        color: $navy;
-        font-weight: bold;
-        border: none;
+
+    a:hover {
+      color: $darkestgray;
     }
-    td {
-//        border: 10px #fff solid;
-        background: $xlightgray;
-        //old
-        text-align: center;
-//        padding: 6px 2px;
-//        padding: 4px 0px;
-        padding: 6px 0px 2px;
-        border: 5px #fff solid;
-        border-bottom: 6px #fff solid;
-//        border-right: 5px white solid;
-//        border-left: 5px white solid;
-//        border-top: 7px white solid;
-//        border-bottom: 5px white solid;
-        a {
-            color: $darkgray;
-        }
-        a:hover {
-            color: $darkestgray;
-        }
+  }
+
+  td.sun {
+    border-left: 0px solid #fff;
+  }
+
+  td.last-month,
+  td.next-month {
+    background: #fff;
+
+    a {
+      color: #fff;
     }
-    td.sun {
-        border-left: 0px solid #fff;
+  }
+
+  td.current-week {
+    background: $darkmedblue;
+
+    a {
+      color: #fff;
     }
-    td.last-month,
-    td.next-month {
-        background: #fff;
-        a {
-            color: #fff;
-        }
-    }
-    td.current-week {
-        background: $darkmedblue;
-        a {
-            color: #fff;
-        }
-    }
-    td.is-today {
-        background: $navy;
-    }
-    .mini-day-on a {
-        text-decoration: none;
-    }
+  }
+
+  td.is-today {
+    background: $navy;
+  }
+
+  .mini-day-on a {
+    text-decoration: none;
+  }
 }
 
 
@@ -1105,146 +1220,162 @@ main #main-content-section.scrolled {
 /* --------- Mobile Navigation theming ---- */
 
 #calendar-nav-header {
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #fff;
-    background: $medgray;
-    text-align: center;
-    @include sidebar-inner-shadowbox();
-//    border-bottom: 1px solid #fff; // i think they used to want this
-    padding: 8px 0px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #fff;
+  background: $medgray;
+  text-align: center;
+  @include sidebar-inner-shadowbox();
+  //    border-bottom: 1px solid #fff; // i think they used to want this
+  padding: 8px 0px;
 }
 
 .calendar-nav-section {
-    height: auto;
-    text-transform: lowercase;
-    font-size: 28px;
+  height: auto;
+  text-transform: lowercase;
+  font-size: 28px;
+  color: #fff;
+  text-align: center;
+
+  a.calendar-nav-link {
     color: #fff;
-    text-align: center;
-    a.calendar-nav-link {
-        color: #fff;
-    }
-    .calendar-nav-item {
-        /*comment */
-        background: $darkmedblue;
-        padding: 8px 0px;  // was 15px 0px for something, we need 8px 0px for week navigation
-        margin-bottom: -2px;
-        @include sidebar-inner-shadowbox();
-        .day-navigation-day-items {
-            @media screen and (max-width: $mobile_max_width) {
-                font-size: 19px;
-            }
-            
-        }
-        .day-navigation-weekday {
-            font-size: 13px;
-            font-weight: 500;
-            letter-spacing: 1px;
-        }
+  }
+
+  .calendar-nav-item {
+    /*comment */
+    background: $darkmedblue;
+    padding: 8px 0px; // was 15px 0px for something, we need 8px 0px for week navigation
+    margin-bottom: -2px;
+    @include sidebar-inner-shadowbox();
+
+    .day-navigation-day-items {
+      @media screen and (max-width: $mobile_max_width) {
+        font-size: 19px;
+      }
+
     }
 
-    .calendar-nav-item.current-day {
-        background: $navy!important;
-//		color: #fff;
+    .day-navigation-weekday {
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 1px;
     }
-	.calendar-nav-item.currently-viewed {
-//		background: $royal!important;
-		background: $lightgray!important;
-		color: $navy!important;	
-	}
-    .calendar-nav-item:hover {
-        background: $medblue;
-    }
-    .calendar-nav-item:active {
-        background: $lightmedblue;
-    }
+  }
+
+  .calendar-nav-item.current-day {
+    background: $navy !important;
+    //		color: #fff;
+  }
+
+  .calendar-nav-item.currently-viewed {
+    //		background: $royal!important;
+    background: $lightgray !important;
+    color: $navy !important;
+  }
+
+  .calendar-nav-item:hover {
+    background: $medblue;
+  }
+
+  .calendar-nav-item:active {
+    background: $lightmedblue;
+  }
 
 }
 
 
-
 @media screen and (max-width: $mobile_max_width) {
-    div#calendar-nav-pager {
-        margin-top: 10px;
-        font-size: 13px;
-//        @include display-flex();
-//        flex-wrap: wrap;
-//        justify-content: center;
-        div {
-            /* text-align: center; */
-            border: 1px #9b9b9b solid;
-            padding: 8px 6%;
-            /* ----------- come back to fix padding / margin better for diff mobile sizes ----- */
-            margin: 5px 14%;
-            width: 75%;
-            min-width: 50px;
-            color: $navy;
-            text-align: center;
-        }
+  div#calendar-nav-pager {
+    margin-top: 10px;
+    font-size: 13px;
+    //        @include display-flex();
+    //        flex-wrap: wrap;
+    //        justify-content: center;
+    div {
+      /* text-align: center; */
+      border: 1px #9b9b9b solid;
+      padding: 8px 6%;
+      /* ----------- come back to fix padding / margin better for diff mobile sizes ----- */
+      margin: 5px 14%;
+      width: 75%;
+      min-width: 50px;
+      color: $navy;
+      text-align: center;
     }
+  }
 }
 
 div#calendar-nav-pager .calendar-nav-pager-back {
-//    color: $medgray;
-	// idk why we need this, both should be blue links
+  //    color: $medgray;
+  // idk why we need this, both should be blue links
 }
 
 @media screen and (max-width: $mobile_max_width) {
 
 }
+
 /* -------- exposed filters etc --------------- */
 .views-exposed-form .views-exposed-widget .form-submit {
-    margin-top: 0.6em;
+  margin-top: 0.6em;
 }
+
 /* ------------- mobile filters ------- */
 
 
 .mobile-first {
-    .views-exposed-form .views-exposed-widget .form-submit {
-        padding: 13px 15px 12px 15px;
-    }
-    .views-exposed-form .views-exposed-widget.views-submit-button {
-        margin-right: 10px;
-    }
-    .show-filters {  
-        i.fa.fa-check {
-            margin-left: -12px;
-            font-size: 14px;
-            position: relative;
-            margin-right: -2px;
-            top: -2px;
-        }
-  
-        
-    }
-    .inner-bottom-right.show-filters.filtering:after {
-        content: " ON";
-    }
-    .inner-bottom-right.show-filters.filtering {
-//        color: $green;               
-        i.fa.fa-check {
-            color: $green;
-        }
-        
+  .views-exposed-form .views-exposed-widget .form-submit {
+    padding: 13px 15px 12px 15px;
+  }
+
+  .views-exposed-form .views-exposed-widget.views-submit-button {
+    margin-right: 10px;
+  }
+
+  .show-filters {
+    i.fa.fa-check {
+      margin-left: -12px;
+      font-size: 14px;
+      position: relative;
+      margin-right: -2px;
+      top: -2px;
     }
 
-}
-.close-filters {
-    display: none;
-}
-.close-filters.shown {
-    color: $navy;
-    display: block;
-    position: fixed;
-    top: 55px;
-    left: 250px;
-    width: 70px!important;
-    z-index: 100;
-    span {
-        padding-right: 4px;
-        font-size: 14px;
+
+  }
+
+  .inner-bottom-right.show-filters.filtering:after {
+    content: " ON";
+  }
+
+  .inner-bottom-right.show-filters.filtering {
+    //        color: $green;
+    i.fa.fa-check {
+      color: $green;
     }
+
+  }
+
 }
+
+.close-filters {
+  display: none;
+}
+
+.close-filters.shown {
+  color: $navy;
+  display: block;
+  position: fixed;
+  top: 55px;
+  left: 250px;
+  width: 70px !important;
+  z-index: 100;
+
+  span {
+    padding-right: 4px;
+    font-size: 14px;
+  }
+}
+
 .page-calendar-week .close-filters.shown {
 
 }
@@ -1252,66 +1383,69 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 /* --------------- large filters ------- */
 
 
-
 /* --- for all calendar views -------- */
 .view-calendar-pages {
-	display: none;
+  display: none;
 }
+
 .day-header a,
 .views-field.views-field-title a {
-    color: $navy;
+  color: $navy;
 }
 
 .view.view-mobile-calendar .views-exposed-form .views-exposed-widget {
-    padding: 10px 0px;
+  padding: 10px 0px;
 }
 
 .view.view-mobile-calendar.view-id-mobile_calendar .views-row {
-    border-bottom: 1px $lightgray solid;
+  border-bottom: 1px $lightgray solid;
 }
 
 .view-id-mobile_calendar {
-    .views-exposed-form {
-        position: fixed;
-        z-index: 100;
-        background: #fff;
-        border: 1px solid $navy;
-        border-radius: 5px;
-        border-top-right-radius: 0px;
-        padding: 30px 7%;
-        width: 80%;
-        height: 92.5%; // see if i can do 100% height -45px
-        right: 0px;
-        top: 44px;
-        display: none;
-    }
-    .views-exposed-form.shown {
-        display: block;   
-    }
-    .views-exposed-form label {
-        font-weight: bold;
-        color: #002255;
-        padding-bottom: 5px;
-    }
-    // mobile checkboxes
-    .views-exposed-form .bef-checkboxes .form-item.form-type-bef-checkbox {
-        display: block;
-    }
-    .views-exposed-form .views-widget label {
-        color: #444;
-        font-weight: normal;
-    }
+  .views-exposed-form {
+    position: fixed;
+    z-index: 100;
+    background: #fff;
+    border: 1px solid $navy;
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    padding: 30px 7%;
+    width: 80%;
+    height: 92.5%; // see if i can do 100% height -45px
+    right: 0px;
+    top: 44px;
+    display: none;
+  }
+
+  .views-exposed-form.shown {
+    display: block;
+  }
+
+  .views-exposed-form label {
+    font-weight: bold;
+    color: #002255;
+    padding-bottom: 5px;
+  }
+
+  // mobile checkboxes
+  .views-exposed-form .bef-checkboxes .form-item.form-type-bef-checkbox {
+    display: block;
+  }
+
+  .views-exposed-form .views-widget label {
+    color: #444;
+    font-weight: normal;
+  }
 }
 
 .view .date-nav-wrapper .date-heading {
-    text-align: center;
+  text-align: center;
 }
 
 // DAY DAY DAY overrides
 .page-calendar.day {
-    
-    
-    
+
+
 }
 
 
@@ -1319,164 +1453,182 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 
 /*   ---- Day & Week View ------ */
 .large-screen-calendar-weekview {
-	.weekday-header-caps {
-		text-transform: uppercase;
-	}
-	
+  .weekday-header-caps {
+    text-transform: uppercase;
+  }
+
 }
 
 /* -- filter & msc stuff - */
 
 // calendar lists formatting
 .page-calendar-view, .page-calendar-all {
-    
+
 }
+
 .view-id-mobile_calendar.view-display-id-block_6 {
-    // some basics in calendar views that we need in this list view
-    font-size: 13px;
-    color: $gray;
-    .views-field.views-field-title {
-        font-size: 15px;
-        display: inline;
-    }
-    
-    
+  // some basics in calendar views that we need in this list view
+  font-size: 13px;
+  color: $gray;
+
+  .views-field.views-field-title {
+    font-size: 15px;
+    display: inline;
+  }
+
+
 }
+
 // week view
 .view-id-mobile_calendar.view-display-id-block_5 {
-    margin-top: -16px;
-    .view-header,
-    .form-item.form-type-select.form-item-field-event-type-tid .description {
-        display: none;
-    }
-//    .views-field.views-field-field-thumbnail,
-    .views-field.views-field-views-conditional {
-        float: left;
-        margin-right: 20px;
-    }
-    .calendar.weekview.all-day-items {
-        float: left;
-    }
-    .view-item.view-item-mobile_calendar > .calendar.weekview {
-        width: 100%;
-        padding: 10px 20px 15px;
-        position: relative;
-        top: 3px;
-        float: left;
-		border-bottom: 1px solid $lightgray;
-    }
-    .views-field.views-field-title {
-        font-size: 15px;
-        display: inline;
-        font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
-    }
-    .view-item.view-item-mobile_calendar {
-        border-bottom: 1px solid $lightgray;
-    }
+  margin-top: -16px;
 
-    .empty-text {
-        padding: 10px 20px 0px;
-    }
-    .calendar-calendar .week-view .full td,
-    .calendar-calendar .day-view td {
-        padding: 0px;
-    }
-    .view.view-mobile-calendar.view-id-mobile_calendar .views-row {
-        margin: 10px 0px;
-    }
-} // end of weekview body block
+  .view-header,
+  .form-item.form-type-select.form-item-field-event-type-tid .description {
+    display: none;
+  }
+
+  //    .views-field.views-field-field-thumbnail,
+  .views-field.views-field-views-conditional {
+    float: left;
+    margin-right: 20px;
+  }
+
+  .calendar.weekview.all-day-items {
+    float: left;
+  }
+
+  .view-item.view-item-mobile_calendar > .calendar.weekview {
+    width: 100%;
+    padding: 10px 20px 15px;
+    position: relative;
+    top: 3px;
+    float: left;
+    border-bottom: 1px solid $lightgray;
+  }
+
+  .views-field.views-field-title {
+    font-size: 15px;
+    display: inline;
+    font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
+  }
+
+  .view-item.view-item-mobile_calendar {
+    border-bottom: 1px solid $lightgray;
+  }
+
+  .empty-text {
+    padding: 10px 20px 0px;
+  }
+
+  .calendar-calendar .week-view .full td,
+  .calendar-calendar .day-view td {
+    padding: 0px;
+  }
+
+  .view.view-mobile-calendar.view-id-mobile_calendar .views-row {
+    margin: 10px 0px;
+  }
+}
+
+// end of weekview body block
 
 /* --- mobile responsive for week view -------- */
 
 /* ---- making day headers sticky --- */
-@media screen and ( max-width: $mobile_max_width) {
-	.weekview-day-header.sticky {
-		position: absolute;
-		width: 100%;
-		height: 110px;
-		margin-bottom: 150px;
-	}
-	
-}
-@media screen and ( max-width: $mobile_max_width) {
+@media screen and (max-width: $mobile_max_width) {
+  .weekview-day-header.sticky {
+    position: absolute;
+    width: 100%;
+    height: 110px;
+    margin-bottom: 150px;
+  }
 
-	
-    .calendar-calendar .week-view table.full {
-        position: relative;
-    }
-    .calendar-calendar .week-view .full tr td {
-        width: 100%;
-        float: left;
-        text-align: left;
-    }
-    .calendar-calendar tbody tr td {
-        background: #fff;
-    }
-    .calendar-calendar .week-view .full tr.single-day {
-        border-top: 1px solid #ccc;
-    }
-    .calendar-calendar .week-view .full tr td.single-day:before {
-        //    content: attr(data-day-of-week) ",\0000a0" attr(headers); 
-        //    font-weight: bold;
-    }
-    .calendar-calendar .week-view .full thead tr,
-    .calendar-calendar .week-view .full tr th.days,
-    .calendar-calendar .week-view .full tr td.date-box {
-        display: none;
-    }
-    .calendar-calendar .week-view .full tr td.no-entry,
-    .calendar-calendar .week-view .full tr td.empty {
-        //    display: none;
-    }
-    .calendar-calendar .month-view .full tr td.single-day:before {
-//        content: attr(data-day-of-month) ",\0000a0" attr(headers);
-//        font-weight: bold;
-    }
-} 
+}
+
+@media screen and (max-width: $mobile_max_width) {
+
+
+  .calendar-calendar .week-view table.full {
+    position: relative;
+  }
+  .calendar-calendar .week-view .full tr td {
+    width: 100%;
+    float: left;
+    text-align: left;
+  }
+  .calendar-calendar tbody tr td {
+    background: #fff;
+  }
+  .calendar-calendar .week-view .full tr.single-day {
+    border-top: 1px solid #ccc;
+  }
+  .calendar-calendar .week-view .full tr td.single-day:before {
+    //    content: attr(data-day-of-week) ",\0000a0" attr(headers);
+    //    font-weight: bold;
+  }
+  .calendar-calendar .week-view .full thead tr,
+  .calendar-calendar .week-view .full tr th.days,
+  .calendar-calendar .week-view .full tr td.date-box {
+    display: none;
+  }
+  .calendar-calendar .week-view .full tr td.no-entry,
+  .calendar-calendar .week-view .full tr td.empty {
+    //    display: none;
+  }
+  .calendar-calendar .month-view .full tr td.single-day:before {
+    //        content: attr(data-day-of-month) ",\0000a0" attr(headers);
+    //        font-weight: bold;
+  }
+}
 
 .calendar-calendar .week-view .full td.single-day.no-entry:after {
-    content: "There are no events scheduled on this day.";
-    background: #fff;
-    /* width: 100%; */
-    color: #888;
+  content: "There are no events scheduled on this day.";
+  background: #fff;
+  /* width: 100%; */
+  color: #888;
 }
 
 .calendar-calendar .week-view .full tr.single-day .no-entry .inner {
-    /* height: 50px; */
-    line-height: 16px;
+  /* height: 50px; */
+  line-height: 16px;
 }
 
 /* -------- Calendar general mobile or both --- */
 .view-empty p {
-    padding: 15px;
+  padding: 15px;
 }
 
 .mobile-first.list-view {
-	.views-row {
-		padding: 10px 20px;
-		.panel-panel.panel-col-first {
-			width: 85px;
-		}
-		.panel-2col .panel-col-last {
-//			float: left;
-			width: 69%; // can be wider since we don't have left side nav
-		}
-	}
+  .views-row {
+    padding: 10px 20px;
+
+    .panel-panel.panel-col-first {
+      width: 85px;
+    }
+
+    .panel-2col .panel-col-last {
+      //			float: left;
+      width: 69%; // can be wider since we don't have left side nav
+    }
+  }
 }
-	// fixing anchors for with sticky menu
+
+// fixing anchors for with sticky menu
 .mobile-first div:target {
-	padding-top: 45px;
-	margin-top: -45px;
+  padding-top: 45px;
+  margin-top: -45px;
 }
+
 .mobile-first.admin-menu div:target {
-	padding-top: 92px;
-	margin-top: -92px;
+  padding-top: 92px;
+  margin-top: -92px;
 }
 
 /* ---------------- Calendar displays - general -  large screen ------------------- */
 
-@media screen and (min-width:$large_screen_start_width) {
-    /* formatting list views */
+@media screen and (min-width: $large_screen_start_width) {
+  /* formatting list views */
 
   td:not(:first-of-type) .weekview-day-header { // this covers all title links so they can't be clicked anymore.
     //position: relative;
@@ -1490,405 +1642,450 @@ div#calendar-nav-pager .calendar-nav-pager-back {
   //  margin-bottom: 25px;
   //}
 
-    .list-header {
-        color: $navy;
-        font-weight: bold;
-        font-size: 30px;
-        margin-bottom: 25px;
-		font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
-    }
-    .list-header-week {
-        text-transform: uppercase;
-        display: inline;
-        border-right: 1px solid $navy;
-        padding: 0px 7px 0px 0px;
-    }
-    .list-header-fulldate {
-        display: inline;
-        padding: 7px;
-    }
-    // hiding gray table borders
-    .view-id-large_screen_calendar .calendar-calendar td.calendar-agenda-items,
-    tr.not-all-day.and-all-day {
-        border: 1px solid #fff;
-    }
-    
-    .calendar-list-type-block .calendar-calendar td {
-        //whatever this was for, it needs to be specific - bad for mini month.
-        width: 100%;
-    }
-    
+  .list-header {
+    color: $navy;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 25px;
+    font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
+  }
+  .list-header-week {
+    text-transform: uppercase;
+    display: inline;
+    border-right: 1px solid $navy;
+    padding: 0px 7px 0px 0px;
+  }
+  .list-header-fulldate {
+    display: inline;
+    padding: 7px;
+  }
+  // hiding gray table borders
+  .view-id-large_screen_calendar .calendar-calendar td.calendar-agenda-items,
+  tr.not-all-day.and-all-day {
+    border: 1px solid #fff;
+  }
+
+  .calendar-list-type-block .calendar-calendar td {
+    //whatever this was for, it needs to be specific - bad for mini month.
+    width: 100%;
+  }
+
 }
 
 
 /* ------- CALENDAR large screen ---------- */
 
-@media screen and (min-width:$large_screen_start_width) {
-    
-    // left sidebar area
-    .page-calendar.large-screen {
-           /* -- ls sidebar-first   -- */
-        // 1.  dropdown block
-        select#monthselector {
-            margin-bottom: 10px;
-        }
-        #monthselector-label, #yearselector-label {
-            color: $navy;
-            font-size: 14px;
-            padding: 3px 0px;
-            display: none;
-        }
-        #yearselector-label {
-//            margin-top: 10px;
-        }
-        
-        select#monthselector, select#yearselector {
-            height: 32px;
-            font-size: 23px;
-            font-weight: bold;
-            color: $navy;
-            border: 1px solid $lightgray;
-            padding: 0px 3px;
-            margin-top: 5px;
-        }
-        
-        .block-block-11 {
-            position: relative;
-            top: 48px;
-//            top: 167px;
-            width: 195px;
-        }
-        .block-block-11.scrolled {
-            position: fixed;
-            top: 34px; // added 20 for admin menu
-            #monthselector-label, #yearselector-label {
-//                display: block;   
-            }
-        }
-        
-        
-        
-        
-        // 2.  mini month display
-        section.left-sidebar-minimonth {
-            position: relative;
-            width: 200px;
-            top: 60px;
-//            top: 265px;
-            .view-header {
-                display: none;
-            }
-        }
-        // for w admin menu, but those admin menu classes added late after page load..?
-        .adminimal-menu section.block-views-large-screen-calendar-block-6 {
-            //            top: 100px;
-        }
-        section.left-sidebar-minimonth.scrolled,
-        section.block-views-large-screen-calendar-block-6.scrolled {
-            position: fixed;
-            top: 130px; // added 20 for admin menu
-        }
-        section.block-views-large-screen-calendar-block-6,
-        section.left-sidebar-minimonth {
-            .view .date-nav-wrapper {
-                //                 height: 85px;
-//                height: 70px;
-                .date-heading {
-                    background: $lightgray;
-                    //                    text-align: center;
-                    padding: 10px 5px;
-                    font-size: 14px;
-                    display: none;
-                }
-                .date-prev,
-                .date-next {
-                    background: none;
-                    padding: 12px 0px;
-                    a {
-                        padding: 12px 8px;
-                        font-size: 16px;
-                    }
-                }
-                ul.pager {
-                    display: none;
-                }
+@media screen and (min-width: $large_screen_start_width) {
 
-            }
-        }
-        //calendar mini theming see calendar mini in section for general calendar views
-        // 3. view exposed filters
-        // generalized
-        .left-sidebar-calendar-exposed-filters {
-            position: relative;
-            width: 230px;
-            top: 60px;
-            //            margin-top: 315px;
-//            margin-top: 330px;
-            //            top: 400px; 
-        }
-        // generalized
-        .left-sidebar-calendar-exposed-filters.scrolled {
-            //            top: 385px;
-            //            background: pink;
-            //            margin-top: 260px;
-            position: fixed;
-            top: 312px; // added 20
-        }
-        form {
-            .views-exposed-widget.views-reset-button
-            .views-exposed-widget.views-submit-button {
-                /* height: 60px; */
-                margin-top: -15px;
-            }
-            .views-exposed-widget.views-reset-button button {
-                background: $lightgray;
-                border: 1px solid $medgray;
-                color: $darkgray;
-            }
-        }
-        // generalized - was form#views-exposed-form-large-screen-calendar-block-3 
-        .left-sidebar-calendar-exposed-filters .description {
-            display: none;
-        }  
-        #edit-field-tags-tid-wrapper label {
-            padding-bottom: 5px;
-        }
-       
-        #edit-field-tags-tid-wrapper > label,
-        #edit-field-event-type-tid-wrapper > label {
-            font-weight: normal;
-            color: $navy;
-            font-size: 14px;
-            padding-bottom: 10px;
-            text-transform: uppercase;
-            
-        }
-        
-        
-        
-        
-    } /* -------- end of calendar large screen left sidebar -- */
-    /* ------------- large screen main page GENERAL CALENDAR ----------------- */
-    
-    /* Calendar Top Navigation Blocks */
-    .large-calendar-top-navigation {
-        margin-bottom: 60px;
-    }
-    
-             // pager circles
-    .calendar-nav-pager-arrow-back,
-    .calendar-nav-pager-arrow-next {
-        border: 1px solid gray;
-        border-radius: 24px;
-    }
-    .calendar-nav-pager-arrow-back {
-        padding: 10px 15px 12px 13px;
-    }
-    .calendar-nav-pager-arrow-next {
-        padding: 10px 13px 12px 15px;
+  // left sidebar area
+  .page-calendar.large-screen {
+    /* -- ls sidebar-first   -- */
+    // 1.  dropdown block
+    select#monthselector {
+      margin-bottom: 10px;
     }
 
-    //pager gray sections
-    .calendar-nav-pager-arrow-back,
-    .calendar-nav-pager-arrow-next {
-        padding: 28px 15px 27px 15px;
+    #monthselector-label, #yearselector-label {
+      color: $navy;
+      font-size: 14px;
+      padding: 3px 0px;
+      display: none;
+    }
+
+    #yearselector-label {
+      //            margin-top: 10px;
+    }
+
+    select#monthselector, select#yearselector {
+      height: 32px;
+      font-size: 23px;
+      font-weight: bold;
+      color: $navy;
+      border: 1px solid $lightgray;
+      padding: 0px 3px;
+      margin-top: 5px;
+    }
+
+    .block-block-11 {
+      position: relative;
+      top: 48px;
+      //            top: 167px;
+      width: 195px;
+    }
+
+    .block-block-11.scrolled {
+      position: fixed;
+      top: 34px; // added 20 for admin menu
+      #monthselector-label, #yearselector-label {
+        //                display: block;
+      }
+    }
+
+
+    // 2.  mini month display
+    section.left-sidebar-minimonth {
+      position: relative;
+      width: 200px;
+      top: 60px;
+      //            top: 265px;
+      .view-header {
+        display: none;
+      }
+    }
+
+    // for w admin menu, but those admin menu classes added late after page load..?
+    .adminimal-menu section.block-views-large-screen-calendar-block-6 {
+      //            top: 100px;
+    }
+
+    section.left-sidebar-minimonth.scrolled,
+    section.block-views-large-screen-calendar-block-6.scrolled {
+      position: fixed;
+      top: 130px; // added 20 for admin menu
+    }
+
+    section.block-views-large-screen-calendar-block-6,
+    section.left-sidebar-minimonth {
+      .view .date-nav-wrapper {
+        //                 height: 85px;
+        //                height: 70px;
+        .date-heading {
+          background: $lightgray;
+          //                    text-align: center;
+          padding: 10px 5px;
+          font-size: 14px;
+          display: none;
+        }
+
+        .date-prev,
+        .date-next {
+          background: none;
+          padding: 12px 0px;
+
+          a {
+            padding: 12px 8px;
+            font-size: 16px;
+          }
+        }
+
+        ul.pager {
+          display: none;
+        }
+
+      }
+    }
+
+    //calendar mini theming see calendar mini in section for general calendar views
+    // 3. view exposed filters
+    // generalized
+    .left-sidebar-calendar-exposed-filters {
+      position: relative;
+      width: 230px;
+      top: 60px;
+      //            margin-top: 315px;
+      //            margin-top: 330px;
+      //            top: 400px;
+    }
+
+    // generalized
+    .left-sidebar-calendar-exposed-filters.scrolled {
+      //            top: 385px;
+      //            background: pink;
+      //            margin-top: 260px;
+      position: fixed;
+      top: 312px; // added 20
+    }
+
+    form {
+      .views-exposed-widget.views-reset-button
+      .views-exposed-widget.views-submit-button {
+        /* height: 60px; */
+        margin-top: -15px;
+      }
+
+      .views-exposed-widget.views-reset-button button {
         background: $lightgray;
+        border: 1px solid $medgray;
+        color: $darkgray;
+      }
     }
-    
-    /* ---------- main page section: Calendar various lists -- */
-    .large-screen.page-calendar {
-        //hide calendar pages
-        #page-title,
-        .view-id-calendar_pages {
-            display: none;
-        }
-        // week view top navigation  
-        
-        section.block.block-block.block-block-10 {
-            //weekday navigation on top
 
-            margin-left: 5px;
-            .view-header {
-                display: none;
-            }
-        }
-        #large-calendar-nav-header {
-            padding: 0px 0px 20px;
-            @include display-flex();
-            #calendar-view-links {
-                @include display-flex();
-                justify-content: flex-end;
-                width: 660px;
-                padding-top: 8px;
-            }
-            #calendar-view-links a {
-                padding: 5px 7px 1px;
-                font-weight: bold;
-                color: $medgray;
-                margin: 0px 8px;
-            }
-            #calendar-view-links a:hover {
-                border-bottom: 3px solid $medgray;
-            }
-            #calendar-view-links a.current {
-                border-bottom: 3px solid $navy;
-                color: $navy;
-            }
-        }
-        #large-calendar-nav-container {
-            @include display-flex();  
-            justify-content: space-between;
-            margin-bottom: 45px;
-        }
-        .calendar-nav-section {
-            width: 100px;
-            font-size: 33px;
+    // generalized - was form#views-exposed-form-large-screen-calendar-block-3
+    .left-sidebar-calendar-exposed-filters .description {
+      display: none;
+    }
 
-        }
-        .safari .calendar-nav-section {
-            display: inline-block;
-        }
-        .calendar-nav-section .calendar-nav-item {
-            box-shadow: none;
-            padding: 11px 0px;
-            .day-navigation-day-items {
-                padding-bottom: 6px;
-                font-size: 40px;
-            }
-        }
-		#calendar-nav-bottom-pager,
-        #calendar-nav-pager {
-            margin: 0px;
-            width: 70px;
-            @include display-flex();
-            justify-content: flex-end;
-        }
-		#calendar-nav-bottom-pager {
-			width: 100%;
-			padding: 10px 5px 0 0;
-		}
+    #edit-field-tags-tid-wrapper label {
+      padding-bottom: 5px;
+    }
 
-		#calendar-nav-bottom-pager div,
-        #calendar-nav-pager div {
-            border: 1px $medgray solid;
-            padding: 5px;
-            margin: 3px;
-            background: #fff;
-            width: 27px;
-            height: 27px;
-            color: $medgray;
-            display: inline-block;
-            text-align: center;
-        }
-		#calendar-nav-bottom-pager div:hover,
-        #calendar-nav-pager div:hover {
-			background: $xlightgray;	
-		}
+    #edit-field-tags-tid-wrapper > label,
+    #edit-field-event-type-tid-wrapper > label {
+      font-weight: normal;
+      color: $navy;
+      font-size: 14px;
+      padding-bottom: 10px;
+      text-transform: uppercase;
 
-        /* -- end large screen general calendar nav blocks --- */
-        /* main page large screen general calendar body / page blocks:  */
-        
-        // hiding view headers 
-//        .block-views-large-screen-calendar-block-8,
-//        .block-views-large-screen-calendar-block-3 
-        .calendar-list-type-block {
-            th,
-            .view-header {
-                display: none;
-            }
-            
-            .calendar-calendar .month-view .full td.multi-day div.monthview, 
-            .calendar-calendar .week-view .full td.multi-day div.weekview, 
-            .calendar-calendar .day-view .full td.multi-day div.dayview {
-                height: auto;
-//                background: none;
-                color: #444;
-            }
-            .item {
-                    background: #fff;
-            } 
-            .multi-day {
-            // different styling for multi day items
-                .contents {
-                    .green-button {
-                        float: right;
-                    }
-                    .date-display-range {
-                        float: left;
-                    }
-                    
-                }       
-                
-            }
-            
-            
-        }
-        
-        
-        /* ----KarenS code, but for large calendar week ----- */
-        /* -------come back to this and see if this is all necessary, strip some out - */
-        .calendar-calendar .month-view table.full {
-            position: relative;
-        }
-
-        .calendar-calendar table:not(.mini) tbody tr td {
-            background: none;
-        }
-        .calendar-calendar .month-view .full tr.single-day {
-            border-top: 1px solid #ccc;
+    }
 
 
-        }
-        .calendar-calendar .month-view .full tr td.single-day:before {
-//            content: attr(data-day-of-month) ",\0000a0" attr(headers);
-//            font-weight: bold;
-        }
-        .calendar-calendar .month-view .full thead tr,
-        .calendar-calendar .month-view .full tr th.days,
-        .calendar-calendar .month-view .full tr td.date-box {
-//            display: none;
-        }
-        /* trying out code to make it a list view */
-        section.block.block-views.block-views-large-screen-calendar-block-3 thead {
-            display: none;
-        }
-        tr.not-all-day.and-all-day td {
-            display: block;
-            width: 100%;
-        }
-        // formatting week list weekview
-        
-        .calendar-items-container {
-            width: 100%;
+  }
+  /* -------- end of calendar large screen left sidebar -- */
+  /* ------------- large screen main page GENERAL CALENDAR ----------------- */
+
+  /* Calendar Top Navigation Blocks */
+  .large-calendar-top-navigation {
+    margin-bottom: 60px;
+  }
+
+  // pager circles
+  .calendar-nav-pager-arrow-back,
+  .calendar-nav-pager-arrow-next {
+    border: 1px solid gray;
+    border-radius: 24px;
+  }
+  .calendar-nav-pager-arrow-back {
+    padding: 10px 15px 12px 13px;
+  }
+  .calendar-nav-pager-arrow-next {
+    padding: 10px 13px 12px 15px;
+  }
+
+  //pager gray sections
+  .calendar-nav-pager-arrow-back,
+  .calendar-nav-pager-arrow-next {
+    padding: 28px 15px 27px 15px;
+    background: $lightgray;
+  }
+
+  /* ---------- main page section: Calendar various lists -- */
+  .large-screen.page-calendar {
+    //hide calendar pages
+    #page-title,
+    .view-id-calendar_pages {
+      display: none;
+    }
+
+    // week view top navigation
+
+    section.block.block-block.block-block-10 {
+      //weekday navigation on top
+
+      margin-left: 5px;
+
+      .view-header {
+        display: none;
+      }
+    }
+
+    #large-calendar-nav-header {
+      padding: 0px 0px 20px;
+      @include display-flex();
+
+      #calendar-view-links {
+        @include display-flex();
+        justify-content: flex-end;
+        width: 660px;
+        padding-top: 8px;
+      }
+
+      #calendar-view-links a {
+        padding: 5px 7px 1px;
+        font-weight: bold;
+        color: $medgray;
+        margin: 0px 8px;
+      }
+
+      #calendar-view-links a:hover {
+        border-bottom: 3px solid $medgray;
+      }
+
+      #calendar-view-links a.current {
+        border-bottom: 3px solid $navy;
+        color: $navy;
+      }
+    }
+
+    #large-calendar-nav-container {
+      @include display-flex();
+      justify-content: space-between;
+      margin-bottom: 45px;
+    }
+
+    .calendar-nav-section {
+      width: 100px;
+      font-size: 33px;
+
+    }
+
+    .safari .calendar-nav-section {
+      display: inline-block;
+    }
+
+    .calendar-nav-section .calendar-nav-item {
+      box-shadow: none;
+      padding: 11px 0px;
+
+      .day-navigation-day-items {
+        padding-bottom: 6px;
+        font-size: 40px;
+      }
+    }
+
+    #calendar-nav-bottom-pager,
+    #calendar-nav-pager {
+      margin: 0px;
+      width: 70px;
+      @include display-flex();
+      justify-content: flex-end;
+    }
+
+    #calendar-nav-bottom-pager {
+      width: 100%;
+      padding: 10px 5px 0 0;
+    }
+
+    #calendar-nav-bottom-pager div,
+    #calendar-nav-pager div {
+      border: 1px $medgray solid;
+      padding: 5px;
+      margin: 3px;
+      background: #fff;
+      width: 27px;
+      height: 27px;
+      color: $medgray;
+      display: inline-block;
+      text-align: center;
+    }
+
+    #calendar-nav-bottom-pager div:hover,
+    #calendar-nav-pager div:hover {
+      background: $xlightgray;
+    }
+
+    /* -- end large screen general calendar nav blocks --- */
+    /* main page large screen general calendar body / page blocks:  */
+
+    // hiding view headers
+    //        .block-views-large-screen-calendar-block-8,
+    //        .block-views-large-screen-calendar-block-3
+    .calendar-list-type-block {
+      th,
+      .view-header {
+        display: none;
+      }
+
+      .calendar-calendar .month-view .full td.multi-day div.monthview,
+      .calendar-calendar .week-view .full td.multi-day div.weekview,
+      .calendar-calendar .day-view .full td.multi-day div.dayview {
+        height: auto;
+        //                background: none;
+        color: #444;
+      }
+
+      .item {
+        background: #fff;
+      }
+
+      .multi-day {
+        // different styling for multi day items
+        .contents {
+          .green-button {
+            float: right;
+          }
+
+          .date-display-range {
             float: left;
-            .calendar.weekview.all-day-items {
-                width: 100%!important;
-                .item,
-                .view-item.view-item-large_screen_calendar {
-                    width: 100%!important;
-                    overflow: auto;
-                }
-                .calendar.weekview {
-                    width: 100%!important;
-                }
-                @include display-flex();
-                justify-content: flex-start;
-				flex-wrap: wrap;
-                .views-field {
-                    //                    width: 100%!important;
-                }
-            }
+          }
+
         }
-        .calendar-calendar tr:nth-of-type(even) {
-            background: #fff;
-        }
-    .calendar-calendar td span.date-display-single, .calendar-calendar td span.date-display-start, .calendar-calendar td span.date-display-end, .calendar-calendar td span.date-display-separator {
-        font-weight: normal;
+
+      }
+
+
     }
-    .calendar.weekview.all-day-items {
-            padding: 0px!important;
+
+
+    /* ----KarenS code, but for large calendar week ----- */
+    /* -------come back to this and see if this is all necessary, strip some out - */
+    .calendar-calendar .month-view table.full {
+      position: relative;
+    }
+
+    .calendar-calendar table:not(.mini) tbody tr td {
+      background: none;
+    }
+
+    .calendar-calendar .month-view .full tr.single-day {
+      border-top: 1px solid #ccc;
+
+
+    }
+
+    .calendar-calendar .month-view .full tr td.single-day:before {
+      //            content: attr(data-day-of-month) ",\0000a0" attr(headers);
+      //            font-weight: bold;
+    }
+
+    .calendar-calendar .month-view .full thead tr,
+    .calendar-calendar .month-view .full tr th.days,
+    .calendar-calendar .month-view .full tr td.date-box {
+      //            display: none;
+    }
+
+    /* trying out code to make it a list view */
+    section.block.block-views.block-views-large-screen-calendar-block-3 thead {
+      display: none;
+    }
+
+    tr.not-all-day.and-all-day td {
+      display: block;
+      width: 100%;
+    }
+
+    // formatting week list weekview
+
+    .calendar-items-container {
+      width: 100%;
+      float: left;
+
+      .calendar.weekview.all-day-items {
+        width: 100% !important;
+
+        .item,
+        .view-item.view-item-large_screen_calendar {
+          width: 100% !important;
+          overflow: auto;
         }
-    } /* END  - .large-screen-calendar-weekview */
+
+        .calendar.weekview {
+          width: 100% !important;
+        }
+
+        @include display-flex();
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        .views-field {
+          //                    width: 100%!important;
+        }
+      }
+    }
+
+    .calendar-calendar tr:nth-of-type(even) {
+      background: #fff;
+    }
+
+    .calendar-calendar td span.date-display-single, .calendar-calendar td span.date-display-start, .calendar-calendar td span.date-display-end, .calendar-calendar td span.date-display-separator {
+      font-weight: normal;
+    }
+
+    .calendar.weekview.all-day-items {
+      padding: 0px !important;
+    }
+  }
+  /* END  - .large-screen-calendar-weekview */
 }
 
 /* ----------------- formatting fields for large-screen calendar views  -- */
@@ -1896,132 +2093,148 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 //.views-field.views-field-field-price-range.-Free,
 //.views-field.views-field-field-price.-Free,
 .views-field.views-field-views-conditional-1.-Free {
-    display: none;
+  display: none;
 }
 
 .page-taxonomy-term,
-.page-calendar.large-screen .view-large-screen-calendar { 
-    .view-item {
-        padding: 0px 0px 20px;
-        border-bottom: 1px solid $lightgray;
-        margin: -10px 0px 20px 0px;
-    }
-    .all-day-items .view-item {
-        margin-top: 0px;
-    }
-    .view-empty,
-    .empty-text {
-        border-bottom: 1px solid $lightgray;
-        margin-bottom: 25px;
-    }
-    .multi-day img,
-    .views-field.views-field-views-conditional { /// was .views-field-field-thumbnail
-        display: inline;
-        float: left;
-        margin: 0px 20px 0px 0px;
-        min-height: 100px;
-    }
-    .views-field.views-field-title {
-        font-size: 16px;
-        padding: 0px 0px 5px;
-        display: block;
-    }
-    .inner > .item:first-of-type .views-field.views-field-title {
-      border-top: none;
-    }
-//        .views-field.views-field-field-free,
-//        .views-field.views-field-field-price,
-    .green-label,
-    .views-field.views-field-views-conditional-1 {
-        font-weight: bold;
-        color: $green;
-    }
+.page-calendar.large-screen .view-large-screen-calendar {
+  .view-item {
+    padding: 0px 0px 20px;
+    border-bottom: 1px solid $lightgray;
+    margin: -10px 0px 20px 0px;
+  }
 
-    .views-field.views-field-field-event-date {
-        display: inline;
-        float: left;
-        margin-right: 4px;
-        font-size: 13px;
-        color: $gray;
-//            text-transform: uppercase;
-    }
-// need to specify this so it applies to the day view
-    .views-field-field-timezone,
-    .views-field-field-event-location {
-      font-size: 13px;
-      color: $gray;
-    }
-    .views-field-field-event-location {
-      margin-top: 2px;
-    }
-    .views-field-view-node {
-        font-weight: bold;
-        margin-top: 8px!important;
-    }
+  .all-day-items .view-item {
+    margin-top: 0px;
+  }
 
+  .view-empty,
+  .empty-text {
+    border-bottom: 1px solid $lightgray;
+    margin-bottom: 25px;
+  }
 
-    .views-field.views-field-field-event-date-1 {
-        display: inline;
-        padding-left: 4px;
-    }
+  .multi-day img,
+  .views-field.views-field-views-conditional { /// was .views-field-field-thumbnail
+    display: inline;
+    float: left;
+    margin: 0px 20px 0px 0px;
+    min-height: 100px;
+  }
 
+  .views-field.views-field-title {
+    font-size: 16px;
+    padding: 0px 0px 5px;
+    display: block;
+  }
 
-    //.views-field.views-field-field-tickets-url.ticket-button,
-    //.views-field.views-field-field-nothing.ticket-button,
-    .views-field.ticket-button {
-        //            background: #cecece;
-        //            padding: 4px 12px;
-        float: right;
-        margin-top: -20px;
+  .inner > .item:first-of-type .views-field.views-field-title {
+    border-top: none;
+  }
 
-    }
-    // if there is free/price selected AND tickets availability date, add :
-//        .views-field.views-field-field-price + .views-field-field-tickets-available:before,
-//        span.views-field.views-field-field-free + .views-field-field-tickets-available:before {
-//            content: ": ";
-//        }
-//        span.views-field.views-field-field-price + .views-field-field-tickets-available,
-//        span.views-field.views-field-field-free + .views-field-field-tickets-available {
-//            margin-left: -2px;
-//        }
+  //        .views-field.views-field-field-free,
+  //        .views-field.views-field-field-price,
+  .green-label,
+  .views-field.views-field-views-conditional-1 {
+    font-weight: bold;
+    color: $green;
+  }
+
+  .views-field.views-field-field-event-date {
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    font-size: 13px;
+    color: $gray;
+    //            text-transform: uppercase;
+  }
+
+  // need to specify this so it applies to the day view
+  .views-field-field-timezone,
+  .views-field-field-event-location {
+    font-size: 13px;
+    color: $gray;
+  }
+
+  .views-field-field-event-location {
+    margin-top: 2px;
+  }
+
+  .views-field-view-node {
+    font-weight: bold;
+    margin-top: 8px !important;
+  }
 
 
+  .views-field.views-field-field-event-date-1 {
+    display: inline;
+    padding-left: 4px;
+  }
 
-    .gray-button {
-        padding: 9px 12px!important;
 
-    }
-    // end tickets button
-    .views-field.views-field-field-free {
-        display: none;
-    }
-    .views-field.views-field-field-free.-Free {
-        display: block;
-        margin: 9px 0px!important;
-        font-weight: bold;
-        color: $green;
-    }
-    .views-label.views-label-field-free {
-        float: left;
-        margin-right: 4px;
-    }
-    .views-field.views-field-views-conditional-1.-Price,
-    .views-field.views-field-views-conditional-1.-Range {
-        margin: 9px 0px;
-    }
-    .views-field.views-field-field-free.-Price,
-    .views-field.views-field-field-free.-Range {
-        display: none!important;
-    }
+  //.views-field.views-field-field-tickets-url.ticket-button,
+  //.views-field.views-field-field-nothing.ticket-button,
+  .views-field.ticket-button {
+    //            background: #cecece;
+    //            padding: 4px 12px;
+    float: right;
+    margin-top: -20px;
 
-    .views-field-view-node {
-        margin-top: 8px!important;
-    }
-    .views-field-view-node a {
-        color: $navy;
-        font-weight: normal;
-    }
- }
+  }
+
+  // if there is free/price selected AND tickets availability date, add :
+  //        .views-field.views-field-field-price + .views-field-field-tickets-available:before,
+  //        span.views-field.views-field-field-free + .views-field-field-tickets-available:before {
+  //            content: ": ";
+  //        }
+  //        span.views-field.views-field-field-price + .views-field-field-tickets-available,
+  //        span.views-field.views-field-field-free + .views-field-field-tickets-available {
+  //            margin-left: -2px;
+  //        }
+
+
+  .gray-button {
+    padding: 9px 12px !important;
+
+  }
+
+  // end tickets button
+  .views-field.views-field-field-free {
+    display: none;
+  }
+
+  .views-field.views-field-field-free.-Free {
+    display: block;
+    margin: 9px 0px !important;
+    font-weight: bold;
+    color: $green;
+  }
+
+  .views-label.views-label-field-free {
+    float: left;
+    margin-right: 4px;
+  }
+
+  .views-field.views-field-views-conditional-1.-Price,
+  .views-field.views-field-views-conditional-1.-Range {
+    margin: 9px 0px;
+  }
+
+  .views-field.views-field-field-free.-Price,
+  .views-field.views-field-field-free.-Range {
+    display: none !important;
+  }
+
+  .views-field-view-node {
+    margin-top: 8px !important;
+  }
+
+  .views-field-view-node a {
+    color: $navy;
+    font-weight: normal;
+  }
+}
+
 /* -- month override for title -- */
 .page-calendar-month.large-screen .view-large-screen-calendar {
   .views-field.views-field-title {
@@ -2031,28 +2244,31 @@ div#calendar-nav-pager .calendar-nav-pager-back {
   }
 }
 
- .page-taxonomy-term,
- .page-calendar.large-screen {  
-    /* -------- large screen list views ------------------- */
-    .view-header h3 {
-        text-align: left;
-        font-size: 30px;
-    }
-    .view-header .pager {
-        display: none;
-    }
-    .views-row {
-        margin: 20px 0px 20px;
-        border-bottom: 1px solid $lightgray;
-        // setting baseline styling for lists
-        color: $gray;  
-        font-size: 13px;
-        min-height: 120px;
-    }
-    .views-row.views-row-first {
-        padding-top: 0px;
-    }
-    
+.page-taxonomy-term,
+.page-calendar.large-screen {
+  /* -------- large screen list views ------------------- */
+  .view-header h3 {
+    text-align: left;
+    font-size: 30px;
+  }
+
+  .view-header .pager {
+    display: none;
+  }
+
+  .views-row {
+    margin: 20px 0px 20px;
+    border-bottom: 1px solid $lightgray;
+    // setting baseline styling for lists
+    color: $gray;
+    font-size: 13px;
+    min-height: 120px;
+  }
+
+  .views-row.views-row-first {
+    padding-top: 0px;
+  }
+
 }
 
 
@@ -2063,26 +2279,28 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 
 .view-id-mobile_calendar.view-display-id-block_4,
 .view-id-mobile_calendar.view-display-id-block_6 {
-    z-index: 10;
-    .view-header {
-        display: none;
-    }
-    .view-content h3 {
-        margin-top: 0px;
-    }
+  z-index: 10;
+
+  .view-header {
+    display: none;
+  }
+
+  .view-content h3 {
+    margin-top: 0px;
+  }
 }
 
 
 /*-- General: formatting day header -- */
 
 .day-header {
-    display: block;
-    /* justify-content: center; */
-    background: $lightgray;
-    align-items: center;
-    border-bottom: 1px solid $medgray;
-    /* height: 100px; */
-    /* margin-top: -10px; */
+  display: block;
+  /* justify-content: center; */
+  background: $lightgray;
+  align-items: center;
+  border-bottom: 1px solid $medgray;
+  /* height: 100px; */
+  /* margin-top: -10px; */
 }
 
 
@@ -2099,152 +2317,162 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 
 .day-header-inner.inner-bottom,
 .day-header-inner.inner-top {
-    @include display-flex();
-    width: 100%;
-    /* height: 60px; */
-    color: #002e5d;
-    padding: 2%;
-    align-items: center;
-    justify-content: center;
+  @include display-flex();
+  width: 100%;
+  /* height: 60px; */
+  color: #002e5d;
+  padding: 2%;
+  align-items: center;
+  justify-content: center;
 }
 
 .day-header-inner.inner-top {
-    padding: 10px 2%;
+  padding: 10px 2%;
 }
 
 .day-header-inner.inner-bottom {
-    justify-content: space-around;
-    font-weight: bold;
-    font-size: 13px;
-    padding-bottom: 15px;
-    i {
-        padding-right: 2px;
-    }
+  justify-content: space-around;
+  font-weight: bold;
+  font-size: 13px;
+  padding-bottom: 15px;
+
+  i {
+    padding-right: 2px;
+  }
 }
 
 .day-header-inner-top-left {
-    padding: 0;
-    width: 30%;
-    text-align: right;
-    padding-right: 2%;
+  padding: 0;
+  width: 30%;
+  text-align: right;
+  padding-right: 2%;
 }
 
 .day-header-inner-top-right {
-    border-left: 1px solid $navy;
-    padding: 6px 0% 6px 5%;
-    /* padding: 0px 7%; */
-    width: 73%;
+  border-left: 1px solid $navy;
+  padding: 6px 0% 6px 5%;
+  /* padding: 0px 7%; */
+  width: 73%;
 }
 
 .day-header-day {
-    text-transform: lowercase;
-    margin-right: 7%;
-    font-size: 50px;
+  text-transform: lowercase;
+  margin-right: 7%;
+  font-size: 50px;
 }
 
 .day-header-week {
-    text-transform: lowercase;
-    font-size: 26px;
-    font-weight: bold;
+  text-transform: lowercase;
+  font-size: 26px;
+  font-weight: bold;
 }
 
 .view-id-mobile_calendar.view-display-id-block_5 .day-header-week {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .day-header-monthyear {
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: bold;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
 }
 
 .mobile-first-calendar-dayview .view-id-mobile_calendar.view-display-id-block_4 .panel-2col .panel-col-first {
-    float: left;
-    width: 25%;
-    /*    margin-right: 3%;*/
-    margin-right: 0%;
-    margin-left: 5%;
-    margin-top: 7px;
+  float: left;
+  width: 25%;
+  /*    margin-right: 3%;*/
+  margin-right: 0%;
+  margin-left: 5%;
+  margin-top: 7px;
 }
 
 .mobile-first-calendar-dayview .view-id-mobile_calendar.view-display-id-block_4 .panel-2col .panel-col-last {
-    float: left;
-    width: 62%;
-    margin-right: 5%;
+  float: left;
+  width: 62%;
+  margin-right: 5%;
 }
 
 .mobile-first-calendar-weekview {
-    #page-title,
-    .view-calendar-pages {
-        display: none;
-    }
+  #page-title,
+  .view-calendar-pages {
+    display: none;
+  }
 }
 
 .mobile-first-calendar-dayview {
-    #page-title,
-    .view-calendar-pages {
-        display: none;
-    }
+  #page-title,
+  .view-calendar-pages {
+    display: none;
+  }
 }
+
 // location was coming up next to the date field..
 .mobile-first.not-front .views-field.views-field-field-event-date {
-    @include display-flex();
-    flex-wrap: wrap;
-    float: none;
-    min-height: 20px;
-    padding: 0px 0px 5px;
+  @include display-flex();
+  flex-wrap: wrap;
+  float: none;
+  min-height: 20px;
+  padding: 0px 0px 5px;
 }
 
 /* DAY DAY DAY DAY DAY DAY DAY - small adjustments for day, week as base */
 
 .view-id-mobile_calendar.view-display-id-block_6 {
-    margin-top: -16px;
-    .view-header,
-    .form-item.form-type-select.form-item-field-event-type-tid .description {
-        display: none;
-    }
-    /*-- formatting day header -- */
-    .day-header-week {
-        margin-bottom: 0px;
-    }
-    .day-header-inner.inner-bottom {
-        margin-top: -10px;
-    }
-    .view-item.view-item-mobile_calendar {
-        padding: 10px 20px;
-    }
-    .views-row {
-        padding: 10px 20px;
-        margin: 0px;
-    }
-    .panel-panel.panel-col-first {
-        width: 85px;
-    }
+  margin-top: -16px;
+
+  .view-header,
+  .form-item.form-type-select.form-item-field-event-type-tid .description {
+    display: none;
+  }
+
+  /*-- formatting day header -- */
+  .day-header-week {
+    margin-bottom: 0px;
+  }
+
+  .day-header-inner.inner-bottom {
+    margin-top: -10px;
+  }
+
+  .view-item.view-item-mobile_calendar {
+    padding: 10px 20px;
+  }
+
+  .views-row {
+    padding: 10px 20px;
+    margin: 0px;
+  }
+
+  .panel-panel.panel-col-first {
+    width: 85px;
+  }
 }
+
 /* large day adjustments */
 
 // this is dayview minimonth
 .view.view-large-screen-calendar.view-display-id-block_7 {
-    .view-header, 
-    th.calendar-dayview-hour, th.calendar-agenda-items,
-    .form-item.form-type-select.form-item-field-event-type-tid .description {
-        display: none;
-    }
-    td.calendar-agenda-items {
-        width: 100%;
-    }
-    .calendar-calendar td .inner div, .calendar-calendar td .inner div a {
-        background: none;
-    }
+  .view-header,
+  th.calendar-dayview-hour, th.calendar-agenda-items,
+  .form-item.form-type-select.form-item-field-event-type-tid .description {
+    display: none;
+  }
+
+  td.calendar-agenda-items {
+    width: 100%;
+  }
+
+  .calendar-calendar td .inner div, .calendar-calendar td .inner div a {
+    background: none;
+  }
 }
 
 .block-views-large-screen-calendar-block-9 {
-    .view-header {
-        display: none;
-    }
-    
-}
+  .view-header {
+    display: none;
+  }
 
+}
 
 
 // MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH MONTH
@@ -2253,192 +2481,211 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 
 /* large month nav -- */
 .page-calendar-month.large-screen .left-sidebar-calendar-exposed-filters.scrolled {
-    top: 140px; // has 20
+  top: 140px; // has 20
 }
+
 .calendar-nav-item.month-navigation-month {
-    font-size: 13px;
-    width: 56px;
-    color: $gray;
-    text-align: center;
-    background: none;
-    font-weight: 500;
-    text-transform: uppercase;
-    padding-top: 0px!important; // makes it line up with month year dropdown
-    .colorbar {
-        height: 8px;
-        background: $medblue;
-        margin-bottom: 5px;
-    }
-    
+  font-size: 13px;
+  width: 56px;
+  color: $gray;
+  text-align: center;
+  background: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-top: 0px !important; // makes it line up with month year dropdown
+  .colorbar {
+    height: 8px;
+    background: $medblue;
+    margin-bottom: 5px;
+  }
+
 }
+
 .calendar-nav-item.month-navigation-month:hover {
-    background: none;
-    .colorbar {
-        background: $lightblue;
-    }
+  background: none;
+
+  .colorbar {
+    background: $lightblue;
+  }
 }
+
 .calendar-nav-item.month-navigation-month.current-month {
-    color: $navy;
-    .colorbar {
-        background: $navy;
-    }
-    
+  color: $navy;
+
+  .colorbar {
+    background: $navy;
+  }
+
 }
+
 .large-screen.page-calendar #large-calendar-nav-container.months {
-     margin-bottom: 25px; 
+  margin-bottom: 25px;
 }
+
 .page-calendar-month .large-calendar-top-navigation {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .large-screen .block-views-large-screen-calendar-block-5 .view-header {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .calendar-calendar .month-view .full tr td {
-//            width: 100%;
-//            float: left;
-    text-align: left;
-    background: #fff;
-    border: 1px solid $lightgray;
-    margin: 4px!important;
+  //            width: 100%;
+  //            float: left;
+  text-align: left;
+  background: #fff;
+  border: 1px solid $lightgray;
+  margin: 4px !important;
 }
+
 .large-screen .calendar-calendar .month-view .full {
-    border-collapse: separate;
-    border-spacing: 6px 3px;
+  border-collapse: separate;
+  border-spacing: 6px 3px;
 
-    thead tr th {
-        color: $navy;
-        text-transform: lowercase;
-        background: none;
-        border: none;
-        margin-bottom: 15px;
+  thead tr th {
+    color: $navy;
+    text-transform: lowercase;
+    background: none;
+    border: none;
+    margin-bottom: 15px;
+  }
+
+  //td {
+  //  min-width: 102px;
+  //  max-width: 102px;
+  //}
+  //td:first-of-type {
+  //  min-width: 70px;
+  //  max-width: 70px;
+  //}
+  td.single-day .calendar-empty, td.single-day.empty, td.date-box.empty {
+    background: none;
+    border: none;
+    color: #fff;
+  }
+
+  tr td.date-box {
+    background: $medblue;
+    text-align: center;
+    position: relative;
+    top: 3px;
+
+    .inner .day {
+      width: 100%;
+      /* vertical-align: middle; */
+      padding: 10px 4px 15px;
+      font-size: 30px;
+      color: #fff;
+      font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
+      font-weight: bold;
     }
-    //td {
-    //  min-width: 102px;
-    //  max-width: 102px;
-    //}
-    //td:first-of-type {
-    //  min-width: 70px;
-    //  max-width: 70px;
-    //}
-    td.single-day .calendar-empty, td.single-day.empty, td.date-box.empty {
-        background: none;
-        border: none; 
-        color: #fff;
+  }
+
+  tr td.date-box.empty { // last month or next month are empty
+    border-bottom: #fff 1px solid;
+
+    .inner {
+      display: none;
     }
-    tr td.date-box {
-        background: $medblue;
-        text-align: center;
-        position: relative;
-        top: 3px;
-        .inner .day {
-            width: 100%;
-            /* vertical-align: middle; */
-            padding: 10px 4px 15px;
-            font-size: 30px;
-            color: #fff;
-            font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
-            font-weight: bold;
-        }
+  }
+
+  tr td.date-box.today {
+    background: $navy;
+    border-color: $medgray !important;
+
+    .month.day {
+      color: #fff;
     }
-    tr td.date-box.empty {  // last month or next month are empty
-        border-bottom: #fff 1px solid;
-        .inner {
-            display: none;
-        }
-    }
-    tr td.date-box.today {
-        background: $navy;
-        border-color: $medgray !important;
-        .month.day {
-            color: #fff;
-        }
-    }
-    tr td.single-day.today {
-    
-        border-left: 2px solid $medgray;
-        border-right: 2px solid $medgray;
-        border-bottom: 2px solid $medgray;
-    }
-   
-    td.single-day .inner {
-        height: 230px!important;
-        @include display-flex();
-        flex-wrap: wrap;
-        align-content: flex-start;
-    }
-    .view-item {
-        border-bottom: none;
-        padding: 0px 0px 0px;
-        margin: 0px;
-    }
-    //.item {
-    //  max-height: .7vh;
-    //}
-    .item:first-of-type .view-item {
-        padding: 8px 0px 0px;
-        margin: 0px;
-    }
-    .inner .item:last-of-type .view-item {
-        margin-bottom: 10px;
-    }
-    .views-field-title a {
-        font-size: 13px;
-        font-weight: normal;
-        color: #000;
-    }
-    //.views-field-title:before {
-    //    content: '\f111';
-    //    color: #A6B6C7;
-    //    font-family: FontAwesome;
-    //    font-size: 8px;
-    //    position: relative;
-    //    top: -2px;
-    //}
-    
-    tr.single-day .no-entry, tr.single-day .no-entry .inner {
-        min-height: 10px !important;
-        line-height: 20px;
-    }
-    .calendar-more .calendar-more a:before {
-      content: "SEE ";
-      font-weight: 500;
-    }
-    .calendar-more {
-        display: none;
-      color: $navy !important;
-      text-transform: uppercase;
-      font-weight: 500;
-      /* align-content: flex-end; */
-      align-self: flex-end;
-    }
-    .calendar-more a {
-      color: $navy !important;
-      font-weight: 500;
-    }
+  }
+
+  tr td.single-day.today {
+
+    border-left: 2px solid $medgray;
+    border-right: 2px solid $medgray;
+    border-bottom: 2px solid $medgray;
+  }
+
+  td.single-day .inner {
+    height: 230px !important;
+    @include display-flex();
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+
+  .view-item {
+    border-bottom: none;
+    padding: 0px 0px 0px;
+    margin: 0px;
+  }
+
+  //.item {
+  //  max-height: .7vh;
+  //}
+  .item:first-of-type .view-item {
+    padding: 8px 0px 0px;
+    margin: 0px;
+  }
+
+  .inner .item:last-of-type .view-item {
+    margin-bottom: 10px;
+  }
+
+  .views-field-title a {
+    font-size: 13px;
+    font-weight: normal;
+    color: #000;
+  }
+
+  //.views-field-title:before {
+  //    content: '\f111';
+  //    color: #A6B6C7;
+  //    font-family: FontAwesome;
+  //    font-size: 8px;
+  //    position: relative;
+  //    top: -2px;
+  //}
+
+  tr.single-day .no-entry, tr.single-day .no-entry .inner {
+    min-height: 10px !important;
+    line-height: 20px;
+  }
+
+  .calendar-more .calendar-more a:before {
+    content: "SEE ";
+    font-weight: 500;
+  }
+
+  .calendar-more {
+    display: none;
+    color: $navy !important;
+    text-transform: uppercase;
+    font-weight: 500;
+    /* align-content: flex-end; */
+    align-self: flex-end;
+  }
+
+  .calendar-more a {
+    color: $navy !important;
+    font-weight: 500;
+  }
 
 
+  .link-to-day-box {
+    align-self: flex-end;
+  }
 
-    .link-to-day-box {
-        align-self: flex-end;
-    }
-    .link-to-day {
-        padding-bottom: 10px;
-        font-size: 12px;
-        text-align: center;
-    }
-    td.empty .link-to-day, 
-    td.no-entry .link-to-day {
-        display: none;
-    }
+  .link-to-day {
+    padding-bottom: 10px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  td.empty .link-to-day,
+  td.no-entry .link-to-day {
+    display: none;
+  }
 }
-
-
-
-
-
-
 
 
 // YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR
@@ -2453,86 +2700,96 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 
 
 .mobile-first-calendar-yearview .calendar-nav-section {
-    .calendar-nav-item {
-        @include display-flex();
-        justify-content: center;
-        align-items: center;
-        height: 56px;
-    }
+  .calendar-nav-item {
+    @include display-flex();
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+  }
 }
 
 .mobile-first-calendar-monthview .calendar-nav-section,
 .mobile-first-calendar-yearview .calendar-nav-section {
-    #month-7,
-    #month-1 {
-        background: $navy;
-    }
-    #month-8,
-    #month-2 {
-        background: lighten($dullnavy, 5%);
-    }
-    #month-9,
-    #month-3 {
-        background: desaturate(lighten($dullnavy, 10%), 25%);
-    }
-    #month-10,
-    #month-4 {
-        background: desaturate(lighten($dullnavy, 15%), 27%);
-    }
-    #month-11,
-    #month-5 {
-        background: desaturate(lighten($dullnavy, 20%), 29%);
-    }
-    #month-12,
-    #month-6 {
-        background: desaturate(lighten($dullnavy, 25%), 31%);
-    }
- 
+  #month-7,
+  #month-1 {
+    background: $navy;
+  }
+
+  #month-8,
+  #month-2 {
+    background: lighten($dullnavy, 5%);
+  }
+
+  #month-9,
+  #month-3 {
+    background: desaturate(lighten($dullnavy, 10%), 25%);
+  }
+
+  #month-10,
+  #month-4 {
+    background: desaturate(lighten($dullnavy, 15%), 27%);
+  }
+
+  #month-11,
+  #month-5 {
+    background: desaturate(lighten($dullnavy, 20%), 29%);
+  }
+
+  #month-12,
+  #month-6 {
+    background: desaturate(lighten($dullnavy, 25%), 31%);
+  }
+
 }
 
 .calendar-nav-section.hidden {
-    display: none;
+  display: none;
 }
 
 .mobile-first-calendar-yearview {
-    #page-title,
-    .view-calendar-pages {
-        display: none;
-    }
+  #page-title,
+  .view-calendar-pages {
+    display: none;
+  }
 
 }
 
 .mobile-calendar-yearview {
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 10;
-    h2 {
-        color: $navy;
-    }
-    .month-title {
-        background: $lightgray;
-        padding: 8px;
-        font-size: 24px;
-        text-align: center;
-        text-transform: uppercase;
-    }
-    .month-header #header-0 {
-        margin-left: 0px;
-    }
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 10;
+
+  h2 {
+    color: $navy;
+  }
+
+  .month-title {
+    background: $lightgray;
+    padding: 8px;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .month-header #header-0 {
+    margin-left: 0px;
+  }
 }
 
 .month-header.calendar-yearview-month {
-    margin-top: 20px;
+  margin-top: 20px;
 
 }
+
 .month-inner .box a {
-    color: $navy;
+  color: $navy;
 }
+
 //adjusting space within each month
 .month-header.calendar-yearview-month,
 .calendar-yearview-month.month-inner {
-    width: 96%;
-    margin-left: 4%;
+  width: 96%;
+  margin-left: 4%;
 }
 
 
@@ -2547,7 +2804,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     height: 60px;
     padding-top: 0px;
     margin-top: 0px;
-}  
+}
 */
 
 
@@ -2558,159 +2815,176 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 } */
 
 .calendar-yearview-month {
-    display: inline-flex;
-    flex-wrap: wrap;
-    width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .calendar-yearview-month.month-inner {
-    margin-bottom: 25px;
-}
-.large-screen.page-calendar-year,
-.mobile-first-calendar-yearview {
-    .calendar-nav-section {
-        font-size: 18px;
-        text-transform: uppercase
-    }
-    .box {
-        background: $xlightgray;
-        color: $navy;
-        width: 10%;
-        /* max-width: 30px; */
-        margin-left: 4%;
-        text-align: center;
-        font-size: 12px;
-        font-weight: 500;
-        //    padding: 8px 1% 10px;
-        margin-bottom: 8px;
-        .box-inner {
-            //           padding: 8px 1% 10px;
-            padding: 6px 1% 8px;
-        }
-    }
-    .box.empty-box a.box-link {
-        //    width: 10%;
-        //    margin-left: 4%;
-        //    font-size: 14px;
-        //    padding: 8px 1% 10px;
-        //    margin-bottom: 8px;
-    }
-    .box.weekday-header-box {
-        background: #fff;
-        font-weight: bold;
-    }
-    .box.empty-box {
-        background: #fff;
-        color: #fff;
-    }
-    // first column
-    #header1-0,
-    .box.box-0 {
-        margin-left: 0px;
-    }
-    // last column
-    #header1-6,
-    .box.box-6 {
-        margin-right: 0px;
-    }
+  margin-bottom: 25px;
 }
 
-.calendar-calendar .month-view .full td.no-entry:after {  // took class off td.single-day
-//    content: "There are no events scheduled on this day.";
+.large-screen.page-calendar-year,
+.mobile-first-calendar-yearview {
+  .calendar-nav-section {
+    font-size: 18px;
+    text-transform: uppercase
+  }
+
+  .box {
+    background: $xlightgray;
+    color: $navy;
+    width: 10%;
+    /* max-width: 30px; */
+    margin-left: 4%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    //    padding: 8px 1% 10px;
+    margin-bottom: 8px;
+
+    .box-inner {
+      //           padding: 8px 1% 10px;
+      padding: 6px 1% 8px;
+    }
+  }
+
+  .box.empty-box a.box-link {
+    //    width: 10%;
+    //    margin-left: 4%;
+    //    font-size: 14px;
+    //    padding: 8px 1% 10px;
+    //    margin-bottom: 8px;
+  }
+
+  .box.weekday-header-box {
     background: #fff;
-    /* width: 100%; */
-    color: #888;
+    font-weight: bold;
+  }
+
+  .box.empty-box {
+    background: #fff;
+    color: #fff;
+  }
+
+  // first column
+  #header1-0,
+  .box.box-0 {
+    margin-left: 0px;
+  }
+
+  // last column
+  #header1-6,
+  .box.box-6 {
+    margin-right: 0px;
+  }
+}
+
+.calendar-calendar .month-view .full td.no-entry:after { // took class off td.single-day
+  //    content: "There are no events scheduled on this day.";
+  background: #fff;
+  /* width: 100%; */
+  color: #888;
 }
 
 .calendar-calendar .month-view .full tr .no-entry .inner { // took class off td.single-day
-    /* height: 50px; */
-    line-height: 16px;
+  /* height: 50px; */
+  line-height: 16px;
 }
 
 
 /* --------- mobile year view --------------- */
 
 .large-screen-calendar-yearview {
-    h1#page-title {
-        @include display-flex();
-        justify-content: center;
-    }
+  h1#page-title {
+    @include display-flex();
+    justify-content: center;
+  }
 }
 
 .large-calendar-yearview {
-    @include display-flex();
-    justify-content: space-between;
-    flex-wrap: wrap;
+  @include display-flex();
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 @media screen and (min-width: $large_screen_start_width) {
-    .month-container {
-        width: 250px;
-        display: block;
-        //    min-width: 300px;
-        margin: 20px;
-    }
-    .month-header div#header-0 {
-        margin-left: 0px;
-    }
+  .month-container {
+    width: 250px;
+    display: block;
+    //    min-width: 300px;
+    margin: 20px;
+  }
+  .month-header div#header-0 {
+    margin-left: 0px;
+  }
 }
+
 /* --------- large yearview -------- */
 
 .page-calendar-year .large-calendar-top-navigation {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .large-screen.page-calendar-year {
 
-    .month-container {
-        width: 220px;
-        display: block;
-        margin: 10px 0px;
-        padding-top: 10px;
-        .month-title {
-            text-align: center;
-        }
+  .month-container {
+    width: 220px;
+    display: block;
+    margin: 10px 0px;
+    padding-top: 10px;
+
+    .month-title {
+      text-align: center;
     }
-    .month-container.current-month {
-        background: $lightgray;
-        .box.empty-box {
-            background: $lightgray;
-            color: $lightgray;
-        }
+  }
+
+  .month-container.current-month {
+    background: $lightgray;
+
+    .box.empty-box {
+      background: $lightgray;
+      color: $lightgray;
     }
-    
-    h2 {
-        font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
-        font-size: 16px;
-        color: $navy;
+  }
+
+  h2 {
+    font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
+    font-size: 16px;
+    color: $navy;
+  }
+
+  .calendar-yearview-month {
+    width: 97%;
+    margin-left: 4%;
+  }
+
+  .box {
+    a {
+      color: $darkestgray;
     }
-    .calendar-yearview-month {
-        width: 97%;
-        margin-left: 4%;
-    }
-   .box {
-        a  {
-            color: $darkestgray;
-        }
-    }
-    
-    
+  }
+
+
 }
+
 /* -- CATEGORIES CATEGORIES CATEGORIES --- */
 
 
 /* -------- Mobile: for all & for category pages ------- */
 .page-taxonomy-term div.node.node-teaser {
-	display: none;  // teasers supplied by drupal, maybe remove later to reduce page load stuff
+  display: none; // teasers supplied by drupal, maybe remove later to reduce page load stuff
 }
+
 .mobile-first:not(.page-node) #main-content-section.large-12 {
-//    padding: 0px;
+  //    padding: 0px;
 }
+
 // last line was too general, i think this could work
 // try one of these
 //.mobile-first.not-front.page-calendar #main-content-section.large-12 {
 .mobile-first.page-calendar #main-content-section.large-12 {
-    padding: 0px;
+  padding: 0px;
 }
 
 // subscribe link
@@ -2718,103 +2992,111 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 // mobile
 section.block.block-views.block-views-category-page-blocks-block-2, // large
 section.block.block-views.block-views-category-page-blocks-block-3 {
-//    float: right;
-//    margin-top: -35px;
-    height: 35px;
-	.views-row{
-		border-bottom: none;
-	}
+  //    float: right;
+  //    margin-top: -35px;
+  height: 35px;
+
+  .views-row {
+    border-bottom: none;
+  }
 }
+
 // large screen
 section.block.block-views.block-views-category-page-blocks-block-2 {
-//    margin-top: -40px;
-//	margin-top: -75px;
-//    position: relative;
-//    left: -3px;
+  //    margin-top: -40px;
+  //	margin-top: -75px;
+  //    position: relative;
+  //    left: -3px;
 }
+
 .page-taxonomy-term .popup-element-title span {
-	background: $royal;
-	color: #fff;
-	padding: 10px 22px;
-    text-transform: uppercase;
-	font-size: 14px;
-	
+  background: $royal;
+  color: #fff;
+  padding: 10px 22px;
+  text-transform: uppercase;
+  font-size: 14px;
+
 }
+
 .large-screen.page-taxonomy-term .popup-element-body table.popup-layout {
-    left: 0px!important;
-    top: 0px!important;
+  left: 0px !important;
+  top: 0px !important;
 }
+
 .page-taxonomy-term .popup-element-body a.popup-close-button span:before {
-//    margin: 0px 0px 0px -52px;
+  //    margin: 0px 0px 0px -52px;
 }
 
 /* ------------ ALL PAGE --------- */
 
 .large-screen.page-calendar.page-calendar-all .calendar-list-type-block .view-header {
-    display: block;
+  display: block;
 }
 
 
 /* mobile all titles - mobile & large -------------- */
 #calendar-all-filter-title {
-	font-weight: bold;
-	color: $navy;
-	@media screen and (max-width: $mobile_max_width) {
-		width: 100%;
-		padding: 10px 15px;
-		border-bottom: 2px solid $navy;
-		margin-bottom: -16px;
-		line-height: 21px;
+  font-weight: bold;
+  color: $navy;
+  @media screen and (max-width: $mobile_max_width) {
+    width: 100%;
+    padding: 10px 15px;
+    border-bottom: 2px solid $navy;
+    margin-bottom: -16px;
+    line-height: 21px;
 
-	}
-	@media screen and (min-width: $large_screen_start_width){
-		font-size: 30px;
-		font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
-		margin-top: -30px;
-		line-height: 33px;
-	}
-		
-	
+  }
+  @media screen and (min-width: $large_screen_start_width) {
+    font-size: 30px;
+    font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
+    margin-top: -30px;
+    line-height: 33px;
+  }
+
+
 }
-
 
 
 /* large all ------------- */
 
 .page-taxonomy-term,
 .large-screen.page-calendar.page-calendar-all {
-    .views-field.views-field-field-event-date-1 {
-         padding-left: 0px;
-    }
-    #large-calendar-nav-header #calendar-view-links {
-        width: 100%;
-    }
+  .views-field.views-field-field-event-date-1 {
+    padding-left: 0px;
+  }
+
+  #large-calendar-nav-header #calendar-view-links {
+    width: 100%;
+  }
 }
 
 .list-view.date-square {
-    background: $xlightgray;
-    width: 100px;
-    height: 100px;
-    margin-right: 20px;
-    float: left;
-    padding: 10px;
-    text-align: center;
-    color: $navy;
-    .month {
-        font-weight: 500;
-        text-transform: uppercase;
-      padding-top: 6px;
-    }
-    .day {
-        font-size: 40px;
-        font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
-        padding: 2px 0px;
-        font-weight: bold;
-    }
-    .year {
-//        font-weight: 100;
-      letter-spacing: 3px;
-    }
+  background: $xlightgray;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  float: left;
+  padding: 10px;
+  text-align: center;
+  color: $navy;
+
+  .month {
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-top: 6px;
+  }
+
+  .day {
+    font-size: 40px;
+    font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
+    padding: 2px 0px;
+    font-weight: bold;
+  }
+
+  .year {
+    //        font-weight: 100;
+    letter-spacing: 3px;
+  }
 }
 
 
@@ -2824,99 +3106,106 @@ section.block.block-views.block-views-category-page-blocks-block-2 {
     width: 100% !important;
   }
 }
+
 .royal-button.footer-subscribe-button {
   font-size: 16px;
   max-width: 150px;
-  margin: 20px 0px!important;
+  margin: 20px 0px !important;
 }
 
 
 section.row.l-footer-columns {
-    background: $lightgray;
-    padding: 40px;
-	h2 {
-		font-size: 20px;
-		color: $navy;
-		border-bottom: 1px solid $navy;
-	}
+  background: $lightgray;
+  padding: 40px;
+
+  h2 {
+    font-size: 20px;
+    color: $navy;
+    border-bottom: 1px solid $navy;
+  }
 }
+
 /* -- strange override we need for byu footer component */
-.secondary-footer [class*="column"]+[class*="column"]:last-child{
-  float: none!important;
+.secondary-footer [class*="column"] + [class*="column"]:last-child {
+  float: none !important;
 }
 
 /* --- university footer general -- */
 footer.l-footer.row {
-	p {
-		color: #fff;
-	}
-	.copyright {
-		margin-top: -15px;
-		font-weight: 100;
-		margin-bottom: -10px;
-		@media screen and (max-width: $mobile_max_width){
-			font-size: 13px;
-		}
-	}
+  p {
+    color: #fff;
+  }
+
+  .copyright {
+    margin-top: -15px;
+    font-weight: 100;
+    margin-bottom: -10px;
+    @media screen and (max-width: $mobile_max_width) {
+      font-size: 13px;
+    }
+  }
 }
 
 /* -- mobile footers overrides -- */
 @media screen and (max-width: $mobile_max_width) {
-	footer.l-footer.row {
-        @include display-flex();
-        justify-content: flex-end;
-        padding: 0px;
-        margin: 0px 0px 0px 20%;
-        width: 80%;
-        @include main-outer-shadowbox();
-    
-        color: white;
-        text-align: center;
-        border-bottom: 1px solid #002255; 
-        div {
-            padding: 10px 10px;
-            background: $navy;
-        }
-		p {
-			color: #fff;
-		}
-		
+  footer.l-footer.row {
+    @include display-flex();
+    justify-content: flex-end;
+    padding: 0px;
+    margin: 0px 0px 0px 20%;
+    width: 80%;
+    @include main-outer-shadowbox();
+
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid #002255;
+
+    div {
+      padding: 10px 10px;
+      background: $navy;
     }
-	.sidebar-first section.row.l-footer-columns {
-		padding: 40px 40px 40px 22%;
-	}
+
+    p {
+      color: #fff;
+    }
+
+  }
+  .sidebar-first section.row.l-footer-columns {
+    padding: 40px 40px 40px 22%;
+  }
 }
 
 
 /* --- footer --- */
 // footer columns
 section.row.l-footer-columns {
-    background: $lightgray;
-    padding: 40px;
-	max-width: 1200px;
-	.large-3.columns {
-		width: 50%; // for tablets & middle range
-		@media screen and (max-width: 767px){
-			width: 100%;
-			padding-top: 20px;
-		}
-	}
-	
-	@media screen and (min-width: 1200px){
-		.large-3.columns {
-			width: 25%;
-		}
+  background: $lightgray;
+  padding: 40px;
+  max-width: 1200px;
 
-		.footer-fourth.large-3.columns {
-			// if t's thinner like connect is, move it over a tiny bit to look visually centered with the others
-			width: 23%;
-    		margin-right: 1%;
-		}
-	}
-	
+  .large-3.columns {
+    width: 50%; // for tablets & middle range
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      padding-top: 20px;
+    }
+  }
 
-	
+  @media screen and (min-width: 1200px) {
+    .large-3.columns {
+      width: 25%;
+    }
+
+    .footer-fourth.large-3.columns {
+      // if t's thinner like connect is, move it over a tiny bit to look visually centered with the others
+      width: 23%;
+      margin-right: 1%;
+    }
+  }
+
+
 }
+
 .footer-social-media {
   padding: 8px 0px;
   //margin-bottom: 10px;
@@ -2929,48 +3218,57 @@ section.row.l-footer-columns {
 /* ---social links in footer ----- */
 
 .l-footer-columns {
-	p {
-		margin-bottom: 10px;
-	}
-	a {
-		color: #444;
-	}
-	a:hover {
-		color: #000;
-	}
-	#footer-social-icons {
-		@include display-flex();
-		justify-content: flex-start;
-		padding: 0px 0px 10px;
-	}
-	a.social-link {
-		font-family: FontAwesome;
-		color: $navy;
-		border: 2px solid #fff;
-		font-size: 16px;
-		border-radius: 21px;
-		margin-right: 5px;
-	}
-	a.social-link.facebook {
-		padding: 8px 12px;
-	}
-	a.social-link.twitter {
-		padding: 8px 9px;
-	}
-	a.social-link.instagram {
-		padding: 8px 10px;
-	}
-	a.social-link.youtube {
-		padding: 8px 10px;
-	}
-	a.social-link:hover {
-		font-family: FontAwesome;
-		color: #fff;
-		border: 2px solid $navy;
-		background: $navy;
-		font-size: 16px;
-		border-radius: 21px;
-	}
+  p {
+    margin-bottom: 10px;
+  }
+
+  a {
+    color: #444;
+  }
+
+  a:hover {
+    color: #000;
+  }
+
+  #footer-social-icons {
+    @include display-flex();
+    justify-content: flex-start;
+    padding: 0px 0px 10px;
+  }
+
+  a.social-link {
+    font-family: FontAwesome;
+    color: $navy;
+    border: 2px solid #fff;
+    font-size: 16px;
+    border-radius: 21px;
+    margin-right: 5px;
+  }
+
+  a.social-link.facebook {
+    padding: 8px 12px;
+  }
+
+  a.social-link.twitter {
+    padding: 8px 9px;
+  }
+
+  a.social-link.instagram {
+    padding: 8px 10px;
+  }
+
+  a.social-link.youtube {
+    padding: 8px 10px;
+  }
+
+  a.social-link:hover {
+    font-family: FontAwesome;
+    color: #fff;
+    border: 2px solid $navy;
+    background: $navy;
+    font-size: 16px;
+    border-radius: 21px;
+  }
 }
 
 
@@ -2978,97 +3276,102 @@ section.row.l-footer-columns {
 // general
 
 footer.l-footer.panel.row {
-    background: $navy;
-    color: #fff;
-	text-align: center;
-	
+  background: $navy;
+  color: #fff;
+  text-align: center;
+
 }
+
 // mobile
 @media screen and (max-width: $mobile_max_width) {
-    footer.l-footer.row {
-        
-    }
+  footer.l-footer.row {
+
+  }
 }
+
 .no-sidebars {
-    footer.l-footer.row {
-        margin: 0px;
-        width: 100%;
-        
-    }
+  footer.l-footer.row {
+    margin: 0px;
+    width: 100%;
+
+  }
 }
 
 // large
 @media screen and (min-width: $large_screen_start_width) {
-	footer.l-footer.panel.row {
-    	max-width: 100%;
-	}
+  footer.l-footer.panel.row {
+    max-width: 100%;
+  }
 }
-
-
 
 
 /* ------- Adding / Editing an Event --------- */
 .has-tip.top {
-    color: #767676;
-    float: right;
-    padding: 0px 0px 5px 10px;
+  color: #767676;
+  float: right;
+  padding: 0px 0px 5px 10px;
 }
+
 .has-tip {
-    border: dotted 1px #ccc;
-    cursor: help;
-    font-weight: bold;
-    color: #767676;
-    border-radius: 18px;
-    padding: 3px 8px;
-    float: right;
-    margin: -10px 0px 10px;
+  border: dotted 1px #ccc;
+  cursor: help;
+  font-weight: bold;
+  color: #767676;
+  border-radius: 18px;
+  padding: 3px 8px;
+  float: right;
+  margin: -10px 0px 10px;
 }
 
 // tabs at bottom
 .number-of-roles-1 .vertical-tabs.clearfix {
-    display: none;
+  display: none;
 }
+
 // edit/view tabs on nodes
 .number-of-roles-1 ul.button-group {
-    display: none;
+  display: none;
 }
 
 
 /* --- mobile first  -- add/edit event  --- */
 .mobile section.block.block-workbench.contextual-links-region.block-workbench-block {
-    display: none;
+  display: none;
 }
 
 .page-node-add, .page-node-edit, .page-node-clone {
 
-    h1#page-title {
-        font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
-        font-size: 16px;
-        color: $navy;
-    }
-    h1#page-title:after {
-//        content: " FOR:";
-    }
+  h1#page-title {
+    font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
+    font-size: 16px;
+    color: $navy;
+  }
 
-    form.node-form .form-item {
-        margin-top: 10px;
-        margin-bottom: 10px;
-      input {
-        max-width: 450px;
-      }
+  h1#page-title:after {
+    //        content: " FOR:";
+  }
+
+  form.node-form .form-item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    input {
+      max-width: 450px;
     }
+  }
 
 }
 
 .page-node-add, .page-node-edit, .page-node-clone {
 
-    
-    label, .form-item label {
-        text-transform: uppercase;
-        color: #000;
-        padding: 5px 5px 5px 0px;
-        font-size: 13px;
-    }
+
+  label, .form-item label {
+    text-transform: uppercase;
+    color: #000;
+    padding: 5px 5px 5px 0px;
+    font-size: 13px;
+  }
+
   .form-item.form-type-textfield.form-item-field-price-range-und-0-from:after {
     content: "_";
     margin-left: 5px;
@@ -3076,288 +3379,314 @@ footer.l-footer.panel.row {
 }
 
 .mobile.page-node-add, .mobile.page-node-edit .mobile.page-node-clone {
-	 .form-item {
-		margin: 5px 0px;
-	}
+  .form-item {
+    margin: 5px 0px;
+  }
 }
 
 
 // fieldsets
 fieldset {
-    border: none;
-    padding: 0px;
-    legend {
-        display: none;
-    }
+  border: none;
+  padding: 0px;
+
+  legend {
+    display: none;
+  }
 }
 
 // categories
 .large-screen {
-	
-	#edit-field-event-type,
-	.form-item-field-event-type-und {
-		width: 400px;
-	}
+
+  #edit-field-event-type,
+  .form-item-field-event-type-und {
+    width: 400px;
+  }
 }
+
 // some labels inline:
 
 
 // end of all date field stuff
 .page-node-add-event .form-item.form-type-textfield.form-item-title {
-    
-    label:before {
-//        content: "EVENT ";
-    }
-        
-}
-.form-item.form-type-textfield.form-item-title {
-    padding-top: 10px;
+
+  label:before {
+    //        content: "EVENT ";
+  }
+
 }
 
-/* ------ DATE / TIME ---------- */ 
+.form-item.form-type-textfield.form-item-title {
+  padding-top: 10px;
+}
+
+/* ------ DATE / TIME ---------- */
 // timezone
 #edit-field-timezone {
-//    width: 61px;
-    position: relative;
-//    top: 64px;
-//    top: 77px;
-//    left: 203px;
-    // for mobile with no admin menu:
-//    top: 32px;
-//    left: 234px;
-    // mobile now:  (also not logged in, mobile)
-//    top: -71px;
-//    left: 220px;
-    // now w it below:
-//    top: -80px;
-    left: 3px;
+  //    width: 61px;
+  position: relative;
+  //    top: 64px;
+  //    top: 77px;
+  //    left: 203px;
+  // for mobile with no admin menu:
+  //    top: 32px;
+  //    left: 234px;
+  // mobile now:  (also not logged in, mobile)
+  //    top: -71px;
+  //    left: 220px;
+  // now w it below:
+  //    top: -80px;
+  left: 3px;
 
-//    margin-bottom: -30px;
-    label {
-        display: none;
-    }
-        
-    .form-item.form-type-select select {
-       @include gray-select();
-       @include select-dropdown();
-        width: 68px; // need this for if they check all day and then uncheck it and it's redisplayed..
-    }
+  //    margin-bottom: -30px;
+  label {
+    display: none;
+  }
+
+  .form-item.form-type-select select {
+    @include gray-select();
+    @include select-dropdown();
+    width: 68px; // need this for if they check all day and then uncheck it and it's redisplayed..
+  }
 }
+
 .ff #edit-field-timezone .form-item.form-type-select select {
-	width: 75px;
+  width: 75px;
 }
+
 .large-screen #edit-field-timezone {
-//    top: -91px;
-//    left: 210px;
-    // now w it below:
-//    top: 130px;
-    left: 7px;
+  //    top: -91px;
+  //    left: 210px;
+  // now w it below:
+  //    top: 130px;
+  left: 7px;
 }
+
 // need to add something for ipad here too..?
 .ipad #edit-field-timezone {
-//    top: -73px;
+  //    top: -73px;
 }
 
 
 // all day checkbox
 .form-item.form-type-checkbox.form-item-field-event-date-und-0-all-day {
-    padding: 0px 0px 8px;
-    margin: 0px;
+  padding: 0px 0px 8px;
+  margin: 0px;
 }
+
 .safari .form-item.form-type-checkbox.form-item-field-event-date-und-0-all-day {
-	width: 230px;
+  width: 230px;
 }
+
 #edit-field-event-date-und-0-value {
-//    margin-bottom: 32px;  // space for timezone
+  //    margin-bottom: 32px;  // space for timezone
 }
 
 #edit-field-event-date-und-0-value,
 #edit-field-event-date-und-0-value2 {
-    @include display-flex();
-    padding: 0px;
-//    @media screen and (max-width: $mobile_max_width){
-        flex-wrap: wrap;
-        width: 280px;
-        justify-content: flex-start;
-//    }
+  @include display-flex();
+  padding: 0px;
+  //    @media screen and (max-width: $mobile_max_width){
+  flex-wrap: wrap;
+  width: 280px;
+  justify-content: flex-start;
+  //    }
 
-    // date select dropdowns
-    .form-type-select[class*=hour] {
-        margin-left: 0px!important;
-    }
-    label {
-        display: none;
-    }
+  // date select dropdowns
+  .form-type-select[class*=hour] {
+    margin-left: 0px !important;
+  }
 
-    .form-item.form-type-select {
-        
-        select {
-            @include gray-select;
-            @include select-dropdown;
-        }
-    }
-    
-    select#edit-field-event-date-und-0-value-day,
-    select#edit-field-event-date-und-0-value-month,
-    select#edit-field-event-date-und-0-value-year,
-    select#edit-field-event-date-und-0-value2-day,
-    select#edit-field-event-date-und-0-value2-month,
-    select#edit-field-event-date-und-0-value2-year {
-        color: #002e5d!important;
-        border: 1px solid $gray;
-    }
-    
+  label {
+    display: none;
+  }
 
-    // interesting trying out the arrow theming w only css
-    select#edit-field-event-date-und-0-value-year {
-        //        color: #002e5d!important;
-        //        background: #ffffff;
-        //        background: -moz-linear-gradient(left, #ffffff 1%, #ffffff 73%, #ffffff 73%, #cecece 73%, #cecece 74%);
-        //        background: -webkit-linear-gradient(left, #ffffff 1%,#ffffff 73%,#ffffff 73%,#cecece 73%,#cecece 74%);
-        //        background: linear-gradient(to right, #ffffff 1%,#ffffff 73%,#ffffff 73%,#cecece 73%,#cecece 74%);
-        //        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cecece',GradientType=1 );
-    }
+  .form-item.form-type-select {
 
-}  // end of start and end date sections 
+    select {
+      @include gray-select;
+      @include select-dropdown;
+    }
+  }
+
+  select#edit-field-event-date-und-0-value-day,
+  select#edit-field-event-date-und-0-value-month,
+  select#edit-field-event-date-und-0-value-year,
+  select#edit-field-event-date-und-0-value2-day,
+  select#edit-field-event-date-und-0-value2-month,
+  select#edit-field-event-date-und-0-value2-year {
+    color: #002e5d !important;
+    border: 1px solid $gray;
+  }
+
+
+  // interesting trying out the arrow theming w only css
+  select#edit-field-event-date-und-0-value-year {
+    //        color: #002e5d!important;
+    //        background: #ffffff;
+    //        background: -moz-linear-gradient(left, #ffffff 1%, #ffffff 73%, #ffffff 73%, #cecece 73%, #cecece 74%);
+    //        background: -webkit-linear-gradient(left, #ffffff 1%,#ffffff 73%,#ffffff 73%,#cecece 73%,#cecece 74%);
+    //        background: linear-gradient(to right, #ffffff 1%,#ffffff 73%,#ffffff 73%,#cecece 73%,#cecece 74%);
+    //        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cecece',GradientType=1 );
+  }
+
+}
+
+// end of start and end date sections
 #edit-field-event-date-und-0-value > .form-item,
 #edit-field-event-date-und-0-value2 > .form-item {
-    padding: 5px 15px 0px 0px;
+  padding: 5px 15px 0px 0px;
 }
+
 #edit-field-event-date-und-0-value-ampm,
 #edit-field-event-date-und-0-value2-ampm,
 #edit-field-event-date-und-0-value-month,
 #edit-field-event-date-und-0-value2-month {
-    text-transform: uppercase;   
+  text-transform: uppercase;
 }
 
 
 .form-item.form-type-select.form-item-field-event-date-und-0-value-hour:before {
-//    content: "START TIME";
+  //    content: "START TIME";
 }
 
 
 // reorder date stuff
 fieldset.date-combo.form-wrapper.date-processed .fieldset-wrapper {
-    @include display-flex();
-    flex-wrap: wrap;
+  @include display-flex();
+  flex-wrap: wrap;
 }
+
 .date-float:nth-of-type(3) {
-    order: 4;
+  order: 4;
 }
+
 .date-no-float.end-date-wrapper.container-inline-date {
-    order: 5;
+  order: 5;
 }
 
 .form-item-field-event-date-und-0-value2 > label {
-    display: none;
-//    color: #fff!important;
-}
-.form-item-field-event-date-und-0-value2 > label:before {
-    content: "END DATE:";
-    color: #000;
+  display: none;
+  //    color: #fff!important;
 }
 
+.form-item-field-event-date-und-0-value2 > label:before {
+  content: "END DATE:";
+  color: #000;
+}
 
 
 // location
 .form-item-field-event-location-und {
-//    @include display-flex();  // comment so it's above, since we aren't doing a map.
-    label {
-        width: 120px;
-        padding-right: 15px;
-    }
+  //    @include display-flex();  // comment so it's above, since we aren't doing a map.
+  label {
+    width: 120px;
+    padding-right: 15px;
+  }
 }
+
 #edit-field-event-location label {
-    padding-top: 0px;
+  padding-top: 0px;
 }
+
 .form-item-field-event-location-und label {
-    margin-right: 15px;
+  margin-right: 15px;
 }
 
 // tickets
 .form-item.form-item-field-are-tickets-und {
-    margin: -10px 0px 15px!important;
-    @include display-flex();
-	flex-wrap : wrap;
+  margin: -10px 0px 15px !important;
+  @include display-flex();
+  flex-wrap: wrap;
 }
+
 .mobile-first .form-item.form-item-field-are-tickets-und {
-    margin: 0 0 15px!important;
+  margin: 0 0 15px !important;
 }
+
 #edit-field-are-tickets-und .form-item {
-    display: inline;
-    float: left;
-    padding: 13px 5px 0 0;
+  display: inline;
+  float: left;
+  padding: 13px 5px 0 0;
 }
+
 #edit-field-are-tickets > div > label {
-//    float: left;
-//     width: 105px;
-	width: 100%;
+  //    float: left;
+  //     width: 105px;
+  width: 100%;
 }
 
 textarea#edit-body-und-0-value {
-    height: 142px;
+  height: 142px;
 }
 
 // free & pricing
 
 .group-pricing .fieldset-wrapper {
-    margin-top: 20px;
-    /* margin-bottom: -15px; */
+  margin-top: 20px;
+  /* margin-bottom: -15px; */
 }
+
 .ff .group-pricing .fieldset-wrappper {
   margin-top: 11px;
 }
+
 .mobile-first {
-	// fix price & range input boxes - line 48 of issues
+  // fix price & range input boxes - line 48 of issues
 }
 
 fieldset.group-pricing legend {
-    display: none; // default to none
-    font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
-    text-transform: uppercase;
-    font-size: 13px;
-//    padding: 0px 5px;
-}
-#edit-field-free {
-    width: 91px; // was 30
-//    display: inline;
-    float: left;
-//    padding-top: 5px;
-    #edit-field-free-und {
-        margin-top: -10px;
-        margin-bottom: -10px;
-        .form-item {
-            padding-bottom: 10px;
-        }
-    }
+  display: none; // default to none
+  font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  //    padding: 0px 5px;
 }
 
-#edit-field-free > div > label {  // pricing before free
-//    float: left;
-    display: none;
+#edit-field-free {
+  width: 91px; // was 30
+  //    display: inline;
+  float: left;
+  //    padding-top: 5px;
+  #edit-field-free-und {
+    margin-top: -10px;
+    margin-bottom: -10px;
+
+    .form-item {
+      padding-bottom: 10px;
+    }
+  }
+}
+
+#edit-field-free > div > label { // pricing before free
+  //    float: left;
+  display: none;
 }
 
 // single price & price range
 
 #edit-field-price label,
 #edit-field-price-range legend {
-        display: none;
-    }
+  display: none;
+}
+
 #edit-field-price,
 #edit-field-price-range {
-    .form-item {
-        @include display-flex();
-        padding-right: 8px;
-    }
-    .field-prefix {
-        margin: 7px 5px 7px 0px;
-    }
-    input {
-        width: 60px;
-        height: 30px;
-        @include gray-select;
-        padding: 5px;
-    }
+  .form-item {
+    @include display-flex();
+    padding-right: 8px;
+  }
+
+  .field-prefix {
+    margin: 7px 5px 7px 0px;
+  }
+
+  input {
+    width: 60px;
+    height: 30px;
+    @include gray-select;
+    padding: 5px;
+  }
 }
 
 //#edit-field-price {
@@ -3368,14 +3697,16 @@ fieldset.group-pricing legend {
 
 // new if free is last
 #edit-field-price {
-    position: relative;
-    top: 30px;
-    left: 80px;
-    height: 0px;
+  position: relative;
+  top: 30px;
+  left: 80px;
+  height: 0px;
 }
+
 .mobile-first #edit-field-price {
-	top: 29px;
+  top: 29px;
 }
+
 //#edit-field-price-range {
 //    position: relative;
 //    top: 36px;  // was 56 //was 61
@@ -3383,75 +3714,84 @@ fieldset.group-pricing legend {
 
 // new if free is last
 #edit-field-price-range {
-    position: relative;
-    top: 36px;
-    left: 80px;
-    height: 0px;
-    /* float: right; */
+  position: relative;
+  top: 36px;
+  left: 80px;
+  height: 0px;
+  /* float: right; */
 }
-.ff #edit-field-price-range {
-    top: 46px;  // was 56 //was 61
-}
-.mobile-first #edit-field-price-range { 
-	top: 46px; 
-}
-#edit-field-price-range .field-values-wrapper.clearfix {
-    @include display-flex();
-}
-.form-item.form-type-textfield.form-item-field-price-range-und-0-to {
-    padding-right: 0px!important;
-}
-  
 
+.ff #edit-field-price-range {
+  top: 46px; // was 56 //was 61
+}
+
+.mobile-first #edit-field-price-range {
+  top: 46px;
+}
+
+#edit-field-price-range .field-values-wrapper.clearfix {
+  @include display-flex();
+}
+
+.form-item.form-type-textfield.form-item-field-price-range-und-0-to {
+  padding-right: 0px !important;
+}
 
 
 // ticket info
 
 #edit-field-tickets-url {
-//    padding-top: 10px;
-	margin-top: -20px;
-	.form-item .description {
-		padding: 0px 0px 10px;
-	}
-}
+  //    padding-top: 10px;
+  margin-top: -20px;
 
+  .form-item .description {
+    padding: 0px 0px 10px;
+  }
+}
 
 
 // categories
 #edit-field-event-type-und {
-    label {
-        text-transform: Capitalize;
-        padding: 5px 5px 5px 10px;
-    }
-    .form-item {
-        padding-left: 20px;
-    }
+  label {
+    text-transform: Capitalize;
+    padding: 5px 5px 5px 10px;
+  }
+
+  .form-item {
+    padding-left: 20px;
+  }
 }
+
 .mobile-first #edit-field-event-type {
-    margin-bottom: 15px;    
+  margin-bottom: 15px;
 }
+
 #edit-field-internal-category {
-    padding-top: 10px;
-    .has-tip {
-        margin-top: 15px;
-        margin-bottom: 10px;
-    }
-    select {
-        @include gray-select;             
-        @include select-dropdown;
-    }
+  padding-top: 10px;
+
+  .has-tip {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  select {
+    @include gray-select;
+    @include select-dropdown;
+  }
 }
 
 
 // description
 .field-name-body .field-edit-link {
-    display: none;
+  display: none;
 }
+
 .node-type-event fieldset#edit-body-und-0-format {
-    display: none;
+  display: none;
 }
+
 #edit-body {
-    padding: 15px 0px 10px;
+  padding: 15px 0px 10px;
 }
 
 
@@ -3461,6 +3801,7 @@ fieldset.group-pricing legend {
   font-weight: 500;
   text-transform: uppercase;
 }
+
 #edit-field-thumbnail {
   @media screen and (max-width: 767px) {
     // hide imce link for mobile, can't work well for mobile
@@ -3473,9 +3814,10 @@ fieldset.group-pricing legend {
     width: 100%;
     display: none;
   }
+
   .image-widget {
     a.imce-filefield-opener {
-      background: $navy!important;
+      background: $navy !important;
       color: #fff;
       display: block;
       padding: 10px 12px;
@@ -3486,12 +3828,14 @@ fieldset.group-pricing legend {
 
     }
   }
+
   .image-widget-data {
     input, button {
       margin-bottom: 15px;
     }
   }
 }
+
 .large-screen {
   #edit-field-thumbnail-und-0-upload--4,
   #edit-field-thumbnail-und-0-upload--3,
@@ -3500,249 +3844,273 @@ fieldset.group-pricing legend {
     display: none;
   }
 }
+
 .large-screen #edit-field-thumbnail .image-widget-data input,
 .large-screen #edit-field-thumbnail .image-widget-data button {
   //display: none;
 }
+
 .form-item.form-type-managed-file.form-item-field-thumbnail-und-0 {
+  @include display-flex();
+  flex-wrap: wrap;
+
+  a.imce-filefield-opener {
+    margin: 5px 0px 5px -18px;
+    background: none;
+  }
+
+  a.imce-filefield-opener:after {
+    content: " to upload your image.";
+  }
+
+  .image-widget-data:after {
+    content: "600px x 600px PNG or JPG. This will be on display each time your event is referenced. Please ensure it is cropped to the correct dimensions and does not have any words included on it. (Cropping and resizing options are available, unless you are on a mobile device.)";
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px 0px 0px;
+  }
+
+  .image-widget:after {
+    //        content: "This will be on display each time your event is referenced. Please ensure it is cropped to the correct dimensions and does not have any words included on it.";
+    margin-bottom: 10px;
+  }
+
+  .image-widget {
+    order: 3;
+    margin-bottom: -20px;
+  }
+
+  .description {
+    padding: 5px 0px 15px;
+    line-height: 16px;
+    display: none;
+  }
+
+  .image-widget-data {
     @include display-flex();
     flex-wrap: wrap;
-	
-	a.imce-filefield-opener {
-		margin: 5px 0px 5px -18px;
-		background: none;
-	}
-	a.imce-filefield-opener:after {
-		content: " to upload your image.";
-	}
+    justify-content: space-between;
+    //        max-width: 284px;
+    @media screen and (max-width: $mobile_max_width) {
+      max-width: 300px;
+    }
+    @media screen and (min-width: $large_screen_start_width) {
+      max-width: 450px
+    }
+  }
 
-	.image-widget-data:after {
-		content: "600px x 600px PNG or JPG. This will be on display each time your event is referenced. Please ensure it is cropped to the correct dimensions and does not have any words included on it. (Cropping and resizing options are available, unless you are on a mobile device.)";
-		margin-bottom: 20px;
-		font-size: 14px;
-		line-height: 16px;
-        padding: 10px 0px 0px;
-	}
-    .image-widget:after {
-//        content: "This will be on display each time your event is referenced. Please ensure it is cropped to the correct dimensions and does not have any words included on it.";
-		margin-bottom: 10px;
-    }
-    .image-widget {
-        order: 3;
-		margin-bottom: -20px;
-    }
-    .description {
-        padding: 5px 0px 15px;
-        line-height: 16px;
-        display: none;
-    }
+  .file-chooser-field-wrapper {
+    width: 100%;
+    margin: 15px 0px -2px;
+    @include display-flex();
+    justify-content: space-between;
+  }
 
-    .image-widget-data {
-        @include display-flex();
-        flex-wrap: wrap;
-        justify-content: space-between;
-//        max-width: 284px;
-		@media screen and (max-width: $mobile_max_width){
-			max-width: 300px;
-		}
-		@media screen and (min-width: $large_screen_start_width){
-			max-width: 450px
-		}
-    }
-    .file-chooser-field-wrapper {
-        width: 100%;
-        margin: 15px 0px -2px;
-        @include display-flex();
-        justify-content: space-between;
-    }
-    button#edit-field-thumbnail-und-0-upload-button {
-        order: 2;
-        padding: 15px 37px; 
-        background: $gray;
-    }   
+  button#edit-field-thumbnail-und-0-upload-button {
+    order: 2;
+    padding: 15px 37px;
+    background: $gray;
+  }
 }
+
 .mobile-first .form-item.form-type-managed-file.form-item-field-thumbnail-und-0 {
-   	.image-widget-data:after {
-		margin-bottom: 30px;
-	}
+  .image-widget-data:after {
+    margin-bottom: 30px;
+  }
 }
+
 button#edit-field-thumbnail-und-0-upload-button {
-//    text-transform: uppercase;
-	display: none;
-	// with auto upload it doesn't need to be displayed anymore
+  //    text-transform: uppercase;
+  display: none;
+  // with auto upload it doesn't need to be displayed anymore
 }
+
 button#edit-field-thumbnail-und-0-upload-button:after {
-//    content: " EVENT IMAGE";
-     content: " & Preview Image";
+  //    content: " EVENT IMAGE";
+  content: " & Preview Image";
 }
-
-
 
 
 // contact info
 div#edit-field-full-name {
-    float: left;
+  float: left;
 
 }
+
 #edit-field-full-name {
-    display: none;
+  display: none;
 }
+
 /* display it for anytime editing */
 .page-node-edit #edit-field-full-name {
-    display: block;
-}
-/* display it for guest, when adding one */
-.number-of-roles-1 #edit-field-full-name {
-    display: block;
+  display: block;
 }
 
+/* display it for guest, when adding one */
+.number-of-roles-1 #edit-field-full-name {
+  display: block;
+}
 
 
 #edit-field-show-on-calendar {
-    margin-top: 15px;
+  margin-top: 15px;
 }
+
 .form-item-field-show-on-calendar-und > label {
-    display: none;
+  display: none;
 }
 
 .form-item .description {
-	line-height: 16px;
-	padding: 10px 0px;
+  line-height: 16px;
+  padding: 10px 0px;
 }
+
 #edit-field-front-page-und label.option {
-    text-transform: none;
+  text-transform: none;
 }
-#edit-field-permission-und label{
-    text-transform: none;
+
+#edit-field-permission-und label {
+  text-transform: none;
 }
+
 #edit-field-permission {
-    padding-top: 10px;
+  padding-top: 10px;
 }
+
 #edit-field-permission .description {
-    margin-top: 30px;
-	padding: 20px 0px 0px;
+  margin-top: 30px;
+  padding: 20px 0px 0px;
 }
+
 /* --- formatting Add An Event for large screen --- */
 
 
 @media screen and (min-width: $large_screen_start_width) {
-    section.block.block-block.light-gray-bg.block-block-13 {
-        display: none;
+  section.block.block-block.light-gray-bg.block-block-13 {
+    display: none;
+  }
+  .page-node-add, .page-node-edit, .page-node-clone {
+    h1#page-title {
+      font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
+      font-size: 28px;
+      color: $navy;
     }
-    .page-node-add, .page-node-edit, .page-node-clone {
-        h1#page-title {
-            font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
-            font-size: 28px;
-            color: $navy;
-        }
 
-        h1#page-titile:before {
-    //        content: "Step 1: "
-        }
+    h1#page-titile:before {
+      //        content: "Step 1: "
+    }
+
     // modifying publishing info section
-      .form-item.form-type-checkbox.form-item-promote,
-      .form-item.form-type-checkbox.form-item-sticky,
-      .form-item.form-type-select.form-item-workbench-moderation-state-new > label {
-        display: none;
-      }
-      .form-item.form-type-select.form-item-workbench-moderation-state-new:before {
-        content: "Publishing Status";
-        font-weight: 500;
-        padding-bottom: 6px;
-        font-size: 20px;
-        display: block;
-      }
-      .role-area-manager .form-item.form-type-select.form-item-workbench-moderation-state-new:after {
-        content: "Since you are an area manager your event will be automatically published when you select 'Needs Review'";
-      }
-
-
+    .form-item.form-type-checkbox.form-item-promote,
+    .form-item.form-type-checkbox.form-item-sticky,
+    .form-item.form-type-select.form-item-workbench-moderation-state-new > label {
+      display: none;
     }
-    
-    // display some fieldsets
-    fieldset.show-fieldset {
-        margin-top: 30px;
+
+    .form-item.form-type-select.form-item-workbench-moderation-state-new:before {
+      content: "Publishing Status";
+      font-weight: 500;
+      padding-bottom: 6px;
+      font-size: 20px;
+      display: block;
     }
-    fieldset.show-fieldset > legend {
-        display: block;
-        text-transform: uppercase;
-        color: $navy;
-        margin-bottom: 5px;
+
+    .role-area-manager .form-item.form-type-select.form-item-workbench-moderation-state-new:after {
+      content: "Since you are an area manager your event will be automatically published when you select 'Needs Review'";
     }
-    fieldset.show-fieldset > .fieldset-wrapper {
-        border-top: 1px solid $medgray;
-        padding-top: 10px;
-    }    
-    .page-node-add, .page-node-edit, .page-node-clone {
-       .form-item.form-type-textfield.form-item-title label {
-            color: $navy;
-            font-size: 16px;
-            font-weight: bold;
-        }
-
-//    }
-    
-		#edit-field-event-date-und-0-value,
-		#edit-field-event-date-und-0-value2 {
-			.form-item {
-				padding: 0px 5px;
-			}
-		}
-
-		// pricing
-
-	//    .views-field-field-free.-Free + .views-field-field-price,
-	//    .views-field-field-free.-Free ~ .views-field-field-price-range {
-	//        display: none;
-	//    }    
 
 
-		#edit-field-are-tickets {
-			margin-top: 20px;
-			height: 60px;
-		}
+  }
 
-		#edit-field-event-type-und {
-		   @include display-flex();
-			flex-flow: column wrap;
-			width: 400px;
-			height: 120px;  // firefox needs 5-10px more than chrome // was 110
-		}
-		#edit-field-event-type-und .form-item {
-			width: 210px; // ff needs 10 px more than chrome
-			margin: 5px 0px;
-		}
-		#edit-field-internal-category .description {
-			padding: 10px 0px 5px;
-		}
-        .hierarchical-select-wrapper-for-name-edit-field-internal-category-und .selects select {
-          min-height: 60px;
-        }
-        button#edit-field-internal-category-und-hierarchical-select-dropbox-add--2:before {
-          content: "You must click ";
-        }
-        button#edit-field-internal-category-und-hierarchical-select-dropbox-add--2:after {
-          content: " to save your department";
-        }
-		#edit-field-are-tickets-und {
-//			margin-left: 10px;  // don't need now it's on it's own line.
-		}
-		#edit-field-free #edit-field-free-und {
-			margin-top: -10px;
-			margin-bottom: 15px;
-		}
-		#edit-body {
-			padding: 0px 0px 5px;
-		}
-    
-    
-    } // end page-add page-edit page-clone
+  // display some fieldsets
+  fieldset.show-fieldset {
+    margin-top: 30px;
+  }
+  fieldset.show-fieldset > legend {
+    display: block;
+    text-transform: uppercase;
+    color: $navy;
+    margin-bottom: 5px;
+  }
+  fieldset.show-fieldset > .fieldset-wrapper {
+    border-top: 1px solid $medgray;
+    padding-top: 10px;
+  }
+  .page-node-add, .page-node-edit, .page-node-clone {
+    .form-item.form-type-textfield.form-item-title label {
+      color: $navy;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    //    }
+
+    #edit-field-event-date-und-0-value,
+    #edit-field-event-date-und-0-value2 {
+      .form-item {
+        padding: 0px 5px;
+      }
+    }
+
+    // pricing
+
+    //    .views-field-field-free.-Free + .views-field-field-price,
+    //    .views-field-field-free.-Free ~ .views-field-field-price-range {
+    //        display: none;
+    //    }
+
+
+    #edit-field-are-tickets {
+      margin-top: 20px;
+      height: 60px;
+    }
+
+    #edit-field-event-type-und {
+      @include display-flex();
+      flex-flow: column wrap;
+      width: 400px;
+      height: 120px; // firefox needs 5-10px more than chrome // was 110
+    }
+
+    #edit-field-event-type-und .form-item {
+      width: 210px; // ff needs 10 px more than chrome
+      margin: 5px 0px;
+    }
+
+    #edit-field-internal-category .description {
+      padding: 10px 0px 5px;
+    }
+
+    .hierarchical-select-wrapper-for-name-edit-field-internal-category-und .selects select {
+      min-height: 60px;
+    }
+
+    button#edit-field-internal-category-und-hierarchical-select-dropbox-add--2:before {
+      content: "You must click ";
+    }
+
+    button#edit-field-internal-category-und-hierarchical-select-dropbox-add--2:after {
+      content: " to save your department";
+    }
+
+    #edit-field-are-tickets-und {
+      //			margin-left: 10px;  // don't need now it's on it's own line.
+    }
+
+    #edit-field-free #edit-field-free-und {
+      margin-top: -10px;
+      margin-bottom: 15px;
+    }
+
+    #edit-body {
+      padding: 0px 0px 5px;
+    }
+
+
+  }
+  // end page-add page-edit page-clone
 }
-
-
-
-
-
 
 
 /* ------ Viewing an Event --------- */
@@ -3750,91 +4118,108 @@ div#edit-field-full-name {
 
 /* General & mobile first */
 section.block.block-views.block-views-event-page-blocks-block {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
+
 .mobile-first-event span.views-label {
-    font-size: 14px;
+  font-size: 14px;
 }
+
 // tickets label smaller
 .mobile-first-event span.views-label.views-label-views-conditional-1 {
-    font-size: 13px;
+  font-size: 13px;
 }
+
 //.node-type-event .views-label.views-label-field-free.-Free,
-.node-type-event  {
-    .views-field {
-        font-size: 13px;
+.node-type-event {
+  .views-field {
+    font-size: 13px;
+  }
+
+  .views-field.views-field-field-event-date-1 {
+    color: $navy;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .views-field.views-field-field-free {
+    display: none;
+  }
+
+  .views-field.views-field-field-free.-Free {
+    display: block;
+    //        margin: 9px 0px!important;
+  }
+
+  .views-label.views-label-field-free {
+    float: left;
+    margin-right: 4px;
+  }
+
+  .views-field.views-field-views-conditional-1.-Price,
+  .views-field.views-field-views-conditional-1.-Range {
+    //margin: 9px 0px;
+  }
+
+  .views-field.views-field-views-conditional-1.tickets-exist-No,
+  .views-field.views-field-field-free.tickets-exist-No,
+  .views-field.views-field-field-free.-Price,
+  .views-field.views-field-field-free.-Range {
+    display: none !important;
+  }
+
+  .views-label.views-label-views-conditional-1,
+  .views-label.views-label-field-free.-Free {
+    color: #000;
+    font-weight: normal;
+    margin-right: 4px;
+  }
+
+  // when its free, hide the conditional showing price RANGE
+  .views-field.views-field-field-free.-Free ~ .views-field-views-conditional-1 {
+    display: none;
+  }
+
+  // additional
+  .views-field.views-field-nothing > span { // too general - breaks ticket link
+    //display: none;
+  }
+
+  .views-field.views-field-nothing .views-label {
+    margin-right: 15px;
+  }
+
+  .views-field.views-field-nothing span.FACEBOOK-PAGE,
+  .views-field.views-field-nothing span.FULL-WEBSITE {
+    display: block !important;
+    @media screen and (min-width: $large_screen_start_width) {
+      @include display-flex-important();
+      align-items: center;
     }
-    .views-field.views-field-field-event-date-1 {
-        color: $navy;
-        font-weight: bold;
-        font-size: 16px;
-    }
-    .views-field.views-field-field-free {
-        display: none;
-    }
-    .views-field.views-field-field-free.-Free {
-        display: block;
-//        margin: 9px 0px!important;
-    }
-    .views-label.views-label-field-free {
-        float: left;
-        margin-right: 4px;
-    }
-    .views-field.views-field-views-conditional-1.-Price,
-    .views-field.views-field-views-conditional-1.-Range {
-        //margin: 9px 0px;
-    }
-    .views-field.views-field-views-conditional-1.tickets-exist-No, 
-    .views-field.views-field-field-free.tickets-exist-No,
-    .views-field.views-field-field-free.-Price,
-    .views-field.views-field-field-free.-Range {
-        display: none!important;
-    }
-    .views-label.views-label-views-conditional-1,
-    .views-label.views-label-field-free.-Free {
-        color: #000;
-        font-weight: normal;
-        margin-right: 4px;
-    }
-	// when its free, hide the conditional showing price RANGE
-	.views-field.views-field-field-free.-Free ~ .views-field-views-conditional-1 {
-		display: none;
-	}
-	
-    // additional
-    .views-field.views-field-nothing > span { // too general - breaks ticket link
-        //display: none;
-    }
-	.views-field.views-field-nothing .views-label {
-		margin-right: 15px;
-	}
-    .views-field.views-field-nothing span.FACEBOOK-PAGE,
-    .views-field.views-field-nothing span.FULL-WEBSITE {
-        display: block!important;
-		@media screen and (min-width: $large_screen_start_width){
-			@include display-flex-important();
-			align-items: center;
-		}
-	}
-    
-    .views-field.views-field-id { // view count
-        padding: 5px 0px 20px;
-    }
-	 .views-label.views-label-field-free {
-		color: #444;
-		font-weight: normal;
-	}
+  }
+
+  .views-field.views-field-id { // view count
+    padding: 5px 0px 20px;
+  }
+
+  .views-label.views-label-field-free {
+    color: #444;
+    font-weight: normal;
+  }
+
   .views-field-nothing.ticket-button {
     padding-top: 5px;
     padding-bottom: 10px;
   }
 
 }
+
 .large-screen.node-type-event {
   .views-field-popup.tickets-exist-no {
     //padding: 23px 0px 0px; // add space and match with share block
   }
 }
+
 .mobile-first.node-type-event {
   .views-field-popup.tickets-exist-no {
     //padding: 10px 0px 0px; // add space and match with share block
@@ -3843,9 +4228,10 @@ section.block.block-views.block-views-event-page-blocks-block {
 
 
 .date-display-range {
-    display: inline;         // trying to get MT timezone nicely after the date.. 
-    float: left;
+  display: inline; // trying to get MT timezone nicely after the date..
+  float: left;
 }
+
 // hide ticket price section   // hide button if no tickets existing
 .views-field-field-free.tickets-exist-no,
 .views-field-field-free.tickets-exist-no-, // for some reason, one of them is adding a - even though it exactly matches the other config's
@@ -3853,8 +4239,9 @@ section.block.block-views.block-views-event-page-blocks-block {
 .tickets-exist-no.-Range,
 .green-button.tickets-online-2,
 .green-button.tickets-exist-no {
-  display: none!important;
+  display: none !important;
 }
+
 // for screen readers
 .green-button.tickets-online-2 .price:before,
 .green-button.tickets-exist-no .price:before {
@@ -3864,127 +4251,146 @@ section.block.block-views.block-views-event-page-blocks-block {
 // displaying Free & Pricing
 .green-button .free:before,
 .green-button .Free:before {
-    content: "FREE ";
+  content: "FREE ";
 }
+
 .views-field-field-free,
-//.views-field-field-price .field-content,
-//.views-field-field-price-range .field-content,
+  //.views-field-field-price .field-content,
+  //.views-field-field-price-range .field-content,
 .views-field-views-conditional-1 {
-    font-weight: bold;
-    color: $green;
+  font-weight: bold;
+  color: $green;
 }
+
 .views-field-field-price.-Free,
 .views-field-field-price-range.-Free {
-    display: none;
+  display: none;
 }
 
 .node-type-event {
-    .views-field {
-        padding: 5px 0px 0px;
+  .views-field {
+    padding: 5px 0px 0px;
+  }
+
+  .views-field.views-field-body {
+    //        padding-top: 30px;
+  }
+
+  .green-button {
+    margin-top: 20px;
+    @media screen and (min-width: $large_screen_start_width) {
+      // if this shows on large screen, do large bottom margin to push down other blocks
+      margin-top: 5px;
+      //			margin-bottom: 160px; // was 145
     }
-    .views-field.views-field-body {
-//        padding-top: 30px;
-    }
-    .green-button {
-        margin-top: 20px;
-		@media screen and (min-width: $large_screen_start_width){
-			// if this shows on large screen, do large bottom margin to push down other blocks
-			margin-top: 5px;
-//			margin-bottom: 160px; // was 145
-		}
-    }
-    span.timezone {
-        margin-left: 4px;
-    }
+  }
+
+  span.timezone {
+    margin-left: 4px;
+  }
 }
+
 .large-screen.node-type-event .views-field.views-field-field-tickets-url {
-	width: 100%;
-	margin-bottom: 10px;
-}  
+  width: 100%;
+  margin-bottom: 10px;
+}
+
 .views-field.views-field-field-tickets-url.-Free {
 
-    margin-right: 15px;
-	@media screen and (max-width: $mobile_max_width){
-		display: block;
-		margin-top: -10px;
-	}
-	@media screen and (min-width: $large_screen_start_width){
-		display: inline;
-    	float: left;
-		padding-top: 0px;
-	}
+  margin-right: 15px;
+  @media screen and (max-width: $mobile_max_width) {
+    display: block;
+    margin-top: -10px;
+  }
+  @media screen and (min-width: $large_screen_start_width) {
+    display: inline;
+    float: left;
+    padding-top: 0px;
+  }
 }
+
 span.views-label.views-label-addtoany-link {
-    color: $gray;
+  color: $gray;
 
 }
+
 .views-field.views-field-addtoany-link .field-content {
-    position: relative;
-    top: -4px;
+  position: relative;
+  top: -4px;
 }
+
 .views-field.views-field-nothing {
-    padding-top: 15px;
+  padding-top: 15px;
 }
+
 #additional-info-links {
-    @include display-flex();
-    .medgray-button {
-        margin: 10px 0px;
-		width: 130px;
-    }
+  @include display-flex();
+
+  .medgray-button {
+    margin: 10px 0px;
+    width: 130px;
+  }
 }
+
 .node-type-event {
-//     @include display-flex();
-    .medgray-button {
-        width: 140px;
-        margin-top: 10px;
-    }
+  //     @include display-flex();
+  .medgray-button {
+    width: 140px;
+    margin-top: 10px;
+  }
 }
+
 .mobile-first.node-type-event {
-//     @include display-flex();
-    .royal-button {
-        width: 140px;
-        margin: 10px 10px 10px 0px;
-    }
-    .views-field.views-field-field-event-date {
-    	padding: 3px 0px 0px;
-		min-height: 14px;
-	}
-	// very little spacing between lines for mobile event
-	.views-field.views-field-field-event-location {
-//		margin-top: -5px;
-//		margin-bottom: -3px;
-	}
+  //     @include display-flex();
+  .royal-button {
+    width: 140px;
+    margin: 10px 10px 10px 0px;
+  }
+
+  .views-field.views-field-field-event-date {
+    padding: 3px 0px 0px;
+    min-height: 14px;
+  }
+
+  // very little spacing between lines for mobile event
+  .views-field.views-field-field-event-location {
+    //		margin-top: -5px;
+    //		margin-bottom: -3px;
+  }
 }
- // Add to Calendar
+
+// Add to Calendar
 
 .node-type-event #popup-0 a span:after {
-    content: "+";
-    font-weight: bold;
-    font-size: 15px;
+  content: "+";
+  font-weight: bold;
+  font-size: 15px;
 }
 
 .node-type-event .popup-element-body {
-	@media screen and (min-width: 340px) {
-		padding: 0px 0px 0px 25px;
-	}
+  @media screen and (min-width: 340px) {
+    padding: 0px 0px 0px 25px;
+  }
 
-	table.popup-layout {
-		top: 0px!important;
-		left: -10px!important;
-	}
+  table.popup-layout {
+    top: 0px !important;
+    left: -10px !important;
+  }
 }
+
 .popup-style-white .popup-element-body.origin-bottom-right.expand-top-right table.popup-layout {
-    /* top: 35px; */
-    left: -10px;
+  /* top: 35px; */
+  left: -10px;
 }
+
 // old to prob remove:
 //.node-type-event .views-field.views-field-nothing > span.field-content.add-to-calendar {
 //    @include display-flex();
 //    justify-content: flex-start;
 //	margin: 0px;
-//    
+//
 //	@media screen and (min-width: $large_screen_start_width) {
-//		margin: 40px 0px 20px;	
+//		margin: 40px 0px 20px;
 //	}
 //    /* width: 160px; */
 //    font-weight: bold;
@@ -3997,155 +4403,165 @@ span.views-label.views-label-addtoany-link {
 //}
 //if no tickets, move up
 .node-type-event .views-field.views-field-nothing > span.field-content.add-to-calendar.tickets-2 {
-	margin: 0px 0px 20px;
+  margin: 0px 0px 20px;
 }
+
 /* ------ social share both sizes ---------- */
 //body:not(.page-node) section.block-social-share-social-share {
 //	display: none;
 //}
 section.block-social-share-social-share {
-	display: none;
+  display: none;
 }
+
 .not-front.page-node section.block-social-share-social-share {
-	//display: block;
+  //display: block;
   @include display-flex();
   align-items: center;
 }
 
 .mobile-first section.block-social-share-social-share {
-	margin: 25px 0px 15px;
+  margin: 25px 0px 15px;
 }
+
 section.block-social-share-social-share {
-//    min-height: 30px;
-//    background: #f09;
-//	padding: 10px 0px;
-	h2.block-title {
-		display: none;
-	}
-	.share-label {
-		color: $navy;
-		font-weight: bold;
-		margin-right: 10px;
-		font-size: 13px;
-    	text-transform: uppercase;
-	}
-    ul {
-      list-style: none;
-      @include display-flex();
-    }
-	@media screen and (min-width: $large_screen_start_width){
-//		margin: -130px 0px 10px 270px;
-//		margin: -126px 0px 10px 435px;
-		margin: -195px 0px 10px 415px; // w final add to calendar link
-	}
-	
-	a:before {
-//		font-family: FontAwesome;
-//		color: $navy;
-//		border: 2px solid $medgray;
-//		font-size: 16px;
-//		border-radius: 21px;
-		
-	}
-	a:hover:before {
-//		color: #fff;
-//		background: $navy;
-//		border: 2px solid $navy;
-	}
-	a.social-share-facebook:before {
-//		content: '\F09a';
-//		padding: 8px 12px;
-		content: url(/sites/default/files/FB-f-Logo__blue_100_0.png);
-		position: relative;
-		top: 12px;
-	}
-	a.social-share-twitter:before {
-//		content: '\F099';
-//		padding: 8px 9px;
-//		content: url(/sites/default/files/TwitterLogo_%2355acee-DarkBg_0_0.png);
-		content: url(/sites/default/files/Twitter_Logo_White_On_Blue.png);
-		position: relative;
-		top: 12px;
-		
-	}
-	a.social-share-facebook, a.social-share-twitter {
-		color: #fff;
-		font-size: 0px;
-		margin-right: 4px;
-	}
+  //    min-height: 30px;
+  //    background: #f09;
+  //	padding: 10px 0px;
+  h2.block-title {
+    display: none;
+  }
+
+  .share-label {
+    color: $navy;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+
+  ul {
+    list-style: none;
+    @include display-flex();
+  }
+
+  @media screen and (min-width: $large_screen_start_width) {
+    //		margin: -130px 0px 10px 270px;
+    //		margin: -126px 0px 10px 435px;
+    margin: -195px 0px 10px 415px; // w final add to calendar link
+  }
+
+  a:before {
+    //		font-family: FontAwesome;
+    //		color: $navy;
+    //		border: 2px solid $medgray;
+    //		font-size: 16px;
+    //		border-radius: 21px;
+
+  }
+
+  a:hover:before {
+    //		color: #fff;
+    //		background: $navy;
+    //		border: 2px solid $navy;
+  }
+
+  a.social-share-facebook:before {
+    //		content: '\F09a';
+    //		padding: 8px 12px;
+    content: url(/sites/default/files/FB-f-Logo__blue_100_0.png);
+    position: relative;
+    top: 12px;
+  }
+
+  a.social-share-twitter:before {
+    //		content: '\F099';
+    //		padding: 8px 9px;
+    //		content: url(/sites/default/files/TwitterLogo_%2355acee-DarkBg_0_0.png);
+    content: url(/sites/default/files/Twitter_Logo_White_On_Blue.png);
+    position: relative;
+    top: 12px;
+
+  }
+
+  a.social-share-facebook, a.social-share-twitter {
+    color: #fff;
+    font-size: 0px;
+    margin-right: 4px;
+  }
 }
+
 .ff.large-screen section.block-social-share-social-share {
-	margin: 0px;
-	position: relative;
-	left: 420px;
-	top: -167px;  // was -147px
+  margin: 0px;
+  position: relative;
+  left: 420px;
+  top: -167px; // was -147px
 }
+
 .ff.large-screen section.block-views-event-page-blocks-block-3 {
-	position: relative;
+  position: relative;
 }
 
 
-// category & tag 
+// category & tag
 .page-node .views-field-field-event-type .views-label,
 .page-node .views-field-field-tags .views-label {
-	float: left;
-    margin-right: 5px;
-	text-transform: uppercase;
+  float: left;
+  margin-right: 5px;
+  text-transform: uppercase;
 }
-
-
 
 
 /* -------- Viewing an event Desktop overrides --------------- */
 
 .large-screen-event {
-    .medgray-button {
+  .medgray-button {
 
-    }
-    .royal-button {
-        margin: 10px 20px 10px 0px;
-    }
-    
+  }
+
+  .royal-button {
+    margin: 10px 20px 10px 0px;
+  }
+
 }
-
-
 
 
 /* -------- HOMEPAGE HOMEPAGE HOMEPAGE --------------------- */
 // regions
 .front #top-content {
-    border-bottom: 1px solid $lightgray;
+  border-bottom: 1px solid $lightgray;
 }
 
 #bottom-content section {
-	@media screen and (max-width: $mobile_max_width){
-		padding: 25px 0px;
-		.front h2,
-		h2.block-title {
-			font-size: 18px;
-		}
-	}
-	@media screen and (min-width: $large_screen_start_width){
-		padding: 50px 0px;
-	}
-    
-    border-top: 1px solid $lightgray;
+  @media screen and (max-width: $mobile_max_width) {
+    padding: 25px 0px;
+    .front h2,
     h2.block-title {
-        text-align: center;
-        font-size: 30px;
-        color: $navy;
-        margin-bottom: 25px;
-        @media screen and (max-width: $mobile_max_width) {
-          font-size: 22px;
-        }
+      font-size: 18px;
     }
+  }
+  @media screen and (min-width: $large_screen_start_width) {
+    padding: 50px 0px;
+  }
+
+  border-top: 1px solid $lightgray;
+
+  h2.block-title {
+    text-align: center;
+    font-size: 30px;
+    color: $navy;
+    margin-bottom: 25px;
+    @media screen and (max-width: $mobile_max_width) {
+      font-size: 22px;
+    }
+  }
 }
 
 // title
 #top-title {
-	@media screen and (max-width: $mobile_max_width) {
-		padding: 0px 10px;
-	}
+  @media screen and (max-width: $mobile_max_width) {
+    padding: 0px 10px;
+  }
 }
 
 // top region, features section
@@ -4154,67 +4570,71 @@ section.block-social-share-social-share {
 .block-views-homepage-features-block-2,
 .block-views-homepage-features-block-1,
 .block-views-homepage-features-block {
-    .views-row {
-        background: $lightgray;
-        color: #000!important;
-        margin-bottom: 0px;
-        
-//        font-size: 12px;
-    }
-    .views-field.views-field-title {
-        padding: 10px 10px 0px;
-    }
+  .views-row {
+    background: $lightgray;
+    color: #000 !important;
+    margin-bottom: 0px;
 
-    .views-field.views-field-title h1 {
-        margin: 0px;
-        font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
-        font-size: 20px;
-        text-transform: uppercase;
-        line-height: 22px;
-    }
-    
-    .views-field.views-field-field-event-date-1 {
-        display: inline-block;
-        padding: 0px 0px 10px 10px;
-    }
-    .views-field.views-field-field-event-location {
-        display: inline-block;
-        padding-right: 10px;
+    //        font-size: 12px;
+  }
 
-    }
-    
+  .views-field.views-field-title {
+    padding: 10px 10px 0px;
+  }
+
+  .views-field.views-field-title h1 {
+    margin: 0px;
+    font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 22px;
+  }
+
+  .views-field.views-field-field-event-date-1 {
+    display: inline-block;
+    padding: 0px 0px 10px 10px;
+  }
+
+  .views-field.views-field-field-event-location {
+    display: inline-block;
+    padding-right: 10px;
+
+  }
+
 }
 
 .mobile-first .views-field-field-event-date {
-	padding: 10px 10px 5px;
+  padding: 10px 10px 5px;
 }
 
 // large features
 
 .block-views-homepage-features-block {
-    background: $lightgray;
-    margin-top: 20px;
-    .view .views-row { // only large screen large:
-        margin: 0px;
-    }
-	.views-field.views-field-field-event-date {
-		padding: 0px 10px 3px;
-	}
-}
+  background: $lightgray;
+  margin-top: 20px;
 
+  .view .views-row { // only large screen large:
+    margin: 0px;
+  }
+
+  .views-field.views-field-field-event-date {
+    padding: 0px 10px 3px;
+  }
+}
 
 
 .block-views-homepage-features-block-2,
 .block-views-homepage-features-block {
-     .views-field.views-field-title h1 {
-        margin: 15px 0px 10px;
-        font-size: 22px;
-        line-height: 29px;
-    }
-    .views-row {
-        font-size: 16px!important;
-    }
-    
+  .views-field.views-field-title h1 {
+    margin: 15px 0px 10px;
+    font-size: 22px;
+    line-height: 29px;
+  }
+
+  .views-row {
+    font-size: 16px !important;
+  }
+
 }
 
 
@@ -4222,31 +4642,35 @@ section.block-social-share-social-share {
 
 .block-views-homepage-features-block-3,
 .block-views-homepage-features-block-1 {
-     .views-field.views-field-title h1 {
-        margin: 0px;
-        line-height: 22px;
-        font-size: 15px;
-    }
-    .view-content {
-        @include display-flex();
-        flex-wrap: wrap;
-        justify-content: space-between;
-    } 
-    .view .views-row {
-        margin: 20px 0px 0px 0px;
-    }
-    .views-field-field-event-date {
-        padding: 5px 10px 5px;
-    }
+  .views-field.views-field-title h1 {
+    margin: 0px;
+    line-height: 22px;
+    font-size: 15px;
+  }
+
+  .view-content {
+    @include display-flex();
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .view .views-row {
+    margin: 20px 0px 0px 0px;
+  }
+
+  .views-field-field-event-date {
+    padding: 5px 10px 5px;
+  }
 }
 
 // mobile main feature
 .block-views-homepage-features-block-2 {
-    width: 330px;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+  width: 330px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 @media screen and (width: 320px) {
   // override for smallest phone to be larger width
   .block-views-homepage-features-block-2 {
@@ -4259,104 +4683,117 @@ section.block-social-share-social-share {
 .block-views-homepage-features-block-3,
 .block-views-homepage-features-block-3 {
 
-	.views-field-field-event-date {
-		padding: 0px 10px 5px 10px!important;
-	}	
+  .views-field-field-event-date {
+    padding: 0px 10px 5px 10px !important;
+  }
 }
+
 .block-views-homepage-features-block-3 {
-	max-width: 348px;
-    margin-left: auto;
-    margin-right: auto;
-	.view-content {
-        justify-content: space-around;
-	}
-	// smaller text for mobile
-	.views-field-field-event-date,
-	.views-field-field-event-date-1,
-	.views-field-field-event-location {
-		font-size: 14px;
-	}
-	.views-field.views-field-title {
-		padding: 10px 10px 10px;	
-	}
-	.views-field-field-event-date-1 {
-		padding: 0px 0px 5px 10px!important;
-	}
-	.views-field-field-event-location {
-		display: block!important;
-		padding: 0px 10px 5px 10px;
-	}
- } 
+  max-width: 348px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .view-content {
+    justify-content: space-around;
+  }
+
+  // smaller text for mobile
+  .views-field-field-event-date,
+  .views-field-field-event-date-1,
+  .views-field-field-event-location {
+    font-size: 14px;
+  }
+
+  .views-field.views-field-title {
+    padding: 10px 10px 10px;
+  }
+
+  .views-field-field-event-date-1 {
+    padding: 0px 0px 5px 10px !important;
+  }
+
+  .views-field-field-event-location {
+    display: block !important;
+    padding: 0px 10px 5px 10px;
+  }
+}
+
 .block-views-homepage-features-block-3 .views-row {
-    width: 160px;
-    max-width: 45%;
+  width: 160px;
+  max-width: 45%;
 }
 
 // large main
 .block-views-homepage-features-block {
-    max-width: 425px;
-    margin-right: 20px;
-    .views-field.views-field-title {
-         min-height: 54px;
-    }
+  max-width: 425px;
+  margin-right: 20px;
+
+  .views-field.views-field-title {
+    min-height: 54px;
+  }
 }
+
 // large screen small features
 .block-views-homepage-features-block-1 {
-    width: 405px;
-    .views-field.views-field-title {
-         min-height: 52px;
-      // this will cut it off at two lines but not add the ...
-      //  height: 52px;
-      //  width: 192px;
-      //  overflow: hidden;
-      //  text-overflow: ellipsis;
-    }
-    .view .views-row {
-        width: 192px;
-    }
-    .view-content {
-        @include display-flex();
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+  width: 405px;
+
+  .views-field.views-field-title {
+    min-height: 52px;
+    // this will cut it off at two lines but not add the ...
+    //  height: 52px;
+    //  width: 192px;
+    //  overflow: hidden;
+    //  text-overflow: ellipsis;
+  }
+
+  .view .views-row {
+    width: 192px;
+  }
+
+  .view-content {
+    @include display-flex();
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 /* -------------homepage week section -------------- */
 .front.mobile-first #main-content-section {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 
 
-@media screen and (max-width: $mobile_max_width){
-	.front .calendar-nav-section .calenar-nav-item,
-	.front #calendar-nav-header {
-		@include no-box-shadow();
-	}
-	.front .calendar-nav-section .calendar-nav-item {
-    	padding: 8px 0px 12px;
-	}
-	.front .calendar-nav-section .calendar-nav-item .day-navigation-day-items {
-		font-size: 25px;
-	}
-	.front .calendar-nav-section .calendar-nav-item .day-navigation-weekday {
-		font-size: 15px;
-	}
-	.front #calendar-week-more-link {
-		height: 58px;
-		margin-top: 2px;
-		@include display-flex();
-		justify-content: center;
-		align-items: center;
-		background: $medblue;
-		.week-more-link {
-			font-size: 16px;
-			padding: 8px 11px;
-			border: 1px solid #fff;
-			text-transform: uppercase;
-			color: #fff;
-		}
-	}
-	
+@media screen and (max-width: $mobile_max_width) {
+  .front .calendar-nav-section .calenar-nav-item,
+  .front #calendar-nav-header {
+    @include no-box-shadow();
+  }
+  .front .calendar-nav-section .calendar-nav-item {
+    padding: 8px 0px 12px;
+  }
+  .front .calendar-nav-section .calendar-nav-item .day-navigation-day-items {
+    font-size: 25px;
+  }
+  .front .calendar-nav-section .calendar-nav-item .day-navigation-weekday {
+    font-size: 15px;
+  }
+  .front #calendar-week-more-link {
+    height: 58px;
+    margin-top: 2px;
+    @include display-flex();
+    justify-content: center;
+    align-items: center;
+    background: $medblue;
+
+    .week-more-link {
+      font-size: 16px;
+      padding: 8px 11px;
+      border: 1px solid #fff;
+      text-transform: uppercase;
+      color: #fff;
+    }
+  }
+
 }
 
 
@@ -4366,72 +4803,83 @@ section.block-social-share-social-share {
 .front section.left-sidebar-minimonth.scrolled,
 .front section.block-views-large-screen-calendar-block-6.scrolled,
 .front .left-sidebar-calendar-exposed-filters.scrolled {
-    position: relative!important;
-    top: 0px!important;
+  position: relative !important;
+  top: 0px !important;
 }
+
 .front.page-calendar.large-screen section.left-sidebar-minimonth {
-    margin-bottom: 10px!important;
+  margin-bottom: 10px !important;
 }
-.front.large-screen.page-calendar{
-    #large-calendar-nav-header #calendar-view-links {
-        width: 100%;
-    }
+
+.front.large-screen.page-calendar {
+  #large-calendar-nav-header #calendar-view-links {
+    width: 100%;
+  }
 }
+
 .front article {
-    display: none;
+  display: none;
 }
+
 .front .view-large-screen-calendar .view-footer {
-    text-align: center;
+  text-align: center;
 }
+
 /* ---- Events By Date --------  */
 
 #events-by-date-dropdowns {
-    @include display-flex();
-    
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-	div {
-		margin: 5px;
-	}
-    select {
-        padding: 4px;
-		@include gray-select();
-       	@include select-dropdown();
-		padding: 7px 30px 3px 10px;
-		color: $navy;
-        // copy more styling here from other place, or just add a class to the select
-    }
-	button#go {
-		padding: 9px 16px !important;
-		/* height: 32px; */
-		font-size: 13px;
-		border: none;
-		margin: 14px 10px 16px;
-	}
-	// mobile only:
-	@media screen and (max-width: $mobile_max_width){
-		button#go {
-			padding: 8px 16px !important;
-			margin: 5px 7px 16px;
-		}
-	}
-	@media screen and (min-width: $large_screen_start_width){
-		width: 600px;
-		div {
-			margin: 15px;
-			
-		}
-		button#go {
+  @include display-flex();
 
-		}
-	}
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+
+  div {
+    margin: 5px;
+  }
+
+  select {
+    padding: 4px;
+    @include gray-select();
+    @include select-dropdown();
+    padding: 7px 30px 3px 10px;
+    color: $navy;
+    // copy more styling here from other place, or just add a class to the select
+  }
+
+  button#go {
+    padding: 9px 16px !important;
+    /* height: 32px; */
+    font-size: 13px;
+    border: none;
+    margin: 14px 10px 16px;
+  }
+
+  // mobile only:
+  @media screen and (max-width: $mobile_max_width) {
+    button#go {
+      padding: 8px 16px !important;
+      margin: 5px 7px 16px;
+    }
+  }
+  @media screen and (min-width: $large_screen_start_width) {
+    width: 600px;
+    div {
+      margin: 15px;
+
+    }
+    button#go {
+
+    }
+  }
 }
+
 .mobile-first select#month {
-    display: none;
+  display: none;
 }
+
 .large-screen select#mon {
-    display: none;
+  display: none;
 }
 
 /* ------------ Categories landing page and block --------- */
@@ -4444,95 +4892,102 @@ section.block-social-share-social-share {
 }
 
 #categories-container {
-    @include display-flex();
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 0px 15px;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
+  @include display-flex();
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0px 15px;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
 
 }
-@media screen and (min-width: $large_screen_start_width ) {
-    #categories-container {
-        width: 880px;
-        height: 550px;
-        padding: 0px 30px;
-    }
+
+@media screen and (min-width: $large_screen_start_width) {
+  #categories-container {
+    width: 880px;
+    height: 550px;
+    padding: 0px 30px;
+  }
 }
 
 .category-container {
-    /* background: gray; */
-    text-align: center;
-    .category-item {
-        background: $darkgray;
-        height: 255px;
-        margin-bottom: 20px;
-    }
-    .category-item:hover {
-        background: $gray;
-        
-    }
-    .category-name {
-        padding: 15px 15px;
-        font-size: 16px;
-        color: #fff;
-        font-weight: 500;
-        width: 192px;
-        text-transform: uppercase;
-    }
-}
-#category-all {
-    height: 238px;
+  /* background: gray; */
+  text-align: center;
+
+  .category-item {
+    background: $darkgray;
+    height: 255px;
+    margin-bottom: 20px;
+  }
+
+  .category-item:hover {
     background: $gray;
-    .category-item {
-        @include display-flex();
-        align-items: center;
-        height: 255px;
-    }
-    .category-name.see-all-link {
-        padding: 15px 0px;
-        width: 152px;
-        border: 1px solid $xlightgray;
-        margin: 20px;
-        
-    }
+
+  }
+
+  .category-name {
+    padding: 15px 15px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    width: 192px;
+    text-transform: uppercase;
+  }
+}
+
+#category-all {
+  height: 238px;
+  background: $gray;
+
+  .category-item {
+    @include display-flex();
+    align-items: center;
+    height: 255px;
+  }
+
+  .category-name.see-all-link {
+    padding: 15px 0px;
+    width: 152px;
+    border: 1px solid $xlightgray;
+    margin: 20px;
+
+  }
 }
 
 @media screen and (max-width: $mobile_max_width) {
-    #categories-container {
-        max-width: 655px;
- 
-        .category-item {
-            width: 140px;
-            height: 185px;
-        }
+  #categories-container {
+    max-width: 655px;
+
+    .category-item {
+      width: 140px;
+      height: 185px;
     }
-    .category-container .category-name {
-        padding: 8px 8px;
-        font-size: 13px; 
-        width: 140px;
-    }
-    #category-all {
-        height: 174px;
-    }
-    
-    
-    
+  }
+  .category-container .category-name {
+    padding: 8px 8px;
+    font-size: 13px;
+    width: 140px;
+  }
+  #category-all {
+    height: 174px;
+  }
+
+
 }
 
-@media screen and (max-width: 650px){
-    // needs to be 2 in a row
-    #categories-container {
-        width: 290px;
-        padding: 0px;
-    }
-    
-    
+@media screen and (max-width: 650px) {
+  // needs to be 2 in a row
+  #categories-container {
+    width: 290px;
+    padding: 0px;
+  }
+
+
 }
-.page-node-651 article#node-651,    // hiding statistics counter  
+
+.page-node-651 article#node-651, // hiding statistics counter
 .page-node-651 .block-block-18 h2.block-title {
-    display: none;
+  display: none;
 }
 
 /* -------- search --------- */
@@ -4564,103 +5019,112 @@ byu-search.mobile-view .form-item .custom-search-box {
 
 // did the class .search-form instead of id's so it would apply to both header and search page - edit: only for page search now
 .page-search main #search-block-form {
-	#edit-search-block-form--1,
-	label {
-		display: none;
-	}
-	button.secondary {
-		background: $gray !important;
-		color: $gray !important;
-		font-family: FontAwesome;
-		width: 36px;
-		height: 28px;
-		border: 1px solid $gray;
-    	border-radius: 0px;
-	}
-	button.secondary:after {
-		content: "\f002";
-		font-family: FontAwesome;
-		font-size: 16px;
-		margin-left: -23px;
-		color: #fff;
-		position: relative;
-		top: -1px;
-	}
-	
+  #edit-search-block-form--1,
+  label {
+    display: none;
+  }
+
+  button.secondary {
+    background: $gray !important;
+    color: $gray !important;
+    font-family: FontAwesome;
+    width: 36px;
+    height: 28px;
+    border: 1px solid $gray;
+    border-radius: 0px;
+  }
+
+  button.secondary:after {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    margin-left: -23px;
+    color: #fff;
+    position: relative;
+    top: -1px;
+  }
+
 }
+
 // top bar specific
 #top-bar-search input {
-    //width: 230px;
-	//height: 28px;
+  //width: 230px;
+  //height: 28px;
 }
 
 @media screen and (max-width: $mobile_max_width) {
-	#search-block-form {
-		//display: none;
-	}
+  #search-block-form {
+    //display: none;
+  }
 }
 
 // search page specific
 .page-search #search-form {
-	.form-item label {
-		display: none;
-	}
-	input#edit-keys {
-		width: 290px;
-		float: left;
-	}
-	button {
-		background: $gray !important;
-		color: #fff !important;
-		font-size: 15px;
-		font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
-		height: 32px;
-		width: 100px;
-		border: 1px solid $gray;
-    	border-radius: 0px;
-		padding: 7px 70px 8px 10px;
-	}
-	button:after {
-		content: "\f002";
-		font-family: FontAwesome;
-		font-size: 16px;
-		margin-left: 10px;
-		color: #fff;
-	}
+  .form-item label {
+    display: none;
+  }
+
+  input#edit-keys {
+    width: 290px;
+    float: left;
+  }
+
+  button {
+    background: $gray !important;
+    color: #fff !important;
+    font-size: 15px;
+    font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
+    height: 32px;
+    width: 100px;
+    border: 1px solid $gray;
+    border-radius: 0px;
+    padding: 7px 70px 8px 10px;
+  }
+
+  button:after {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    margin-left: 10px;
+    color: #fff;
+  }
 
 }
 
 
 /* ------- category / term pages ------- */
 .page-taxonomy-term .pagination-centered {
-    display: none;
+  display: none;
 }
 
 
 .view-category-page-blocks {
-	.view-header {
-    	float: right;
-    	margin: -45px 0px 0px 0px;
-	}
+  .view-header {
+    float: right;
+    margin: -45px 0px 0px 0px;
+  }
 }
+
 .mobile-first .view-category-page-blocks {
-	.view-header {
-//    	margin: -30px 0px 0px 0px;
-	}
-	.view-content {
-//    	padding-top: 20px;
-	}
+  .view-header {
+    //    	margin: -30px 0px 0px 0px;
+  }
+
+  .view-content {
+    //    	padding-top: 20px;
+  }
 }
 
 .mobile-first .view-category-page-blocks {
 
 }
+
 // other pages should be capitalized correctly, doing this since often tags aren't capitalized
 .page-taxonomy-term h1#page-title {
-    text-transform: capitalize;
-//	border-bottom: 1px solid $lightgray;
-//    padding-bottom: 10px;
-//	margin-right: 135px;
+  text-transform: capitalize;
+  //	border-bottom: 1px solid $lightgray;
+  //    padding-bottom: 10px;
+  //	margin-right: 135px;
 }
 
 
@@ -4687,7 +5151,7 @@ byu-search.mobile-view .form-item .custom-search-box {
 //}
 
 #node-770 .book-navigation {
-    display: none;
+  display: none;
 }
 
 
@@ -4695,7 +5159,7 @@ byu-search.mobile-view .form-item .custom-search-box {
 
 // expand / collapse icons
 .view-subscribe-to-multiple {
-//.page-admin-workbench { // workbench pages only
+  //.page-admin-workbench { // workbench pages only
 
   #edit-field-tags-tid-wrapper {
     width: 100%;
@@ -4706,10 +5170,11 @@ byu-search.mobile-view .form-item .custom-search-box {
     color: $navy;
     font-size: 20px;
     position: relative;
-    top:29px;
+    top: 29px;
     left: 48px;
     font-weight: bold;
   }
+
   #edit-field-tags-tid-wrapper.expanded:before {
     content: "-";
     top: 27px;
@@ -4719,10 +5184,12 @@ byu-search.mobile-view .form-item .custom-search-box {
   #edit-field-tags-tid-wrapper .views-widget {
     display: none;
   }
+
   //#edit-field-internal-category-tid-wrapper.expanded .views-widget,
   #edit-field-tags-tid-wrapper.expanded .views-widget {
     display: block;
   }
+
   // expanded regardless of clicks because something is selected there
   //#edit-field-internal-category-tid-wrapper.permanently-expanded .views-widget,
   #edit-field-tags-tid-wrapper.permanently-expanded .views-widget {
@@ -4753,9 +5220,11 @@ byu-search.mobile-view .form-item .custom-search-box {
       font-size: 24px;
       font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
     }
+
     .view-content {
       display: none;
     }
+
     //.form-item.form-type-select.form-item-field-internal-category-tid .bef-checkboxes {
     //  display: flex;
     //  flex-wrap: wrap;
@@ -4779,93 +5248,102 @@ byu-search.mobile-view .form-item .custom-search-box {
 
 /* ---- subscribe to mulitple PUBLIC FACING PAGE, not workbench - that one is in the byu_adminimal theme */
 .view-id-subscribe_to_multiple {
-	h2 {
-	  font-weight: bold;
-	  color: $navy;
-	  font-size: 24px;
-	  font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
-	}
+  h2 {
+    font-weight: bold;
+    color: $navy;
+    font-size: 24px;
+    font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
+  }
 
-	.view-content {
-	  display: none;
-	}
-	
-	.form-item-field-event-type-tid .bef-checkboxes {
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: column;
-		height: 100px;
-		.form-item {
-			padding-right: 15px;
-		}
-	}
-	#edit-field-internal-category-tid-wrapper {
-		display: block; 
-		width: 100%;
-	}
-	
-	.form-item.form-type-select.form-item-field-internal-category-tid .bef-checkboxes {
-	  display: flex;
-	  flex-wrap: wrap;
-	  flex-direction: column;
-	}
-	@media screen and (min-width: $large_screen_start_width) {
-		.form-item.form-type-select.form-item-field-internal-category-tid .bef-checkboxes {
-			max-height: 800px;
-		}
-	}
-	.form-item.form-type-select.form-item-field-internal-category-tid .bef-checkboxes .form-item {
-	  padding-right: 15px;
-		max-width: 250px;
-		word-wrap: normal;
-	}
+  .view-content {
+    display: none;
+  }
 
-	.views-exposed-widget > label {
-	//  padding-bottom: 10px;
-	//  text-transform: uppercase;
-	//  border-bottom: 1px solid #e5e5e5;
-	//  margin-bottom: 10px;
-	//  color: #767676;
-		font-weight: 500;
-		color: $navy;
-		font-size: 21px;
-		padding-bottom: 10px;
-//		text-transform: uppercase;
-		font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
-	}
-	.bef-checkboxes .form-item label.option {
-	  /*font-weight: normal; */
-	  padding-bottom: 5px;
-      font-weight: 500;
-      letter-spacing: .3px;
-	}
-	#edit-field-event-type-tid-wrapper {
-		margin-right: 20px;
-	}
+  .form-item-field-event-type-tid .bef-checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100px;
 
-	h3 {
-		font-weight: bold;
-		margin-top: 15px;
-	}
-    #categories-for-calendar-widget,
-	#subscribe-to-mult-link {
-		-webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
-		-moz-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
-		box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
-		border: 1px solid $lightgray;
-		padding: 5px 10px;
-		width: 550px;
-      min-height: 28px;
-	}
-    #categories-for-calendar-widget {
-      width: 330px;
-      max-width: 90%;
+    .form-item {
+      padding-right: 15px;
     }
-	@media screen and (max-width: $mobile_max_width ) {
-		#subscribe-to-mult-link {
-			width: 300px;
-		}
-	}
+  }
+
+  #edit-field-internal-category-tid-wrapper {
+    display: block;
+    width: 100%;
+  }
+
+  .form-item.form-type-select.form-item-field-internal-category-tid .bef-checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: $large_screen_start_width) {
+    .form-item.form-type-select.form-item-field-internal-category-tid .bef-checkboxes {
+      max-height: 800px;
+    }
+  }
+
+  .form-item.form-type-select.form-item-field-internal-category-tid .bef-checkboxes .form-item {
+    padding-right: 15px;
+    max-width: 250px;
+    word-wrap: normal;
+  }
+
+  .views-exposed-widget > label {
+    //  padding-bottom: 10px;
+    //  text-transform: uppercase;
+    //  border-bottom: 1px solid #e5e5e5;
+    //  margin-bottom: 10px;
+    //  color: #767676;
+    font-weight: 500;
+    color: $navy;
+    font-size: 21px;
+    padding-bottom: 10px;
+    //		text-transform: uppercase;
+    font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
+  }
+
+  .bef-checkboxes .form-item label.option {
+    /*font-weight: normal; */
+    padding-bottom: 5px;
+    font-weight: 500;
+    letter-spacing: .3px;
+  }
+
+  #edit-field-event-type-tid-wrapper {
+    margin-right: 20px;
+  }
+
+  h3 {
+    font-weight: bold;
+    margin-top: 15px;
+  }
+
+  #categories-for-calendar-widget,
+  #subscribe-to-mult-link {
+    -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+    border: 1px solid $lightgray;
+    padding: 5px 10px;
+    width: 550px;
+    min-height: 28px;
+  }
+
+  #categories-for-calendar-widget {
+    width: 330px;
+    max-width: 90%;
+  }
+
+  @media screen and (max-width: $mobile_max_width) {
+    #subscribe-to-mult-link {
+      width: 300px;
+    }
+  }
 
   // Academic Registrar Dates
   /* applies also on content page */
@@ -4879,12 +5357,12 @@ byu-search.mobile-view .form-item .custom-search-box {
     margin-top: -90px;
   }
 
- // SHS new departments
+  // SHS new departments
 
   .views-widget-filter-shs_term_node_tid_depth > label:after {
     content: "If you select a higher level category, it will include all of it's child categories. If you would like to select multiple categories, use the shift or control key to do so. If you select a specific category, you will not be given the parent category, as that will be redundant. i.e. if you select 'General' and 'BYU Ticket Office' then you will be given the id for the 'BYU Ticket Office, not 'General'. General would include BYU Ticket Office, as well as other categories like 'Faculty'.";
     font-weight: normal;
-    font-family: "HCo Ringside Narrow SSm", Arial,Sans-serif;
+    font-family: "HCo Ringside Narrow SSm", Arial, Sans-serif;
     display: block;
     padding: 10px 0px 8px;
     font-size: 16px;
@@ -4892,15 +5370,17 @@ byu-search.mobile-view .form-item .custom-search-box {
     line-height: 1.3em;
     max-width: 1000px;
   }
+
   #edit-shs-term-node-tid-depth-wrapper {
     width: 100%;
   }
+
   #edit-shs-term-node-tid-depth-wrapper select {
     margin-right: 15px;
   }
 
 
-// tags
+  // tags
 
   // old from above
   .form-item-field-tags-tid {
@@ -4908,6 +5388,7 @@ byu-search.mobile-view .form-item .custom-search-box {
       display: flex;
       flex-wrap: wrap;
     }
+
     .form-item.form-type-bef-checkbox {
 
       /*max-width: 300px; */
@@ -4915,6 +5396,7 @@ byu-search.mobile-view .form-item .custom-search-box {
     }
 
   }
+
   // collapse/expanding tags
   /*#edit-field-internal-category-tid-wrapper.expanded > label:after, */
   //#edit-field-tags-tid-wrapper.expanded > label:after {
@@ -4934,6 +5416,7 @@ byu-search.mobile-view .form-item .custom-search-box {
     left: 48px;
     font-weight: bold;
   }
+
   #edit-field-tags-tid-wrapper.expanded:before {
     content: "-";
     top: 22px;
@@ -4948,6 +5431,7 @@ byu-search.mobile-view .form-item .custom-search-box {
   #edit-field-tags-tid-wrapper.expanded .views-widget {
     display: block;
   }
+
   // expanded regardless of clicks because something is selected there
   //#edit-field-internal-category-tid-wrapper.permanently-expanded .views-widget,
   #edit-field-tags-tid-wrapper.permanently-expanded .views-widget {
@@ -4955,74 +5439,84 @@ byu-search.mobile-view .form-item .custom-search-box {
   }
 
   #edit-field-tags-tid-wrapper {
-		float: left;
-	   /* max-width: 65%; */
-	}
-	.form-item-field-tags-tid .bef-checkboxes {
-		@include display-flex();
-		flex-wrap: wrap;
-		/*height: 300px;
+    float: left;
+    /* max-width: 65%; */
+  }
+
+  .form-item-field-tags-tid .bef-checkboxes {
+    @include display-flex();
+    flex-wrap: wrap;
+    /*height: 300px;
 		flex-direction: column; */
-		align-items: flex-start;
-	}
-	.form-item-field-tags-tid .bef-checkboxes > .form-item {
-		padding-right: 13px;
-	}
-} /* -- end of block-1 for subscribe to mult --*/
+    align-items: flex-start;
+  }
+
+  .form-item-field-tags-tid .bef-checkboxes > .form-item {
+    padding-right: 13px;
+  }
+}
+
+/* -- end of block-1 for subscribe to mult --*/
 
 // public subscribe page specific
 //.page-node-770
 @media screen and (min-width: 768px) {
-	.view-subscribe-to-multiple #edit-field-academic-registrar-dates-tid-wrapper {
-  		margin-top: -80px;	
-	}
+  .view-subscribe-to-multiple #edit-field-academic-registrar-dates-tid-wrapper {
+    margin-top: -80px;
+  }
 }
 
 /* ----- random ----- */
 // edit, view links at top of page, needed space on term page
 .page-taxonomy-term .button-group {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 
 // hide masquerade on mobile
 .mobile-first section.block.block-masquerade.contextual-links-region.block-masquerade-masquerade {
-    display: none;
+  display: none;
 }
 
 
 /* DivTable.com */
-.divTable{
-    display: table;
-    width: 100%;
+.divTable {
+  display: table;
+  width: 100%;
 }
+
 //.divTableHeader {
 //    background: $lightgray;
 //}
 .divTableRow {
-    display: table-row;
+  display: table-row;
 }
+
 .divTableHeading {
-    background-color: #EEE;
-    display: table-header-group;
+  background-color: #EEE;
+  display: table-header-group;
 }
+
 .divTableCell, .divTableHead {
-    border: 1px solid $medgray ;
-    display: table-cell;
-    padding: 8px 10px;
+  border: 1px solid $medgray;
+  display: table-cell;
+  padding: 8px 10px;
 }
+
 .divTableHeading {
-    background-color: $lightgray;
-    display: table-header-group;
-    font-weight: bold;
+  background-color: $lightgray;
+  display: table-header-group;
+  font-weight: bold;
 }
+
 .divTableFoot {
-    background-color: $lightgray;
-    display: table-footer-group;
-    font-weight: bold;
+  background-color: $lightgray;
+  display: table-footer-group;
+  font-weight: bold;
 }
+
 .divTableBody {
-    display: table-row-group;
+  display: table-row-group;
 }
 
 /* -- IE message -- */
