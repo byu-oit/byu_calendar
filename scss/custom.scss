@@ -22,8 +22,8 @@ $mediumblue: darken($lightestblue, 3%);
 $xlightgray: #f2f2f2;
 $lightgray: #e5e5e5;
 $medgray: #9b9b9b;
-$gray: #767676;
-$darkgray: #6a6a6b;
+$gray: #666;
+$darkgray: #444;
 $darkestgray: #141414;
 $royal: #003DA5;
 $royallight: #114BAD;
@@ -227,7 +227,6 @@ byu-header a,
 byu-header a:hover,
 #site-name a:hover {
   color: #fff;
-  text-decoration: underline;
 }
 
 #site-name {
@@ -1252,7 +1251,7 @@ main #main-content-section.scrolled {
 
   .calendar-nav-item {
     /*comment */
-    background: $navy;
+    background: $gray;
     padding: 8px 0px; // was 15px 0px for something, we need 8px 0px for week navigation
     margin-bottom: -2px;
     @include sidebar-inner-shadowbox();
@@ -1287,7 +1286,7 @@ main #main-content-section.scrolled {
   }
 
   .calendar-nav-item:active {
-    background: $lightmedblue;
+    background: $darkgray;
   }
 
 }
