@@ -8,10 +8,10 @@ $large_screen_start_width: 1024px;
 $navy: #002E5D;
 $lightestblue: #C4CFDA;
 $lightblue: #A6B6C7;
-$lightmedblue: #889FB7;
-$medblue: #697F96; // was #889FB7  but it couldn't have white on it with enough contrast
+$lightmedblue: #32538d;
+$medblue: #32538d; // was #889FB7  but it couldn't have white on it with enough contrast
 // 697F96 is enough contrast for large text
-$darkmedblue: #5B728A; // #5B728A is enough contrast for small white text
+$darkmedblue: #32538d; // #5B728A is enough contrast for small white text
 
 
 $dullnavy: desaturate($navy, 30%);
@@ -83,6 +83,7 @@ $nav_gradient_2: 5%;
 
 }
 
+@import url('https://fonts.googleapis.com/css?family=Sanchez');
 
 /* ------------------------------------- */
 body {
@@ -111,12 +112,13 @@ a:hover {
 
 .gray-button {
   @include button;
-  background: $lightgray;
+  background: $royal;
   padding: 10px;
-  border: 1px solid $medgray;
+  border: 1px solid $royal;
   margin: 10px;
   text-align: center;
-  color: $navy;
+  color: #FFF;
+  text-transform: uppercase;
   font-size: 12px;
 }
 
@@ -183,7 +185,7 @@ button, html, input, select, textarea { // overriding angular-material
 h1, h2, h3, h4,
 .weekview-day-header, .list-header, .list-header div,
 .day-navigation-day-items, .weekview-day-header .day-header-day {
-  font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
+  font-family: "Sanchez", serif;
 }
 
 h1 {
@@ -258,7 +260,6 @@ byu-header a:hover,
 //}
 /* ------------ regions ----------------------*/
 section.l-top-title.row {
-  border-bottom: 1px solid $lightgray;
   @media screen and (max-width: $mobile_max_width) {
     h1 {
       font-size: 30px;
@@ -272,7 +273,7 @@ section.l-top-title.row {
     @include display-flex();
     justify-content: center;
   }
-  padding: 30px 0px;
+  padding: 0 0 30px;
 }
 
 #top-content {
@@ -299,13 +300,21 @@ section.l-bottom-content.row {
 }
 
 .gray-button {
-  background-color: $lightgray !important;
+  background-color: $royal !important;
   padding: 9px 12px !important;
   font-size: 12px;
 
   a {
-    color: $navy;
+    color: #FFF;
   }
+
+  a:hover {
+    color: #FFF;
+  }
+}
+
+.gray-button:hover {
+  color: white;
 }
 
 .medgray-button {
@@ -1137,7 +1146,7 @@ main #main-content-section.scrolled {
     height: 22px;
 
     label {
-      color: $gray;
+      color: $navy;
       //            padding-left: 8px;
     }
   }
@@ -1175,7 +1184,7 @@ main #main-content-section.scrolled {
     //        border-top: 7px white solid;
     //        border-bottom: 5px white solid;
     a {
-      color: $darkgray;
+      color: $darkestgray;
     }
 
     a:hover {
@@ -1243,7 +1252,7 @@ main #main-content-section.scrolled {
 
   .calendar-nav-item {
     /*comment */
-    background: $darkmedblue;
+    background: $navy;
     padding: 8px 0px; // was 15px 0px for something, we need 8px 0px for week navigation
     margin-bottom: -2px;
     @include sidebar-inner-shadowbox();
@@ -1264,7 +1273,7 @@ main #main-content-section.scrolled {
 
   .calendar-nav-item.current-day {
     background: $navy !important;
-    //		color: #fff;
+    padding-bottom: 30px !important;
   }
 
   .calendar-nav-item.currently-viewed {
@@ -1274,7 +1283,7 @@ main #main-content-section.scrolled {
   }
 
   .calendar-nav-item:hover {
-    background: $medblue;
+    background: $darkestgray;
   }
 
   .calendar-nav-item:active {
@@ -1644,7 +1653,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
 
   .list-header {
     color: $navy;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 30px;
     margin-bottom: 25px;
     font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
@@ -1699,11 +1708,12 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     select#monthselector, select#yearselector {
       height: 32px;
       font-size: 23px;
-      font-weight: bold;
+      font-weight: normal;
       color: $navy;
       border: 1px solid $lightgray;
       padding: 0px 3px;
       margin-top: 5px;
+      background-color: white;
     }
 
     .block-block-11 {
@@ -1804,9 +1814,14 @@ div#calendar-nav-pager .calendar-nav-pager-back {
       }
 
       .views-exposed-widget.views-reset-button button {
-        background: $lightgray;
-        border: 1px solid $medgray;
-        color: $darkgray;
+        background: $darkgray;
+        border-color: $darkgray;
+        box-shadow: none;
+        text-transform: uppercase;
+        color: #FFF;
+        margin-left: -16px;
+        padding-top: 10px;
+        padding-bottom: 10px;
       }
     }
 
@@ -1822,7 +1837,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     #edit-field-tags-tid-wrapper > label,
     #edit-field-event-type-tid-wrapper > label {
       font-weight: normal;
-      color: $navy;
+      color: $darkestgray;
       font-size: 14px;
       padding-bottom: 10px;
       text-transform: uppercase;
@@ -2250,6 +2265,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
   .view-header h3 {
     text-align: left;
     font-size: 30px;
+    font-weight: normal;
   }
 
   .view-header .pager {
@@ -2495,7 +2511,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
   padding-top: 0px !important; // makes it line up with month year dropdown
   .colorbar {
     height: 8px;
-    background: $medblue;
+    background: $lightgray;
     margin-bottom: 5px;
   }
 
@@ -2566,7 +2582,7 @@ div#calendar-nav-pager .calendar-nav-pager-back {
   }
 
   tr td.date-box {
-    background: $medblue;
+    background: lightgrey;
     text-align: center;
     position: relative;
     top: 3px;
@@ -2574,11 +2590,11 @@ div#calendar-nav-pager .calendar-nav-pager-back {
     .inner .day {
       width: 100%;
       /* vertical-align: middle; */
-      padding: 10px 4px 15px;
+      padding: 16px 4px 15px;
       font-size: 30px;
-      color: #fff;
-      font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
-      font-weight: bold;
+      color: $darkgray;
+      font-family: "Sanchez", serif;
+      font-weight:normal;
     }
   }
 
@@ -2847,6 +2863,14 @@ div#calendar-nav-pager .calendar-nav-pager-back {
       //           padding: 8px 1% 10px;
       padding: 6px 1% 8px;
     }
+  }
+
+  .box:hover {
+    background: $navy;
+  }
+
+  .box:hover a {
+    color: $xlightgray !important;
   }
 
   .box.empty-box a.box-link {
@@ -4527,11 +4551,6 @@ section.block-social-share-social-share {
 
 
 /* -------- HOMEPAGE HOMEPAGE HOMEPAGE --------------------- */
-// regions
-.front #top-content {
-  border-bottom: 1px solid $lightgray;
-}
-
 #bottom-content section {
   @media screen and (max-width: $mobile_max_width) {
     padding: 25px 0px;
@@ -4551,6 +4570,8 @@ section.block-social-share-social-share {
     font-size: 30px;
     color: $navy;
     margin-bottom: 25px;
+    font-weight: normal;
+    text-transform: uppercase;
     @media screen and (max-width: $mobile_max_width) {
       font-size: 22px;
     }
@@ -4915,7 +4936,7 @@ section.block-social-share-social-share {
   text-align: center;
 
   .category-item {
-    background: $darkgray;
+    background: $lightgray;
     height: 255px;
     margin-bottom: 20px;
   }
@@ -4928,7 +4949,7 @@ section.block-social-share-social-share {
   .category-name {
     padding: 15px 15px;
     font-size: 16px;
-    color: #fff;
+    color: $navy;
     font-weight: 500;
     width: 192px;
     text-transform: uppercase;
@@ -4943,6 +4964,7 @@ section.block-social-share-social-share {
     @include display-flex();
     align-items: center;
     height: 255px;
+    background-color: $navy;
   }
 
   .category-name.see-all-link {
@@ -4950,7 +4972,7 @@ section.block-social-share-social-share {
     width: 152px;
     border: 1px solid $xlightgray;
     margin: 20px;
-
+    color: #fff;
   }
 }
 
@@ -5296,7 +5318,6 @@ byu-search.mobile-view .form-item .custom-search-box {
   .views-exposed-widget > label {
     //  padding-bottom: 10px;
     //  text-transform: uppercase;
-    //  border-bottom: 1px solid #e5e5e5;
     //  margin-bottom: 10px;
     //  color: #767676;
     font-weight: 500;
@@ -5522,4 +5543,21 @@ byu-search.mobile-view .form-item .custom-search-box {
 /* -- IE message -- */
 body:not(.ie) .ie-message {
   display: none;
+}
+
+/* ----- Blake's edits (12/18/18) ------ */
+div#top-title h1 {
+  font-family: 'Sanchez', serif;
+  font-weight: normal;
+  font-size: 41px;
+  line-height: 60px
+}
+
+section.l-top-title {
+  width: 850px;
+  margin: 0 auto -20px;
+
+  h1 {
+    margin-bottom: 0;
+  }
 }

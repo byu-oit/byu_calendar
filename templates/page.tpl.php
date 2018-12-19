@@ -1,6 +1,6 @@
 <!--.page -->
 <div role="document" class="page">
-<byu-header>
+<byu-header constrain-top-bar>
 
        <?php if ($site_name): ?>
              <a slot="site-title" id="site-name" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
