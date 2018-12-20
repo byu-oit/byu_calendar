@@ -4935,13 +4935,13 @@ section.block-social-share-social-share {
   text-align: center;
 
   .category-item {
-    background: $lightgray;
+    background: $xlightgray;
     height: 255px;
     margin-bottom: 20px;
   }
 
   .category-item:hover {
-    background: $gray;
+    background: $lightgray;
 
   }
 
@@ -4964,6 +4964,10 @@ section.block-social-share-social-share {
     align-items: center;
     height: 255px;
     background-color: $navy;
+  }
+
+  .category-item:hover {
+    background-color: $darkmedblue;
   }
 
   .category-name.see-all-link {
